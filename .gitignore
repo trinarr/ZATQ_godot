@@ -1,3 +1,11 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+__pycache__/
+*.pyc
+
+# Generated Android build and local signing credentials
+/build/
+/export_credentials.cfg
+*.keystore
+*.jks

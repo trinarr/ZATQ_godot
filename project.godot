@@ -13,13 +13,21 @@ config_version=5
 config/name="Zombie Apocalypse: The Quest"
 config/version="0.2.0"
 run/main_scene="res://scenes/Main.tscn"
-config/features=PackedStringArray("4.7", "GL Compatibility")
+config/features=PackedStringArray("4.7", "Mobile")
+run/max_fps=60
 boot_splash/show_image=false
 config/icon="res://icon.png"
 
 [autoload]
 
+DebugLogBridge="*res://scripts/debug/dev_console_log_bridge.gd"
+DevConsole="*res://addons/dev-console/script/dev-console.gd"
+YandexAdsService="*res://addons/GodotAndroidYandexAds/yandex_ads.gd"
 Quest="*res://scripts/core/quest_state.gd"
+
+[dev_console]
+
+configuration/title_label="Developer Game Console"
 
 [display]
 
@@ -28,8 +36,30 @@ window/size/viewport_height=960
 window/size/window_width_override=1200
 window/size/window_height_override=720
 window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/GodotAndroidYandexAds/plugin.cfg", "res://addons/dev-console/plugin.cfg")
+
+[gui]
+
+theme/default_font_multichannel_signed_distance_field=true
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
 
 [rendering]
 
-renderer/rendering_method="gl_compatibility"
-renderer/rendering_method.mobile="gl_compatibility"
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true
+
+[yandex_ads]
+
+banner_id="demo-banner-yandex"
+interstitial_id="demo-interstitial-yandex"
+rewarded_id="demo-rewarded-yandex"
+age_restricted_user=false
+user_consent=false
