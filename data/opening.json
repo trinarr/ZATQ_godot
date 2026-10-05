@@ -1,0 +1,16 @@
+{
+  "start": "wake",
+  "nodes": {
+    "wake": {"source":"Episode1 frame 1 / Symbol 2794", "text":"Это утро в жизни Джека началось с воя полицейских сирен...", "image":"Fon1_1.png", "choices":[{"text":"Далее","next":"screams"}]},
+    "screams": {"source":"Episode1 frame 2 / Symbol 2799", "text":"Придя в себя после пробуждения, он услышал чьи-то крики и стрельбу на улице.", "image":"Fon1_1.png", "choices":[{"text":"Далее","next":"morning_choice"}]},
+    "morning_choice": {"source":"Episode1 frame 3 / Symbol 2805, 2809, 2817", "text":"Что дальше?", "image":"Fon1_1.png", "choices":[{"text":"Выйти на улицу","next":"transport"},{"text":"Смотреть последние новости","next":"tv"}]},
+    "tv": {"source":"Episode1 frame 4 / Symbol 2835; Episode1.Switcher", "text":"CH 1", "image":"flash_2821.png", "kind":"tv", "sound":"TVSwitchOn", "choices":[{"text":"Следующий канал","action":"channel"},{"text":"Выключить телевизор","next":"morning_choice","sound":"TVSwitchOff"}]},
+    "transport": {"source":"Episode1 frame 5 / Symbol 2848", "text":"Поехать ли на работу на машине или пойти пешком?", "image":"Fon1_1.png", "sound":"FootSteps", "choices":[{"text":"Выйти на улицу","next":"lift","with_keys":"transport_choice"},{"text":"Взять ключи от машины","next":"keys","unless_keys":true}]},
+    "keys": {"source":"AddItem(1); AddItem.weapStrings[0]", "text":"Ключи от Subaru R1e", "image":"Fon1_1.png", "kind":"item", "sound":"KeysTake", "set":{"TakenKey":true}, "choices":[{"text":"Забрать","next":"transport"}]},
+    "transport_choice": {"source":"NewItem(1).itemStrings[0], but1Str[1], but2Str[1]", "text":"Следует ли Джеку сегодня дойти до работы пешком или лучше доехать на машине?", "image":"Fon1_1.png", "choices":[{"text":"Поехать на машине","next":"lift","set":{"Auto":1}},{"text":"Дойти пешком","next":"lift","set":{"Auto":0}}]},
+    "lift": {"source":"Episode1 frame 6 / Symbol 2872", "text":"Дойти до лифта удалось без происшествий. Почти.", "image":"flash_2868.png", "sound":"LiftOpenSound", "choices":[{"text":"Войти в лифт","next":"lift_button"}]},
+    "lift_button": {"source":"Episode1 frame 7 / Symbol 2880; MovClickFunc case 7", "text":"Джек нажал на кнопку первого этажа, и лифт понес его в неизвестность...", "image":"LiftKnop.jpg", "sound":"LiftClosing", "choices":[{"text":"Первый этаж","next":"city_foot","by_car":"city_car","sound":"LiftButton"}]},
+    "city_foot": {"source":"Episode1.Checker case 7 -> MovCityAuto(4)", "text":"Начало эпизода перенесено. Следующая сцена оригинала — MovCityAuto(4): пеший маршрут Джека.", "image":"OnTheStreet.jpg", "kind":"boundary", "choices":[]},
+    "city_car": {"source":"Episode1.Checker case 7 -> MovCityAuto(1)", "text":"Начало эпизода перенесено. Следующая сцена оригинала — MovCityAuto(1): маршрут на машине.", "image":"NewYork.png", "kind":"boundary", "choices":[]}
+  }
+}
