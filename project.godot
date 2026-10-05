@@ -46,6 +46,10 @@ enabled=PackedStringArray("res://addons/GodotAndroidYandexAds/plugin.cfg", "res:
 
 theme/default_font_multichannel_signed_distance_field=true
 
+[internationalization]
+
+locale/fallback="ru"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
@@ -63,7 +67,3 @@ interstitial_id="demo-interstitial-yandex"
 rewarded_id="demo-rewarded-yandex"
 age_restricted_user=false
 user_consent=false
-
-[internationalization]
-
-locale/fallback="ru"

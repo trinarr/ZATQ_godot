@@ -2,8 +2,14 @@
 
 importer="csv_translation"
 type="Translation"
+uid="uid://cb82kytn2ores"
 
 [deps]
+
+files=["res://locales/episode3.ru.translation"]
+
+source_file="res://locales/episode3.csv"
+dest_files=["res://locales/episode3.ru.translation"]
 
 [params]
 
