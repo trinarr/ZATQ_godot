@@ -1,15 +1,16 @@
 extends RefCounted
+const RESULT := preload("res://scripts/ui/result_screen.gd")
 # Coordinates use the original Flash frame; Main applies the uniform 2x scale.
 static func draw(ui: Control, node: Dictionary) -> void:
 	var artwork: String = node.get("art", "")
 	var story_text: String = node.get("text", "")
 	if Quest.flags.Auto == 0: artwork = node.get("art_on_foot", artwork)
 	if Quest.flags.Auto == 0: story_text = node.get("text_on_foot", story_text)
-	if node.kind not in ["city_death", "city_ending"]: ui._set_backdrop(load("res://assets/flash_ui/" + artwork + ".png"), not node.get("clean_background",false))
-	else: ui._set_backdrop(load("res://assets/flash_ui/background.png"))
 	if node.kind in ["city_death", "city_ending"]:
-		ui._art(artwork)
-	elif Quest.current_id == "metro_junction":
+		RESULT.draw(ui,node)
+		return
+	ui._set_backdrop(load("res://assets/flash_ui/" + artwork + ".png"), not node.get("clean_background",false))
+	if Quest.current_id == "metro_junction":
 		ui._set_backdrop(load("res://assets/flash_ui/adaptive_metro_background.png"))
 		ui._art("adaptive_metro_controls")
 	if node.has("controls_art"):
@@ -28,15 +29,6 @@ static func draw(ui: Control, node: Dictionary) -> void:
 			ui._hit(node.choices[i].text, Rect2(60,54+i*65,349,64),func(): ui._choose(index))
 		for rect in [Rect2(0,0,800,35),Rect2(0,35,45,310),Rect2(730,35,70,310),Rect2(0,345,800,135)]:
 			ui._hit("Закрыть выбор",rect,func(): Quest._enter(node.back))
-	elif kind in ["city_death", "city_ending"]:
-		ui._text("Итог: жив" if kind == "city_ending" else "Итог: погиб",Rect2(73,75,652,30),24,true)
-		ui._text(node.text,Rect2(162,112,549,230),24)
-		if kind == "city_ending":
-			ui._text("Найдено финалов: %d/3" % Quest.episode1_stats.endings.size(),Rect2(164,314,400,30),20)
-		ui._hit("Начать заново",Rect2(590,355,73,70),ui._start)
-		ui._hit("В меню",Rect2(665,355,73,70),ui._show_menu)
-		ui._text("Сначала",Rect2(566,431,120,27),18,false,true)
-		ui._text("В меню",Rect2(674,431,100,27),18,false,true)
 	elif kind == "city_cutscene":
 		var duration: float = node.auto_seconds
 		ui.cutscene.start(duration)
