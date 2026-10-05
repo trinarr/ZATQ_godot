@@ -1,10 +1,13 @@
 extends Control
 
+const SAFE_CANVAS := preload("res://scripts/ui/adaptive_landscape_canvas.gd")
+const ALPHA_HOTSPOT := preload("res://scripts/ui/alpha_hotspot.gd")
 const CITY := preload("res://scripts/ui/city_gameplay.gd")
 const LAYOUT := preload("res://scripts/ui/landscape_stage_layout.gd")
 const TITLE_FONT: Font = preload("res://fonts/flash/font_1.ttf")
 const BODY_FONT: Font = preload("res://fonts/flash/font_2.ttf")
 const TV_FONT: Font = preload("res://fonts/flash/font_2836.ttf")
+var viewport_canvas: Control
 var screen: Control
 var overlay: Control
 var music := AudioStreamPlayer.new()
@@ -23,6 +26,10 @@ var selector_index: int = 0
 var selectors: Array = []
 
 func _ready() -> void:
+	get_window().content_scale_aspect = Window.CONTENT_SCALE_ASPECT_EXPAND
+	RenderingServer.set_default_clear_color(Color.BLACK)
+	viewport_canvas = SAFE_CANVAS.new()
+	add_child(viewport_canvas)
 	selectors = JSON.parse_string(FileAccess.get_file_as_string("res://data/selectors.json"))
 	add_child(music)
 	add_child(effects)
@@ -58,6 +65,8 @@ func _notification(what: int) -> void:
 	if what == NOTIFICATION_APPLICATION_PAUSED:
 		Quest.save_game()
 		if playing and not paused: _show_pause()
+	elif what == NOTIFICATION_APPLICATION_RESUMED:
+		call_deferred("_fit_stage")
 	elif what == NOTIFICATION_WM_CLOSE_REQUEST:
 		Quest.save_game()
 
@@ -76,29 +85,37 @@ func _unhandled_key_input(event: InputEvent) -> void:
 func _fit_stage() -> void:
 	if not is_instance_valid(screen): return
 	var viewport_size: Vector2 = get_viewport_rect().size
-	var fit: float = LAYOUT.fit_scale(viewport_size)
+	var safe: Rect2 = viewport_canvas.update_layout(viewport_size)
+	var fit: float = LAYOUT.fit_scale(safe.size)
 	screen.scale = Vector2.ONE * fit
-	screen.position = LAYOUT.centered_offset(viewport_size)
+	screen.position = LAYOUT.centered_offset(safe.size)
 
 func _stop_cutscene() -> void:
 	cutscene.stop()
 	if cutscene_tween != null and cutscene_tween.is_valid(): cutscene_tween.kill()
 	cutscene_tween = null
 	if is_instance_valid(screen): screen.modulate = Color.WHITE
+	if is_instance_valid(viewport_canvas): viewport_canvas.background.modulate = Color.WHITE
 
 func _reset_screen() -> void:
 	television.stop()
 	_stop_cutscene()
 	if is_instance_valid(screen):
-		remove_child(screen)
+		screen.get_parent().remove_child(screen)
 		screen.queue_free()
 	overlay = null
 	screen = Control.new()
 	screen.size = LAYOUT.BASE_SIZE
-	add_child(screen)
+	viewport_canvas.safe_layer.add_child(screen)
+	_set_backdrop(load("res://assets/flash_ui/background.png"))
 	_fit_stage()
 
+func _set_backdrop(texture: Texture2D, crop_pause: bool = false) -> void:
+	viewport_canvas.set_background(texture, crop_pause)
+
 func _art(filename: String, parent: Control = null, rect: Rect2 = Rect2(0,0,800,480)) -> TextureRect:
+	if filename in ["menu", "menu_off", "help"] or filename.begins_with("selector_"):
+		filename = "adaptive_" + filename
 	rect = LAYOUT.scaled_rect(rect)
 	var image := TextureRect.new()
 	image.texture = load("res://assets/flash_ui/" + filename + ".png")
@@ -113,6 +130,7 @@ func _art(filename: String, parent: Control = null, rect: Rect2 = Rect2(0,0,800,
 func _image(filename: String) -> void:
 	var image := TextureRect.new()
 	image.texture = load("res://assets/images/" + filename)
+	_set_backdrop(image.texture)
 	image.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	image.size = LAYOUT.BASE_SIZE
 	image.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -136,9 +154,12 @@ func _text(text: String, rect: Rect2, font_size: int = 24, title: bool = false, 
 	label.set_deferred("size",rect.size)
 	return label
 
-func _hit(name: String, rect: Rect2, action: Callable, parent: Control = null) -> Button:
+func _hit(name: String, rect: Rect2, action: Callable, parent: Control = null, mask: String = "") -> Button:
 	rect = LAYOUT.scaled_rect(rect)
-	var button := Button.new()
+	var button: Button = Button.new() if mask.is_empty() else ALPHA_HOTSPOT.new()
+	if not mask.is_empty():
+		button.hit_image = load("res://assets/flash_ui/" + mask + ".png").get_image()
+		if button.hit_image.is_compressed(): button.hit_image.decompress()
 	button.name = name
 	button.position = rect.position
 	button.size = rect.size
@@ -153,7 +174,8 @@ func _hit(name: String, rect: Rect2, action: Callable, parent: Control = null) -
 
 func _shade(parent: Control, alpha: float = 0.65) -> void:
 	var shade := ColorRect.new()
-	shade.size = LAYOUT.BASE_SIZE
+	shade.position = -screen.position / screen.scale
+	shade.size = viewport_canvas.safe_layer.size / screen.scale
 	shade.color = Color(0,0,0,alpha)
 	parent.add_child(shade)
 
@@ -208,8 +230,10 @@ func _draw_selector() -> void:
 		_text("Последний результат: отсутствует",Rect2(435,162,239,34),16)
 		_text("Количество вопросов: " + entry.questions,Rect2(132,280,282,31),19,false,true)
 	else:
-		_text(": 0",Rect2(500,160,57,28),21)
-		_text(": 0",Rect2(585,160,57,28),21)
+		_text(": %d" % (Quest.episode1_stats.wins if entry.available else 0),Rect2(500,160,57,28),21)
+		_text(": %d" % (Quest.episode1_stats.losses if entry.available else 0),Rect2(585,160,57,28),21)
+	if selector_kind == "episodes" and entry.available:
+		_text("Финалы: %d/3" % Quest.episode1_stats.endings.size(),Rect2(435,313,239,28),18)
 	_hit("Предыдущий",Rect2(99,69,57,43),func(): _cycle_selector(-1))
 	_hit("Следующий",Rect2(648,69,62,43),func(): _cycle_selector(1))
 	_hit("Начать",Rect2(310,351,205,48),_selector_start)
@@ -315,7 +339,8 @@ func _show_story() -> void:
 	var node: Dictionary = Quest.current()
 	var kind: String = node.get("kind", "story")
 	_reset_screen()
-	_image(node.get("image","Fon1_1.png"))
+	if not kind.begins_with("city_"):
+		_image(node.get("image","Fon1_1.png"))
 	if previous_node != Quest.current_id:
 		effects.stop()
 		_play_sound(transition_sound if not transition_sound.is_empty() else node.get("sound", ""))

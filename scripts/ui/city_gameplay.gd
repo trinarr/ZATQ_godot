@@ -2,8 +2,18 @@ extends RefCounted
 # Coordinates use the original Flash frame; Main applies the uniform 2x scale.
 static func draw(ui: Control, node: Dictionary) -> void:
 	var artwork: String = node.get("art", "")
+	var story_text: String = node.get("text", "")
 	if Quest.flags.Auto == 0: artwork = node.get("art_on_foot", artwork)
-	ui._art(artwork)
+	if Quest.flags.Auto == 0: story_text = node.get("text_on_foot", story_text)
+	if node.kind not in ["city_death", "city_ending"]: ui._set_backdrop(load("res://assets/flash_ui/" + artwork + ".png"), not node.get("clean_background",false))
+	else: ui._set_backdrop(load("res://assets/flash_ui/background.png"))
+	if node.kind in ["city_death", "city_ending"]:
+		ui._art(artwork)
+	elif Quest.current_id == "metro_junction":
+		ui._set_backdrop(load("res://assets/flash_ui/adaptive_metro_background.png"))
+		ui._art("adaptive_metro_controls")
+	if node.has("controls_art"):
+		ui._art(node.controls_art)
 	var kind: String = node.kind
 	if kind == "city_decision":
 		ui._shade(ui.screen, 0.6)
@@ -18,9 +28,11 @@ static func draw(ui: Control, node: Dictionary) -> void:
 			ui._hit(node.choices[i].text, Rect2(60,54+i*65,349,64),func(): ui._choose(index))
 		for rect in [Rect2(0,0,800,35),Rect2(0,35,45,310),Rect2(730,35,70,310),Rect2(0,345,800,135)]:
 			ui._hit("Закрыть выбор",rect,func(): Quest._enter(node.back))
-	elif kind == "city_death":
-		ui._text("Итог: погиб",Rect2(73,75,652,30),24,true)
+	elif kind in ["city_death", "city_ending"]:
+		ui._text("Итог: жив" if kind == "city_ending" else "Итог: погиб",Rect2(73,75,652,30),24,true)
 		ui._text(node.text,Rect2(162,112,549,230),24)
+		if kind == "city_ending":
+			ui._text("Найдено финалов: %d/3" % Quest.episode1_stats.endings.size(),Rect2(164,314,400,30),20)
 		ui._hit("Начать заново",Rect2(590,355,73,70),ui._start)
 		ui._hit("В меню",Rect2(665,355,73,70),ui._show_menu)
 		ui._text("Сначала",Rect2(566,431,120,27),18,false,true)
@@ -30,23 +42,53 @@ static func draw(ui: Control, node: Dictionary) -> void:
 		ui.cutscene.start(duration)
 		ui.cutscene_tween = ui.create_tween().bind_node(ui.screen)
 		ui.cutscene_tween.tween_property(ui.screen,"modulate:a",0.0,duration)
+		ui.cutscene_tween.parallel().tween_property(ui.viewport_canvas.background,"modulate:a",0.0,duration)
 	else:
+		for block: Dictionary in node.get("blocks",[]):
+			var b: Array = block.rect.duplicate()
+			if "Hist" in block.get("path", ""):
+				var band := ColorRect.new()
+				band.position = Vector2(-ui.screen.position.x/ui.screen.scale.x, maxf(0,b[1]-6)*2)
+				band.size = Vector2(ui.viewport_canvas.safe_layer.size.x/ui.screen.scale.x,(b[3]+12)*2)
+				band.color = Color.BLACK
+				band.mouse_filter = Control.MOUSE_FILTER_IGNORE
+				ui.screen.add_child(band)
+			if b[1] < 128 and b[0] < 70:
+				b[2] -= 70 - b[0]
+				b[0] = 70
+			var block_font: Font = ui.BODY_FONT
+			if block.font in ["SegoeScript", "Segoe Script"]:
+				block_font = load("res://fonts/flash/font_2508.ttf")
+			elif block.font == "B52 Regular":
+				block_font = load("res://fonts/flash/font_2511.ttf")
+			var block_size: int = block.size
+			while block_size > 14 and block_font.get_multiline_string_size(block.text,HORIZONTAL_ALIGNMENT_LEFT,b[2],block_size).y > b[3]:
+				block_size -= 1
+			var label: Label = ui._text(block.text,Rect2(b[0],b[1],b[2],b[3]),block_size)
+			label.add_theme_font_override("font",block_font)
 		if node.has("text_rect"):
 			var panel: Array = node.panel_rect
+			if Quest.flags.Auto == 0: panel = node.get("panel_rect_on_foot",panel)
 			var shade := ColorRect.new()
 			var rect: Rect2 = ui.LAYOUT.scaled_rect(Rect2(panel[0],panel[1],panel[2],panel[3]))
-			shade.position = rect.position
-			shade.size = rect.size
+			shade.position = Vector2(-ui.screen.position.x/ui.screen.scale.x,rect.position.y)
+			shade.size = Vector2(ui.viewport_canvas.safe_layer.size.x/ui.screen.scale.x,rect.size.y)
 			shade.color = Color.BLACK
 			shade.mouse_filter = Control.MOUSE_FILTER_IGNORE
 			ui.screen.add_child(shade)
-			var box: Array = node.text_rect
+			var box: Array = node.text_rect.duplicate()
+			if Quest.flags.Auto == 0: box = node.get("text_rect_on_foot",box).duplicate()
+			if box[1] < 128 and box[0] < 70:
+				box[2] -= 70 - box[0]
+				box[0] = 70
 			var font_size: int = 24
-			while font_size > 15 and ui.BODY_FONT.get_multiline_string_size(node.text,HORIZONTAL_ALIGNMENT_LEFT,box[2],font_size).y > box[3]:
+			while font_size > 15 and ui.BODY_FONT.get_multiline_string_size(story_text,HORIZONTAL_ALIGNMENT_LEFT,box[2],font_size).y > box[3]:
 				font_size -= 1
-			ui._text(node.text,Rect2(box[0],box[1],box[2],box[3]),font_size)
+			ui._text(story_text,Rect2(box[0],box[1],box[2],box[3]),font_size)
 		for i in node.choices.size():
 			var index: int = i
 			var r: Array = node.choices[i].get("rect",[70,0,730,480])
-			ui._hit(node.choices[i].text,Rect2(r[0],r[1],r[2],r[3]),func(): ui._choose(index))
-	if kind not in ["city_decision", "city_death"]: ui._hit("Пауза",Rect2(0,5,60,123),ui._show_pause)
+			ui._hit(node.choices[i].text,Rect2(r[0],r[1],r[2],r[3]),func(): ui._choose(index),null,node.choices[i].get("mask",""))
+	if kind not in ["city_decision", "city_death", "city_ending"]:
+		ui._art("pause_button")
+		ui._hit("Пауза",Rect2(0,5,60,123),ui._show_pause)

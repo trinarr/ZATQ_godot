@@ -19,6 +19,8 @@ var channel: int = 0
 var sound_enabled: bool = true
 var has_progress: bool = false
 var recovery_message: String = ""
+var episode1_stats: Dictionary = {"wins":0,"losses":0,"endings":[]}
+var result_recorded: bool = false
 
 func _ready() -> void:
 	var content: Variant = JSON.parse_string(FileAccess.get_file_as_string(CONTENT_PATH))
@@ -27,6 +29,9 @@ func _ready() -> void:
 	var city_content: Variant = JSON.parse_string(FileAccess.get_file_as_string("res://data/city_routes.json"))
 	if city_content is Dictionary and city_content.get("nodes") is Dictionary:
 		nodes.merge(city_content.nodes, true)
+	var episode_content: Variant = JSON.parse_string(FileAccess.get_file_as_string("res://data/episode1_routes.json"))
+	if episode_content is Dictionary and episode_content.get("nodes") is Dictionary:
+		nodes.merge(episode_content.nodes, true)
 	_load_save()
 
 func current() -> Dictionary:
@@ -41,6 +46,7 @@ func available_choices() -> Array:
 	return result
 
 func new_game() -> void:
+	result_recorded = false
 	flags = {"TakenKey": false, "Auto": 0}
 	channel = 0
 	has_progress = true
@@ -53,8 +59,21 @@ func _enter(id: String) -> void:
 	channel = 0
 	for key in current().get("set", {}):
 		flags[key] = current().set[key]
+	_record_result()
 	save_game()
 	changed.emit()
+
+func _record_result() -> void:
+	if result_recorded or not current().has("result_id"): return
+	result_recorded = true
+	var node: Dictionary = current()
+	if node.get("alive",false):
+		episode1_stats.wins += 1
+		var result_id: int = int(node.result_id)
+		if result_id not in episode1_stats.endings:
+			episode1_stats.endings.append(result_id)
+	else:
+		episode1_stats.losses += 1
 
 func choose(index: int) -> void:
 	var choices: Array = available_choices()
@@ -88,7 +107,7 @@ func set_sound(enabled: bool) -> void:
 	save_game()
 
 func _snapshot() -> Dictionary:
-	return {"version":VERSION,"current_id":current_id,"flags":flags,"channel":channel,"sound_enabled":sound_enabled,"has_progress":has_progress}
+	return {"version":VERSION,"current_id":current_id,"flags":flags,"channel":channel,"sound_enabled":sound_enabled,"has_progress":has_progress,"episode1_stats":episode1_stats,"result_recorded":result_recorded}
 
 func _valid(data: Variant) -> bool:
 	if not data is Dictionary or data.get("version") != VERSION:
@@ -104,6 +123,19 @@ func _valid(data: Variant) -> bool:
 	var auto: Variant = data.flags.get("Auto")
 	if not (auto is int or auto is float) or auto != int(auto) or int(auto) not in [0, 1]:
 		return false
+	if data.has("result_recorded") and not data.result_recorded is bool: return false
+	if data.has("episode1_stats"):
+		var stats: Variant = data.episode1_stats
+		if not stats is Dictionary or not stats.get("endings") is Array: return false
+		for key: String in ["wins","losses"]:
+			var counter: Variant = stats.get(key)
+			if not (counter is int or counter is float) or counter < 0 or counter != int(counter): return false
+		var seen: Array = []
+		for ending: Variant in stats.endings:
+			if not (ending is int or ending is float) or ending != int(ending): return false
+			var result_id: int = int(ending)
+			if result_id not in [6,77,78] or result_id in seen: return false
+			seen.append(result_id)
 	var ch: Variant = data.get("channel")
 	return (ch is float or ch is int) and ch == int(ch) and ch >= 0 and ch < TV_IMAGES.size()
 
@@ -127,6 +159,13 @@ func _load_save() -> void:
 	channel = int(data.channel)
 	sound_enabled = data.sound_enabled
 	has_progress = data.has_progress
+	episode1_stats = {"wins":0,"losses":0,"endings":[]}
+	if data.has("episode1_stats"):
+		episode1_stats = {"wins":int(data.episode1_stats.wins),"losses":int(data.episode1_stats.losses),"endings":data.episode1_stats.endings.duplicate()}
+		for i: int in episode1_stats.endings.size():
+			episode1_stats.endings[i] = int(episode1_stats.endings[i])
+	result_recorded = data.get("result_recorded",false)
+	if has_progress: _record_result()
 
 func save_game() -> bool:
 	var file := FileAccess.open(tmp_path, FileAccess.WRITE)

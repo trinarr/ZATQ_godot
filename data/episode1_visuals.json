@@ -1,0 +1,818 @@
+{
+  "ep1_farm_entry_1": {
+    "symbol": 2598,
+    "frame": 0,
+    "overrides": {
+      "Mov.Hist": 0
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_farm_entry_1_controls": {
+    "symbol": 2598,
+    "frame": 0,
+    "overrides": {
+      "Mov.Hist": 0
+    },
+    "hide": [
+      "Mov",
+      "WallMoving",
+      "WallStreet"
+    ],
+    "photo": "",
+    "retain_text": true
+  },
+  "ep1_farm_entry_2_controls": {
+    "symbol": 2598,
+    "frame": 0,
+    "overrides": {
+      "Mov.Hist": 1
+    },
+    "hide": [
+      "Mov",
+      "WallMoving",
+      "WallStreet"
+    ],
+    "photo": "",
+    "retain_text": true
+  },
+  "ep1_farm_inside": {
+    "symbol": 2598,
+    "frame": 1,
+    "overrides": {},
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_farm_inside_controls": {
+    "symbol": 2598,
+    "frame": 1,
+    "overrides": {},
+    "hide": [
+      "Mov",
+      "WallMoving",
+      "WallStreet"
+    ],
+    "photo": "",
+    "retain_text": true
+  },
+  "ep1_farm_search": {
+    "symbol": 2598,
+    "frame": 2,
+    "overrides": {},
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_farm_leave": {
+    "symbol": 2598,
+    "frame": 3,
+    "overrides": {},
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_farm_noise": {
+    "symbol": 2598,
+    "frame": 4,
+    "overrides": {
+      "Mov": 9
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_farm_sound": {
+    "symbol": 2598,
+    "frame": 4,
+    "overrides": {
+      "Mov": 19
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_farm_awake": {
+    "symbol": 2598,
+    "frame": 4,
+    "overrides": {
+      "Mov": 29
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_farm_chase": {
+    "symbol": 2598,
+    "frame": 5,
+    "overrides": {
+      "Mov": 31
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "RunningZombies.jpg",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_forest_road": {
+    "symbol": 2791,
+    "frame": 0,
+    "overrides": {},
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_forest_walk": {
+    "symbol": 2791,
+    "frame": 1,
+    "overrides": {},
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_forest_village_1": {
+    "symbol": 2791,
+    "frame": 2,
+    "overrides": {
+      "Mov.Hist": 0
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_forest_village_1_controls": {
+    "symbol": 2791,
+    "frame": 2,
+    "overrides": {
+      "Mov.Hist": 0
+    },
+    "hide": [
+      "Mov",
+      "WallMoving",
+      "WallStreet"
+    ],
+    "photo": "",
+    "retain_text": true
+  },
+  "ep1_forest_house": {
+    "symbol": 2791,
+    "frame": 3,
+    "overrides": {},
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_forest_cellar": {
+    "symbol": 2791,
+    "frame": 4,
+    "overrides": {},
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_forest_marauder_1": {
+    "symbol": 2791,
+    "frame": 6,
+    "overrides": {
+      "Mov": 5
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_forest_marauder_2": {
+    "symbol": 2791,
+    "frame": 6,
+    "overrides": {
+      "Mov": 12
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_forest_marauder_3": {
+    "symbol": 2791,
+    "frame": 6,
+    "overrides": {
+      "Mov": 19
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_forest_enter": {
+    "symbol": 2791,
+    "frame": 7,
+    "overrides": {
+      "Mov": 5
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "ToForest.jpg",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_forest_lost": {
+    "symbol": 2791,
+    "frame": 8,
+    "overrides": {},
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_forest_lost_controls": {
+    "symbol": 2791,
+    "frame": 8,
+    "overrides": {},
+    "hide": [
+      "Mov",
+      "WallMoving",
+      "WallStreet"
+    ],
+    "photo": "",
+    "retain_text": true
+  },
+  "ep1_forest_horde": {
+    "symbol": 2791,
+    "frame": 9,
+    "overrides": {},
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_forest_caught": {
+    "symbol": 2791,
+    "frame": 10,
+    "overrides": {
+      "Mov": 6
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "CatchTheLeg.jpg",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_taxi_entry_1": {
+    "symbol": 2515,
+    "frame": 0,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 5
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "Taxi.jpg",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_taxi_depart": {
+    "symbol": 2515,
+    "frame": 1,
+    "overrides": {},
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_taxi_checkpoint": {
+    "symbol": 2515,
+    "frame": 2,
+    "overrides": {},
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_taxi_road": {
+    "symbol": 2515,
+    "frame": 3,
+    "overrides": {
+      "Mov": 14
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "RoadToFarm.png",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_taxi_house": {
+    "symbol": 2515,
+    "frame": 4,
+    "overrides": {
+      "Mov": 9
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "HouseOfBen.png",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_dorvud_entry_1": {
+    "symbol": 2968,
+    "frame": 0,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 9
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "DorvudIncome.jpg",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_dorvud_street": {
+    "symbol": 2968,
+    "frame": 1,
+    "overrides": {
+      "Mov": 14
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "ZombieDorvudOverlook.jpg",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_dorvud_shop": {
+    "symbol": 2968,
+    "frame": 2,
+    "overrides": {
+      "Mov": 5
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "DorvudShop.jpg",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_dorvud_stairs": {
+    "symbol": 2968,
+    "frame": 3,
+    "overrides": {
+      "Mov": 5
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "ShopBlack.jpg",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_dorvud_fall": {
+    "symbol": 2968,
+    "frame": 4,
+    "overrides": {
+      "Mov": 6
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "ZombieSecondFloor.jpg",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_dorvud_floor": {
+    "symbol": 2968,
+    "frame": 5,
+    "overrides": {},
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_dorvud_room": {
+    "symbol": 2968,
+    "frame": 6,
+    "overrides": {},
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_mainstreet_choice": {
+    "symbol": 2545,
+    "frame": 11,
+    "overrides": {},
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_mainstreet_choice_controls": {
+    "symbol": 2545,
+    "frame": 11,
+    "overrides": {
+      "But1": 1,
+      "But2": 1,
+      "But3": 1,
+      "But4": 1
+    },
+    "hide": [
+      "Mov",
+      "WallMoving",
+      "WallStreet"
+    ],
+    "photo": "",
+    "retain_text": true,
+    "omit_symbols": [
+      "Symbol 2518",
+      "Symbol 2521"
+    ],
+    "omit_root_shapes": true
+  },
+  "ep1_mainstreet_run": {
+    "symbol": 2545,
+    "frame": 16,
+    "overrides": {},
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_mainstreet_attack": {
+    "symbol": 2545,
+    "frame": 17,
+    "overrides": {
+      "Mov": 33
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_car_to_office": {
+    "symbol": 2979,
+    "frame": 0,
+    "overrides": {
+      "Mov.Hist": 1,
+      "Mov": 6
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "CarGet.jpg",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_result_alive": {
+    "symbol": 59,
+    "frame": 6,
+    "overrides": {
+      "Mov.Rezt": 0,
+      "Mov.Rezt.Symb": 1
+    },
+    "hide": [
+      "Itog",
+      "Mov.Rezt.Txt",
+      "Mov.Rezt.Txt1",
+      "Mov.Rezt.Advz",
+      "Mov.Rezt.Opt",
+      "Mov.But3",
+      "Mov.StrBut3"
+    ],
+    "photo": "",
+    "retain_text": true
+  },
+  "ep1_hit_2598_0_1": {
+    "symbol": 2598,
+    "frame": 0,
+    "overrides": {
+      "Mov.Hist": 0
+    },
+    "hide": [
+      "Mov",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "crop": [
+      600,
+      593,
+      1599,
+      960
+    ],
+    "transparent": true
+  },
+  "ep1_hit_2598_0_2": {
+    "symbol": 2598,
+    "frame": 0,
+    "overrides": {
+      "Mov.Hist": 0
+    },
+    "hide": [
+      "Mov",
+      "But1",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "crop": [
+      759,
+      311,
+      1354,
+      677
+    ],
+    "transparent": true
+  },
+  "ep1_hit_2598_1_1": {
+    "symbol": 2598,
+    "frame": 1,
+    "overrides": {},
+    "hide": [
+      "Mov",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "crop": [
+      790,
+      86,
+      982,
+      638
+    ],
+    "transparent": true
+  },
+  "ep1_hit_2598_1_2": {
+    "symbol": 2598,
+    "frame": 1,
+    "overrides": {},
+    "hide": [
+      "Mov",
+      "But1",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "crop": [
+      1282,
+      318,
+      1510,
+      504
+    ],
+    "transparent": true
+  },
+  "ep1_hit_2791_2_1": {
+    "symbol": 2791,
+    "frame": 2,
+    "overrides": {
+      "Mov.Hist": 0
+    },
+    "hide": [
+      "Mov",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "crop": [
+      785,
+      193,
+      1031,
+      332
+    ],
+    "transparent": true
+  },
+  "ep1_hit_2791_2_2": {
+    "symbol": 2791,
+    "frame": 2,
+    "overrides": {
+      "Mov.Hist": 0
+    },
+    "hide": [
+      "Mov",
+      "But1",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "crop": [
+      1106,
+      445,
+      1600,
+      758
+    ],
+    "transparent": true
+  },
+  "ep1_hit_2791_8_1": {
+    "symbol": 2791,
+    "frame": 8,
+    "overrides": {},
+    "hide": [
+      "Mov",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "crop": [
+      961,
+      839,
+      1354,
+      948
+    ],
+    "transparent": true
+  },
+  "ep1_hit_2791_8_2": {
+    "symbol": 2791,
+    "frame": 8,
+    "overrides": {},
+    "hide": [
+      "Mov",
+      "But1",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "crop": [
+      555,
+      669,
+      860,
+      840
+    ],
+    "transparent": true
+  }
+}
