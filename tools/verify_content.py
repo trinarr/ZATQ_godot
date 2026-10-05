@@ -5,7 +5,7 @@ root=Path(__file__).resolve().parents[1]
 from story_graph_format import load_all
 nodes=load_all(root)
 assert all(n.get('kind','story') != 'boundary' for n in nodes.values())
-assert sum(n.get('kind','story') == 'city_ending' for n in nodes.values()) == 6
+assert sum(n.get('kind','story') == 'city_ending' for n in nodes.values()) == 10
 for key,node in nodes.items():
     assert node.get('source'),key
     if 'image' in node: assert (root/'assets/images'/node['image']).is_file(),key
@@ -34,4 +34,6 @@ assert 'Поехать на машине' in catalog['actionscript']['NewItem.as
 assert 'Дойти пешком' in catalog['actionscript']['NewItem.as']
 assert {int(n['result_id']) for n in nodes.values() if n.get('episode')==2 and n.get('alive')} == {38,43,47}
 assert len([n for n in nodes.values() if n.get('episode')==2 and n.get('kind')=='city_death'])==14
-print('PASS: assets, sounds, complete Episodes I and II routes, original XFL/AS provenance.')
+assert {int(n['result_id']) for n in nodes.values() if n.get('episode')==3 and n.get('alive')} == {64,67,68,73}
+assert len({int(n.get('ending_id',n['result_id'])) for n in nodes.values() if n.get('episode')==3 and n.get('alive')})==3
+print('PASS: assets, sounds, complete Episodes I, II and III routes, original XFL/AS provenance.')

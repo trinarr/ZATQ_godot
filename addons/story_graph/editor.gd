@@ -3,6 +3,7 @@ extends VBoxContainer
 const MODEL = preload("res://addons/story_graph/graph.gd")
 const CANVAS = preload("res://addons/story_graph/canvas.gd")
 const GRAPH_SCENE = preload("res://addons/dialogue_nodes/editor/Graph.tscn")
+const QTE := preload("res://scripts/core/qte_rules.gd")
 const LABELS := {"scene":"Сцена", "choice":"Ответ", "condition":"Условие", "action":"Действие", "dialogue":"Реплика", "code":"Ввод кода", "qte":"QTE"}
 const COLORS := {"scene":Color("6d9bea"),"choice":Color("72caba"),"condition":Color("eab761"),"action":Color("bda0ed"),"dialogue":Color("69cbde"),"code":Color("e6a5cc"),"qte":Color("e77973")}
 var editor_plugin: EditorPlugin
@@ -38,7 +39,14 @@ func _ready() -> void:
  add_child(bar)
  episode.add_item("I. Первый эпизод",1)
  episode.add_item("II. Скорее мертв, чем жив",2)
+ for filename:String in DirAccess.get_files_at("res://data/story_graphs"):
+  if not filename.begins_with("episode") or not filename.ends_with(".json"):continue
+  var graph:Dictionary=MODEL.load_graph("res://data/story_graphs/"+filename)
+  var number:=int(graph.get("episode",0))
+  if number>2:episode.add_item(graph.get("title","Эпизод "+str(number)),number)
  episode.item_selected.connect(_switch_episode)
+ episode.clip_text=true
+ episode.custom_minimum_size.x=255
  bar.add_child(episode)
  button(bar,"Новый эпизод",_new_episode)
  button(bar,"Открыть…",_open_dialog)
@@ -146,7 +154,7 @@ func load_document(new_path: String) -> void:
  var loaded := MODEL.load_graph(new_path)
  if loaded.is_empty(): status.text = "Не удалось открыть " + new_path; return
  document = loaded
- if int(document.get("episode",1)) in [1,2]:episode.select(int(document.episode)-1)
+ _select_episode(int(document.get("episode",1)))
  path = new_path.trim_suffix(".draft")
  selected = ""
  dirty = false
@@ -154,6 +162,11 @@ func load_document(new_path: String) -> void:
  future.clear()
  rebuild()
  status.text = "Открыт " + path + ". Соединяйте выходы справа со входом блока слева."
+func _select_episode(number:int)->void:
+ for i:int in episode.item_count:
+  if episode.get_item_id(i)==number:episode.select(i);return
+ episode.add_item(document.get("title","Эпизод "+str(number)),number)
+ episode.select(episode.item_count-1)
 func _switch_episode(index: int) -> void:
  var p := "res://data/story_graphs/episode%d.json" % episode.get_item_id(index)
  if dirty:
@@ -166,7 +179,7 @@ func _switch_episode(index: int) -> void:
    if save_document(): load_document(p)
    confirm.queue_free())
   confirm.custom_action.connect(func(_a): load_document(p);confirm.queue_free())
-  confirm.canceled.connect(func(): episode.select(int(document.episode)-1);confirm.queue_free())
+  confirm.canceled.connect(func(): _select_episode(int(document.episode));confirm.queue_free())
   confirm.popup_centered()
  else: load_document(p)
 func _new_episode() -> void:
@@ -175,6 +188,7 @@ func _new_episode() -> void:
  dialog.dialog_text = "Номер эпизода (существующие файлы не перезаписываются)"
  var n := SpinBox.new()
  n.min_value = 3; n.max_value = 99; n.value = 3
+ while n.value<99 and FileAccess.file_exists("res://data/story_graphs/episode%d.json" % int(n.value)):n.value+=1
  dialog.add_child(n)
  add_child(dialog)
  dialog.confirmed.connect(func():
@@ -226,7 +240,11 @@ func port_labels(id: String) -> Dictionary:
    var ordinal: int=int(p.get_slice(":",1))
    result[p] = "Ответ " + str(ordinal+1)
    if type=="code" and ordinal<2:result[p]=["Код верен","Попытки исчерпаны"][ordinal]
-   elif type=="qte" and ordinal<2:result[p]=["Нажатия выполнены","Время истекло"][ordinal]
+   elif type=="qte":
+    var d:Dictionary=document.nodes[id].data
+    if d.get("qte_mode","")=="branch":
+     result[p] = d.get("targets",[])[ordinal].get("text","Направление") if ordinal<2 else "Время истекло"
+    elif ordinal<2:result[p]=["Нажатия выполнены","Время истекло"][ordinal]
   if type in ["code","qte"] and result.is_empty():
    result["choice:0"] = "Результат 1";result["choice:1"] = "Результат 2"
   for p: String in ["entry","pickup","back"]:
@@ -458,6 +476,11 @@ func _inspect_id(id: String) -> void:
   text_field(inspector,"Переменная с кодом",d.get("code_variable","code"),func(v):begin_edit();d.code_variable=v)
   _number_field(d,"attempts","Количество попыток",1,100)
  if node.type=="qte":
+  if d.has("taps_range"):
+   label(inspector,"Случайное число нажатий: "+str(d.taps_range))
+   button(inspector,"Использовать постоянное число",func():begin_edit();d.erase("taps_range");_inspect_id(id))
+  if d.get("qte_mode","")=="branch":label(inspector,"Два направления и третий выход по таймеру")
+  if d.has("target_windows"):label(inspector,"Нажатия в окнах: "+str(d.target_windows.size())+". Координаты и время — в свойствах JSON.")
   _number_field(d,"taps","Требуемые нажатия",1,1000)
   _number_field(d,"seconds","Время, секунд",0.1,300)
   var mode:=OptionButton.new();mode.add_item("Неподвижная цель");mode.add_item("Случайная цель")
@@ -563,14 +586,22 @@ func _draw_preview() -> void:
     if attempts[0]<=0:simulator.choose(1)
     else:entry.placeholder_text="Осталось попыток: "+str(attempts[0]);entry.clear())
  elif kind=="activity_qte":
-  var count:Array=[0];var remaining:Array=[float(d.get("seconds",5))]
-  var timer:=Timer.new();timer.wait_time=0.05;preview_box.add_child(timer)
+  var qstate:Dictionary={"taps":0,"remaining":float(d.get("seconds",5))}
+  QTE.initialize(qstate,d)
+  var timer:=Timer.new();timer.wait_time=0.02;preview_box.add_child(timer)
   var meter:=label(preview_box,"")
-  button(preview_box,"Нажать",func():count[0]+=1;meter.text="Нажатия: %d/%d" % [count[0],int(d.get("taps",10))];if count[0]>=int(d.get("taps",10)):simulator.choose(0))
+  var target_count:=2 if d.get("qte_mode","")=="branch" else 1
+  for i:int in target_count:
+   var title:String=d.get("targets",[])[i].get("text","Направление") if target_count==2 else "Нажать"
+   button(preview_box,title,func():
+    var outcome:=QTE.press(qstate,d,i)
+    if outcome>=0:timer.stop();simulator.choose(outcome))
   timer.timeout.connect(func():
    if not is_instance_valid(meter):return
-   remaining[0]-=0.05;meter.text="Время: %.1f · %d/%d" % [remaining[0],count[0],int(d.get("taps",10))]
-   if remaining[0]<=0:timer.stop();simulator.choose(1))
+   qstate.remaining=maxf(0,float(qstate.remaining)-0.02)
+   meter.text="Время: %.2f · %d/%d" % [qstate.remaining,qstate.taps,qstate.required_taps]
+   if d.has("target_windows"):meter.text+=" · окно: "+str(QTE.window_index(qstate,d)+1)
+   if qstate.remaining<=0:timer.stop();simulator.choose(QTE.timeout(qstate,d)))
   timer.start()
  else:
   var choices:Array=simulator.available_choices()

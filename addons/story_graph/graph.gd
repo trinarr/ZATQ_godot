@@ -107,11 +107,21 @@ static func validate(graph: Dictionary) -> PackedStringArray:
   var data: Dictionary = record.data
   if record.type in ["code","qte"]:
    var outcomes := ports(graph,id,"choice:")
-   if outcomes.size()!=2: errors.append("Активности нужны два результата: " + id)
+   var expected_outcomes: int = 3 if record.type=="qte" and data.get("qte_mode","")=="branch" else 2
+   if outcomes.size()!=expected_outcomes: errors.append("Активности нужны %d результата: %s" % [expected_outcomes,id])
    for port: String in outcomes:
     if not target(graph,target(graph,id,port),"requires").is_empty():errors.append("Результат активности не должен скрываться: "+id)
   if record.type=="qte" and (float(data.get("seconds",0))<=0 or int(data.get("taps",0))<=0):errors.append("Укажите время и число нажатий: "+id)
   if record.type=="code" and int(data.get("attempts",0))<=0:errors.append("Укажите число попыток: "+id)
+  if record.type=="qte":
+   var range_data: Array = data.get("taps_range",[])
+   if not range_data.is_empty() and (range_data.size()!=2 or int(range_data[0])<1 or int(range_data[1])<int(range_data[0])):errors.append("Неверный диапазон нажатий: "+id)
+   var previous_end: float = 0.0
+   for window: Dictionary in data.get("target_windows",[]):
+    if float(window.get("start",-1))<previous_end or float(window.get("end",0))<=float(window.get("start",0)) or float(window.get("end",0))>float(data.get("seconds",0)) or window.get("rect",[]).size()!=4:errors.append("Неверное окно QTE: "+id)
+    previous_end=float(window.get("end",0))
+   for frame: String in data.get("animation_frames",[]):
+    if not FileAccess.file_exists("res://assets/flash_ui/"+frame+".webp"):errors.append("Не найден кадр: "+id+" / "+frame)
   for key: String in ["art","art_on_foot","controls_art","decision_art","background_art"]:
    var art: String = data.get(key,"")
    if art.is_empty():continue
