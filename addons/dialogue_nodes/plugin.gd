@@ -22,6 +22,8 @@ func _enter_tree() -> void:
 	editor.name = "Диалоги Dialogue Nodes"
 	tabs = TabContainer.new()
 	tabs.name = "StoryWorkspace"
+	tabs.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	tabs.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	tabs.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	story_editor = preload("res://addons/story_graph/editor.gd").new()
 	story_editor.name = "Эпизоды"
