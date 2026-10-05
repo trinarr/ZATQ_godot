@@ -1,8 +1,6 @@
 Godot 4.6.1 stable
-Headless editor import: passed
-Godot Engine v4.6.1.stable.official.14d19694e - https://godotengine.org
-
-PASS: 25 runtime checks; opening routes, UI, timer, sound, save recovery
-
-Content references: passed (1543 symbols, 514 AS files).
-Android export / device checks: not performed.
+25 opening/save checks: passed
+52 Flash UI checks: passed
+Desktop visual QA: 8 captured screens inspected
+PNG decoding and source references: passed
+Android export / device tests: not performed
