@@ -39,7 +39,7 @@ func run() -> void:
   quest._enter("wake")
   await settle()
   check_tab(scene,"Пауза")
-  check(scene.viewport_canvas.background.texture.resource_path.ends_with("layout_bg_wake.png"),"one dedicated wake background")
+  check(scene.viewport_canvas.art_layer.get_child_count()>0,"wake uses composed artwork")
   check(scene.screen.size==Vector2(1600,960) and is_equal_approx(scene.screen.scale.x,scene.screen.scale.y),"uniform 1600x960 UI")
   for child: Node in scene.screen.get_children():
    if child is TextureRect and child!=scene.edge_tab:
@@ -55,7 +55,7 @@ func run() -> void:
  for id: String in ["screams","morning_choice","transport","lift","lift_button","tv","city_car"]:
   quest._enter(id)
   await settle()
-  check(scene.viewport_canvas.background.texture!=null,"background: "+id)
+  check(scene.viewport_canvas.art_layer.get_child_count()>0 or scene.viewport_canvas.background.texture!=null,"background: "+id)
   check_tab(scene,"Пауза")
  scene.queue_free()
  await settle()

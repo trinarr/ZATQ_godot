@@ -2,6 +2,9 @@ extends Control
 # Background fills the safe rectangle. Authored UI keeps its uniform scale.
 var safe_layer := Control.new()
 var background := TextureRect.new()
+var art_layer := Control.new()
+var component_background_active := false
+const COMPONENTS := preload("res://scripts/ui/flash_components.gd")
 var black := ColorRect.new()
 var safe_override: Rect2 = Rect2()
 
@@ -17,6 +20,8 @@ func _init() -> void:
 	background.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
 	background.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	safe_layer.add_child(background)
+	art_layer.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	background.add_child(art_layer)
 
 static func map_safe_rect(viewport_size: Vector2, window_rect: Rect2, display_safe: Rect2) -> Rect2:
 	var full := Rect2(Vector2.ZERO, viewport_size)
@@ -40,9 +45,13 @@ func update_layout(viewport_size: Vector2) -> Rect2:
 	safe_layer.position = safe.position
 	safe_layer.size = safe.size
 	background.size = safe.size
+	var cover := maxf(safe.size.x / 1600.0, safe.size.y / 960.0)
+	art_layer.scale = Vector2.ONE * cover
+	art_layer.position = (safe.size - Vector2(1600,960) * cover) * 0.5
 	return safe
 
 func set_background(texture: Texture2D, crop_pause: bool = false) -> void:
+	_clear_art()
 	if crop_pause:
 		# New city art contains a baked pause tab at the left edge. Omit that tab
 		# from the decorative fill so there is only one pause control on screen.
@@ -53,3 +62,15 @@ func set_background(texture: Texture2D, crop_pause: bool = false) -> void:
 		background.texture = atlas
 	else:
 		background.texture = texture
+
+func _clear_art() -> void:
+	component_background_active = false
+	for child: Node in art_layer.get_children():
+		art_layer.remove_child(child)
+		child.queue_free()
+
+func set_component_background(parts: Array) -> void:
+	_clear_art()
+	background.texture = null
+	component_background_active = true
+	COMPONENTS.draw(art_layer,parts)

@@ -42,11 +42,11 @@ func run() -> void:
 		check(scene.screen.get_parent()==canvas.safe_layer,"stage belongs to safe clip container")
 	scene._start()
 	quest._enter("city_car")
-	check(scene.viewport_canvas.background.texture is AtlasTexture,"city backdrop excludes duplicate pause tab")
+	check(scene.viewport_canvas.art_layer.get_child_count()>0,"city backdrop uses independent art components")
 	scene._show_pause()
 	check(scene.overlay.get_parent()==scene.screen,"pause also stays inside safe area")
 	scene._show_menu()
-	check(not scene.viewport_canvas.background.texture is AtlasTexture,"menu uses clean background without UI")
+	check(scene.viewport_canvas.art_layer.get_child_count()==0,"menu uses clean background without UI")
 	scene.queue_free()
 	await create_timer(0.25).timeout
 	for path: String in [quest.save_path,quest.tmp_path,quest.backup_path]:

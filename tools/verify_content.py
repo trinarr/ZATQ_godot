@@ -4,6 +4,7 @@ from pathlib import Path
 root=Path(__file__).resolve().parents[1]
 from story_graph_format import load_all
 nodes=load_all(root)
+components=json.loads((root/"data/episode1_components.json").read_text())
 assert all(n.get('kind','story') != 'boundary' for n in nodes.values())
 assert sum(n.get('kind','story') == 'city_ending' for n in nodes.values()) == 10
 for key,node in nodes.items():
@@ -15,7 +16,7 @@ for key,node in nodes.items():
         for target in ('next','with_keys','by_car'):
             if target in choice: assert choice[target] in nodes,(key,choice[target])
     for key in ('art','art_on_foot','controls_art'):
-        if key in node: assert (root/'assets/flash_ui'/(node[key]+'.'+(node.get('art_extension','png') if key in ['art','art_on_foot'] else 'png'))).is_file(),(node,key)
+        if key in node and node[key] not in components: assert (root/'assets/flash_ui'/(node[key]+'.'+(node.get('art_extension','png') if key in ['art','art_on_foot'] else 'png'))).is_file(),(node,key)
     for choice in node.get('choices',[]):
         if 'sound' in choice: assert (root/'assets/audio'/(choice['sound']+'.mp3')).is_file()
     if 'back' in node: assert node['back'] in nodes

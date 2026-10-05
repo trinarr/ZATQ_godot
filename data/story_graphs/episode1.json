@@ -164,9 +164,7 @@
 		"transport__choice_1__requires": {
 			"type": "condition",
 			"data": {
-				"when": {
-
-				},
+				"when": {},
 				"unless_keys": true
 			},
 			"position": [
@@ -2062,7 +2060,6 @@
 				"text": "@loc:episode1.nodes.death_2.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_death",
-				"art": "city_result",
 				"result_id": 2.0,
 				"alive": false
 			},
@@ -2079,7 +2076,6 @@
 				"text": "@loc:episode1.nodes.death_3.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_death",
-				"art": "city_result",
 				"result_id": 3.0,
 				"alive": false
 			},
@@ -2096,7 +2092,6 @@
 				"text": "@loc:episode1.nodes.death_5.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_death",
-				"art": "city_result",
 				"result_id": 5.0,
 				"alive": false
 			},
@@ -2113,7 +2108,6 @@
 				"text": "@loc:episode1.nodes.death_10.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_death",
-				"art": "city_result",
 				"result_id": 10.0,
 				"alive": false
 			},
@@ -2130,7 +2124,6 @@
 				"text": "@loc:episode1.nodes.death_11.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_death",
-				"art": "city_result",
 				"result_id": 11.0,
 				"alive": false
 			},
@@ -4903,7 +4896,6 @@
 				"source": "ResultBad(1)",
 				"kind": "city_death",
 				"image": "OnTheStreet.jpg",
-				"art": "city_result",
 				"text": "@loc:episode1.nodes.death_1.data.text",
 				"result_id": 1.0,
 				"alive": false
@@ -4920,7 +4912,6 @@
 				"source": "ResultBad(4)",
 				"kind": "city_death",
 				"image": "OnTheStreet.jpg",
-				"art": "city_result",
 				"text": "@loc:episode1.nodes.death_4.data.text",
 				"result_id": 4.0,
 				"alive": false
@@ -4937,7 +4928,6 @@
 				"source": "ResultBad(7)",
 				"kind": "city_death",
 				"image": "OnTheStreet.jpg",
-				"art": "city_result",
 				"text": "@loc:episode1.nodes.death_7.data.text",
 				"result_id": 7.0,
 				"alive": false
@@ -4954,7 +4944,6 @@
 				"source": "ResultBad(8)",
 				"kind": "city_death",
 				"image": "OnTheStreet.jpg",
-				"art": "city_result",
 				"text": "@loc:episode1.nodes.death_8.data.text",
 				"result_id": 8.0,
 				"alive": false
@@ -4971,7 +4960,6 @@
 				"source": "ResultBad(9)",
 				"kind": "city_death",
 				"image": "OnTheStreet.jpg",
-				"art": "city_result",
 				"text": "@loc:episode1.nodes.death_9.data.text",
 				"result_id": 9.0,
 				"alive": false
@@ -4988,7 +4976,6 @@
 				"source": "ResultBad(6)",
 				"kind": "city_ending",
 				"image": "OnTheStreet.jpg",
-				"art": "ep1_result_alive",
 				"text": "@loc:episode1.nodes.ending_6.data.text",
 				"result_id": 6.0,
 				"alive": true
@@ -5005,7 +4992,6 @@
 				"source": "ResultBad(77)",
 				"kind": "city_ending",
 				"image": "OnTheStreet.jpg",
-				"art": "ep1_result_alive",
 				"text": "@loc:episode1.nodes.ending_77.data.text",
 				"result_id": 77.0,
 				"alive": true
@@ -5022,7 +5008,6 @@
 				"source": "ResultBad(78)",
 				"kind": "city_ending",
 				"image": "OnTheStreet.jpg",
-				"art": "ep1_result_alive",
 				"text": "@loc:episode1.nodes.ending_78.data.text",
 				"result_id": 78.0,
 				"alive": true

@@ -40,4 +40,6 @@ def main():
     if '/ZombieApocalypse/LIBRARY/' in name and name.endswith(('.xml','.png','.jpg')):
      (library/Path(name).name).write_bytes(z.read(name))
   build(library,args.output)
+  from build_episode1_components import build as build_components
+  build_components(args.archive,args.output,only=["result_dead","result_alive"])
 if __name__=='__main__':main()

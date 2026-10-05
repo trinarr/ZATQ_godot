@@ -32,14 +32,18 @@ var selectors: Array = []
 var art_text: Dictionary = {}
 var art_brushes: Dictionary = {}
 var art_components: Dictionary = {}
+var episode_components: Dictionary = {}
+const COMPONENTS := preload("res://scripts/ui/flash_components.gd")
 
 func _ready() -> void:
 	get_window().content_scale_aspect = Window.CONTENT_SCALE_ASPECT_EXPAND
 	RenderingServer.set_default_clear_color(Color.BLACK)
 	viewport_canvas = SAFE_CANVAS.new()
 	add_child(viewport_canvas)
+	episode_components = JSON.parse_string(FileAccess.get_file_as_string("res://data/episode1_components.json"))
 	art_components = JSON.parse_string(FileAccess.get_file_as_string("res://data/ui_components.json"))
 	art_brushes = JSON.parse_string(FileAccess.get_file_as_string("res://data/ui_brush_layout.json"))
+	art_brushes.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/episode1_brushes.json")),true)
 	art_text = JSON.parse_string(FileAccess.get_file_as_string("res://data/ui_text_layout.json"))
 	selectors = JSON.parse_string(FileAccess.get_file_as_string("res://data/selectors.json"))
 	for number: int in Quest.episode_starts:
@@ -144,7 +148,7 @@ func _art(filename: String, parent: Control = null, rect: Rect2 = Rect2(0,0,800,
 	if filename in ["menu", "menu_off", "help"] or filename.begins_with("selector_"):
 		filename = "adaptive_" + filename
 	rect = LAYOUT.scaled_rect(rect)
-	var composed: bool = art_components.has(filename)
+	var composed: bool = art_components.has(filename) or episode_components.has(filename)
 	var image: Control = Control.new() if composed else TextureRect.new()
 	if not composed:
 		(image as TextureRect).texture = load("res://assets/flash_ui/" + filename + ".png")
@@ -154,11 +158,13 @@ func _art(filename: String, parent: Control = null, rect: Rect2 = Rect2(0,0,800,
 	image.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	(parent if parent != null else screen).add_child(image)
 	image.set_deferred("size",rect.size)
-	if composed: _draw_components(filename,image,"background")
+	if art_components.has(filename): _draw_components(filename,image,"background")
+	elif episode_components.has(filename): COMPONENTS.draw(image,episode_components[filename],"background")
 	_draw_brushes(filename,image)
-	if composed: _draw_components(filename,image,"foreground")
+	if art_components.has(filename): _draw_components(filename,image,"foreground")
+	elif episode_components.has(filename): COMPONENTS.draw(image,episode_components[filename],"foreground")
 	var icons_path:="res://assets/flash_ui/"+filename+"_icons.png"
-	if not composed and ResourceLoader.exists(icons_path):
+	if not art_components.has(filename) and ResourceLoader.exists(icons_path):
 		var icons:=TextureRect.new()
 		icons.texture=load(icons_path)
 		icons.expand_mode=TextureRect.EXPAND_IGNORE_SIZE
@@ -218,7 +224,7 @@ func _edge_tab(label: String, action: Callable, parent: Control = null) -> void:
 	_layout_edge_tab()
 
 func _opening_art(name: String) -> void:
-	_set_backdrop(load("res://assets/flash_ui/layout_bg_" + name + ".png"))
+	_component_backdrop("layout_bg_" + name)
 	_art("layout_controls_tv" if name.begins_with("tv_") else "layout_controls_transport_no_keys" if name == "transport" and Quest.flags.TakenKey else "layout_controls_" + name)
 
 func _opening_caption(node: Dictionary) -> void:
@@ -563,3 +569,8 @@ func _draw_components(filename: String, parent: Control, layer: String) -> void:
 		component.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		component.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		parent.add_child(component)
+
+func _component_backdrop(filename: String) -> bool:
+	if not episode_components.has(filename): return false
+	viewport_canvas.set_component_background(episode_components[filename])
+	return true

@@ -49,3 +49,9 @@ cutscene fades. This is a complete story/choice/result port of Episode I;
 frame-by-frame reproduction of Adobe Flash animation is not included.
 Later episodes, quizzes and external achievement services remain outside this
 patch's scope.
+
+## Компонентная графика
+
+Первый эпизод теперь использует слои из `episode1_components.json`.
+Подробности и команды пересборки — в [EPISODE_I_COMPONENTS.md](EPISODE_I_COMPONENTS.md).
+Старые PNG из визуальных манифестов остаются справочными именами источников.

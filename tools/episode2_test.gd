@@ -68,7 +68,7 @@ func run() -> void:
    quest._enter(id)
    scene._stop_cutscene()
    await settle()
-   check(scene.viewport_canvas.background.texture!=null,"background: "+id)
+   check(scene.viewport_canvas.background.texture!=null or scene.viewport_canvas.component_background_active,"background: "+id)
    check(scene.screen.size==Vector2(1600,960) and is_equal_approx(scene.screen.scale.x,scene.screen.scale.y),"uniform episode II scale")
    for child: Node in scene.screen.get_children():
     if child is Label:

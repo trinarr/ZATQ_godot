@@ -25,7 +25,7 @@ def main():
   export_components(components,menu_plans(),args.output)
   def s(n,f=0,x=0,y=0,o=None,h=None):return(f'Symbol {n}',f,x,y,o or {},h or set())
   r.render('adaptive_help.png',[s(147,6)])
-  r.render('adaptive_metro_background.png',[s(2925,2,h={'Hist','But1','But2'})])
-  r.render('adaptive_metro_controls.png',[s(2925,2,h={'Mov'})])
+  from build_episode1_components import build
+  build(args.archive,args.output)
 
 if __name__=='__main__':main()

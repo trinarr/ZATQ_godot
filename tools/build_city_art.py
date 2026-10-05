@@ -33,28 +33,8 @@ class CityRenderer(Renderer):
   return body
 
 def main():
+ from build_episode1_components import build
  parser=argparse.ArgumentParser();parser.add_argument('archive',type=Path)
- parser.add_argument('--output',type=Path,default=Path(__file__).resolve().parents[1]);args=parser.parse_args()
- output=args.output;manifest=json.loads((output/'data/city_visuals.json').read_text())
- with tempfile.TemporaryDirectory() as tmp:
-  library=Path(tmp)/'LIBRARY';photos=Path(tmp)/'Images';library.mkdir();photos.mkdir()
-  with zipfile.ZipFile(args.archive) as z:
-   for name in z.namelist():
-    if '/ZombieApocalypse/LIBRARY/' in name and name.endswith(('.xml','.png','.jpg')):
-     (library/Path(name).name).write_bytes(z.read(name))
-    elif name.startswith('assets/Images/') and not name.endswith('/'):
-     (photos/Path(name).name).write_bytes(z.read(name))
-  r=CityRenderer(library,output/'assets/flash_ui',output/'fonts/flash');r.photos=photos
-  for key,item in manifest.items():
-   r.photo=item.get('photo','');r.photo_path=item.get('photo_path','Mov.Mov')
-   overrides=dict(item.get('overrides',{}));overrides.update(item.get('overrides_extra',{}))
-   symbols=[(f'Symbol {item["symbol"]}',item['frame'],0,0,overrides,set(item.get('hide',[])))]
-   if key not in ['city_result','city_decision_3']:symbols.append(('Symbol 88',0,0,0,{'But':1},set()))
-   r.render(key+'.png',symbols)
-   if key!='city_decision_3':
-    file=output/'assets/flash_ui'/(key+'.png')
-    with Image.open(file) as im:
-     background=Image.new('RGBA',im.size,'black');background.alpha_composite(im.convert('RGBA'));temporary=file.with_suffix('.tmp');background.save(temporary,format='PNG')
-    os.replace(temporary,file)
-    with file.open('rb') as complete:os.fsync(complete.fileno())
+ parser.add_argument('--output',type=Path,default=Path(__file__).resolve().parents[1])
+ args=parser.parse_args();build(args.archive,args.output)
 if __name__=='__main__':main()

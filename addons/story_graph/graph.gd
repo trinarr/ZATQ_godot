@@ -63,6 +63,16 @@ static func compile(graph: Dictionary) -> Dictionary:
    data.choices.append(choice)
   output[id] = data
  return output
+static var component_art_names: Dictionary = {}
+static var components_loaded: bool = false
+static func has_art(name: String) -> bool:
+ if not components_loaded:
+  for path: String in ["res://data/episode1_components.json","res://data/ui_components.json"]:
+   var parts: Variant = JSON.parse_string(FileAccess.get_file_as_string(path))
+   if parts is Dictionary:
+    for key: String in parts: component_art_names[key] = true
+  components_loaded = true
+ return component_art_names.has(name)
 static func validate(graph: Dictionary) -> PackedStringArray:
  var errors := PackedStringArray()
  if graph.get("version") != 1 or not graph.get("nodes") is Dictionary or not graph.get("edges") is Array:
@@ -126,7 +136,7 @@ static func validate(graph: Dictionary) -> PackedStringArray:
    var art: String = data.get(key,"")
    if art.is_empty():continue
    var extension: String = data.get("art_extension","png") if key in ["art","art_on_foot"] else ("webp" if key=="background_art" else "png")
-   if not ResourceLoader.exists("res://assets/flash_ui/"+art+"."+extension):errors.append("Не найдено изображение: "+id+" / "+art)
+   if not has_art(art) and not ResourceLoader.exists("res://assets/flash_ui/"+art+"."+extension):errors.append("Не найдено изображение: "+id+" / "+art)
   var sound: String = data.get("sound","")
   if not sound.is_empty() and not ResourceLoader.exists("res://assets/audio/"+sound+".mp3"):errors.append("Не найден звук: "+id+" / "+sound)
  # Prevent recursive pickup redirects, which would recurse inside Quest._enter().

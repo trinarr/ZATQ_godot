@@ -18,9 +18,10 @@ static func draw(ui: Control, node: Dictionary) -> void:
 		ui._text(node.text,Rect2(102,71,594,31),24,false,true)
 		ui._hit(LOC.text("@loc:ui.city_gameplay.1"),Rect2(656,326,65,58),func(): ui._choose(0))
 		return
-	ui._set_backdrop(load("res://assets/flash_ui/" + artwork + "."+node.get("art_extension","png")), not node.get("clean_background",false))
+	if not ui._component_backdrop(artwork):
+		ui._set_backdrop(load("res://assets/flash_ui/" + artwork + "."+node.get("art_extension","png")), not node.get("clean_background",false))
 	if Quest.current_id == "metro_junction":
-		ui._set_backdrop(load("res://assets/flash_ui/adaptive_metro_background.png"))
+		ui._component_backdrop("adaptive_metro_background")
 		ui._art("adaptive_metro_controls")
 	if node.has("controls_art"):
 		ui._art(node.controls_art)
