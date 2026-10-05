@@ -2,11 +2,8 @@
 import json
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]
-content=json.loads((root/'data/opening.json').read_text())
-nodes=content['nodes']
-nodes.update(json.loads((root/'data/city_routes.json').read_text())['nodes'])
-nodes.update(json.loads((root/'data/episode1_routes.json').read_text())['nodes'])
-nodes.update(json.loads((root/'data/episode2_routes.json').read_text())['nodes'])
+from story_graph_format import load_all
+nodes=load_all(root)
 assert all(n.get('kind','story') != 'boundary' for n in nodes.values())
 assert sum(n.get('kind','story') == 'city_ending' for n in nodes.values()) == 6
 for key,node in nodes.items():

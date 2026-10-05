@@ -1,0 +1,6617 @@
+{
+	"version": 1.0,
+	"episode": 1.0,
+	"start": "wake",
+	"nodes": {
+		"wake": {
+			"type": "scene",
+			"data": {
+				"source": "Episode1 frame 1 / Symbol 2794",
+				"text": "Это утро в жизни Джека началось с воя полицейских сирен...",
+				"image": "Fon1_1.png"
+			},
+			"position": [
+				0.0,
+				0.0
+			],
+			"title": "wake"
+		},
+		"wake__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				390.0,
+				0.0
+			],
+			"title": "Далее"
+		},
+		"screams": {
+			"type": "scene",
+			"data": {
+				"source": "Episode1 frame 2 / Symbol 2799",
+				"text": "Придя в себя после пробуждения, он услышал чьи-то крики и стрельбу на улице.",
+				"image": "Fon1_1.png"
+			},
+			"position": [
+				1700.0,
+				0.0
+			],
+			"title": "screams"
+		},
+		"screams__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				2090.0,
+				0.0
+			],
+			"title": "Далее"
+		},
+		"morning_choice": {
+			"type": "scene",
+			"data": {
+				"source": "Episode1 frame 3 / Symbol 2805, 2809, 2817",
+				"text": "Что дальше?",
+				"image": "Fon1_1.png"
+			},
+			"position": [
+				3400.0,
+				0.0
+			],
+			"title": "morning_choice"
+		},
+		"morning_choice__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Выйти на улицу"
+			},
+			"position": [
+				3790.0,
+				0.0
+			],
+			"title": "Выйти на улицу"
+		},
+		"morning_choice__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Смотреть последние новости"
+			},
+			"position": [
+				3790.0,
+				290.0
+			],
+			"title": "Смотреть последние новости"
+		},
+		"tv": {
+			"type": "scene",
+			"data": {
+				"source": "Episode1 frame 4 / Symbol 2835; Episode1.Switcher",
+				"text": "CH 1",
+				"image": "flash_2821.png",
+				"kind": "tv",
+				"sound": "TVSwitchOn"
+			},
+			"position": [
+				5100.0,
+				0.0
+			],
+			"title": "tv"
+		},
+		"tv__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Следующий канал",
+				"action": "channel"
+			},
+			"position": [
+				5490.0,
+				0.0
+			],
+			"title": "Следующий канал"
+		},
+		"tv__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Выключить телевизор",
+				"sound": "TVSwitchOff"
+			},
+			"position": [
+				5490.0,
+				290.0
+			],
+			"title": "Выключить телевизор"
+		},
+		"transport": {
+			"type": "scene",
+			"data": {
+				"source": "Episode1 frame 5 / Symbol 2848",
+				"text": "Поехать ли на работу на машине или пойти пешком?",
+				"image": "Fon1_1.png",
+				"sound": "FootSteps"
+			},
+			"position": [
+				5100.0,
+				1300.0
+			],
+			"title": "transport"
+		},
+		"transport__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Выйти на улицу"
+			},
+			"position": [
+				5490.0,
+				1300.0
+			],
+			"title": "Выйти на улицу"
+		},
+		"transport__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Взять ключи от машины"
+			},
+			"position": [
+				5490.0,
+				1590.0
+			],
+			"title": "Взять ключи от машины"
+		},
+		"transport__choice_1__requires": {
+			"type": "condition",
+			"data": {
+				"when": {
+
+				},
+				"unless_keys": true
+			},
+			"position": [
+				5910.0,
+				1590.0
+			],
+			"title": "Доступность ответа"
+		},
+		"keys": {
+			"type": "scene",
+			"data": {
+				"source": "AddItem(1); AddItem.weapStrings[0]",
+				"text": "Ключи от Subaru R1e",
+				"image": "Fon1_1.png",
+				"kind": "item",
+				"sound": "KeysTake"
+			},
+			"position": [
+				6800.0,
+				0.0
+			],
+			"title": "keys"
+		},
+		"keys__entry": {
+			"type": "action",
+			"data": {
+				"set": {
+					"TakenKey": true
+				}
+			},
+			"position": [
+				6420.0,
+				180.0
+			],
+			"title": "При входе"
+		},
+		"keys__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Забрать"
+			},
+			"position": [
+				7190.0,
+				0.0
+			],
+			"title": "Забрать"
+		},
+		"transport_choice": {
+			"type": "scene",
+			"data": {
+				"source": "NewItem(1).itemStrings[0], but1Str[1], but2Str[1]",
+				"text": "Следует ли Джеку сегодня дойти до работы пешком или лучше доехать на машине?",
+				"image": "Fon1_1.png"
+			},
+			"position": [
+				6800.0,
+				1300.0
+			],
+			"title": "transport_choice"
+		},
+		"transport_choice__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Поехать на машине"
+			},
+			"position": [
+				7190.0,
+				1300.0
+			],
+			"title": "Поехать на машине"
+		},
+		"transport_choice__choice_0__effects": {
+			"type": "action",
+			"data": {
+				"set": {
+					"Auto": 1.0
+				}
+			},
+			"position": [
+				7610.0,
+				1300.0
+			],
+			"title": "Последствия выбора"
+		},
+		"transport_choice__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Дойти пешком"
+			},
+			"position": [
+				7190.0,
+				1590.0
+			],
+			"title": "Дойти пешком"
+		},
+		"transport_choice__choice_1__effects": {
+			"type": "action",
+			"data": {
+				"set": {
+					"Auto": 0.0
+				}
+			},
+			"position": [
+				7610.0,
+				1590.0
+			],
+			"title": "Последствия выбора"
+		},
+		"lift": {
+			"type": "scene",
+			"data": {
+				"source": "Episode1 frame 6 / Symbol 2872",
+				"text": "Дойти до лифта удалось без происшествий. Почти.",
+				"image": "flash_2868.png",
+				"sound": "LiftOpenSound"
+			},
+			"position": [
+				6800.0,
+				2600.0
+			],
+			"title": "lift"
+		},
+		"lift__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Войти в лифт"
+			},
+			"position": [
+				7190.0,
+				2600.0
+			],
+			"title": "Войти в лифт"
+		},
+		"lift_button": {
+			"type": "scene",
+			"data": {
+				"source": "Episode1 frame 7 / Symbol 2880; MovClickFunc case 7",
+				"text": "Джек нажал на кнопку первого этажа, и лифт понес его в неизвестность...",
+				"image": "LiftKnop.jpg",
+				"sound": "LiftClosing"
+			},
+			"position": [
+				8500.0,
+				0.0
+			],
+			"title": "lift_button"
+		},
+		"lift_button__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Первый этаж",
+				"sound": "LiftButton"
+			},
+			"position": [
+				8890.0,
+				0.0
+			],
+			"title": "Первый этаж"
+		},
+		"city_foot": {
+			"type": "scene",
+			"data": {
+				"source": "MovCityAuto(4) frame 8 / Symbol 2639; MovCityAuto(4).as",
+				"text": "Выйдя из подъезда, Джек замечает носилки скорой помощи со странным человеком на \nних: с нездорово бледным, осунувшимся окровавленным лицом... Странно все это.",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_city_foot",
+				"text_rect": [
+					11.0,
+					395.75,
+					775.0,
+					78.5
+				],
+				"panel_rect": [
+					0.0,
+					390.0,
+					800.0,
+					90.0
+				]
+			},
+			"position": [
+				10200.0,
+				0.0
+			],
+			"title": "city_foot"
+		},
+		"city_foot__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				10590.0,
+				0.0
+			],
+			"title": "Далее"
+		},
+		"city_car": {
+			"type": "scene",
+			"data": {
+				"source": "MovCityAuto frame 1 / Symbol 2639; MovCityAuto.as",
+				"text": "Отыскав припаркованную машину и сев в нее, Джек почувствовал неимоверное \nоблегчение... Где-то в паре кварталов отсюда надрывно выла сирена, и слышались крики \nи грохот. Опасность чувствовалась буквально каждой частью тела.",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_city_car",
+				"text_rect": [
+					11.0,
+					5.75,
+					775.0,
+					86.15
+				],
+				"panel_rect": [
+					0.0,
+					0.0,
+					800.0,
+					97.65
+				]
+			},
+			"position": [
+				10200.0,
+				1300.0
+			],
+			"title": "city_car"
+		},
+		"city_car__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				10590.0,
+				1300.0
+			],
+			"title": "Далее"
+		},
+		"car_decision": {
+			"type": "scene",
+			"data": {
+				"source": "NewItem(2); NewItem.But1/2/3MouseUpFunc",
+				"text": "Возможно, стоит не ехать сегодня в офис, а уехать из города как можно скорей. Что же предпринять Джеку дальше?",
+				"image": "Fon1_1.png",
+				"kind": "city_decision",
+				"art": "city_city_car"
+			},
+			"position": [
+				11900.0,
+				0.0
+			],
+			"title": "car_decision"
+		},
+		"car_decision__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Уехать из города"
+			},
+			"position": [
+				12290.0,
+				0.0
+			],
+			"title": "Уехать из города"
+		},
+		"car_decision__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Поехать в офис"
+			},
+			"position": [
+				12290.0,
+				290.0
+			],
+			"title": "Поехать в офис"
+		},
+		"car_drive": {
+			"type": "scene",
+			"data": {
+				"source": "MovCityAuto frame 2 / Symbol 2639; MovCityAuto.as",
+				"text": "Выбраться из города оказалось не так уж и просто... Не раз и не два на машину Джека \nкидались обезумевшие люди, походившие на оживших мертвецов из фильмов.",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_car_drive",
+				"text_rect": [
+					11.0,
+					5.75,
+					775.0,
+					58.55
+				],
+				"panel_rect": [
+					0.0,
+					0.0,
+					800.0,
+					70.05
+				]
+			},
+			"position": [
+				13600.0,
+				0.0
+			],
+			"title": "car_drive"
+		},
+		"car_drive__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				13990.0,
+				0.0
+			],
+			"title": "Далее"
+		},
+		"car_battery": {
+			"type": "scene",
+			"data": {
+				"source": "MovCityAuto frame 3 / Symbol 2639; MovCityAuto.as",
+				"text": "С большим трудом выбравшись из города, Джек понял, что батарея его электрокара вот-\nвот сядет. Что же делать? Оставить машину сейчас, пока вокруг никого нет, или ехать \nдальше сколько получится, пытаясь найти место для зарядки?",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_car_battery",
+				"text_rect": [
+					11.0,
+					394.75,
+					775.0,
+					79.5
+				],
+				"panel_rect": [
+					0.0,
+					389.0,
+					800.0,
+					91.0
+				]
+			},
+			"position": [
+				15300.0,
+				0.0
+			],
+			"title": "car_battery"
+		},
+		"car_battery__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				15690.0,
+				0.0
+			],
+			"title": "Далее"
+		},
+		"battery_decision": {
+			"type": "scene",
+			"data": {
+				"source": "NewItem(5); NewItem.But1/2/3MouseUpFunc",
+				"text": "Двигаться, пока не сядет аккумулятор или продолжить путь пешком?",
+				"image": "Fon1_1.png",
+				"kind": "city_decision",
+				"art": "city_car_battery"
+			},
+			"position": [
+				17000.0,
+				0.0
+			],
+			"title": "battery_decision"
+		},
+		"battery_decision__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Остановиться и выйти"
+			},
+			"position": [
+				17390.0,
+				0.0
+			],
+			"title": "Остановиться и выйти"
+		},
+		"battery_decision__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжать движение"
+			},
+			"position": [
+				17390.0,
+				290.0
+			],
+			"title": "Продолжать движение"
+		},
+		"car_crowd": {
+			"type": "scene",
+			"data": {
+				"source": "MovCityAuto frame 4 / Symbol 2639; MovCityAuto.as",
+				"text": "Задумавшись о несостоявшемся ужине с подругой по работе, Джек неожиданно понимает, \nчто путь ему преграждает толпа мертвецов (он наверняка знал, что живыми эти существа \nуж точно не были).",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_car_crowd",
+				"text_rect": [
+					11.0,
+					395.75,
+					775.0,
+					78.5
+				],
+				"panel_rect": [
+					0.0,
+					390.0,
+					800.0,
+					90.0
+				]
+			},
+			"position": [
+				18700.0,
+				0.0
+			],
+			"title": "car_crowd"
+		},
+		"car_crowd__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				19090.0,
+				0.0
+			],
+			"title": "Далее"
+		},
+		"car_trapped": {
+			"type": "scene",
+			"data": {
+				"source": "MovCityAuto frame 5 / Symbol 2639; MovCityAuto.as",
+				"text": "Как назло аккумулятор приказал долго жить. Зомби уже обступили машину, лезут на \nкапот. Скоро лобовое стекло не выдержит. Как там было в одной из Обителей Зла? В этой \nситуации остается только закурить? Но Джек никогда не курил. Предпочитал беречь \nздоровье... Забавно.",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_car_trapped",
+				"text_rect": [
+					11.0,
+					371.75,
+					775.0,
+					102.5
+				],
+				"panel_rect": [
+					0.0,
+					366.0,
+					800.0,
+					114.0
+				]
+			},
+			"position": [
+				20400.0,
+				0.0
+			],
+			"title": "car_trapped"
+		},
+		"car_trapped__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				20790.0,
+				0.0
+			],
+			"title": "Далее"
+		},
+		"car_fatal": {
+			"type": "scene",
+			"data": {
+				"source": "MovCityAuto frame 5 / Symbol 2639; MovCityAuto.as",
+				"text": "",
+				"image": "Fon1_1.png",
+				"kind": "city_cutscene",
+				"art": "city_car_trapped",
+				"auto_seconds": 0.3684210526315789,
+				"sound": "BrokenGlassSound"
+			},
+			"position": [
+				22100.0,
+				0.0
+			],
+			"title": "car_fatal"
+		},
+		"car_fatal__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				22490.0,
+				0.0
+			],
+			"title": "Далее"
+		},
+		"office_drive": {
+			"type": "scene",
+			"data": {
+				"source": "MovCityAuto frame 6 / Symbol 2639; MovCityAuto.as",
+				"text": "Трудолюбие и «сидячий» образ жизни скоро доканают Джека, но деньги есть деньги, \nпричем немалые... Как там было на недавнем треннинге? «Трудолюбие — залог вашего \nуспешного будущего». О как! И где теперь это будущее, черт бы вас побрал?",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_office_drive",
+				"text_rect": [
+					11.0,
+					5.75,
+					775.0,
+					86.15
+				],
+				"panel_rect": [
+					0.0,
+					0.0,
+					800.0,
+					97.65
+				]
+			},
+			"position": [
+				13600.0,
+				1300.0
+			],
+			"title": "office_drive"
+		},
+		"office_drive__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				13990.0,
+				1300.0
+			],
+			"title": "Далее"
+		},
+		"office_gate": {
+			"type": "scene",
+			"data": {
+				"source": "MovCityAuto frame 7 / Symbol 2639; MovCityAuto.as",
+				"text": "Офис, где работал Джек находился рядом с Центральной больницей города, на окраине. И \nсейчас рядом с ней находилась чуть ли не вся полиция Нью-Тауна, слышались частые \nвыстрелы. Перебросившись парой фраз с зеваками поблизости, Джек узнал, что скоро \nздесь будет армия, ибо этих тварей из больницы берет только прямое попадание в голову. \n«Чудненькие перспективы», — подытожил Джек.",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_office_gate",
+				"text_rect": [
+					11.0,
+					343.75,
+					775.0,
+					130.5
+				],
+				"panel_rect": [
+					0.0,
+					338.0,
+					800.0,
+					142.0
+				]
+			},
+			"position": [
+				15300.0,
+				1300.0
+			],
+			"title": "office_gate"
+		},
+		"office_gate__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				15690.0,
+				1300.0
+			],
+			"title": "Далее"
+		},
+		"office_decision": {
+			"type": "scene",
+			"data": {
+				"source": "NewItem(9); NewItem.But1/2/3MouseUpFunc",
+				"text": "В офисе находятся некоторые важные документы, нужно обязательно их забрать! Джек все не мог решиться шагнуть в темноту входа...",
+				"image": "Fon1_1.png",
+				"kind": "city_decision",
+				"art": "city_office_gate"
+			},
+			"position": [
+				17000.0,
+				1300.0
+			],
+			"title": "office_decision"
+		},
+		"office_decision__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Незаметно пройти в офис"
+			},
+			"position": [
+				17390.0,
+				1300.0
+			],
+			"title": "Незаметно пройти в офис"
+		},
+		"office_decision__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Уехать из города"
+			},
+			"position": [
+				17390.0,
+				1590.0
+			],
+			"title": "Уехать из города"
+		},
+		"car_battery_return": {
+			"type": "scene",
+			"data": {
+				"source": "MovCityAuto(2) frame 3 / Symbol 2639; MovCityAuto(2).as",
+				"text": "С большим трудом выбравшись из города, Джек понял, что батарея его электрокара вот-\nвот сядет. Что же делать? Оставить машину сейчас, пока вокруг никого нет, или ехать \nдальше сколько получится, пытаясь найти место для зарядки?",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_car_battery_return",
+				"text_rect": [
+					11.0,
+					394.75,
+					775.0,
+					79.5
+				],
+				"panel_rect": [
+					0.0,
+					389.0,
+					800.0,
+					91.0
+				]
+			},
+			"position": [
+				18700.0,
+				1300.0
+			],
+			"title": "car_battery_return"
+		},
+		"car_battery_return__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				19090.0,
+				1300.0
+			],
+			"title": "Далее"
+		},
+		"battery_return_decision": {
+			"type": "scene",
+			"data": {
+				"source": "NewItem(5); NewItem.But1/2/3MouseUpFunc",
+				"text": "Двигаться, пока не сядет аккумулятор или продолжить путь пешком?",
+				"image": "Fon1_1.png",
+				"kind": "city_decision",
+				"art": "city_car_battery_return"
+			},
+			"position": [
+				20400.0,
+				1300.0
+			],
+			"title": "battery_return_decision"
+		},
+		"battery_return_decision__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Остановиться и выйти"
+			},
+			"position": [
+				20790.0,
+				1300.0
+			],
+			"title": "Остановиться и выйти"
+		},
+		"battery_return_decision__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжать движение"
+			},
+			"position": [
+				20790.0,
+				1590.0
+			],
+			"title": "Продолжать движение"
+		},
+		"street_stretcher": {
+			"type": "scene",
+			"data": {
+				"source": "MovCityAuto frame 9 / Symbol 2639; MovCityAuto.as",
+				"text": "Странно и страшно одновременно. Джек невольно поежился... Уж очень жутко выглядел \nмертвец на носилках.",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_street_stretcher",
+				"text_rect": [
+					11.0,
+					423.75,
+					775.0,
+					50.5
+				],
+				"panel_rect": [
+					0.0,
+					418.0,
+					800.0,
+					62.0
+				]
+			},
+			"position": [
+				11900.0,
+				1300.0
+			],
+			"title": "street_stretcher"
+		},
+		"street_stretcher__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				12290.0,
+				1300.0
+			],
+			"title": "Далее"
+		},
+		"street_decision": {
+			"type": "scene",
+			"data": {
+				"source": "NewItem(3); NewItem.But1/2/3MouseUpFunc",
+				"text": "Что же Джеку предпринять дальше? Добраться таки до офиса или лучше уехать из города?",
+				"image": "Fon1_1.png",
+				"kind": "city_decision",
+				"art": "city_street_stretcher"
+			},
+			"position": [
+				13600.0,
+				2600.0
+			],
+			"title": "street_decision"
+		},
+		"street_decision__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Идти в офис дворами"
+			},
+			"position": [
+				13990.0,
+				2600.0
+			],
+			"title": "Идти в офис дворами"
+		},
+		"street_decision__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Дойти по главной улице"
+			},
+			"position": [
+				13990.0,
+				2890.0
+			],
+			"title": "Дойти по главной улице"
+		},
+		"street_decision__choice_2": {
+			"type": "choice",
+			"data": {
+				"text": "Взять такси и уехать"
+			},
+			"position": [
+				13990.0,
+				3180.0
+			],
+			"title": "Взять такси и уехать"
+		},
+		"office_enter": {
+			"type": "scene",
+			"data": {
+				"source": "IntoTheOffice frame 1 / Symbol 2706; IntoTheOffice.as",
+				"text": "Внутри здания оказалось темно и пусто. То тут, то там попадались следы крови и борьбы. \nНекоторые двери были выломаны или имели вмятины. Джеку стало не по себе...",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_office_enter",
+				"art_on_foot": "city_office_enter_foot",
+				"text_rect": [
+					11.0,
+					5.75,
+					775.0,
+					58.55
+				],
+				"panel_rect": [
+					0.0,
+					0.0,
+					800.0,
+					70.05
+				],
+				"text_on_foot": "В офисе оставались достаточно важные документы, и Джек все-таки решился в него проникнуть. Внутри здания оказалось темно и пусто. То тут, то там попадались следы крови и борьбы. Некоторые двери были выломаны или имели вмятины. Решимость Джека постепенно угасала...",
+				"text_rect_on_foot": [
+					11.0,
+					5.75,
+					775.0,
+					122.1
+				],
+				"panel_rect_on_foot": [
+					0.0,
+					0.0,
+					800.0,
+					134.0
+				]
+			},
+			"position": [
+				18700.0,
+				2600.0
+			],
+			"title": "office_enter"
+		},
+		"office_enter__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				19090.0,
+				2600.0
+			],
+			"title": "Далее"
+		},
+		"office_floor": {
+			"type": "scene",
+			"data": {
+				"source": "IntoTheOffice frame 2 / Symbol 2706; IntoTheOffice.as",
+				"text": "Осторожно поднявшись на второй этаж, Джек направился к своему рабочему месту. \nИногда ему казалось что он слышит какие-то шаркающие звуки... Нужно поскорей забрать \nбумаги и выбраться отсюда!",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_office_floor",
+				"text_rect": [
+					11.0,
+					5.75,
+					775.0,
+					86.15
+				],
+				"panel_rect": [
+					0.0,
+					0.0,
+					800.0,
+					97.65
+				]
+			},
+			"position": [
+				20400.0,
+				2600.0
+			],
+			"title": "office_floor"
+		},
+		"office_floor__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				20790.0,
+				2600.0
+			],
+			"title": "Далее"
+		},
+		"office_documents": {
+			"type": "scene",
+			"data": {
+				"source": "IntoTheOffice frame 3 / Symbol 2706; IntoTheOffice.as",
+				"text": "Помещение, где обычно работал Джек оказалось полностью погруженным во тьму и \nпришлось включить фонарик на брелке домашних ключей. Джек услышал шаги совсем \nрядом, прямо за стеной!",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_office_documents",
+				"text_rect": [
+					11.0,
+					397.75,
+					775.0,
+					76.5
+				],
+				"panel_rect": [
+					0.0,
+					392.0,
+					800.0,
+					88.0
+				]
+			},
+			"position": [
+				22100.0,
+				1300.0
+			],
+			"title": "office_documents"
+		},
+		"office_documents__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				22490.0,
+				1300.0
+			],
+			"title": "Далее"
+		},
+		"documents_decision": {
+			"type": "scene",
+			"data": {
+				"source": "NewItem(10); NewItem.But1/2/3MouseUpFunc",
+				"text": "Забрав драгоценную папку, Джек начал возвращаться обратно, но шаркающие шаги слышались как раз с той стороны, откуда он пришел...",
+				"image": "Fon1_1.png",
+				"kind": "city_decision",
+				"art": "city_office_documents"
+			},
+			"position": [
+				23800.0,
+				0.0
+			],
+			"title": "documents_decision"
+		},
+		"documents_decision__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Выйти тем же путем"
+			},
+			"position": [
+				24190.0,
+				0.0
+			],
+			"title": "Выйти тем же путем"
+		},
+		"documents_decision__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Найти другой путь"
+			},
+			"position": [
+				24190.0,
+				290.0
+			],
+			"title": "Найти другой путь"
+		},
+		"documents_decision__choice_2": {
+			"type": "choice",
+			"data": {
+				"text": "Подняться на крышу"
+			},
+			"position": [
+				24190.0,
+				580.0
+			],
+			"title": "Подняться на крышу"
+		},
+		"office_threat": {
+			"type": "scene",
+			"data": {
+				"source": "IntoTheOffice frame 6 / Symbol 2706; IntoTheOffice.as",
+				"text": "Джек развернулся и пошел обратно к выходу. В тот момент, когда он уже практически \nпрошел очередное помещение офиса, он отчетливо услышал шорох в метрах пяти слева \nот себя. Луч света резко прыгнул влево и... Кровь застыла у Джека в жилах...",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_office_threat",
+				"sound": "OfficeZombieScream",
+				"text_rect": [
+					11.0,
+					395.75,
+					775.0,
+					78.5
+				],
+				"panel_rect": [
+					0.0,
+					390.0,
+					800.0,
+					90.0
+				]
+			},
+			"position": [
+				25500.0,
+				0.0
+			],
+			"title": "office_threat"
+		},
+		"office_threat__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				25890.0,
+				0.0
+			],
+			"title": "Далее"
+		},
+		"office_fatal": {
+			"type": "scene",
+			"data": {
+				"source": "IntoTheOffice frame 6 / Symbol 2706; IntoTheOffice.as",
+				"text": "",
+				"image": "Fon1_1.png",
+				"kind": "city_cutscene",
+				"art": "city_office_threat",
+				"auto_seconds": 0.3157894736842105
+			},
+			"position": [
+				27200.0,
+				0.0
+			],
+			"title": "office_fatal"
+		},
+		"office_fatal__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				27590.0,
+				0.0
+			],
+			"title": "Далее"
+		},
+		"office_fire_escape": {
+			"type": "scene",
+			"data": {
+				"source": "IntoTheOffice frame 7 / Symbol 2706; IntoTheOffice.as",
+				"text": "Про наличие в здании еще одной лестницы, пожарной, практически никто не знал. Она \nоказалась пуста, и уже через несколько минут Джек шел к выходу из офиса, которому \nпосвятил пять лет своей жизни.",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_office_fire_escape",
+				"text_rect": [
+					11.0,
+					395.75,
+					775.0,
+					78.5
+				],
+				"panel_rect": [
+					0.0,
+					390.0,
+					800.0,
+					90.0
+				]
+			},
+			"position": [
+				25500.0,
+				1300.0
+			],
+			"title": "office_fire_escape"
+		},
+		"office_fire_escape__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				25890.0,
+				1300.0
+			],
+			"title": "Далее"
+		},
+		"office_exit": {
+			"type": "scene",
+			"data": {
+				"source": "IntoTheOffice frame 8 / Symbol 2706; IntoTheOffice.as",
+				"text": "Выйдя на улицу Джек прищурился от яркого света и понял, что ему стоит поторопиться \nдойти до машины, пока заметившие его мертвецы еще далеко.",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_office_exit",
+				"text_rect": [
+					11.0,
+					422.75,
+					775.0,
+					51.5
+				],
+				"panel_rect": [
+					0.0,
+					417.0,
+					800.0,
+					63.0
+				]
+			},
+			"position": [
+				27200.0,
+				1300.0
+			],
+			"title": "office_exit"
+		},
+		"office_exit__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				27590.0,
+				1300.0
+			],
+			"title": "Далее"
+		},
+		"office_roof_stairs": {
+			"type": "scene",
+			"data": {
+				"source": "IntoTheOffice frame 4 / Symbol 2706; IntoTheOffice.as",
+				"text": "Хорошо, что в здании были лифты, и большинство людей пользовались именно ими. \nДжек, постоянно оглядываясь и светя фонариком во  все стороны, без особых проблем \nдобрался до дверей, преграждающих выход на крышу.",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_office_roof_stairs",
+				"text_rect": [
+					11.0,
+					396.75,
+					775.0,
+					77.5
+				],
+				"panel_rect": [
+					0.0,
+					391.0,
+					800.0,
+					89.0
+				]
+			},
+			"position": [
+				25500.0,
+				2600.0
+			],
+			"title": "office_roof_stairs"
+		},
+		"office_roof_stairs__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				25890.0,
+				2600.0
+			],
+			"title": "Далее"
+		},
+		"office_roof": {
+			"type": "scene",
+			"data": {
+				"source": "IntoTheOffice frame 5 / Symbol 2706; IntoTheOffice.as",
+				"text": "Глупая была идея... Джек сел на край крыши, свесил вниз ноги и с грустью увидел, как \nмертвецы расправляются с остатками полицеских и военных. Это конец...",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_office_roof",
+				"text_rect": [
+					11.0,
+					422.75,
+					775.0,
+					51.5
+				],
+				"panel_rect": [
+					0.0,
+					417.0,
+					800.0,
+					63.0
+				]
+			},
+			"position": [
+				27200.0,
+				2600.0
+			],
+			"title": "office_roof"
+		},
+		"office_roof__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				27590.0,
+				2600.0
+			],
+			"title": "Далее"
+		},
+		"paid_car": {
+			"type": "scene",
+			"data": {
+				"source": "CarGet(2) frame 1 / Symbol 2979; CarGet(2).as",
+				"text": "Как всегда бывает при различного рода катастрофах и трагедиях, Джек смог найти \nчеловека, который за баснословную цену согласился вывезти его из Нью-Тауна.",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_paid_car",
+				"text_rect": [
+					11.0,
+					419.75,
+					775.0,
+					54.5
+				],
+				"panel_rect": [
+					0.0,
+					414.0,
+					800.0,
+					66.0
+				]
+			},
+			"position": [
+				17000.0,
+				2600.0
+			],
+			"title": "paid_car"
+		},
+		"paid_car__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				17390.0,
+				2600.0
+			],
+			"title": "Далее"
+		},
+		"paid_car_outside": {
+			"type": "scene",
+			"data": {
+				"source": "CarGet(2) frame 2 / Symbol 2979; CarGet(2).as",
+				"text": "Как только показались загородные дома, водитель Бьюика чуть ли не выбросил Джека, \nвзяв с него целых 250$. Кровно заработанных причем! Так, ладно. И что делать дальше? \nЗомби, взрывы, трупы на улицах. А еще вчера Джек мирно сидел в своем тихом офисе в \nцентре Нью-Тауна...",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_paid_car_outside",
+				"text_rect": [
+					11.0,
+					5.75,
+					775.0,
+					113.8
+				],
+				"panel_rect": [
+					0.0,
+					0.0,
+					800.0,
+					125.3
+				]
+			},
+			"position": [
+				18700.0,
+				3900.0
+			],
+			"title": "paid_car_outside"
+		},
+		"paid_car_outside__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				19090.0,
+				3900.0
+			],
+			"title": "Далее"
+		},
+		"metro_start": {
+			"type": "scene",
+			"data": {
+				"source": "DvrMov frame 1 / Symbol 2925; DvrMov.as",
+				"text": "Нужно сказать прямо — идея оказалась не самая удачная. Теперь Джеку не оставалось \nничего иного, кроме как попытаться спрятаться от приближающейся обезумевшей толпы. \nС людьми явно было что-то не так... Но что, черт возьми?!",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_metro_start",
+				"text_rect": [
+					11.0,
+					5.75,
+					775.0,
+					86.15
+				],
+				"panel_rect": [
+					0.0,
+					0.0,
+					800.0,
+					97.65
+				]
+			},
+			"position": [
+				15300.0,
+				2600.0
+			],
+			"title": "metro_start"
+		},
+		"metro_start__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				15690.0,
+				2600.0
+			],
+			"title": "Далее"
+		},
+		"metro_descent": {
+			"type": "scene",
+			"data": {
+				"source": "DvrMov frame 2 / Symbol 2925; DvrMov.as",
+				"text": "Темный спуск в метро уверенности не придал, как не придал и понимания творящегося \nвокруг. И чем дальше Джек спускался, тем тише становилась жуткая какофония улиц, тем \nсильнее обволакивала липкая холодная тьма.",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_metro_descent",
+				"text_rect": [
+					11.0,
+					395.75,
+					775.0,
+					78.5
+				],
+				"panel_rect": [
+					0.0,
+					390.0,
+					800.0,
+					90.0
+				]
+			},
+			"position": [
+				17000.0,
+				3900.0
+			],
+			"title": "metro_descent"
+		},
+		"metro_descent__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				17390.0,
+				3900.0
+			],
+			"title": "Далее"
+		},
+		"metro_junction": {
+			"type": "scene",
+			"data": {
+				"source": "DvrMov frame 3 / Symbol 2925; DvrMov.as",
+				"text": "Что дальше? Пробираться вглубь станции или сразу на поверхность? И... Черт, да что \nздесь вообще происходит?! Кровь, кровь, КРОВЬ на закрытой уже второй месяц на ремонт \nстанции бросила Джека в дрожь, сковала леденящим оцепенением.",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_metro_junction",
+				"text_rect": [
+					11.0,
+					5.75,
+					775.0,
+					86.15
+				],
+				"panel_rect": [
+					0.0,
+					0.0,
+					800.0,
+					97.65
+				]
+			},
+			"position": [
+				18700.0,
+				5200.0
+			],
+			"title": "metro_junction"
+		},
+		"metro_junction__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Пробираться вглубь станции",
+				"rect": [
+					615.0,
+					245.0,
+					185.0,
+					110.0
+				]
+			},
+			"position": [
+				19090.0,
+				5200.0
+			],
+			"title": "Пробираться вглубь станции"
+		},
+		"metro_junction__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Вернуться на поверхность",
+				"rect": [
+					178.0,
+					147.0,
+					104.0,
+					113.0
+				]
+			},
+			"position": [
+				19090.0,
+				5490.0
+			],
+			"title": "Вернуться на поверхность"
+		},
+		"metro_chase": {
+			"type": "scene",
+			"data": {
+				"source": "DvrMov frame 5 / Symbol 2925; DvrMov.as",
+				"text": "Бредущий по эскалатору окровавленный мужчина заметил Джека и... побежал! Расстояние \nмежду людьми сокращалось со стремительной быстротой. Ведомый инстинктами Джек \nбросился бежать, не разбирая дороги и сам не понимая, чего так панически боится.",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_metro_chase",
+				"sound": "MetroZombieRoar",
+				"text_rect": [
+					11.0,
+					5.75,
+					775.0,
+					86.15
+				],
+				"panel_rect": [
+					0.0,
+					0.0,
+					800.0,
+					97.65
+				]
+			},
+			"position": [
+				20400.0,
+				3900.0
+			],
+			"title": "metro_chase"
+		},
+		"metro_chase__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				20790.0,
+				3900.0
+			],
+			"title": "Далее"
+		},
+		"metro_platform": {
+			"type": "scene",
+			"data": {
+				"source": "DvrMov frame 6 / Symbol 2925; DvrMov.as",
+				"text": "Джеку всегда не хватало времени всерьез заняться спортом... Из последних сил взлетев \nпо лестнице на платформу, он увидел, что единственный путь бегства — туннель, \nнамертво перекрытый искореженным вагоном.",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_metro_platform",
+				"text_rect": [
+					11.0,
+					5.75,
+					775.0,
+					86.15
+				],
+				"panel_rect": [
+					0.0,
+					0.0,
+					800.0,
+					97.65
+				]
+			},
+			"position": [
+				22100.0,
+				2600.0
+			],
+			"title": "metro_platform"
+		},
+		"metro_platform__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				22490.0,
+				2600.0
+			],
+			"title": "Далее"
+		},
+		"metro_train": {
+			"type": "scene",
+			"data": {
+				"source": "DvrMov frame 7 / Symbol 2925; DvrMov.as",
+				"text": "Вбежав в ближайшую раскрытую дверь, мужчина в ужасе отпрянул, заметив \nподнимающихся ему навстречу изуродованных людей. Еще секунда — и западня \nзалопнулась, оставляя Джека лицом к лицу с... Нет, что за?! Нет, НЕЕТ!!!",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_metro_train",
+				"sound": "ZombieGetOn",
+				"text_rect": [
+					11.0,
+					5.75,
+					775.0,
+					86.15
+				],
+				"panel_rect": [
+					0.0,
+					0.0,
+					800.0,
+					97.65
+				]
+			},
+			"position": [
+				23800.0,
+				1300.0
+			],
+			"title": "metro_train"
+		},
+		"metro_train__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее",
+				"sound": "ManDeath"
+			},
+			"position": [
+				24190.0,
+				1300.0
+			],
+			"title": "Далее"
+		},
+		"metro_surface": {
+			"type": "scene",
+			"data": {
+				"source": "DvrMov frame 4 / Symbol 2925; DvrMov.as",
+				"text": "Идущие навстречу Джеку по эскалатору мертвенно-бледные люди запутались в ногах и \nпокатились вниз, подарив мужчине драгоценные секунды для бегства. Еще пара десятков \nметров, и он снова окажется на поверхности!",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_metro_surface",
+				"text_rect": [
+					11.0,
+					5.75,
+					775.0,
+					86.15
+				],
+				"panel_rect": [
+					0.0,
+					0.0,
+					800.0,
+					97.65
+				]
+			},
+			"position": [
+				20400.0,
+				5200.0
+			],
+			"title": "metro_surface"
+		},
+		"metro_surface__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				20790.0,
+				5200.0
+			],
+			"title": "Далее"
+		},
+		"shop_window": {
+			"type": "scene",
+			"data": {
+				"source": "VitrMov frame 1 / Symbol 2479; VitrMov.as",
+				"text": "Понять хоть что-либо по разрозненным новостным сводкам было крайне сложно. На \nбольшинстве каналов бледные напомаженные ведущие лишь советовали ньютаунцам не \nсоздавать паники и по возможности не покидать домов. На улицах города тем временем \nпродолжал твориться полный беспредел...",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_shop_window",
+				"text_rect": [
+					11.0,
+					369.75,
+					775.0,
+					104.5
+				],
+				"panel_rect": [
+					0.0,
+					364.0,
+					800.0,
+					116.0
+				]
+			},
+			"position": [
+				17000.0,
+				5200.0
+			],
+			"title": "shop_window"
+		},
+		"shop_window__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				17390.0,
+				5200.0
+			],
+			"title": "Далее"
+		},
+		"shop_decision": {
+			"type": "scene",
+			"data": {
+				"source": "NewItem(4); NewItem.But1/2/3MouseUpFunc",
+				"text": "Что дальше? Попытаться найти убежище в городе или бежать из него со всех ног?",
+				"image": "Fon1_1.png",
+				"kind": "city_decision",
+				"art": "city_shop_window"
+			},
+			"position": [
+				18700.0,
+				6500.0
+			],
+			"title": "shop_decision"
+		},
+		"shop_decision__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Бежать из Нью-Тауна"
+			},
+			"position": [
+				19090.0,
+				6500.0
+			],
+			"title": "Бежать из Нью-Тауна"
+		},
+		"shop_decision__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Найти убежище в городе"
+			},
+			"position": [
+				19090.0,
+				6790.0
+			],
+			"title": "Найти убежище в городе"
+		},
+		"shop_decision__choice_2": {
+			"type": "choice",
+			"data": {
+				"text": "Взять такси и уехать"
+			},
+			"position": [
+				19090.0,
+				7080.0
+			],
+			"title": "Взять такси и уехать"
+		},
+		"bitten": {
+			"type": "scene",
+			"data": {
+				"source": "VitrMov frame 2 / Symbol 2479; VitrMov.as",
+				"text": "Увидев перед собой прихрамывающую девушку, кровь на ее руке, Джек невольно \nприближается, хочет помочь. И стоило мужчине окликнуть несчастную, как та начала \nмедленно и дерганно поворачиваться. Зараженная... Джек остолбенел, не в силах отвести \nвзгляда от изуродованного лица девушки. В следующий момент монстр вцепился в руку \nДжека, и только нестерпимая боль вывела его из ступора.",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_bitten",
+				"text_rect": [
+					11.0,
+					342.75,
+					775.0,
+					131.5
+				],
+				"panel_rect": [
+					0.0,
+					337.0,
+					800.0,
+					143.0
+				]
+			},
+			"position": [
+				20400.0,
+				6500.0
+			],
+			"title": "bitten"
+		},
+		"bitten__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				20790.0,
+				6500.0
+			],
+			"title": "Далее"
+		},
+		"bite_transition": {
+			"type": "scene",
+			"data": {
+				"source": "VitrMov frame 3 / Symbol 2470 frames 1–51",
+				"text": "",
+				"image": "Fon1_1.png",
+				"kind": "city_cutscene",
+				"art": "city_bite_transition",
+				"auto_seconds": 2.6842105263157894
+			},
+			"position": [
+				22100.0,
+				3900.0
+			],
+			"title": "bite_transition"
+		},
+		"bite_transition__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				22490.0,
+				3900.0
+			],
+			"title": "Далее"
+		},
+		"checkpoint": {
+			"type": "scene",
+			"data": {
+				"source": "VitrMov frame 4 / Symbol 2479; VitrMov.as",
+				"text": "В полубреду Джек сам не понял, как вышел к военному заграждению на окраинах города. \nЗдесь творился сущий хаос: толпы бредущих тел яростно хрипя перли прямо на дула \nпулеметов и винтовок солдат, асфальт округ был густо усеян трупами, кровью и \nкилограммами стрелянных гильз.",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_checkpoint",
+				"text_rect": [
+					11.0,
+					370.75,
+					775.0,
+					103.5
+				],
+				"panel_rect": [
+					0.0,
+					365.0,
+					800.0,
+					115.0
+				]
+			},
+			"position": [
+				23800.0,
+				2600.0
+			],
+			"title": "checkpoint"
+		},
+		"checkpoint__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				24190.0,
+				2600.0
+			],
+			"title": "Далее"
+		},
+		"checkpoint_shot": {
+			"type": "scene",
+			"data": {
+				"source": "VitrMov frame 5 / Symbol 2479; VitrMov.as",
+				"text": "Пока один из армейских батальонов и оставшаяся в живых часть спецназа отвлекала \nволны зараженных, чуть в стороне люди в защитных костюмах спешно проверяли \nвыживших и пропускали за укрепления, подальше от этого ада. Джек со следом укуса на \nруке даже не успел ничего объяснить... Выстрел штурмовой винтовки прервал его на \nполуслове.",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_checkpoint_shot",
+				"text_rect": [
+					11.0,
+					343.75,
+					775.0,
+					130.5
+				],
+				"panel_rect": [
+					0.0,
+					338.0,
+					800.0,
+					142.0
+				]
+			},
+			"position": [
+				25500.0,
+				3900.0
+			],
+			"title": "checkpoint_shot"
+		},
+		"checkpoint_shot__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				25890.0,
+				3900.0
+			],
+			"title": "Далее"
+		},
+		"roof_explosion": {
+			"type": "scene",
+			"data": {
+				"source": "MovBoom frame 4; MovBoom.Checker",
+				"text": "",
+				"image": "Fon1_1.png",
+				"kind": "city_cutscene",
+				"art": "city_roof_explosion",
+				"auto_seconds": 0.8
+			},
+			"position": [
+				28900.0,
+				0.0
+			],
+			"title": "roof_explosion"
+		},
+		"roof_explosion__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				29290.0,
+				0.0
+			],
+			"title": "Далее"
+		},
+		"door_explosion": {
+			"type": "scene",
+			"data": {
+				"source": "MovBoom frame 1; MovBoom.Checker",
+				"text": "",
+				"image": "Fon1_1.png",
+				"kind": "city_cutscene",
+				"art": "city_door_explosion",
+				"auto_seconds": 0.8
+			},
+			"position": [
+				20400.0,
+				7800.0
+			],
+			"title": "door_explosion"
+		},
+		"door_explosion__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				20790.0,
+				7800.0
+			],
+			"title": "Далее"
+		},
+		"door_blast": {
+			"type": "scene",
+			"data": {
+				"source": "MovBoom frame 2; MovBoom.Checker",
+				"text": "",
+				"image": "Fon1_1.png",
+				"kind": "city_cutscene",
+				"art": "city_door_blast",
+				"auto_seconds": 0.8
+			},
+			"position": [
+				22100.0,
+				5200.0
+			],
+			"title": "door_blast"
+		},
+		"door_blast__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				22490.0,
+				5200.0
+			],
+			"title": "Далее"
+		},
+		"door_blast_inner": {
+			"type": "scene",
+			"data": {
+				"source": "MovBoom frame 3; MovBoom.Checker",
+				"text": "",
+				"image": "Fon1_1.png",
+				"kind": "city_cutscene",
+				"art": "city_door_blast_inner",
+				"auto_seconds": 0.8
+			},
+			"position": [
+				23800.0,
+				3900.0
+			],
+			"title": "door_blast_inner"
+		},
+		"door_blast_inner__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				24190.0,
+				3900.0
+			],
+			"title": "Далее"
+		},
+		"explosion_flash": {
+			"type": "scene",
+			"data": {
+				"source": "MovBoom frame 5; MovBoom.Checker",
+				"text": "",
+				"image": "Fon1_1.png",
+				"kind": "city_cutscene",
+				"art": "city_explosion_flash",
+				"auto_seconds": 0.65,
+				"sound": "Explosion"
+			},
+			"position": [
+				25500.0,
+				5200.0
+			],
+			"title": "explosion_flash"
+		},
+		"explosion_flash__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				25890.0,
+				5200.0
+			],
+			"title": "Далее"
+		},
+		"death_2": {
+			"type": "scene",
+			"data": {
+				"source": "ResultBad(2); ResultArr[1]",
+				"text": "После взрыва такой мощности еще никому не удавалось остаться в живых.",
+				"image": "Fon1_1.png",
+				"kind": "city_death",
+				"art": "city_result",
+				"result_id": 2.0,
+				"alive": false
+			},
+			"position": [
+				27200.0,
+				3900.0
+			],
+			"title": "death_2"
+		},
+		"death_3": {
+			"type": "scene",
+			"data": {
+				"source": "ResultBad(3); ResultArr[2]",
+				"text": "Зомби проломили лобовое стекло и залезли в автомобиль.",
+				"image": "Fon1_1.png",
+				"kind": "city_death",
+				"art": "city_result",
+				"result_id": 3.0,
+				"alive": false
+			},
+			"position": [
+				23800.0,
+				5200.0
+			],
+			"title": "death_3"
+		},
+		"death_5": {
+			"type": "scene",
+			"data": {
+				"source": "ResultBad(5); ResultArr[4]",
+				"text": "Один, под толщей металла и бетона в окружении толпы ходячих мертвецов... Теперь такой же. Как они.",
+				"image": "Fon1_1.png",
+				"kind": "city_death",
+				"art": "city_result",
+				"result_id": 5.0,
+				"alive": false
+			},
+			"position": [
+				25500.0,
+				6500.0
+			],
+			"title": "death_5"
+		},
+		"death_10": {
+			"type": "scene",
+			"data": {
+				"source": "ResultBad(10); ResultArr[9]",
+				"text": "Джек, как потенциально опасный индивид, убит военными.",
+				"image": "Fon1_1.png",
+				"kind": "city_death",
+				"art": "city_result",
+				"result_id": 10.0,
+				"alive": false
+			},
+			"position": [
+				27200.0,
+				5200.0
+			],
+			"title": "death_10"
+		},
+		"death_11": {
+			"type": "scene",
+			"data": {
+				"source": "ResultBad(11); ResultArr[10]",
+				"text": "Джек в панике побежал прочь от жутких мертвецов, споткнулся, упал, разбив стеклянный стол. Зомби настигли его, когда он, воя от боли в изрезанных руках, пытался встать.",
+				"image": "Fon1_1.png",
+				"kind": "city_death",
+				"art": "city_result",
+				"result_id": 11.0,
+				"alive": false
+			},
+			"position": [
+				28900.0,
+				1300.0
+			],
+			"title": "death_11"
+		},
+		"farm_boundary": {
+			"type": "scene",
+			"data": {
+				"source": "OldFarmMov frame 1; overrides {'Mov.Hist': 0}; compatible alias farm_boundary",
+				"kind": "city_story",
+				"art": "ep1_farm_entry_1",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Вокруг ни души, впереди — заброшенная ферма. Сгущается туман... Может быть, стоит \nпопробовать обследовать ферму, вдруг получится переждать окружающий хаос пару \nдней?",
+				"blocks": [
+					{
+						"text": "Вокруг ни души, впереди — заброшенная ферма. Сгущается туман... Может быть, стоит попробовать обследовать ферму, вдруг получится переждать окружающий хаос пару дней?",
+						"rect": [
+							11.0,
+							5.75,
+							769.0,
+							86.15
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				],
+				"controls_art": "ep1_farm_entry_1_controls"
+			},
+			"position": [
+				18700.0,
+				7800.0
+			],
+			"title": "farm_boundary"
+		},
+		"farm_boundary__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить путь",
+				"rect": [
+					300.0,
+					296.5,
+					499.5,
+					183.5
+				],
+				"mask": "ep1_hit_2598_0_1"
+			},
+			"position": [
+				19090.0,
+				7800.0
+			],
+			"title": "Продолжить путь"
+		},
+		"farm_boundary__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Обследовать ферму",
+				"rect": [
+					379.5,
+					155.5,
+					297.5,
+					183.0
+				],
+				"mask": "ep1_hit_2598_0_2"
+			},
+			"position": [
+				19090.0,
+				8090.0
+			],
+			"title": "Обследовать ферму"
+		},
+		"forest_boundary": {
+			"type": "scene",
+			"data": {
+				"source": "ForestRun frame 3; overrides {'Mov.Hist': 1}; compatible alias forest_boundary",
+				"kind": "city_story",
+				"art": "ep1_forest_village_1",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Батарея в машине Джека села недалеко от небольшого поселка, название которого он не знал. Джек забрал вещи и решил попытаться найти в нем безопасное место для ночлега, быстро темнело.",
+				"blocks": [
+					{
+						"text": "Батарея в машине Джека села недалеко от небольшого поселка, название которого он не знал. Джек забрал вещи и решил попытаться найти в нем безопасное место для ночлега, быстро темнело.",
+						"rect": [
+							11.0,
+							395.75,
+							769.0,
+							79.0
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist.Txt"
+					}
+				],
+				"controls_art": "ep1_forest_village_1_controls"
+			},
+			"position": [
+				22100.0,
+				6500.0
+			],
+			"title": "forest_boundary"
+		},
+		"forest_boundary__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжать по дороге",
+				"rect": [
+					392.5,
+					96.5,
+					123.0,
+					69.5
+				],
+				"mask": "ep1_hit_2791_2_1"
+			},
+			"position": [
+				22490.0,
+				6500.0
+			],
+			"title": "Продолжать по дороге"
+		},
+		"forest_boundary__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Укрыться в доме",
+				"rect": [
+					553.0,
+					222.5,
+					247.0,
+					156.5
+				],
+				"mask": "ep1_hit_2791_2_2"
+			},
+			"position": [
+				22490.0,
+				6790.0
+			],
+			"title": "Укрыться в доме"
+		},
+		"mainstreet_boundary": {
+			"type": "scene",
+			"data": {
+				"source": "PerMov frame 12; overrides {}; compatible alias mainstreet_boundary",
+				"kind": "city_story",
+				"art": "ep1_mainstreet_choice",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Медленно отойти назад\n\nПоймать машину и уехать\n\nПоймать машину до офиса\n\nПробежать сквозь зомби\n\nИдея, кажется, не самая удачная... С этими \nлюдьми явно что-то не так. Ох, да это же \nзомби!",
+				"blocks": [],
+				"controls_art": "ep1_mainstreet_choice_controls"
+			},
+			"position": [
+				15300.0,
+				3900.0
+			],
+			"title": "mainstreet_boundary"
+		},
+		"mainstreet_boundary__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Пробежать сквозь зомби",
+				"rect": [
+					85.0,
+					123.0,
+					349.0,
+					65.0
+				]
+			},
+			"position": [
+				15690.0,
+				3900.0
+			],
+			"title": "Пробежать сквозь зомби"
+		},
+		"mainstreet_boundary__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Поймать машину до офиса",
+				"rect": [
+					85.0,
+					194.0,
+					349.0,
+					65.0
+				]
+			},
+			"position": [
+				15690.0,
+				4190.0
+			],
+			"title": "Поймать машину до офиса"
+		},
+		"mainstreet_boundary__choice_2": {
+			"type": "choice",
+			"data": {
+				"text": "Поймать машину и уехать",
+				"rect": [
+					85.0,
+					265.0,
+					349.0,
+					65.0
+				]
+			},
+			"position": [
+				15690.0,
+				4480.0
+			],
+			"title": "Поймать машину и уехать"
+		},
+		"mainstreet_boundary__choice_3": {
+			"type": "choice",
+			"data": {
+				"text": "Медленно отойти назад",
+				"rect": [
+					85.0,
+					336.0,
+					349.0,
+					65.0
+				]
+			},
+			"position": [
+				15690.0,
+				4770.0
+			],
+			"title": "Медленно отойти назад"
+		},
+		"taxi_boundary": {
+			"type": "scene",
+			"data": {
+				"source": "TaxiMov frame 1; overrides {'Mov.Hist': 0}; compatible alias taxi_boundary",
+				"kind": "city_story",
+				"art": "ep1_taxi_entry_1",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "К огромному облегчению Джека, его друг, таксист Бен, оказался там, где обычно — \nждущим клиентов. Невероятно, что получилось его застать! Видя, что творится что-то \nнеладное, люди старались уехать прочь из города, от греха подальше, но не у всех были \nавтомобили.",
+				"blocks": [
+					{
+						"text": "К огромному облегчению Джека, его друг, таксист Бен, оказался там, где обычно — ждущим клиентов. Невероятно, что получилось его застать! Видя, что творится что-то неладное, люди старались уехать прочь из города, от греха подальше, но не у всех были автомобили.",
+						"rect": [
+							11.0,
+							371.75,
+							769.0,
+							103.25
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				]
+			},
+			"position": [
+				15300.0,
+				5200.0
+			],
+			"title": "taxi_boundary"
+		},
+		"taxi_boundary__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				15690.0,
+				5200.0
+			],
+			"title": "Продолжить"
+		},
+		"taxi_escape_boundary": {
+			"type": "scene",
+			"data": {
+				"source": "TaxiMov frame 1; overrides {'Mov.Hist': 1}; compatible alias taxi_escape_boundary",
+				"kind": "city_story",
+				"art": "ep1_taxi_entry_1",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Да где же он? Здесь же был всегда... Неужели уже уехал? К огромному разочарованию \nДжека, его друга, таксиста Бена, на привычном месте не оказалось. Это значило, что \nмужчине необходимо было срочно придумать иной план к отступлению из так \nстремительно звереющего города.",
+				"blocks": [
+					{
+						"text": "Да где же он? Здесь же был всегда... Неужели уже уехал? К огромному разочарованию Джека, его друга, таксиста Бена, на привычном месте не оказалось. Это значило, что мужчине необходимо было срочно придумать иной план к отступлению из так стремительно звереющего города.",
+						"rect": [
+							11.0,
+							371.75,
+							769.0,
+							103.25
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				]
+			},
+			"position": [
+				20400.0,
+				9100.0
+			],
+			"title": "taxi_escape_boundary"
+		},
+		"taxi_escape_boundary__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				20790.0,
+				9100.0
+			],
+			"title": "Продолжить"
+		},
+		"suburb_boundary": {
+			"type": "scene",
+			"data": {
+				"source": "Dorvud frame 1; overrides {'Mov.Hist': 1}; compatible alias suburb_boundary",
+				"kind": "city_story",
+				"art": "ep1_dorvud_entry_1",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Джека высадили на окраине Дорвуда, маленького городишки, где в свое время жило всего лишь несколько тысяч жителей. Но теперь...",
+				"blocks": [
+					{
+						"text": "Джека высадили на окраине Дорвуда, маленького городишки, где в свое время жило всего лишь несколько тысяч жителей. Но теперь...",
+						"rect": [
+							11.0,
+							421.6,
+							769.0,
+							53.4
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist.Txt"
+					}
+				]
+			},
+			"position": [
+				20400.0,
+				10400.0
+			],
+			"title": "suburb_boundary"
+		},
+		"suburb_boundary__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				20790.0,
+				10400.0
+			],
+			"title": "Продолжить"
+		},
+		"farm_entry_1": {
+			"type": "scene",
+			"data": {
+				"source": "OldFarmMov frame 1; overrides {'Mov.Hist': 0}",
+				"kind": "city_story",
+				"art": "ep1_farm_entry_1",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Вокруг ни души, впереди — заброшенная ферма. Сгущается туман... Может быть, стоит \nпопробовать обследовать ферму, вдруг получится переждать окружающий хаос пару \nдней?",
+				"blocks": [
+					{
+						"text": "Вокруг ни души, впереди — заброшенная ферма. Сгущается туман... Может быть, стоит попробовать обследовать ферму, вдруг получится переждать окружающий хаос пару дней?",
+						"rect": [
+							11.0,
+							5.75,
+							769.0,
+							86.15
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				],
+				"controls_art": "ep1_farm_entry_1_controls"
+			},
+			"position": [
+				0.0,
+				1300.0
+			],
+			"title": "farm_entry_1"
+		},
+		"farm_entry_1__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить путь",
+				"rect": [
+					300.0,
+					296.5,
+					499.5,
+					183.5
+				],
+				"mask": "ep1_hit_2598_0_1"
+			},
+			"position": [
+				390.0,
+				1300.0
+			],
+			"title": "Продолжить путь"
+		},
+		"farm_entry_1__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Обследовать ферму",
+				"rect": [
+					379.5,
+					155.5,
+					297.5,
+					183.0
+				],
+				"mask": "ep1_hit_2598_0_2"
+			},
+			"position": [
+				390.0,
+				1590.0
+			],
+			"title": "Обследовать ферму"
+		},
+		"farm_entry_2": {
+			"type": "scene",
+			"data": {
+				"source": "OldFarmMov frame 1; overrides {'Mov.Hist': 1}",
+				"kind": "city_story",
+				"art": "ep1_farm_entry_1",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Джек решил отказаться, и Бен высадил его около заброшенной фермы или завода, \nточно было не разглядеть. Теперь стоило продумать дальнейшие действия.",
+				"blocks": [
+					{
+						"text": "Джек решил отказаться, и Бен высадил его около заброшенной фермы или завода, точно было не разглядеть. Теперь стоило продумать дальнейшие действия.",
+						"rect": [
+							11.0,
+							5.75,
+							769.0,
+							62.15
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 25.0,
+						"path": "Mov.Hist"
+					}
+				],
+				"controls_art": "ep1_farm_entry_2_controls"
+			},
+			"position": [
+				22100.0,
+				7800.0
+			],
+			"title": "farm_entry_2"
+		},
+		"farm_entry_2__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить путь",
+				"rect": [
+					300.0,
+					296.5,
+					499.5,
+					183.5
+				],
+				"mask": "ep1_hit_2598_0_1"
+			},
+			"position": [
+				22490.0,
+				7800.0
+			],
+			"title": "Продолжить путь"
+		},
+		"farm_entry_2__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Обследовать ферму",
+				"rect": [
+					379.5,
+					155.5,
+					297.5,
+					183.0
+				],
+				"mask": "ep1_hit_2598_0_2"
+			},
+			"position": [
+				22490.0,
+				8090.0
+			],
+			"title": "Обследовать ферму"
+		},
+		"farm_inside": {
+			"type": "scene",
+			"data": {
+				"source": "OldFarmMov frame 2; overrides {}",
+				"kind": "city_story",
+				"art": "ep1_farm_inside",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "На одном форуме Джек прочитал, посчитав это сказкой в свое время, что животные с \n«синдромом зомби» (как там говорилось) в отсутствие внешних раздражителей впадают в \n«спячку», застывают без движения и могут поджидать неосторожную жертву сколь \nугодно долго. Откуда появилась эта информация и что это за синдром — никто не знал.",
+				"blocks": [
+					{
+						"text": "На одном форуме Джек прочитал, посчитав это сказкой в свое время, что животные с «синдромом зомби» (как там говорилось) в отсутствие внешних раздражителей впадают в «спячку», застывают без движения и могут поджидать неосторожную жертву сколь угодно долго. Откуда появилась эта информация и что это за синдром — никто не знал.",
+						"rect": [
+							11.0,
+							367.75,
+							769.0,
+							107.25
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				],
+				"controls_art": "ep1_farm_inside_controls"
+			},
+			"position": [
+				20400.0,
+				11700.0
+			],
+			"title": "farm_inside"
+		},
+		"farm_inside__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Обследовать дальнюю часть",
+				"rect": [
+					395.0,
+					43.0,
+					96.0,
+					276.0
+				],
+				"mask": "ep1_hit_2598_1_1"
+			},
+			"position": [
+				20790.0,
+				11700.0
+			],
+			"title": "Обследовать дальнюю часть"
+		},
+		"farm_inside__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Осмотреть ферму тихо",
+				"rect": [
+					641.0,
+					159.0,
+					114.0,
+					93.0
+				],
+				"mask": "ep1_hit_2598_1_2"
+			},
+			"position": [
+				20790.0,
+				11990.0
+			],
+			"title": "Осмотреть ферму тихо"
+		},
+		"farm_search": {
+			"type": "scene",
+			"data": {
+				"source": "OldFarmMov frame 3; overrides {}",
+				"kind": "city_story",
+				"art": "ep1_farm_search",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Любой неосторожный звук может пробудить мертвецов, возможно находящихся на ферме. \nДжек старался даже не дышать, он осмотрел уже почти половину фермы, осталась лишь \nдальняя ее часть...",
+				"blocks": [
+					{
+						"text": "Любой неосторожный звук может пробудить мертвецов, возможно находящихся на ферме. Джек старался даже не дышать, он осмотрел уже почти половину фермы, осталась лишь дальняя ее часть...",
+						"rect": [
+							11.0,
+							5.75,
+							769.0,
+							86.15
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				]
+			},
+			"position": [
+				22100.0,
+				9100.0
+			],
+			"title": "farm_search"
+		},
+		"farm_search__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				22490.0,
+				9100.0
+			],
+			"title": "Продолжить"
+		},
+		"farm_leave": {
+			"type": "scene",
+			"data": {
+				"source": "OldFarmMov frame 4; overrides {}",
+				"kind": "city_story",
+				"art": "ep1_farm_leave",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Здесь будет довольно непросто оставаться длительное время. Наверное, лучше двигаться \nдальше, решил Джек. Все темные углы этого места не проверить, а постоянно \nвздрагивать от любого шороха — так можно и с ума сойти.",
+				"blocks": [
+					{
+						"text": "Здесь будет довольно непросто оставаться длительное время. Наверное, лучше двигаться дальше, решил Джек. Все темные углы этого места не проверить, а постоянно вздрагивать от любого шороха — так можно и с ума сойти.",
+						"rect": [
+							11.0,
+							396.7,
+							769.0,
+							78.3
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				]
+			},
+			"position": [
+				23800.0,
+				6500.0
+			],
+			"title": "farm_leave"
+		},
+		"farm_leave__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				24190.0,
+				6500.0
+			],
+			"title": "Продолжить"
+		},
+		"farm_noise": {
+			"type": "scene",
+			"data": {
+				"source": "OldFarmMov frame 5; overrides {'Mov': 9}",
+				"kind": "city_story",
+				"art": "ep1_farm_noise",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Черт! Под ноги Джеку попалась какая-то банка, и он ее по неосторожности задел!",
+				"blocks": [
+					{
+						"text": "Черт! Под ноги Джеку попалась какая-то банка, и он ее по неосторожности задел!",
+						"rect": [
+							11.0,
+							5.75,
+							769.0,
+							30.9
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov"
+					}
+				],
+				"sound": "JunkSteps"
+			},
+			"position": [
+				22100.0,
+				10400.0
+			],
+			"title": "farm_noise"
+		},
+		"farm_noise__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				22490.0,
+				10400.0
+			],
+			"title": "Продолжить"
+		},
+		"farm_sound": {
+			"type": "scene",
+			"data": {
+				"source": "OldFarmMov frame 5; overrides {'Mov': 19}",
+				"kind": "city_story",
+				"art": "ep1_farm_sound",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Звук? Что это за звук?!\n\nЧерт! Под ноги Джеку попалась какая-то банка, и он ее по неосторожности задел!",
+				"blocks": [
+					{
+						"text": "Звук? Что это за звук?!",
+						"rect": [
+							11.0,
+							165.75,
+							769.0,
+							30.9
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov"
+					},
+					{
+						"text": "Черт! Под ноги Джеку попалась какая-то банка, и он ее по неосторожности задел!",
+						"rect": [
+							11.0,
+							5.75,
+							769.0,
+							30.9
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov"
+					}
+				],
+				"sound": "ZombieOnTheGrass"
+			},
+			"position": [
+				23800.0,
+				7800.0
+			],
+			"title": "farm_sound"
+		},
+		"farm_sound__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				24190.0,
+				7800.0
+			],
+			"title": "Продолжить"
+		},
+		"farm_awake": {
+			"type": "scene",
+			"data": {
+				"source": "OldFarmMov frame 5; overrides {'Mov': 29}",
+				"kind": "city_story",
+				"art": "ep1_farm_awake",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Именно этого Джек боялся больше всего. Заброшенные строения кишели мертвецами. И \nтеперь они пробуждались...\n\nЗвук? Что это за звук?!\n\nЧерт! Под ноги Джеку попалась какая-то банка, и он ее по неосторожности задел!",
+				"blocks": [
+					{
+						"text": "Именно этого Джек боялся больше всего. Заброшенные строения кишели мертвецами. И теперь они пробуждались...",
+						"rect": [
+							11.0,
+							325.75,
+							769.0,
+							58.55
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov"
+					},
+					{
+						"text": "Звук? Что это за звук?!",
+						"rect": [
+							11.0,
+							165.75,
+							769.0,
+							30.9
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov"
+					},
+					{
+						"text": "Черт! Под ноги Джеку попалась какая-то банка, и он ее по неосторожности задел!",
+						"rect": [
+							11.0,
+							5.75,
+							769.0,
+							30.9
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov"
+					}
+				],
+				"sound": "ZombieRoar2"
+			},
+			"position": [
+				25500.0,
+				7800.0
+			],
+			"title": "farm_awake"
+		},
+		"farm_awake__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				25890.0,
+				7800.0
+			],
+			"title": "Продолжить"
+		},
+		"farm_chase": {
+			"type": "scene",
+			"data": {
+				"source": "OldFarmMov frame 6; overrides {}",
+				"kind": "city_cutscene",
+				"art": "ep1_farm_chase",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "",
+				"blocks": [],
+				"sound": "ZombiesGroup",
+				"auto_seconds": 1.0
+			},
+			"position": [
+				27200.0,
+				6500.0
+			],
+			"title": "farm_chase"
+		},
+		"farm_chase__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				27590.0,
+				6500.0
+			],
+			"title": "Продолжить"
+		},
+		"forest_road": {
+			"type": "scene",
+			"data": {
+				"source": "ForestRun frame 1; overrides {}",
+				"kind": "city_story",
+				"art": "ep1_forest_road",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Беспрепятственно преодолев полосу тумана, Джек вышел на хорошую проселочную \nдорогу. Теперь оставалось решить что делать дальше: пойти прямо по ней, где он будет \nвиден издалека или свернуть прямиком в лес?",
+				"blocks": [
+					{
+						"text": "Беспрепятственно преодолев полосу тумана, Джек вышел на хорошую проселочную дорогу. Теперь оставалось решить что делать дальше: пойти прямо по ней, где он будет виден издалека или свернуть прямиком в лес?",
+						"rect": [
+							11.0,
+							392.75,
+							769.0,
+							82.25
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				]
+			},
+			"position": [
+				20400.0,
+				13000.0
+			],
+			"title": "forest_road"
+		},
+		"forest_road__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				20790.0,
+				13000.0
+			],
+			"title": "Продолжить"
+		},
+		"forest_choice": {
+			"type": "scene",
+			"data": {
+				"source": "ForestRun frame 1; overrides {}",
+				"kind": "city_decision",
+				"art": "ep1_forest_road",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Каково будет решение Джека?"
+			},
+			"position": [
+				22100.0,
+				11700.0
+			],
+			"title": "forest_choice"
+		},
+		"forest_choice__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжать движение"
+			},
+			"position": [
+				22490.0,
+				11700.0
+			],
+			"title": "Продолжать движение"
+		},
+		"forest_choice__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Свернуть в лес"
+			},
+			"position": [
+				22490.0,
+				11990.0
+			],
+			"title": "Свернуть в лес"
+		},
+		"forest_walk": {
+			"type": "scene",
+			"data": {
+				"source": "ForestRun frame 2; overrides {}",
+				"kind": "city_story",
+				"art": "ep1_forest_walk",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Дорога все тянулась и тянулась. Джек периодически замирал, слушая окружающие звуки. \nИногда приходилось прятаться за ближайщим деревом, пропуская бредущего мимо \nмертвеца. Джек все больше привыкал к жизни, где лишний шум может стоить ему \nжизни...",
+				"blocks": [
+					{
+						"text": "Дорога все тянулась и тянулась. Джек периодически замирал, слушая окружающие звуки. Иногда приходилось прятаться за ближайщим деревом, пропуская бредущего мимо мертвеца. Джек все больше привыкал к жизни, где лишний шум может стоить ему жизни...",
+						"rect": [
+							11.0,
+							369.75,
+							769.0,
+							105.25
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				]
+			},
+			"position": [
+				23800.0,
+				9100.0
+			],
+			"title": "forest_walk"
+		},
+		"forest_walk__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				24190.0,
+				9100.0
+			],
+			"title": "Продолжить"
+		},
+		"forest_village_1": {
+			"type": "scene",
+			"data": {
+				"source": "ForestRun frame 3; overrides {'Mov.Hist': 0}",
+				"kind": "city_story",
+				"art": "ep1_forest_village_1",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Джек вышел к окраинам небольшого поселка, с виду пустынного, как и все остальные. Стоило искать ночлег, скоро стемнеет и продолжать движение будет сродни самоубийству.",
+				"blocks": [
+					{
+						"text": "Джек вышел к окраинам небольшого поселка, с виду пустынного, как и все остальные. Стоило искать ночлег, скоро стемнеет и продолжать движение будет сродни самоубийству.",
+						"rect": [
+							11.0,
+							421.75,
+							769.0,
+							53.0
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist.Txt"
+					}
+				],
+				"controls_art": "ep1_forest_village_1_controls"
+			},
+			"position": [
+				25500.0,
+				9100.0
+			],
+			"title": "forest_village_1"
+		},
+		"forest_village_1__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжать по дороге",
+				"rect": [
+					392.5,
+					96.5,
+					123.0,
+					69.5
+				],
+				"mask": "ep1_hit_2791_2_1"
+			},
+			"position": [
+				25890.0,
+				9100.0
+			],
+			"title": "Продолжать по дороге"
+		},
+		"forest_village_1__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Укрыться в доме",
+				"rect": [
+					553.0,
+					222.5,
+					247.0,
+					156.5
+				],
+				"mask": "ep1_hit_2791_2_2"
+			},
+			"position": [
+				25890.0,
+				9390.0
+			],
+			"title": "Укрыться в доме"
+		},
+		"forest_village_2": {
+			"type": "scene",
+			"data": {
+				"source": "ForestRun frame 3; overrides {'Mov.Hist': 1}",
+				"kind": "city_story",
+				"art": "ep1_forest_village_1",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Батарея в машине Джека села недалеко от небольшого поселка, название которого он не знал. Джек забрал вещи и решил попытаться найти в нем безопасное место для ночлега, быстро темнело.",
+				"blocks": [
+					{
+						"text": "Батарея в машине Джека села недалеко от небольшого поселка, название которого он не знал. Джек забрал вещи и решил попытаться найти в нем безопасное место для ночлега, быстро темнело.",
+						"rect": [
+							11.0,
+							395.75,
+							769.0,
+							79.0
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist.Txt"
+					}
+				],
+				"controls_art": "ep1_forest_village_1_controls"
+			},
+			"position": [
+				0.0,
+				2600.0
+			],
+			"title": "forest_village_2"
+		},
+		"forest_village_2__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжать по дороге",
+				"rect": [
+					392.5,
+					96.5,
+					123.0,
+					69.5
+				],
+				"mask": "ep1_hit_2791_2_1"
+			},
+			"position": [
+				390.0,
+				2600.0
+			],
+			"title": "Продолжать по дороге"
+		},
+		"forest_village_2__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Укрыться в доме",
+				"rect": [
+					553.0,
+					222.5,
+					247.0,
+					156.5
+				],
+				"mask": "ep1_hit_2791_2_2"
+			},
+			"position": [
+				390.0,
+				2890.0
+			],
+			"title": "Укрыться в доме"
+		},
+		"forest_house": {
+			"type": "scene",
+			"data": {
+				"source": "ForestRun frame 4; overrides {}",
+				"kind": "city_story",
+				"art": "ep1_forest_house",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Джек начал медленно пробираться к ближайшему домику, стараясь не привлекать \nвнимания бродивших вокруг мертвецов.",
+				"blocks": [
+					{
+						"text": "Джек начал медленно пробираться к ближайшему домику, стараясь не привлекать внимания бродивших вокруг мертвецов.",
+						"rect": [
+							11.0,
+							420.75,
+							769.0,
+							54.25
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				]
+			},
+			"position": [
+				23800.0,
+				10400.0
+			],
+			"title": "forest_house"
+		},
+		"forest_house__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				24190.0,
+				10400.0
+			],
+			"title": "Продолжить"
+		},
+		"forest_cellar": {
+			"type": "scene",
+			"data": {
+				"source": "ForestRun frame 5; overrides {}",
+				"kind": "city_story",
+				"art": "ep1_forest_cellar",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "С замиранием сердца исследовав дом, Джек не нашел признаков опасности и решил в \nитоге переночевать в пустом погребе, прихватив несколько одеял.",
+				"blocks": [
+					{
+						"text": "С замиранием сердца исследовав дом, Джек не нашел признаков опасности и решил в итоге переночевать в пустом погребе, прихватив несколько одеял.",
+						"rect": [
+							11.0,
+							419.75,
+							769.0,
+							55.25
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				]
+			},
+			"position": [
+				25500.0,
+				10400.0
+			],
+			"title": "forest_cellar"
+		},
+		"forest_cellar__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				25890.0,
+				10400.0
+			],
+			"title": "Продолжить"
+		},
+		"forest_shelter_1": {
+			"type": "scene",
+			"data": {
+				"source": "ForestRun frame 6; overrides {'Mov': 4}",
+				"kind": "city_story",
+				"art": "ep1_farm_chase",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Закрыв дверь в погреб, Джек устало закрыл глаза. Каждое лишнее движение уставших \nног отзывалось тупой болью... Кажется, что он преодолел пешком за сегодня расстояние \nбольшее, чем за всю свою жизнь.",
+				"blocks": [
+					{
+						"text": "Закрыв дверь в погреб, Джек устало закрыл глаза. Каждое лишнее движение уставших ног отзывалось тупой болью... Кажется, что он преодолел пешком за сегодня расстояние большее, чем за всю свою жизнь.",
+						"rect": [
+							32.0,
+							24.75,
+							748.0,
+							86.15
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov"
+					}
+				]
+			},
+			"position": [
+				27200.0,
+				7800.0
+			],
+			"title": "forest_shelter_1"
+		},
+		"forest_shelter_1__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				27590.0,
+				7800.0
+			],
+			"title": "Продолжить"
+		},
+		"forest_shelter_2": {
+			"type": "scene",
+			"data": {
+				"source": "ForestRun frame 6; overrides {'Mov': 9}",
+				"kind": "city_story",
+				"art": "ep1_farm_chase",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "«Невероятно! Я, обычный офисный работник, умудрился \nвыжить в этом аду!\nТеперь мне стоит подумать о том, что же делать \nдальше. Постараюсь найти людей, присоединиться к ним. \nНе думаю, что смогу в одиночку...»\n\nЗакрыв дверь в погреб, Джек устало закрыл глаза. Каждое лишнее движение уставших \nног отзывалось тупой болью... Кажется, что он преодолел пешком за сегодня расстояние \nбольшее, чем за всю свою жизнь.",
+				"blocks": [
+					{
+						"text": "«Невероятно! Я, обычный офисный работник, умудрился выжить в этом аду! Теперь мне стоит подумать о том, что же делать дальше. Постараюсь найти людей, присоединиться к ним. Не думаю, что смогу в одиночку...»",
+						"rect": [
+							19.0,
+							190.45,
+							761.0,
+							284.55
+						],
+						"font": "SegoeScript",
+						"size": 22.0,
+						"path": "Mov"
+					},
+					{
+						"text": "Закрыв дверь в погреб, Джек устало закрыл глаза. Каждое лишнее движение уставших ног отзывалось тупой болью... Кажется, что он преодолел пешком за сегодня расстояние большее, чем за всю свою жизнь.",
+						"rect": [
+							32.0,
+							24.75,
+							748.0,
+							86.15
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov"
+					}
+				]
+			},
+			"position": [
+				28900.0,
+				2600.0
+			],
+			"title": "forest_shelter_2"
+		},
+		"forest_shelter_2__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				29290.0,
+				2600.0
+			],
+			"title": "Продолжить"
+		},
+		"forest_shelter_3": {
+			"type": "scene",
+			"data": {
+				"source": "ForestRun frame 6; overrides {'Mov': 14}",
+				"kind": "city_story",
+				"art": "ep1_farm_chase",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Дневник Джека. 15.06\n\n«Невероятно! Я, обычный офисный работник, умудрился \nвыжить в этом аду!\nТеперь мне стоит подумать о том, что же делать \nдальше. Постараюсь найти людей, присоединиться к ним. \nНе думаю, что смогу в одиночку...»\n\nЗакрыв дверь в погреб, Джек устало закрыл глаза. Каждое лишнее движение уставших \nног отзывалось тупой болью... Кажется, что он преодолел пешком за сегодня расстояние \nбольшее, чем за всю свою жизнь.",
+				"blocks": [
+					{
+						"text": "Дневник Джека. 15.06",
+						"rect": [
+							449.0,
+							425.85,
+							331.0,
+							49.15
+						],
+						"font": "B52 Regular",
+						"size": 18.0,
+						"path": "Mov"
+					},
+					{
+						"text": "«Невероятно! Я, обычный офисный работник, умудрился выжить в этом аду! Теперь мне стоит подумать о том, что же делать дальше. Постараюсь найти людей, присоединиться к ним. Не думаю, что смогу в одиночку...»",
+						"rect": [
+							19.0,
+							190.45,
+							761.0,
+							284.55
+						],
+						"font": "SegoeScript",
+						"size": 22.0,
+						"path": "Mov"
+					},
+					{
+						"text": "Закрыв дверь в погреб, Джек устало закрыл глаза. Каждое лишнее движение уставших ног отзывалось тупой болью... Кажется, что он преодолел пешком за сегодня расстояние большее, чем за всю свою жизнь.",
+						"rect": [
+							32.0,
+							24.75,
+							748.0,
+							86.15
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov"
+					}
+				]
+			},
+			"position": [
+				30600.0,
+				0.0
+			],
+			"title": "forest_shelter_3"
+		},
+		"forest_shelter_3__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				30990.0,
+				0.0
+			],
+			"title": "Продолжить"
+		},
+		"forest_marauder_1": {
+			"type": "scene",
+			"data": {
+				"source": "ForestRun frame 7; overrides {'Mov': 5}",
+				"kind": "city_story",
+				"art": "ep1_forest_marauder_1",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "",
+				"blocks": []
+			},
+			"position": [
+				23800.0,
+				11700.0
+			],
+			"title": "forest_marauder_1"
+		},
+		"forest_marauder_1__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				24190.0,
+				11700.0
+			],
+			"title": "Продолжить"
+		},
+		"forest_marauder_2": {
+			"type": "scene",
+			"data": {
+				"source": "ForestRun frame 7; overrides {'Mov': 12}",
+				"kind": "city_story",
+				"art": "ep1_forest_marauder_2",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "",
+				"blocks": []
+			},
+			"position": [
+				25500.0,
+				11700.0
+			],
+			"title": "forest_marauder_2"
+		},
+		"forest_marauder_2__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				25890.0,
+				11700.0
+			],
+			"title": "Продолжить"
+		},
+		"forest_marauder_3": {
+			"type": "scene",
+			"data": {
+				"source": "ForestRun frame 7; overrides {'Mov': 19}",
+				"kind": "city_story",
+				"art": "ep1_forest_marauder_3",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Джек не услышал приглушенного глушителем выстрела снайперской винтовки и не \nпочувствовал попадания в него десяти граммов свинца. Пуля угодила в голову, и ему \nстало все равно, что мародеров заинтересовал его рюкзак...",
+				"blocks": [
+					{
+						"text": "Джек не услышал приглушенного глушителем выстрела снайперской винтовки и не почувствовал попадания в него десяти граммов свинца. Пуля угодила в голову, и ему стало все равно, что мародеров заинтересовал его рюкзак...",
+						"rect": [
+							11.0,
+							5.75,
+							769.0,
+							86.15
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				]
+			},
+			"position": [
+				27200.0,
+				9100.0
+			],
+			"title": "forest_marauder_3"
+		},
+		"forest_marauder_3__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				27590.0,
+				9100.0
+			],
+			"title": "Продолжить"
+		},
+		"forest_enter": {
+			"type": "scene",
+			"data": {
+				"source": "ForestRun frame 8; overrides {}",
+				"kind": "city_story",
+				"art": "ep1_forest_enter",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Джек свернул в лес и пошел, как он думал, в направлении ближайшего населенного \nпункта. Следовало торопиться: скоро стемнеет, и шансы выйти из леса живым будут \nтаять с каждой минутой.",
+				"blocks": [
+					{
+						"text": "Джек свернул в лес и пошел, как он думал, в направлении ближайшего населенного пункта. Следовало торопиться: скоро стемнеет, и шансы выйти из леса живым будут таять с каждой минутой.",
+						"rect": [
+							11.0,
+							5.75,
+							769.0,
+							92.1
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 25.0,
+						"path": "Mov.Hist"
+					}
+				]
+			},
+			"position": [
+				23800.0,
+				13000.0
+			],
+			"title": "forest_enter"
+		},
+		"forest_enter__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				24190.0,
+				13000.0
+			],
+			"title": "Продолжить"
+		},
+		"forest_lost": {
+			"type": "scene",
+			"data": {
+				"source": "ForestRun frame 9; overrides {}",
+				"kind": "city_story",
+				"art": "ep1_forest_lost",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Через час Джек понял, что совсем заблудился и не может определить направление на \nДорвуд. Небо заволокло тучами, неумолимо приближался вечер... Куда дальше? Через \nнесколько часов здесь будет не разглядеть ни зги.",
+				"blocks": [
+					{
+						"text": "Через час Джек понял, что совсем заблудился и не может определить направление на Дорвуд. Небо заволокло тучами, неумолимо приближался вечер... Куда дальше? Через несколько часов здесь будет не разглядеть ни зги.",
+						"rect": [
+							11.0,
+							5.75,
+							769.0,
+							86.15
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				],
+				"controls_art": "ep1_forest_lost_controls"
+			},
+			"position": [
+				25500.0,
+				13000.0
+			],
+			"title": "forest_lost"
+		},
+		"forest_lost__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Выйти к Дорвуду",
+				"rect": [
+					480.5,
+					419.5,
+					196.5,
+					54.5
+				],
+				"mask": "ep1_hit_2791_8_1"
+			},
+			"position": [
+				25890.0,
+				13000.0
+			],
+			"title": "Выйти к Дорвуду"
+		},
+		"forest_lost__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Искать путь в лесу",
+				"rect": [
+					277.5,
+					334.5,
+					152.5,
+					85.5
+				],
+				"mask": "ep1_hit_2791_8_2"
+			},
+			"position": [
+				25890.0,
+				13290.0
+			],
+			"title": "Искать путь в лесу"
+		},
+		"forest_horde": {
+			"type": "scene",
+			"data": {
+				"source": "ForestRun frame 10; overrides {}",
+				"kind": "city_story",
+				"art": "ep1_forest_horde",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Впереди вдруг послышались многочисленные шаги и рычание, и Джек увидел \nприближающуюся толпу мертвецов. Откуда она взялась в лесу?! В панике Джек пытается \nзабраться на ближайшее дерево, но ноги все время соскальзывают с влажной коры.",
+				"blocks": [
+					{
+						"text": "Впереди вдруг послышались многочисленные шаги и рычание, и Джек увидел приближающуюся толпу мертвецов. Откуда она взялась в лесу?! В панике Джек пытается забраться на ближайшее дерево, но ноги все время соскальзывают с влажной коры.",
+						"rect": [
+							11.0,
+							393.75,
+							769.0,
+							81.25
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				],
+				"sound": "ZombiesGroup"
+			},
+			"position": [
+				27200.0,
+				10400.0
+			],
+			"title": "forest_horde"
+		},
+		"forest_horde__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				27590.0,
+				10400.0
+			],
+			"title": "Продолжить"
+		},
+		"forest_caught": {
+			"type": "scene",
+			"data": {
+				"source": "ForestRun frame 11; overrides {}",
+				"kind": "city_story",
+				"art": "ep1_forest_caught",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Внезапно что-то схватило Джека за ногу. От неожиданности он упал и в ужасе увидел \nперед собой безногого мертвеца, тянущегося к нему. Джек вырвался и, не вставая, \nпопытался отползти от жуткого монстра. Сзади послышалось утробное рычание... \nМертвецы были совсем рядом.",
+				"blocks": [
+					{
+						"text": "Внезапно что-то схватило Джека за ногу. От неожиданности он упал и в ужасе увидел перед собой безногого мертвеца, тянущегося к нему. Джек вырвался и, не вставая, попытался отползти от жуткого монстра. Сзади послышалось утробное рычание... Мертвецы были совсем рядом.",
+						"rect": [
+							11.0,
+							5.75,
+							769.0,
+							113.8
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				],
+				"sound": "ManDeath"
+			},
+			"position": [
+				28900.0,
+				3900.0
+			],
+			"title": "forest_caught"
+		},
+		"forest_caught__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				29290.0,
+				3900.0
+			],
+			"title": "Продолжить"
+		},
+		"taxi_entry_1": {
+			"type": "scene",
+			"data": {
+				"source": "TaxiMov frame 1; overrides {'Mov.Hist': 0}",
+				"kind": "city_story",
+				"art": "ep1_taxi_entry_1",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "К огромному облегчению Джека, его друг, таксист Бен, оказался там, где обычно — \nждущим клиентов. Невероятно, что получилось его застать! Видя, что творится что-то \nнеладное, люди старались уехать прочь из города, от греха подальше, но не у всех были \nавтомобили.",
+				"blocks": [
+					{
+						"text": "К огромному облегчению Джека, его друг, таксист Бен, оказался там, где обычно — ждущим клиентов. Невероятно, что получилось его застать! Видя, что творится что-то неладное, люди старались уехать прочь из города, от греха подальше, но не у всех были автомобили.",
+						"rect": [
+							11.0,
+							371.75,
+							769.0,
+							103.25
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				]
+			},
+			"position": [
+				0.0,
+				3900.0
+			],
+			"title": "taxi_entry_1"
+		},
+		"taxi_entry_1__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				390.0,
+				3900.0
+			],
+			"title": "Продолжить"
+		},
+		"taxi_entry_2": {
+			"type": "scene",
+			"data": {
+				"source": "TaxiMov frame 1; overrides {'Mov.Hist': 1}",
+				"kind": "city_story",
+				"art": "ep1_taxi_entry_1",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Да где же он? Здесь же был всегда... Неужели уже уехал? К огромному разочарованию \nДжека, его друга, таксиста Бена, на привычном месте не оказалось. Это значило, что \nмужчине необходимо было срочно придумать иной план к отступлению из так \nстремительно звереющего города.",
+				"blocks": [
+					{
+						"text": "Да где же он? Здесь же был всегда... Неужели уже уехал? К огромному разочарованию Джека, его друга, таксиста Бена, на привычном месте не оказалось. Это значило, что мужчине необходимо было срочно придумать иной план к отступлению из так стремительно звереющего города.",
+						"rect": [
+							11.0,
+							371.75,
+							769.0,
+							103.25
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				]
+			},
+			"position": [
+				0.0,
+				5200.0
+			],
+			"title": "taxi_entry_2"
+		},
+		"taxi_entry_2__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				390.0,
+				5200.0
+			],
+			"title": "Продолжить"
+		},
+		"taxi_depart": {
+			"type": "scene",
+			"data": {
+				"source": "TaxiMov frame 2; overrides {}",
+				"kind": "city_story",
+				"art": "ep1_taxi_depart",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "К счастью, до окраин хаос из центра еще не добрался, и такси практически \nбеспрепятственно покидало город. Еще один поворот, и Нью-Таун останется позади \nДжека.",
+				"blocks": [
+					{
+						"text": "К счастью, до окраин хаос из центра еще не добрался, и такси практически беспрепятственно покидало город. Еще один поворот, и Нью-Таун останется позади Джека.",
+						"rect": [
+							11.0,
+							5.75,
+							769.0,
+							86.15
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				]
+			},
+			"position": [
+				17000.0,
+				6500.0
+			],
+			"title": "taxi_depart"
+		},
+		"taxi_depart__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				17390.0,
+				6500.0
+			],
+			"title": "Продолжить"
+		},
+		"taxi_checkpoint": {
+			"type": "scene",
+			"data": {
+				"source": "TaxiMov frame 3; overrides {}",
+				"kind": "city_story",
+				"art": "ep1_taxi_checkpoint",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "На выезде из города поголовно проверяли людей: часть куда-то уводили, слышались \nвыстрелы, а в скопившемся автомобильном заторе царило полное непонимание и страх. Но \nв конце концов Джеку с таксистом удалось-таки преодолеть военный заслон.",
+				"blocks": [
+					{
+						"text": "На выезде из города поголовно проверяли людей: часть куда-то уводили, слышались выстрелы, а в скопившемся автомобильном заторе царило полное непонимание и страх. Но в конце концов Джеку с таксистом удалось-таки преодолеть военный заслон.",
+						"rect": [
+							11.0,
+							396.75,
+							769.0,
+							78.25
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				]
+			},
+			"position": [
+				18700.0,
+				9100.0
+			],
+			"title": "taxi_checkpoint"
+		},
+		"taxi_checkpoint__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				19090.0,
+				9100.0
+			],
+			"title": "Продолжить"
+		},
+		"taxi_choice": {
+			"type": "scene",
+			"data": {
+				"source": "TaxiMov frame 3; overrides {}",
+				"kind": "city_decision",
+				"art": "ep1_taxi_checkpoint",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Бен сказал, что у него есть загородный дом с кое-какими запасами еды, да и оружие имелось. Быть может, стоит остановиться у него ненадолго? Пока не уляжется вся эта ерунда."
+			},
+			"position": [
+				20400.0,
+				14300.0
+			],
+			"title": "taxi_choice"
+		},
+		"taxi_choice__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Объединиться с Беном"
+			},
+			"position": [
+				20790.0,
+				14300.0
+			],
+			"title": "Объединиться с Беном"
+		},
+		"taxi_choice__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Отказаться от предложения"
+			},
+			"position": [
+				20790.0,
+				14590.0
+			],
+			"title": "Отказаться от предложения"
+		},
+		"taxi_road": {
+			"type": "scene",
+			"data": {
+				"source": "TaxiMov frame 4; overrides {}",
+				"kind": "city_story",
+				"art": "ep1_taxi_road",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Решено было дождаться темноты, когда на дороге будет меньше машин. Поэтому часов в \nвосемь вечера такси выехало из своего укрытия на дорогу. Ехали небыстро, со средней \nскоростью, делая иногда небольшие остановки минут по пятнадцать. К утру Джек с Беном \nбыли уже практически на месте.",
+				"blocks": [
+					{
+						"text": "Решено было дождаться темноты, когда на дороге будет меньше машин. Поэтому часов в восемь вечера такси выехало из своего укрытия на дорогу. Ехали небыстро, со средней скоростью, делая иногда небольшие остановки минут по пятнадцать. К утру Джек с Беном были уже практически на месте.",
+						"rect": [
+							11.0,
+							369.75,
+							769.0,
+							105.25
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				]
+			},
+			"position": [
+				22100.0,
+				13000.0
+			],
+			"title": "taxi_road"
+		},
+		"taxi_road__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				22490.0,
+				13000.0
+			],
+			"title": "Продолжить"
+		},
+		"taxi_house": {
+			"type": "scene",
+			"data": {
+				"source": "TaxiMov frame 5; overrides {}",
+				"kind": "city_story",
+				"art": "ep1_taxi_house",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Дом Бена находился на отшибе, в глуши. Дряхлое строение, на первый взгляд, казалось \nабсолютно заброшенным и пустым. Так по сути и было: по словам самого Бена, он уже \nдавненько не бывал здесь — кипучая городская жизнь не отпускала таксиста.",
+				"blocks": [
+					{
+						"text": "Дом Бена находился на отшибе, в глуши. Дряхлое строение, на первый взгляд, казалось абсолютно заброшенным и пустым. Так по сути и было: по словам самого Бена, он уже давненько не бывал здесь — кипучая городская жизнь не отпускала таксиста.",
+						"rect": [
+							11.0,
+							5.75,
+							769.0,
+							86.15
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				]
+			},
+			"position": [
+				23800.0,
+				14300.0
+			],
+			"title": "taxi_house"
+		},
+		"taxi_house__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				24190.0,
+				14300.0
+			],
+			"title": "Продолжить"
+		},
+		"taxi_shelter_1": {
+			"type": "scene",
+			"data": {
+				"source": "TaxiMov frame 6; overrides {'Mov': 4}",
+				"kind": "city_story",
+				"art": "ep1_farm_chase",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Среди всех пожитков Бена особенно бросалось в глаза здоровенное ружье, завернутое в \nбрезент. Тут Джек вспомнил, что его новый сосед когда-то рассказывал о своих \nгероических охотничьих похождениях. Многое таксист, конечно же, приукрасил, однако с \nоружием в доме было всяко спокойнее.",
+				"blocks": [
+					{
+						"text": "Среди всех пожитков Бена особенно бросалось в глаза здоровенное ружье, завернутое в брезент. Тут Джек вспомнил, что его новый сосед когда-то рассказывал о своих героических охотничьих похождениях. Многое таксист, конечно же, приукрасил, однако с оружием в доме было всяко спокойнее.",
+						"rect": [
+							17.0,
+							20.0,
+							763.0,
+							113.8
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov"
+					}
+				]
+			},
+			"position": [
+				25500.0,
+				14300.0
+			],
+			"title": "taxi_shelter_1"
+		},
+		"taxi_shelter_1__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				25890.0,
+				14300.0
+			],
+			"title": "Продолжить"
+		},
+		"taxi_shelter_2": {
+			"type": "scene",
+			"data": {
+				"source": "TaxiMov frame 6; overrides {'Mov': 9}",
+				"kind": "city_story",
+				"art": "ep1_farm_chase",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "«Как же хорошо иметь хоть какие-то связи по жизни. \nЕсли бы не Бен, то неизвестно, выбрался ли я бы вообще из \nНью-Тауна.\nЗавтра собираемся поехать в ближайший супермаркет, \nпопробуем достать еще припасов и топлива для \nгенератора. \nЧерт, я жив! Все же мать и Элис были неправы, называя \nменя неудачником...»\n\nСреди всех пожитков Бена особенно бросалось в глаза здоровенное ружье, завернутое в \nбрезент. Тут Джек вспомнил, что его новый сосед когда-то рассказывал о своих \nгероических охотничьих похождениях. Многое таксист, конечно же, приукрасил, однако с \nоружием в доме было всяко спокойнее.",
+				"blocks": [
+					{
+						"text": "«Как же хорошо иметь хоть какие-то связи по жизни. Если бы не Бен, то неизвестно, выбрался ли я бы вообще из Нью-Тауна. Завтра собираемся поехать в ближайший супермаркет, попробуем достать еще припасов и топлива для генератора. Черт, я жив! Все же мать и Элис были неправы, называя меня неудачником...»",
+						"rect": [
+							34.0,
+							141.4,
+							746.0,
+							333.6
+						],
+						"font": "SegoeScript",
+						"size": 22.0,
+						"path": "Mov"
+					},
+					{
+						"text": "Среди всех пожитков Бена особенно бросалось в глаза здоровенное ружье, завернутое в брезент. Тут Джек вспомнил, что его новый сосед когда-то рассказывал о своих героических охотничьих похождениях. Многое таксист, конечно же, приукрасил, однако с оружием в доме было всяко спокойнее.",
+						"rect": [
+							17.0,
+							20.0,
+							763.0,
+							113.8
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov"
+					}
+				]
+			},
+			"position": [
+				27200.0,
+				11700.0
+			],
+			"title": "taxi_shelter_2"
+		},
+		"taxi_shelter_2__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				27590.0,
+				11700.0
+			],
+			"title": "Продолжить"
+		},
+		"taxi_shelter_3": {
+			"type": "scene",
+			"data": {
+				"source": "TaxiMov frame 6; overrides {'Mov': 14}",
+				"kind": "city_story",
+				"art": "ep1_farm_chase",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Дневник Джека. 15.06\n\n«Как же хорошо иметь хоть какие-то связи по жизни. \nЕсли бы не Бен, то неизвестно, выбрался ли я бы вообще из \nНью-Тауна.\nЗавтра собираемся поехать в ближайший супермаркет, \nпопробуем достать еще припасов и топлива для \nгенератора. \nЧерт, я жив! Все же мать и Элис были неправы, называя \nменя неудачником...»\n\nСреди всех пожитков Бена особенно бросалось в глаза здоровенное ружье, завернутое в \nбрезент. Тут Джек вспомнил, что его новый сосед когда-то рассказывал о своих \nгероических охотничьих похождениях. Многое таксист, конечно же, приукрасил, однако с \nоружием в доме было всяко спокойнее.",
+				"blocks": [
+					{
+						"text": "Дневник Джека. 15.06",
+						"rect": [
+							442.0,
+							420.85,
+							338.0,
+							54.15
+						],
+						"font": "B52 Regular",
+						"size": 18.0,
+						"path": "Mov"
+					},
+					{
+						"text": "«Как же хорошо иметь хоть какие-то связи по жизни. Если бы не Бен, то неизвестно, выбрался ли я бы вообще из Нью-Тауна. Завтра собираемся поехать в ближайший супермаркет, попробуем достать еще припасов и топлива для генератора. Черт, я жив! Все же мать и Элис были неправы, называя меня неудачником...»",
+						"rect": [
+							34.0,
+							141.4,
+							746.0,
+							333.6
+						],
+						"font": "SegoeScript",
+						"size": 22.0,
+						"path": "Mov"
+					},
+					{
+						"text": "Среди всех пожитков Бена особенно бросалось в глаза здоровенное ружье, завернутое в брезент. Тут Джек вспомнил, что его новый сосед когда-то рассказывал о своих героических охотничьих похождениях. Многое таксист, конечно же, приукрасил, однако с оружием в доме было всяко спокойнее.",
+						"rect": [
+							17.0,
+							20.0,
+							763.0,
+							113.8
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov"
+					}
+				]
+			},
+			"position": [
+				28900.0,
+				5200.0
+			],
+			"title": "taxi_shelter_3"
+		},
+		"taxi_shelter_3__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				29290.0,
+				5200.0
+			],
+			"title": "Продолжить"
+		},
+		"dorvud_entry_1": {
+			"type": "scene",
+			"data": {
+				"source": "Dorvud frame 1; overrides {'Mov.Hist': 0}",
+				"kind": "city_story",
+				"art": "ep1_dorvud_entry_1",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Спустя некоторое время Джек вышел к окраинам Дорвуда и сразу понял, что поиск убежища в городе будет нелегкой задачей.",
+				"blocks": [
+					{
+						"text": "Спустя некоторое время Джек вышел к окраинам Дорвуда и сразу понял, что поиск убежища в городе будет нелегкой задачей.",
+						"rect": [
+							11.0,
+							421.6,
+							769.0,
+							53.4
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist.Txt"
+					}
+				]
+			},
+			"position": [
+				27200.0,
+				13000.0
+			],
+			"title": "dorvud_entry_1"
+		},
+		"dorvud_entry_1__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				27590.0,
+				13000.0
+			],
+			"title": "Продолжить"
+		},
+		"dorvud_entry_2": {
+			"type": "scene",
+			"data": {
+				"source": "Dorvud frame 1; overrides {'Mov.Hist': 1}",
+				"kind": "city_story",
+				"art": "ep1_dorvud_entry_1",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Джека высадили на окраине Дорвуда, маленького городишки, где в свое время жило всего лишь несколько тысяч жителей. Но теперь...",
+				"blocks": [
+					{
+						"text": "Джека высадили на окраине Дорвуда, маленького городишки, где в свое время жило всего лишь несколько тысяч жителей. Но теперь...",
+						"rect": [
+							11.0,
+							421.6,
+							769.0,
+							53.4
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist.Txt"
+					}
+				]
+			},
+			"position": [
+				0.0,
+				6500.0
+			],
+			"title": "dorvud_entry_2"
+		},
+		"dorvud_entry_2__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				390.0,
+				6500.0
+			],
+			"title": "Продолжить"
+		},
+		"dorvud_street": {
+			"type": "scene",
+			"data": {
+				"source": "Dorvud frame 2; overrides {}",
+				"kind": "city_story",
+				"art": "ep1_dorvud_street",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Улицы городка кишели мертвецами. Но выбора не было, скоро ночь, и встретить ее \nлучше в каком-нибудь защищенном месте...",
+				"blocks": [
+					{
+						"text": "Улицы городка кишели мертвецами. Но выбора не было, скоро ночь, и встретить ее лучше в каком-нибудь защищенном месте...",
+						"rect": [
+							11.0,
+							5.75,
+							769.0,
+							58.55
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				]
+			},
+			"position": [
+				22100.0,
+				14300.0
+			],
+			"title": "dorvud_street"
+		},
+		"dorvud_street__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				22490.0,
+				14300.0
+			],
+			"title": "Продолжить"
+		},
+		"dorvud_shop": {
+			"type": "scene",
+			"data": {
+				"source": "Dorvud frame 3; overrides {}",
+				"kind": "city_story",
+				"art": "ep1_dorvud_shop",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Джек, подобно герою любимой им компьютерной игры Splinter Cell, пробрался в \nближайшее к нему с виду безопасное здание. Это оказался бывший двухэтажный \nпродуктовый магазинчик. Быть может стоит взять немного продуктов, пробраться на \nвторой этаж и попробовать укрепиться там?",
+				"blocks": [
+					{
+						"text": "Джек, подобно герою любимой им компьютерной игры Splinter Cell, пробрался в ближайшее к нему с виду безопасное здание. Это оказался бывший двухэтажный продуктовый магазинчик. Быть может стоит взять немного продуктов, пробраться на второй этаж и попробовать укрепиться там?",
+						"rect": [
+							11.0,
+							5.75,
+							769.0,
+							113.8
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				]
+			},
+			"position": [
+				23800.0,
+				15600.0
+			],
+			"title": "dorvud_shop"
+		},
+		"dorvud_shop__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				24190.0,
+				15600.0
+			],
+			"title": "Продолжить"
+		},
+		"dorvud_choice": {
+			"type": "scene",
+			"data": {
+				"source": "Dorvud frame 3; overrides {}",
+				"kind": "city_decision",
+				"art": "ep1_dorvud_shop",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Стоит ли проверять второй этаж или попытаться найти подходящее безопасное место на первом?"
+			},
+			"position": [
+				25500.0,
+				15600.0
+			],
+			"title": "dorvud_choice"
+		},
+		"dorvud_choice__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Подняться наверх"
+			},
+			"position": [
+				25890.0,
+				15600.0
+			],
+			"title": "Подняться наверх"
+		},
+		"dorvud_choice__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Обследовать первый этаж"
+			},
+			"position": [
+				25890.0,
+				15890.0
+			],
+			"title": "Обследовать первый этаж"
+		},
+		"dorvud_stairs": {
+			"type": "scene",
+			"data": {
+				"source": "Dorvud frame 4; overrides {}",
+				"kind": "city_story",
+				"art": "ep1_dorvud_stairs",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Медленно, стараясь ступать как можно тише, Джек начал подниматься на второй этаж... В \nмагазине он нашел фонарик (нормальный фонарик, а не ту фигню, что болталась на его \nдомашних ключах), но пока не решался его включить.",
+				"blocks": [
+					{
+						"text": "Медленно, стараясь ступать как можно тише, Джек начал подниматься на второй этаж... В магазине он нашел фонарик (нормальный фонарик, а не ту фигню, что болталась на его домашних ключах), но пока не решался его включить.",
+						"rect": [
+							11.0,
+							396.75,
+							769.0,
+							78.25
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				]
+			},
+			"position": [
+				27200.0,
+				14300.0
+			],
+			"title": "dorvud_stairs"
+		},
+		"dorvud_stairs__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				27590.0,
+				14300.0
+			],
+			"title": "Продолжить"
+		},
+		"dorvud_fall": {
+			"type": "scene",
+			"data": {
+				"source": "Dorvud frame 5; overrides {}",
+				"kind": "city_story",
+				"art": "ep1_dorvud_fall",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Оказавшись на втором этаже, Джек все же решился включить фонарик... В следующую \nсекунду он уже в панике пятился назад к лестнице, наблюдая, как стоящий перед ним \nискусанный мертвец медленно «приходит в себя». Джек сделал еще один шаг назад, и \nпол неожиданно ушел из-под ног... Падение, ступеньки по ребрам, боль, темнота...",
+				"blocks": [
+					{
+						"text": "Оказавшись на втором этаже, Джек все же решился включить фонарик... В следующую секунду он уже в панике пятился назад к лестнице, наблюдая, как стоящий перед ним искусанный мертвец медленно «приходит в себя». Джек сделал еще один шаг назад, и пол неожиданно ушел из-под ног... Падение, ступеньки по ребрам, боль, темнота...",
+						"rect": [
+							11.0,
+							367.75,
+							769.0,
+							107.25
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				],
+				"sound": "ManDeath"
+			},
+			"position": [
+				28900.0,
+				6500.0
+			],
+			"title": "dorvud_fall"
+		},
+		"dorvud_fall__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				29290.0,
+				6500.0
+			],
+			"title": "Продолжить"
+		},
+		"dorvud_floor": {
+			"type": "scene",
+			"data": {
+				"source": "Dorvud frame 6; overrides {}",
+				"kind": "city_story",
+				"art": "ep1_dorvud_floor",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Половицы на первом этаже нещадно скрипели, пот струился ручьем... В здании уже почти \nне осталось неисследованных мест, и Джек понемногу начал терять надежду найти здесь \nхоть какой-нибудь укромный уголок. Выходить на улицу не хотелось совершенно...",
+				"blocks": [
+					{
+						"text": "Половицы на первом этаже нещадно скрипели, пот струился ручьем... В здании уже почти не осталось неисследованных мест, и Джек понемногу начал терять надежду найти здесь хоть какой-нибудь укромный уголок. Выходить на улицу не хотелось совершенно...",
+						"rect": [
+							11.0,
+							391.75,
+							769.0,
+							83.25
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				]
+			},
+			"position": [
+				27200.0,
+				15600.0
+			],
+			"title": "dorvud_floor"
+		},
+		"dorvud_floor__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				27590.0,
+				15600.0
+			],
+			"title": "Продолжить"
+		},
+		"dorvud_room": {
+			"type": "scene",
+			"data": {
+				"source": "Dorvud frame 7; overrides {}",
+				"kind": "city_story",
+				"art": "ep1_dorvud_room",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Неожиданно Джек заметил неприметную дверь в углу очередной обследуемой комнаты, \nведущую в подсобку или что-то вроде этого. Медленно приоткрыв дверь, Джек включил \nнайденный в магазине фонарик и...",
+				"blocks": [
+					{
+						"text": "Неожиданно Джек заметил неприметную дверь в углу очередной обследуемой комнаты, ведущую в подсобку или что-то вроде этого. Медленно приоткрыв дверь, Джек включил найденный в магазине фонарик и...",
+						"rect": [
+							11.0,
+							394.75,
+							769.0,
+							80.25
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				]
+			},
+			"position": [
+				28900.0,
+				7800.0
+			],
+			"title": "dorvud_room"
+		},
+		"dorvud_room__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				29290.0,
+				7800.0
+			],
+			"title": "Продолжить"
+		},
+		"dorvud_shelter_1": {
+			"type": "scene",
+			"data": {
+				"source": "Dorvud frame 8; overrides {'Mov': 4}",
+				"kind": "city_story",
+				"art": "ep1_farm_chase",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "... вздохнул от облегчения! Маленькая комнатка была пуста! Джек плотно прикрыл за \nсобой дверь, придвинул к ней стоящий в углу диван, чтобы обезопасить себя от \nнепрошенных гостей и без сил упал на него, мгновенно уснув...",
+				"blocks": [
+					{
+						"text": "... вздохнул от облегчения! Маленькая комнатка была пуста! Джек плотно прикрыл за собой дверь, придвинул к ней стоящий в углу диван, чтобы обезопасить себя от непрошенных гостей и без сил упал на него, мгновенно уснув...",
+						"rect": [
+							25.0,
+							19.75,
+							755.0,
+							86.15
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov"
+					}
+				]
+			},
+			"position": [
+				30600.0,
+				1300.0
+			],
+			"title": "dorvud_shelter_1"
+		},
+		"dorvud_shelter_1__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				30990.0,
+				1300.0
+			],
+			"title": "Продолжить"
+		},
+		"dorvud_shelter_2": {
+			"type": "scene",
+			"data": {
+				"source": "Dorvud frame 8; overrides {'Mov': 9}",
+				"kind": "city_story",
+				"art": "ep1_farm_chase",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Записей нет.\n\n... вздохнул от облегчения! Маленькая комнатка была пуста! Джек плотно прикрыл за \nсобой дверь, придвинул к ней стоящий в углу диван, чтобы обезопасить себя от \nнепрошенных гостей и без сил упал на него, мгновенно уснув...",
+				"blocks": [
+					{
+						"text": "Записей нет.",
+						"rect": [
+							28.0,
+							199.45,
+							752.0,
+							275.55
+						],
+						"font": "SegoeScript",
+						"size": 22.0,
+						"path": "Mov"
+					},
+					{
+						"text": "... вздохнул от облегчения! Маленькая комнатка была пуста! Джек плотно прикрыл за собой дверь, придвинул к ней стоящий в углу диван, чтобы обезопасить себя от непрошенных гостей и без сил упал на него, мгновенно уснув...",
+						"rect": [
+							25.0,
+							19.75,
+							755.0,
+							86.15
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov"
+					}
+				]
+			},
+			"position": [
+				32300.0,
+				0.0
+			],
+			"title": "dorvud_shelter_2"
+		},
+		"dorvud_shelter_2__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				32690.0,
+				0.0
+			],
+			"title": "Продолжить"
+		},
+		"dorvud_shelter_3": {
+			"type": "scene",
+			"data": {
+				"source": "Dorvud frame 8; overrides {'Mov': 14}",
+				"kind": "city_story",
+				"art": "ep1_farm_chase",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Дневник Джека. 15.06\n\nЗаписей нет.\n\n... вздохнул от облегчения! Маленькая комнатка была пуста! Джек плотно прикрыл за \nсобой дверь, придвинул к ней стоящий в углу диван, чтобы обезопасить себя от \nнепрошенных гостей и без сил упал на него, мгновенно уснув...",
+				"blocks": [
+					{
+						"text": "Дневник Джека. 15.06",
+						"rect": [
+							442.0,
+							306.85,
+							338.0,
+							168.15
+						],
+						"font": "B52 Regular",
+						"size": 18.0,
+						"path": "Mov"
+					},
+					{
+						"text": "Записей нет.",
+						"rect": [
+							28.0,
+							199.45,
+							752.0,
+							275.55
+						],
+						"font": "SegoeScript",
+						"size": 22.0,
+						"path": "Mov"
+					},
+					{
+						"text": "... вздохнул от облегчения! Маленькая комнатка была пуста! Джек плотно прикрыл за собой дверь, придвинул к ней стоящий в углу диван, чтобы обезопасить себя от непрошенных гостей и без сил упал на него, мгновенно уснув...",
+						"rect": [
+							25.0,
+							19.75,
+							755.0,
+							86.15
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov"
+					}
+				]
+			},
+			"position": [
+				34000.0,
+				0.0
+			],
+			"title": "dorvud_shelter_3"
+		},
+		"dorvud_shelter_3__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				34390.0,
+				0.0
+			],
+			"title": "Продолжить"
+		},
+		"mainstreet_choice": {
+			"type": "scene",
+			"data": {
+				"source": "PerMov frame 12; overrides {}",
+				"kind": "city_story",
+				"art": "ep1_mainstreet_choice",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Медленно отойти назад\n\nПоймать машину и уехать\n\nПоймать машину до офиса\n\nПробежать сквозь зомби\n\nИдея, кажется, не самая удачная... С этими \nлюдьми явно что-то не так. Ох, да это же \nзомби!",
+				"blocks": [],
+				"controls_art": "ep1_mainstreet_choice_controls"
+			},
+			"position": [
+				0.0,
+				7800.0
+			],
+			"title": "mainstreet_choice"
+		},
+		"mainstreet_choice__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Пробежать сквозь зомби",
+				"rect": [
+					85.0,
+					123.0,
+					349.0,
+					65.0
+				]
+			},
+			"position": [
+				390.0,
+				7800.0
+			],
+			"title": "Пробежать сквозь зомби"
+		},
+		"mainstreet_choice__choice_1": {
+			"type": "choice",
+			"data": {
+				"text": "Поймать машину до офиса",
+				"rect": [
+					85.0,
+					194.0,
+					349.0,
+					65.0
+				]
+			},
+			"position": [
+				390.0,
+				8090.0
+			],
+			"title": "Поймать машину до офиса"
+		},
+		"mainstreet_choice__choice_2": {
+			"type": "choice",
+			"data": {
+				"text": "Поймать машину и уехать",
+				"rect": [
+					85.0,
+					265.0,
+					349.0,
+					65.0
+				]
+			},
+			"position": [
+				390.0,
+				8380.0
+			],
+			"title": "Поймать машину и уехать"
+		},
+		"mainstreet_choice__choice_3": {
+			"type": "choice",
+			"data": {
+				"text": "Медленно отойти назад",
+				"rect": [
+					85.0,
+					336.0,
+					349.0,
+					65.0
+				]
+			},
+			"position": [
+				390.0,
+				8670.0
+			],
+			"title": "Медленно отойти назад"
+		},
+		"mainstreet_run": {
+			"type": "scene",
+			"data": {
+				"source": "PerMov frame 17; overrides {}",
+				"kind": "city_cutscene",
+				"art": "ep1_mainstreet_run",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "",
+				"blocks": [],
+				"auto_seconds": 0.7
+			},
+			"position": [
+				17000.0,
+				7800.0
+			],
+			"title": "mainstreet_run"
+		},
+		"mainstreet_run__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				17390.0,
+				7800.0
+			],
+			"title": "Продолжить"
+		},
+		"mainstreet_attack": {
+			"type": "scene",
+			"data": {
+				"source": "PerMov frame 18; overrides {}",
+				"kind": "city_cutscene",
+				"art": "ep1_mainstreet_attack",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "",
+				"blocks": [],
+				"auto_seconds": 0.7,
+				"sound": "ManDeath"
+			},
+			"position": [
+				18700.0,
+				10400.0
+			],
+			"title": "mainstreet_attack"
+		},
+		"mainstreet_attack__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				19090.0,
+				10400.0
+			],
+			"title": "Продолжить"
+		},
+		"car_to_office": {
+			"type": "scene",
+			"data": {
+				"source": "CarGet frame 1; overrides {'Mov.Hist': 1}",
+				"kind": "city_story",
+				"art": "ep1_car_to_office",
+				"clean_background": true,
+				"image": "OnTheStreet.jpg",
+				"text": "Как всегда бывает при различного рода катастрофах и трагедиях, Джек смог найти \nчеловека, который за баснословную цену согласился довезти его, куда требуется.",
+				"blocks": [
+					{
+						"text": "Как всегда бывает при различного рода катастрофах и трагедиях, Джек смог найти человека, который за баснословную цену согласился довезти его, куда требуется.",
+						"rect": [
+							11.0,
+							419.75,
+							769.0,
+							55.25
+						],
+						"font": "GraffitiC1 Medium",
+						"size": 24.0,
+						"path": "Mov.Hist"
+					}
+				]
+			},
+			"position": [
+				17000.0,
+				9100.0
+			],
+			"title": "car_to_office"
+		},
+		"car_to_office__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Продолжить"
+			},
+			"position": [
+				17390.0,
+				9100.0
+			],
+			"title": "Продолжить"
+		},
+		"death_1": {
+			"type": "scene",
+			"data": {
+				"source": "ResultBad(1)",
+				"kind": "city_death",
+				"image": "OnTheStreet.jpg",
+				"art": "city_result",
+				"text": "Вашей ловкости оказалось недостаточно, чтобы убежать от зомби.",
+				"result_id": 1.0,
+				"alive": false
+			},
+			"position": [
+				20400.0,
+				15600.0
+			],
+			"title": "death_1"
+		},
+		"death_4": {
+			"type": "scene",
+			"data": {
+				"source": "ResultBad(4)",
+				"kind": "city_death",
+				"image": "OnTheStreet.jpg",
+				"art": "city_result",
+				"text": "Мертвецы зажали Джека в развалинах какого-то сарая. Выхода не было.",
+				"result_id": 4.0,
+				"alive": false
+			},
+			"position": [
+				28900.0,
+				9100.0
+			],
+			"title": "death_4"
+		},
+		"death_7": {
+			"type": "scene",
+			"data": {
+				"source": "ResultBad(7)",
+				"kind": "city_death",
+				"image": "OnTheStreet.jpg",
+				"art": "city_result",
+				"text": "Джек убит мародерами.",
+				"result_id": 7.0,
+				"alive": false
+			},
+			"position": [
+				28900.0,
+				10400.0
+			],
+			"title": "death_7"
+		},
+		"death_8": {
+			"type": "scene",
+			"data": {
+				"source": "ResultBad(8)",
+				"kind": "city_death",
+				"image": "OnTheStreet.jpg",
+				"art": "city_result",
+				"text": "Одним зомби меньше, одним больше в этом лесу. И одного из них зовут Джек.",
+				"result_id": 8.0,
+				"alive": false
+			},
+			"position": [
+				30600.0,
+				2600.0
+			],
+			"title": "death_8"
+		},
+		"death_9": {
+			"type": "scene",
+			"data": {
+				"source": "ResultBad(9)",
+				"kind": "city_death",
+				"image": "OnTheStreet.jpg",
+				"art": "city_result",
+				"text": "Падение и потеря сознания стали для Джека роковыми.",
+				"result_id": 9.0,
+				"alive": false
+			},
+			"position": [
+				30600.0,
+				3900.0
+			],
+			"title": "death_9"
+		},
+		"ending_6": {
+			"type": "scene",
+			"data": {
+				"source": "ResultBad(6)",
+				"kind": "city_ending",
+				"image": "OnTheStreet.jpg",
+				"art": "ep1_result_alive",
+				"text": "Джек пережил начало апокалипсиса и нашел убежище.",
+				"result_id": 6.0,
+				"alive": true
+			},
+			"position": [
+				32300.0,
+				1300.0
+			],
+			"title": "ending_6"
+		},
+		"ending_77": {
+			"type": "scene",
+			"data": {
+				"source": "ResultBad(77)",
+				"kind": "city_ending",
+				"image": "OnTheStreet.jpg",
+				"art": "ep1_result_alive",
+				"text": "Джек пережил начало апокалипсиса и нашел убежище.",
+				"result_id": 77.0,
+				"alive": true
+			},
+			"position": [
+				30600.0,
+				5200.0
+			],
+			"title": "ending_77"
+		},
+		"ending_78": {
+			"type": "scene",
+			"data": {
+				"source": "ResultBad(78)",
+				"kind": "city_ending",
+				"image": "OnTheStreet.jpg",
+				"art": "ep1_result_alive",
+				"text": "Джек пережил начало апокалипсиса и нашел убежище.",
+				"result_id": 78.0,
+				"alive": true
+			},
+			"position": [
+				35700.0,
+				0.0
+			],
+			"title": "ending_78"
+		},
+		"hired_office_gate": {
+			"type": "scene",
+			"data": {
+				"source": "CarGet(1) -> MovCityAuto(3) frame 7; direct entry to IntoTheOffice",
+				"text": "Офис, где работал Джек находился рядом с Центральной больницей города, на окраине. И \nсейчас рядом с ней находилась чуть ли не вся полиция Нью-Тауна, слышались частые \nвыстрелы. Перебросившись парой фраз с зеваками поблизости, Джек узнал, что скоро \nздесь будет армия, ибо этих тварей из больницы берет только прямое попадание в голову. \n«Чудненькие перспективы», — подытожил Джек.",
+				"image": "Fon1_1.png",
+				"kind": "city_story",
+				"art": "city_office_gate",
+				"text_rect": [
+					11.0,
+					343.75,
+					775.0,
+					130.5
+				],
+				"panel_rect": [
+					0.0,
+					338.0,
+					800.0,
+					142.0
+				]
+			},
+			"position": [
+				18700.0,
+				11700.0
+			],
+			"title": "hired_office_gate"
+		},
+		"hired_office_gate__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "Далее"
+			},
+			"position": [
+				19090.0,
+				11700.0
+			],
+			"title": "Далее"
+		}
+	},
+	"edges": [
+		{
+			"from": "wake",
+			"port": "choice:0",
+			"to": "wake__choice_0"
+		},
+		{
+			"from": "wake__choice_0",
+			"port": "next",
+			"to": "screams"
+		},
+		{
+			"from": "screams",
+			"port": "choice:0",
+			"to": "screams__choice_0"
+		},
+		{
+			"from": "screams__choice_0",
+			"port": "next",
+			"to": "morning_choice"
+		},
+		{
+			"from": "morning_choice",
+			"port": "choice:0",
+			"to": "morning_choice__choice_0"
+		},
+		{
+			"from": "morning_choice__choice_0",
+			"port": "next",
+			"to": "transport"
+		},
+		{
+			"from": "morning_choice",
+			"port": "choice:1",
+			"to": "morning_choice__choice_1"
+		},
+		{
+			"from": "morning_choice__choice_1",
+			"port": "next",
+			"to": "tv"
+		},
+		{
+			"from": "tv",
+			"port": "choice:0",
+			"to": "tv__choice_0"
+		},
+		{
+			"from": "tv",
+			"port": "choice:1",
+			"to": "tv__choice_1"
+		},
+		{
+			"from": "tv__choice_1",
+			"port": "next",
+			"to": "morning_choice"
+		},
+		{
+			"from": "transport",
+			"port": "choice:0",
+			"to": "transport__choice_0"
+		},
+		{
+			"from": "transport__choice_0",
+			"port": "next",
+			"to": "lift"
+		},
+		{
+			"from": "transport__choice_0",
+			"port": "with_keys",
+			"to": "transport_choice"
+		},
+		{
+			"from": "transport",
+			"port": "choice:1",
+			"to": "transport__choice_1"
+		},
+		{
+			"from": "transport__choice_1",
+			"port": "next",
+			"to": "keys"
+		},
+		{
+			"from": "transport__choice_1",
+			"port": "requires",
+			"to": "transport__choice_1__requires"
+		},
+		{
+			"from": "keys",
+			"port": "entry",
+			"to": "keys__entry"
+		},
+		{
+			"from": "keys",
+			"port": "choice:0",
+			"to": "keys__choice_0"
+		},
+		{
+			"from": "keys__choice_0",
+			"port": "next",
+			"to": "transport"
+		},
+		{
+			"from": "transport_choice",
+			"port": "choice:0",
+			"to": "transport_choice__choice_0"
+		},
+		{
+			"from": "transport_choice__choice_0",
+			"port": "next",
+			"to": "lift"
+		},
+		{
+			"from": "transport_choice__choice_0",
+			"port": "effects",
+			"to": "transport_choice__choice_0__effects"
+		},
+		{
+			"from": "transport_choice",
+			"port": "choice:1",
+			"to": "transport_choice__choice_1"
+		},
+		{
+			"from": "transport_choice__choice_1",
+			"port": "next",
+			"to": "lift"
+		},
+		{
+			"from": "transport_choice__choice_1",
+			"port": "effects",
+			"to": "transport_choice__choice_1__effects"
+		},
+		{
+			"from": "lift",
+			"port": "choice:0",
+			"to": "lift__choice_0"
+		},
+		{
+			"from": "lift__choice_0",
+			"port": "next",
+			"to": "lift_button"
+		},
+		{
+			"from": "lift_button",
+			"port": "choice:0",
+			"to": "lift_button__choice_0"
+		},
+		{
+			"from": "lift_button__choice_0",
+			"port": "next",
+			"to": "city_foot"
+		},
+		{
+			"from": "lift_button__choice_0",
+			"port": "by_car",
+			"to": "city_car"
+		},
+		{
+			"from": "city_foot",
+			"port": "choice:0",
+			"to": "city_foot__choice_0"
+		},
+		{
+			"from": "city_foot__choice_0",
+			"port": "next",
+			"to": "street_stretcher"
+		},
+		{
+			"from": "city_car",
+			"port": "choice:0",
+			"to": "city_car__choice_0"
+		},
+		{
+			"from": "city_car__choice_0",
+			"port": "next",
+			"to": "car_decision"
+		},
+		{
+			"from": "car_decision",
+			"port": "back",
+			"to": "city_car"
+		},
+		{
+			"from": "car_decision",
+			"port": "choice:0",
+			"to": "car_decision__choice_0"
+		},
+		{
+			"from": "car_decision__choice_0",
+			"port": "next",
+			"to": "car_drive"
+		},
+		{
+			"from": "car_decision",
+			"port": "choice:1",
+			"to": "car_decision__choice_1"
+		},
+		{
+			"from": "car_decision__choice_1",
+			"port": "next",
+			"to": "office_drive"
+		},
+		{
+			"from": "car_drive",
+			"port": "choice:0",
+			"to": "car_drive__choice_0"
+		},
+		{
+			"from": "car_drive__choice_0",
+			"port": "next",
+			"to": "car_battery"
+		},
+		{
+			"from": "car_battery",
+			"port": "choice:0",
+			"to": "car_battery__choice_0"
+		},
+		{
+			"from": "car_battery__choice_0",
+			"port": "next",
+			"to": "battery_decision"
+		},
+		{
+			"from": "battery_decision",
+			"port": "back",
+			"to": "car_battery"
+		},
+		{
+			"from": "battery_decision",
+			"port": "choice:0",
+			"to": "battery_decision__choice_0"
+		},
+		{
+			"from": "battery_decision__choice_0",
+			"port": "next",
+			"to": "farm_boundary"
+		},
+		{
+			"from": "battery_decision",
+			"port": "choice:1",
+			"to": "battery_decision__choice_1"
+		},
+		{
+			"from": "battery_decision__choice_1",
+			"port": "next",
+			"to": "car_crowd"
+		},
+		{
+			"from": "car_crowd",
+			"port": "choice:0",
+			"to": "car_crowd__choice_0"
+		},
+		{
+			"from": "car_crowd__choice_0",
+			"port": "next",
+			"to": "car_trapped"
+		},
+		{
+			"from": "car_trapped",
+			"port": "choice:0",
+			"to": "car_trapped__choice_0"
+		},
+		{
+			"from": "car_trapped__choice_0",
+			"port": "next",
+			"to": "car_fatal"
+		},
+		{
+			"from": "car_fatal",
+			"port": "choice:0",
+			"to": "car_fatal__choice_0"
+		},
+		{
+			"from": "car_fatal__choice_0",
+			"port": "next",
+			"to": "death_3"
+		},
+		{
+			"from": "office_drive",
+			"port": "choice:0",
+			"to": "office_drive__choice_0"
+		},
+		{
+			"from": "office_drive__choice_0",
+			"port": "next",
+			"to": "office_gate"
+		},
+		{
+			"from": "office_gate",
+			"port": "choice:0",
+			"to": "office_gate__choice_0"
+		},
+		{
+			"from": "office_gate__choice_0",
+			"port": "next",
+			"to": "office_decision"
+		},
+		{
+			"from": "office_decision",
+			"port": "back",
+			"to": "office_gate"
+		},
+		{
+			"from": "office_decision",
+			"port": "choice:0",
+			"to": "office_decision__choice_0"
+		},
+		{
+			"from": "office_decision__choice_0",
+			"port": "next",
+			"to": "office_enter"
+		},
+		{
+			"from": "office_decision",
+			"port": "choice:1",
+			"to": "office_decision__choice_1"
+		},
+		{
+			"from": "office_decision__choice_1",
+			"port": "next",
+			"to": "car_battery_return"
+		},
+		{
+			"from": "car_battery_return",
+			"port": "choice:0",
+			"to": "car_battery_return__choice_0"
+		},
+		{
+			"from": "car_battery_return__choice_0",
+			"port": "next",
+			"to": "battery_return_decision"
+		},
+		{
+			"from": "battery_return_decision",
+			"port": "back",
+			"to": "car_battery_return"
+		},
+		{
+			"from": "battery_return_decision",
+			"port": "choice:0",
+			"to": "battery_return_decision__choice_0"
+		},
+		{
+			"from": "battery_return_decision__choice_0",
+			"port": "next",
+			"to": "farm_boundary"
+		},
+		{
+			"from": "battery_return_decision",
+			"port": "choice:1",
+			"to": "battery_return_decision__choice_1"
+		},
+		{
+			"from": "battery_return_decision__choice_1",
+			"port": "next",
+			"to": "forest_boundary"
+		},
+		{
+			"from": "street_stretcher",
+			"port": "choice:0",
+			"to": "street_stretcher__choice_0"
+		},
+		{
+			"from": "street_stretcher__choice_0",
+			"port": "next",
+			"to": "street_decision"
+		},
+		{
+			"from": "street_decision",
+			"port": "back",
+			"to": "street_stretcher"
+		},
+		{
+			"from": "street_decision",
+			"port": "choice:0",
+			"to": "street_decision__choice_0"
+		},
+		{
+			"from": "street_decision__choice_0",
+			"port": "next",
+			"to": "metro_start"
+		},
+		{
+			"from": "street_decision",
+			"port": "choice:1",
+			"to": "street_decision__choice_1"
+		},
+		{
+			"from": "street_decision__choice_1",
+			"port": "next",
+			"to": "mainstreet_boundary"
+		},
+		{
+			"from": "street_decision",
+			"port": "choice:2",
+			"to": "street_decision__choice_2"
+		},
+		{
+			"from": "street_decision__choice_2",
+			"port": "next",
+			"to": "taxi_boundary"
+		},
+		{
+			"from": "office_enter",
+			"port": "choice:0",
+			"to": "office_enter__choice_0"
+		},
+		{
+			"from": "office_enter__choice_0",
+			"port": "next",
+			"to": "office_floor"
+		},
+		{
+			"from": "office_floor",
+			"port": "choice:0",
+			"to": "office_floor__choice_0"
+		},
+		{
+			"from": "office_floor__choice_0",
+			"port": "next",
+			"to": "office_documents"
+		},
+		{
+			"from": "office_documents",
+			"port": "choice:0",
+			"to": "office_documents__choice_0"
+		},
+		{
+			"from": "office_documents__choice_0",
+			"port": "next",
+			"to": "documents_decision"
+		},
+		{
+			"from": "documents_decision",
+			"port": "back",
+			"to": "office_documents"
+		},
+		{
+			"from": "documents_decision",
+			"port": "choice:0",
+			"to": "documents_decision__choice_0"
+		},
+		{
+			"from": "documents_decision__choice_0",
+			"port": "next",
+			"to": "office_threat"
+		},
+		{
+			"from": "documents_decision",
+			"port": "choice:1",
+			"to": "documents_decision__choice_1"
+		},
+		{
+			"from": "documents_decision__choice_1",
+			"port": "next",
+			"to": "office_fire_escape"
+		},
+		{
+			"from": "documents_decision",
+			"port": "choice:2",
+			"to": "documents_decision__choice_2"
+		},
+		{
+			"from": "documents_decision__choice_2",
+			"port": "next",
+			"to": "office_roof_stairs"
+		},
+		{
+			"from": "office_threat",
+			"port": "choice:0",
+			"to": "office_threat__choice_0"
+		},
+		{
+			"from": "office_threat__choice_0",
+			"port": "next",
+			"to": "office_fatal"
+		},
+		{
+			"from": "office_fatal",
+			"port": "choice:0",
+			"to": "office_fatal__choice_0"
+		},
+		{
+			"from": "office_fatal__choice_0",
+			"port": "next",
+			"to": "death_11"
+		},
+		{
+			"from": "office_fire_escape",
+			"port": "choice:0",
+			"to": "office_fire_escape__choice_0"
+		},
+		{
+			"from": "office_fire_escape__choice_0",
+			"port": "next",
+			"to": "office_exit"
+		},
+		{
+			"from": "office_exit",
+			"port": "choice:0",
+			"to": "office_exit__choice_0"
+		},
+		{
+			"from": "office_exit__choice_0",
+			"port": "next",
+			"to": "paid_car"
+		},
+		{
+			"from": "office_exit__choice_0",
+			"port": "by_car",
+			"to": "car_battery_return"
+		},
+		{
+			"from": "office_roof_stairs",
+			"port": "choice:0",
+			"to": "office_roof_stairs__choice_0"
+		},
+		{
+			"from": "office_roof_stairs__choice_0",
+			"port": "next",
+			"to": "office_roof"
+		},
+		{
+			"from": "office_roof",
+			"port": "choice:0",
+			"to": "office_roof__choice_0"
+		},
+		{
+			"from": "office_roof__choice_0",
+			"port": "next",
+			"to": "roof_explosion"
+		},
+		{
+			"from": "paid_car",
+			"port": "choice:0",
+			"to": "paid_car__choice_0"
+		},
+		{
+			"from": "paid_car__choice_0",
+			"port": "next",
+			"to": "paid_car_outside"
+		},
+		{
+			"from": "paid_car_outside",
+			"port": "choice:0",
+			"to": "paid_car_outside__choice_0"
+		},
+		{
+			"from": "paid_car_outside__choice_0",
+			"port": "next",
+			"to": "suburb_boundary"
+		},
+		{
+			"from": "metro_start",
+			"port": "choice:0",
+			"to": "metro_start__choice_0"
+		},
+		{
+			"from": "metro_start__choice_0",
+			"port": "next",
+			"to": "metro_descent"
+		},
+		{
+			"from": "metro_descent",
+			"port": "choice:0",
+			"to": "metro_descent__choice_0"
+		},
+		{
+			"from": "metro_descent__choice_0",
+			"port": "next",
+			"to": "metro_junction"
+		},
+		{
+			"from": "metro_junction",
+			"port": "choice:0",
+			"to": "metro_junction__choice_0"
+		},
+		{
+			"from": "metro_junction__choice_0",
+			"port": "next",
+			"to": "metro_chase"
+		},
+		{
+			"from": "metro_junction",
+			"port": "choice:1",
+			"to": "metro_junction__choice_1"
+		},
+		{
+			"from": "metro_junction__choice_1",
+			"port": "next",
+			"to": "metro_surface"
+		},
+		{
+			"from": "metro_chase",
+			"port": "choice:0",
+			"to": "metro_chase__choice_0"
+		},
+		{
+			"from": "metro_chase__choice_0",
+			"port": "next",
+			"to": "metro_platform"
+		},
+		{
+			"from": "metro_platform",
+			"port": "choice:0",
+			"to": "metro_platform__choice_0"
+		},
+		{
+			"from": "metro_platform__choice_0",
+			"port": "next",
+			"to": "metro_train"
+		},
+		{
+			"from": "metro_train",
+			"port": "choice:0",
+			"to": "metro_train__choice_0"
+		},
+		{
+			"from": "metro_train__choice_0",
+			"port": "next",
+			"to": "death_5"
+		},
+		{
+			"from": "metro_surface",
+			"port": "choice:0",
+			"to": "metro_surface__choice_0"
+		},
+		{
+			"from": "metro_surface__choice_0",
+			"port": "next",
+			"to": "shop_window"
+		},
+		{
+			"from": "shop_window",
+			"port": "choice:0",
+			"to": "shop_window__choice_0"
+		},
+		{
+			"from": "shop_window__choice_0",
+			"port": "next",
+			"to": "shop_decision"
+		},
+		{
+			"from": "shop_decision",
+			"port": "back",
+			"to": "shop_window"
+		},
+		{
+			"from": "shop_decision",
+			"port": "choice:0",
+			"to": "shop_decision__choice_0"
+		},
+		{
+			"from": "shop_decision__choice_0",
+			"port": "next",
+			"to": "bitten"
+		},
+		{
+			"from": "shop_decision",
+			"port": "choice:1",
+			"to": "shop_decision__choice_1"
+		},
+		{
+			"from": "shop_decision__choice_1",
+			"port": "next",
+			"to": "door_explosion"
+		},
+		{
+			"from": "shop_decision",
+			"port": "choice:2",
+			"to": "shop_decision__choice_2"
+		},
+		{
+			"from": "shop_decision__choice_2",
+			"port": "next",
+			"to": "taxi_escape_boundary"
+		},
+		{
+			"from": "bitten",
+			"port": "choice:0",
+			"to": "bitten__choice_0"
+		},
+		{
+			"from": "bitten__choice_0",
+			"port": "next",
+			"to": "bite_transition"
+		},
+		{
+			"from": "bite_transition",
+			"port": "choice:0",
+			"to": "bite_transition__choice_0"
+		},
+		{
+			"from": "bite_transition__choice_0",
+			"port": "next",
+			"to": "checkpoint"
+		},
+		{
+			"from": "checkpoint",
+			"port": "choice:0",
+			"to": "checkpoint__choice_0"
+		},
+		{
+			"from": "checkpoint__choice_0",
+			"port": "next",
+			"to": "checkpoint_shot"
+		},
+		{
+			"from": "checkpoint_shot",
+			"port": "choice:0",
+			"to": "checkpoint_shot__choice_0"
+		},
+		{
+			"from": "checkpoint_shot__choice_0",
+			"port": "next",
+			"to": "death_10"
+		},
+		{
+			"from": "roof_explosion",
+			"port": "choice:0",
+			"to": "roof_explosion__choice_0"
+		},
+		{
+			"from": "roof_explosion__choice_0",
+			"port": "next",
+			"to": "explosion_flash"
+		},
+		{
+			"from": "door_explosion",
+			"port": "choice:0",
+			"to": "door_explosion__choice_0"
+		},
+		{
+			"from": "door_explosion__choice_0",
+			"port": "next",
+			"to": "door_blast"
+		},
+		{
+			"from": "door_blast",
+			"port": "choice:0",
+			"to": "door_blast__choice_0"
+		},
+		{
+			"from": "door_blast__choice_0",
+			"port": "next",
+			"to": "door_blast_inner"
+		},
+		{
+			"from": "door_blast_inner",
+			"port": "choice:0",
+			"to": "door_blast_inner__choice_0"
+		},
+		{
+			"from": "door_blast_inner__choice_0",
+			"port": "next",
+			"to": "explosion_flash"
+		},
+		{
+			"from": "explosion_flash",
+			"port": "choice:0",
+			"to": "explosion_flash__choice_0"
+		},
+		{
+			"from": "explosion_flash__choice_0",
+			"port": "next",
+			"to": "death_2"
+		},
+		{
+			"from": "farm_boundary",
+			"port": "choice:0",
+			"to": "farm_boundary__choice_0"
+		},
+		{
+			"from": "farm_boundary__choice_0",
+			"port": "next",
+			"to": "forest_road"
+		},
+		{
+			"from": "farm_boundary",
+			"port": "choice:1",
+			"to": "farm_boundary__choice_1"
+		},
+		{
+			"from": "farm_boundary__choice_1",
+			"port": "next",
+			"to": "farm_inside"
+		},
+		{
+			"from": "forest_boundary",
+			"port": "choice:0",
+			"to": "forest_boundary__choice_0"
+		},
+		{
+			"from": "forest_boundary__choice_0",
+			"port": "next",
+			"to": "forest_marauder_1"
+		},
+		{
+			"from": "forest_boundary",
+			"port": "choice:1",
+			"to": "forest_boundary__choice_1"
+		},
+		{
+			"from": "forest_boundary__choice_1",
+			"port": "next",
+			"to": "forest_house"
+		},
+		{
+			"from": "mainstreet_boundary",
+			"port": "choice:0",
+			"to": "mainstreet_boundary__choice_0"
+		},
+		{
+			"from": "mainstreet_boundary__choice_0",
+			"port": "next",
+			"to": "mainstreet_run"
+		},
+		{
+			"from": "mainstreet_boundary",
+			"port": "choice:1",
+			"to": "mainstreet_boundary__choice_1"
+		},
+		{
+			"from": "mainstreet_boundary__choice_1",
+			"port": "next",
+			"to": "car_to_office"
+		},
+		{
+			"from": "mainstreet_boundary",
+			"port": "choice:2",
+			"to": "mainstreet_boundary__choice_2"
+		},
+		{
+			"from": "mainstreet_boundary__choice_2",
+			"port": "next",
+			"to": "paid_car"
+		},
+		{
+			"from": "mainstreet_boundary",
+			"port": "choice:3",
+			"to": "mainstreet_boundary__choice_3"
+		},
+		{
+			"from": "mainstreet_boundary__choice_3",
+			"port": "next",
+			"to": "shop_window"
+		},
+		{
+			"from": "taxi_boundary",
+			"port": "choice:0",
+			"to": "taxi_boundary__choice_0"
+		},
+		{
+			"from": "taxi_boundary__choice_0",
+			"port": "next",
+			"to": "taxi_depart"
+		},
+		{
+			"from": "taxi_escape_boundary",
+			"port": "choice:0",
+			"to": "taxi_escape_boundary__choice_0"
+		},
+		{
+			"from": "taxi_escape_boundary__choice_0",
+			"port": "next",
+			"to": "bitten"
+		},
+		{
+			"from": "suburb_boundary",
+			"port": "choice:0",
+			"to": "suburb_boundary__choice_0"
+		},
+		{
+			"from": "suburb_boundary__choice_0",
+			"port": "next",
+			"to": "dorvud_street"
+		},
+		{
+			"from": "farm_entry_1",
+			"port": "choice:0",
+			"to": "farm_entry_1__choice_0"
+		},
+		{
+			"from": "farm_entry_1__choice_0",
+			"port": "next",
+			"to": "forest_road"
+		},
+		{
+			"from": "farm_entry_1",
+			"port": "choice:1",
+			"to": "farm_entry_1__choice_1"
+		},
+		{
+			"from": "farm_entry_1__choice_1",
+			"port": "next",
+			"to": "farm_inside"
+		},
+		{
+			"from": "farm_entry_2",
+			"port": "choice:0",
+			"to": "farm_entry_2__choice_0"
+		},
+		{
+			"from": "farm_entry_2__choice_0",
+			"port": "next",
+			"to": "forest_road"
+		},
+		{
+			"from": "farm_entry_2",
+			"port": "choice:1",
+			"to": "farm_entry_2__choice_1"
+		},
+		{
+			"from": "farm_entry_2__choice_1",
+			"port": "next",
+			"to": "farm_inside"
+		},
+		{
+			"from": "farm_inside",
+			"port": "choice:0",
+			"to": "farm_inside__choice_0"
+		},
+		{
+			"from": "farm_inside__choice_0",
+			"port": "next",
+			"to": "farm_noise"
+		},
+		{
+			"from": "farm_inside",
+			"port": "choice:1",
+			"to": "farm_inside__choice_1"
+		},
+		{
+			"from": "farm_inside__choice_1",
+			"port": "next",
+			"to": "farm_search"
+		},
+		{
+			"from": "farm_search",
+			"port": "choice:0",
+			"to": "farm_search__choice_0"
+		},
+		{
+			"from": "farm_search__choice_0",
+			"port": "next",
+			"to": "farm_leave"
+		},
+		{
+			"from": "farm_leave",
+			"port": "choice:0",
+			"to": "farm_leave__choice_0"
+		},
+		{
+			"from": "farm_leave__choice_0",
+			"port": "next",
+			"to": "forest_road"
+		},
+		{
+			"from": "farm_noise",
+			"port": "choice:0",
+			"to": "farm_noise__choice_0"
+		},
+		{
+			"from": "farm_noise__choice_0",
+			"port": "next",
+			"to": "farm_sound"
+		},
+		{
+			"from": "farm_sound",
+			"port": "choice:0",
+			"to": "farm_sound__choice_0"
+		},
+		{
+			"from": "farm_sound__choice_0",
+			"port": "next",
+			"to": "farm_awake"
+		},
+		{
+			"from": "farm_awake",
+			"port": "choice:0",
+			"to": "farm_awake__choice_0"
+		},
+		{
+			"from": "farm_awake__choice_0",
+			"port": "next",
+			"to": "farm_chase"
+		},
+		{
+			"from": "farm_chase",
+			"port": "choice:0",
+			"to": "farm_chase__choice_0"
+		},
+		{
+			"from": "farm_chase__choice_0",
+			"port": "next",
+			"to": "death_4"
+		},
+		{
+			"from": "forest_road",
+			"port": "choice:0",
+			"to": "forest_road__choice_0"
+		},
+		{
+			"from": "forest_road__choice_0",
+			"port": "next",
+			"to": "forest_choice"
+		},
+		{
+			"from": "forest_choice",
+			"port": "back",
+			"to": "forest_road"
+		},
+		{
+			"from": "forest_choice",
+			"port": "choice:0",
+			"to": "forest_choice__choice_0"
+		},
+		{
+			"from": "forest_choice__choice_0",
+			"port": "next",
+			"to": "forest_walk"
+		},
+		{
+			"from": "forest_choice",
+			"port": "choice:1",
+			"to": "forest_choice__choice_1"
+		},
+		{
+			"from": "forest_choice__choice_1",
+			"port": "next",
+			"to": "forest_enter"
+		},
+		{
+			"from": "forest_walk",
+			"port": "choice:0",
+			"to": "forest_walk__choice_0"
+		},
+		{
+			"from": "forest_walk__choice_0",
+			"port": "next",
+			"to": "forest_village_1"
+		},
+		{
+			"from": "forest_village_1",
+			"port": "choice:0",
+			"to": "forest_village_1__choice_0"
+		},
+		{
+			"from": "forest_village_1__choice_0",
+			"port": "next",
+			"to": "forest_marauder_1"
+		},
+		{
+			"from": "forest_village_1",
+			"port": "choice:1",
+			"to": "forest_village_1__choice_1"
+		},
+		{
+			"from": "forest_village_1__choice_1",
+			"port": "next",
+			"to": "forest_house"
+		},
+		{
+			"from": "forest_village_2",
+			"port": "choice:0",
+			"to": "forest_village_2__choice_0"
+		},
+		{
+			"from": "forest_village_2__choice_0",
+			"port": "next",
+			"to": "forest_marauder_1"
+		},
+		{
+			"from": "forest_village_2",
+			"port": "choice:1",
+			"to": "forest_village_2__choice_1"
+		},
+		{
+			"from": "forest_village_2__choice_1",
+			"port": "next",
+			"to": "forest_house"
+		},
+		{
+			"from": "forest_house",
+			"port": "choice:0",
+			"to": "forest_house__choice_0"
+		},
+		{
+			"from": "forest_house__choice_0",
+			"port": "next",
+			"to": "forest_cellar"
+		},
+		{
+			"from": "forest_cellar",
+			"port": "choice:0",
+			"to": "forest_cellar__choice_0"
+		},
+		{
+			"from": "forest_cellar__choice_0",
+			"port": "next",
+			"to": "forest_shelter_1"
+		},
+		{
+			"from": "forest_shelter_1",
+			"port": "choice:0",
+			"to": "forest_shelter_1__choice_0"
+		},
+		{
+			"from": "forest_shelter_1__choice_0",
+			"port": "next",
+			"to": "forest_shelter_2"
+		},
+		{
+			"from": "forest_shelter_2",
+			"port": "choice:0",
+			"to": "forest_shelter_2__choice_0"
+		},
+		{
+			"from": "forest_shelter_2__choice_0",
+			"port": "next",
+			"to": "forest_shelter_3"
+		},
+		{
+			"from": "forest_shelter_3",
+			"port": "choice:0",
+			"to": "forest_shelter_3__choice_0"
+		},
+		{
+			"from": "forest_shelter_3__choice_0",
+			"port": "next",
+			"to": "ending_6"
+		},
+		{
+			"from": "forest_marauder_1",
+			"port": "choice:0",
+			"to": "forest_marauder_1__choice_0"
+		},
+		{
+			"from": "forest_marauder_1__choice_0",
+			"port": "next",
+			"to": "forest_marauder_2"
+		},
+		{
+			"from": "forest_marauder_2",
+			"port": "choice:0",
+			"to": "forest_marauder_2__choice_0"
+		},
+		{
+			"from": "forest_marauder_2__choice_0",
+			"port": "next",
+			"to": "forest_marauder_3"
+		},
+		{
+			"from": "forest_marauder_3",
+			"port": "choice:0",
+			"to": "forest_marauder_3__choice_0"
+		},
+		{
+			"from": "forest_marauder_3__choice_0",
+			"port": "next",
+			"to": "death_7"
+		},
+		{
+			"from": "forest_enter",
+			"port": "choice:0",
+			"to": "forest_enter__choice_0"
+		},
+		{
+			"from": "forest_enter__choice_0",
+			"port": "next",
+			"to": "forest_lost"
+		},
+		{
+			"from": "forest_lost",
+			"port": "choice:0",
+			"to": "forest_lost__choice_0"
+		},
+		{
+			"from": "forest_lost__choice_0",
+			"port": "next",
+			"to": "dorvud_entry_1"
+		},
+		{
+			"from": "forest_lost",
+			"port": "choice:1",
+			"to": "forest_lost__choice_1"
+		},
+		{
+			"from": "forest_lost__choice_1",
+			"port": "next",
+			"to": "forest_horde"
+		},
+		{
+			"from": "forest_horde",
+			"port": "choice:0",
+			"to": "forest_horde__choice_0"
+		},
+		{
+			"from": "forest_horde__choice_0",
+			"port": "next",
+			"to": "forest_caught"
+		},
+		{
+			"from": "forest_caught",
+			"port": "choice:0",
+			"to": "forest_caught__choice_0"
+		},
+		{
+			"from": "forest_caught__choice_0",
+			"port": "next",
+			"to": "death_8"
+		},
+		{
+			"from": "taxi_entry_1",
+			"port": "choice:0",
+			"to": "taxi_entry_1__choice_0"
+		},
+		{
+			"from": "taxi_entry_1__choice_0",
+			"port": "next",
+			"to": "taxi_depart"
+		},
+		{
+			"from": "taxi_entry_2",
+			"port": "choice:0",
+			"to": "taxi_entry_2__choice_0"
+		},
+		{
+			"from": "taxi_entry_2__choice_0",
+			"port": "next",
+			"to": "bitten"
+		},
+		{
+			"from": "taxi_depart",
+			"port": "choice:0",
+			"to": "taxi_depart__choice_0"
+		},
+		{
+			"from": "taxi_depart__choice_0",
+			"port": "next",
+			"to": "taxi_checkpoint"
+		},
+		{
+			"from": "taxi_checkpoint",
+			"port": "choice:0",
+			"to": "taxi_checkpoint__choice_0"
+		},
+		{
+			"from": "taxi_checkpoint__choice_0",
+			"port": "next",
+			"to": "taxi_choice"
+		},
+		{
+			"from": "taxi_choice",
+			"port": "back",
+			"to": "taxi_checkpoint"
+		},
+		{
+			"from": "taxi_choice",
+			"port": "choice:0",
+			"to": "taxi_choice__choice_0"
+		},
+		{
+			"from": "taxi_choice__choice_0",
+			"port": "next",
+			"to": "taxi_road"
+		},
+		{
+			"from": "taxi_choice",
+			"port": "choice:1",
+			"to": "taxi_choice__choice_1"
+		},
+		{
+			"from": "taxi_choice__choice_1",
+			"port": "next",
+			"to": "farm_entry_2"
+		},
+		{
+			"from": "taxi_road",
+			"port": "choice:0",
+			"to": "taxi_road__choice_0"
+		},
+		{
+			"from": "taxi_road__choice_0",
+			"port": "next",
+			"to": "taxi_house"
+		},
+		{
+			"from": "taxi_house",
+			"port": "choice:0",
+			"to": "taxi_house__choice_0"
+		},
+		{
+			"from": "taxi_house__choice_0",
+			"port": "next",
+			"to": "taxi_shelter_1"
+		},
+		{
+			"from": "taxi_shelter_1",
+			"port": "choice:0",
+			"to": "taxi_shelter_1__choice_0"
+		},
+		{
+			"from": "taxi_shelter_1__choice_0",
+			"port": "next",
+			"to": "taxi_shelter_2"
+		},
+		{
+			"from": "taxi_shelter_2",
+			"port": "choice:0",
+			"to": "taxi_shelter_2__choice_0"
+		},
+		{
+			"from": "taxi_shelter_2__choice_0",
+			"port": "next",
+			"to": "taxi_shelter_3"
+		},
+		{
+			"from": "taxi_shelter_3",
+			"port": "choice:0",
+			"to": "taxi_shelter_3__choice_0"
+		},
+		{
+			"from": "taxi_shelter_3__choice_0",
+			"port": "next",
+			"to": "ending_77"
+		},
+		{
+			"from": "dorvud_entry_1",
+			"port": "choice:0",
+			"to": "dorvud_entry_1__choice_0"
+		},
+		{
+			"from": "dorvud_entry_1__choice_0",
+			"port": "next",
+			"to": "dorvud_street"
+		},
+		{
+			"from": "dorvud_entry_2",
+			"port": "choice:0",
+			"to": "dorvud_entry_2__choice_0"
+		},
+		{
+			"from": "dorvud_entry_2__choice_0",
+			"port": "next",
+			"to": "dorvud_street"
+		},
+		{
+			"from": "dorvud_street",
+			"port": "choice:0",
+			"to": "dorvud_street__choice_0"
+		},
+		{
+			"from": "dorvud_street__choice_0",
+			"port": "next",
+			"to": "dorvud_shop"
+		},
+		{
+			"from": "dorvud_shop",
+			"port": "choice:0",
+			"to": "dorvud_shop__choice_0"
+		},
+		{
+			"from": "dorvud_shop__choice_0",
+			"port": "next",
+			"to": "dorvud_choice"
+		},
+		{
+			"from": "dorvud_choice",
+			"port": "back",
+			"to": "dorvud_shop"
+		},
+		{
+			"from": "dorvud_choice",
+			"port": "choice:0",
+			"to": "dorvud_choice__choice_0"
+		},
+		{
+			"from": "dorvud_choice__choice_0",
+			"port": "next",
+			"to": "dorvud_stairs"
+		},
+		{
+			"from": "dorvud_choice",
+			"port": "choice:1",
+			"to": "dorvud_choice__choice_1"
+		},
+		{
+			"from": "dorvud_choice__choice_1",
+			"port": "next",
+			"to": "dorvud_floor"
+		},
+		{
+			"from": "dorvud_stairs",
+			"port": "choice:0",
+			"to": "dorvud_stairs__choice_0"
+		},
+		{
+			"from": "dorvud_stairs__choice_0",
+			"port": "next",
+			"to": "dorvud_fall"
+		},
+		{
+			"from": "dorvud_fall",
+			"port": "choice:0",
+			"to": "dorvud_fall__choice_0"
+		},
+		{
+			"from": "dorvud_fall__choice_0",
+			"port": "next",
+			"to": "death_9"
+		},
+		{
+			"from": "dorvud_floor",
+			"port": "choice:0",
+			"to": "dorvud_floor__choice_0"
+		},
+		{
+			"from": "dorvud_floor__choice_0",
+			"port": "next",
+			"to": "dorvud_room"
+		},
+		{
+			"from": "dorvud_room",
+			"port": "choice:0",
+			"to": "dorvud_room__choice_0"
+		},
+		{
+			"from": "dorvud_room__choice_0",
+			"port": "next",
+			"to": "dorvud_shelter_1"
+		},
+		{
+			"from": "dorvud_shelter_1",
+			"port": "choice:0",
+			"to": "dorvud_shelter_1__choice_0"
+		},
+		{
+			"from": "dorvud_shelter_1__choice_0",
+			"port": "next",
+			"to": "dorvud_shelter_2"
+		},
+		{
+			"from": "dorvud_shelter_2",
+			"port": "choice:0",
+			"to": "dorvud_shelter_2__choice_0"
+		},
+		{
+			"from": "dorvud_shelter_2__choice_0",
+			"port": "next",
+			"to": "dorvud_shelter_3"
+		},
+		{
+			"from": "dorvud_shelter_3",
+			"port": "choice:0",
+			"to": "dorvud_shelter_3__choice_0"
+		},
+		{
+			"from": "dorvud_shelter_3__choice_0",
+			"port": "next",
+			"to": "ending_78"
+		},
+		{
+			"from": "mainstreet_choice",
+			"port": "choice:0",
+			"to": "mainstreet_choice__choice_0"
+		},
+		{
+			"from": "mainstreet_choice__choice_0",
+			"port": "next",
+			"to": "mainstreet_run"
+		},
+		{
+			"from": "mainstreet_choice",
+			"port": "choice:1",
+			"to": "mainstreet_choice__choice_1"
+		},
+		{
+			"from": "mainstreet_choice__choice_1",
+			"port": "next",
+			"to": "car_to_office"
+		},
+		{
+			"from": "mainstreet_choice",
+			"port": "choice:2",
+			"to": "mainstreet_choice__choice_2"
+		},
+		{
+			"from": "mainstreet_choice__choice_2",
+			"port": "next",
+			"to": "paid_car"
+		},
+		{
+			"from": "mainstreet_choice",
+			"port": "choice:3",
+			"to": "mainstreet_choice__choice_3"
+		},
+		{
+			"from": "mainstreet_choice__choice_3",
+			"port": "next",
+			"to": "shop_window"
+		},
+		{
+			"from": "mainstreet_run",
+			"port": "choice:0",
+			"to": "mainstreet_run__choice_0"
+		},
+		{
+			"from": "mainstreet_run__choice_0",
+			"port": "next",
+			"to": "mainstreet_attack"
+		},
+		{
+			"from": "mainstreet_attack",
+			"port": "choice:0",
+			"to": "mainstreet_attack__choice_0"
+		},
+		{
+			"from": "mainstreet_attack__choice_0",
+			"port": "next",
+			"to": "death_1"
+		},
+		{
+			"from": "car_to_office",
+			"port": "choice:0",
+			"to": "car_to_office__choice_0"
+		},
+		{
+			"from": "car_to_office__choice_0",
+			"port": "next",
+			"to": "hired_office_gate"
+		},
+		{
+			"from": "hired_office_gate",
+			"port": "choice:0",
+			"to": "hired_office_gate__choice_0"
+		},
+		{
+			"from": "hired_office_gate__choice_0",
+			"port": "next",
+			"to": "office_enter"
+		}
+	]
+}

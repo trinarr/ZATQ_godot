@@ -7,7 +7,7 @@ static func draw(ui: Control, node: Dictionary) -> void:
  ui._art("result_alive" if alive else "result_dead")
  var outcome: Label = ui._text("Итог: жив" if alive else "Итог: мертв",Rect2(73.05,75,652.95,28.2),25,false,true)
  outcome.name = "ResultOutcome"
- var count: Label = ui._text("%d/3" % stats.endings.size() if alive else str(stats.losses),Rect2(76,219,81,36.8),33,false,true)
+ var count: Label = ui._text("%d/%d" % [stats.endings.size(),Quest.ending_count(node.get("episode",1))] if alive else str(stats.losses),Rect2(76,219,81,36.8),33,false,true)
  count.name = "ResultCount"
  var font_size := 22
  while font_size > 12 and ui.BODY_FONT.get_multiline_string_size(node.text,HORIZONTAL_ALIGNMENT_LEFT,548.95,font_size).y > 230:
@@ -23,6 +23,6 @@ static func draw(ui: Control, node: Dictionary) -> void:
   label.add_theme_constant_override("shadow_offset_y",2)
  ui._hit("Начать заново",Rect2(593,360,73,70),ui._start)
  ui._hit("В меню",Rect2(668,360,73,70),ui._show_menu)
- if alive and node.get("episode",1)==1:
+ if alive and Quest.episode_starts.has(int(node.get("episode",1))+1):
   ui._art("ep2_continue_button")
-  ui._hit("Следующий эпизод",Rect2(67,360,73,70),func(): ui._start_episode(2))
+  ui._hit("Следующий эпизод",Rect2(67,360,73,70),func(): ui._start_episode(int(node.get("episode",1))+1))

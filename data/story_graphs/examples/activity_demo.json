@@ -1,0 +1,195 @@
+{
+  "version": 1,
+  "episode": 3,
+  "title": "Пример активностей",
+  "variables": {
+    "secret": "*123#"
+  },
+  "start": "e3_dialogue",
+  "nodes": {
+    "e3_dialogue": {
+      "type": "dialogue",
+      "title": "e3_dialogue",
+      "data": {
+        "speaker": "Дэвид",
+        "text": "Открой дверь кодом, затем пройди QTE.",
+        "source": "Example",
+        "art": "result_background"
+      },
+      "position": [
+        0,
+        0
+      ]
+    },
+    "e3_answer": {
+      "type": "choice",
+      "title": "e3_answer",
+      "data": {
+        "text": "Начать"
+      },
+      "position": [
+        400,
+        0
+      ]
+    },
+    "e3_code": {
+      "type": "code",
+      "title": "e3_code",
+      "data": {
+        "text": "Введите *123#",
+        "code_variable": "secret",
+        "attempts": 3,
+        "source": "Example",
+        "art": "result_background"
+      },
+      "position": [
+        900,
+        0
+      ]
+    },
+    "e3_correct": {
+      "type": "choice",
+      "title": "e3_correct",
+      "data": {
+        "text": "Верный код"
+      },
+      "position": [
+        1300,
+        0
+      ]
+    },
+    "e3_badcode": {
+      "type": "choice",
+      "title": "e3_badcode",
+      "data": {
+        "text": "Попытки исчерпаны"
+      },
+      "position": [
+        1300,
+        250
+      ]
+    },
+    "e3_qte": {
+      "type": "qte",
+      "title": "e3_qte",
+      "data": {
+        "text": "Нажмите 5 раз за 4 секунды",
+        "taps": 5,
+        "seconds": 4,
+        "target_mode": "random",
+        "source": "Example",
+        "art": "result_background"
+      },
+      "position": [
+        1800,
+        0
+      ]
+    },
+    "e3_hit": {
+      "type": "choice",
+      "title": "e3_hit",
+      "data": {
+        "text": "Нажатия выполнены"
+      },
+      "position": [
+        2200,
+        0
+      ]
+    },
+    "e3_timeout": {
+      "type": "choice",
+      "title": "e3_timeout",
+      "data": {
+        "text": "Время истекло"
+      },
+      "position": [
+        2200,
+        250
+      ]
+    },
+    "e3_win": {
+      "type": "scene",
+      "title": "e3_win",
+      "data": {
+        "kind": "city_ending",
+        "alive": true,
+        "result_id": 3001,
+        "text": "Пример пройден.",
+        "source": "Example",
+        "art": "result_alive"
+      },
+      "position": [
+        2700,
+        0
+      ]
+    },
+    "e3_death": {
+      "type": "scene",
+      "title": "e3_death",
+      "data": {
+        "kind": "city_death",
+        "alive": false,
+        "result_id": 3002,
+        "text": "Пример завершился неудачей.",
+        "source": "Example",
+        "art": "result_dead"
+      },
+      "position": [
+        2700,
+        350
+      ]
+    }
+  },
+  "edges": [
+    {
+      "from": "e3_dialogue",
+      "port": "choice:0",
+      "to": "e3_answer"
+    },
+    {
+      "from": "e3_answer",
+      "port": "next",
+      "to": "e3_code"
+    },
+    {
+      "from": "e3_code",
+      "port": "choice:0",
+      "to": "e3_correct"
+    },
+    {
+      "from": "e3_code",
+      "port": "choice:1",
+      "to": "e3_badcode"
+    },
+    {
+      "from": "e3_correct",
+      "port": "next",
+      "to": "e3_qte"
+    },
+    {
+      "from": "e3_badcode",
+      "port": "next",
+      "to": "e3_death"
+    },
+    {
+      "from": "e3_qte",
+      "port": "choice:0",
+      "to": "e3_hit"
+    },
+    {
+      "from": "e3_hit",
+      "port": "next",
+      "to": "e3_win"
+    },
+    {
+      "from": "e3_qte",
+      "port": "choice:1",
+      "to": "e3_timeout"
+    },
+    {
+      "from": "e3_timeout",
+      "port": "next",
+      "to": "e3_death"
+    }
+  ]
+}

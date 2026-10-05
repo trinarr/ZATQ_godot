@@ -2,6 +2,7 @@ extends Control
 
 const SAFE_CANVAS := preload("res://scripts/ui/adaptive_landscape_canvas.gd")
 const ALPHA_HOTSPOT := preload("res://scripts/ui/alpha_hotspot.gd")
+const ACTIVITY := preload("res://scripts/ui/story_activity.gd")
 const CITY := preload("res://scripts/ui/city_gameplay.gd")
 const LAYOUT := preload("res://scripts/ui/landscape_stage_layout.gd")
 const TITLE_FONT: Font = preload("res://fonts/flash/font_1.ttf")
@@ -33,6 +34,19 @@ func _ready() -> void:
 	viewport_canvas = SAFE_CANVAS.new()
 	add_child(viewport_canvas)
 	selectors = JSON.parse_string(FileAccess.get_file_as_string("res://data/selectors.json"))
+	for number: int in Quest.episode_starts:
+		if number <= 2: continue
+		var roman: String = ["", "I", "II", "III", "IV", "V", "VI"][number] if number <= 6 else str(number)
+		var metadata: Dictionary = Quest.episode_metadata.get(number,{})
+		var found := false
+		for entry: Dictionary in selectors:
+			if entry.kind == "episodes" and str(entry.title).begins_with(roman + "."):
+				entry.title = metadata.get("title",entry.title)
+				entry.description = metadata.get("description",entry.description)
+				entry.episode = number
+				entry.available = true
+				found = true
+		if not found: selectors.append({"kind":"episodes","title":metadata.get("title","Эпизод " + str(number)),"description":metadata.get("description","Новый сюжет"),"frame":2,"questions":"","available":true,"episode":number})
 	add_child(music)
 	add_child(effects)
 	music.volume_db = -16
@@ -276,7 +290,7 @@ func _draw_selector() -> void:
 		_text(": %d" % (stats.wins if entry.available else 0),Rect2(500,160,57,28),21)
 		_text(": %d" % (stats.losses if entry.available else 0),Rect2(585,160,57,28),21)
 	if selector_kind == "episodes" and entry.available:
-		_text("Финалы: %d/3" % Quest.stats_for(entry.get("episode",1)).endings.size(),Rect2(435,313,239,28),18)
+		_text("Финалы: %d/%d" % [Quest.stats_for(entry.get("episode",1)).endings.size(),Quest.ending_count(entry.get("episode",1))],Rect2(435,313,239,28),18)
 	_hit("Предыдущий",Rect2(99,69,57,43),func(): _cycle_selector(-1))
 	_hit("Следующий",Rect2(648,69,62,43),func(): _cycle_selector(1))
 	_hit("Начать",Rect2(310,351,205,48),_selector_start)
@@ -386,14 +400,16 @@ func _show_story() -> void:
 	var node: Dictionary = Quest.current()
 	var kind: String = node.get("kind", "story")
 	_reset_screen()
-	if not kind.begins_with("city_"):
+	if not kind.begins_with("city_") and not kind.begins_with("activity_"):
 		_image(node.get("image","Fon1_1.png"))
 	if previous_node != Quest.current_id:
 		effects.stop()
 		_play_sound(transition_sound if not transition_sound.is_empty() else node.get("sound", ""))
 		transition_sound = ""
 	previous_node = Quest.current_id
-	if kind.begins_with("city_"):
+	if kind.begins_with("activity_"):
+		ACTIVITY.draw(self, node)
+	elif kind.begins_with("city_"):
 		CITY.draw(self, node)
 	elif kind == "tv":
 		_opening_art("tv_%d" % Quest.channel)
@@ -436,7 +452,7 @@ func _show_story() -> void:
 			"lift_button": _hit("Первый этаж",Rect2(200,140,450,280),func(): _choose(0))
 			_: _hit("Далее",Rect2(70,0,730,480),func(): _choose(0))
 	# Flash pause control lives at the left edge, not in a new top bar.
-	if not kind.begins_with("city_") and kind != "item" and Quest.current_id != "transport_choice":
+	if not kind.begins_with("city_") and not kind.begins_with("activity_") and kind != "item" and Quest.current_id != "transport_choice":
 		_edge_tab("Пауза",_show_pause)
 
 func _play_sound(sound_name: String) -> void:

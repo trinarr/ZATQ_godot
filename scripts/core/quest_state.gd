@@ -3,7 +3,7 @@ extends Node
 signal changed
 signal save_failed(message: String)
 
-const CONTENT_PATH := "res://data/opening.json"
+const STORY_GRAPH := preload("res://addons/story_graph/graph.gd")
 const SAVE_PATH := "user://zombie_quest_v1.json"
 const TMP_PATH := "user://zombie_quest_v1.tmp"
 const BACKUP_PATH := "user://zombie_quest_v1.bak"
@@ -14,7 +14,12 @@ const VERSION := 1
 const TV_IMAGES := ["flash_2821.png", "flash_2823.png", "flash_2825.png", "flash_2827.png", "flash_2829.png", "flash_2831.png", "flash_2833.png"]
 var nodes: Dictionary = {}
 var current_id: String = ""
+var activity: Dictionary = {}
 var flags: Dictionary = {"TakenKey": false, "Auto": 0}
+var episode_starts: Dictionary = {}
+var episode_defaults: Dictionary = {}
+var episode_metadata: Dictionary = {}
+var extra_stats: Dictionary = {}
 var episode: int = 1
 var episode2_stats: Dictionary = {"wins":0,"losses":0,"endings":[]}
 var channel: int = 0
@@ -25,18 +30,18 @@ var episode1_stats: Dictionary = {"wins":0,"losses":0,"endings":[]}
 var result_recorded: bool = false
 
 func _ready() -> void:
-	var content: Variant = JSON.parse_string(FileAccess.get_file_as_string(CONTENT_PATH))
-	if content is Dictionary and content.get("nodes") is Dictionary:
-		nodes = content.nodes
-	var city_content: Variant = JSON.parse_string(FileAccess.get_file_as_string("res://data/city_routes.json"))
-	if city_content is Dictionary and city_content.get("nodes") is Dictionary:
-		nodes.merge(city_content.nodes, true)
-	var episode_content: Variant = JSON.parse_string(FileAccess.get_file_as_string("res://data/episode1_routes.json"))
-	if episode_content is Dictionary and episode_content.get("nodes") is Dictionary:
-		nodes.merge(episode_content.nodes, true)
-	var second_content: Variant = JSON.parse_string(FileAccess.get_file_as_string("res://data/episode2_routes.json"))
-	if second_content is Dictionary and second_content.get("nodes") is Dictionary:
-		nodes.merge(second_content.nodes, true)
+	for filename: String in DirAccess.get_files_at("res://data/story_graphs"):
+		if not filename.begins_with("episode") or not filename.ends_with(".json"): continue
+		var path: String = "res://data/story_graphs/" + filename
+		var graph: Dictionary = STORY_GRAPH.load_graph(path)
+		var errors: PackedStringArray = STORY_GRAPH.validate(graph)
+		if not errors.is_empty():
+			push_error("Invalid story graph: " + path + "\n" + "\n".join(errors))
+			continue
+		nodes.merge(STORY_GRAPH.compile(graph), true)
+		episode_starts[int(graph.episode)] = graph.start
+		episode_defaults[int(graph.episode)] = graph.get("variables",{})
+		episode_metadata[int(graph.episode)] = graph
 	_load_save()
 
 func current() -> Dictionary:
@@ -61,7 +66,10 @@ func matches(conditions: Dictionary) -> bool:
 	return true
 
 func stats_for(number: int) -> Dictionary:
-	return episode2_stats if number == 2 else episode1_stats
+	if number == 1: return episode1_stats
+	if number == 2: return episode2_stats
+	if not extra_stats.has(str(number)): extra_stats[str(number)] = {"wins":0,"losses":0,"endings":[]}
+	return extra_stats[str(number)]
 
 func available_choices() -> Array:
 	var result: Array = []
@@ -72,20 +80,30 @@ func available_choices() -> Array:
 		result.append(choice)
 	return result
 
+func ending_count(number: int) -> int:
+	var endings: Array = []
+	for node: Dictionary in nodes.values():
+		if int(node.get("episode",1))==number and node.get("alive",false) and node.has("result_id"):
+			if int(node.result_id) not in endings: endings.append(int(node.result_id))
+	return endings.size()
+
 func new_game(number: int = 1) -> void:
-	if number not in [1,2]: return
+	if not episode_starts.has(number): return
 	episode = number
 	result_recorded = false
+	activity = {}
 	flags = {"TakenKey": false, "Auto": 0, "BulletsNumber": -1, "LinkedFr": false}
+	flags.merge(episode_defaults.get(number,{}),true)
 	channel = 0
 	has_progress = true
-	_enter("e2_hospital_1" if episode == 2 else "wake")
+	_enter(episode_starts[number])
 
 func _enter(id: String) -> void:
 	if not nodes.has(id):
 		return
+	if current_id != id: activity = {}
 	current_id = id
-	episode = 2 if id.begins_with("e2_") else 1
+	episode = int(nodes[id].get("episode",1))
 	channel = 0
 	var pickup: Dictionary = current().get("pickup_if",{})
 	if not pickup.is_empty() and matches(pickup.when):
@@ -93,6 +111,8 @@ func _enter(id: String) -> void:
 		return
 	for key in current().get("set", {}):
 		flags[key] = current().set[key]
+	for key in current().get("add", {}):
+		flags[key] = flags.get(key,0) + current().add[key]
 	_record_result()
 	save_game()
 	changed.emit()
@@ -149,7 +169,7 @@ func set_sound(enabled: bool) -> void:
 	save_game()
 
 func _snapshot() -> Dictionary:
-	return {"version":VERSION,"current_id":current_id,"flags":flags,"channel":channel,"sound_enabled":sound_enabled,"has_progress":has_progress,"episode":episode,"episode1_stats":episode1_stats,"episode2_stats":episode2_stats,"result_recorded":result_recorded}
+	return {"version":VERSION,"extra_stats":extra_stats,"activity":activity,"current_id":current_id,"flags":flags,"channel":channel,"sound_enabled":sound_enabled,"has_progress":has_progress,"episode":episode,"episode1_stats":episode1_stats,"episode2_stats":episode2_stats,"result_recorded":result_recorded}
 
 func _valid(data: Variant) -> bool:
 	if not data is Dictionary or data.get("version") != VERSION:
@@ -167,14 +187,28 @@ func _valid(data: Variant) -> bool:
 		return false
 	if data.has("result_recorded") and not data.result_recorded is bool: return false
 	var saved_episode: Variant = data.get("episode",1)
-	if not (saved_episode is int or saved_episode is float) or saved_episode != int(saved_episode) or int(saved_episode) not in [1,2]: return false
+	if not (saved_episode is int or saved_episode is float) or saved_episode != int(saved_episode) or not episode_starts.has(int(saved_episode)): return false
 	var bullets: Variant = data.flags.get("BulletsNumber",-1)
 	if not (bullets is int or bullets is float) or bullets != int(bullets) or bullets < -1 or bullets > 12: return false
 	if not data.flags.get("LinkedFr",false) is bool: return false
-	if data.has_progress and (2 if data.current_id.begins_with("e2_") else 1) != int(saved_episode): return false
+	if data.has_progress and int(nodes.get(data.current_id,{}).get("episode",1)) != int(saved_episode): return false
 	for number: int in [1,2]:
 		var stats_key := "episode%d_stats" % number
 		if data.has(stats_key) and not _valid_stats(data[stats_key],[6,77,78] if number==1 else [38,43,47]): return false
+	if not data.get("extra_stats",{}) is Dictionary: return false
+	for key: String in data.get("extra_stats",{}):
+		if not key.is_valid_int() or not episode_starts.has(int(key)): return false
+		var allowed: Array = []
+		for node: Dictionary in nodes.values():
+			if int(node.get("episode",1)) == int(key) and node.get("alive",false): allowed.append(int(node.get("result_id",0)))
+		if not _valid_stats(data.extra_stats[key],allowed): return false
+	if not data.get("activity",{}) is Dictionary: return false
+	var activity_data: Dictionary = data.get("activity",{})
+	if not activity_data.is_empty():
+		if activity_data.get("id") != data.current_id or not activity_data.get("input") is String: return false
+		for key: String in ["attempts","taps","remaining"]:
+			var value: Variant = activity_data.get(key)
+			if not (value is int or value is float) or not is_finite(float(value)) or value < 0: return false
 	var ch: Variant = data.get("channel")
 	return (ch is float or ch is int) and ch == int(ch) and ch >= 0 and ch < TV_IMAGES.size()
 
@@ -205,7 +239,16 @@ func _load_save() -> void:
 			return
 		recovery_message = "Сохранение восстановлено из резервной копии."
 	current_id = data.current_id
-	flags = {"TakenKey": data.flags.TakenKey, "Auto": int(data.flags.Auto), "BulletsNumber": int(data.flags.get("BulletsNumber",-1)), "LinkedFr": data.flags.get("LinkedFr",false)}
+	flags = data.flags.duplicate(true)
+	flags.Auto = int(flags.Auto)
+	flags.BulletsNumber = int(flags.get("BulletsNumber",-1))
+	flags.LinkedFr = flags.get("LinkedFr",false)
+	activity = data.get("activity",{}).duplicate(true)
+	extra_stats = data.get("extra_stats",{}).duplicate(true)
+	for stats: Dictionary in extra_stats.values():
+		stats.wins = int(stats.wins)
+		stats.losses = int(stats.losses)
+		for i: int in stats.endings.size(): stats.endings[i] = int(stats.endings[i])
 	episode = int(data.get("episode",1))
 	channel = int(data.channel)
 	sound_enabled = data.sound_enabled
