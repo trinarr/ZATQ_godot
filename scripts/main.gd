@@ -8,6 +8,8 @@ const TITLE_FONT: Font = preload("res://fonts/flash/font_1.ttf")
 const BODY_FONT: Font = preload("res://fonts/flash/font_2.ttf")
 const TV_FONT: Font = preload("res://fonts/flash/font_2836.ttf")
 var viewport_canvas: Control
+var edge_tab: TextureRect
+var edge_hit: Button
 var screen: Control
 var overlay: Control
 var music := AudioStreamPlayer.new()
@@ -89,6 +91,7 @@ func _fit_stage() -> void:
 	var fit: float = LAYOUT.fit_scale(safe.size)
 	screen.scale = Vector2.ONE * fit
 	screen.position = LAYOUT.centered_offset(safe.size)
+	_layout_edge_tab()
 
 func _stop_cutscene() -> void:
 	cutscene.stop()
@@ -104,6 +107,8 @@ func _reset_screen() -> void:
 		screen.get_parent().remove_child(screen)
 		screen.queue_free()
 	overlay = null
+	edge_tab = null
+	edge_hit = null
 	screen = Control.new()
 	screen.size = LAYOUT.BASE_SIZE
 	viewport_canvas.safe_layer.add_child(screen)
@@ -128,14 +133,51 @@ func _art(filename: String, parent: Control = null, rect: Rect2 = Rect2(0,0,800,
 	return image
 
 func _image(filename: String) -> void:
-	var image := TextureRect.new()
-	image.texture = load("res://assets/images/" + filename)
-	_set_backdrop(image.texture)
-	image.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	image.size = LAYOUT.BASE_SIZE
-	image.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	screen.add_child(image)
-	image.set_deferred("size",LAYOUT.BASE_SIZE)
+	_set_backdrop(load("res://assets/images/" + filename))
+
+func _layout_edge_tab() -> void:
+	if not is_instance_valid(edge_tab) or not is_instance_valid(edge_hit): return
+	var safe_size: Vector2 = viewport_canvas.safe_layer.size / screen.scale
+	var position := Vector2(-screen.position.x/screen.scale.x,(safe_size.y-edge_tab.size.y)*0.5-screen.position.y/screen.scale.y)
+	edge_tab.position = position
+	edge_hit.position = position
+	edge_hit.size = edge_tab.size
+
+func _edge_tab(label: String, action: Callable, parent: Control = null) -> void:
+	if is_instance_valid(edge_tab): edge_tab.hide()
+	if is_instance_valid(edge_hit): edge_hit.hide()
+	var source: Texture2D = load("res://assets/flash_ui/pause_button.png")
+	var image: Image = source.get_image()
+	if image.is_compressed(): image.decompress()
+	var atlas := AtlasTexture.new()
+	atlas.atlas = source
+	atlas.region = image.get_used_rect()
+	edge_tab = TextureRect.new()
+	edge_tab.texture = atlas
+	edge_tab.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	edge_tab.size = atlas.region.size
+	edge_tab.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	(parent if parent != null else screen).add_child(edge_tab)
+	edge_hit = _hit(label,Rect2(Vector2.ZERO,atlas.region.size/2),action,parent)
+	_layout_edge_tab()
+
+func _opening_art(name: String) -> void:
+	_set_backdrop(load("res://assets/flash_ui/layout_bg_" + name + ".png"))
+	_art("layout_controls_tv" if name.begins_with("tv_") else "layout_controls_transport_no_keys" if name == "transport" and Quest.flags.TakenKey else "layout_controls_" + name)
+
+func _opening_caption(node: Dictionary) -> void:
+	var y: float = 416 if Quest.current_id in ["wake","screams","transport"] else 445
+	if Quest.current_id == "lift_button": y = 5.75
+	var band := ColorRect.new()
+	band.position = Vector2(-screen.position.x/screen.scale.x,(y-6)*2)
+	band.size = Vector2(viewport_canvas.safe_layer.size.x/screen.scale.x,(480-y+6)*2 if y>400 else 80)
+	band.color = Color.BLACK
+	band.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	screen.add_child(band)
+	var font_size := 24
+	while font_size > 16 and BODY_FONT.get_string_size(node.text,HORIZONTAL_ALIGNMENT_LEFT,-1,font_size*2).x > 1550:
+		font_size -= 1
+	_text(node.text,Rect2(11,y,775,34),font_size)
 
 func _text(text: String, rect: Rect2, font_size: int = 24, title: bool = false, center: bool = false, parent: Control = null) -> Label:
 	rect = LAYOUT.scaled_rect(rect)
@@ -294,9 +336,9 @@ func _show_pause() -> void:
 	overlay.size = LAYOUT.BASE_SIZE
 	screen.add_child(overlay)
 	_shade(overlay,0.6)
-	_art("pause",overlay)
+	_art("layout_pause",overlay)
 	_text("Звук: " + ("Вкл" if Quest.sound_enabled else "Выкл"),Rect2(101,179,243,28),22,true,true,overlay)
-	_hit("Продолжить",Rect2(0,175,72,100),_resume,overlay)
+	_edge_tab("Продолжить",_resume,overlay)
 	_hit("Начать заново",Rect2(15,94,290,64),_request_new,overlay)
 	_hit("Звук",Rect2(73,158,280,62),_toggle_sound,overlay)
 	_hit("Выйти в меню",Rect2(72,225,280,62),_show_menu,overlay)
@@ -349,7 +391,7 @@ func _show_story() -> void:
 	if kind.begins_with("city_"):
 		CITY.draw(self, node)
 	elif kind == "tv":
-		_art("tv_%d" % Quest.channel)
+		_opening_art("tv_%d" % Quest.channel)
 		var channel_label := _text("CH %d" % (Quest.channel+1),Rect2(218,290,110,30),20)
 		channel_label.add_theme_font_override("font",TV_FONT)
 		channel_label.add_theme_color_override("font_color",Color.GREEN)
@@ -365,7 +407,7 @@ func _show_story() -> void:
 		_text(node.text,Rect2(102,71,594,31),24,false,true)
 		_hit("Забрать ключи",Rect2(656,326,65,58),func(): _choose(0))
 	elif Quest.current_id == "transport_choice":
-		_art("story_transport")
+		_opening_art("transport")
 		_shade(screen,0.6)
 		_art("decision")
 		_text(node.text,Rect2(430,72,280,235),24)
@@ -374,10 +416,10 @@ func _show_story() -> void:
 			_text(Quest.available_choices()[i].text,Rect2(66,66+i*65,337,50),24,false,true)
 			_hit(Quest.available_choices()[i].text,Rect2(60,54+i*65,349,64),func(): _choose(index))
 	elif kind == "boundary":
-		_art("pause_button")
 		_message("Продолжение",node.text,_show_menu,"В меню",false)
 	else:
-		_art("story_" + Quest.current_id)
+		_opening_art(Quest.current_id)
+		_opening_caption(node)
 		match Quest.current_id:
 			"morning_choice":
 				_hit("Выйти на улицу",Rect2(273,200,118,85),func(): _choose(0))
@@ -386,14 +428,11 @@ func _show_story() -> void:
 				_hit("Выйти на улицу",Rect2(20,18,92,99),func(): _choose(0))
 				if not Quest.flags.TakenKey:
 					_hit("Взять ключи",Rect2(325,217,77,80),func(): _choose(1))
-				else:
-					# The original pickup button is hidden after collecting the keys.
-					_art("story_transport_no_keys")
 			"lift_button": _hit("Первый этаж",Rect2(200,140,450,280),func(): _choose(0))
 			_: _hit("Далее",Rect2(70,0,730,480),func(): _choose(0))
 	# Flash pause control lives at the left edge, not in a new top bar.
 	if not kind.begins_with("city_") and kind != "item" and Quest.current_id != "transport_choice":
-		_hit("Пауза",Rect2(0,5,60,123),_show_pause)
+		_edge_tab("Пауза",_show_pause)
 
 func _play_sound(sound_name: String) -> void:
 	if not Quest.sound_enabled or sound_name.is_empty(): return

@@ -90,5 +90,4 @@ static func draw(ui: Control, node: Dictionary) -> void:
 			var r: Array = node.choices[i].get("rect",[70,0,730,480])
 			ui._hit(node.choices[i].text,Rect2(r[0],r[1],r[2],r[3]),func(): ui._choose(index),null,node.choices[i].get("mask",""))
 	if kind not in ["city_decision", "city_death", "city_ending"]:
-		ui._art("pause_button")
-		ui._hit("Пауза",Rect2(0,5,60,123),ui._show_pause)
+		ui._edge_tab("Пауза",ui._show_pause)

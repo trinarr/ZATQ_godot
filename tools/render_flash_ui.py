@@ -111,12 +111,12 @@ class Renderer:
   self.out.mkdir(parents=True,exist_ok=True)
   with tempfile.TemporaryDirectory() as tmp:
    p=Path(tmp)/'ui.svg';p.write_text(svg)
-   subprocess.run(['inkscape',str(p),'--export-type=png',f'--export-filename={self.out/filename}',f'--export-width={width*2}',f'--export-height={height*2}'],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
-  # Ensure a complete PNG before the next export.
-  with Image.open(self.out/filename) as check:
-   check.load()
-   temporary = self.out/(filename+".tmp")
-   check.save(temporary,format="PNG")
+   subprocess.run(['inkscape',str(p),'--export-type=png',f'--export-filename={p.parent/"ui.png"}',f'--export-width={width*2}',f'--export-height={height*2}'],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+   # Publish only a complete PNG; importers never see an unfinished export.
+   with Image.open(p.parent/"ui.png") as check:
+    check.load()
+    temporary = self.out/(filename+".tmp")
+    check.save(temporary,format="PNG")
   os.replace(temporary,self.out/filename)
   with open(self.out/filename,"rb") as f: os.fsync(f.fileno())
   print(filename)
