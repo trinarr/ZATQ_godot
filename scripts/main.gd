@@ -272,10 +272,11 @@ func _draw_selector() -> void:
 		_text("Последний результат: отсутствует",Rect2(435,162,239,34),16)
 		_text("Количество вопросов: " + entry.questions,Rect2(132,280,282,31),19,false,true)
 	else:
-		_text(": %d" % (Quest.episode1_stats.wins if entry.available else 0),Rect2(500,160,57,28),21)
-		_text(": %d" % (Quest.episode1_stats.losses if entry.available else 0),Rect2(585,160,57,28),21)
+		var stats: Dictionary = Quest.stats_for(entry.get("episode",1))
+		_text(": %d" % (stats.wins if entry.available else 0),Rect2(500,160,57,28),21)
+		_text(": %d" % (stats.losses if entry.available else 0),Rect2(585,160,57,28),21)
 	if selector_kind == "episodes" and entry.available:
-		_text("Финалы: %d/3" % Quest.episode1_stats.endings.size(),Rect2(435,313,239,28),18)
+		_text("Финалы: %d/3" % Quest.stats_for(entry.get("episode",1)).endings.size(),Rect2(435,313,239,28),18)
 	_hit("Предыдущий",Rect2(99,69,57,43),func(): _cycle_selector(-1))
 	_hit("Следующий",Rect2(648,69,62,43),func(): _cycle_selector(1))
 	_hit("Начать",Rect2(310,351,205,48),_selector_start)
@@ -284,7 +285,7 @@ func _draw_selector() -> void:
 func _selector_start() -> void:
 	var entry: Dictionary = _selector_items()[selector_index]
 	if entry.available:
-		_request_new()
+		_request_new(entry.get("episode",1))
 	else:
 		_message(entry.title,"Интерфейс восстановлен. Игровая часть этого раздела ещё не перенесена.")
 
@@ -295,19 +296,23 @@ func _show_help() -> void:
 	_hit("Закрыть справку",Rect2(652,374,57,60),_show_menu)
 	_hit("Назад",Rect2(63,373,322,66),_show_menu)
 
-func _request_new() -> void:
+func _request_new(number: int = 0) -> void:
+	if number == 0: number = Quest.episode
 	if not Quest.has_progress:
-		_start()
+		_start_episode(number)
 		return
-	_message("Начать заново?", "Текущее прохождение будет заменено.", _start)
+	_message("Начать заново?", "Текущее прохождение будет заменено.", _start_episode.bind(number))
 
 func _start() -> void:
+	_start_episode(Quest.episode)
+
+func _start_episode(number: int) -> void:
 	playing = true
 	paused = false
 	section = "story"
 	music.stop()
 	previous_node = ""
-	Quest.new_game()
+	Quest.new_game(number)
 
 func _resume() -> void:
 	if not Quest.has_progress: return
@@ -339,7 +344,7 @@ func _show_pause() -> void:
 	_art("layout_pause",overlay)
 	_text("Звук: " + ("Вкл" if Quest.sound_enabled else "Выкл"),Rect2(101,179,243,28),22,true,true,overlay)
 	_edge_tab("Продолжить",_resume,overlay)
-	_hit("Начать заново",Rect2(15,94,290,64),_request_new,overlay)
+	_hit("Начать заново",Rect2(15,94,290,64),func(): _request_new(),overlay)
 	_hit("Звук",Rect2(73,158,280,62),_toggle_sound,overlay)
 	_hit("Выйти в меню",Rect2(72,225,280,62),_show_menu,overlay)
 	_hit("Выйти из игры",Rect2(20,290,290,62),func(): Quest.save_game();get_tree().quit(),overlay)

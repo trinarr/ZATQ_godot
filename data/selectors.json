@@ -5,7 +5,8 @@
     "description": "Офис — дом, офис — дом. В это утро привычный ритм жизни Джека летит ко всем чертям. Как и он сам.",
     "frame": 0,
     "questions": "",
-    "available": true
+    "available": true,
+    "episode": 1
   },
   {
     "kind": "episodes",
@@ -13,7 +14,8 @@
     "description": "Хирург Дэвид Каховски привык быть один на один со смертью. Но теперь все иначе, ведь на кону — его собственная жизнь.",
     "frame": 2,
     "questions": "",
-    "available": false
+    "available": true,
+    "episode": 2
   },
   {
     "kind": "episodes",

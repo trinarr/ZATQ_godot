@@ -6,21 +6,26 @@ content=json.loads((root/'data/opening.json').read_text())
 nodes=content['nodes']
 nodes.update(json.loads((root/'data/city_routes.json').read_text())['nodes'])
 nodes.update(json.loads((root/'data/episode1_routes.json').read_text())['nodes'])
+nodes.update(json.loads((root/'data/episode2_routes.json').read_text())['nodes'])
 assert all(n.get('kind','story') != 'boundary' for n in nodes.values())
-assert sum(n.get('kind','story') == 'city_ending' for n in nodes.values()) == 3
+assert sum(n.get('kind','story') == 'city_ending' for n in nodes.values()) == 6
 for key,node in nodes.items():
     assert node.get('source'),key
-    assert (root/'assets/images'/node['image']).is_file(),key
+    if 'image' in node: assert (root/'assets/images'/node['image']).is_file(),key
     for choice in node.get('choices',[]):
         if 'mask' in choice: assert (root/'assets/flash_ui'/(choice['mask']+'.png')).is_file()
+        for case in choice.get('next_cases',[]): assert case['next'] in nodes,(key,case['next'])
         for target in ('next','with_keys','by_car'):
             if target in choice: assert choice[target] in nodes,(key,choice[target])
     for key in ('art','art_on_foot','controls_art'):
-        if key in node: assert (root/'assets/flash_ui'/(node[key]+'.png')).is_file(),(node,key)
+        if key in node: assert (root/'assets/flash_ui'/(node[key]+'.'+(node.get('art_extension','png') if key in ['art','art_on_foot'] else 'png'))).is_file(),(node,key)
     for choice in node.get('choices',[]):
         if 'sound' in choice: assert (root/'assets/audio'/(choice['sound']+'.mp3')).is_file()
     if 'back' in node: assert node['back'] in nodes
-    if 'sound' in node: assert (root/'assets/audio'/(node['sound']+'.mp3')).is_file()
+    if node.get('sound'): assert (root/'assets/audio'/(node['sound']+'.mp3')).is_file()
+    if 'pickup_if' in node: assert node['pickup_if']['next'] in nodes
+    for variant in node.get('variants',[]):
+        if variant.get('sound'): assert (root/'assets/audio'/(variant['sound']+'.mp3')).is_file()
 assert 'transport_choice' == nodes['transport']['choices'][0]['with_keys']
 assert nodes['transport_choice']['choices'][0]['set']['Auto']==1
 assert nodes['keys']['set']['TakenKey'] is True
@@ -30,4 +35,6 @@ assert len(catalog['symbols'])==1543
 assert len(catalog['actionscript'])==514
 assert 'Поехать на машине' in catalog['actionscript']['NewItem.as']
 assert 'Дойти пешком' in catalog['actionscript']['NewItem.as']
-print('PASS: assets, sound references, complete Episode I routes, provenance; 1543 symbols / 514 AS files.')
+assert {int(n['result_id']) for n in nodes.values() if n.get('episode')==2 and n.get('alive')} == {38,43,47}
+assert len([n for n in nodes.values() if n.get('episode')==2 and n.get('kind')=='city_death'])==14
+print('PASS: assets, sounds, complete Episodes I and II routes, original XFL/AS provenance.')

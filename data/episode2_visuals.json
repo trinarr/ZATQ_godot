@@ -1,0 +1,1107 @@
+{
+  "e2_hospital_1": {
+    "symbol": 2443,
+    "frame": 0,
+    "overrides": {
+      "Mov": 8
+    },
+    "photo": "HospitalMain.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hospital_2": {
+    "symbol": 2443,
+    "frame": 1,
+    "overrides": {
+      "Mov": 7
+    },
+    "photo": "HospitalRunning.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hospital_3": {
+    "symbol": 2443,
+    "frame": 2,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hospital_4": {
+    "symbol": 2443,
+    "frame": 3,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hospital_5": {
+    "symbol": 2443,
+    "frame": 4,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "EyeOfZombie.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hospital_6": {
+    "symbol": 2443,
+    "frame": 5,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hospital_7": {
+    "symbol": 2443,
+    "frame": 6,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hospital_8": {
+    "symbol": 2443,
+    "frame": 7,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hospital_9": {
+    "symbol": 2443,
+    "frame": 8,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hospital_10": {
+    "symbol": 2443,
+    "frame": 9,
+    "overrides": {
+      "Mov": 12
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hospital_11": {
+    "symbol": 2443,
+    "frame": 10,
+    "overrides": {
+      "Mov": 8
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hospital_12": {
+    "symbol": 2443,
+    "frame": 11,
+    "overrides": {
+      "Mov": 28
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hospital_13": {
+    "symbol": 2443,
+    "frame": 12,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hospital_14": {
+    "symbol": 2443,
+    "frame": 13,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hospital_15": {
+    "symbol": 2443,
+    "frame": 14,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "KillTheZombie.png",
+    "photo_path": "Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hospital_16": {
+    "symbol": 2443,
+    "frame": 15,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hospital_17": {
+    "symbol": 2443,
+    "frame": 16,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hospital_18": {
+    "symbol": 2443,
+    "frame": 17,
+    "overrides": {
+      "Mov": 16
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hospital_19": {
+    "symbol": 2443,
+    "frame": 18,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hospital_20": {
+    "symbol": 2443,
+    "frame": 19,
+    "overrides": {
+      "Mov": 12
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_roof_1": {
+    "symbol": 2281,
+    "frame": 0,
+    "overrides": {
+      "Mov": 7
+    },
+    "photo": "StairsUp.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_roof_2": {
+    "symbol": 2281,
+    "frame": 1,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_roof_3": {
+    "symbol": 2281,
+    "frame": 2,
+    "overrides": {
+      "Mov": 8
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_roof_4": {
+    "symbol": 2281,
+    "frame": 3,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_roof_5": {
+    "symbol": 2281,
+    "frame": 4,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_roof_6": {
+    "symbol": 2281,
+    "frame": 5,
+    "overrides": {
+      "Mov": 125
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_roof_7": {
+    "symbol": 2281,
+    "frame": 6,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_roof_8": {
+    "symbol": 2281,
+    "frame": 7,
+    "overrides": {
+      "Mov": 11
+    },
+    "photo": "FallingZombie.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_roof_9": {
+    "symbol": 2281,
+    "frame": 8,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "LayingKilledZombie.jpg",
+    "photo_path": "Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_roof_10": {
+    "symbol": 2281,
+    "frame": 9,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_roof_11": {
+    "symbol": 2281,
+    "frame": 10,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_roof_12": {
+    "symbol": 2281,
+    "frame": 11,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_first_1": {
+    "symbol": 2216,
+    "frame": 0,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_first_2": {
+    "symbol": 2216,
+    "frame": 1,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_first_3": {
+    "symbol": 2216,
+    "frame": 2,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 8
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_first_4": {
+    "symbol": 2216,
+    "frame": 3,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 32
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_first_5": {
+    "symbol": 2216,
+    "frame": 4,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 14
+    },
+    "photo": "ZombieAttackBack.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_first_6": {
+    "symbol": 2216,
+    "frame": 5,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_first_7": {
+    "symbol": 2216,
+    "frame": 6,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_first_8": {
+    "symbol": 2216,
+    "frame": 7,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_first_9": {
+    "symbol": 2216,
+    "frame": 8,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_first_10": {
+    "symbol": 2216,
+    "frame": 9,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_first_11": {
+    "symbol": 2216,
+    "frame": 10,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 26
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_first_12": {
+    "symbol": 2216,
+    "frame": 11,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 22
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hall_1": {
+    "symbol": 2077,
+    "frame": 0,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hall_2": {
+    "symbol": 2077,
+    "frame": 1,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hall_3": {
+    "symbol": 2077,
+    "frame": 2,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hall_4": {
+    "symbol": 2077,
+    "frame": 3,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 5
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hall_5": {
+    "symbol": 2077,
+    "frame": 4,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 5
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hall_6": {
+    "symbol": 2077,
+    "frame": 5,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 24
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hall_7": {
+    "symbol": 2077,
+    "frame": 6,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hall_8": {
+    "symbol": 2077,
+    "frame": 7,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 4
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_hall_9": {
+    "symbol": 2077,
+    "frame": 8,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_back_1": {
+    "symbol": 2010,
+    "frame": 0,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "ZombieTeeth.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_back_2": {
+    "symbol": 2010,
+    "frame": 1,
+    "overrides": {
+      "Mov": 8
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_main_1": {
+    "symbol": 2145,
+    "frame": 0,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_main_2": {
+    "symbol": 2145,
+    "frame": 1,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_main_3": {
+    "symbol": 2145,
+    "frame": 2,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_main_4": {
+    "symbol": 2145,
+    "frame": 3,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_main_5": {
+    "symbol": 2145,
+    "frame": 4,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_main_6": {
+    "symbol": 2145,
+    "frame": 5,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_main_7": {
+    "symbol": 2145,
+    "frame": 6,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_main_8": {
+    "symbol": 2145,
+    "frame": 7,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 11
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_main_9": {
+    "symbol": 2145,
+    "frame": 8,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 6
+    },
+    "photo": "Explode.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_main_10": {
+    "symbol": 2145,
+    "frame": 9,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_main_11": {
+    "symbol": 2145,
+    "frame": 10,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 29
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_lift_1": {
+    "symbol": 2301,
+    "frame": 0,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 4
+    },
+    "photo": "ElevatorCall.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_lift_2": {
+    "symbol": 2301,
+    "frame": 1,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_lift_3": {
+    "symbol": 2301,
+    "frame": 2,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 29
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_attack_1": {
+    "symbol": 2020,
+    "frame": 0,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  },
+  "e2_attack_2": {
+    "symbol": 2020,
+    "frame": 1,
+    "overrides": {
+      "Mov": 23
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ]
+  }
+}

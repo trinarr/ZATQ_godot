@@ -1,0 +1,828 @@
+{
+  "source": "BFS of original Episode2, NewItem 11-23 and linked movie routes",
+  "results": {
+    "e2_result_34": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "e2_result_33": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "e2_result_36": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      1,
+      0,
+      3,
+      0,
+      0,
+      0
+    ],
+    "e2_result_37": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "e2_result_49": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "e2_result_41": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      2,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "e2_result_35": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "e2_result_48": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "e2_result_45": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      1,
+      0,
+      2,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "e2_result_46": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "e2_result_40": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "e2_result_39": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "e2_result_38": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "e2_result_44": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      1,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "e2_result_47": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "e2_result_42": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      1,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "e2_result_43": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      1,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0
+    ]
+  },
+  "states": {
+    "e2_hospital_1": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hospital_2": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hospital_3": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hospital_4": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hospital_5": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hospital_5_choice_11": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_glock": {
+      "bullets": 5,
+      "linked": false
+    },
+    "e2_hospital_13": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hospital_6": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hospital_9": {
+      "bullets": 5,
+      "linked": false
+    },
+    "e2_hospital_14": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hospital_6_choice_12": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hospital_9_choice_13": {
+      "bullets": 5,
+      "linked": false
+    },
+    "e2_result_34": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hospital_7_v2": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hospital_15": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_hospital_16_v3": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hospital_10": {
+      "bullets": 5,
+      "linked": false
+    },
+    "e2_hospital_11": {
+      "bullets": 5,
+      "linked": false
+    },
+    "e2_hospital_8_v2": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hospital_15_choice_16": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_roof_1": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hall_1": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hospital_11_choice_14": {
+      "bullets": 5,
+      "linked": false
+    },
+    "e2_result_33": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hospital_7": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_first_1_v2": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_hospital_17_v2": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_lift_1": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_roof_2": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hall_2": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hospital_12": {
+      "bullets": 5,
+      "linked": false
+    },
+    "e2_hospital_16": {
+      "bullets": 5,
+      "linked": false
+    },
+    "e2_hospital_8": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_first_2_v2": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_back_1": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_lift_2": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_roof_3": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hall_3": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hospital_17": {
+      "bullets": 4,
+      "linked": false
+    },
+    "e2_first_1": {
+      "bullets": 3,
+      "linked": false
+    },
+    "e2_hall_1_v2": {
+      "bullets": 5,
+      "linked": false
+    },
+    "e2_glock_friend": {
+      "bullets": 5,
+      "linked": true
+    },
+    "e2_first_3": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_back_2": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_lift_3": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_roof_7": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hall_3_choice_20": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hospital_17_choice_18": {
+      "bullets": 4,
+      "linked": false
+    },
+    "e2_first_2": {
+      "bullets": 3,
+      "linked": false
+    },
+    "e2_hall_2_v2": {
+      "bullets": 5,
+      "linked": false
+    },
+    "e2_hospital_19": {
+      "bullets": 5,
+      "linked": true
+    },
+    "e2_first_3_choice_19": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_main_1": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_result_36": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_roof_8": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hall_7": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hall_8": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hospital_18": {
+      "bullets": 4,
+      "linked": false
+    },
+    "e2_first_1_v3": {
+      "bullets": 4,
+      "linked": false
+    },
+    "e2_hospital_20": {
+      "bullets": 5,
+      "linked": true
+    },
+    "e2_first_locked": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_first_9": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_main_2": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_lift_1_v2": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_result_37": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_main_1_v2": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hall_9": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_hospital_15_choice_16_1": {
+      "bullets": 4,
+      "linked": true
+    },
+    "e2_first_3_choice_15": {
+      "bullets": 3,
+      "linked": false
+    },
+    "e2_roof_3_choice_17": {
+      "bullets": 5,
+      "linked": false
+    },
+    "e2_hall_4": {
+      "bullets": 5,
+      "linked": false
+    },
+    "e2_boom_4": {
+      "bullets": 4,
+      "linked": true
+    },
+    "e2_result_49": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_first_9_choice_23": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_main_3": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_lift_2_v2": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_result_41": {
+      "bullets": -1,
+      "linked": false
+    },
+    "e2_first_11": {
+      "bullets": 3,
+      "linked": false
+    },
+    "e2_roof_4": {
+      "bullets": 5,
+      "linked": false
+    },
+    "e2_hall_5": {
+      "bullets": 5,
+      "linked": false
+    },
+    "e2_boom_5": {
+      "bullets": 4,
+      "linked": true
+    },
+    "e2_first_10": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_main_3_choice_21": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_lift_3_v2": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_first_12": {
+      "bullets": 2,
+      "linked": false
+    },
+    "e2_first_5": {
+      "bullets": 3,
+      "linked": false
+    },
+    "e2_roof_5": {
+      "bullets": 5,
+      "linked": false
+    },
+    "e2_roof_9": {
+      "bullets": 5,
+      "linked": false
+    },
+    "e2_hall_6": {
+      "bullets": 5,
+      "linked": false
+    },
+    "e2_result_35": {
+      "bullets": 4,
+      "linked": true
+    },
+    "e2_result_48": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_mark23": {
+      "bullets": 12,
+      "linked": true
+    },
+    "e2_main_4": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_result_45": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_first_4": {
+      "bullets": 4,
+      "linked": false
+    },
+    "e2_result_46": {
+      "bullets": 3,
+      "linked": false
+    },
+    "e2_roof_6": {
+      "bullets": 5,
+      "linked": false
+    },
+    "e2_roof_10": {
+      "bullets": 5,
+      "linked": false
+    },
+    "e2_result_40": {
+      "bullets": 5,
+      "linked": false
+    },
+    "e2_main_5": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_main_1_v3": {
+      "bullets": 4,
+      "linked": true
+    },
+    "e2_roof_12": {
+      "bullets": 5,
+      "linked": false
+    },
+    "e2_roof_11": {
+      "bullets": 5,
+      "linked": false
+    },
+    "e2_main_6": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_result_39": {
+      "bullets": 5,
+      "linked": false
+    },
+    "e2_result_38": {
+      "bullets": 5,
+      "linked": false
+    },
+    "e2_main_7": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_first_6": {
+      "bullets": 4,
+      "linked": true
+    },
+    "e2_main_7_choice_22": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_first_7": {
+      "bullets": 4,
+      "linked": true
+    },
+    "e2_main_11": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_attack_1": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_first_8": {
+      "bullets": 4,
+      "linked": true
+    },
+    "e2_main_8": {
+      "bullets": 11,
+      "linked": true
+    },
+    "e2_result_44": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_attack_2": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_result_47": {
+      "bullets": 4,
+      "linked": true
+    },
+    "e2_main_9": {
+      "bullets": 11,
+      "linked": true
+    },
+    "e2_result_42": {
+      "bullets": -1,
+      "linked": true
+    },
+    "e2_main_10": {
+      "bullets": 11,
+      "linked": true
+    },
+    "e2_result_43": {
+      "bullets": 11,
+      "linked": true
+    }
+  }
+}

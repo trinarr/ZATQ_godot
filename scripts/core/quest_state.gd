@@ -15,6 +15,8 @@ const TV_IMAGES := ["flash_2821.png", "flash_2823.png", "flash_2825.png", "flash
 var nodes: Dictionary = {}
 var current_id: String = ""
 var flags: Dictionary = {"TakenKey": false, "Auto": 0}
+var episode: int = 1
+var episode2_stats: Dictionary = {"wins":0,"losses":0,"endings":[]}
 var channel: int = 0
 var sound_enabled: bool = true
 var has_progress: bool = false
@@ -32,31 +34,63 @@ func _ready() -> void:
 	var episode_content: Variant = JSON.parse_string(FileAccess.get_file_as_string("res://data/episode1_routes.json"))
 	if episode_content is Dictionary and episode_content.get("nodes") is Dictionary:
 		nodes.merge(episode_content.nodes, true)
+	var second_content: Variant = JSON.parse_string(FileAccess.get_file_as_string("res://data/episode2_routes.json"))
+	if second_content is Dictionary and second_content.get("nodes") is Dictionary:
+		nodes.merge(second_content.nodes, true)
 	_load_save()
 
 func current() -> Dictionary:
-	return nodes.get(current_id, {})
+	var node: Dictionary = nodes.get(current_id, {})
+	if not node.has("variants"): return node
+	var resolved: Dictionary = node.duplicate(true)
+	for variant: Dictionary in node.variants:
+		if matches(variant.when):
+			for key: String in variant:
+				if key != "when": resolved[key] = variant[key]
+	return resolved
+
+func matches(conditions: Dictionary) -> bool:
+	for key: String in conditions:
+		var expected: Variant = conditions[key]
+		var value: Variant = flags.get(key)
+		if expected is Dictionary:
+			if not (value is int or value is float): return false
+			if expected.has("min") and value < expected.min: return false
+			if expected.has("max") and value > expected.max: return false
+		elif value != expected: return false
+	return true
+
+func stats_for(number: int) -> Dictionary:
+	return episode2_stats if number == 2 else episode1_stats
 
 func available_choices() -> Array:
 	var result: Array = []
 	for choice in current().get("choices", []):
 		if choice.get("unless_keys", false) and flags.TakenKey:
 			continue
+		if not matches(choice.get("requires",{})): continue
 		result.append(choice)
 	return result
 
-func new_game() -> void:
+func new_game(number: int = 1) -> void:
+	if number not in [1,2]: return
+	episode = number
 	result_recorded = false
-	flags = {"TakenKey": false, "Auto": 0}
+	flags = {"TakenKey": false, "Auto": 0, "BulletsNumber": -1, "LinkedFr": false}
 	channel = 0
 	has_progress = true
-	_enter("wake")
+	_enter("e2_hospital_1" if episode == 2 else "wake")
 
 func _enter(id: String) -> void:
 	if not nodes.has(id):
 		return
 	current_id = id
+	episode = 2 if id.begins_with("e2_") else 1
 	channel = 0
+	var pickup: Dictionary = current().get("pickup_if",{})
+	if not pickup.is_empty() and matches(pickup.when):
+		_enter(pickup.next)
+		return
 	for key in current().get("set", {}):
 		flags[key] = current().set[key]
 	_record_result()
@@ -67,13 +101,14 @@ func _record_result() -> void:
 	if result_recorded or not current().has("result_id"): return
 	result_recorded = true
 	var node: Dictionary = current()
+	var stats: Dictionary = stats_for(episode)
 	if node.get("alive",false):
-		episode1_stats.wins += 1
+		stats.wins += 1
 		var result_id: int = int(node.result_id)
-		if result_id not in episode1_stats.endings:
-			episode1_stats.endings.append(result_id)
+		if result_id not in stats.endings:
+			stats.endings.append(result_id)
 	else:
-		episode1_stats.losses += 1
+		stats.losses += 1
 
 func choose(index: int) -> void:
 	var choices: Array = available_choices()
@@ -83,9 +118,16 @@ func choose(index: int) -> void:
 	if choice.get("action", "") == "channel":
 		next_channel()
 		return
+	var routed_target: String = choice.get("next", "")
+	for route: Dictionary in choice.get("next_cases",[]):
+		if matches(route.when):
+			routed_target = route.next
+			break
+	for key in choice.get("add", {}):
+		flags[key] = flags.get(key,0) + choice.add[key]
 	for key in choice.get("set", {}):
 		flags[key] = choice.set[key]
-	var target: String = choice.get("next", "")
+	var target: String = routed_target
 	if flags.TakenKey and choice.has("with_keys"):
 		target = choice.with_keys
 	if flags.Auto == 1 and choice.has("by_car"):
@@ -107,7 +149,7 @@ func set_sound(enabled: bool) -> void:
 	save_game()
 
 func _snapshot() -> Dictionary:
-	return {"version":VERSION,"current_id":current_id,"flags":flags,"channel":channel,"sound_enabled":sound_enabled,"has_progress":has_progress,"episode1_stats":episode1_stats,"result_recorded":result_recorded}
+	return {"version":VERSION,"current_id":current_id,"flags":flags,"channel":channel,"sound_enabled":sound_enabled,"has_progress":has_progress,"episode":episode,"episode1_stats":episode1_stats,"episode2_stats":episode2_stats,"result_recorded":result_recorded}
 
 func _valid(data: Variant) -> bool:
 	if not data is Dictionary or data.get("version") != VERSION:
@@ -124,20 +166,28 @@ func _valid(data: Variant) -> bool:
 	if not (auto is int or auto is float) or auto != int(auto) or int(auto) not in [0, 1]:
 		return false
 	if data.has("result_recorded") and not data.result_recorded is bool: return false
-	if data.has("episode1_stats"):
-		var stats: Variant = data.episode1_stats
-		if not stats is Dictionary or not stats.get("endings") is Array: return false
-		for key: String in ["wins","losses"]:
-			var counter: Variant = stats.get(key)
-			if not (counter is int or counter is float) or counter < 0 or counter != int(counter): return false
-		var seen: Array = []
-		for ending: Variant in stats.endings:
-			if not (ending is int or ending is float) or ending != int(ending): return false
-			var result_id: int = int(ending)
-			if result_id not in [6,77,78] or result_id in seen: return false
-			seen.append(result_id)
+	var saved_episode: Variant = data.get("episode",1)
+	if not (saved_episode is int or saved_episode is float) or saved_episode != int(saved_episode) or int(saved_episode) not in [1,2]: return false
+	var bullets: Variant = data.flags.get("BulletsNumber",-1)
+	if not (bullets is int or bullets is float) or bullets != int(bullets) or bullets < -1 or bullets > 12: return false
+	if not data.flags.get("LinkedFr",false) is bool: return false
+	if data.has_progress and (2 if data.current_id.begins_with("e2_") else 1) != int(saved_episode): return false
+	for number: int in [1,2]:
+		var stats_key := "episode%d_stats" % number
+		if data.has(stats_key) and not _valid_stats(data[stats_key],[6,77,78] if number==1 else [38,43,47]): return false
 	var ch: Variant = data.get("channel")
 	return (ch is float or ch is int) and ch == int(ch) and ch >= 0 and ch < TV_IMAGES.size()
+
+func _valid_stats(stats: Variant, endings: Array) -> bool:
+	if not stats is Dictionary or not stats.get("endings") is Array: return false
+	for key: String in ["wins","losses"]:
+		var counter: Variant = stats.get(key)
+		if not (counter is int or counter is float) or counter < 0 or counter != int(counter): return false
+	var seen: Array = []
+	for ending: Variant in stats.endings:
+		if not (ending is int or ending is float) or ending != int(ending) or int(ending) not in endings or int(ending) in seen: return false
+		seen.append(int(ending))
+	return true
 
 func _read(path: String) -> Variant:
 	if not FileAccess.file_exists(path):
@@ -155,15 +205,21 @@ func _load_save() -> void:
 			return
 		recovery_message = "Сохранение восстановлено из резервной копии."
 	current_id = data.current_id
-	flags = {"TakenKey": data.flags.TakenKey, "Auto": int(data.flags.Auto)}
+	flags = {"TakenKey": data.flags.TakenKey, "Auto": int(data.flags.Auto), "BulletsNumber": int(data.flags.get("BulletsNumber",-1)), "LinkedFr": data.flags.get("LinkedFr",false)}
+	episode = int(data.get("episode",1))
 	channel = int(data.channel)
 	sound_enabled = data.sound_enabled
 	has_progress = data.has_progress
 	episode1_stats = {"wins":0,"losses":0,"endings":[]}
-	if data.has("episode1_stats"):
-		episode1_stats = {"wins":int(data.episode1_stats.wins),"losses":int(data.episode1_stats.losses),"endings":data.episode1_stats.endings.duplicate()}
-		for i: int in episode1_stats.endings.size():
-			episode1_stats.endings[i] = int(episode1_stats.endings[i])
+	episode2_stats = {"wins":0,"losses":0,"endings":[]}
+	for number: int in [1,2]:
+		var key := "episode%d_stats" % number
+		if data.has(key):
+			var stats: Dictionary = stats_for(number)
+			stats.wins = int(data[key].wins)
+			stats.losses = int(data[key].losses)
+			stats.endings = data[key].endings.duplicate()
+			for i: int in stats.endings.size(): stats.endings[i] = int(stats.endings[i])
 	result_recorded = data.get("result_recorded",false)
 	if has_progress: _record_result()
 
