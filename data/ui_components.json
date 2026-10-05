@@ -1,0 +1,998 @@
+{
+  "adaptive_menu": [
+    {
+      "texture": "components/part_6d93d9bc30dd57564bda.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        303.0
+      ],
+      "source": "Symbol 118/Layer 14",
+      "layer": "background"
+    },
+    {
+      "texture": "components/part_a5184b838147ed4a73ae.png",
+      "rect": [
+        529.0,
+        202.0,
+        26.0,
+        25.0
+      ],
+      "source": "Symbol 118/Layer 3",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_d15f7fdc7d515d43a9f5.png",
+      "rect": [
+        457.0,
+        204.0,
+        26.0,
+        23.0
+      ],
+      "source": "Symbol 118/SndCheck",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_25aa7ab7c037fa593fca.png",
+      "rect": [
+        415.5,
+        70.0,
+        300.5,
+        106.5
+      ],
+      "source": "Symbol 132/Symbol 122",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_73fd487b177ef820fb12.png",
+      "rect": [
+        598.0,
+        181.0,
+        108.0,
+        27.0
+      ],
+      "source": "Symbol 132/Symbol 131",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_bdfefd93bd910dec50a3.png",
+      "rect": [
+        447.0,
+        138.0,
+        238.0,
+        35.0
+      ],
+      "source": "Symbol 132/Symbol 125",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_f7a5a4fa1e7eeb00f59b.png",
+      "rect": [
+        448.0,
+        68.0,
+        237.0,
+        64.0
+      ],
+      "source": "Symbol 132/Symbol 128",
+      "layer": "foreground"
+    }
+  ],
+  "adaptive_menu_off": [
+    {
+      "texture": "components/part_6d93d9bc30dd57564bda.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        303.0
+      ],
+      "source": "Symbol 118/Layer 14",
+      "layer": "background"
+    },
+    {
+      "texture": "components/part_a5184b838147ed4a73ae.png",
+      "rect": [
+        529.0,
+        202.0,
+        26.0,
+        25.0
+      ],
+      "source": "Symbol 118/Layer 3",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_6947b66ec05a90b79280.png",
+      "rect": [
+        455.0,
+        202.0,
+        27.0,
+        27.0
+      ],
+      "source": "Symbol 118/SndCheck",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_25aa7ab7c037fa593fca.png",
+      "rect": [
+        415.5,
+        70.0,
+        300.5,
+        106.5
+      ],
+      "source": "Symbol 132/Symbol 122",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_73fd487b177ef820fb12.png",
+      "rect": [
+        598.0,
+        181.0,
+        108.0,
+        27.0
+      ],
+      "source": "Symbol 132/Symbol 131",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_bdfefd93bd910dec50a3.png",
+      "rect": [
+        447.0,
+        138.0,
+        238.0,
+        35.0
+      ],
+      "source": "Symbol 132/Symbol 125",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_f7a5a4fa1e7eeb00f59b.png",
+      "rect": [
+        448.0,
+        68.0,
+        237.0,
+        64.0
+      ],
+      "source": "Symbol 132/Symbol 128",
+      "layer": "foreground"
+    }
+  ],
+  "adaptive_selector_0": [
+    {
+      "texture": "components/part_709d3c3e8144ae6368cf.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Symbol 211/Layer 12",
+      "layer": "background"
+    },
+    {
+      "texture": "components/part_41ba67bdf954e7cf80a9.png",
+      "rect": [
+        657.0,
+        367.0,
+        24.0,
+        24.0
+      ],
+      "source": "Symbol 211/Symbol 10",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_80e03791e0f5fb5a7368.png",
+      "rect": [
+        122.0,
+        153.0,
+        295.0,
+        118.0
+      ],
+      "source": "Symbol 211/EpImg",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_027d2a498ce88bdf70af.png",
+      "rect": [
+        681.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But2",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_9aa906bece3845f60e7d.png",
+      "rect": [
+        103.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But1",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_6a07acbcd65fbe5ae791.png",
+      "rect": [
+        284.0,
+        284.0,
+        44.0,
+        17.0
+      ],
+      "source": "Symbol 211/LeftOpt",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_ad6b91577988ccaf5ef3.png",
+      "rect": [
+        482.0,
+        161.0,
+        101.0,
+        19.0
+      ],
+      "source": "Symbol 211/RightOpt",
+      "layer": "foreground"
+    }
+  ],
+  "adaptive_selector_1": [
+    {
+      "texture": "components/part_709d3c3e8144ae6368cf.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Symbol 211/Layer 12",
+      "layer": "background"
+    },
+    {
+      "texture": "components/part_41ba67bdf954e7cf80a9.png",
+      "rect": [
+        657.0,
+        367.0,
+        24.0,
+        24.0
+      ],
+      "source": "Symbol 211/Symbol 10",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_5fde4b091363c7f13e31.png",
+      "rect": [
+        122.0,
+        153.0,
+        295.0,
+        118.0
+      ],
+      "source": "Symbol 211/EpImg",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_027d2a498ce88bdf70af.png",
+      "rect": [
+        681.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But2",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_9aa906bece3845f60e7d.png",
+      "rect": [
+        103.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But1",
+      "layer": "foreground"
+    }
+  ],
+  "adaptive_selector_2": [
+    {
+      "texture": "components/part_709d3c3e8144ae6368cf.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Symbol 211/Layer 12",
+      "layer": "background"
+    },
+    {
+      "texture": "components/part_41ba67bdf954e7cf80a9.png",
+      "rect": [
+        657.0,
+        367.0,
+        24.0,
+        24.0
+      ],
+      "source": "Symbol 211/Symbol 10",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_bf5a1a29214e272ad799.png",
+      "rect": [
+        122.0,
+        153.0,
+        295.0,
+        118.0
+      ],
+      "source": "Symbol 211/EpImg",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_027d2a498ce88bdf70af.png",
+      "rect": [
+        681.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But2",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_9aa906bece3845f60e7d.png",
+      "rect": [
+        103.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But1",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_6a07acbcd65fbe5ae791.png",
+      "rect": [
+        284.0,
+        284.0,
+        44.0,
+        17.0
+      ],
+      "source": "Symbol 211/LeftOpt",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_ad6b91577988ccaf5ef3.png",
+      "rect": [
+        482.0,
+        161.0,
+        101.0,
+        19.0
+      ],
+      "source": "Symbol 211/RightOpt",
+      "layer": "foreground"
+    }
+  ],
+  "adaptive_selector_3": [
+    {
+      "texture": "components/part_709d3c3e8144ae6368cf.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Symbol 211/Layer 12",
+      "layer": "background"
+    },
+    {
+      "texture": "components/part_41ba67bdf954e7cf80a9.png",
+      "rect": [
+        657.0,
+        367.0,
+        24.0,
+        24.0
+      ],
+      "source": "Symbol 211/Symbol 10",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_39ba9b5f496a6bc006db.png",
+      "rect": [
+        122.0,
+        153.0,
+        295.0,
+        118.0
+      ],
+      "source": "Symbol 211/EpImg",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_027d2a498ce88bdf70af.png",
+      "rect": [
+        681.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But2",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_9aa906bece3845f60e7d.png",
+      "rect": [
+        103.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But1",
+      "layer": "foreground"
+    }
+  ],
+  "adaptive_selector_4": [
+    {
+      "texture": "components/part_709d3c3e8144ae6368cf.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Symbol 211/Layer 12",
+      "layer": "background"
+    },
+    {
+      "texture": "components/part_41ba67bdf954e7cf80a9.png",
+      "rect": [
+        657.0,
+        367.0,
+        24.0,
+        24.0
+      ],
+      "source": "Symbol 211/Symbol 10",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_eb0fbd77dc783c58fc46.png",
+      "rect": [
+        122.0,
+        153.0,
+        295.0,
+        118.0
+      ],
+      "source": "Symbol 211/EpImg",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_027d2a498ce88bdf70af.png",
+      "rect": [
+        681.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But2",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_9aa906bece3845f60e7d.png",
+      "rect": [
+        103.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But1",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_6a07acbcd65fbe5ae791.png",
+      "rect": [
+        284.0,
+        284.0,
+        44.0,
+        17.0
+      ],
+      "source": "Symbol 211/LeftOpt",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_ad6b91577988ccaf5ef3.png",
+      "rect": [
+        482.0,
+        161.0,
+        101.0,
+        19.0
+      ],
+      "source": "Symbol 211/RightOpt",
+      "layer": "foreground"
+    }
+  ],
+  "adaptive_selector_5": [
+    {
+      "texture": "components/part_709d3c3e8144ae6368cf.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Symbol 211/Layer 12",
+      "layer": "background"
+    },
+    {
+      "texture": "components/part_41ba67bdf954e7cf80a9.png",
+      "rect": [
+        657.0,
+        367.0,
+        24.0,
+        24.0
+      ],
+      "source": "Symbol 211/Symbol 10",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_8cc8893c0c9f4e4d3950.png",
+      "rect": [
+        122.0,
+        153.0,
+        295.0,
+        118.0
+      ],
+      "source": "Symbol 211/EpImg",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_027d2a498ce88bdf70af.png",
+      "rect": [
+        681.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But2",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_9aa906bece3845f60e7d.png",
+      "rect": [
+        103.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But1",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_6a07acbcd65fbe5ae791.png",
+      "rect": [
+        284.0,
+        284.0,
+        44.0,
+        17.0
+      ],
+      "source": "Symbol 211/LeftOpt",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_ad6b91577988ccaf5ef3.png",
+      "rect": [
+        482.0,
+        161.0,
+        101.0,
+        19.0
+      ],
+      "source": "Symbol 211/RightOpt",
+      "layer": "foreground"
+    }
+  ],
+  "adaptive_selector_6": [
+    {
+      "texture": "components/part_709d3c3e8144ae6368cf.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Symbol 211/Layer 12",
+      "layer": "background"
+    },
+    {
+      "texture": "components/part_41ba67bdf954e7cf80a9.png",
+      "rect": [
+        657.0,
+        367.0,
+        24.0,
+        24.0
+      ],
+      "source": "Symbol 211/Symbol 10",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_fd9d900b9e6508830eea.png",
+      "rect": [
+        122.0,
+        153.0,
+        295.0,
+        118.0
+      ],
+      "source": "Symbol 211/EpImg",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_027d2a498ce88bdf70af.png",
+      "rect": [
+        681.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But2",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_9aa906bece3845f60e7d.png",
+      "rect": [
+        103.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But1",
+      "layer": "foreground"
+    }
+  ],
+  "adaptive_selector_7": [
+    {
+      "texture": "components/part_709d3c3e8144ae6368cf.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Symbol 211/Layer 12",
+      "layer": "background"
+    },
+    {
+      "texture": "components/part_41ba67bdf954e7cf80a9.png",
+      "rect": [
+        657.0,
+        367.0,
+        24.0,
+        24.0
+      ],
+      "source": "Symbol 211/Symbol 10",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_9a62efd8d7536d3edbea.png",
+      "rect": [
+        122.0,
+        153.0,
+        295.0,
+        118.0
+      ],
+      "source": "Symbol 211/EpImg",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_027d2a498ce88bdf70af.png",
+      "rect": [
+        681.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But2",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_9aa906bece3845f60e7d.png",
+      "rect": [
+        103.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But1",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_6a07acbcd65fbe5ae791.png",
+      "rect": [
+        284.0,
+        284.0,
+        44.0,
+        17.0
+      ],
+      "source": "Symbol 211/LeftOpt",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_ad6b91577988ccaf5ef3.png",
+      "rect": [
+        482.0,
+        161.0,
+        101.0,
+        19.0
+      ],
+      "source": "Symbol 211/RightOpt",
+      "layer": "foreground"
+    }
+  ],
+  "adaptive_selector_8": [
+    {
+      "texture": "components/part_709d3c3e8144ae6368cf.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Symbol 211/Layer 12",
+      "layer": "background"
+    },
+    {
+      "texture": "components/part_41ba67bdf954e7cf80a9.png",
+      "rect": [
+        657.0,
+        367.0,
+        24.0,
+        24.0
+      ],
+      "source": "Symbol 211/Symbol 10",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_ff7866d290d3314b576f.png",
+      "rect": [
+        122.0,
+        153.0,
+        295.0,
+        118.0
+      ],
+      "source": "Symbol 211/EpImg",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_027d2a498ce88bdf70af.png",
+      "rect": [
+        681.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But2",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_9aa906bece3845f60e7d.png",
+      "rect": [
+        103.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But1",
+      "layer": "foreground"
+    }
+  ],
+  "adaptive_selector_9": [
+    {
+      "texture": "components/part_709d3c3e8144ae6368cf.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Symbol 211/Layer 12",
+      "layer": "background"
+    },
+    {
+      "texture": "components/part_41ba67bdf954e7cf80a9.png",
+      "rect": [
+        657.0,
+        367.0,
+        24.0,
+        24.0
+      ],
+      "source": "Symbol 211/Symbol 10",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_23aaf022e589174cfa6e.png",
+      "rect": [
+        122.0,
+        153.0,
+        295.0,
+        118.0
+      ],
+      "source": "Symbol 211/EpImg",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_027d2a498ce88bdf70af.png",
+      "rect": [
+        681.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But2",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_9aa906bece3845f60e7d.png",
+      "rect": [
+        103.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But1",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_6a07acbcd65fbe5ae791.png",
+      "rect": [
+        284.0,
+        284.0,
+        44.0,
+        17.0
+      ],
+      "source": "Symbol 211/LeftOpt",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_ad6b91577988ccaf5ef3.png",
+      "rect": [
+        482.0,
+        161.0,
+        101.0,
+        19.0
+      ],
+      "source": "Symbol 211/RightOpt",
+      "layer": "foreground"
+    }
+  ],
+  "adaptive_selector_10": [
+    {
+      "texture": "components/part_709d3c3e8144ae6368cf.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Symbol 211/Layer 12",
+      "layer": "background"
+    },
+    {
+      "texture": "components/part_41ba67bdf954e7cf80a9.png",
+      "rect": [
+        657.0,
+        367.0,
+        24.0,
+        24.0
+      ],
+      "source": "Symbol 211/Symbol 10",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_84dfd182588007665283.png",
+      "rect": [
+        122.0,
+        153.0,
+        295.0,
+        118.0
+      ],
+      "source": "Symbol 211/EpImg",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_027d2a498ce88bdf70af.png",
+      "rect": [
+        681.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But2",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_9aa906bece3845f60e7d.png",
+      "rect": [
+        103.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But1",
+      "layer": "foreground"
+    }
+  ],
+  "adaptive_selector_11": [
+    {
+      "texture": "components/part_709d3c3e8144ae6368cf.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Symbol 211/Layer 12",
+      "layer": "background"
+    },
+    {
+      "texture": "components/part_41ba67bdf954e7cf80a9.png",
+      "rect": [
+        657.0,
+        367.0,
+        24.0,
+        24.0
+      ],
+      "source": "Symbol 211/Symbol 10",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_17698b5d6e554c33b8ec.png",
+      "rect": [
+        122.0,
+        153.0,
+        295.0,
+        118.0
+      ],
+      "source": "Symbol 211/EpImg",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_027d2a498ce88bdf70af.png",
+      "rect": [
+        681.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But2",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_9aa906bece3845f60e7d.png",
+      "rect": [
+        103.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But1",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_6a07acbcd65fbe5ae791.png",
+      "rect": [
+        284.0,
+        284.0,
+        44.0,
+        17.0
+      ],
+      "source": "Symbol 211/LeftOpt",
+      "layer": "foreground"
+    },
+    {
+      "texture": "components/part_ad6b91577988ccaf5ef3.png",
+      "rect": [
+        482.0,
+        161.0,
+        101.0,
+        19.0
+      ],
+      "source": "Symbol 211/RightOpt",
+      "layer": "foreground"
+    }
+  ]
+}

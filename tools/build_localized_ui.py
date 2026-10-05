@@ -9,6 +9,7 @@ import re,copy
 from PIL import Image
 from build_result_ui import ResultRenderer
 from build_episode2_content import active_elements
+from ui_components import export_components, is_component_screen
 ROOT=Path(__file__).resolve().parents[1]
 class CleanRenderer(Renderer):
  def text(self,e):return ''
@@ -106,19 +107,20 @@ def build(library):
  plans['city_decision_3']=[s(99,y=-18,h={'Txt','But4','But1.Txt','But2.Txt','But3.Txt'})]
  plans['ep2_decision_4']=[s(99,y=-18,h={'Txt','But1.Txt','But2.Txt','But3.Txt','But4.Txt'})]
  plans['ep2_continue_button']=[s(8,1,67.05,360),s(54,0,93,376)]
+ export_components(r,plans,ROOT)
  tables={};layout={};brush_layout={}
  for table_name in ['ui','episode1']:
   with (ROOT/f'locales/{table_name}.csv').open(newline='',encoding='utf-8') as f:
    reader=csv.DictReader(f);tables[table_name]=(reader.fieldnames,{row['key']:row for row in reader})
  for filename,items in plans.items():
   renderer=rr if filename.startswith('result_') else r
-  renderer.render(filename+'.png',items)
+  if not is_component_screen(filename):renderer.render(filename+'.png',items)
   if filename=='e3_dialogue_john':
    with Image.open(renderer.out/(filename+'.png')) as image:image.save(renderer.out/(filename+'.webp'),format='WEBP',lossless=True)
    (renderer.out/(filename+'.png')).unlink()
   brush_layout[filename]=[]
   for name,frame,x,y,ov,hide in items:brush_layout[filename]+=brushes(renderer,name,frame,ov,hide,transform=(1,0,0,1,x,y))
-  if brush_layout[filename]:
+  if brush_layout[filename] and not is_component_screen(filename):
    icons.clip_rects=[b['rect'] for b in brush_layout[filename]]
    icons.render(filename+'_icons.png',items)
   blocks=[]

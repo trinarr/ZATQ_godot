@@ -5,15 +5,16 @@ from PIL import Image
 ROOT=Path(__file__).resolve().parents[1]
 ART=ROOT/'assets/flash_ui'
 layout=json.loads((ROOT/'data/ui_brush_layout.json').read_text())
+components=json.loads((ROOT/'data/ui_components.json').read_text())
 for name in ['adaptive_menu','adaptive_menu_off']:
  assert len(layout[name])==6,name
  assert all(b['color'][0]>b['color'][1]*1.4 for b in layout[name]),name
- with Image.open(ART/(name+'.png')) as image:
-  for y in [51,110,168,226]:
-   r,g,b,a=image.convert('RGBA').getpixel((500,y*2+25));assert r<=g*1.3+5,(name,y)
+ assert components[name],name
+ assert not (ART/(name+'.png')).exists(),name
 for i in range(12):
  assert len(layout[f'adaptive_selector_{i}'])==2,('selector',i)
- with Image.open(ART/f'adaptive_selector_{i}.png') as image:assert max(image.convert('RGBA').getpixel((830,760))[:3])<5,i
+ assert components[f'adaptive_selector_{i}']
+ assert not (ART/f'adaptive_selector_{i}.png').exists(),i
 assert len(layout['layout_pause'])==4
 assert len(layout['decision'])==2 and len(layout['city_decision_3'])==3
 assert len(layout['ep2_decision_4'])==4

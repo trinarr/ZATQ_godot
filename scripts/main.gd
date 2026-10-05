@@ -31,12 +31,14 @@ var selector_index: int = 0
 var selectors: Array = []
 var art_text: Dictionary = {}
 var art_brushes: Dictionary = {}
+var art_components: Dictionary = {}
 
 func _ready() -> void:
 	get_window().content_scale_aspect = Window.CONTENT_SCALE_ASPECT_EXPAND
 	RenderingServer.set_default_clear_color(Color.BLACK)
 	viewport_canvas = SAFE_CANVAS.new()
 	add_child(viewport_canvas)
+	art_components = JSON.parse_string(FileAccess.get_file_as_string("res://data/ui_components.json"))
 	art_brushes = JSON.parse_string(FileAccess.get_file_as_string("res://data/ui_brush_layout.json"))
 	art_text = JSON.parse_string(FileAccess.get_file_as_string("res://data/ui_text_layout.json"))
 	selectors = JSON.parse_string(FileAccess.get_file_as_string("res://data/selectors.json"))
@@ -138,21 +140,25 @@ func _reset_screen() -> void:
 func _set_backdrop(texture: Texture2D, crop_pause: bool = false) -> void:
 	viewport_canvas.set_background(texture, crop_pause)
 
-func _art(filename: String, parent: Control = null, rect: Rect2 = Rect2(0,0,800,480)) -> TextureRect:
+func _art(filename: String, parent: Control = null, rect: Rect2 = Rect2(0,0,800,480)) -> Control:
 	if filename in ["menu", "menu_off", "help"] or filename.begins_with("selector_"):
 		filename = "adaptive_" + filename
 	rect = LAYOUT.scaled_rect(rect)
-	var image := TextureRect.new()
-	image.texture = load("res://assets/flash_ui/" + filename + ".png")
+	var composed: bool = art_components.has(filename)
+	var image: Control = Control.new() if composed else TextureRect.new()
+	if not composed:
+		(image as TextureRect).texture = load("res://assets/flash_ui/" + filename + ".png")
+		(image as TextureRect).expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	image.position = rect.position
-	image.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	image.size = rect.size
 	image.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	(parent if parent != null else screen).add_child(image)
 	image.set_deferred("size",rect.size)
+	if composed: _draw_components(filename,image,"background")
 	_draw_brushes(filename,image)
+	if composed: _draw_components(filename,image,"foreground")
 	var icons_path:="res://assets/flash_ui/"+filename+"_icons.png"
-	if ResourceLoader.exists(icons_path):
+	if not composed and ResourceLoader.exists(icons_path):
 		var icons:=TextureRect.new()
 		icons.texture=load(icons_path)
 		icons.expand_mode=TextureRect.EXPAND_IGNORE_SIZE
@@ -545,3 +551,15 @@ func _button_text(value:String,rect:Rect2,font_size:int=22,parent:Control=null,f
 	label.clip_text=true
 	label.set_meta("button_caption",true)
 	return label
+
+func _draw_components(filename: String, parent: Control, layer: String) -> void:
+	for part: Dictionary in art_components[filename]:
+		if part.layer != layer: continue
+		var component := TextureRect.new()
+		component.texture = load("res://assets/flash_ui/" + part.texture)
+		var r: Array = part.rect
+		component.position = Vector2(r[0], r[1]) * 2
+		component.size = Vector2(r[2], r[3]) * 2
+		component.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		component.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		parent.add_child(component)

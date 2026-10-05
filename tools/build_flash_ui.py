@@ -22,12 +22,13 @@ with tempfile.TemporaryDirectory() as workspace:
   swf=Path(workspace)/'original.swf';swf.write_bytes(z.read('assets/ZombieApocalypse.swf'))
   extract(swf,output/'fonts/flash')
   r=Renderer(library,output/'assets/flash_ui',output/'fonts/flash')
+  from build_localized_ui import CleanRenderer
+  from ui_components import export_components, menu_plans
+  components=CleanRenderer(library,args.output/'assets/flash_ui',args.output/'fonts/flash')
+  components.omit_brushes=True
+  export_components(components,menu_plans(),args.output)
   def s(n,f=0,x=0,y=0,o=None,h=None):return(f'Symbol {n}',f,x,y,o or {},h or set())
-  r.render('menu.png',[s(150),s(118),s(132,8,415,70)])
   r.render('background.png',[s(150)])
-  r.render('menu_off.png',[s(150),s(118,o={'SndCheck':1}),s(132,8,415,70)])
-  for i in range(12):
-   r.render(f'selector_{i}.png',[s(150),s(211,o={'EpImg':i,'LeftOpt':2 if i in [1,3,6,8,10] else 0,'RightOpt':1 if i in [1,3,6,8,10] else 0,'But3':1,'But4':1,'But1':1,'But2':1},h={'NameTxt','EpOptions','InfoOpt','AnsNumb','txtWins','txtLoses'})])
   r.render('pause.png',[s(83,5,0,61,o={'Butns.But2':1,'Butns.But3':1,'Butns.But4':1,'Butns.But5':1},h={'ForSound'})])
   r.render('item_keys.png',[s(274,x=0,y=30,o={'Weapons':1,'ButExit':1},h={'Txt'})])
   r.render('decision.png',[s(99,y=-18,h={'Txt','But3','But4','But1.Txt','But2.Txt'})])
