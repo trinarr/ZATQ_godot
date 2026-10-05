@@ -96,4 +96,7 @@ func run() -> void:
 		print("PASS: %d runtime checks; opening routes, UI, timer, sound, save recovery" % checks)
 	for path in [quest.save_path, quest.tmp_path, quest.backup_path]:
 		if FileAccess.file_exists(path): DirAccess.remove_absolute(path)
+	# Let the debug log bridge drain its final message before shutting down.
+	await process_frame
+	await process_frame
 	quit(0 if failures == 0 else 1)

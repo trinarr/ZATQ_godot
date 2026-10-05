@@ -24,6 +24,9 @@ func _ready() -> void:
 	var content: Variant = JSON.parse_string(FileAccess.get_file_as_string(CONTENT_PATH))
 	if content is Dictionary and content.get("nodes") is Dictionary:
 		nodes = content.nodes
+	var city_content: Variant = JSON.parse_string(FileAccess.get_file_as_string("res://data/city_routes.json"))
+	if city_content is Dictionary and city_content.get("nodes") is Dictionary:
+		nodes.merge(city_content.nodes, true)
 	_load_save()
 
 func current() -> Dictionary:

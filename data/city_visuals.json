@@ -1,0 +1,489 @@
+{
+  "city_city_car": {
+    "symbol": 2639,
+    "frame": 0,
+    "overrides": {
+      "Mov": 14
+    },
+    "photo": "NewYork.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_car_drive": {
+    "symbol": 2639,
+    "frame": 1,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "CarDvig.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_car_battery": {
+    "symbol": 2639,
+    "frame": 2,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "AutoBattery.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_car_crowd": {
+    "symbol": 2639,
+    "frame": 3,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_car_trapped": {
+    "symbol": 2639,
+    "frame": 4,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "LowBat.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_office_drive": {
+    "symbol": 2639,
+    "frame": 5,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "OfficeCar.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_office_gate": {
+    "symbol": 2639,
+    "frame": 6,
+    "overrides": {
+      "Mov": 14
+    },
+    "photo": "ClosedOffice-1.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_car_battery_return": {
+    "symbol": 2639,
+    "frame": 2,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "AutoBattery.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_city_foot": {
+    "symbol": 2639,
+    "frame": 7,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_street_stretcher": {
+    "symbol": 2639,
+    "frame": 8,
+    "overrides": {
+      "Mov": 19
+    },
+    "photo": "ZombieNos_1.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_office_enter": {
+    "symbol": 2706,
+    "frame": 0,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "Office.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_office_enter_foot": {
+    "symbol": 2706,
+    "frame": 0,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "Office.jpg",
+    "photo_path": "Mov.Mov",
+    "overrides_extra": {
+      "Mov.Hist": 1
+    },
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_office_floor": {
+    "symbol": 2706,
+    "frame": 1,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_office_documents": {
+    "symbol": 2706,
+    "frame": 2,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_office_threat": {
+    "symbol": 2706,
+    "frame": 5,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_office_fire_escape": {
+    "symbol": 2706,
+    "frame": 6,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "ToTheExit.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_office_exit": {
+    "symbol": 2706,
+    "frame": 7,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_office_roof_stairs": {
+    "symbol": 2706,
+    "frame": 3,
+    "overrides": {
+      "Mov": 40
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_office_roof": {
+    "symbol": 2706,
+    "frame": 4,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_paid_car": {
+    "symbol": 2979,
+    "frame": 0,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "CarGet.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_paid_car_outside": {
+    "symbol": 2979,
+    "frame": 1,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_metro_start": {
+    "symbol": 2925,
+    "frame": 0,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_metro_descent": {
+    "symbol": 2925,
+    "frame": 1,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "SubwayIn.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_metro_junction": {
+    "symbol": 2925,
+    "frame": 2,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_metro_chase": {
+    "symbol": 2925,
+    "frame": 4,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "ZombieAttackMetro.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_metro_platform": {
+    "symbol": 2925,
+    "frame": 5,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "SubwayZombiePathDown2.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_metro_train": {
+    "symbol": 2925,
+    "frame": 6,
+    "overrides": {
+      "Mov": 7
+    },
+    "photo": "SubwayZombiePathTrain.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_metro_surface": {
+    "symbol": 2925,
+    "frame": 3,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "ToTheStreetFromMetro.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_shop_window": {
+    "symbol": 2479,
+    "frame": 0,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "Vitrina.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_bitten": {
+    "symbol": 2479,
+    "frame": 1,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "BittenHand.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_bite_transition": {
+    "symbol": 2479,
+    "frame": 2,
+    "overrides": {
+      "Mov": 50
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_checkpoint": {
+    "symbol": 2479,
+    "frame": 3,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "StopZombies.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_checkpoint_shot": {
+    "symbol": 2479,
+    "frame": 4,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "StopZombies1.jpg",
+    "photo_path": "Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_roof_explosion": {
+    "symbol": 2652,
+    "frame": 3,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_door_explosion": {
+    "symbol": 2652,
+    "frame": 0,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "DoorOut.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_door_blast": {
+    "symbol": 2652,
+    "frame": 1,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "Door.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_door_blast_inner": {
+    "symbol": 2652,
+    "frame": 2,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "Door1.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_explosion_flash": {
+    "symbol": 2652,
+    "frame": 4,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "Boom.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist"
+    ]
+  },
+  "city_result": {
+    "symbol": 59,
+    "frame": 6,
+    "overrides": {
+      "Mov.Rezt": 0
+    },
+    "hide": [
+      "Itog",
+      "Mov.Rezt.Txt",
+      "Mov.Rezt.Txt1",
+      "Mov.Rezt.Advz",
+      "Mov.Rezt.Opt",
+      "Mov.But3",
+      "Mov.StrBut3"
+    ]
+  },
+  "city_decision_3": {
+    "symbol": 99,
+    "frame": 0,
+    "overrides": {},
+    "hide": [
+      "Txt",
+      "But4",
+      "But1.Txt",
+      "But2.Txt",
+      "But3.Txt"
+    ]
+  }
+}

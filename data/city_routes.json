@@ -1,0 +1,1135 @@
+{
+  "nodes": {
+    "city_car": {
+      "source": "MovCityAuto frame 1 / Symbol 2639; MovCityAuto.as",
+      "text": "Отыскав припаркованную машину и сев в нее, Джек почувствовал неимоверное \nоблегчение... Где-то в паре кварталов отсюда надрывно выла сирена, и слышались крики \nи грохот. Опасность чувствовалась буквально каждой частью тела.",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_city_car",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "car_decision"
+        }
+      ],
+      "text_rect": [
+        11,
+        5.75,
+        775,
+        86.15
+      ],
+      "panel_rect": [
+        0,
+        0.0,
+        800,
+        97.65
+      ]
+    },
+    "car_decision": {
+      "source": "NewItem(2); NewItem.But1/2/3MouseUpFunc",
+      "text": "Возможно, стоит не ехать сегодня в офис, а уехать из города как можно скорей. Что же предпринять Джеку дальше?",
+      "image": "Fon1_1.png",
+      "kind": "city_decision",
+      "art": "city_city_car",
+      "back": "city_car",
+      "choices": [
+        {
+          "text": "Уехать из города",
+          "next": "car_drive"
+        },
+        {
+          "text": "Поехать в офис",
+          "next": "office_drive"
+        }
+      ]
+    },
+    "car_drive": {
+      "source": "MovCityAuto frame 2 / Symbol 2639; MovCityAuto.as",
+      "text": "Выбраться из города оказалось не так уж и просто... Не раз и не два на машину Джека \nкидались обезумевшие люди, походившие на оживших мертвецов из фильмов.",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_car_drive",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "car_battery"
+        }
+      ],
+      "text_rect": [
+        11,
+        5.75,
+        775,
+        58.55
+      ],
+      "panel_rect": [
+        0,
+        0.0,
+        800,
+        70.05
+      ]
+    },
+    "car_battery": {
+      "source": "MovCityAuto frame 3 / Symbol 2639; MovCityAuto.as",
+      "text": "С большим трудом выбравшись из города, Джек понял, что батарея его электрокара вот-\nвот сядет. Что же делать? Оставить машину сейчас, пока вокруг никого нет, или ехать \nдальше сколько получится, пытаясь найти место для зарядки?",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_car_battery",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "battery_decision"
+        }
+      ],
+      "text_rect": [
+        11,
+        394.75,
+        775,
+        79.5
+      ],
+      "panel_rect": [
+        0,
+        389.0,
+        800,
+        91.0
+      ]
+    },
+    "battery_decision": {
+      "source": "NewItem(5); NewItem.But1/2/3MouseUpFunc",
+      "text": "Двигаться, пока не сядет аккумулятор или продолжить путь пешком?",
+      "image": "Fon1_1.png",
+      "kind": "city_decision",
+      "art": "city_car_battery",
+      "back": "car_battery",
+      "choices": [
+        {
+          "text": "Остановиться и выйти",
+          "next": "farm_boundary"
+        },
+        {
+          "text": "Продолжать движение",
+          "next": "car_crowd"
+        }
+      ]
+    },
+    "car_crowd": {
+      "source": "MovCityAuto frame 4 / Symbol 2639; MovCityAuto.as",
+      "text": "Задумавшись о несостоявшемся ужине с подругой по работе, Джек неожиданно понимает, \nчто путь ему преграждает толпа мертвецов (он наверняка знал, что живыми эти существа \nуж точно не были).",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_car_crowd",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "car_trapped"
+        }
+      ],
+      "text_rect": [
+        11,
+        395.75,
+        775,
+        78.5
+      ],
+      "panel_rect": [
+        0,
+        390.0,
+        800,
+        90.0
+      ]
+    },
+    "car_trapped": {
+      "source": "MovCityAuto frame 5 / Symbol 2639; MovCityAuto.as",
+      "text": "Как назло аккумулятор приказал долго жить. Зомби уже обступили машину, лезут на \nкапот. Скоро лобовое стекло не выдержит. Как там было в одной из Обителей Зла? В этой \nситуации остается только закурить? Но Джек никогда не курил. Предпочитал беречь \nздоровье... Забавно.",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_car_trapped",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "car_fatal"
+        }
+      ],
+      "text_rect": [
+        11,
+        371.75,
+        775,
+        102.5
+      ],
+      "panel_rect": [
+        0,
+        366.0,
+        800,
+        114.0
+      ]
+    },
+    "car_fatal": {
+      "source": "MovCityAuto frame 5 / Symbol 2639; MovCityAuto.as",
+      "text": "",
+      "image": "Fon1_1.png",
+      "kind": "city_cutscene",
+      "art": "city_car_trapped",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "death_3"
+        }
+      ],
+      "auto_seconds": 0.3684210526315789,
+      "sound": "BrokenGlassSound"
+    },
+    "office_drive": {
+      "source": "MovCityAuto frame 6 / Symbol 2639; MovCityAuto.as",
+      "text": "Трудолюбие и «сидячий» образ жизни скоро доканают Джека, но деньги есть деньги, \nпричем немалые... Как там было на недавнем треннинге? «Трудолюбие — залог вашего \nуспешного будущего». О как! И где теперь это будущее, черт бы вас побрал?",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_office_drive",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "office_gate"
+        }
+      ],
+      "text_rect": [
+        11,
+        5.75,
+        775,
+        86.15
+      ],
+      "panel_rect": [
+        0,
+        0.0,
+        800,
+        97.65
+      ]
+    },
+    "office_gate": {
+      "source": "MovCityAuto frame 7 / Symbol 2639; MovCityAuto.as",
+      "text": "Офис, где работал Джек находился рядом с Центральной больницей города, на окраине. И \nсейчас рядом с ней находилась чуть ли не вся полиция Нью-Тауна, слышались частые \nвыстрелы. Перебросившись парой фраз с зеваками поблизости, Джек узнал, что скоро \nздесь будет армия, ибо этих тварей из больницы берет только прямое попадание в голову. \n«Чудненькие перспективы», — подытожил Джек.",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_office_gate",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "office_decision"
+        }
+      ],
+      "text_rect": [
+        11,
+        343.75,
+        775,
+        130.5
+      ],
+      "panel_rect": [
+        0,
+        338.0,
+        800,
+        142.0
+      ]
+    },
+    "office_decision": {
+      "source": "NewItem(9); NewItem.But1/2/3MouseUpFunc",
+      "text": "В офисе находятся некоторые важные документы, нужно обязательно их забрать! Джек все не мог решиться шагнуть в темноту входа...",
+      "image": "Fon1_1.png",
+      "kind": "city_decision",
+      "art": "city_office_gate",
+      "back": "office_gate",
+      "choices": [
+        {
+          "text": "Незаметно пройти в офис",
+          "next": "office_enter"
+        },
+        {
+          "text": "Уехать из города",
+          "next": "car_battery_return"
+        }
+      ]
+    },
+    "car_battery_return": {
+      "source": "MovCityAuto(2) frame 3 / Symbol 2639; MovCityAuto(2).as",
+      "text": "С большим трудом выбравшись из города, Джек понял, что батарея его электрокара вот-\nвот сядет. Что же делать? Оставить машину сейчас, пока вокруг никого нет, или ехать \nдальше сколько получится, пытаясь найти место для зарядки?",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_car_battery_return",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "battery_return_decision"
+        }
+      ],
+      "text_rect": [
+        11,
+        394.75,
+        775,
+        79.5
+      ],
+      "panel_rect": [
+        0,
+        389.0,
+        800,
+        91.0
+      ]
+    },
+    "battery_return_decision": {
+      "source": "NewItem(5); NewItem.But1/2/3MouseUpFunc",
+      "text": "Двигаться, пока не сядет аккумулятор или продолжить путь пешком?",
+      "image": "Fon1_1.png",
+      "kind": "city_decision",
+      "art": "city_car_battery_return",
+      "back": "car_battery_return",
+      "choices": [
+        {
+          "text": "Остановиться и выйти",
+          "next": "farm_boundary"
+        },
+        {
+          "text": "Продолжать движение",
+          "next": "forest_boundary"
+        }
+      ]
+    },
+    "city_foot": {
+      "source": "MovCityAuto(4) frame 8 / Symbol 2639; MovCityAuto(4).as",
+      "text": "Выйдя из подъезда, Джек замечает носилки скорой помощи со странным человеком на \nних: с нездорово бледным, осунувшимся окровавленным лицом... Странно все это.",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_city_foot",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "street_stretcher"
+        }
+      ],
+      "text_rect": [
+        11,
+        395.75,
+        775,
+        78.5
+      ],
+      "panel_rect": [
+        0,
+        390,
+        800,
+        90
+      ]
+    },
+    "street_stretcher": {
+      "source": "MovCityAuto frame 9 / Symbol 2639; MovCityAuto.as",
+      "text": "Странно и страшно одновременно. Джек невольно поежился... Уж очень жутко выглядел \nмертвец на носилках.",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_street_stretcher",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "street_decision"
+        }
+      ],
+      "text_rect": [
+        11,
+        423.75,
+        775,
+        50.5
+      ],
+      "panel_rect": [
+        0,
+        418.0,
+        800,
+        62.0
+      ]
+    },
+    "street_decision": {
+      "source": "NewItem(3); NewItem.But1/2/3MouseUpFunc",
+      "text": "Что же Джеку предпринять дальше? Добраться таки до офиса или лучше уехать из города?",
+      "image": "Fon1_1.png",
+      "kind": "city_decision",
+      "art": "city_street_stretcher",
+      "back": "street_stretcher",
+      "choices": [
+        {
+          "text": "Идти в офис дворами",
+          "next": "metro_start"
+        },
+        {
+          "text": "Дойти по главной улице",
+          "next": "mainstreet_boundary"
+        },
+        {
+          "text": "Взять такси и уехать",
+          "next": "taxi_boundary"
+        }
+      ]
+    },
+    "office_enter": {
+      "source": "IntoTheOffice frame 1 / Symbol 2706; IntoTheOffice.as",
+      "text": "Внутри здания оказалось темно и пусто. То тут, то там попадались следы крови и борьбы. \nНекоторые двери были выломаны или имели вмятины. Джеку стало не по себе...",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_office_enter",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "office_floor"
+        }
+      ],
+      "art_on_foot": "city_office_enter_foot",
+      "text_rect": [
+        11,
+        5.75,
+        775,
+        58.55
+      ],
+      "panel_rect": [
+        0,
+        0.0,
+        800,
+        70.05
+      ]
+    },
+    "office_floor": {
+      "source": "IntoTheOffice frame 2 / Symbol 2706; IntoTheOffice.as",
+      "text": "Осторожно поднявшись на второй этаж, Джек направился к своему рабочему месту. \nИногда ему казалось что он слышит какие-то шаркающие звуки... Нужно поскорей забрать \nбумаги и выбраться отсюда!",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_office_floor",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "office_documents"
+        }
+      ],
+      "text_rect": [
+        11,
+        5.75,
+        775,
+        86.15
+      ],
+      "panel_rect": [
+        0,
+        0.0,
+        800,
+        97.65
+      ]
+    },
+    "office_documents": {
+      "source": "IntoTheOffice frame 3 / Symbol 2706; IntoTheOffice.as",
+      "text": "Помещение, где обычно работал Джек оказалось полностью погруженным во тьму и \nпришлось включить фонарик на брелке домашних ключей. Джек услышал шаги совсем \nрядом, прямо за стеной!",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_office_documents",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "documents_decision"
+        }
+      ],
+      "text_rect": [
+        11,
+        397.75,
+        775,
+        76.5
+      ],
+      "panel_rect": [
+        0,
+        392.0,
+        800,
+        88.0
+      ]
+    },
+    "documents_decision": {
+      "source": "NewItem(10); NewItem.But1/2/3MouseUpFunc",
+      "text": "Забрав драгоценную папку, Джек начал возвращаться обратно, но шаркающие шаги слышались как раз с той стороны, откуда он пришел...",
+      "image": "Fon1_1.png",
+      "kind": "city_decision",
+      "art": "city_office_documents",
+      "back": "office_documents",
+      "choices": [
+        {
+          "text": "Выйти тем же путем",
+          "next": "office_threat"
+        },
+        {
+          "text": "Найти другой путь",
+          "next": "office_fire_escape"
+        },
+        {
+          "text": "Подняться на крышу",
+          "next": "office_roof_stairs"
+        }
+      ]
+    },
+    "office_threat": {
+      "source": "IntoTheOffice frame 6 / Symbol 2706; IntoTheOffice.as",
+      "text": "Джек развернулся и пошел обратно к выходу. В тот момент, когда он уже практически \nпрошел очередное помещение офиса, он отчетливо услышал шорох в метрах пяти слева \nот себя. Луч света резко прыгнул влево и... Кровь застыла у Джека в жилах...",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_office_threat",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "office_fatal"
+        }
+      ],
+      "sound": "OfficeZombieScream",
+      "text_rect": [
+        11,
+        395.75,
+        775,
+        78.5
+      ],
+      "panel_rect": [
+        0,
+        390.0,
+        800,
+        90.0
+      ]
+    },
+    "office_fatal": {
+      "source": "IntoTheOffice frame 6 / Symbol 2706; IntoTheOffice.as",
+      "text": "",
+      "image": "Fon1_1.png",
+      "kind": "city_cutscene",
+      "art": "city_office_threat",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "death_11"
+        }
+      ],
+      "auto_seconds": 0.3157894736842105
+    },
+    "office_fire_escape": {
+      "source": "IntoTheOffice frame 7 / Symbol 2706; IntoTheOffice.as",
+      "text": "Про наличие в здании еще одной лестницы, пожарной, практически никто не знал. Она \nоказалась пуста, и уже через несколько минут Джек шел к выходу из офиса, которому \nпосвятил пять лет своей жизни.",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_office_fire_escape",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "office_exit"
+        }
+      ],
+      "text_rect": [
+        11,
+        395.75,
+        775,
+        78.5
+      ],
+      "panel_rect": [
+        0,
+        390.0,
+        800,
+        90.0
+      ]
+    },
+    "office_exit": {
+      "source": "IntoTheOffice frame 8 / Symbol 2706; IntoTheOffice.as",
+      "text": "Выйдя на улицу Джек прищурился от яркого света и понял, что ему стоит поторопиться \nдойти до машины, пока заметившие его мертвецы еще далеко.",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_office_exit",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "paid_car",
+          "by_car": "car_battery_return"
+        }
+      ],
+      "text_rect": [
+        11,
+        422.75,
+        775,
+        51.5
+      ],
+      "panel_rect": [
+        0,
+        417.0,
+        800,
+        63.0
+      ]
+    },
+    "office_roof_stairs": {
+      "source": "IntoTheOffice frame 4 / Symbol 2706; IntoTheOffice.as",
+      "text": "Хорошо, что в здании были лифты, и большинство людей пользовались именно ими. \nДжек, постоянно оглядываясь и светя фонариком во  все стороны, без особых проблем \nдобрался до дверей, преграждающих выход на крышу.",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_office_roof_stairs",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "office_roof"
+        }
+      ],
+      "text_rect": [
+        11,
+        396.75,
+        775,
+        77.5
+      ],
+      "panel_rect": [
+        0,
+        391.0,
+        800,
+        89.0
+      ]
+    },
+    "office_roof": {
+      "source": "IntoTheOffice frame 5 / Symbol 2706; IntoTheOffice.as",
+      "text": "Глупая была идея... Джек сел на край крыши, свесил вниз ноги и с грустью увидел, как \nмертвецы расправляются с остатками полицеских и военных. Это конец...",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_office_roof",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "roof_explosion"
+        }
+      ],
+      "text_rect": [
+        11,
+        422.75,
+        775,
+        51.5
+      ],
+      "panel_rect": [
+        0,
+        417.0,
+        800,
+        63.0
+      ]
+    },
+    "paid_car": {
+      "source": "CarGet(2) frame 1 / Symbol 2979; CarGet(2).as",
+      "text": "Как всегда бывает при различного рода катастрофах и трагедиях, Джек смог найти \nчеловека, который за баснословную цену согласился вывезти его из Нью-Тауна.",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_paid_car",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "paid_car_outside"
+        }
+      ],
+      "text_rect": [
+        11,
+        419.75,
+        775,
+        54.5
+      ],
+      "panel_rect": [
+        0,
+        414.0,
+        800,
+        66.0
+      ]
+    },
+    "paid_car_outside": {
+      "source": "CarGet(2) frame 2 / Symbol 2979; CarGet(2).as",
+      "text": "Как только показались загородные дома, водитель Бьюика чуть ли не выбросил Джека, \nвзяв с него целых 250$. Кровно заработанных причем! Так, ладно. И что делать дальше? \nЗомби, взрывы, трупы на улицах. А еще вчера Джек мирно сидел в своем тихом офисе в \nцентре Нью-Тауна...",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_paid_car_outside",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "suburb_boundary"
+        }
+      ],
+      "text_rect": [
+        11,
+        5.75,
+        775,
+        113.8
+      ],
+      "panel_rect": [
+        0,
+        0.0,
+        800,
+        125.3
+      ]
+    },
+    "metro_start": {
+      "source": "DvrMov frame 1 / Symbol 2925; DvrMov.as",
+      "text": "Нужно сказать прямо — идея оказалась не самая удачная. Теперь Джеку не оставалось \nничего иного, кроме как попытаться спрятаться от приближающейся обезумевшей толпы. \nС людьми явно было что-то не так... Но что, черт возьми?!",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_metro_start",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "metro_descent"
+        }
+      ],
+      "text_rect": [
+        11,
+        5.75,
+        775,
+        86.15
+      ],
+      "panel_rect": [
+        0,
+        0.0,
+        800,
+        97.65
+      ]
+    },
+    "metro_descent": {
+      "source": "DvrMov frame 2 / Symbol 2925; DvrMov.as",
+      "text": "Темный спуск в метро уверенности не придал, как не придал и понимания творящегося \nвокруг. И чем дальше Джек спускался, тем тише становилась жуткая какофония улиц, тем \nсильнее обволакивала липкая холодная тьма.",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_metro_descent",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "metro_junction"
+        }
+      ],
+      "text_rect": [
+        11,
+        395.75,
+        775,
+        78.5
+      ],
+      "panel_rect": [
+        0,
+        390.0,
+        800,
+        90.0
+      ]
+    },
+    "metro_junction": {
+      "source": "DvrMov frame 3 / Symbol 2925; DvrMov.as",
+      "text": "Что дальше? Пробираться вглубь станции или сразу на поверхность? И... Черт, да что \nздесь вообще происходит?! Кровь, кровь, КРОВЬ на закрытой уже второй месяц на ремонт \nстанции бросила Джека в дрожь, сковала леденящим оцепенением.",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_metro_junction",
+      "choices": [
+        {
+          "text": "Пробираться вглубь станции",
+          "next": "metro_chase",
+          "rect": [
+            615,
+            245,
+            185,
+            110
+          ]
+        },
+        {
+          "text": "Вернуться на поверхность",
+          "next": "metro_surface",
+          "rect": [
+            178,
+            147,
+            104,
+            113
+          ]
+        }
+      ],
+      "text_rect": [
+        11,
+        5.75,
+        775,
+        86.15
+      ],
+      "panel_rect": [
+        0,
+        0.0,
+        800,
+        97.65
+      ]
+    },
+    "metro_chase": {
+      "source": "DvrMov frame 5 / Symbol 2925; DvrMov.as",
+      "text": "Бредущий по эскалатору окровавленный мужчина заметил Джека и... побежал! Расстояние \nмежду людьми сокращалось со стремительной быстротой. Ведомый инстинктами Джек \nбросился бежать, не разбирая дороги и сам не понимая, чего так панически боится.",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_metro_chase",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "metro_platform"
+        }
+      ],
+      "sound": "MetroZombieRoar",
+      "text_rect": [
+        11,
+        5.75,
+        775,
+        86.15
+      ],
+      "panel_rect": [
+        0,
+        0.0,
+        800,
+        97.65
+      ]
+    },
+    "metro_platform": {
+      "source": "DvrMov frame 6 / Symbol 2925; DvrMov.as",
+      "text": "Джеку всегда не хватало времени всерьез заняться спортом... Из последних сил взлетев \nпо лестнице на платформу, он увидел, что единственный путь бегства — туннель, \nнамертво перекрытый искореженным вагоном.",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_metro_platform",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "metro_train"
+        }
+      ],
+      "text_rect": [
+        11,
+        5.75,
+        775,
+        86.15
+      ],
+      "panel_rect": [
+        0,
+        0.0,
+        800,
+        97.65
+      ]
+    },
+    "metro_train": {
+      "source": "DvrMov frame 7 / Symbol 2925; DvrMov.as",
+      "text": "Вбежав в ближайшую раскрытую дверь, мужчина в ужасе отпрянул, заметив \nподнимающихся ему навстречу изуродованных людей. Еще секунда — и западня \nзалопнулась, оставляя Джека лицом к лицу с... Нет, что за?! Нет, НЕЕТ!!!",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_metro_train",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "death_5",
+          "sound": "ManDeath"
+        }
+      ],
+      "sound": "ZombieGetOn",
+      "text_rect": [
+        11,
+        5.75,
+        775,
+        86.15
+      ],
+      "panel_rect": [
+        0,
+        0.0,
+        800,
+        97.65
+      ]
+    },
+    "metro_surface": {
+      "source": "DvrMov frame 4 / Symbol 2925; DvrMov.as",
+      "text": "Идущие навстречу Джеку по эскалатору мертвенно-бледные люди запутались в ногах и \nпокатились вниз, подарив мужчине драгоценные секунды для бегства. Еще пара десятков \nметров, и он снова окажется на поверхности!",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_metro_surface",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "shop_window"
+        }
+      ],
+      "text_rect": [
+        11,
+        5.75,
+        775,
+        86.15
+      ],
+      "panel_rect": [
+        0,
+        0.0,
+        800,
+        97.65
+      ]
+    },
+    "shop_window": {
+      "source": "VitrMov frame 1 / Symbol 2479; VitrMov.as",
+      "text": "Понять хоть что-либо по разрозненным новостным сводкам было крайне сложно. На \nбольшинстве каналов бледные напомаженные ведущие лишь советовали ньютаунцам не \nсоздавать паники и по возможности не покидать домов. На улицах города тем временем \nпродолжал твориться полный беспредел...",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_shop_window",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "shop_decision"
+        }
+      ],
+      "text_rect": [
+        11,
+        369.75,
+        775,
+        104.5
+      ],
+      "panel_rect": [
+        0,
+        364.0,
+        800,
+        116.0
+      ]
+    },
+    "shop_decision": {
+      "source": "NewItem(4); NewItem.But1/2/3MouseUpFunc",
+      "text": "Что дальше? Попытаться найти убежище в городе или бежать из него со всех ног?",
+      "image": "Fon1_1.png",
+      "kind": "city_decision",
+      "art": "city_shop_window",
+      "back": "shop_window",
+      "choices": [
+        {
+          "text": "Бежать из Нью-Тауна",
+          "next": "bitten"
+        },
+        {
+          "text": "Найти убежище в городе",
+          "next": "door_explosion"
+        },
+        {
+          "text": "Взять такси и уехать",
+          "next": "taxi_escape_boundary"
+        }
+      ]
+    },
+    "bitten": {
+      "source": "VitrMov frame 2 / Symbol 2479; VitrMov.as",
+      "text": "Увидев перед собой прихрамывающую девушку, кровь на ее руке, Джек невольно \nприближается, хочет помочь. И стоило мужчине окликнуть несчастную, как та начала \nмедленно и дерганно поворачиваться. Зараженная... Джек остолбенел, не в силах отвести \nвзгляда от изуродованного лица девушки. В следующий момент монстр вцепился в руку \nДжека, и только нестерпимая боль вывела его из ступора.",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_bitten",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "bite_transition"
+        }
+      ],
+      "text_rect": [
+        11,
+        342.75,
+        775,
+        131.5
+      ],
+      "panel_rect": [
+        0,
+        337.0,
+        800,
+        143.0
+      ]
+    },
+    "bite_transition": {
+      "source": "VitrMov frame 3 / Symbol 2470 frames 1–51",
+      "text": "",
+      "image": "Fon1_1.png",
+      "kind": "city_cutscene",
+      "art": "city_bite_transition",
+      "auto_seconds": 2.6842105263157894,
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "checkpoint"
+        }
+      ]
+    },
+    "checkpoint": {
+      "source": "VitrMov frame 4 / Symbol 2479; VitrMov.as",
+      "text": "В полубреду Джек сам не понял, как вышел к военному заграждению на окраинах города. \nЗдесь творился сущий хаос: толпы бредущих тел яростно хрипя перли прямо на дула \nпулеметов и винтовок солдат, асфальт округ был густо усеян трупами, кровью и \nкилограммами стрелянных гильз.",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_checkpoint",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "checkpoint_shot"
+        }
+      ],
+      "text_rect": [
+        11,
+        370.75,
+        775,
+        103.5
+      ],
+      "panel_rect": [
+        0,
+        365.0,
+        800,
+        115.0
+      ]
+    },
+    "checkpoint_shot": {
+      "source": "VitrMov frame 5 / Symbol 2479; VitrMov.as",
+      "text": "Пока один из армейских батальонов и оставшаяся в живых часть спецназа отвлекала \nволны зараженных, чуть в стороне люди в защитных костюмах спешно проверяли \nвыживших и пропускали за укрепления, подальше от этого ада. Джек со следом укуса на \nруке даже не успел ничего объяснить... Выстрел штурмовой винтовки прервал его на \nполуслове.",
+      "image": "Fon1_1.png",
+      "kind": "city_story",
+      "art": "city_checkpoint_shot",
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "death_10"
+        }
+      ],
+      "text_rect": [
+        11,
+        343.75,
+        775,
+        130.5
+      ],
+      "panel_rect": [
+        0,
+        338.0,
+        800,
+        142.0
+      ]
+    },
+    "roof_explosion": {
+      "source": "MovBoom frame 4; MovBoom.Checker",
+      "text": "",
+      "image": "Fon1_1.png",
+      "kind": "city_cutscene",
+      "art": "city_roof_explosion",
+      "auto_seconds": 0.8,
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "explosion_flash"
+        }
+      ]
+    },
+    "door_explosion": {
+      "source": "MovBoom frame 1; MovBoom.Checker",
+      "text": "",
+      "image": "Fon1_1.png",
+      "kind": "city_cutscene",
+      "art": "city_door_explosion",
+      "auto_seconds": 0.8,
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "door_blast"
+        }
+      ]
+    },
+    "door_blast": {
+      "source": "MovBoom frame 2; MovBoom.Checker",
+      "text": "",
+      "image": "Fon1_1.png",
+      "kind": "city_cutscene",
+      "art": "city_door_blast",
+      "auto_seconds": 0.8,
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "door_blast_inner"
+        }
+      ]
+    },
+    "door_blast_inner": {
+      "source": "MovBoom frame 3; MovBoom.Checker",
+      "text": "",
+      "image": "Fon1_1.png",
+      "kind": "city_cutscene",
+      "art": "city_door_blast_inner",
+      "auto_seconds": 0.8,
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "explosion_flash"
+        }
+      ]
+    },
+    "explosion_flash": {
+      "source": "MovBoom frame 5; MovBoom.Checker",
+      "text": "",
+      "image": "Fon1_1.png",
+      "kind": "city_cutscene",
+      "art": "city_explosion_flash",
+      "auto_seconds": 0.65,
+      "choices": [
+        {
+          "text": "Далее",
+          "next": "death_2"
+        }
+      ],
+      "sound": "Explosion"
+    },
+    "death_2": {
+      "source": "ResultBad(2); ResultArr[1]",
+      "text": "После взрыва такой мощности еще никому не удавалось остаться в живых.",
+      "image": "Fon1_1.png",
+      "kind": "city_death",
+      "art": "city_result",
+      "choices": []
+    },
+    "death_3": {
+      "source": "ResultBad(3); ResultArr[2]",
+      "text": "Зомби проломили лобовое стекло и залезли в автомобиль.",
+      "image": "Fon1_1.png",
+      "kind": "city_death",
+      "art": "city_result",
+      "choices": []
+    },
+    "death_5": {
+      "source": "ResultBad(5); ResultArr[4]",
+      "text": "Один, под толщей металла и бетона в окружении толпы ходячих мертвецов... Теперь такой же. Как они.",
+      "image": "Fon1_1.png",
+      "kind": "city_death",
+      "art": "city_result",
+      "choices": []
+    },
+    "death_10": {
+      "source": "ResultBad(10); ResultArr[9]",
+      "text": "Джек, как потенциально опасный индивид, убит военными.",
+      "image": "Fon1_1.png",
+      "kind": "city_death",
+      "art": "city_result",
+      "choices": []
+    },
+    "death_11": {
+      "source": "ResultBad(11); ResultArr[10]",
+      "text": "Джек в панике побежал прочь от жутких мертвецов, споткнулся, упал, разбив стеклянный стол. Зомби настигли его, когда он, воя от боли в изрезанных руках, пытался встать.",
+      "image": "Fon1_1.png",
+      "kind": "city_death",
+      "art": "city_result",
+      "choices": []
+    },
+    "farm_boundary": {
+      "source": "NewItem(5).But1 -> OldFarmMov(1)",
+      "text": "Следующий участок оригинала: OldFarmMov — загородный дом. Его игровая часть ещё не перенесена.",
+      "image": "OnTheStreet.jpg",
+      "kind": "boundary",
+      "choices": []
+    },
+    "forest_boundary": {
+      "source": "NewItem(5).But2, iType=2 -> ForestRun(2)",
+      "text": "Следующий участок оригинала: ForestRun — путь через лес. Его игровая часть ещё не перенесена.",
+      "image": "OnTheStreet.jpg",
+      "kind": "boundary",
+      "choices": []
+    },
+    "mainstreet_boundary": {
+      "source": "NewItem(3).But2 -> PerMov()",
+      "text": "Следующий участок оригинала: PerMov — главная улица. Его игровая часть ещё не перенесена.",
+      "image": "OnTheStreet.jpg",
+      "kind": "boundary",
+      "choices": []
+    },
+    "taxi_boundary": {
+      "source": "NewItem(3).But3 -> TaxiMov()",
+      "text": "Следующий участок оригинала: TaxiMov — такси. Его игровая часть ещё не перенесена.",
+      "image": "OnTheStreet.jpg",
+      "kind": "boundary",
+      "choices": []
+    },
+    "taxi_escape_boundary": {
+      "source": "NewItem(4).But3 -> TaxiMov(2)",
+      "text": "Следующий участок оригинала: TaxiMov(2) — бегство на такси. Его игровая часть ещё не перенесена.",
+      "image": "OnTheStreet.jpg",
+      "kind": "boundary",
+      "choices": []
+    },
+    "suburb_boundary": {
+      "source": "CarGet(2) -> Dorvud(2)",
+      "text": "Следующий участок оригинала: Dorvud(2) — пригород. Его игровая часть ещё не перенесена.",
+      "image": "OnTheStreet.jpg",
+      "kind": "boundary",
+      "choices": []
+    }
+  }
+}

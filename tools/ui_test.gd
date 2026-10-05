@@ -60,7 +60,7 @@ func run() -> void:
 	scene.screen.get_node("Выйти на улицу").pressed.emit()
 	scene.screen.get_node("Поехать на машине").pressed.emit()
 	check(quest.flags.Auto==1,"original decision button")
-	quest._enter("city_car")
+	quest._enter("mainstreet_boundary")
 	scene.overlay.get_node("В меню").pressed.emit()
 	check(scene.section=="menu","boundary exits to menu")
 	scene._show_help()

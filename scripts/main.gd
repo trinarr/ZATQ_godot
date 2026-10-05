@@ -1,5 +1,6 @@
 extends Control
 
+const CITY := preload("res://scripts/ui/city_gameplay.gd")
 const LAYOUT := preload("res://scripts/ui/landscape_stage_layout.gd")
 const TITLE_FONT: Font = preload("res://fonts/flash/font_1.ttf")
 const BODY_FONT: Font = preload("res://fonts/flash/font_2.ttf")
@@ -9,6 +10,8 @@ var overlay: Control
 var music := AudioStreamPlayer.new()
 var effects := AudioStreamPlayer.new()
 var television := Timer.new()
+var cutscene := Timer.new()
+var cutscene_tween: Tween
 var playing: bool = false
 var paused: bool = false
 var previous_node: String = ""
@@ -33,6 +36,10 @@ func _ready() -> void:
 	television.timeout.connect(func():
 		if playing and not paused: Quest.next_channel())
 	add_child(television)
+	cutscene.one_shot = true
+	cutscene.timeout.connect(func():
+		if playing and not paused and Quest.current().get("kind", "") == "city_cutscene": Quest.choose(0))
+	add_child(cutscene)
 	Quest.changed.connect(_show_story)
 	Quest.save_failed.connect(_notify)
 	get_viewport().size_changed.connect(_fit_stage)
@@ -40,6 +47,8 @@ func _ready() -> void:
 	if not Quest.recovery_message.is_empty(): _notify(Quest.recovery_message)
 
 func _exit_tree() -> void:
+	_stop_cutscene()
+	television.stop()
 	music.stop()
 	effects.stop()
 	music.stream = null
@@ -71,8 +80,15 @@ func _fit_stage() -> void:
 	screen.scale = Vector2.ONE * fit
 	screen.position = LAYOUT.centered_offset(viewport_size)
 
+func _stop_cutscene() -> void:
+	cutscene.stop()
+	if cutscene_tween != null and cutscene_tween.is_valid(): cutscene_tween.kill()
+	cutscene_tween = null
+	if is_instance_valid(screen): screen.modulate = Color.WHITE
+
 func _reset_screen() -> void:
 	television.stop()
+	_stop_cutscene()
 	if is_instance_valid(screen):
 		remove_child(screen)
 		screen.queue_free()
@@ -247,6 +263,7 @@ func _toggle_sound() -> void:
 func _show_pause() -> void:
 	paused = true
 	television.stop()
+	_stop_cutscene()
 	effects.stop()
 	_close_overlay()
 	overlay = Control.new()
@@ -269,6 +286,7 @@ func _close_overlay() -> void:
 
 func _message(title: String, text: String, confirm: Callable = Callable(), confirm_label: String = "Начать", show_cancel: bool = true) -> void:
 	television.stop()
+	_stop_cutscene()
 	_close_overlay()
 	overlay = Control.new()
 	overlay.size = LAYOUT.BASE_SIZE
@@ -303,7 +321,9 @@ func _show_story() -> void:
 		_play_sound(transition_sound if not transition_sound.is_empty() else node.get("sound", ""))
 		transition_sound = ""
 	previous_node = Quest.current_id
-	if kind == "tv":
+	if kind.begins_with("city_"):
+		CITY.draw(self, node)
+	elif kind == "tv":
 		_art("tv_%d" % Quest.channel)
 		var channel_label := _text("CH %d" % (Quest.channel+1),Rect2(218,290,110,30),20)
 		channel_label.add_theme_font_override("font",TV_FONT)
@@ -347,7 +367,7 @@ func _show_story() -> void:
 			"lift_button": _hit("Первый этаж",Rect2(200,140,450,280),func(): _choose(0))
 			_: _hit("Далее",Rect2(70,0,730,480),func(): _choose(0))
 	# Flash pause control lives at the left edge, not in a new top bar.
-	if kind != "item" and Quest.current_id != "transport_choice":
+	if not kind.begins_with("city_") and kind != "item" and Quest.current_id != "transport_choice":
 		_hit("Пауза",Rect2(0,5,60,123),_show_pause)
 
 func _play_sound(sound_name: String) -> void:
