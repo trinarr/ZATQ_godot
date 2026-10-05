@@ -6,11 +6,34 @@ const DIRECTORY := "res://locales/"
 static var translations: Array[Translation] = []
 static var ready := false
 static var tables: Dictionary = {}
+const BUILTIN_TABLES := ["ui", "episode1", "episode2", "episode3"]
+static func imported_table(path:String)->Dictionary:
+ var base:=path.trim_suffix(".csv")
+ var locales:Array[String]=["ru","en"]
+ for filename:String in DirAccess.get_files_at(DIRECTORY):
+  if filename.begins_with(base.get_file()+".") and filename.ends_with(".translation"):
+   var locale:=filename.trim_prefix(base.get_file()+".").trim_suffix(".translation")
+   if locale not in locales:locales.append(locale)
+ var rows:Dictionary={}
+ for locale:String in locales:
+  var resource_path:=base+"."+locale+".translation"
+  if not ResourceLoader.exists(resource_path):continue
+  var translation:=ResourceLoader.load(resource_path,"Translation") as Translation
+  if translation==null:continue
+  for key:String in translation.get_message_list():
+   if not rows.has(key):rows[key]={}
+   rows[key][locale]=str(translation.get_message(key))
+ return {"headers":["key"]+locales,"rows":rows}
 static func read_table(path: String) -> Dictionary:
+ # Exported builds use Godot's imported translations, not raw CSV discovery.
+ if not Engine.is_editor_hint() and path.begins_with(DIRECTORY):
+  var imported:=imported_table(path)
+  if not imported.rows.is_empty():return imported
  var file:=FileAccess.open(path,FileAccess.READ)
- if file==null:return {"headers":["key","ru","en"],"rows":{}}
+ if file==null:return imported_table(path)
  var headers:=file.get_csv_line()
  if not headers.is_empty():headers[0]=headers[0].trim_prefix("\ufeff")
+ if headers.is_empty() or headers[0]!="key":return imported_table(path)
  var rows:Dictionary={}
  while not file.eof_reached():
   var row:=file.get_csv_line()
@@ -23,10 +46,17 @@ static func prepare(force:bool=false)->void:
  if ready and not force:return
  for translation:Translation in translations:TranslationServer.remove_translation(translation)
  translations.clear();tables.clear()
+ var names:Array[String]=[]
+ for name:String in BUILTIN_TABLES:names.append(name)
  for filename:String in DirAccess.get_files_at(DIRECTORY):
-  if not filename.ends_with(".csv"):continue
-  var table:=read_table(DIRECTORY+filename)
-  tables[filename.get_basename()]=table
+  if filename.ends_with(".csv") or filename.ends_with(".translation"):
+   var name:=filename.get_slice(".",0)
+   if name not in names:names.append(name)
+ for filename:String in DirAccess.get_files_at("res://data/story_graphs"):
+  if filename.begins_with("episode") and filename.ends_with(".json") and filename.get_basename() not in names:names.append(filename.get_basename())
+ for name:String in names:
+  var table:=read_table(DIRECTORY+name+".csv")
+  tables[name]=table
   for locale:String in table.headers.slice(1):
    var translation:=Translation.new();translation.locale=locale
    for key:String in table.rows:

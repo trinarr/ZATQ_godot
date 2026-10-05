@@ -11,6 +11,7 @@ from render_flash_ui import Renderer,NS
 CLASSES={'hospital':2443,'roof':2281,'first':2216,'hall':2077,'back':2010,'main':2145,'lift':2301,'attack':2020,'boom':2652}
 AS={'hospital':'Episode2','roof':'StairsToTheRoof','first':'ToFirstFloor','hall':'ToTheKilling','back':'ZombieOnTheBack','main':'ToMainPart','lift':'LiftCall','attack':'ZombieAttackKill','boom':'MovBoom'}
 def active_elements(r,symbol,frame):
+ frame=r.display_frame(symbol,frame)
  for layer in r.root(symbol).findall('./x:timeline/x:DOMTimeline/x:layers/x:DOMLayer',NS):
   frames=[f for f in layer.findall('./x:frames/x:DOMFrame',NS) if int(f.get('index','0'))<=frame]
   if frames:

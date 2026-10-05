@@ -76,8 +76,15 @@ class Renderer:
      out.append(f'<path d="{pen.getCommands()}" fill="{attrs.get("fillColor","#ffffff")}" fill-opacity="{attrs.get("alpha","1")}"/>');x+=font['hmtx'][name][0]*scale
     y+=float(attrs.get('size','24'))+float(attrs.get('lineSpacing','0'))
   return ''.join(out)
+ def display_frame(self,name,frame):
+  root=self.root(name)
+  if frame==0 and root.get('symbolType')=='button':
+   frames=[int(f.get('index','0')) for f in root.findall('./x:timeline/x:DOMTimeline/x:layers/x:DOMLayer/x:frames/x:DOMFrame',NS)]
+   if frames and min(frames)>0:return min(frames)
+  return frame
  def symbol(self,name,frame=0,overrides=None,hide=None,path='',depth=0):
   if depth>35:return ''
+  frame=self.display_frame(name,frame)
   overrides=overrides or {};hide=hide or set();root=self.root(name);out=[]
   layers=root.findall('./x:timeline/x:DOMTimeline/x:layers/x:DOMLayer',NS)
   for layer in reversed(layers):

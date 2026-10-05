@@ -12,6 +12,12 @@ func run()->void:
  TranslationServer.set_locale("ru")
  LOC.prepare(true)
  check(LOC.text("@loc:ui.main.5")=="Справка","UI source loaded")
+ for table_name:String in LOC.BUILTIN_TABLES:
+  var native:Dictionary=LOC.imported_table("res://locales/"+table_name+".csv")
+  check(not native.rows.is_empty(),"native imported table: "+table_name)
+  for key:String in native.rows:
+   if native.rows[key].has("ru"):
+    check(LOC.source("@loc:"+key)==native.rows[key].ru,"native fallback resolves source: "+key)
  var quest:Node=root.get_node("Quest")
  quest.save_path="user://locales_test.json";quest.tmp_path="user://locales_test.tmp";quest.backup_path="user://locales_test.bak";quest.sound_enabled=false
  quest.new_game(3)
