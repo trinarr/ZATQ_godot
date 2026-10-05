@@ -1,4 +1,5 @@
 extends Node
+const LOC := preload("res://scripts/core/localization.gd")
 
 signal changed
 signal save_failed(message: String)
@@ -30,6 +31,7 @@ var episode1_stats: Dictionary = {"wins":0,"losses":0,"endings":[]}
 var result_recorded: bool = false
 
 func _ready() -> void:
+	LOC.prepare()
 	for filename: String in DirAccess.get_files_at("res://data/story_graphs"):
 		if not filename.begins_with("episode") or not filename.ends_with(".json"): continue
 		var path: String = "res://data/story_graphs/" + filename
@@ -46,13 +48,13 @@ func _ready() -> void:
 
 func current() -> Dictionary:
 	var node: Dictionary = nodes.get(current_id, {})
-	if not node.has("variants"): return node
+	if not node.has("variants"): return LOC.resolve_tree(node)
 	var resolved: Dictionary = node.duplicate(true)
 	for variant: Dictionary in node.variants:
 		if matches(variant.when):
 			for key: String in variant:
 				if key != "when": resolved[key] = variant[key]
-	return resolved
+	return LOC.resolve_tree(resolved)
 
 func matches(conditions: Dictionary) -> bool:
 	for key: String in conditions:
@@ -251,7 +253,7 @@ func _load_save() -> void:
 		data = _read(backup_path)
 		if not _valid(data):
 			return
-		recovery_message = "Сохранение восстановлено из резервной копии."
+		recovery_message = LOC.text("@loc:ui.quest_state.1")
 	current_id = data.current_id
 	flags = data.flags.duplicate(true)
 	flags.Auto = int(flags.Auto)
@@ -283,23 +285,23 @@ func _load_save() -> void:
 func save_game() -> bool:
 	var file := FileAccess.open(tmp_path, FileAccess.WRITE)
 	if file == null:
-		save_failed.emit("Не удалось записать сохранение.")
+		save_failed.emit(LOC.text("@loc:ui.quest_state.2"))
 		return false
 	file.store_string(JSON.stringify(_snapshot()))
 	file.flush()
 	var write_error: Error = file.get_error()
 	file.close()
 	if write_error != OK:
-		save_failed.emit("Ошибка записи сохранения.")
+		save_failed.emit(LOC.text("@loc:ui.quest_state.3"))
 		return false
 	# Same temp/backup strategy as Hangman; never replace a good backup with corrupt data.
 	if _valid(_read(save_path)):
 		var backup_error := DirAccess.copy_absolute(save_path, backup_path)
 		if backup_error != OK:
-			save_failed.emit("Не удалось создать резервную копию.")
+			save_failed.emit(LOC.text("@loc:ui.quest_state.4"))
 			return false
 	var error := DirAccess.rename_absolute(tmp_path, save_path)
 	if error != OK:
-		save_failed.emit("Не удалось обновить сохранение.")
+		save_failed.emit(LOC.text("@loc:ui.quest_state.5"))
 		return false
 	return true

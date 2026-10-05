@@ -17,7 +17,7 @@ func controller(scene:Control)->Control:
 func run()->void:
  var graph:=MODEL.load_graph("res://data/story_graphs/episode3.json")
  check(MODEL.validate(graph).is_empty(),"third graph validates: "+str(MODEL.validate(graph)))
- var nodes:=MODEL.compile(graph)
+ var nodes:Dictionary=preload("res://scripts/core/localization.gd").resolve_tree(MODEL.compile(graph),true)
  var quest:Node=root.get_node("Quest")
  quest.save_path="user://episode3_test.json";quest.tmp_path="user://episode3_test.tmp";quest.backup_path="user://episode3_test.bak";quest.sound_enabled=false
  check(quest.episode_starts.get(3)=="e3_opening_1","third episode registered")

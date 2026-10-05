@@ -7,90 +7,90 @@
 			"type": "scene",
 			"data": {
 				"source": "Episode1 frame 1 / Symbol 2794",
-				"text": "Это утро в жизни Джека началось с воя полицейских сирен...",
+				"text": "@loc:episode1.nodes.wake.data.text",
 				"image": "Fon1_1.png"
 			},
 			"position": [
 				0.0,
 				0.0
 			],
-			"title": "wake"
+			"title": "@loc:episode1.nodes.wake.title"
 		},
 		"wake__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.wake__choice_0.data.text"
 			},
 			"position": [
 				390.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.wake__choice_0.title"
 		},
 		"screams": {
 			"type": "scene",
 			"data": {
 				"source": "Episode1 frame 2 / Symbol 2799",
-				"text": "Придя в себя после пробуждения, он услышал чьи-то крики и стрельбу на улице.",
+				"text": "@loc:episode1.nodes.screams.data.text",
 				"image": "Fon1_1.png"
 			},
 			"position": [
 				1700.0,
 				0.0
 			],
-			"title": "screams"
+			"title": "@loc:episode1.nodes.screams.title"
 		},
 		"screams__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.screams__choice_0.data.text"
 			},
 			"position": [
 				2090.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.screams__choice_0.title"
 		},
 		"morning_choice": {
 			"type": "scene",
 			"data": {
 				"source": "Episode1 frame 3 / Symbol 2805, 2809, 2817",
-				"text": "Что дальше?",
+				"text": "@loc:episode1.nodes.morning_choice.data.text",
 				"image": "Fon1_1.png"
 			},
 			"position": [
 				3400.0,
 				0.0
 			],
-			"title": "morning_choice"
+			"title": "@loc:episode1.nodes.morning_choice.title"
 		},
 		"morning_choice__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Выйти на улицу"
+				"text": "@loc:episode1.nodes.morning_choice__choice_0.data.text"
 			},
 			"position": [
 				3790.0,
 				0.0
 			],
-			"title": "Выйти на улицу"
+			"title": "@loc:episode1.nodes.morning_choice__choice_0.title"
 		},
 		"morning_choice__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Смотреть последние новости"
+				"text": "@loc:episode1.nodes.morning_choice__choice_1.data.text"
 			},
 			"position": [
 				3790.0,
 				290.0
 			],
-			"title": "Смотреть последние новости"
+			"title": "@loc:episode1.nodes.morning_choice__choice_1.title"
 		},
 		"tv": {
 			"type": "scene",
 			"data": {
 				"source": "Episode1 frame 4 / Symbol 2835; Episode1.Switcher",
-				"text": "CH 1",
+				"text": "@loc:episode1.nodes.tv.data.text",
 				"image": "flash_2821.png",
 				"kind": "tv",
 				"sound": "TVSwitchOn"
@@ -99,37 +99,37 @@
 				5100.0,
 				0.0
 			],
-			"title": "tv"
+			"title": "@loc:episode1.nodes.tv.title"
 		},
 		"tv__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Следующий канал",
+				"text": "@loc:episode1.nodes.tv__choice_0.data.text",
 				"action": "channel"
 			},
 			"position": [
 				5490.0,
 				0.0
 			],
-			"title": "Следующий канал"
+			"title": "@loc:episode1.nodes.tv__choice_0.title"
 		},
 		"tv__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Выключить телевизор",
+				"text": "@loc:episode1.nodes.tv__choice_1.data.text",
 				"sound": "TVSwitchOff"
 			},
 			"position": [
 				5490.0,
 				290.0
 			],
-			"title": "Выключить телевизор"
+			"title": "@loc:episode1.nodes.tv__choice_1.title"
 		},
 		"transport": {
 			"type": "scene",
 			"data": {
 				"source": "Episode1 frame 5 / Symbol 2848",
-				"text": "Поехать ли на работу на машине или пойти пешком?",
+				"text": "@loc:episode1.nodes.transport.data.text",
 				"image": "Fon1_1.png",
 				"sound": "FootSteps"
 			},
@@ -137,29 +137,29 @@
 				5100.0,
 				1300.0
 			],
-			"title": "transport"
+			"title": "@loc:episode1.nodes.transport.title"
 		},
 		"transport__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Выйти на улицу"
+				"text": "@loc:episode1.nodes.transport__choice_0.data.text"
 			},
 			"position": [
 				5490.0,
 				1300.0
 			],
-			"title": "Выйти на улицу"
+			"title": "@loc:episode1.nodes.transport__choice_0.title"
 		},
 		"transport__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Взять ключи от машины"
+				"text": "@loc:episode1.nodes.transport__choice_1.data.text"
 			},
 			"position": [
 				5490.0,
 				1590.0
 			],
-			"title": "Взять ключи от машины"
+			"title": "@loc:episode1.nodes.transport__choice_1.title"
 		},
 		"transport__choice_1__requires": {
 			"type": "condition",
@@ -173,13 +173,13 @@
 				5910.0,
 				1590.0
 			],
-			"title": "Доступность ответа"
+			"title": "@loc:episode1.nodes.transport__choice_1__requires.title"
 		},
 		"keys": {
 			"type": "scene",
 			"data": {
 				"source": "AddItem(1); AddItem.weapStrings[0]",
-				"text": "Ключи от Subaru R1e",
+				"text": "@loc:episode1.nodes.keys.data.text",
 				"image": "Fon1_1.png",
 				"kind": "item",
 				"sound": "KeysTake"
@@ -188,7 +188,7 @@
 				6800.0,
 				0.0
 			],
-			"title": "keys"
+			"title": "@loc:episode1.nodes.keys.title"
 		},
 		"keys__entry": {
 			"type": "action",
@@ -201,42 +201,42 @@
 				6420.0,
 				180.0
 			],
-			"title": "При входе"
+			"title": "@loc:episode1.nodes.keys__entry.title"
 		},
 		"keys__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Забрать"
+				"text": "@loc:episode1.nodes.keys__choice_0.data.text"
 			},
 			"position": [
 				7190.0,
 				0.0
 			],
-			"title": "Забрать"
+			"title": "@loc:episode1.nodes.keys__choice_0.title"
 		},
 		"transport_choice": {
 			"type": "scene",
 			"data": {
 				"source": "NewItem(1).itemStrings[0], but1Str[1], but2Str[1]",
-				"text": "Следует ли Джеку сегодня дойти до работы пешком или лучше доехать на машине?",
+				"text": "@loc:episode1.nodes.transport_choice.data.text",
 				"image": "Fon1_1.png"
 			},
 			"position": [
 				6800.0,
 				1300.0
 			],
-			"title": "transport_choice"
+			"title": "@loc:episode1.nodes.transport_choice.title"
 		},
 		"transport_choice__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Поехать на машине"
+				"text": "@loc:episode1.nodes.transport_choice__choice_0.data.text"
 			},
 			"position": [
 				7190.0,
 				1300.0
 			],
-			"title": "Поехать на машине"
+			"title": "@loc:episode1.nodes.transport_choice__choice_0.title"
 		},
 		"transport_choice__choice_0__effects": {
 			"type": "action",
@@ -249,18 +249,18 @@
 				7610.0,
 				1300.0
 			],
-			"title": "Последствия выбора"
+			"title": "@loc:episode1.nodes.transport_choice__choice_0__effects.title"
 		},
 		"transport_choice__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Дойти пешком"
+				"text": "@loc:episode1.nodes.transport_choice__choice_1.data.text"
 			},
 			"position": [
 				7190.0,
 				1590.0
 			],
-			"title": "Дойти пешком"
+			"title": "@loc:episode1.nodes.transport_choice__choice_1.title"
 		},
 		"transport_choice__choice_1__effects": {
 			"type": "action",
@@ -273,13 +273,13 @@
 				7610.0,
 				1590.0
 			],
-			"title": "Последствия выбора"
+			"title": "@loc:episode1.nodes.transport_choice__choice_1__effects.title"
 		},
 		"lift": {
 			"type": "scene",
 			"data": {
 				"source": "Episode1 frame 6 / Symbol 2872",
-				"text": "Дойти до лифта удалось без происшествий. Почти.",
+				"text": "@loc:episode1.nodes.lift.data.text",
 				"image": "flash_2868.png",
 				"sound": "LiftOpenSound"
 			},
@@ -287,24 +287,24 @@
 				6800.0,
 				2600.0
 			],
-			"title": "lift"
+			"title": "@loc:episode1.nodes.lift.title"
 		},
 		"lift__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Войти в лифт"
+				"text": "@loc:episode1.nodes.lift__choice_0.data.text"
 			},
 			"position": [
 				7190.0,
 				2600.0
 			],
-			"title": "Войти в лифт"
+			"title": "@loc:episode1.nodes.lift__choice_0.title"
 		},
 		"lift_button": {
 			"type": "scene",
 			"data": {
 				"source": "Episode1 frame 7 / Symbol 2880; MovClickFunc case 7",
-				"text": "Джек нажал на кнопку первого этажа, и лифт понес его в неизвестность...",
+				"text": "@loc:episode1.nodes.lift_button.data.text",
 				"image": "LiftKnop.jpg",
 				"sound": "LiftClosing"
 			},
@@ -312,25 +312,25 @@
 				8500.0,
 				0.0
 			],
-			"title": "lift_button"
+			"title": "@loc:episode1.nodes.lift_button.title"
 		},
 		"lift_button__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Первый этаж",
+				"text": "@loc:episode1.nodes.lift_button__choice_0.data.text",
 				"sound": "LiftButton"
 			},
 			"position": [
 				8890.0,
 				0.0
 			],
-			"title": "Первый этаж"
+			"title": "@loc:episode1.nodes.lift_button__choice_0.title"
 		},
 		"city_foot": {
 			"type": "scene",
 			"data": {
 				"source": "MovCityAuto(4) frame 8 / Symbol 2639; MovCityAuto(4).as",
-				"text": "Выйдя из подъезда, Джек замечает носилки скорой помощи со странным человеком на \nних: с нездорово бледным, осунувшимся окровавленным лицом... Странно все это.",
+				"text": "@loc:episode1.nodes.city_foot.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_city_foot",
@@ -351,24 +351,24 @@
 				10200.0,
 				0.0
 			],
-			"title": "city_foot"
+			"title": "@loc:episode1.nodes.city_foot.title"
 		},
 		"city_foot__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.city_foot__choice_0.data.text"
 			},
 			"position": [
 				10590.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.city_foot__choice_0.title"
 		},
 		"city_car": {
 			"type": "scene",
 			"data": {
 				"source": "MovCityAuto frame 1 / Symbol 2639; MovCityAuto.as",
-				"text": "Отыскав припаркованную машину и сев в нее, Джек почувствовал неимоверное \nоблегчение... Где-то в паре кварталов отсюда надрывно выла сирена, и слышались крики \nи грохот. Опасность чувствовалась буквально каждой частью тела.",
+				"text": "@loc:episode1.nodes.city_car.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_city_car",
@@ -389,24 +389,24 @@
 				10200.0,
 				1300.0
 			],
-			"title": "city_car"
+			"title": "@loc:episode1.nodes.city_car.title"
 		},
 		"city_car__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.city_car__choice_0.data.text"
 			},
 			"position": [
 				10590.0,
 				1300.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.city_car__choice_0.title"
 		},
 		"car_decision": {
 			"type": "scene",
 			"data": {
 				"source": "NewItem(2); NewItem.But1/2/3MouseUpFunc",
-				"text": "Возможно, стоит не ехать сегодня в офис, а уехать из города как можно скорей. Что же предпринять Джеку дальше?",
+				"text": "@loc:episode1.nodes.car_decision.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_decision",
 				"art": "city_city_car"
@@ -415,35 +415,35 @@
 				11900.0,
 				0.0
 			],
-			"title": "car_decision"
+			"title": "@loc:episode1.nodes.car_decision.title"
 		},
 		"car_decision__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Уехать из города"
+				"text": "@loc:episode1.nodes.car_decision__choice_0.data.text"
 			},
 			"position": [
 				12290.0,
 				0.0
 			],
-			"title": "Уехать из города"
+			"title": "@loc:episode1.nodes.car_decision__choice_0.title"
 		},
 		"car_decision__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Поехать в офис"
+				"text": "@loc:episode1.nodes.car_decision__choice_1.data.text"
 			},
 			"position": [
 				12290.0,
 				290.0
 			],
-			"title": "Поехать в офис"
+			"title": "@loc:episode1.nodes.car_decision__choice_1.title"
 		},
 		"car_drive": {
 			"type": "scene",
 			"data": {
 				"source": "MovCityAuto frame 2 / Symbol 2639; MovCityAuto.as",
-				"text": "Выбраться из города оказалось не так уж и просто... Не раз и не два на машину Джека \nкидались обезумевшие люди, походившие на оживших мертвецов из фильмов.",
+				"text": "@loc:episode1.nodes.car_drive.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_car_drive",
@@ -464,24 +464,24 @@
 				13600.0,
 				0.0
 			],
-			"title": "car_drive"
+			"title": "@loc:episode1.nodes.car_drive.title"
 		},
 		"car_drive__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.car_drive__choice_0.data.text"
 			},
 			"position": [
 				13990.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.car_drive__choice_0.title"
 		},
 		"car_battery": {
 			"type": "scene",
 			"data": {
 				"source": "MovCityAuto frame 3 / Symbol 2639; MovCityAuto.as",
-				"text": "С большим трудом выбравшись из города, Джек понял, что батарея его электрокара вот-\nвот сядет. Что же делать? Оставить машину сейчас, пока вокруг никого нет, или ехать \nдальше сколько получится, пытаясь найти место для зарядки?",
+				"text": "@loc:episode1.nodes.car_battery.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_car_battery",
@@ -502,24 +502,24 @@
 				15300.0,
 				0.0
 			],
-			"title": "car_battery"
+			"title": "@loc:episode1.nodes.car_battery.title"
 		},
 		"car_battery__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.car_battery__choice_0.data.text"
 			},
 			"position": [
 				15690.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.car_battery__choice_0.title"
 		},
 		"battery_decision": {
 			"type": "scene",
 			"data": {
 				"source": "NewItem(5); NewItem.But1/2/3MouseUpFunc",
-				"text": "Двигаться, пока не сядет аккумулятор или продолжить путь пешком?",
+				"text": "@loc:episode1.nodes.battery_decision.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_decision",
 				"art": "city_car_battery"
@@ -528,35 +528,35 @@
 				17000.0,
 				0.0
 			],
-			"title": "battery_decision"
+			"title": "@loc:episode1.nodes.battery_decision.title"
 		},
 		"battery_decision__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Остановиться и выйти"
+				"text": "@loc:episode1.nodes.battery_decision__choice_0.data.text"
 			},
 			"position": [
 				17390.0,
 				0.0
 			],
-			"title": "Остановиться и выйти"
+			"title": "@loc:episode1.nodes.battery_decision__choice_0.title"
 		},
 		"battery_decision__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжать движение"
+				"text": "@loc:episode1.nodes.battery_decision__choice_1.data.text"
 			},
 			"position": [
 				17390.0,
 				290.0
 			],
-			"title": "Продолжать движение"
+			"title": "@loc:episode1.nodes.battery_decision__choice_1.title"
 		},
 		"car_crowd": {
 			"type": "scene",
 			"data": {
 				"source": "MovCityAuto frame 4 / Symbol 2639; MovCityAuto.as",
-				"text": "Задумавшись о несостоявшемся ужине с подругой по работе, Джек неожиданно понимает, \nчто путь ему преграждает толпа мертвецов (он наверняка знал, что живыми эти существа \nуж точно не были).",
+				"text": "@loc:episode1.nodes.car_crowd.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_car_crowd",
@@ -577,24 +577,24 @@
 				18700.0,
 				0.0
 			],
-			"title": "car_crowd"
+			"title": "@loc:episode1.nodes.car_crowd.title"
 		},
 		"car_crowd__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.car_crowd__choice_0.data.text"
 			},
 			"position": [
 				19090.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.car_crowd__choice_0.title"
 		},
 		"car_trapped": {
 			"type": "scene",
 			"data": {
 				"source": "MovCityAuto frame 5 / Symbol 2639; MovCityAuto.as",
-				"text": "Как назло аккумулятор приказал долго жить. Зомби уже обступили машину, лезут на \nкапот. Скоро лобовое стекло не выдержит. Как там было в одной из Обителей Зла? В этой \nситуации остается только закурить? Но Джек никогда не курил. Предпочитал беречь \nздоровье... Забавно.",
+				"text": "@loc:episode1.nodes.car_trapped.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_car_trapped",
@@ -615,18 +615,18 @@
 				20400.0,
 				0.0
 			],
-			"title": "car_trapped"
+			"title": "@loc:episode1.nodes.car_trapped.title"
 		},
 		"car_trapped__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.car_trapped__choice_0.data.text"
 			},
 			"position": [
 				20790.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.car_trapped__choice_0.title"
 		},
 		"car_fatal": {
 			"type": "scene",
@@ -643,24 +643,24 @@
 				22100.0,
 				0.0
 			],
-			"title": "car_fatal"
+			"title": "@loc:episode1.nodes.car_fatal.title"
 		},
 		"car_fatal__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.car_fatal__choice_0.data.text"
 			},
 			"position": [
 				22490.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.car_fatal__choice_0.title"
 		},
 		"office_drive": {
 			"type": "scene",
 			"data": {
 				"source": "MovCityAuto frame 6 / Symbol 2639; MovCityAuto.as",
-				"text": "Трудолюбие и «сидячий» образ жизни скоро доканают Джека, но деньги есть деньги, \nпричем немалые... Как там было на недавнем треннинге? «Трудолюбие — залог вашего \nуспешного будущего». О как! И где теперь это будущее, черт бы вас побрал?",
+				"text": "@loc:episode1.nodes.office_drive.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_office_drive",
@@ -681,24 +681,24 @@
 				13600.0,
 				1300.0
 			],
-			"title": "office_drive"
+			"title": "@loc:episode1.nodes.office_drive.title"
 		},
 		"office_drive__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.office_drive__choice_0.data.text"
 			},
 			"position": [
 				13990.0,
 				1300.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.office_drive__choice_0.title"
 		},
 		"office_gate": {
 			"type": "scene",
 			"data": {
 				"source": "MovCityAuto frame 7 / Symbol 2639; MovCityAuto.as",
-				"text": "Офис, где работал Джек находился рядом с Центральной больницей города, на окраине. И \nсейчас рядом с ней находилась чуть ли не вся полиция Нью-Тауна, слышались частые \nвыстрелы. Перебросившись парой фраз с зеваками поблизости, Джек узнал, что скоро \nздесь будет армия, ибо этих тварей из больницы берет только прямое попадание в голову. \n«Чудненькие перспективы», — подытожил Джек.",
+				"text": "@loc:episode1.nodes.office_gate.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_office_gate",
@@ -719,24 +719,24 @@
 				15300.0,
 				1300.0
 			],
-			"title": "office_gate"
+			"title": "@loc:episode1.nodes.office_gate.title"
 		},
 		"office_gate__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.office_gate__choice_0.data.text"
 			},
 			"position": [
 				15690.0,
 				1300.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.office_gate__choice_0.title"
 		},
 		"office_decision": {
 			"type": "scene",
 			"data": {
 				"source": "NewItem(9); NewItem.But1/2/3MouseUpFunc",
-				"text": "В офисе находятся некоторые важные документы, нужно обязательно их забрать! Джек все не мог решиться шагнуть в темноту входа...",
+				"text": "@loc:episode1.nodes.office_decision.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_decision",
 				"art": "city_office_gate"
@@ -745,35 +745,35 @@
 				17000.0,
 				1300.0
 			],
-			"title": "office_decision"
+			"title": "@loc:episode1.nodes.office_decision.title"
 		},
 		"office_decision__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Незаметно пройти в офис"
+				"text": "@loc:episode1.nodes.office_decision__choice_0.data.text"
 			},
 			"position": [
 				17390.0,
 				1300.0
 			],
-			"title": "Незаметно пройти в офис"
+			"title": "@loc:episode1.nodes.office_decision__choice_0.title"
 		},
 		"office_decision__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Уехать из города"
+				"text": "@loc:episode1.nodes.office_decision__choice_1.data.text"
 			},
 			"position": [
 				17390.0,
 				1590.0
 			],
-			"title": "Уехать из города"
+			"title": "@loc:episode1.nodes.office_decision__choice_1.title"
 		},
 		"car_battery_return": {
 			"type": "scene",
 			"data": {
 				"source": "MovCityAuto(2) frame 3 / Symbol 2639; MovCityAuto(2).as",
-				"text": "С большим трудом выбравшись из города, Джек понял, что батарея его электрокара вот-\nвот сядет. Что же делать? Оставить машину сейчас, пока вокруг никого нет, или ехать \nдальше сколько получится, пытаясь найти место для зарядки?",
+				"text": "@loc:episode1.nodes.car_battery_return.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_car_battery_return",
@@ -794,24 +794,24 @@
 				18700.0,
 				1300.0
 			],
-			"title": "car_battery_return"
+			"title": "@loc:episode1.nodes.car_battery_return.title"
 		},
 		"car_battery_return__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.car_battery_return__choice_0.data.text"
 			},
 			"position": [
 				19090.0,
 				1300.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.car_battery_return__choice_0.title"
 		},
 		"battery_return_decision": {
 			"type": "scene",
 			"data": {
 				"source": "NewItem(5); NewItem.But1/2/3MouseUpFunc",
-				"text": "Двигаться, пока не сядет аккумулятор или продолжить путь пешком?",
+				"text": "@loc:episode1.nodes.battery_return_decision.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_decision",
 				"art": "city_car_battery_return"
@@ -820,35 +820,35 @@
 				20400.0,
 				1300.0
 			],
-			"title": "battery_return_decision"
+			"title": "@loc:episode1.nodes.battery_return_decision.title"
 		},
 		"battery_return_decision__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Остановиться и выйти"
+				"text": "@loc:episode1.nodes.battery_return_decision__choice_0.data.text"
 			},
 			"position": [
 				20790.0,
 				1300.0
 			],
-			"title": "Остановиться и выйти"
+			"title": "@loc:episode1.nodes.battery_return_decision__choice_0.title"
 		},
 		"battery_return_decision__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжать движение"
+				"text": "@loc:episode1.nodes.battery_return_decision__choice_1.data.text"
 			},
 			"position": [
 				20790.0,
 				1590.0
 			],
-			"title": "Продолжать движение"
+			"title": "@loc:episode1.nodes.battery_return_decision__choice_1.title"
 		},
 		"street_stretcher": {
 			"type": "scene",
 			"data": {
 				"source": "MovCityAuto frame 9 / Symbol 2639; MovCityAuto.as",
-				"text": "Странно и страшно одновременно. Джек невольно поежился... Уж очень жутко выглядел \nмертвец на носилках.",
+				"text": "@loc:episode1.nodes.street_stretcher.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_street_stretcher",
@@ -869,24 +869,24 @@
 				11900.0,
 				1300.0
 			],
-			"title": "street_stretcher"
+			"title": "@loc:episode1.nodes.street_stretcher.title"
 		},
 		"street_stretcher__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.street_stretcher__choice_0.data.text"
 			},
 			"position": [
 				12290.0,
 				1300.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.street_stretcher__choice_0.title"
 		},
 		"street_decision": {
 			"type": "scene",
 			"data": {
 				"source": "NewItem(3); NewItem.But1/2/3MouseUpFunc",
-				"text": "Что же Джеку предпринять дальше? Добраться таки до офиса или лучше уехать из города?",
+				"text": "@loc:episode1.nodes.street_decision.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_decision",
 				"art": "city_street_stretcher"
@@ -895,46 +895,46 @@
 				13600.0,
 				2600.0
 			],
-			"title": "street_decision"
+			"title": "@loc:episode1.nodes.street_decision.title"
 		},
 		"street_decision__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Идти в офис дворами"
+				"text": "@loc:episode1.nodes.street_decision__choice_0.data.text"
 			},
 			"position": [
 				13990.0,
 				2600.0
 			],
-			"title": "Идти в офис дворами"
+			"title": "@loc:episode1.nodes.street_decision__choice_0.title"
 		},
 		"street_decision__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Дойти по главной улице"
+				"text": "@loc:episode1.nodes.street_decision__choice_1.data.text"
 			},
 			"position": [
 				13990.0,
 				2890.0
 			],
-			"title": "Дойти по главной улице"
+			"title": "@loc:episode1.nodes.street_decision__choice_1.title"
 		},
 		"street_decision__choice_2": {
 			"type": "choice",
 			"data": {
-				"text": "Взять такси и уехать"
+				"text": "@loc:episode1.nodes.street_decision__choice_2.data.text"
 			},
 			"position": [
 				13990.0,
 				3180.0
 			],
-			"title": "Взять такси и уехать"
+			"title": "@loc:episode1.nodes.street_decision__choice_2.title"
 		},
 		"office_enter": {
 			"type": "scene",
 			"data": {
 				"source": "IntoTheOffice frame 1 / Symbol 2706; IntoTheOffice.as",
-				"text": "Внутри здания оказалось темно и пусто. То тут, то там попадались следы крови и борьбы. \nНекоторые двери были выломаны или имели вмятины. Джеку стало не по себе...",
+				"text": "@loc:episode1.nodes.office_enter.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_office_enter",
@@ -951,7 +951,7 @@
 					800.0,
 					70.05
 				],
-				"text_on_foot": "В офисе оставались достаточно важные документы, и Джек все-таки решился в него проникнуть. Внутри здания оказалось темно и пусто. То тут, то там попадались следы крови и борьбы. Некоторые двери были выломаны или имели вмятины. Решимость Джека постепенно угасала...",
+				"text_on_foot": "@loc:episode1.nodes.office_enter.data.text_on_foot",
 				"text_rect_on_foot": [
 					11.0,
 					5.75,
@@ -969,24 +969,24 @@
 				18700.0,
 				2600.0
 			],
-			"title": "office_enter"
+			"title": "@loc:episode1.nodes.office_enter.title"
 		},
 		"office_enter__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.office_enter__choice_0.data.text"
 			},
 			"position": [
 				19090.0,
 				2600.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.office_enter__choice_0.title"
 		},
 		"office_floor": {
 			"type": "scene",
 			"data": {
 				"source": "IntoTheOffice frame 2 / Symbol 2706; IntoTheOffice.as",
-				"text": "Осторожно поднявшись на второй этаж, Джек направился к своему рабочему месту. \nИногда ему казалось что он слышит какие-то шаркающие звуки... Нужно поскорей забрать \nбумаги и выбраться отсюда!",
+				"text": "@loc:episode1.nodes.office_floor.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_office_floor",
@@ -1007,24 +1007,24 @@
 				20400.0,
 				2600.0
 			],
-			"title": "office_floor"
+			"title": "@loc:episode1.nodes.office_floor.title"
 		},
 		"office_floor__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.office_floor__choice_0.data.text"
 			},
 			"position": [
 				20790.0,
 				2600.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.office_floor__choice_0.title"
 		},
 		"office_documents": {
 			"type": "scene",
 			"data": {
 				"source": "IntoTheOffice frame 3 / Symbol 2706; IntoTheOffice.as",
-				"text": "Помещение, где обычно работал Джек оказалось полностью погруженным во тьму и \nпришлось включить фонарик на брелке домашних ключей. Джек услышал шаги совсем \nрядом, прямо за стеной!",
+				"text": "@loc:episode1.nodes.office_documents.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_office_documents",
@@ -1045,24 +1045,24 @@
 				22100.0,
 				1300.0
 			],
-			"title": "office_documents"
+			"title": "@loc:episode1.nodes.office_documents.title"
 		},
 		"office_documents__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.office_documents__choice_0.data.text"
 			},
 			"position": [
 				22490.0,
 				1300.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.office_documents__choice_0.title"
 		},
 		"documents_decision": {
 			"type": "scene",
 			"data": {
 				"source": "NewItem(10); NewItem.But1/2/3MouseUpFunc",
-				"text": "Забрав драгоценную папку, Джек начал возвращаться обратно, но шаркающие шаги слышались как раз с той стороны, откуда он пришел...",
+				"text": "@loc:episode1.nodes.documents_decision.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_decision",
 				"art": "city_office_documents"
@@ -1071,46 +1071,46 @@
 				23800.0,
 				0.0
 			],
-			"title": "documents_decision"
+			"title": "@loc:episode1.nodes.documents_decision.title"
 		},
 		"documents_decision__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Выйти тем же путем"
+				"text": "@loc:episode1.nodes.documents_decision__choice_0.data.text"
 			},
 			"position": [
 				24190.0,
 				0.0
 			],
-			"title": "Выйти тем же путем"
+			"title": "@loc:episode1.nodes.documents_decision__choice_0.title"
 		},
 		"documents_decision__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Найти другой путь"
+				"text": "@loc:episode1.nodes.documents_decision__choice_1.data.text"
 			},
 			"position": [
 				24190.0,
 				290.0
 			],
-			"title": "Найти другой путь"
+			"title": "@loc:episode1.nodes.documents_decision__choice_1.title"
 		},
 		"documents_decision__choice_2": {
 			"type": "choice",
 			"data": {
-				"text": "Подняться на крышу"
+				"text": "@loc:episode1.nodes.documents_decision__choice_2.data.text"
 			},
 			"position": [
 				24190.0,
 				580.0
 			],
-			"title": "Подняться на крышу"
+			"title": "@loc:episode1.nodes.documents_decision__choice_2.title"
 		},
 		"office_threat": {
 			"type": "scene",
 			"data": {
 				"source": "IntoTheOffice frame 6 / Symbol 2706; IntoTheOffice.as",
-				"text": "Джек развернулся и пошел обратно к выходу. В тот момент, когда он уже практически \nпрошел очередное помещение офиса, он отчетливо услышал шорох в метрах пяти слева \nот себя. Луч света резко прыгнул влево и... Кровь застыла у Джека в жилах...",
+				"text": "@loc:episode1.nodes.office_threat.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_office_threat",
@@ -1132,18 +1132,18 @@
 				25500.0,
 				0.0
 			],
-			"title": "office_threat"
+			"title": "@loc:episode1.nodes.office_threat.title"
 		},
 		"office_threat__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.office_threat__choice_0.data.text"
 			},
 			"position": [
 				25890.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.office_threat__choice_0.title"
 		},
 		"office_fatal": {
 			"type": "scene",
@@ -1159,24 +1159,24 @@
 				27200.0,
 				0.0
 			],
-			"title": "office_fatal"
+			"title": "@loc:episode1.nodes.office_fatal.title"
 		},
 		"office_fatal__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.office_fatal__choice_0.data.text"
 			},
 			"position": [
 				27590.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.office_fatal__choice_0.title"
 		},
 		"office_fire_escape": {
 			"type": "scene",
 			"data": {
 				"source": "IntoTheOffice frame 7 / Symbol 2706; IntoTheOffice.as",
-				"text": "Про наличие в здании еще одной лестницы, пожарной, практически никто не знал. Она \nоказалась пуста, и уже через несколько минут Джек шел к выходу из офиса, которому \nпосвятил пять лет своей жизни.",
+				"text": "@loc:episode1.nodes.office_fire_escape.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_office_fire_escape",
@@ -1197,24 +1197,24 @@
 				25500.0,
 				1300.0
 			],
-			"title": "office_fire_escape"
+			"title": "@loc:episode1.nodes.office_fire_escape.title"
 		},
 		"office_fire_escape__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.office_fire_escape__choice_0.data.text"
 			},
 			"position": [
 				25890.0,
 				1300.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.office_fire_escape__choice_0.title"
 		},
 		"office_exit": {
 			"type": "scene",
 			"data": {
 				"source": "IntoTheOffice frame 8 / Symbol 2706; IntoTheOffice.as",
-				"text": "Выйдя на улицу Джек прищурился от яркого света и понял, что ему стоит поторопиться \nдойти до машины, пока заметившие его мертвецы еще далеко.",
+				"text": "@loc:episode1.nodes.office_exit.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_office_exit",
@@ -1235,24 +1235,24 @@
 				27200.0,
 				1300.0
 			],
-			"title": "office_exit"
+			"title": "@loc:episode1.nodes.office_exit.title"
 		},
 		"office_exit__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.office_exit__choice_0.data.text"
 			},
 			"position": [
 				27590.0,
 				1300.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.office_exit__choice_0.title"
 		},
 		"office_roof_stairs": {
 			"type": "scene",
 			"data": {
 				"source": "IntoTheOffice frame 4 / Symbol 2706; IntoTheOffice.as",
-				"text": "Хорошо, что в здании были лифты, и большинство людей пользовались именно ими. \nДжек, постоянно оглядываясь и светя фонариком во  все стороны, без особых проблем \nдобрался до дверей, преграждающих выход на крышу.",
+				"text": "@loc:episode1.nodes.office_roof_stairs.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_office_roof_stairs",
@@ -1273,24 +1273,24 @@
 				25500.0,
 				2600.0
 			],
-			"title": "office_roof_stairs"
+			"title": "@loc:episode1.nodes.office_roof_stairs.title"
 		},
 		"office_roof_stairs__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.office_roof_stairs__choice_0.data.text"
 			},
 			"position": [
 				25890.0,
 				2600.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.office_roof_stairs__choice_0.title"
 		},
 		"office_roof": {
 			"type": "scene",
 			"data": {
 				"source": "IntoTheOffice frame 5 / Symbol 2706; IntoTheOffice.as",
-				"text": "Глупая была идея... Джек сел на край крыши, свесил вниз ноги и с грустью увидел, как \nмертвецы расправляются с остатками полицеских и военных. Это конец...",
+				"text": "@loc:episode1.nodes.office_roof.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_office_roof",
@@ -1311,24 +1311,24 @@
 				27200.0,
 				2600.0
 			],
-			"title": "office_roof"
+			"title": "@loc:episode1.nodes.office_roof.title"
 		},
 		"office_roof__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.office_roof__choice_0.data.text"
 			},
 			"position": [
 				27590.0,
 				2600.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.office_roof__choice_0.title"
 		},
 		"paid_car": {
 			"type": "scene",
 			"data": {
 				"source": "CarGet(2) frame 1 / Symbol 2979; CarGet(2).as",
-				"text": "Как всегда бывает при различного рода катастрофах и трагедиях, Джек смог найти \nчеловека, который за баснословную цену согласился вывезти его из Нью-Тауна.",
+				"text": "@loc:episode1.nodes.paid_car.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_paid_car",
@@ -1349,24 +1349,24 @@
 				17000.0,
 				2600.0
 			],
-			"title": "paid_car"
+			"title": "@loc:episode1.nodes.paid_car.title"
 		},
 		"paid_car__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.paid_car__choice_0.data.text"
 			},
 			"position": [
 				17390.0,
 				2600.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.paid_car__choice_0.title"
 		},
 		"paid_car_outside": {
 			"type": "scene",
 			"data": {
 				"source": "CarGet(2) frame 2 / Symbol 2979; CarGet(2).as",
-				"text": "Как только показались загородные дома, водитель Бьюика чуть ли не выбросил Джека, \nвзяв с него целых 250$. Кровно заработанных причем! Так, ладно. И что делать дальше? \nЗомби, взрывы, трупы на улицах. А еще вчера Джек мирно сидел в своем тихом офисе в \nцентре Нью-Тауна...",
+				"text": "@loc:episode1.nodes.paid_car_outside.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_paid_car_outside",
@@ -1387,24 +1387,24 @@
 				18700.0,
 				3900.0
 			],
-			"title": "paid_car_outside"
+			"title": "@loc:episode1.nodes.paid_car_outside.title"
 		},
 		"paid_car_outside__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.paid_car_outside__choice_0.data.text"
 			},
 			"position": [
 				19090.0,
 				3900.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.paid_car_outside__choice_0.title"
 		},
 		"metro_start": {
 			"type": "scene",
 			"data": {
 				"source": "DvrMov frame 1 / Symbol 2925; DvrMov.as",
-				"text": "Нужно сказать прямо — идея оказалась не самая удачная. Теперь Джеку не оставалось \nничего иного, кроме как попытаться спрятаться от приближающейся обезумевшей толпы. \nС людьми явно было что-то не так... Но что, черт возьми?!",
+				"text": "@loc:episode1.nodes.metro_start.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_metro_start",
@@ -1425,24 +1425,24 @@
 				15300.0,
 				2600.0
 			],
-			"title": "metro_start"
+			"title": "@loc:episode1.nodes.metro_start.title"
 		},
 		"metro_start__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.metro_start__choice_0.data.text"
 			},
 			"position": [
 				15690.0,
 				2600.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.metro_start__choice_0.title"
 		},
 		"metro_descent": {
 			"type": "scene",
 			"data": {
 				"source": "DvrMov frame 2 / Symbol 2925; DvrMov.as",
-				"text": "Темный спуск в метро уверенности не придал, как не придал и понимания творящегося \nвокруг. И чем дальше Джек спускался, тем тише становилась жуткая какофония улиц, тем \nсильнее обволакивала липкая холодная тьма.",
+				"text": "@loc:episode1.nodes.metro_descent.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_metro_descent",
@@ -1463,24 +1463,24 @@
 				17000.0,
 				3900.0
 			],
-			"title": "metro_descent"
+			"title": "@loc:episode1.nodes.metro_descent.title"
 		},
 		"metro_descent__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.metro_descent__choice_0.data.text"
 			},
 			"position": [
 				17390.0,
 				3900.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.metro_descent__choice_0.title"
 		},
 		"metro_junction": {
 			"type": "scene",
 			"data": {
 				"source": "DvrMov frame 3 / Symbol 2925; DvrMov.as",
-				"text": "Что дальше? Пробираться вглубь станции или сразу на поверхность? И... Черт, да что \nздесь вообще происходит?! Кровь, кровь, КРОВЬ на закрытой уже второй месяц на ремонт \nстанции бросила Джека в дрожь, сковала леденящим оцепенением.",
+				"text": "@loc:episode1.nodes.metro_junction.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_metro_junction",
@@ -1501,12 +1501,12 @@
 				18700.0,
 				5200.0
 			],
-			"title": "metro_junction"
+			"title": "@loc:episode1.nodes.metro_junction.title"
 		},
 		"metro_junction__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Пробираться вглубь станции",
+				"text": "@loc:episode1.nodes.metro_junction__choice_0.data.text",
 				"rect": [
 					615.0,
 					245.0,
@@ -1518,12 +1518,12 @@
 				19090.0,
 				5200.0
 			],
-			"title": "Пробираться вглубь станции"
+			"title": "@loc:episode1.nodes.metro_junction__choice_0.title"
 		},
 		"metro_junction__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Вернуться на поверхность",
+				"text": "@loc:episode1.nodes.metro_junction__choice_1.data.text",
 				"rect": [
 					178.0,
 					147.0,
@@ -1535,13 +1535,13 @@
 				19090.0,
 				5490.0
 			],
-			"title": "Вернуться на поверхность"
+			"title": "@loc:episode1.nodes.metro_junction__choice_1.title"
 		},
 		"metro_chase": {
 			"type": "scene",
 			"data": {
 				"source": "DvrMov frame 5 / Symbol 2925; DvrMov.as",
-				"text": "Бредущий по эскалатору окровавленный мужчина заметил Джека и... побежал! Расстояние \nмежду людьми сокращалось со стремительной быстротой. Ведомый инстинктами Джек \nбросился бежать, не разбирая дороги и сам не понимая, чего так панически боится.",
+				"text": "@loc:episode1.nodes.metro_chase.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_metro_chase",
@@ -1563,24 +1563,24 @@
 				20400.0,
 				3900.0
 			],
-			"title": "metro_chase"
+			"title": "@loc:episode1.nodes.metro_chase.title"
 		},
 		"metro_chase__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.metro_chase__choice_0.data.text"
 			},
 			"position": [
 				20790.0,
 				3900.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.metro_chase__choice_0.title"
 		},
 		"metro_platform": {
 			"type": "scene",
 			"data": {
 				"source": "DvrMov frame 6 / Symbol 2925; DvrMov.as",
-				"text": "Джеку всегда не хватало времени всерьез заняться спортом... Из последних сил взлетев \nпо лестнице на платформу, он увидел, что единственный путь бегства — туннель, \nнамертво перекрытый искореженным вагоном.",
+				"text": "@loc:episode1.nodes.metro_platform.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_metro_platform",
@@ -1601,24 +1601,24 @@
 				22100.0,
 				2600.0
 			],
-			"title": "metro_platform"
+			"title": "@loc:episode1.nodes.metro_platform.title"
 		},
 		"metro_platform__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.metro_platform__choice_0.data.text"
 			},
 			"position": [
 				22490.0,
 				2600.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.metro_platform__choice_0.title"
 		},
 		"metro_train": {
 			"type": "scene",
 			"data": {
 				"source": "DvrMov frame 7 / Symbol 2925; DvrMov.as",
-				"text": "Вбежав в ближайшую раскрытую дверь, мужчина в ужасе отпрянул, заметив \nподнимающихся ему навстречу изуродованных людей. Еще секунда — и западня \nзалопнулась, оставляя Джека лицом к лицу с... Нет, что за?! Нет, НЕЕТ!!!",
+				"text": "@loc:episode1.nodes.metro_train.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_metro_train",
@@ -1640,25 +1640,25 @@
 				23800.0,
 				1300.0
 			],
-			"title": "metro_train"
+			"title": "@loc:episode1.nodes.metro_train.title"
 		},
 		"metro_train__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode1.nodes.metro_train__choice_0.data.text",
 				"sound": "ManDeath"
 			},
 			"position": [
 				24190.0,
 				1300.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.metro_train__choice_0.title"
 		},
 		"metro_surface": {
 			"type": "scene",
 			"data": {
 				"source": "DvrMov frame 4 / Symbol 2925; DvrMov.as",
-				"text": "Идущие навстречу Джеку по эскалатору мертвенно-бледные люди запутались в ногах и \nпокатились вниз, подарив мужчине драгоценные секунды для бегства. Еще пара десятков \nметров, и он снова окажется на поверхности!",
+				"text": "@loc:episode1.nodes.metro_surface.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_metro_surface",
@@ -1679,24 +1679,24 @@
 				20400.0,
 				5200.0
 			],
-			"title": "metro_surface"
+			"title": "@loc:episode1.nodes.metro_surface.title"
 		},
 		"metro_surface__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.metro_surface__choice_0.data.text"
 			},
 			"position": [
 				20790.0,
 				5200.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.metro_surface__choice_0.title"
 		},
 		"shop_window": {
 			"type": "scene",
 			"data": {
 				"source": "VitrMov frame 1 / Symbol 2479; VitrMov.as",
-				"text": "Понять хоть что-либо по разрозненным новостным сводкам было крайне сложно. На \nбольшинстве каналов бледные напомаженные ведущие лишь советовали ньютаунцам не \nсоздавать паники и по возможности не покидать домов. На улицах города тем временем \nпродолжал твориться полный беспредел...",
+				"text": "@loc:episode1.nodes.shop_window.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_shop_window",
@@ -1717,24 +1717,24 @@
 				17000.0,
 				5200.0
 			],
-			"title": "shop_window"
+			"title": "@loc:episode1.nodes.shop_window.title"
 		},
 		"shop_window__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.shop_window__choice_0.data.text"
 			},
 			"position": [
 				17390.0,
 				5200.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.shop_window__choice_0.title"
 		},
 		"shop_decision": {
 			"type": "scene",
 			"data": {
 				"source": "NewItem(4); NewItem.But1/2/3MouseUpFunc",
-				"text": "Что дальше? Попытаться найти убежище в городе или бежать из него со всех ног?",
+				"text": "@loc:episode1.nodes.shop_decision.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_decision",
 				"art": "city_shop_window"
@@ -1743,46 +1743,46 @@
 				18700.0,
 				6500.0
 			],
-			"title": "shop_decision"
+			"title": "@loc:episode1.nodes.shop_decision.title"
 		},
 		"shop_decision__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Бежать из Нью-Тауна"
+				"text": "@loc:episode1.nodes.shop_decision__choice_0.data.text"
 			},
 			"position": [
 				19090.0,
 				6500.0
 			],
-			"title": "Бежать из Нью-Тауна"
+			"title": "@loc:episode1.nodes.shop_decision__choice_0.title"
 		},
 		"shop_decision__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Найти убежище в городе"
+				"text": "@loc:episode1.nodes.shop_decision__choice_1.data.text"
 			},
 			"position": [
 				19090.0,
 				6790.0
 			],
-			"title": "Найти убежище в городе"
+			"title": "@loc:episode1.nodes.shop_decision__choice_1.title"
 		},
 		"shop_decision__choice_2": {
 			"type": "choice",
 			"data": {
-				"text": "Взять такси и уехать"
+				"text": "@loc:episode1.nodes.shop_decision__choice_2.data.text"
 			},
 			"position": [
 				19090.0,
 				7080.0
 			],
-			"title": "Взять такси и уехать"
+			"title": "@loc:episode1.nodes.shop_decision__choice_2.title"
 		},
 		"bitten": {
 			"type": "scene",
 			"data": {
 				"source": "VitrMov frame 2 / Symbol 2479; VitrMov.as",
-				"text": "Увидев перед собой прихрамывающую девушку, кровь на ее руке, Джек невольно \nприближается, хочет помочь. И стоило мужчине окликнуть несчастную, как та начала \nмедленно и дерганно поворачиваться. Зараженная... Джек остолбенел, не в силах отвести \nвзгляда от изуродованного лица девушки. В следующий момент монстр вцепился в руку \nДжека, и только нестерпимая боль вывела его из ступора.",
+				"text": "@loc:episode1.nodes.bitten.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_bitten",
@@ -1803,18 +1803,18 @@
 				20400.0,
 				6500.0
 			],
-			"title": "bitten"
+			"title": "@loc:episode1.nodes.bitten.title"
 		},
 		"bitten__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.bitten__choice_0.data.text"
 			},
 			"position": [
 				20790.0,
 				6500.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.bitten__choice_0.title"
 		},
 		"bite_transition": {
 			"type": "scene",
@@ -1830,24 +1830,24 @@
 				22100.0,
 				3900.0
 			],
-			"title": "bite_transition"
+			"title": "@loc:episode1.nodes.bite_transition.title"
 		},
 		"bite_transition__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.bite_transition__choice_0.data.text"
 			},
 			"position": [
 				22490.0,
 				3900.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.bite_transition__choice_0.title"
 		},
 		"checkpoint": {
 			"type": "scene",
 			"data": {
 				"source": "VitrMov frame 4 / Symbol 2479; VitrMov.as",
-				"text": "В полубреду Джек сам не понял, как вышел к военному заграждению на окраинах города. \nЗдесь творился сущий хаос: толпы бредущих тел яростно хрипя перли прямо на дула \nпулеметов и винтовок солдат, асфальт округ был густо усеян трупами, кровью и \nкилограммами стрелянных гильз.",
+				"text": "@loc:episode1.nodes.checkpoint.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_checkpoint",
@@ -1868,24 +1868,24 @@
 				23800.0,
 				2600.0
 			],
-			"title": "checkpoint"
+			"title": "@loc:episode1.nodes.checkpoint.title"
 		},
 		"checkpoint__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.checkpoint__choice_0.data.text"
 			},
 			"position": [
 				24190.0,
 				2600.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.checkpoint__choice_0.title"
 		},
 		"checkpoint_shot": {
 			"type": "scene",
 			"data": {
 				"source": "VitrMov frame 5 / Symbol 2479; VitrMov.as",
-				"text": "Пока один из армейских батальонов и оставшаяся в живых часть спецназа отвлекала \nволны зараженных, чуть в стороне люди в защитных костюмах спешно проверяли \nвыживших и пропускали за укрепления, подальше от этого ада. Джек со следом укуса на \nруке даже не успел ничего объяснить... Выстрел штурмовой винтовки прервал его на \nполуслове.",
+				"text": "@loc:episode1.nodes.checkpoint_shot.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_checkpoint_shot",
@@ -1906,18 +1906,18 @@
 				25500.0,
 				3900.0
 			],
-			"title": "checkpoint_shot"
+			"title": "@loc:episode1.nodes.checkpoint_shot.title"
 		},
 		"checkpoint_shot__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.checkpoint_shot__choice_0.data.text"
 			},
 			"position": [
 				25890.0,
 				3900.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.checkpoint_shot__choice_0.title"
 		},
 		"roof_explosion": {
 			"type": "scene",
@@ -1933,18 +1933,18 @@
 				28900.0,
 				0.0
 			],
-			"title": "roof_explosion"
+			"title": "@loc:episode1.nodes.roof_explosion.title"
 		},
 		"roof_explosion__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.roof_explosion__choice_0.data.text"
 			},
 			"position": [
 				29290.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.roof_explosion__choice_0.title"
 		},
 		"door_explosion": {
 			"type": "scene",
@@ -1960,18 +1960,18 @@
 				20400.0,
 				7800.0
 			],
-			"title": "door_explosion"
+			"title": "@loc:episode1.nodes.door_explosion.title"
 		},
 		"door_explosion__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.door_explosion__choice_0.data.text"
 			},
 			"position": [
 				20790.0,
 				7800.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.door_explosion__choice_0.title"
 		},
 		"door_blast": {
 			"type": "scene",
@@ -1987,18 +1987,18 @@
 				22100.0,
 				5200.0
 			],
-			"title": "door_blast"
+			"title": "@loc:episode1.nodes.door_blast.title"
 		},
 		"door_blast__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.door_blast__choice_0.data.text"
 			},
 			"position": [
 				22490.0,
 				5200.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.door_blast__choice_0.title"
 		},
 		"door_blast_inner": {
 			"type": "scene",
@@ -2014,18 +2014,18 @@
 				23800.0,
 				3900.0
 			],
-			"title": "door_blast_inner"
+			"title": "@loc:episode1.nodes.door_blast_inner.title"
 		},
 		"door_blast_inner__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.door_blast_inner__choice_0.data.text"
 			},
 			"position": [
 				24190.0,
 				3900.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.door_blast_inner__choice_0.title"
 		},
 		"explosion_flash": {
 			"type": "scene",
@@ -2042,24 +2042,24 @@
 				25500.0,
 				5200.0
 			],
-			"title": "explosion_flash"
+			"title": "@loc:episode1.nodes.explosion_flash.title"
 		},
 		"explosion_flash__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.explosion_flash__choice_0.data.text"
 			},
 			"position": [
 				25890.0,
 				5200.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.explosion_flash__choice_0.title"
 		},
 		"death_2": {
 			"type": "scene",
 			"data": {
 				"source": "ResultBad(2); ResultArr[1]",
-				"text": "После взрыва такой мощности еще никому не удавалось остаться в живых.",
+				"text": "@loc:episode1.nodes.death_2.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_death",
 				"art": "city_result",
@@ -2070,13 +2070,13 @@
 				27200.0,
 				3900.0
 			],
-			"title": "death_2"
+			"title": "@loc:episode1.nodes.death_2.title"
 		},
 		"death_3": {
 			"type": "scene",
 			"data": {
 				"source": "ResultBad(3); ResultArr[2]",
-				"text": "Зомби проломили лобовое стекло и залезли в автомобиль.",
+				"text": "@loc:episode1.nodes.death_3.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_death",
 				"art": "city_result",
@@ -2087,13 +2087,13 @@
 				23800.0,
 				5200.0
 			],
-			"title": "death_3"
+			"title": "@loc:episode1.nodes.death_3.title"
 		},
 		"death_5": {
 			"type": "scene",
 			"data": {
 				"source": "ResultBad(5); ResultArr[4]",
-				"text": "Один, под толщей металла и бетона в окружении толпы ходячих мертвецов... Теперь такой же. Как они.",
+				"text": "@loc:episode1.nodes.death_5.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_death",
 				"art": "city_result",
@@ -2104,13 +2104,13 @@
 				25500.0,
 				6500.0
 			],
-			"title": "death_5"
+			"title": "@loc:episode1.nodes.death_5.title"
 		},
 		"death_10": {
 			"type": "scene",
 			"data": {
 				"source": "ResultBad(10); ResultArr[9]",
-				"text": "Джек, как потенциально опасный индивид, убит военными.",
+				"text": "@loc:episode1.nodes.death_10.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_death",
 				"art": "city_result",
@@ -2121,13 +2121,13 @@
 				27200.0,
 				5200.0
 			],
-			"title": "death_10"
+			"title": "@loc:episode1.nodes.death_10.title"
 		},
 		"death_11": {
 			"type": "scene",
 			"data": {
 				"source": "ResultBad(11); ResultArr[10]",
-				"text": "Джек в панике побежал прочь от жутких мертвецов, споткнулся, упал, разбив стеклянный стол. Зомби настигли его, когда он, воя от боли в изрезанных руках, пытался встать.",
+				"text": "@loc:episode1.nodes.death_11.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_death",
 				"art": "city_result",
@@ -2138,7 +2138,7 @@
 				28900.0,
 				1300.0
 			],
-			"title": "death_11"
+			"title": "@loc:episode1.nodes.death_11.title"
 		},
 		"farm_boundary": {
 			"type": "scene",
@@ -2148,10 +2148,10 @@
 				"art": "ep1_farm_entry_1",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Вокруг ни души, впереди — заброшенная ферма. Сгущается туман... Может быть, стоит \nпопробовать обследовать ферму, вдруг получится переждать окружающий хаос пару \nдней?",
+				"text": "@loc:episode1.nodes.farm_boundary.data.text",
 				"blocks": [
 					{
-						"text": "Вокруг ни души, впереди — заброшенная ферма. Сгущается туман... Может быть, стоит попробовать обследовать ферму, вдруг получится переждать окружающий хаос пару дней?",
+						"text": "@loc:episode1.nodes.farm_boundary.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.75,
@@ -2169,12 +2169,12 @@
 				18700.0,
 				7800.0
 			],
-			"title": "farm_boundary"
+			"title": "@loc:episode1.nodes.farm_boundary.title"
 		},
 		"farm_boundary__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить путь",
+				"text": "@loc:episode1.nodes.farm_boundary__choice_0.data.text",
 				"rect": [
 					300.0,
 					296.5,
@@ -2187,12 +2187,12 @@
 				19090.0,
 				7800.0
 			],
-			"title": "Продолжить путь"
+			"title": "@loc:episode1.nodes.farm_boundary__choice_0.title"
 		},
 		"farm_boundary__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Обследовать ферму",
+				"text": "@loc:episode1.nodes.farm_boundary__choice_1.data.text",
 				"rect": [
 					379.5,
 					155.5,
@@ -2205,7 +2205,7 @@
 				19090.0,
 				8090.0
 			],
-			"title": "Обследовать ферму"
+			"title": "@loc:episode1.nodes.farm_boundary__choice_1.title"
 		},
 		"forest_boundary": {
 			"type": "scene",
@@ -2215,10 +2215,10 @@
 				"art": "ep1_forest_village_1",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Батарея в машине Джека села недалеко от небольшого поселка, название которого он не знал. Джек забрал вещи и решил попытаться найти в нем безопасное место для ночлега, быстро темнело.",
+				"text": "@loc:episode1.nodes.forest_boundary.data.text",
 				"blocks": [
 					{
-						"text": "Батарея в машине Джека села недалеко от небольшого поселка, название которого он не знал. Джек забрал вещи и решил попытаться найти в нем безопасное место для ночлега, быстро темнело.",
+						"text": "@loc:episode1.nodes.forest_boundary.data.blocks.0.text",
 						"rect": [
 							11.0,
 							395.75,
@@ -2236,12 +2236,12 @@
 				22100.0,
 				6500.0
 			],
-			"title": "forest_boundary"
+			"title": "@loc:episode1.nodes.forest_boundary.title"
 		},
 		"forest_boundary__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжать по дороге",
+				"text": "@loc:episode1.nodes.forest_boundary__choice_0.data.text",
 				"rect": [
 					392.5,
 					96.5,
@@ -2254,12 +2254,12 @@
 				22490.0,
 				6500.0
 			],
-			"title": "Продолжать по дороге"
+			"title": "@loc:episode1.nodes.forest_boundary__choice_0.title"
 		},
 		"forest_boundary__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Укрыться в доме",
+				"text": "@loc:episode1.nodes.forest_boundary__choice_1.data.text",
 				"rect": [
 					553.0,
 					222.5,
@@ -2272,7 +2272,7 @@
 				22490.0,
 				6790.0
 			],
-			"title": "Укрыться в доме"
+			"title": "@loc:episode1.nodes.forest_boundary__choice_1.title"
 		},
 		"mainstreet_boundary": {
 			"type": "scene",
@@ -2282,7 +2282,7 @@
 				"art": "ep1_mainstreet_choice",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Медленно отойти назад\n\nПоймать машину и уехать\n\nПоймать машину до офиса\n\nПробежать сквозь зомби\n\nИдея, кажется, не самая удачная... С этими \nлюдьми явно что-то не так. Ох, да это же \nзомби!",
+				"text": "@loc:episode1.nodes.mainstreet_boundary.data.text",
 				"blocks": [],
 				"controls_art": "ep1_mainstreet_choice_controls"
 			},
@@ -2290,12 +2290,12 @@
 				15300.0,
 				3900.0
 			],
-			"title": "mainstreet_boundary"
+			"title": "@loc:episode1.nodes.mainstreet_boundary.title"
 		},
 		"mainstreet_boundary__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Пробежать сквозь зомби",
+				"text": "@loc:episode1.nodes.mainstreet_boundary__choice_0.data.text",
 				"rect": [
 					85.0,
 					123.0,
@@ -2307,12 +2307,12 @@
 				15690.0,
 				3900.0
 			],
-			"title": "Пробежать сквозь зомби"
+			"title": "@loc:episode1.nodes.mainstreet_boundary__choice_0.title"
 		},
 		"mainstreet_boundary__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Поймать машину до офиса",
+				"text": "@loc:episode1.nodes.mainstreet_boundary__choice_1.data.text",
 				"rect": [
 					85.0,
 					194.0,
@@ -2324,12 +2324,12 @@
 				15690.0,
 				4190.0
 			],
-			"title": "Поймать машину до офиса"
+			"title": "@loc:episode1.nodes.mainstreet_boundary__choice_1.title"
 		},
 		"mainstreet_boundary__choice_2": {
 			"type": "choice",
 			"data": {
-				"text": "Поймать машину и уехать",
+				"text": "@loc:episode1.nodes.mainstreet_boundary__choice_2.data.text",
 				"rect": [
 					85.0,
 					265.0,
@@ -2341,12 +2341,12 @@
 				15690.0,
 				4480.0
 			],
-			"title": "Поймать машину и уехать"
+			"title": "@loc:episode1.nodes.mainstreet_boundary__choice_2.title"
 		},
 		"mainstreet_boundary__choice_3": {
 			"type": "choice",
 			"data": {
-				"text": "Медленно отойти назад",
+				"text": "@loc:episode1.nodes.mainstreet_boundary__choice_3.data.text",
 				"rect": [
 					85.0,
 					336.0,
@@ -2358,7 +2358,7 @@
 				15690.0,
 				4770.0
 			],
-			"title": "Медленно отойти назад"
+			"title": "@loc:episode1.nodes.mainstreet_boundary__choice_3.title"
 		},
 		"taxi_boundary": {
 			"type": "scene",
@@ -2368,10 +2368,10 @@
 				"art": "ep1_taxi_entry_1",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "К огромному облегчению Джека, его друг, таксист Бен, оказался там, где обычно — \nждущим клиентов. Невероятно, что получилось его застать! Видя, что творится что-то \nнеладное, люди старались уехать прочь из города, от греха подальше, но не у всех были \nавтомобили.",
+				"text": "@loc:episode1.nodes.taxi_boundary.data.text",
 				"blocks": [
 					{
-						"text": "К огромному облегчению Джека, его друг, таксист Бен, оказался там, где обычно — ждущим клиентов. Невероятно, что получилось его застать! Видя, что творится что-то неладное, люди старались уехать прочь из города, от греха подальше, но не у всех были автомобили.",
+						"text": "@loc:episode1.nodes.taxi_boundary.data.blocks.0.text",
 						"rect": [
 							11.0,
 							371.75,
@@ -2388,18 +2388,18 @@
 				15300.0,
 				5200.0
 			],
-			"title": "taxi_boundary"
+			"title": "@loc:episode1.nodes.taxi_boundary.title"
 		},
 		"taxi_boundary__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.taxi_boundary__choice_0.data.text"
 			},
 			"position": [
 				15690.0,
 				5200.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.taxi_boundary__choice_0.title"
 		},
 		"taxi_escape_boundary": {
 			"type": "scene",
@@ -2409,10 +2409,10 @@
 				"art": "ep1_taxi_entry_1",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Да где же он? Здесь же был всегда... Неужели уже уехал? К огромному разочарованию \nДжека, его друга, таксиста Бена, на привычном месте не оказалось. Это значило, что \nмужчине необходимо было срочно придумать иной план к отступлению из так \nстремительно звереющего города.",
+				"text": "@loc:episode1.nodes.taxi_escape_boundary.data.text",
 				"blocks": [
 					{
-						"text": "Да где же он? Здесь же был всегда... Неужели уже уехал? К огромному разочарованию Джека, его друга, таксиста Бена, на привычном месте не оказалось. Это значило, что мужчине необходимо было срочно придумать иной план к отступлению из так стремительно звереющего города.",
+						"text": "@loc:episode1.nodes.taxi_escape_boundary.data.blocks.0.text",
 						"rect": [
 							11.0,
 							371.75,
@@ -2429,18 +2429,18 @@
 				20400.0,
 				9100.0
 			],
-			"title": "taxi_escape_boundary"
+			"title": "@loc:episode1.nodes.taxi_escape_boundary.title"
 		},
 		"taxi_escape_boundary__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.taxi_escape_boundary__choice_0.data.text"
 			},
 			"position": [
 				20790.0,
 				9100.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.taxi_escape_boundary__choice_0.title"
 		},
 		"suburb_boundary": {
 			"type": "scene",
@@ -2450,10 +2450,10 @@
 				"art": "ep1_dorvud_entry_1",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Джека высадили на окраине Дорвуда, маленького городишки, где в свое время жило всего лишь несколько тысяч жителей. Но теперь...",
+				"text": "@loc:episode1.nodes.suburb_boundary.data.text",
 				"blocks": [
 					{
-						"text": "Джека высадили на окраине Дорвуда, маленького городишки, где в свое время жило всего лишь несколько тысяч жителей. Но теперь...",
+						"text": "@loc:episode1.nodes.suburb_boundary.data.blocks.0.text",
 						"rect": [
 							11.0,
 							421.6,
@@ -2470,18 +2470,18 @@
 				20400.0,
 				10400.0
 			],
-			"title": "suburb_boundary"
+			"title": "@loc:episode1.nodes.suburb_boundary.title"
 		},
 		"suburb_boundary__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.suburb_boundary__choice_0.data.text"
 			},
 			"position": [
 				20790.0,
 				10400.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.suburb_boundary__choice_0.title"
 		},
 		"farm_entry_1": {
 			"type": "scene",
@@ -2491,10 +2491,10 @@
 				"art": "ep1_farm_entry_1",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Вокруг ни души, впереди — заброшенная ферма. Сгущается туман... Может быть, стоит \nпопробовать обследовать ферму, вдруг получится переждать окружающий хаос пару \nдней?",
+				"text": "@loc:episode1.nodes.farm_entry_1.data.text",
 				"blocks": [
 					{
-						"text": "Вокруг ни души, впереди — заброшенная ферма. Сгущается туман... Может быть, стоит попробовать обследовать ферму, вдруг получится переждать окружающий хаос пару дней?",
+						"text": "@loc:episode1.nodes.farm_entry_1.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.75,
@@ -2512,12 +2512,12 @@
 				0.0,
 				1300.0
 			],
-			"title": "farm_entry_1"
+			"title": "@loc:episode1.nodes.farm_entry_1.title"
 		},
 		"farm_entry_1__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить путь",
+				"text": "@loc:episode1.nodes.farm_entry_1__choice_0.data.text",
 				"rect": [
 					300.0,
 					296.5,
@@ -2530,12 +2530,12 @@
 				390.0,
 				1300.0
 			],
-			"title": "Продолжить путь"
+			"title": "@loc:episode1.nodes.farm_entry_1__choice_0.title"
 		},
 		"farm_entry_1__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Обследовать ферму",
+				"text": "@loc:episode1.nodes.farm_entry_1__choice_1.data.text",
 				"rect": [
 					379.5,
 					155.5,
@@ -2548,7 +2548,7 @@
 				390.0,
 				1590.0
 			],
-			"title": "Обследовать ферму"
+			"title": "@loc:episode1.nodes.farm_entry_1__choice_1.title"
 		},
 		"farm_entry_2": {
 			"type": "scene",
@@ -2558,10 +2558,10 @@
 				"art": "ep1_farm_entry_1",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Джек решил отказаться, и Бен высадил его около заброшенной фермы или завода, \nточно было не разглядеть. Теперь стоило продумать дальнейшие действия.",
+				"text": "@loc:episode1.nodes.farm_entry_2.data.text",
 				"blocks": [
 					{
-						"text": "Джек решил отказаться, и Бен высадил его около заброшенной фермы или завода, точно было не разглядеть. Теперь стоило продумать дальнейшие действия.",
+						"text": "@loc:episode1.nodes.farm_entry_2.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.75,
@@ -2579,12 +2579,12 @@
 				22100.0,
 				7800.0
 			],
-			"title": "farm_entry_2"
+			"title": "@loc:episode1.nodes.farm_entry_2.title"
 		},
 		"farm_entry_2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить путь",
+				"text": "@loc:episode1.nodes.farm_entry_2__choice_0.data.text",
 				"rect": [
 					300.0,
 					296.5,
@@ -2597,12 +2597,12 @@
 				22490.0,
 				7800.0
 			],
-			"title": "Продолжить путь"
+			"title": "@loc:episode1.nodes.farm_entry_2__choice_0.title"
 		},
 		"farm_entry_2__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Обследовать ферму",
+				"text": "@loc:episode1.nodes.farm_entry_2__choice_1.data.text",
 				"rect": [
 					379.5,
 					155.5,
@@ -2615,7 +2615,7 @@
 				22490.0,
 				8090.0
 			],
-			"title": "Обследовать ферму"
+			"title": "@loc:episode1.nodes.farm_entry_2__choice_1.title"
 		},
 		"farm_inside": {
 			"type": "scene",
@@ -2625,10 +2625,10 @@
 				"art": "ep1_farm_inside",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "На одном форуме Джек прочитал, посчитав это сказкой в свое время, что животные с \n«синдромом зомби» (как там говорилось) в отсутствие внешних раздражителей впадают в \n«спячку», застывают без движения и могут поджидать неосторожную жертву сколь \nугодно долго. Откуда появилась эта информация и что это за синдром — никто не знал.",
+				"text": "@loc:episode1.nodes.farm_inside.data.text",
 				"blocks": [
 					{
-						"text": "На одном форуме Джек прочитал, посчитав это сказкой в свое время, что животные с «синдромом зомби» (как там говорилось) в отсутствие внешних раздражителей впадают в «спячку», застывают без движения и могут поджидать неосторожную жертву сколь угодно долго. Откуда появилась эта информация и что это за синдром — никто не знал.",
+						"text": "@loc:episode1.nodes.farm_inside.data.blocks.0.text",
 						"rect": [
 							11.0,
 							367.75,
@@ -2646,12 +2646,12 @@
 				20400.0,
 				11700.0
 			],
-			"title": "farm_inside"
+			"title": "@loc:episode1.nodes.farm_inside.title"
 		},
 		"farm_inside__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Обследовать дальнюю часть",
+				"text": "@loc:episode1.nodes.farm_inside__choice_0.data.text",
 				"rect": [
 					395.0,
 					43.0,
@@ -2664,12 +2664,12 @@
 				20790.0,
 				11700.0
 			],
-			"title": "Обследовать дальнюю часть"
+			"title": "@loc:episode1.nodes.farm_inside__choice_0.title"
 		},
 		"farm_inside__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Осмотреть ферму тихо",
+				"text": "@loc:episode1.nodes.farm_inside__choice_1.data.text",
 				"rect": [
 					641.0,
 					159.0,
@@ -2682,7 +2682,7 @@
 				20790.0,
 				11990.0
 			],
-			"title": "Осмотреть ферму тихо"
+			"title": "@loc:episode1.nodes.farm_inside__choice_1.title"
 		},
 		"farm_search": {
 			"type": "scene",
@@ -2692,10 +2692,10 @@
 				"art": "ep1_farm_search",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Любой неосторожный звук может пробудить мертвецов, возможно находящихся на ферме. \nДжек старался даже не дышать, он осмотрел уже почти половину фермы, осталась лишь \nдальняя ее часть...",
+				"text": "@loc:episode1.nodes.farm_search.data.text",
 				"blocks": [
 					{
-						"text": "Любой неосторожный звук может пробудить мертвецов, возможно находящихся на ферме. Джек старался даже не дышать, он осмотрел уже почти половину фермы, осталась лишь дальняя ее часть...",
+						"text": "@loc:episode1.nodes.farm_search.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.75,
@@ -2712,18 +2712,18 @@
 				22100.0,
 				9100.0
 			],
-			"title": "farm_search"
+			"title": "@loc:episode1.nodes.farm_search.title"
 		},
 		"farm_search__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.farm_search__choice_0.data.text"
 			},
 			"position": [
 				22490.0,
 				9100.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.farm_search__choice_0.title"
 		},
 		"farm_leave": {
 			"type": "scene",
@@ -2733,10 +2733,10 @@
 				"art": "ep1_farm_leave",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Здесь будет довольно непросто оставаться длительное время. Наверное, лучше двигаться \nдальше, решил Джек. Все темные углы этого места не проверить, а постоянно \nвздрагивать от любого шороха — так можно и с ума сойти.",
+				"text": "@loc:episode1.nodes.farm_leave.data.text",
 				"blocks": [
 					{
-						"text": "Здесь будет довольно непросто оставаться длительное время. Наверное, лучше двигаться дальше, решил Джек. Все темные углы этого места не проверить, а постоянно вздрагивать от любого шороха — так можно и с ума сойти.",
+						"text": "@loc:episode1.nodes.farm_leave.data.blocks.0.text",
 						"rect": [
 							11.0,
 							396.7,
@@ -2753,18 +2753,18 @@
 				23800.0,
 				6500.0
 			],
-			"title": "farm_leave"
+			"title": "@loc:episode1.nodes.farm_leave.title"
 		},
 		"farm_leave__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.farm_leave__choice_0.data.text"
 			},
 			"position": [
 				24190.0,
 				6500.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.farm_leave__choice_0.title"
 		},
 		"farm_noise": {
 			"type": "scene",
@@ -2774,10 +2774,10 @@
 				"art": "ep1_farm_noise",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Черт! Под ноги Джеку попалась какая-то банка, и он ее по неосторожности задел!",
+				"text": "@loc:episode1.nodes.farm_noise.data.text",
 				"blocks": [
 					{
-						"text": "Черт! Под ноги Джеку попалась какая-то банка, и он ее по неосторожности задел!",
+						"text": "@loc:episode1.nodes.farm_noise.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.75,
@@ -2795,18 +2795,18 @@
 				22100.0,
 				10400.0
 			],
-			"title": "farm_noise"
+			"title": "@loc:episode1.nodes.farm_noise.title"
 		},
 		"farm_noise__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.farm_noise__choice_0.data.text"
 			},
 			"position": [
 				22490.0,
 				10400.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.farm_noise__choice_0.title"
 		},
 		"farm_sound": {
 			"type": "scene",
@@ -2816,10 +2816,10 @@
 				"art": "ep1_farm_sound",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Звук? Что это за звук?!\n\nЧерт! Под ноги Джеку попалась какая-то банка, и он ее по неосторожности задел!",
+				"text": "@loc:episode1.nodes.farm_sound.data.text",
 				"blocks": [
 					{
-						"text": "Звук? Что это за звук?!",
+						"text": "@loc:episode1.nodes.farm_sound.data.blocks.0.text",
 						"rect": [
 							11.0,
 							165.75,
@@ -2831,7 +2831,7 @@
 						"path": "Mov"
 					},
 					{
-						"text": "Черт! Под ноги Джеку попалась какая-то банка, и он ее по неосторожности задел!",
+						"text": "@loc:episode1.nodes.farm_sound.data.blocks.1.text",
 						"rect": [
 							11.0,
 							5.75,
@@ -2849,18 +2849,18 @@
 				23800.0,
 				7800.0
 			],
-			"title": "farm_sound"
+			"title": "@loc:episode1.nodes.farm_sound.title"
 		},
 		"farm_sound__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.farm_sound__choice_0.data.text"
 			},
 			"position": [
 				24190.0,
 				7800.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.farm_sound__choice_0.title"
 		},
 		"farm_awake": {
 			"type": "scene",
@@ -2870,10 +2870,10 @@
 				"art": "ep1_farm_awake",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Именно этого Джек боялся больше всего. Заброшенные строения кишели мертвецами. И \nтеперь они пробуждались...\n\nЗвук? Что это за звук?!\n\nЧерт! Под ноги Джеку попалась какая-то банка, и он ее по неосторожности задел!",
+				"text": "@loc:episode1.nodes.farm_awake.data.text",
 				"blocks": [
 					{
-						"text": "Именно этого Джек боялся больше всего. Заброшенные строения кишели мертвецами. И теперь они пробуждались...",
+						"text": "@loc:episode1.nodes.farm_awake.data.blocks.0.text",
 						"rect": [
 							11.0,
 							325.75,
@@ -2885,7 +2885,7 @@
 						"path": "Mov"
 					},
 					{
-						"text": "Звук? Что это за звук?!",
+						"text": "@loc:episode1.nodes.farm_awake.data.blocks.1.text",
 						"rect": [
 							11.0,
 							165.75,
@@ -2897,7 +2897,7 @@
 						"path": "Mov"
 					},
 					{
-						"text": "Черт! Под ноги Джеку попалась какая-то банка, и он ее по неосторожности задел!",
+						"text": "@loc:episode1.nodes.farm_awake.data.blocks.2.text",
 						"rect": [
 							11.0,
 							5.75,
@@ -2915,18 +2915,18 @@
 				25500.0,
 				7800.0
 			],
-			"title": "farm_awake"
+			"title": "@loc:episode1.nodes.farm_awake.title"
 		},
 		"farm_awake__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.farm_awake__choice_0.data.text"
 			},
 			"position": [
 				25890.0,
 				7800.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.farm_awake__choice_0.title"
 		},
 		"farm_chase": {
 			"type": "scene",
@@ -2945,18 +2945,18 @@
 				27200.0,
 				6500.0
 			],
-			"title": "farm_chase"
+			"title": "@loc:episode1.nodes.farm_chase.title"
 		},
 		"farm_chase__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.farm_chase__choice_0.data.text"
 			},
 			"position": [
 				27590.0,
 				6500.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.farm_chase__choice_0.title"
 		},
 		"forest_road": {
 			"type": "scene",
@@ -2966,10 +2966,10 @@
 				"art": "ep1_forest_road",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Беспрепятственно преодолев полосу тумана, Джек вышел на хорошую проселочную \nдорогу. Теперь оставалось решить что делать дальше: пойти прямо по ней, где он будет \nвиден издалека или свернуть прямиком в лес?",
+				"text": "@loc:episode1.nodes.forest_road.data.text",
 				"blocks": [
 					{
-						"text": "Беспрепятственно преодолев полосу тумана, Джек вышел на хорошую проселочную дорогу. Теперь оставалось решить что делать дальше: пойти прямо по ней, где он будет виден издалека или свернуть прямиком в лес?",
+						"text": "@loc:episode1.nodes.forest_road.data.blocks.0.text",
 						"rect": [
 							11.0,
 							392.75,
@@ -2986,18 +2986,18 @@
 				20400.0,
 				13000.0
 			],
-			"title": "forest_road"
+			"title": "@loc:episode1.nodes.forest_road.title"
 		},
 		"forest_road__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.forest_road__choice_0.data.text"
 			},
 			"position": [
 				20790.0,
 				13000.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.forest_road__choice_0.title"
 		},
 		"forest_choice": {
 			"type": "scene",
@@ -3007,35 +3007,35 @@
 				"art": "ep1_forest_road",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Каково будет решение Джека?"
+				"text": "@loc:episode1.nodes.forest_choice.data.text"
 			},
 			"position": [
 				22100.0,
 				11700.0
 			],
-			"title": "forest_choice"
+			"title": "@loc:episode1.nodes.forest_choice.title"
 		},
 		"forest_choice__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжать движение"
+				"text": "@loc:episode1.nodes.forest_choice__choice_0.data.text"
 			},
 			"position": [
 				22490.0,
 				11700.0
 			],
-			"title": "Продолжать движение"
+			"title": "@loc:episode1.nodes.forest_choice__choice_0.title"
 		},
 		"forest_choice__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Свернуть в лес"
+				"text": "@loc:episode1.nodes.forest_choice__choice_1.data.text"
 			},
 			"position": [
 				22490.0,
 				11990.0
 			],
-			"title": "Свернуть в лес"
+			"title": "@loc:episode1.nodes.forest_choice__choice_1.title"
 		},
 		"forest_walk": {
 			"type": "scene",
@@ -3045,10 +3045,10 @@
 				"art": "ep1_forest_walk",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Дорога все тянулась и тянулась. Джек периодически замирал, слушая окружающие звуки. \nИногда приходилось прятаться за ближайщим деревом, пропуская бредущего мимо \nмертвеца. Джек все больше привыкал к жизни, где лишний шум может стоить ему \nжизни...",
+				"text": "@loc:episode1.nodes.forest_walk.data.text",
 				"blocks": [
 					{
-						"text": "Дорога все тянулась и тянулась. Джек периодически замирал, слушая окружающие звуки. Иногда приходилось прятаться за ближайщим деревом, пропуская бредущего мимо мертвеца. Джек все больше привыкал к жизни, где лишний шум может стоить ему жизни...",
+						"text": "@loc:episode1.nodes.forest_walk.data.blocks.0.text",
 						"rect": [
 							11.0,
 							369.75,
@@ -3065,18 +3065,18 @@
 				23800.0,
 				9100.0
 			],
-			"title": "forest_walk"
+			"title": "@loc:episode1.nodes.forest_walk.title"
 		},
 		"forest_walk__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.forest_walk__choice_0.data.text"
 			},
 			"position": [
 				24190.0,
 				9100.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.forest_walk__choice_0.title"
 		},
 		"forest_village_1": {
 			"type": "scene",
@@ -3086,10 +3086,10 @@
 				"art": "ep1_forest_village_1",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Джек вышел к окраинам небольшого поселка, с виду пустынного, как и все остальные. Стоило искать ночлег, скоро стемнеет и продолжать движение будет сродни самоубийству.",
+				"text": "@loc:episode1.nodes.forest_village_1.data.text",
 				"blocks": [
 					{
-						"text": "Джек вышел к окраинам небольшого поселка, с виду пустынного, как и все остальные. Стоило искать ночлег, скоро стемнеет и продолжать движение будет сродни самоубийству.",
+						"text": "@loc:episode1.nodes.forest_village_1.data.blocks.0.text",
 						"rect": [
 							11.0,
 							421.75,
@@ -3107,12 +3107,12 @@
 				25500.0,
 				9100.0
 			],
-			"title": "forest_village_1"
+			"title": "@loc:episode1.nodes.forest_village_1.title"
 		},
 		"forest_village_1__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжать по дороге",
+				"text": "@loc:episode1.nodes.forest_village_1__choice_0.data.text",
 				"rect": [
 					392.5,
 					96.5,
@@ -3125,12 +3125,12 @@
 				25890.0,
 				9100.0
 			],
-			"title": "Продолжать по дороге"
+			"title": "@loc:episode1.nodes.forest_village_1__choice_0.title"
 		},
 		"forest_village_1__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Укрыться в доме",
+				"text": "@loc:episode1.nodes.forest_village_1__choice_1.data.text",
 				"rect": [
 					553.0,
 					222.5,
@@ -3143,7 +3143,7 @@
 				25890.0,
 				9390.0
 			],
-			"title": "Укрыться в доме"
+			"title": "@loc:episode1.nodes.forest_village_1__choice_1.title"
 		},
 		"forest_village_2": {
 			"type": "scene",
@@ -3153,10 +3153,10 @@
 				"art": "ep1_forest_village_1",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Батарея в машине Джека села недалеко от небольшого поселка, название которого он не знал. Джек забрал вещи и решил попытаться найти в нем безопасное место для ночлега, быстро темнело.",
+				"text": "@loc:episode1.nodes.forest_village_2.data.text",
 				"blocks": [
 					{
-						"text": "Батарея в машине Джека села недалеко от небольшого поселка, название которого он не знал. Джек забрал вещи и решил попытаться найти в нем безопасное место для ночлега, быстро темнело.",
+						"text": "@loc:episode1.nodes.forest_village_2.data.blocks.0.text",
 						"rect": [
 							11.0,
 							395.75,
@@ -3174,12 +3174,12 @@
 				0.0,
 				2600.0
 			],
-			"title": "forest_village_2"
+			"title": "@loc:episode1.nodes.forest_village_2.title"
 		},
 		"forest_village_2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжать по дороге",
+				"text": "@loc:episode1.nodes.forest_village_2__choice_0.data.text",
 				"rect": [
 					392.5,
 					96.5,
@@ -3192,12 +3192,12 @@
 				390.0,
 				2600.0
 			],
-			"title": "Продолжать по дороге"
+			"title": "@loc:episode1.nodes.forest_village_2__choice_0.title"
 		},
 		"forest_village_2__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Укрыться в доме",
+				"text": "@loc:episode1.nodes.forest_village_2__choice_1.data.text",
 				"rect": [
 					553.0,
 					222.5,
@@ -3210,7 +3210,7 @@
 				390.0,
 				2890.0
 			],
-			"title": "Укрыться в доме"
+			"title": "@loc:episode1.nodes.forest_village_2__choice_1.title"
 		},
 		"forest_house": {
 			"type": "scene",
@@ -3220,10 +3220,10 @@
 				"art": "ep1_forest_house",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Джек начал медленно пробираться к ближайшему домику, стараясь не привлекать \nвнимания бродивших вокруг мертвецов.",
+				"text": "@loc:episode1.nodes.forest_house.data.text",
 				"blocks": [
 					{
-						"text": "Джек начал медленно пробираться к ближайшему домику, стараясь не привлекать внимания бродивших вокруг мертвецов.",
+						"text": "@loc:episode1.nodes.forest_house.data.blocks.0.text",
 						"rect": [
 							11.0,
 							420.75,
@@ -3240,18 +3240,18 @@
 				23800.0,
 				10400.0
 			],
-			"title": "forest_house"
+			"title": "@loc:episode1.nodes.forest_house.title"
 		},
 		"forest_house__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.forest_house__choice_0.data.text"
 			},
 			"position": [
 				24190.0,
 				10400.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.forest_house__choice_0.title"
 		},
 		"forest_cellar": {
 			"type": "scene",
@@ -3261,10 +3261,10 @@
 				"art": "ep1_forest_cellar",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "С замиранием сердца исследовав дом, Джек не нашел признаков опасности и решил в \nитоге переночевать в пустом погребе, прихватив несколько одеял.",
+				"text": "@loc:episode1.nodes.forest_cellar.data.text",
 				"blocks": [
 					{
-						"text": "С замиранием сердца исследовав дом, Джек не нашел признаков опасности и решил в итоге переночевать в пустом погребе, прихватив несколько одеял.",
+						"text": "@loc:episode1.nodes.forest_cellar.data.blocks.0.text",
 						"rect": [
 							11.0,
 							419.75,
@@ -3281,18 +3281,18 @@
 				25500.0,
 				10400.0
 			],
-			"title": "forest_cellar"
+			"title": "@loc:episode1.nodes.forest_cellar.title"
 		},
 		"forest_cellar__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.forest_cellar__choice_0.data.text"
 			},
 			"position": [
 				25890.0,
 				10400.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.forest_cellar__choice_0.title"
 		},
 		"forest_shelter_1": {
 			"type": "scene",
@@ -3302,10 +3302,10 @@
 				"art": "ep1_farm_chase",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Закрыв дверь в погреб, Джек устало закрыл глаза. Каждое лишнее движение уставших \nног отзывалось тупой болью... Кажется, что он преодолел пешком за сегодня расстояние \nбольшее, чем за всю свою жизнь.",
+				"text": "@loc:episode1.nodes.forest_shelter_1.data.text",
 				"blocks": [
 					{
-						"text": "Закрыв дверь в погреб, Джек устало закрыл глаза. Каждое лишнее движение уставших ног отзывалось тупой болью... Кажется, что он преодолел пешком за сегодня расстояние большее, чем за всю свою жизнь.",
+						"text": "@loc:episode1.nodes.forest_shelter_1.data.blocks.0.text",
 						"rect": [
 							32.0,
 							24.75,
@@ -3322,18 +3322,18 @@
 				27200.0,
 				7800.0
 			],
-			"title": "forest_shelter_1"
+			"title": "@loc:episode1.nodes.forest_shelter_1.title"
 		},
 		"forest_shelter_1__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.forest_shelter_1__choice_0.data.text"
 			},
 			"position": [
 				27590.0,
 				7800.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.forest_shelter_1__choice_0.title"
 		},
 		"forest_shelter_2": {
 			"type": "scene",
@@ -3343,10 +3343,10 @@
 				"art": "ep1_farm_chase",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "«Невероятно! Я, обычный офисный работник, умудрился \nвыжить в этом аду!\nТеперь мне стоит подумать о том, что же делать \nдальше. Постараюсь найти людей, присоединиться к ним. \nНе думаю, что смогу в одиночку...»\n\nЗакрыв дверь в погреб, Джек устало закрыл глаза. Каждое лишнее движение уставших \nног отзывалось тупой болью... Кажется, что он преодолел пешком за сегодня расстояние \nбольшее, чем за всю свою жизнь.",
+				"text": "@loc:episode1.nodes.forest_shelter_2.data.text",
 				"blocks": [
 					{
-						"text": "«Невероятно! Я, обычный офисный работник, умудрился выжить в этом аду! Теперь мне стоит подумать о том, что же делать дальше. Постараюсь найти людей, присоединиться к ним. Не думаю, что смогу в одиночку...»",
+						"text": "@loc:episode1.nodes.forest_shelter_2.data.blocks.0.text",
 						"rect": [
 							19.0,
 							190.45,
@@ -3358,7 +3358,7 @@
 						"path": "Mov"
 					},
 					{
-						"text": "Закрыв дверь в погреб, Джек устало закрыл глаза. Каждое лишнее движение уставших ног отзывалось тупой болью... Кажется, что он преодолел пешком за сегодня расстояние большее, чем за всю свою жизнь.",
+						"text": "@loc:episode1.nodes.forest_shelter_2.data.blocks.1.text",
 						"rect": [
 							32.0,
 							24.75,
@@ -3375,18 +3375,18 @@
 				28900.0,
 				2600.0
 			],
-			"title": "forest_shelter_2"
+			"title": "@loc:episode1.nodes.forest_shelter_2.title"
 		},
 		"forest_shelter_2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.forest_shelter_2__choice_0.data.text"
 			},
 			"position": [
 				29290.0,
 				2600.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.forest_shelter_2__choice_0.title"
 		},
 		"forest_shelter_3": {
 			"type": "scene",
@@ -3396,10 +3396,10 @@
 				"art": "ep1_farm_chase",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Дневник Джека. 15.06\n\n«Невероятно! Я, обычный офисный работник, умудрился \nвыжить в этом аду!\nТеперь мне стоит подумать о том, что же делать \nдальше. Постараюсь найти людей, присоединиться к ним. \nНе думаю, что смогу в одиночку...»\n\nЗакрыв дверь в погреб, Джек устало закрыл глаза. Каждое лишнее движение уставших \nног отзывалось тупой болью... Кажется, что он преодолел пешком за сегодня расстояние \nбольшее, чем за всю свою жизнь.",
+				"text": "@loc:episode1.nodes.forest_shelter_3.data.text",
 				"blocks": [
 					{
-						"text": "Дневник Джека. 15.06",
+						"text": "@loc:episode1.nodes.forest_shelter_3.data.blocks.0.text",
 						"rect": [
 							449.0,
 							425.85,
@@ -3411,7 +3411,7 @@
 						"path": "Mov"
 					},
 					{
-						"text": "«Невероятно! Я, обычный офисный работник, умудрился выжить в этом аду! Теперь мне стоит подумать о том, что же делать дальше. Постараюсь найти людей, присоединиться к ним. Не думаю, что смогу в одиночку...»",
+						"text": "@loc:episode1.nodes.forest_shelter_3.data.blocks.1.text",
 						"rect": [
 							19.0,
 							190.45,
@@ -3423,7 +3423,7 @@
 						"path": "Mov"
 					},
 					{
-						"text": "Закрыв дверь в погреб, Джек устало закрыл глаза. Каждое лишнее движение уставших ног отзывалось тупой болью... Кажется, что он преодолел пешком за сегодня расстояние большее, чем за всю свою жизнь.",
+						"text": "@loc:episode1.nodes.forest_shelter_3.data.blocks.2.text",
 						"rect": [
 							32.0,
 							24.75,
@@ -3440,18 +3440,18 @@
 				30600.0,
 				0.0
 			],
-			"title": "forest_shelter_3"
+			"title": "@loc:episode1.nodes.forest_shelter_3.title"
 		},
 		"forest_shelter_3__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.forest_shelter_3__choice_0.data.text"
 			},
 			"position": [
 				30990.0,
 				0.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.forest_shelter_3__choice_0.title"
 		},
 		"forest_marauder_1": {
 			"type": "scene",
@@ -3468,18 +3468,18 @@
 				23800.0,
 				11700.0
 			],
-			"title": "forest_marauder_1"
+			"title": "@loc:episode1.nodes.forest_marauder_1.title"
 		},
 		"forest_marauder_1__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.forest_marauder_1__choice_0.data.text"
 			},
 			"position": [
 				24190.0,
 				11700.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.forest_marauder_1__choice_0.title"
 		},
 		"forest_marauder_2": {
 			"type": "scene",
@@ -3496,18 +3496,18 @@
 				25500.0,
 				11700.0
 			],
-			"title": "forest_marauder_2"
+			"title": "@loc:episode1.nodes.forest_marauder_2.title"
 		},
 		"forest_marauder_2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.forest_marauder_2__choice_0.data.text"
 			},
 			"position": [
 				25890.0,
 				11700.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.forest_marauder_2__choice_0.title"
 		},
 		"forest_marauder_3": {
 			"type": "scene",
@@ -3517,10 +3517,10 @@
 				"art": "ep1_forest_marauder_3",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Джек не услышал приглушенного глушителем выстрела снайперской винтовки и не \nпочувствовал попадания в него десяти граммов свинца. Пуля угодила в голову, и ему \nстало все равно, что мародеров заинтересовал его рюкзак...",
+				"text": "@loc:episode1.nodes.forest_marauder_3.data.text",
 				"blocks": [
 					{
-						"text": "Джек не услышал приглушенного глушителем выстрела снайперской винтовки и не почувствовал попадания в него десяти граммов свинца. Пуля угодила в голову, и ему стало все равно, что мародеров заинтересовал его рюкзак...",
+						"text": "@loc:episode1.nodes.forest_marauder_3.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.75,
@@ -3537,18 +3537,18 @@
 				27200.0,
 				9100.0
 			],
-			"title": "forest_marauder_3"
+			"title": "@loc:episode1.nodes.forest_marauder_3.title"
 		},
 		"forest_marauder_3__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.forest_marauder_3__choice_0.data.text"
 			},
 			"position": [
 				27590.0,
 				9100.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.forest_marauder_3__choice_0.title"
 		},
 		"forest_enter": {
 			"type": "scene",
@@ -3558,10 +3558,10 @@
 				"art": "ep1_forest_enter",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Джек свернул в лес и пошел, как он думал, в направлении ближайшего населенного \nпункта. Следовало торопиться: скоро стемнеет, и шансы выйти из леса живым будут \nтаять с каждой минутой.",
+				"text": "@loc:episode1.nodes.forest_enter.data.text",
 				"blocks": [
 					{
-						"text": "Джек свернул в лес и пошел, как он думал, в направлении ближайшего населенного пункта. Следовало торопиться: скоро стемнеет, и шансы выйти из леса живым будут таять с каждой минутой.",
+						"text": "@loc:episode1.nodes.forest_enter.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.75,
@@ -3578,18 +3578,18 @@
 				23800.0,
 				13000.0
 			],
-			"title": "forest_enter"
+			"title": "@loc:episode1.nodes.forest_enter.title"
 		},
 		"forest_enter__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.forest_enter__choice_0.data.text"
 			},
 			"position": [
 				24190.0,
 				13000.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.forest_enter__choice_0.title"
 		},
 		"forest_lost": {
 			"type": "scene",
@@ -3599,10 +3599,10 @@
 				"art": "ep1_forest_lost",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Через час Джек понял, что совсем заблудился и не может определить направление на \nДорвуд. Небо заволокло тучами, неумолимо приближался вечер... Куда дальше? Через \nнесколько часов здесь будет не разглядеть ни зги.",
+				"text": "@loc:episode1.nodes.forest_lost.data.text",
 				"blocks": [
 					{
-						"text": "Через час Джек понял, что совсем заблудился и не может определить направление на Дорвуд. Небо заволокло тучами, неумолимо приближался вечер... Куда дальше? Через несколько часов здесь будет не разглядеть ни зги.",
+						"text": "@loc:episode1.nodes.forest_lost.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.75,
@@ -3620,12 +3620,12 @@
 				25500.0,
 				13000.0
 			],
-			"title": "forest_lost"
+			"title": "@loc:episode1.nodes.forest_lost.title"
 		},
 		"forest_lost__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Выйти к Дорвуду",
+				"text": "@loc:episode1.nodes.forest_lost__choice_0.data.text",
 				"rect": [
 					480.5,
 					419.5,
@@ -3638,12 +3638,12 @@
 				25890.0,
 				13000.0
 			],
-			"title": "Выйти к Дорвуду"
+			"title": "@loc:episode1.nodes.forest_lost__choice_0.title"
 		},
 		"forest_lost__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Искать путь в лесу",
+				"text": "@loc:episode1.nodes.forest_lost__choice_1.data.text",
 				"rect": [
 					277.5,
 					334.5,
@@ -3656,7 +3656,7 @@
 				25890.0,
 				13290.0
 			],
-			"title": "Искать путь в лесу"
+			"title": "@loc:episode1.nodes.forest_lost__choice_1.title"
 		},
 		"forest_horde": {
 			"type": "scene",
@@ -3666,10 +3666,10 @@
 				"art": "ep1_forest_horde",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Впереди вдруг послышались многочисленные шаги и рычание, и Джек увидел \nприближающуюся толпу мертвецов. Откуда она взялась в лесу?! В панике Джек пытается \nзабраться на ближайшее дерево, но ноги все время соскальзывают с влажной коры.",
+				"text": "@loc:episode1.nodes.forest_horde.data.text",
 				"blocks": [
 					{
-						"text": "Впереди вдруг послышались многочисленные шаги и рычание, и Джек увидел приближающуюся толпу мертвецов. Откуда она взялась в лесу?! В панике Джек пытается забраться на ближайшее дерево, но ноги все время соскальзывают с влажной коры.",
+						"text": "@loc:episode1.nodes.forest_horde.data.blocks.0.text",
 						"rect": [
 							11.0,
 							393.75,
@@ -3687,18 +3687,18 @@
 				27200.0,
 				10400.0
 			],
-			"title": "forest_horde"
+			"title": "@loc:episode1.nodes.forest_horde.title"
 		},
 		"forest_horde__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.forest_horde__choice_0.data.text"
 			},
 			"position": [
 				27590.0,
 				10400.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.forest_horde__choice_0.title"
 		},
 		"forest_caught": {
 			"type": "scene",
@@ -3708,10 +3708,10 @@
 				"art": "ep1_forest_caught",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Внезапно что-то схватило Джека за ногу. От неожиданности он упал и в ужасе увидел \nперед собой безногого мертвеца, тянущегося к нему. Джек вырвался и, не вставая, \nпопытался отползти от жуткого монстра. Сзади послышалось утробное рычание... \nМертвецы были совсем рядом.",
+				"text": "@loc:episode1.nodes.forest_caught.data.text",
 				"blocks": [
 					{
-						"text": "Внезапно что-то схватило Джека за ногу. От неожиданности он упал и в ужасе увидел перед собой безногого мертвеца, тянущегося к нему. Джек вырвался и, не вставая, попытался отползти от жуткого монстра. Сзади послышалось утробное рычание... Мертвецы были совсем рядом.",
+						"text": "@loc:episode1.nodes.forest_caught.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.75,
@@ -3729,18 +3729,18 @@
 				28900.0,
 				3900.0
 			],
-			"title": "forest_caught"
+			"title": "@loc:episode1.nodes.forest_caught.title"
 		},
 		"forest_caught__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.forest_caught__choice_0.data.text"
 			},
 			"position": [
 				29290.0,
 				3900.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.forest_caught__choice_0.title"
 		},
 		"taxi_entry_1": {
 			"type": "scene",
@@ -3750,10 +3750,10 @@
 				"art": "ep1_taxi_entry_1",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "К огромному облегчению Джека, его друг, таксист Бен, оказался там, где обычно — \nждущим клиентов. Невероятно, что получилось его застать! Видя, что творится что-то \nнеладное, люди старались уехать прочь из города, от греха подальше, но не у всех были \nавтомобили.",
+				"text": "@loc:episode1.nodes.taxi_entry_1.data.text",
 				"blocks": [
 					{
-						"text": "К огромному облегчению Джека, его друг, таксист Бен, оказался там, где обычно — ждущим клиентов. Невероятно, что получилось его застать! Видя, что творится что-то неладное, люди старались уехать прочь из города, от греха подальше, но не у всех были автомобили.",
+						"text": "@loc:episode1.nodes.taxi_entry_1.data.blocks.0.text",
 						"rect": [
 							11.0,
 							371.75,
@@ -3770,18 +3770,18 @@
 				0.0,
 				3900.0
 			],
-			"title": "taxi_entry_1"
+			"title": "@loc:episode1.nodes.taxi_entry_1.title"
 		},
 		"taxi_entry_1__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.taxi_entry_1__choice_0.data.text"
 			},
 			"position": [
 				390.0,
 				3900.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.taxi_entry_1__choice_0.title"
 		},
 		"taxi_entry_2": {
 			"type": "scene",
@@ -3791,10 +3791,10 @@
 				"art": "ep1_taxi_entry_1",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Да где же он? Здесь же был всегда... Неужели уже уехал? К огромному разочарованию \nДжека, его друга, таксиста Бена, на привычном месте не оказалось. Это значило, что \nмужчине необходимо было срочно придумать иной план к отступлению из так \nстремительно звереющего города.",
+				"text": "@loc:episode1.nodes.taxi_entry_2.data.text",
 				"blocks": [
 					{
-						"text": "Да где же он? Здесь же был всегда... Неужели уже уехал? К огромному разочарованию Джека, его друга, таксиста Бена, на привычном месте не оказалось. Это значило, что мужчине необходимо было срочно придумать иной план к отступлению из так стремительно звереющего города.",
+						"text": "@loc:episode1.nodes.taxi_entry_2.data.blocks.0.text",
 						"rect": [
 							11.0,
 							371.75,
@@ -3811,18 +3811,18 @@
 				0.0,
 				5200.0
 			],
-			"title": "taxi_entry_2"
+			"title": "@loc:episode1.nodes.taxi_entry_2.title"
 		},
 		"taxi_entry_2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.taxi_entry_2__choice_0.data.text"
 			},
 			"position": [
 				390.0,
 				5200.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.taxi_entry_2__choice_0.title"
 		},
 		"taxi_depart": {
 			"type": "scene",
@@ -3832,10 +3832,10 @@
 				"art": "ep1_taxi_depart",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "К счастью, до окраин хаос из центра еще не добрался, и такси практически \nбеспрепятственно покидало город. Еще один поворот, и Нью-Таун останется позади \nДжека.",
+				"text": "@loc:episode1.nodes.taxi_depart.data.text",
 				"blocks": [
 					{
-						"text": "К счастью, до окраин хаос из центра еще не добрался, и такси практически беспрепятственно покидало город. Еще один поворот, и Нью-Таун останется позади Джека.",
+						"text": "@loc:episode1.nodes.taxi_depart.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.75,
@@ -3852,18 +3852,18 @@
 				17000.0,
 				6500.0
 			],
-			"title": "taxi_depart"
+			"title": "@loc:episode1.nodes.taxi_depart.title"
 		},
 		"taxi_depart__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.taxi_depart__choice_0.data.text"
 			},
 			"position": [
 				17390.0,
 				6500.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.taxi_depart__choice_0.title"
 		},
 		"taxi_checkpoint": {
 			"type": "scene",
@@ -3873,10 +3873,10 @@
 				"art": "ep1_taxi_checkpoint",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "На выезде из города поголовно проверяли людей: часть куда-то уводили, слышались \nвыстрелы, а в скопившемся автомобильном заторе царило полное непонимание и страх. Но \nв конце концов Джеку с таксистом удалось-таки преодолеть военный заслон.",
+				"text": "@loc:episode1.nodes.taxi_checkpoint.data.text",
 				"blocks": [
 					{
-						"text": "На выезде из города поголовно проверяли людей: часть куда-то уводили, слышались выстрелы, а в скопившемся автомобильном заторе царило полное непонимание и страх. Но в конце концов Джеку с таксистом удалось-таки преодолеть военный заслон.",
+						"text": "@loc:episode1.nodes.taxi_checkpoint.data.blocks.0.text",
 						"rect": [
 							11.0,
 							396.75,
@@ -3893,18 +3893,18 @@
 				18700.0,
 				9100.0
 			],
-			"title": "taxi_checkpoint"
+			"title": "@loc:episode1.nodes.taxi_checkpoint.title"
 		},
 		"taxi_checkpoint__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.taxi_checkpoint__choice_0.data.text"
 			},
 			"position": [
 				19090.0,
 				9100.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.taxi_checkpoint__choice_0.title"
 		},
 		"taxi_choice": {
 			"type": "scene",
@@ -3914,35 +3914,35 @@
 				"art": "ep1_taxi_checkpoint",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Бен сказал, что у него есть загородный дом с кое-какими запасами еды, да и оружие имелось. Быть может, стоит остановиться у него ненадолго? Пока не уляжется вся эта ерунда."
+				"text": "@loc:episode1.nodes.taxi_choice.data.text"
 			},
 			"position": [
 				20400.0,
 				14300.0
 			],
-			"title": "taxi_choice"
+			"title": "@loc:episode1.nodes.taxi_choice.title"
 		},
 		"taxi_choice__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Объединиться с Беном"
+				"text": "@loc:episode1.nodes.taxi_choice__choice_0.data.text"
 			},
 			"position": [
 				20790.0,
 				14300.0
 			],
-			"title": "Объединиться с Беном"
+			"title": "@loc:episode1.nodes.taxi_choice__choice_0.title"
 		},
 		"taxi_choice__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Отказаться от предложения"
+				"text": "@loc:episode1.nodes.taxi_choice__choice_1.data.text"
 			},
 			"position": [
 				20790.0,
 				14590.0
 			],
-			"title": "Отказаться от предложения"
+			"title": "@loc:episode1.nodes.taxi_choice__choice_1.title"
 		},
 		"taxi_road": {
 			"type": "scene",
@@ -3952,10 +3952,10 @@
 				"art": "ep1_taxi_road",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Решено было дождаться темноты, когда на дороге будет меньше машин. Поэтому часов в \nвосемь вечера такси выехало из своего укрытия на дорогу. Ехали небыстро, со средней \nскоростью, делая иногда небольшие остановки минут по пятнадцать. К утру Джек с Беном \nбыли уже практически на месте.",
+				"text": "@loc:episode1.nodes.taxi_road.data.text",
 				"blocks": [
 					{
-						"text": "Решено было дождаться темноты, когда на дороге будет меньше машин. Поэтому часов в восемь вечера такси выехало из своего укрытия на дорогу. Ехали небыстро, со средней скоростью, делая иногда небольшие остановки минут по пятнадцать. К утру Джек с Беном были уже практически на месте.",
+						"text": "@loc:episode1.nodes.taxi_road.data.blocks.0.text",
 						"rect": [
 							11.0,
 							369.75,
@@ -3972,18 +3972,18 @@
 				22100.0,
 				13000.0
 			],
-			"title": "taxi_road"
+			"title": "@loc:episode1.nodes.taxi_road.title"
 		},
 		"taxi_road__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.taxi_road__choice_0.data.text"
 			},
 			"position": [
 				22490.0,
 				13000.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.taxi_road__choice_0.title"
 		},
 		"taxi_house": {
 			"type": "scene",
@@ -3993,10 +3993,10 @@
 				"art": "ep1_taxi_house",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Дом Бена находился на отшибе, в глуши. Дряхлое строение, на первый взгляд, казалось \nабсолютно заброшенным и пустым. Так по сути и было: по словам самого Бена, он уже \nдавненько не бывал здесь — кипучая городская жизнь не отпускала таксиста.",
+				"text": "@loc:episode1.nodes.taxi_house.data.text",
 				"blocks": [
 					{
-						"text": "Дом Бена находился на отшибе, в глуши. Дряхлое строение, на первый взгляд, казалось абсолютно заброшенным и пустым. Так по сути и было: по словам самого Бена, он уже давненько не бывал здесь — кипучая городская жизнь не отпускала таксиста.",
+						"text": "@loc:episode1.nodes.taxi_house.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.75,
@@ -4013,18 +4013,18 @@
 				23800.0,
 				14300.0
 			],
-			"title": "taxi_house"
+			"title": "@loc:episode1.nodes.taxi_house.title"
 		},
 		"taxi_house__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.taxi_house__choice_0.data.text"
 			},
 			"position": [
 				24190.0,
 				14300.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.taxi_house__choice_0.title"
 		},
 		"taxi_shelter_1": {
 			"type": "scene",
@@ -4034,10 +4034,10 @@
 				"art": "ep1_farm_chase",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Среди всех пожитков Бена особенно бросалось в глаза здоровенное ружье, завернутое в \nбрезент. Тут Джек вспомнил, что его новый сосед когда-то рассказывал о своих \nгероических охотничьих похождениях. Многое таксист, конечно же, приукрасил, однако с \nоружием в доме было всяко спокойнее.",
+				"text": "@loc:episode1.nodes.taxi_shelter_1.data.text",
 				"blocks": [
 					{
-						"text": "Среди всех пожитков Бена особенно бросалось в глаза здоровенное ружье, завернутое в брезент. Тут Джек вспомнил, что его новый сосед когда-то рассказывал о своих героических охотничьих похождениях. Многое таксист, конечно же, приукрасил, однако с оружием в доме было всяко спокойнее.",
+						"text": "@loc:episode1.nodes.taxi_shelter_1.data.blocks.0.text",
 						"rect": [
 							17.0,
 							20.0,
@@ -4054,18 +4054,18 @@
 				25500.0,
 				14300.0
 			],
-			"title": "taxi_shelter_1"
+			"title": "@loc:episode1.nodes.taxi_shelter_1.title"
 		},
 		"taxi_shelter_1__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.taxi_shelter_1__choice_0.data.text"
 			},
 			"position": [
 				25890.0,
 				14300.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.taxi_shelter_1__choice_0.title"
 		},
 		"taxi_shelter_2": {
 			"type": "scene",
@@ -4075,10 +4075,10 @@
 				"art": "ep1_farm_chase",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "«Как же хорошо иметь хоть какие-то связи по жизни. \nЕсли бы не Бен, то неизвестно, выбрался ли я бы вообще из \nНью-Тауна.\nЗавтра собираемся поехать в ближайший супермаркет, \nпопробуем достать еще припасов и топлива для \nгенератора. \nЧерт, я жив! Все же мать и Элис были неправы, называя \nменя неудачником...»\n\nСреди всех пожитков Бена особенно бросалось в глаза здоровенное ружье, завернутое в \nбрезент. Тут Джек вспомнил, что его новый сосед когда-то рассказывал о своих \nгероических охотничьих похождениях. Многое таксист, конечно же, приукрасил, однако с \nоружием в доме было всяко спокойнее.",
+				"text": "@loc:episode1.nodes.taxi_shelter_2.data.text",
 				"blocks": [
 					{
-						"text": "«Как же хорошо иметь хоть какие-то связи по жизни. Если бы не Бен, то неизвестно, выбрался ли я бы вообще из Нью-Тауна. Завтра собираемся поехать в ближайший супермаркет, попробуем достать еще припасов и топлива для генератора. Черт, я жив! Все же мать и Элис были неправы, называя меня неудачником...»",
+						"text": "@loc:episode1.nodes.taxi_shelter_2.data.blocks.0.text",
 						"rect": [
 							34.0,
 							141.4,
@@ -4090,7 +4090,7 @@
 						"path": "Mov"
 					},
 					{
-						"text": "Среди всех пожитков Бена особенно бросалось в глаза здоровенное ружье, завернутое в брезент. Тут Джек вспомнил, что его новый сосед когда-то рассказывал о своих героических охотничьих похождениях. Многое таксист, конечно же, приукрасил, однако с оружием в доме было всяко спокойнее.",
+						"text": "@loc:episode1.nodes.taxi_shelter_2.data.blocks.1.text",
 						"rect": [
 							17.0,
 							20.0,
@@ -4107,18 +4107,18 @@
 				27200.0,
 				11700.0
 			],
-			"title": "taxi_shelter_2"
+			"title": "@loc:episode1.nodes.taxi_shelter_2.title"
 		},
 		"taxi_shelter_2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.taxi_shelter_2__choice_0.data.text"
 			},
 			"position": [
 				27590.0,
 				11700.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.taxi_shelter_2__choice_0.title"
 		},
 		"taxi_shelter_3": {
 			"type": "scene",
@@ -4128,10 +4128,10 @@
 				"art": "ep1_farm_chase",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Дневник Джека. 15.06\n\n«Как же хорошо иметь хоть какие-то связи по жизни. \nЕсли бы не Бен, то неизвестно, выбрался ли я бы вообще из \nНью-Тауна.\nЗавтра собираемся поехать в ближайший супермаркет, \nпопробуем достать еще припасов и топлива для \nгенератора. \nЧерт, я жив! Все же мать и Элис были неправы, называя \nменя неудачником...»\n\nСреди всех пожитков Бена особенно бросалось в глаза здоровенное ружье, завернутое в \nбрезент. Тут Джек вспомнил, что его новый сосед когда-то рассказывал о своих \nгероических охотничьих похождениях. Многое таксист, конечно же, приукрасил, однако с \nоружием в доме было всяко спокойнее.",
+				"text": "@loc:episode1.nodes.taxi_shelter_3.data.text",
 				"blocks": [
 					{
-						"text": "Дневник Джека. 15.06",
+						"text": "@loc:episode1.nodes.taxi_shelter_3.data.blocks.0.text",
 						"rect": [
 							442.0,
 							420.85,
@@ -4143,7 +4143,7 @@
 						"path": "Mov"
 					},
 					{
-						"text": "«Как же хорошо иметь хоть какие-то связи по жизни. Если бы не Бен, то неизвестно, выбрался ли я бы вообще из Нью-Тауна. Завтра собираемся поехать в ближайший супермаркет, попробуем достать еще припасов и топлива для генератора. Черт, я жив! Все же мать и Элис были неправы, называя меня неудачником...»",
+						"text": "@loc:episode1.nodes.taxi_shelter_3.data.blocks.1.text",
 						"rect": [
 							34.0,
 							141.4,
@@ -4155,7 +4155,7 @@
 						"path": "Mov"
 					},
 					{
-						"text": "Среди всех пожитков Бена особенно бросалось в глаза здоровенное ружье, завернутое в брезент. Тут Джек вспомнил, что его новый сосед когда-то рассказывал о своих героических охотничьих похождениях. Многое таксист, конечно же, приукрасил, однако с оружием в доме было всяко спокойнее.",
+						"text": "@loc:episode1.nodes.taxi_shelter_3.data.blocks.2.text",
 						"rect": [
 							17.0,
 							20.0,
@@ -4172,18 +4172,18 @@
 				28900.0,
 				5200.0
 			],
-			"title": "taxi_shelter_3"
+			"title": "@loc:episode1.nodes.taxi_shelter_3.title"
 		},
 		"taxi_shelter_3__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.taxi_shelter_3__choice_0.data.text"
 			},
 			"position": [
 				29290.0,
 				5200.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.taxi_shelter_3__choice_0.title"
 		},
 		"dorvud_entry_1": {
 			"type": "scene",
@@ -4193,10 +4193,10 @@
 				"art": "ep1_dorvud_entry_1",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Спустя некоторое время Джек вышел к окраинам Дорвуда и сразу понял, что поиск убежища в городе будет нелегкой задачей.",
+				"text": "@loc:episode1.nodes.dorvud_entry_1.data.text",
 				"blocks": [
 					{
-						"text": "Спустя некоторое время Джек вышел к окраинам Дорвуда и сразу понял, что поиск убежища в городе будет нелегкой задачей.",
+						"text": "@loc:episode1.nodes.dorvud_entry_1.data.blocks.0.text",
 						"rect": [
 							11.0,
 							421.6,
@@ -4213,18 +4213,18 @@
 				27200.0,
 				13000.0
 			],
-			"title": "dorvud_entry_1"
+			"title": "@loc:episode1.nodes.dorvud_entry_1.title"
 		},
 		"dorvud_entry_1__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.dorvud_entry_1__choice_0.data.text"
 			},
 			"position": [
 				27590.0,
 				13000.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.dorvud_entry_1__choice_0.title"
 		},
 		"dorvud_entry_2": {
 			"type": "scene",
@@ -4234,10 +4234,10 @@
 				"art": "ep1_dorvud_entry_1",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Джека высадили на окраине Дорвуда, маленького городишки, где в свое время жило всего лишь несколько тысяч жителей. Но теперь...",
+				"text": "@loc:episode1.nodes.dorvud_entry_2.data.text",
 				"blocks": [
 					{
-						"text": "Джека высадили на окраине Дорвуда, маленького городишки, где в свое время жило всего лишь несколько тысяч жителей. Но теперь...",
+						"text": "@loc:episode1.nodes.dorvud_entry_2.data.blocks.0.text",
 						"rect": [
 							11.0,
 							421.6,
@@ -4254,18 +4254,18 @@
 				0.0,
 				6500.0
 			],
-			"title": "dorvud_entry_2"
+			"title": "@loc:episode1.nodes.dorvud_entry_2.title"
 		},
 		"dorvud_entry_2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.dorvud_entry_2__choice_0.data.text"
 			},
 			"position": [
 				390.0,
 				6500.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.dorvud_entry_2__choice_0.title"
 		},
 		"dorvud_street": {
 			"type": "scene",
@@ -4275,10 +4275,10 @@
 				"art": "ep1_dorvud_street",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Улицы городка кишели мертвецами. Но выбора не было, скоро ночь, и встретить ее \nлучше в каком-нибудь защищенном месте...",
+				"text": "@loc:episode1.nodes.dorvud_street.data.text",
 				"blocks": [
 					{
-						"text": "Улицы городка кишели мертвецами. Но выбора не было, скоро ночь, и встретить ее лучше в каком-нибудь защищенном месте...",
+						"text": "@loc:episode1.nodes.dorvud_street.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.75,
@@ -4295,18 +4295,18 @@
 				22100.0,
 				14300.0
 			],
-			"title": "dorvud_street"
+			"title": "@loc:episode1.nodes.dorvud_street.title"
 		},
 		"dorvud_street__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.dorvud_street__choice_0.data.text"
 			},
 			"position": [
 				22490.0,
 				14300.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.dorvud_street__choice_0.title"
 		},
 		"dorvud_shop": {
 			"type": "scene",
@@ -4316,10 +4316,10 @@
 				"art": "ep1_dorvud_shop",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Джек, подобно герою любимой им компьютерной игры Splinter Cell, пробрался в \nближайшее к нему с виду безопасное здание. Это оказался бывший двухэтажный \nпродуктовый магазинчик. Быть может стоит взять немного продуктов, пробраться на \nвторой этаж и попробовать укрепиться там?",
+				"text": "@loc:episode1.nodes.dorvud_shop.data.text",
 				"blocks": [
 					{
-						"text": "Джек, подобно герою любимой им компьютерной игры Splinter Cell, пробрался в ближайшее к нему с виду безопасное здание. Это оказался бывший двухэтажный продуктовый магазинчик. Быть может стоит взять немного продуктов, пробраться на второй этаж и попробовать укрепиться там?",
+						"text": "@loc:episode1.nodes.dorvud_shop.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.75,
@@ -4336,18 +4336,18 @@
 				23800.0,
 				15600.0
 			],
-			"title": "dorvud_shop"
+			"title": "@loc:episode1.nodes.dorvud_shop.title"
 		},
 		"dorvud_shop__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.dorvud_shop__choice_0.data.text"
 			},
 			"position": [
 				24190.0,
 				15600.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.dorvud_shop__choice_0.title"
 		},
 		"dorvud_choice": {
 			"type": "scene",
@@ -4357,35 +4357,35 @@
 				"art": "ep1_dorvud_shop",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Стоит ли проверять второй этаж или попытаться найти подходящее безопасное место на первом?"
+				"text": "@loc:episode1.nodes.dorvud_choice.data.text"
 			},
 			"position": [
 				25500.0,
 				15600.0
 			],
-			"title": "dorvud_choice"
+			"title": "@loc:episode1.nodes.dorvud_choice.title"
 		},
 		"dorvud_choice__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Подняться наверх"
+				"text": "@loc:episode1.nodes.dorvud_choice__choice_0.data.text"
 			},
 			"position": [
 				25890.0,
 				15600.0
 			],
-			"title": "Подняться наверх"
+			"title": "@loc:episode1.nodes.dorvud_choice__choice_0.title"
 		},
 		"dorvud_choice__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Обследовать первый этаж"
+				"text": "@loc:episode1.nodes.dorvud_choice__choice_1.data.text"
 			},
 			"position": [
 				25890.0,
 				15890.0
 			],
-			"title": "Обследовать первый этаж"
+			"title": "@loc:episode1.nodes.dorvud_choice__choice_1.title"
 		},
 		"dorvud_stairs": {
 			"type": "scene",
@@ -4395,10 +4395,10 @@
 				"art": "ep1_dorvud_stairs",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Медленно, стараясь ступать как можно тише, Джек начал подниматься на второй этаж... В \nмагазине он нашел фонарик (нормальный фонарик, а не ту фигню, что болталась на его \nдомашних ключах), но пока не решался его включить.",
+				"text": "@loc:episode1.nodes.dorvud_stairs.data.text",
 				"blocks": [
 					{
-						"text": "Медленно, стараясь ступать как можно тише, Джек начал подниматься на второй этаж... В магазине он нашел фонарик (нормальный фонарик, а не ту фигню, что болталась на его домашних ключах), но пока не решался его включить.",
+						"text": "@loc:episode1.nodes.dorvud_stairs.data.blocks.0.text",
 						"rect": [
 							11.0,
 							396.75,
@@ -4415,18 +4415,18 @@
 				27200.0,
 				14300.0
 			],
-			"title": "dorvud_stairs"
+			"title": "@loc:episode1.nodes.dorvud_stairs.title"
 		},
 		"dorvud_stairs__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.dorvud_stairs__choice_0.data.text"
 			},
 			"position": [
 				27590.0,
 				14300.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.dorvud_stairs__choice_0.title"
 		},
 		"dorvud_fall": {
 			"type": "scene",
@@ -4436,10 +4436,10 @@
 				"art": "ep1_dorvud_fall",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Оказавшись на втором этаже, Джек все же решился включить фонарик... В следующую \nсекунду он уже в панике пятился назад к лестнице, наблюдая, как стоящий перед ним \nискусанный мертвец медленно «приходит в себя». Джек сделал еще один шаг назад, и \nпол неожиданно ушел из-под ног... Падение, ступеньки по ребрам, боль, темнота...",
+				"text": "@loc:episode1.nodes.dorvud_fall.data.text",
 				"blocks": [
 					{
-						"text": "Оказавшись на втором этаже, Джек все же решился включить фонарик... В следующую секунду он уже в панике пятился назад к лестнице, наблюдая, как стоящий перед ним искусанный мертвец медленно «приходит в себя». Джек сделал еще один шаг назад, и пол неожиданно ушел из-под ног... Падение, ступеньки по ребрам, боль, темнота...",
+						"text": "@loc:episode1.nodes.dorvud_fall.data.blocks.0.text",
 						"rect": [
 							11.0,
 							367.75,
@@ -4457,18 +4457,18 @@
 				28900.0,
 				6500.0
 			],
-			"title": "dorvud_fall"
+			"title": "@loc:episode1.nodes.dorvud_fall.title"
 		},
 		"dorvud_fall__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.dorvud_fall__choice_0.data.text"
 			},
 			"position": [
 				29290.0,
 				6500.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.dorvud_fall__choice_0.title"
 		},
 		"dorvud_floor": {
 			"type": "scene",
@@ -4478,10 +4478,10 @@
 				"art": "ep1_dorvud_floor",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Половицы на первом этаже нещадно скрипели, пот струился ручьем... В здании уже почти \nне осталось неисследованных мест, и Джек понемногу начал терять надежду найти здесь \nхоть какой-нибудь укромный уголок. Выходить на улицу не хотелось совершенно...",
+				"text": "@loc:episode1.nodes.dorvud_floor.data.text",
 				"blocks": [
 					{
-						"text": "Половицы на первом этаже нещадно скрипели, пот струился ручьем... В здании уже почти не осталось неисследованных мест, и Джек понемногу начал терять надежду найти здесь хоть какой-нибудь укромный уголок. Выходить на улицу не хотелось совершенно...",
+						"text": "@loc:episode1.nodes.dorvud_floor.data.blocks.0.text",
 						"rect": [
 							11.0,
 							391.75,
@@ -4498,18 +4498,18 @@
 				27200.0,
 				15600.0
 			],
-			"title": "dorvud_floor"
+			"title": "@loc:episode1.nodes.dorvud_floor.title"
 		},
 		"dorvud_floor__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.dorvud_floor__choice_0.data.text"
 			},
 			"position": [
 				27590.0,
 				15600.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.dorvud_floor__choice_0.title"
 		},
 		"dorvud_room": {
 			"type": "scene",
@@ -4519,10 +4519,10 @@
 				"art": "ep1_dorvud_room",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Неожиданно Джек заметил неприметную дверь в углу очередной обследуемой комнаты, \nведущую в подсобку или что-то вроде этого. Медленно приоткрыв дверь, Джек включил \nнайденный в магазине фонарик и...",
+				"text": "@loc:episode1.nodes.dorvud_room.data.text",
 				"blocks": [
 					{
-						"text": "Неожиданно Джек заметил неприметную дверь в углу очередной обследуемой комнаты, ведущую в подсобку или что-то вроде этого. Медленно приоткрыв дверь, Джек включил найденный в магазине фонарик и...",
+						"text": "@loc:episode1.nodes.dorvud_room.data.blocks.0.text",
 						"rect": [
 							11.0,
 							394.75,
@@ -4539,18 +4539,18 @@
 				28900.0,
 				7800.0
 			],
-			"title": "dorvud_room"
+			"title": "@loc:episode1.nodes.dorvud_room.title"
 		},
 		"dorvud_room__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.dorvud_room__choice_0.data.text"
 			},
 			"position": [
 				29290.0,
 				7800.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.dorvud_room__choice_0.title"
 		},
 		"dorvud_shelter_1": {
 			"type": "scene",
@@ -4560,10 +4560,10 @@
 				"art": "ep1_farm_chase",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "... вздохнул от облегчения! Маленькая комнатка была пуста! Джек плотно прикрыл за \nсобой дверь, придвинул к ней стоящий в углу диван, чтобы обезопасить себя от \nнепрошенных гостей и без сил упал на него, мгновенно уснув...",
+				"text": "@loc:episode1.nodes.dorvud_shelter_1.data.text",
 				"blocks": [
 					{
-						"text": "... вздохнул от облегчения! Маленькая комнатка была пуста! Джек плотно прикрыл за собой дверь, придвинул к ней стоящий в углу диван, чтобы обезопасить себя от непрошенных гостей и без сил упал на него, мгновенно уснув...",
+						"text": "@loc:episode1.nodes.dorvud_shelter_1.data.blocks.0.text",
 						"rect": [
 							25.0,
 							19.75,
@@ -4580,18 +4580,18 @@
 				30600.0,
 				1300.0
 			],
-			"title": "dorvud_shelter_1"
+			"title": "@loc:episode1.nodes.dorvud_shelter_1.title"
 		},
 		"dorvud_shelter_1__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.dorvud_shelter_1__choice_0.data.text"
 			},
 			"position": [
 				30990.0,
 				1300.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.dorvud_shelter_1__choice_0.title"
 		},
 		"dorvud_shelter_2": {
 			"type": "scene",
@@ -4601,10 +4601,10 @@
 				"art": "ep1_farm_chase",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Записей нет.\n\n... вздохнул от облегчения! Маленькая комнатка была пуста! Джек плотно прикрыл за \nсобой дверь, придвинул к ней стоящий в углу диван, чтобы обезопасить себя от \nнепрошенных гостей и без сил упал на него, мгновенно уснув...",
+				"text": "@loc:episode1.nodes.dorvud_shelter_2.data.text",
 				"blocks": [
 					{
-						"text": "Записей нет.",
+						"text": "@loc:episode1.nodes.dorvud_shelter_2.data.blocks.0.text",
 						"rect": [
 							28.0,
 							199.45,
@@ -4616,7 +4616,7 @@
 						"path": "Mov"
 					},
 					{
-						"text": "... вздохнул от облегчения! Маленькая комнатка была пуста! Джек плотно прикрыл за собой дверь, придвинул к ней стоящий в углу диван, чтобы обезопасить себя от непрошенных гостей и без сил упал на него, мгновенно уснув...",
+						"text": "@loc:episode1.nodes.dorvud_shelter_2.data.blocks.1.text",
 						"rect": [
 							25.0,
 							19.75,
@@ -4633,18 +4633,18 @@
 				32300.0,
 				0.0
 			],
-			"title": "dorvud_shelter_2"
+			"title": "@loc:episode1.nodes.dorvud_shelter_2.title"
 		},
 		"dorvud_shelter_2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.dorvud_shelter_2__choice_0.data.text"
 			},
 			"position": [
 				32690.0,
 				0.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.dorvud_shelter_2__choice_0.title"
 		},
 		"dorvud_shelter_3": {
 			"type": "scene",
@@ -4654,10 +4654,10 @@
 				"art": "ep1_farm_chase",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Дневник Джека. 15.06\n\nЗаписей нет.\n\n... вздохнул от облегчения! Маленькая комнатка была пуста! Джек плотно прикрыл за \nсобой дверь, придвинул к ней стоящий в углу диван, чтобы обезопасить себя от \nнепрошенных гостей и без сил упал на него, мгновенно уснув...",
+				"text": "@loc:episode1.nodes.dorvud_shelter_3.data.text",
 				"blocks": [
 					{
-						"text": "Дневник Джека. 15.06",
+						"text": "@loc:episode1.nodes.dorvud_shelter_3.data.blocks.0.text",
 						"rect": [
 							442.0,
 							306.85,
@@ -4669,7 +4669,7 @@
 						"path": "Mov"
 					},
 					{
-						"text": "Записей нет.",
+						"text": "@loc:episode1.nodes.dorvud_shelter_3.data.blocks.1.text",
 						"rect": [
 							28.0,
 							199.45,
@@ -4681,7 +4681,7 @@
 						"path": "Mov"
 					},
 					{
-						"text": "... вздохнул от облегчения! Маленькая комнатка была пуста! Джек плотно прикрыл за собой дверь, придвинул к ней стоящий в углу диван, чтобы обезопасить себя от непрошенных гостей и без сил упал на него, мгновенно уснув...",
+						"text": "@loc:episode1.nodes.dorvud_shelter_3.data.blocks.2.text",
 						"rect": [
 							25.0,
 							19.75,
@@ -4698,18 +4698,18 @@
 				34000.0,
 				0.0
 			],
-			"title": "dorvud_shelter_3"
+			"title": "@loc:episode1.nodes.dorvud_shelter_3.title"
 		},
 		"dorvud_shelter_3__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.dorvud_shelter_3__choice_0.data.text"
 			},
 			"position": [
 				34390.0,
 				0.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.dorvud_shelter_3__choice_0.title"
 		},
 		"mainstreet_choice": {
 			"type": "scene",
@@ -4719,7 +4719,7 @@
 				"art": "ep1_mainstreet_choice",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Медленно отойти назад\n\nПоймать машину и уехать\n\nПоймать машину до офиса\n\nПробежать сквозь зомби\n\nИдея, кажется, не самая удачная... С этими \nлюдьми явно что-то не так. Ох, да это же \nзомби!",
+				"text": "@loc:episode1.nodes.mainstreet_choice.data.text",
 				"blocks": [],
 				"controls_art": "ep1_mainstreet_choice_controls"
 			},
@@ -4727,12 +4727,12 @@
 				0.0,
 				7800.0
 			],
-			"title": "mainstreet_choice"
+			"title": "@loc:episode1.nodes.mainstreet_choice.title"
 		},
 		"mainstreet_choice__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Пробежать сквозь зомби",
+				"text": "@loc:episode1.nodes.mainstreet_choice__choice_0.data.text",
 				"rect": [
 					85.0,
 					123.0,
@@ -4744,12 +4744,12 @@
 				390.0,
 				7800.0
 			],
-			"title": "Пробежать сквозь зомби"
+			"title": "@loc:episode1.nodes.mainstreet_choice__choice_0.title"
 		},
 		"mainstreet_choice__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Поймать машину до офиса",
+				"text": "@loc:episode1.nodes.mainstreet_choice__choice_1.data.text",
 				"rect": [
 					85.0,
 					194.0,
@@ -4761,12 +4761,12 @@
 				390.0,
 				8090.0
 			],
-			"title": "Поймать машину до офиса"
+			"title": "@loc:episode1.nodes.mainstreet_choice__choice_1.title"
 		},
 		"mainstreet_choice__choice_2": {
 			"type": "choice",
 			"data": {
-				"text": "Поймать машину и уехать",
+				"text": "@loc:episode1.nodes.mainstreet_choice__choice_2.data.text",
 				"rect": [
 					85.0,
 					265.0,
@@ -4778,12 +4778,12 @@
 				390.0,
 				8380.0
 			],
-			"title": "Поймать машину и уехать"
+			"title": "@loc:episode1.nodes.mainstreet_choice__choice_2.title"
 		},
 		"mainstreet_choice__choice_3": {
 			"type": "choice",
 			"data": {
-				"text": "Медленно отойти назад",
+				"text": "@loc:episode1.nodes.mainstreet_choice__choice_3.data.text",
 				"rect": [
 					85.0,
 					336.0,
@@ -4795,7 +4795,7 @@
 				390.0,
 				8670.0
 			],
-			"title": "Медленно отойти назад"
+			"title": "@loc:episode1.nodes.mainstreet_choice__choice_3.title"
 		},
 		"mainstreet_run": {
 			"type": "scene",
@@ -4813,18 +4813,18 @@
 				17000.0,
 				7800.0
 			],
-			"title": "mainstreet_run"
+			"title": "@loc:episode1.nodes.mainstreet_run.title"
 		},
 		"mainstreet_run__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.mainstreet_run__choice_0.data.text"
 			},
 			"position": [
 				17390.0,
 				7800.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.mainstreet_run__choice_0.title"
 		},
 		"mainstreet_attack": {
 			"type": "scene",
@@ -4843,18 +4843,18 @@
 				18700.0,
 				10400.0
 			],
-			"title": "mainstreet_attack"
+			"title": "@loc:episode1.nodes.mainstreet_attack.title"
 		},
 		"mainstreet_attack__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.mainstreet_attack__choice_0.data.text"
 			},
 			"position": [
 				19090.0,
 				10400.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.mainstreet_attack__choice_0.title"
 		},
 		"car_to_office": {
 			"type": "scene",
@@ -4864,10 +4864,10 @@
 				"art": "ep1_car_to_office",
 				"clean_background": true,
 				"image": "OnTheStreet.jpg",
-				"text": "Как всегда бывает при различного рода катастрофах и трагедиях, Джек смог найти \nчеловека, который за баснословную цену согласился довезти его, куда требуется.",
+				"text": "@loc:episode1.nodes.car_to_office.data.text",
 				"blocks": [
 					{
-						"text": "Как всегда бывает при различного рода катастрофах и трагедиях, Джек смог найти человека, который за баснословную цену согласился довезти его, куда требуется.",
+						"text": "@loc:episode1.nodes.car_to_office.data.blocks.0.text",
 						"rect": [
 							11.0,
 							419.75,
@@ -4884,18 +4884,18 @@
 				17000.0,
 				9100.0
 			],
-			"title": "car_to_office"
+			"title": "@loc:episode1.nodes.car_to_office.title"
 		},
 		"car_to_office__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Продолжить"
+				"text": "@loc:episode1.nodes.car_to_office__choice_0.data.text"
 			},
 			"position": [
 				17390.0,
 				9100.0
 			],
-			"title": "Продолжить"
+			"title": "@loc:episode1.nodes.car_to_office__choice_0.title"
 		},
 		"death_1": {
 			"type": "scene",
@@ -4904,7 +4904,7 @@
 				"kind": "city_death",
 				"image": "OnTheStreet.jpg",
 				"art": "city_result",
-				"text": "Вашей ловкости оказалось недостаточно, чтобы убежать от зомби.",
+				"text": "@loc:episode1.nodes.death_1.data.text",
 				"result_id": 1.0,
 				"alive": false
 			},
@@ -4912,7 +4912,7 @@
 				20400.0,
 				15600.0
 			],
-			"title": "death_1"
+			"title": "@loc:episode1.nodes.death_1.title"
 		},
 		"death_4": {
 			"type": "scene",
@@ -4921,7 +4921,7 @@
 				"kind": "city_death",
 				"image": "OnTheStreet.jpg",
 				"art": "city_result",
-				"text": "Мертвецы зажали Джека в развалинах какого-то сарая. Выхода не было.",
+				"text": "@loc:episode1.nodes.death_4.data.text",
 				"result_id": 4.0,
 				"alive": false
 			},
@@ -4929,7 +4929,7 @@
 				28900.0,
 				9100.0
 			],
-			"title": "death_4"
+			"title": "@loc:episode1.nodes.death_4.title"
 		},
 		"death_7": {
 			"type": "scene",
@@ -4938,7 +4938,7 @@
 				"kind": "city_death",
 				"image": "OnTheStreet.jpg",
 				"art": "city_result",
-				"text": "Джек убит мародерами.",
+				"text": "@loc:episode1.nodes.death_7.data.text",
 				"result_id": 7.0,
 				"alive": false
 			},
@@ -4946,7 +4946,7 @@
 				28900.0,
 				10400.0
 			],
-			"title": "death_7"
+			"title": "@loc:episode1.nodes.death_7.title"
 		},
 		"death_8": {
 			"type": "scene",
@@ -4955,7 +4955,7 @@
 				"kind": "city_death",
 				"image": "OnTheStreet.jpg",
 				"art": "city_result",
-				"text": "Одним зомби меньше, одним больше в этом лесу. И одного из них зовут Джек.",
+				"text": "@loc:episode1.nodes.death_8.data.text",
 				"result_id": 8.0,
 				"alive": false
 			},
@@ -4963,7 +4963,7 @@
 				30600.0,
 				2600.0
 			],
-			"title": "death_8"
+			"title": "@loc:episode1.nodes.death_8.title"
 		},
 		"death_9": {
 			"type": "scene",
@@ -4972,7 +4972,7 @@
 				"kind": "city_death",
 				"image": "OnTheStreet.jpg",
 				"art": "city_result",
-				"text": "Падение и потеря сознания стали для Джека роковыми.",
+				"text": "@loc:episode1.nodes.death_9.data.text",
 				"result_id": 9.0,
 				"alive": false
 			},
@@ -4980,7 +4980,7 @@
 				30600.0,
 				3900.0
 			],
-			"title": "death_9"
+			"title": "@loc:episode1.nodes.death_9.title"
 		},
 		"ending_6": {
 			"type": "scene",
@@ -4989,7 +4989,7 @@
 				"kind": "city_ending",
 				"image": "OnTheStreet.jpg",
 				"art": "ep1_result_alive",
-				"text": "Джек пережил начало апокалипсиса и нашел убежище.",
+				"text": "@loc:episode1.nodes.ending_6.data.text",
 				"result_id": 6.0,
 				"alive": true
 			},
@@ -4997,7 +4997,7 @@
 				32300.0,
 				1300.0
 			],
-			"title": "ending_6"
+			"title": "@loc:episode1.nodes.ending_6.title"
 		},
 		"ending_77": {
 			"type": "scene",
@@ -5006,7 +5006,7 @@
 				"kind": "city_ending",
 				"image": "OnTheStreet.jpg",
 				"art": "ep1_result_alive",
-				"text": "Джек пережил начало апокалипсиса и нашел убежище.",
+				"text": "@loc:episode1.nodes.ending_77.data.text",
 				"result_id": 77.0,
 				"alive": true
 			},
@@ -5014,7 +5014,7 @@
 				30600.0,
 				5200.0
 			],
-			"title": "ending_77"
+			"title": "@loc:episode1.nodes.ending_77.title"
 		},
 		"ending_78": {
 			"type": "scene",
@@ -5023,7 +5023,7 @@
 				"kind": "city_ending",
 				"image": "OnTheStreet.jpg",
 				"art": "ep1_result_alive",
-				"text": "Джек пережил начало апокалипсиса и нашел убежище.",
+				"text": "@loc:episode1.nodes.ending_78.data.text",
 				"result_id": 78.0,
 				"alive": true
 			},
@@ -5031,13 +5031,13 @@
 				35700.0,
 				0.0
 			],
-			"title": "ending_78"
+			"title": "@loc:episode1.nodes.ending_78.title"
 		},
 		"hired_office_gate": {
 			"type": "scene",
 			"data": {
 				"source": "CarGet(1) -> MovCityAuto(3) frame 7; direct entry to IntoTheOffice",
-				"text": "Офис, где работал Джек находился рядом с Центральной больницей города, на окраине. И \nсейчас рядом с ней находилась чуть ли не вся полиция Нью-Тауна, слышались частые \nвыстрелы. Перебросившись парой фраз с зеваками поблизости, Джек узнал, что скоро \nздесь будет армия, ибо этих тварей из больницы берет только прямое попадание в голову. \n«Чудненькие перспективы», — подытожил Джек.",
+				"text": "@loc:episode1.nodes.hired_office_gate.data.text",
 				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_office_gate",
@@ -5058,18 +5058,18 @@
 				18700.0,
 				11700.0
 			],
-			"title": "hired_office_gate"
+			"title": "@loc:episode1.nodes.hired_office_gate.title"
 		},
 		"hired_office_gate__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode1.nodes.hired_office_gate__choice_0.data.text"
 			},
 			"position": [
 				19090.0,
 				11700.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode1.nodes.hired_office_gate__choice_0.title"
 		}
 	},
 	"edges": [

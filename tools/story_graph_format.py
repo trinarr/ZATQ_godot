@@ -1,5 +1,7 @@
 """Read the canonical visual graph for offline content/resource audits."""
 import json
+import csv
+from functools import lru_cache
 from pathlib import Path
 SCREENS={'scene','dialogue','code','qte'}
 def compile_graph(graph):
@@ -41,7 +43,21 @@ def compile_graph(graph):
             if routes:=ports(cid,'route:'):choice['next_cases']=[{'when':payload(target(cid,r)).get('when',{}),'next':target(target(cid,r),'true')} for r in routes]
             data['choices'].append(choice)
         result[id]=data
-    return result
+    return resolve_tree(result)
+
+@lru_cache(maxsize=None)
+def table_rows(namespace):
+    path=Path(__file__).resolve().parents[1]/'locales'/(namespace+'.csv')
+    with path.open(newline='',encoding='utf-8-sig') as f:
+        return {r['key']:r['ru'] for r in csv.DictReader(f)}
+
+def resolve_tree(value):
+    if isinstance(value,str) and value.startswith("@loc:"):
+        key=value[5:]
+        return table_rows(key.split(".")[0]).get(key,key)
+    if isinstance(value,dict):return {k:resolve_tree(v) for k,v in value.items()}
+    if isinstance(value,list):return [resolve_tree(v) for v in value]
+    return value
 
 def load_all(root):
     result={}

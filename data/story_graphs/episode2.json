@@ -14,7 +14,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Каждый день Дэвида Каховски, врача-хирурга Центральной больницы Нью-Тауна, уже давно превратился в рутину: череда пациентов, десятки разных лиц, различных травм и увечий... Вот и это очередное утро не предвещало ничего нового... Дэвид допил свой кофе и отправился на работу.",
+						"text": "@loc:episode2.nodes.e2_hospital_1.data.blocks.0.text",
 						"rect": [
 							11.0,
 							368.7,
@@ -26,18 +26,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Каждый день Дэвида Каховски, врача-хирурга Центральной больницы Нью-Тауна, уже давно превратился в рутину: череда пациентов, десятки разных лиц, различных травм и увечий... Вот и это очередное утро не предвещало ничего нового... Дэвид допил свой кофе и отправился на работу."
+				"text": "@loc:episode2.nodes.e2_hospital_1.data.text"
 			},
 			"position": [
 				0.0,
 				0.0
 			],
-			"title": "e2_hospital_1"
+			"title": "@loc:episode2.nodes.e2_hospital_1.title"
 		},
 		"e2_hospital_1__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hospital_1__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -49,7 +49,7 @@
 				390.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hospital_1__choice_0.title"
 		},
 		"e2_hospital_2": {
 			"type": "scene",
@@ -62,7 +62,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Работа шла своим чередом, спокойно и ненапряжно: несложные операции Дэвид не проводил, оставляя данную возможность своим менее опытным коллегам. Однако, все перевернулось с ног на голову, когда в больницу привезли раненого полицейского со следами укусов и множеством огнестрельных ранений.",
+						"text": "@loc:episode2.nodes.e2_hospital_2.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.0,
@@ -74,18 +74,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Работа шла своим чередом, спокойно и ненапряжно: несложные операции Дэвид не проводил, оставляя данную возможность своим менее опытным коллегам. Однако, все перевернулось с ног на голову, когда в больницу привезли раненого полицейского со следами укусов и множеством огнестрельных ранений."
+				"text": "@loc:episode2.nodes.e2_hospital_2.data.text"
 			},
 			"position": [
 				1700.0,
 				0.0
 			],
-			"title": "e2_hospital_2"
+			"title": "@loc:episode2.nodes.e2_hospital_2.title"
 		},
 		"e2_hospital_2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hospital_2__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -97,7 +97,7 @@
 				2090.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hospital_2__choice_0.title"
 		},
 		"e2_hospital_3": {
 			"type": "scene",
@@ -110,7 +110,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Ранения были серьезные, но не смертельные. Дэвид быстро достал пули, зашил раны и обработал странные укусы, похожие чуть ли не на человеческие...",
+						"text": "@loc:episode2.nodes.e2_hospital_3.data.blocks.0.text",
 						"rect": [
 							11.0,
 							421.0,
@@ -122,18 +122,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Ранения были серьезные, но не смертельные. Дэвид быстро достал пули, зашил раны и обработал странные укусы, похожие чуть ли не на человеческие..."
+				"text": "@loc:episode2.nodes.e2_hospital_3.data.text"
 			},
 			"position": [
 				3400.0,
 				0.0
 			],
-			"title": "e2_hospital_3"
+			"title": "@loc:episode2.nodes.e2_hospital_3.title"
 		},
 		"e2_hospital_3__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hospital_3__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -145,7 +145,7 @@
 				3790.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hospital_3__choice_0.title"
 		},
 		"e2_hospital_4": {
 			"type": "scene",
@@ -158,7 +158,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Неожиданно пациенту резко стало хуже, сердце остановилось в считанные секунды, и никакие приборы не помогли запустить его вновь. Коллеги Дэвида констатировали смерть пациента и вышли «перекурить». Каховски же остался в операционной, в расстроенных чувствах перебирая в голове недавние действия, пытаясь найти свою ошибку. Смерть на его столе была редкой гостьей...",
+						"text": "@loc:episode2.nodes.e2_hospital_4.data.blocks.0.text",
 						"rect": [
 							11.0,
 							343.0,
@@ -170,19 +170,19 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Неожиданно пациенту резко стало хуже, сердце остановилось в считанные секунды, и никакие приборы не помогли запустить его вновь. Коллеги Дэвида констатировали смерть пациента и вышли «перекурить». Каховски же остался в операционной, в расстроенных чувствах перебирая в голове недавние действия, пытаясь найти свою ошибку. Смерть на его столе была редкой гостьей...",
+				"text": "@loc:episode2.nodes.e2_hospital_4.data.text",
 				"sound": "HeartDeath"
 			},
 			"position": [
 				5100.0,
 				0.0
 			],
-			"title": "e2_hospital_4"
+			"title": "@loc:episode2.nodes.e2_hospital_4.title"
 		},
 		"e2_hospital_4__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hospital_4__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -194,7 +194,7 @@
 				5490.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hospital_4__choice_0.title"
 		},
 		"e2_hospital_5": {
 			"type": "scene",
@@ -207,7 +207,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "За дверью кто-то пронзительно закричал, послышался звон стекла. Дэвид уже хотел было выйти и проверить в чем дело, но тут его внимание привлекло движение в районе операционного стола... Еще недавно не подававший признаков жизни пациент двигался. Хирург застыл в нерешительности.",
+						"text": "@loc:episode2.nodes.e2_hospital_5.data.blocks.0.text",
 						"rect": [
 							11.0,
 							369.0,
@@ -219,18 +219,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "За дверью кто-то пронзительно закричал, послышался звон стекла. Дэвид уже хотел было выйти и проверить в чем дело, но тут его внимание привлекло движение в районе операционного стола... Еще недавно не подававший признаков жизни пациент двигался. Хирург застыл в нерешительности."
+				"text": "@loc:episode2.nodes.e2_hospital_5.data.text"
 			},
 			"position": [
 				6800.0,
 				0.0
 			],
-			"title": "e2_hospital_5"
+			"title": "@loc:episode2.nodes.e2_hospital_5.title"
 		},
 		"e2_hospital_5__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hospital_5__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -242,7 +242,7 @@
 				7190.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hospital_5__choice_0.title"
 		},
 		"e2_hospital_6": {
 			"type": "scene",
@@ -255,7 +255,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Дэвид, быстро пятясь к двери, услышал за ней какие-то странные звуки: топот ног, крики, пару раз с нижних этажей прозвучали выстрелы. Осторожно выскользнув в коридор, он увидел парня, пытающего отогнать окровавленный труп от своего раненого друга. Да что здесь происходит?!",
+						"text": "@loc:episode2.nodes.e2_hospital_6.data.blocks.0.text",
 						"rect": [
 							11.0,
 							369.0,
@@ -267,18 +267,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Дэвид, быстро пятясь к двери, услышал за ней какие-то странные звуки: топот ног, крики, пару раз с нижних этажей прозвучали выстрелы. Осторожно выскользнув в коридор, он увидел парня, пытающего отогнать окровавленный труп от своего раненого друга. Да что здесь происходит?!"
+				"text": "@loc:episode2.nodes.e2_hospital_6.data.text"
 			},
 			"position": [
 				10200.0,
 				0.0
 			],
-			"title": "e2_hospital_6"
+			"title": "@loc:episode2.nodes.e2_hospital_6.title"
 		},
 		"e2_hospital_6__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hospital_6__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -290,7 +290,7 @@
 				10590.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hospital_6__choice_0.title"
 		},
 		"e2_hospital_7": {
 			"type": "scene",
@@ -303,7 +303,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Новые знакомые подтащили бессознательное тело друга Ника к двери операционной, и Дэвид начал медленно открывать дверь. Ник терпеливо ждал, сжимая в руках свое оружие...",
+						"text": "@loc:episode2.nodes.e2_hospital_7.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.0,
@@ -315,18 +315,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Новые знакомые подтащили бессознательное тело друга Ника к двери операционной, и Дэвид начал медленно открывать дверь. Ник терпеливо ждал, сжимая в руках свое оружие..."
+				"text": "@loc:episode2.nodes.e2_hospital_7.data.text"
 			},
 			"position": [
 				17000.0,
 				0.0
 			],
-			"title": "e2_hospital_7"
+			"title": "@loc:episode2.nodes.e2_hospital_7.title"
 		},
 		"e2_hospital_7__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hospital_7__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -338,7 +338,7 @@
 				17390.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hospital_7__choice_0.title"
 		},
 		"e2_hospital_8": {
 			"type": "scene",
@@ -351,7 +351,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "В следующий момент в дверь с обратной стороны ударило что-то тяжелое, и Дэвид резко рванул ручку на себя. Мертвец упал на пол, и тут же получил дыру в черепе от Ника. Два друга по несчастью втащили третьего в операционную, захлопнули за собой дверь и без сил осели на пол.",
+						"text": "@loc:episode2.nodes.e2_hospital_8.data.blocks.0.text",
 						"rect": [
 							11.0,
 							369.0,
@@ -363,18 +363,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "В следующий момент в дверь с обратной стороны ударило что-то тяжелое, и Дэвид резко рванул ручку на себя. Мертвец упал на пол, и тут же получил дыру в черепе от Ника. Два друга по несчастью втащили третьего в операционную, захлопнули за собой дверь и без сил осели на пол."
+				"text": "@loc:episode2.nodes.e2_hospital_8.data.text"
 			},
 			"position": [
 				18700.0,
 				0.0
 			],
-			"title": "e2_hospital_8"
+			"title": "@loc:episode2.nodes.e2_hospital_8.title"
 		},
 		"e2_hospital_8__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hospital_8__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -386,7 +386,7 @@
 				19090.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hospital_8__choice_0.title"
 		},
 		"e2_hospital_9": {
 			"type": "scene",
@@ -399,7 +399,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Дэвид в последний раз держал в руках оружие очень давно, и теперь ствол в его руках с непривычки ходил ходуном, сам он был весь в холодном поту. А еще он так и не решил, стоит ли нажимать на курок. Он нутром чувствовал — нельзя шуметь. В этот момент из другого конца коридора донесся полный животного ужаса крик...",
+						"text": "@loc:episode2.nodes.e2_hospital_9.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.0,
@@ -411,18 +411,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Дэвид в последний раз держал в руках оружие очень давно, и теперь ствол в его руках с непривычки ходил ходуном, сам он был весь в холодном поту. А еще он так и не решил, стоит ли нажимать на курок. Он нутром чувствовал — нельзя шуметь. В этот момент из другого конца коридора донесся полный животного ужаса крик..."
+				"text": "@loc:episode2.nodes.e2_hospital_9.data.text"
 			},
 			"position": [
 				11900.0,
 				0.0
 			],
-			"title": "e2_hospital_9"
+			"title": "@loc:episode2.nodes.e2_hospital_9.title"
 		},
 		"e2_hospital_9__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hospital_9__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -434,7 +434,7 @@
 				12290.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hospital_9__choice_0.title"
 		},
 		"e2_hospital_10": {
 			"type": "scene",
@@ -447,7 +447,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Оружие в руках Дэвида несильно дернулось, и зомби с простреленной головой упал навзничь. Оставалось всего 4 патрона в магазине, следует быть более экономным впредь... Каховски, держа пистолет наготове, подошел к двери и немного приоткрыл ее... Из-за двери донеслись звуки борьбы и чей-то стон.",
+						"text": "@loc:episode2.nodes.e2_hospital_10.data.blocks.0.text",
 						"rect": [
 							66.0,
 							154.04999999999998,
@@ -459,19 +459,19 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Оружие в руках Дэвида несильно дернулось, и зомби с простреленной головой упал навзничь. Оставалось всего 4 патрона в магазине, следует быть более экономным впредь... Каховски, держа пистолет наготове, подошел к двери и немного приоткрыл ее... Из-за двери донеслись звуки борьбы и чей-то стон.",
+				"text": "@loc:episode2.nodes.e2_hospital_10.data.text",
 				"sound": "GlockShot1"
 			},
 			"position": [
 				15300.0,
 				0.0
 			],
-			"title": "e2_hospital_10"
+			"title": "@loc:episode2.nodes.e2_hospital_10.title"
 		},
 		"e2_hospital_10__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hospital_10__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -483,7 +483,7 @@
 				15690.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hospital_10__choice_0.title"
 		},
 		"e2_hospital_10__choice_0__effects": {
 			"type": "action",
@@ -496,7 +496,7 @@
 				16110.0,
 				0.0
 			],
-			"title": "Последствия выбора"
+			"title": "@loc:episode2.nodes.e2_hospital_10__choice_0__effects.title"
 		},
 		"e2_hospital_11": {
 			"type": "scene",
@@ -509,7 +509,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "В коридоре Дэвид увидел парня, отчаянно пытающегося отогнать от своего раненого друга живой труп. Монстр, подобно танку, пер вперед, явно желая чуть ли не сожрать своего обидчика. Силы парня явно были уже на исходе...",
+						"text": "@loc:episode2.nodes.e2_hospital_11.data.blocks.0.text",
 						"rect": [
 							11.0,
 							396.0,
@@ -521,18 +521,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "В коридоре Дэвид увидел парня, отчаянно пытающегося отогнать от своего раненого друга живой труп. Монстр, подобно танку, пер вперед, явно желая чуть ли не сожрать своего обидчика. Силы парня явно были уже на исходе..."
+				"text": "@loc:episode2.nodes.e2_hospital_11.data.text"
 			},
 			"position": [
 				15300.0,
 				1300.0
 			],
-			"title": "e2_hospital_11"
+			"title": "@loc:episode2.nodes.e2_hospital_11.title"
 		},
 		"e2_hospital_11__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hospital_11__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -544,7 +544,7 @@
 				15690.0,
 				1300.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hospital_11__choice_0.title"
 		},
 		"e2_hospital_12": {
 			"type": "scene",
@@ -557,7 +557,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Дэвид нажал на спусковой крючок, раздался выстрел, еще, и Каховски увидел, как спасаемый им парень заваливается набок с раной в груди. Вторым выстрелом хирург все-таки попал зомби в голову... Вокруг подстреленного им парнишки начала расползаться лужа крови, а из-за угла уже слышались шаркающие шаги и тихий рык. Дэвид запаниковал и кинулся назад, в сторону своего кабинета. Где-то там была расположена пожарная лестница.",
+						"text": "@loc:episode2.nodes.e2_hospital_12.data.blocks.0.text",
 						"rect": [
 							46.0,
 							130.0,
@@ -569,19 +569,19 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Дэвид нажал на спусковой крючок, раздался выстрел, еще, и Каховски увидел, как спасаемый им парень заваливается набок с раной в груди. Вторым выстрелом хирург все-таки попал зомби в голову... Вокруг подстреленного им парнишки начала расползаться лужа крови, а из-за угла уже слышались шаркающие шаги и тихий рык. Дэвид запаниковал и кинулся назад, в сторону своего кабинета. Где-то там была расположена пожарная лестница.",
+				"text": "@loc:episode2.nodes.e2_hospital_12.data.text",
 				"sound": "ShootTheGuy"
 			},
 			"position": [
 				18700.0,
 				1300.0
 			],
-			"title": "e2_hospital_12"
+			"title": "@loc:episode2.nodes.e2_hospital_12.title"
 		},
 		"e2_hospital_12__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hospital_12__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -593,7 +593,7 @@
 				19090.0,
 				1300.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hospital_12__choice_0.title"
 		},
 		"e2_hospital_12__choice_0__effects": {
 			"type": "action",
@@ -606,7 +606,7 @@
 				19510.0,
 				1300.0
 			],
-			"title": "Последствия выбора"
+			"title": "@loc:episode2.nodes.e2_hospital_12__choice_0__effects.title"
 		},
 		"e2_hospital_13": {
 			"type": "scene",
@@ -619,7 +619,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Примирительно выставив вперед левую руку, Дэвид начал приближаться к полицейскому. С ним явно было что-то не так: мутные глаза, дерганные движения... Твою мать! Неожиданно мужчина дернулся вперед и вцепился зубами Дэвиду в руку!",
+						"text": "@loc:episode2.nodes.e2_hospital_13.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.0,
@@ -631,18 +631,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Примирительно выставив вперед левую руку, Дэвид начал приближаться к полицейскому. С ним явно было что-то не так: мутные глаза, дерганные движения... Твою мать! Неожиданно мужчина дернулся вперед и вцепился зубами Дэвиду в руку!"
+				"text": "@loc:episode2.nodes.e2_hospital_13.data.text"
 			},
 			"position": [
 				10200.0,
 				1300.0
 			],
-			"title": "e2_hospital_13"
+			"title": "@loc:episode2.nodes.e2_hospital_13.title"
 		},
 		"e2_hospital_13__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hospital_13__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -654,7 +654,7 @@
 				10590.0,
 				1300.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hospital_13__choice_0.title"
 		},
 		"e2_hospital_14": {
 			"type": "scene",
@@ -667,7 +667,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Хирург резко отскочил, выдирая руку с мясом из зубов мертвеца, не удержал равновесия и завалился назад, цепляя провода и роняя приборы. Беспомощно барахтаясь в скоплении кабелей, Дэвид здоровой рукой пытался сдвинуть с себя тяжеленный прибор, придавивший ему грудь. Неожиданно он услышал звук падения чего-то тяжелого...",
+						"text": "@loc:episode2.nodes.e2_hospital_14.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.0,
@@ -679,18 +679,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Хирург резко отскочил, выдирая руку с мясом из зубов мертвеца, не удержал равновесия и завалился назад, цепляя провода и роняя приборы. Беспомощно барахтаясь в скоплении кабелей, Дэвид здоровой рукой пытался сдвинуть с себя тяжеленный прибор, придавивший ему грудь. Неожиданно он услышал звук падения чего-то тяжелого..."
+				"text": "@loc:episode2.nodes.e2_hospital_14.data.text"
 			},
 			"position": [
 				11900.0,
 				1300.0
 			],
-			"title": "e2_hospital_14"
+			"title": "@loc:episode2.nodes.e2_hospital_14.title"
 		},
 		"e2_hospital_14__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hospital_14__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -702,7 +702,7 @@
 				12290.0,
 				1300.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hospital_14__choice_0.title"
 		},
 		"e2_hospital_15": {
 			"type": "scene",
@@ -715,7 +715,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Щуплый Дэвид с разбегу влетел в мертвеца, сбив его с ног, и парень, впоследствии представившийся Ником, пробил ему череп длинным железным прутом. Друзья по несчастью быстро обменялись рукопожатиями, а затем Ник посоветовал побыстрее сваливать из этого склепа.",
+						"text": "@loc:episode2.nodes.e2_hospital_15.data.blocks.0.text",
 						"rect": [
 							11.0,
 							369.0,
@@ -727,13 +727,13 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Щуплый Дэвид с разбегу влетел в мертвеца, сбив его с ног, и парень, впоследствии представившийся Ником, пробил ему череп длинным железным прутом. Друзья по несчастью быстро обменялись рукопожатиями, а затем Ник посоветовал побыстрее сваливать из этого склепа."
+				"text": "@loc:episode2.nodes.e2_hospital_15.data.text"
 			},
 			"position": [
 				13600.0,
 				0.0
 			],
-			"title": "e2_hospital_15"
+			"title": "@loc:episode2.nodes.e2_hospital_15.title"
 		},
 		"e2_hospital_15__entry": {
 			"type": "action",
@@ -746,7 +746,7 @@
 				13220.0,
 				180.0
 			],
-			"title": "При входе"
+			"title": "@loc:episode2.nodes.e2_hospital_15__entry.title"
 		},
 		"e2_hospital_15__variant_0": {
 			"type": "condition",
@@ -759,7 +759,7 @@
 				"patch": {
 					"blocks": [
 						{
-							"text": "Дэвид подбежал к мертвецу и со всей силы ударил его рукоятью пистолета в затылок. Спасенный хирургом парень завершил дело, пробив зомби череп. Друзья по несчастью быстро обменялись рукопожатиями, а затем Ник посоветовал побыстрее сваливать из этого склепа.",
+							"text": "@loc:episode2.nodes.e2_hospital_15__variant_0.data.patch.blocks.0.text",
 							"rect": [
 								11.0,
 								369.0,
@@ -777,12 +777,12 @@
 				13220.0,
 				180.0
 			],
-			"title": "Вариант сцены"
+			"title": "@loc:episode2.nodes.e2_hospital_15__variant_0.title"
 		},
 		"e2_hospital_15__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hospital_15__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -794,7 +794,7 @@
 				13990.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hospital_15__choice_0.title"
 		},
 		"e2_hospital_15__choice_0__requires": {
 			"type": "condition",
@@ -809,12 +809,12 @@
 				14410.0,
 				0.0
 			],
-			"title": "Доступность ответа"
+			"title": "@loc:episode2.nodes.e2_hospital_15__choice_0__requires.title"
 		},
 		"e2_hospital_15__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hospital_15__choice_1.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -826,7 +826,7 @@
 				13990.0,
 				290.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hospital_15__choice_1.title"
 		},
 		"e2_hospital_15__choice_1__requires": {
 			"type": "condition",
@@ -839,7 +839,7 @@
 				14410.0,
 				290.0
 			],
-			"title": "Доступность ответа"
+			"title": "@loc:episode2.nodes.e2_hospital_15__choice_1__requires.title"
 		},
 		"e2_hospital_16": {
 			"type": "scene",
@@ -852,7 +852,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Вслед Дэвиду в отчаянии прокричали что-то бранное, но ему было все равно. Неожиданно он услышал приближающийся гул откуда-то сверху. Это было похоже на... Черт возьми, вертолет! Скорее всего, он прилетел за выжившими!!!",
+						"text": "@loc:episode2.nodes.e2_hospital_16.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.0,
@@ -864,7 +864,7 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Вслед Дэвиду в отчаянии прокричали что-то бранное, но ему было все равно. Неожиданно он услышал приближающийся гул откуда-то сверху. Это было похоже на... Черт возьми, вертолет! Скорее всего, он прилетел за выжившими!!!",
+				"text": "@loc:episode2.nodes.e2_hospital_16.data.text",
 				"sound": "Helicopter",
 				"controls_art": "e2_hospital_16_controls"
 			},
@@ -872,7 +872,7 @@
 				18700.0,
 				2600.0
 			],
-			"title": "e2_hospital_16"
+			"title": "@loc:episode2.nodes.e2_hospital_16.title"
 		},
 		"e2_hospital_16__variant_0": {
 			"type": "condition",
@@ -883,7 +883,7 @@
 				"patch": {
 					"blocks": [
 						{
-							"text": "Дэвид расправился со всеми четырьмя мертвецами, как с одним, очень легко. Но патронов теперь у хирурга не было, и он выбросил показавшийся ему бесполезным теперь пистолет. Неожиданно он услышал приближающийся гул откуда-то сверху. Это было похоже на... Вертолет! Это его шанс!",
+							"text": "@loc:episode2.nodes.e2_hospital_16__variant_0.data.patch.blocks.0.text",
 							"rect": [
 								11.0,
 								5.0,
@@ -901,7 +901,7 @@
 				18320.0,
 				2780.0
 			],
-			"title": "Вариант сцены"
+			"title": "@loc:episode2.nodes.e2_hospital_16__variant_0.title"
 		},
 		"e2_hospital_16__variant_1": {
 			"type": "condition",
@@ -912,7 +912,7 @@
 				"patch": {
 					"blocks": [
 						{
-							"text": "Теперь Дэвиду предстояло выбрать наиболее безопасный маршрут вниз, на котором он встретил бы как можно меньше зомби... Неожиданно он услышал приближающийся гул откуда-то сверху. Это было похоже на... Черт возьми, вертолет! Скорее всего, он прилетел за выжившими!!!",
+							"text": "@loc:episode2.nodes.e2_hospital_16__variant_1.data.patch.blocks.0.text",
 							"rect": [
 								11.0,
 								5.0,
@@ -930,12 +930,12 @@
 				18320.0,
 				2780.0
 			],
-			"title": "Вариант сцены"
+			"title": "@loc:episode2.nodes.e2_hospital_16__variant_1.title"
 		},
 		"e2_hospital_16__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Подняться на крышу",
+				"text": "@loc:episode2.nodes.e2_hospital_16__choice_0.data.text",
 				"rect": [
 					269.5,
 					338.5,
@@ -948,12 +948,12 @@
 				19090.0,
 				2600.0
 			],
-			"title": "Подняться на крышу"
+			"title": "@loc:episode2.nodes.e2_hospital_16__choice_0.title"
 		},
 		"e2_hospital_16__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Идти в главную часть больницы",
+				"text": "@loc:episode2.nodes.e2_hospital_16__choice_1.data.text",
 				"rect": [
 					393.0,
 					337.0,
@@ -966,7 +966,7 @@
 				19090.0,
 				2890.0
 			],
-			"title": "Идти в главную часть больницы"
+			"title": "@loc:episode2.nodes.e2_hospital_16__choice_1.title"
 		},
 		"e2_hospital_16__choice_1__requires": {
 			"type": "condition",
@@ -981,12 +981,12 @@
 				19510.0,
 				2890.0
 			],
-			"title": "Доступность ответа"
+			"title": "@loc:episode2.nodes.e2_hospital_16__choice_1__requires.title"
 		},
 		"e2_hospital_16__choice_2": {
 			"type": "choice",
 			"data": {
-				"text": "Идти в главную часть больницы",
+				"text": "@loc:episode2.nodes.e2_hospital_16__choice_2.data.text",
 				"rect": [
 					393.0,
 					337.0,
@@ -999,7 +999,7 @@
 				19090.0,
 				3180.0
 			],
-			"title": "Идти в главную часть больницы"
+			"title": "@loc:episode2.nodes.e2_hospital_16__choice_2.title"
 		},
 		"e2_hospital_16__choice_2__requires": {
 			"type": "condition",
@@ -1014,7 +1014,7 @@
 				19510.0,
 				3180.0
 			],
-			"title": "Доступность ответа"
+			"title": "@loc:episode2.nodes.e2_hospital_16__choice_2__requires.title"
 		},
 		"e2_hospital_17": {
 			"type": "scene",
@@ -1027,7 +1027,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Свернув за угол, Дэвид тут же наткнулся на толпу мертвецов. Скорее всего, они шли на звук его выстрела... Что же делать?! У него, конечно, осталось как раз 4 патрона, можно убить их всех, но кто знает, что там будет впереди...",
+						"text": "@loc:episode2.nodes.e2_hospital_17.data.blocks.0.text",
 						"rect": [
 							11.0,
 							393.0,
@@ -1039,18 +1039,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Свернув за угол, Дэвид тут же наткнулся на толпу мертвецов. Скорее всего, они шли на звук его выстрела... Что же делать?! У него, конечно, осталось как раз 4 патрона, можно убить их всех, но кто знает, что там будет впереди..."
+				"text": "@loc:episode2.nodes.e2_hospital_17.data.text"
 			},
 			"position": [
 				18700.0,
 				3900.0
 			],
-			"title": "e2_hospital_17"
+			"title": "@loc:episode2.nodes.e2_hospital_17.title"
 		},
 		"e2_hospital_17__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hospital_17__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -1062,7 +1062,7 @@
 				19090.0,
 				3900.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hospital_17__choice_0.title"
 		},
 		"e2_hospital_18": {
 			"type": "scene",
@@ -1082,12 +1082,12 @@
 				22100.0,
 				0.0
 			],
-			"title": "e2_hospital_18"
+			"title": "@loc:episode2.nodes.e2_hospital_18.title"
 		},
 		"e2_hospital_18__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hospital_18__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -1099,7 +1099,7 @@
 				22490.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hospital_18__choice_0.title"
 		},
 		"e2_hospital_18__choice_0__effects": {
 			"type": "action",
@@ -1112,7 +1112,7 @@
 				22910.0,
 				0.0
 			],
-			"title": "Последствия выбора"
+			"title": "@loc:episode2.nodes.e2_hospital_18__choice_0__effects.title"
 		},
 		"e2_hospital_19": {
 			"type": "scene",
@@ -1125,7 +1125,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Неожиданно друг Ника открыл глаза. Мертвые, без зрачков. Дэвид уже точно знал, что он должен сделать. Он поднял дрожащую руку с пистолетом... Ник отвернулся.",
+						"text": "@loc:episode2.nodes.e2_hospital_19.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.0,
@@ -1137,13 +1137,13 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Неожиданно друг Ника открыл глаза. Мертвые, без зрачков. Дэвид уже точно знал, что он должен сделать. Он поднял дрожащую руку с пистолетом... Ник отвернулся."
+				"text": "@loc:episode2.nodes.e2_hospital_19.data.text"
 			},
 			"position": [
 				20400.0,
 				0.0
 			],
-			"title": "e2_hospital_19"
+			"title": "@loc:episode2.nodes.e2_hospital_19.title"
 		},
 		"e2_hospital_19__pickup": {
 			"type": "condition",
@@ -1156,12 +1156,12 @@
 				20020.0,
 				180.0
 			],
-			"title": "Получение предмета"
+			"title": "@loc:episode2.nodes.e2_hospital_19__pickup.title"
 		},
 		"e2_hospital_19__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hospital_19__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -1173,7 +1173,7 @@
 				20790.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hospital_19__choice_0.title"
 		},
 		"e2_hospital_20": {
 			"type": "scene",
@@ -1186,7 +1186,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Прозвучал выстрел, и... Шаги... Множество шаркающих шагов раздавалось по ту сторону двери. Теперь они в западне. За этой старой и хлипкой дверью, которую почему-то не стали менять во время недавнего ремонта, их ждет смерть. И чем больше пройдет времени, тем больше мертвецов придет на шум. Думай, Дэвид, думай!",
+						"text": "@loc:episode2.nodes.e2_hospital_20.data.blocks.0.text",
 						"rect": [
 							35.0,
 							166.1,
@@ -1198,19 +1198,19 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Прозвучал выстрел, и... Шаги... Множество шаркающих шагов раздавалось по ту сторону двери. Теперь они в западне. За этой старой и хлипкой дверью, которую почему-то не стали менять во время недавнего ремонта, их ждет смерть. И чем больше пройдет времени, тем больше мертвецов придет на шум. Думай, Дэвид, думай!",
+				"text": "@loc:episode2.nodes.e2_hospital_20.data.text",
 				"sound": "GlockShot1"
 			},
 			"position": [
 				22100.0,
 				1300.0
 			],
-			"title": "e2_hospital_20"
+			"title": "@loc:episode2.nodes.e2_hospital_20.title"
 		},
 		"e2_hospital_20__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hospital_20__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -1222,7 +1222,7 @@
 				22490.0,
 				1300.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hospital_20__choice_0.title"
 		},
 		"e2_hospital_20__choice_0__effects": {
 			"type": "action",
@@ -1235,7 +1235,7 @@
 				22910.0,
 				1300.0
 			],
-			"title": "Последствия выбора"
+			"title": "@loc:episode2.nodes.e2_hospital_20__choice_0__effects.title"
 		},
 		"e2_roof_1": {
 			"type": "scene",
@@ -1248,7 +1248,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Дэвид очень боялся, что вертолет улетит, поэтому бежал изо всех сил, отскакивая от появляющихся из-за дверей палат зомби. Только добежав до лестницы, он позволил себе короткую передышку... Снизу к нему уже поднимались мертвые, неуклюже передвигая конечностями.",
+						"text": "@loc:episode2.nodes.e2_roof_1.data.blocks.0.text",
 						"rect": [
 							11.0,
 							368.7,
@@ -1260,19 +1260,19 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Дэвид очень боялся, что вертолет улетит, поэтому бежал изо всех сил, отскакивая от появляющихся из-за дверей палат зомби. Только добежав до лестницы, он позволил себе короткую передышку... Снизу к нему уже поднимались мертвые, неуклюже передвигая конечностями.",
+				"text": "@loc:episode2.nodes.e2_roof_1.data.text",
 				"sound": "DoorSlowOpen"
 			},
 			"position": [
 				15300.0,
 				2600.0
 			],
-			"title": "e2_roof_1"
+			"title": "@loc:episode2.nodes.e2_roof_1.title"
 		},
 		"e2_roof_1__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_roof_1__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -1284,7 +1284,7 @@
 				15690.0,
 				2600.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_roof_1__choice_0.title"
 		},
 		"e2_roof_2": {
 			"type": "scene",
@@ -1297,7 +1297,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Почему на лестнице так темно? Ну вот почему так не вовремя ремонт то этот... Вчера же должны были закончить! Дэвид изо всех сил напрягал глаза и слух, чтобы в этом полумраке неожиданно не наткнуться на что-нибудь. Мертвое.",
+						"text": "@loc:episode2.nodes.e2_roof_2.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.65,
@@ -1309,18 +1309,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Почему на лестнице так темно? Ну вот почему так не вовремя ремонт то этот... Вчера же должны были закончить! Дэвид изо всех сил напрягал глаза и слух, чтобы в этом полумраке неожиданно не наткнуться на что-нибудь. Мертвое."
+				"text": "@loc:episode2.nodes.e2_roof_2.data.text"
 			},
 			"position": [
 				17000.0,
 				1300.0
 			],
-			"title": "e2_roof_2"
+			"title": "@loc:episode2.nodes.e2_roof_2.title"
 		},
 		"e2_roof_2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_roof_2__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -1332,7 +1332,7 @@
 				17390.0,
 				1300.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_roof_2__choice_0.title"
 		},
 		"e2_roof_3": {
 			"type": "scene",
@@ -1345,7 +1345,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Поворот, еще... Вроде все тихо. Поворот. Черт, черт, черт! Каховски инстинктивно отпрянул от ползущего на него вниз по лестнице окровавленного зомби, бывшего когда-то девушкой.",
+						"text": "@loc:episode2.nodes.e2_roof_3.data.blocks.0.text",
 						"rect": [
 							11.0,
 							394.65,
@@ -1357,19 +1357,19 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Поворот, еще... Вроде все тихо. Поворот. Черт, черт, черт! Каховски инстинктивно отпрянул от ползущего на него вниз по лестнице окровавленного зомби, бывшего когда-то девушкой.",
+				"text": "@loc:episode2.nodes.e2_roof_3.data.text",
 				"sound": "FemZombie"
 			},
 			"position": [
 				18700.0,
 				5200.0
 			],
-			"title": "e2_roof_3"
+			"title": "@loc:episode2.nodes.e2_roof_3.title"
 		},
 		"e2_roof_3__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_roof_3__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -1381,7 +1381,7 @@
 				19090.0,
 				5200.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_roof_3__choice_0.title"
 		},
 		"e2_roof_3__choice_0__requires": {
 			"type": "condition",
@@ -1396,12 +1396,12 @@
 				19510.0,
 				5200.0
 			],
-			"title": "Доступность ответа"
+			"title": "@loc:episode2.nodes.e2_roof_3__choice_0__requires.title"
 		},
 		"e2_roof_3__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_roof_3__choice_1.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -1413,7 +1413,7 @@
 				19090.0,
 				5490.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_roof_3__choice_1.title"
 		},
 		"e2_roof_3__choice_1__requires": {
 			"type": "condition",
@@ -1428,7 +1428,7 @@
 				19510.0,
 				5490.0
 			],
-			"title": "Доступность ответа"
+			"title": "@loc:episode2.nodes.e2_roof_3__choice_1__requires.title"
 		},
 		"e2_roof_4": {
 			"type": "scene",
@@ -1448,12 +1448,12 @@
 				22100.0,
 				2600.0
 			],
-			"title": "e2_roof_4"
+			"title": "@loc:episode2.nodes.e2_roof_4.title"
 		},
 		"e2_roof_4__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_roof_4__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -1465,7 +1465,7 @@
 				22490.0,
 				2600.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_roof_4__choice_0.title"
 		},
 		"e2_roof_5": {
 			"type": "scene",
@@ -1478,7 +1478,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Каховски выстрелил и спокойно поднял глаза, замечая прущих сверху зомби. На его лице появилась маниакальныя улыбка... Это ходячее мясо не остановит его. Дэвид дойдет! Он навел пистолет на ближайщего мертвеца и спустил курок...",
+						"text": "@loc:episode2.nodes.e2_roof_5.data.blocks.0.text",
 						"rect": [
 							11.0,
 							393.65,
@@ -1490,18 +1490,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Каховски выстрелил и спокойно поднял глаза, замечая прущих сверху зомби. На его лице появилась маниакальныя улыбка... Это ходячее мясо не остановит его. Дэвид дойдет! Он навел пистолет на ближайщего мертвеца и спустил курок..."
+				"text": "@loc:episode2.nodes.e2_roof_5.data.text"
 			},
 			"position": [
 				23800.0,
 				0.0
 			],
-			"title": "e2_roof_5"
+			"title": "@loc:episode2.nodes.e2_roof_5.title"
 		},
 		"e2_roof_5__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_roof_5__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -1513,7 +1513,7 @@
 				24190.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_roof_5__choice_0.title"
 		},
 		"e2_roof_6": {
 			"type": "scene",
@@ -1533,12 +1533,12 @@
 				25500.0,
 				0.0
 			],
-			"title": "e2_roof_6"
+			"title": "@loc:episode2.nodes.e2_roof_6.title"
 		},
 		"e2_roof_6__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_roof_6__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -1550,7 +1550,7 @@
 				25890.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_roof_6__choice_0.title"
 		},
 		"e2_roof_7": {
 			"type": "scene",
@@ -1563,7 +1563,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Оперевшись рукой на перила, Дэвид оттолкнулся ногой от головы мертвеца и оказался за его спиной. Стараясь побыстрей уйти от ползущей за ним «мертвячки», хирург слишком быстро вылетел на следующий пролет и...",
+						"text": "@loc:episode2.nodes.e2_roof_7.data.blocks.0.text",
 						"rect": [
 							34.0,
 							188.05,
@@ -1575,18 +1575,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Оперевшись рукой на перила, Дэвид оттолкнулся ногой от головы мертвеца и оказался за его спиной. Стараясь побыстрей уйти от ползущей за ним «мертвячки», хирург слишком быстро вылетел на следующий пролет и..."
+				"text": "@loc:episode2.nodes.e2_roof_7.data.text"
 			},
 			"position": [
 				20400.0,
 				1300.0
 			],
-			"title": "e2_roof_7"
+			"title": "@loc:episode2.nodes.e2_roof_7.title"
 		},
 		"e2_roof_7__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_roof_7__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -1598,7 +1598,7 @@
 				20790.0,
 				1300.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_roof_7__choice_0.title"
 		},
 		"e2_roof_8": {
 			"type": "scene",
@@ -1617,7 +1617,7 @@
 				22100.0,
 				3900.0
 			],
-			"title": "e2_roof_8"
+			"title": "@loc:episode2.nodes.e2_roof_8.title"
 		},
 		"e2_roof_8__variant_0": {
 			"type": "condition",
@@ -1635,7 +1635,7 @@
 				21720.0,
 				4080.0
 			],
-			"title": "Вариант сцены"
+			"title": "@loc:episode2.nodes.e2_roof_8__variant_0.title"
 		},
 		"e2_roof_8__variant_1": {
 			"type": "condition",
@@ -1653,12 +1653,12 @@
 				21720.0,
 				4080.0
 			],
-			"title": "Вариант сцены"
+			"title": "@loc:episode2.nodes.e2_roof_8__variant_1.title"
 		},
 		"e2_roof_8__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_roof_8__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -1670,7 +1670,7 @@
 				22490.0,
 				3900.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_roof_8__choice_0.title"
 		},
 		"e2_roof_8__choice_0__requires": {
 			"type": "condition",
@@ -1685,12 +1685,12 @@
 				22910.0,
 				3900.0
 			],
-			"title": "Доступность ответа"
+			"title": "@loc:episode2.nodes.e2_roof_8__choice_0__requires.title"
 		},
 		"e2_roof_8__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_roof_8__choice_1.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -1702,7 +1702,7 @@
 				22490.0,
 				4190.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_roof_8__choice_1.title"
 		},
 		"e2_roof_8__choice_1__requires": {
 			"type": "condition",
@@ -1717,7 +1717,7 @@
 				22910.0,
 				4190.0
 			],
-			"title": "Доступность ответа"
+			"title": "@loc:episode2.nodes.e2_roof_8__choice_1__requires.title"
 		},
 		"e2_roof_9": {
 			"type": "scene",
@@ -1730,7 +1730,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Дэвид каким-то непостижимым образом умудрился прострелить летящему на него зомби башку, попав в висок, но не успел увернуться от тела и оказался придавленным к полу центнером мертвечины. Кажется, что ему осталось только молиться? Черт возьми, как бы не так! Толпа зомби прошаркала мимо вниз по летнице, не заметив его. Не веря своей удаче, Дэвид очень медленно высвободился из-под трупа... Путь наверх теперь был свободен!",
+						"text": "@loc:episode2.nodes.e2_roof_9.data.blocks.0.text",
 						"rect": [
 							55.0,
 							182.05,
@@ -1742,18 +1742,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Дэвид каким-то непостижимым образом умудрился прострелить летящему на него зомби башку, попав в висок, но не успел увернуться от тела и оказался придавленным к полу центнером мертвечины. Кажется, что ему осталось только молиться? Черт возьми, как бы не так! Толпа зомби прошаркала мимо вниз по летнице, не заметив его. Не веря своей удаче, Дэвид очень медленно высвободился из-под трупа... Путь наверх теперь был свободен!"
+				"text": "@loc:episode2.nodes.e2_roof_9.data.text"
 			},
 			"position": [
 				23800.0,
 				1300.0
 			],
-			"title": "e2_roof_9"
+			"title": "@loc:episode2.nodes.e2_roof_9.title"
 		},
 		"e2_roof_9__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_roof_9__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -1765,7 +1765,7 @@
 				24190.0,
 				1300.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_roof_9__choice_0.title"
 		},
 		"e2_roof_10": {
 			"type": "scene",
@@ -1778,7 +1778,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Дэвид распахнул дверь наружу и сразу увидел ствол крупнокалиберного пулемета, повернутый в его сторону. Он поднял руки вверх и медленно, не делая резких движений и крича что-то о том, что он человек, начал приближаться к вертолету.",
+						"text": "@loc:episode2.nodes.e2_roof_10.data.blocks.0.text",
 						"rect": [
 							11.0,
 							395.65,
@@ -1790,18 +1790,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Дэвид распахнул дверь наружу и сразу увидел ствол крупнокалиберного пулемета, повернутый в его сторону. Он поднял руки вверх и медленно, не делая резких движений и крича что-то о том, что он человек, начал приближаться к вертолету."
+				"text": "@loc:episode2.nodes.e2_roof_10.data.text"
 			},
 			"position": [
 				25500.0,
 				1300.0
 			],
-			"title": "e2_roof_10"
+			"title": "@loc:episode2.nodes.e2_roof_10.title"
 		},
 		"e2_roof_10__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_roof_10__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -1813,7 +1813,7 @@
 				25890.0,
 				1300.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_roof_10__choice_0.title"
 		},
 		"e2_roof_11": {
 			"type": "scene",
@@ -1826,7 +1826,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "После того, как Дэвида бегло проверили на наличие укусов, царапин и прочего, его пустили в вертолет. Там уже находились спасенные военными люди. Из разговоров хирург узнал, что бойцы прибыли с ближайшей военной базы.",
+						"text": "@loc:episode2.nodes.e2_roof_11.data.blocks.0.text",
 						"rect": [
 							11.0,
 							393.65,
@@ -1838,18 +1838,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "После того, как Дэвида бегло проверили на наличие укусов, царапин и прочего, его пустили в вертолет. Там уже находились спасенные военными люди. Из разговоров хирург узнал, что бойцы прибыли с ближайшей военной базы."
+				"text": "@loc:episode2.nodes.e2_roof_11.data.text"
 			},
 			"position": [
 				27200.0,
 				0.0
 			],
-			"title": "e2_roof_11"
+			"title": "@loc:episode2.nodes.e2_roof_11.title"
 		},
 		"e2_roof_11__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_roof_11__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -1861,7 +1861,7 @@
 				27590.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_roof_11__choice_0.title"
 		},
 		"e2_roof_12": {
 			"type": "scene",
@@ -1874,7 +1874,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Дверь на крышу распахнулась и из-за нее показалось окровавленное существо, ревущее что-то нечленораздельное. Дэвиду очень тяжело дался бой с этой толпой. Он чудом выбрался. Чудом! Но стрелок вертолета не хотел рисковать. Щелчок, и патроны пятидесятого калибра рвут тело на части...",
+						"text": "@loc:episode2.nodes.e2_roof_12.data.blocks.0.text",
 						"rect": [
 							11.0,
 							366.65,
@@ -1886,19 +1886,19 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Дверь на крышу распахнулась и из-за нее показалось окровавленное существо, ревущее что-то нечленораздельное. Дэвиду очень тяжело дался бой с этой толпой. Он чудом выбрался. Чудом! Но стрелок вертолета не хотел рисковать. Щелчок, и патроны пятидесятого калибра рвут тело на части...",
+				"text": "@loc:episode2.nodes.e2_roof_12.data.text",
 				"sound": "MachineGun"
 			},
 			"position": [
 				27200.0,
 				1300.0
 			],
-			"title": "e2_roof_12"
+			"title": "@loc:episode2.nodes.e2_roof_12.title"
 		},
 		"e2_roof_12__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_roof_12__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -1910,7 +1910,7 @@
 				27590.0,
 				1300.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_roof_12__choice_0.title"
 		},
 		"e2_first_1": {
 			"type": "scene",
@@ -1923,7 +1923,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Дэвиду очень повезло, что эта операционная находилась рядом с пожарной лестницей, далеко от центральной части больницы — он не встретил ни души на своем пути.",
+						"text": "@loc:episode2.nodes.e2_first_1.data.blocks.0.text",
 						"rect": [
 							11.0,
 							420.0,
@@ -1935,18 +1935,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Дэвиду очень повезло, что эта операционная находилась рядом с пожарной лестницей, далеко от центральной части больницы — он не встретил ни души на своем пути."
+				"text": "@loc:episode2.nodes.e2_first_1.data.text"
 			},
 			"position": [
 				20400.0,
 				2600.0
 			],
-			"title": "e2_first_1"
+			"title": "@loc:episode2.nodes.e2_first_1.title"
 		},
 		"e2_first_1__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_first_1__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -1958,7 +1958,7 @@
 				20790.0,
 				2600.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_first_1__choice_0.title"
 		},
 		"e2_first_2": {
 			"type": "scene",
@@ -1971,7 +1971,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Дверь, ведущая на пожарную лестницу закрылась за Дэвидом, отсекая от него полный ужаса крик... Черт возьми, какой же он после этого врач! Опустошенный и злой на весь мир и себя в первую очередь хирург бегом спускался по лестнице и притормозил лишь перед выходом на первый этаж.",
+						"text": "@loc:episode2.nodes.e2_first_2.data.blocks.0.text",
 						"rect": [
 							11.0,
 							367.95,
@@ -1983,18 +1983,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Дверь, ведущая на пожарную лестницу закрылась за Дэвидом, отсекая от него полный ужаса крик... Черт возьми, какой же он после этого врач! Опустошенный и злой на весь мир и себя в первую очередь хирург бегом спускался по лестнице и притормозил лишь перед выходом на первый этаж."
+				"text": "@loc:episode2.nodes.e2_first_2.data.text"
 			},
 			"position": [
 				22100.0,
 				5200.0
 			],
-			"title": "e2_first_2"
+			"title": "@loc:episode2.nodes.e2_first_2.title"
 		},
 		"e2_first_2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_first_2__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -2006,7 +2006,7 @@
 				22490.0,
 				5200.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_first_2__choice_0.title"
 		},
 		"e2_first_3": {
 			"type": "scene",
@@ -2019,7 +2019,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Эвакуационный выход совершенно неожиданно для Дэвида оказался закрыт снаружи. Ручки дверей были обмотаны цепями и закреплены навесным замком. Кто мог такое сделать и зачем?!",
+						"text": "@loc:episode2.nodes.e2_first_3.data.blocks.0.text",
 						"rect": [
 							11.0,
 							6.95,
@@ -2031,19 +2031,19 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Эвакуационный выход совершенно неожиданно для Дэвида оказался закрыт снаружи. Ручки дверей были обмотаны цепями и закреплены навесным замком. Кто мог такое сделать и зачем?!",
+				"text": "@loc:episode2.nodes.e2_first_3.data.text",
 				"sound": "ClosedDoor"
 			},
 			"position": [
 				20400.0,
 				3900.0
 			],
-			"title": "e2_first_3"
+			"title": "@loc:episode2.nodes.e2_first_3.title"
 		},
 		"e2_first_3__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_first_3__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -2055,7 +2055,7 @@
 				20790.0,
 				3900.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_first_3__choice_0.title"
 		},
 		"e2_first_3__choice_0__requires": {
 			"type": "condition",
@@ -2070,12 +2070,12 @@
 				21210.0,
 				3900.0
 			],
-			"title": "Доступность ответа"
+			"title": "@loc:episode2.nodes.e2_first_3__choice_0__requires.title"
 		},
 		"e2_first_3__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_first_3__choice_1.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -2087,7 +2087,7 @@
 				20790.0,
 				4190.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_first_3__choice_1.title"
 		},
 		"e2_first_3__choice_1__requires": {
 			"type": "condition",
@@ -2102,7 +2102,7 @@
 				21210.0,
 				4190.0
 			],
-			"title": "Доступность ответа"
+			"title": "@loc:episode2.nodes.e2_first_3__choice_1__requires.title"
 		},
 		"e2_first_4": {
 			"type": "scene",
@@ -2115,7 +2115,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "В ушах Дэвида болезненно звенело, он на некоторое время перестал слышать. Все-таки, стрелять в замкнутом помещении — то еще удовольствие.",
+						"text": "@loc:episode2.nodes.e2_first_4.data.blocks.0.text",
 						"rect": [
 							11.0,
 							420.95,
@@ -2127,19 +2127,19 @@
 						"path": "Mov.Mov"
 					}
 				],
-				"text": "В ушах Дэвида болезненно звенело, он на некоторое время перестал слышать. Все-таки, стрелять в замкнутом помещении — то еще удовольствие.",
+				"text": "@loc:episode2.nodes.e2_first_4.data.text",
 				"sound": "TryToBreak4"
 			},
 			"position": [
 				23800.0,
 				2600.0
 			],
-			"title": "e2_first_4"
+			"title": "@loc:episode2.nodes.e2_first_4.title"
 		},
 		"e2_first_4__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_first_4__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -2151,7 +2151,7 @@
 				24190.0,
 				2600.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_first_4__choice_0.title"
 		},
 		"e2_first_4__choice_0__requires": {
 			"type": "condition",
@@ -2164,12 +2164,12 @@
 				24610.0,
 				2600.0
 			],
-			"title": "Доступность ответа"
+			"title": "@loc:episode2.nodes.e2_first_4__choice_0__requires.title"
 		},
 		"e2_first_4__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_first_4__choice_1.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -2181,7 +2181,7 @@
 				24190.0,
 				2890.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_first_4__choice_1.title"
 		},
 		"e2_first_4__choice_1__requires": {
 			"type": "condition",
@@ -2194,7 +2194,7 @@
 				24610.0,
 				2890.0
 			],
-			"title": "Доступность ответа"
+			"title": "@loc:episode2.nodes.e2_first_4__choice_1__requires.title"
 		},
 		"e2_first_5": {
 			"type": "scene",
@@ -2207,7 +2207,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Оглушенный, Дэвид не услышал шаркающих шагов за спиной. Эта оплошность стала для него роковой.",
+						"text": "@loc:episode2.nodes.e2_first_5.data.blocks.0.text",
 						"rect": [
 							11.0,
 							422.95,
@@ -2219,19 +2219,19 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Оглушенный, Дэвид не услышал шаркающих шагов за спиной. Эта оплошность стала для него роковой.",
+				"text": "@loc:episode2.nodes.e2_first_5.data.text",
 				"sound": "ZombieRoar"
 			},
 			"position": [
 				25500.0,
 				2600.0
 			],
-			"title": "e2_first_5"
+			"title": "@loc:episode2.nodes.e2_first_5.title"
 		},
 		"e2_first_5__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_first_5__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -2243,7 +2243,7 @@
 				25890.0,
 				2600.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_first_5__choice_0.title"
 		},
 		"e2_first_6": {
 			"type": "scene",
@@ -2256,7 +2256,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Оглушенный выстрелами Дэвид не услышал бы шаркающих шагов мертвеца за своей спиной. Но его прикрывал Ник, беспощадно расправившийся с непрошенным зловещим «гостем». А потом и со своим обратившимся другом...",
+						"text": "@loc:episode2.nodes.e2_first_6.data.blocks.0.text",
 						"rect": [
 							11.0,
 							7.05,
@@ -2268,18 +2268,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Оглушенный выстрелами Дэвид не услышал бы шаркающих шагов мертвеца за своей спиной. Но его прикрывал Ник, беспощадно расправившийся с непрошенным зловещим «гостем». А потом и со своим обратившимся другом..."
+				"text": "@loc:episode2.nodes.e2_first_6.data.text"
 			},
 			"position": [
 				25500.0,
 				3900.0
 			],
-			"title": "e2_first_6"
+			"title": "@loc:episode2.nodes.e2_first_6.title"
 		},
 		"e2_first_6__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_first_6__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -2291,7 +2291,7 @@
 				25890.0,
 				3900.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_first_6__choice_0.title"
 		},
 		"e2_first_7": {
 			"type": "scene",
@@ -2304,7 +2304,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Пинком распахнув двери, хирург выбежал на улицу, и тут же был ослеплен светом прожектора, установленного на одном из военных Хаммеров, стоящих неподалеку. Он медленно поднял руки вверх — ребята за пулеметом тут же потеряли к нему всякий интерес. Ник сразу бросился искать ближайшую пустую машину.",
+						"text": "@loc:episode2.nodes.e2_first_7.data.blocks.0.text",
 						"rect": [
 							11.0,
 							369.15,
@@ -2316,18 +2316,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Пинком распахнув двери, хирург выбежал на улицу, и тут же был ослеплен светом прожектора, установленного на одном из военных Хаммеров, стоящих неподалеку. Он медленно поднял руки вверх — ребята за пулеметом тут же потеряли к нему всякий интерес. Ник сразу бросился искать ближайшую пустую машину."
+				"text": "@loc:episode2.nodes.e2_first_7.data.text"
 			},
 			"position": [
 				27200.0,
 				2600.0
 			],
-			"title": "e2_first_7"
+			"title": "@loc:episode2.nodes.e2_first_7.title"
 		},
 		"e2_first_7__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_first_7__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -2339,7 +2339,7 @@
 				27590.0,
 				2600.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_first_7__choice_0.title"
 		},
 		"e2_first_8": {
 			"type": "scene",
@@ -2352,7 +2352,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Ник разбил боковое стекло ближайшего автомобиля, убрал осколки прутом и забрался внутрь. Он, оказывается, умел заводить двигатель без ключа!",
+						"text": "@loc:episode2.nodes.e2_first_8.data.blocks.0.text",
 						"rect": [
 							11.0,
 							7.0,
@@ -2364,18 +2364,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Ник разбил боковое стекло ближайшего автомобиля, убрал осколки прутом и забрался внутрь. Он, оказывается, умел заводить двигатель без ключа!"
+				"text": "@loc:episode2.nodes.e2_first_8.data.text"
 			},
 			"position": [
 				28900.0,
 				0.0
 			],
-			"title": "e2_first_8"
+			"title": "@loc:episode2.nodes.e2_first_8.title"
 		},
 		"e2_first_8__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_first_8__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -2387,7 +2387,7 @@
 				29290.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_first_8__choice_0.title"
 		},
 		"e2_first_9": {
 			"type": "scene",
@@ -2400,7 +2400,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Все другие двери оказались закрыты и точно также скованы цепями. Дальше по коридору слышались шаги и выстрелы, и Дэвид поспешил туда. Выглянув из-за угла, он заметил вооруженных людей, яростно отбивающихся от толпы мертвецов и пытающихся прорваться к одному из выходов...",
+						"text": "@loc:episode2.nodes.e2_first_9.data.blocks.0.text",
 						"rect": [
 							11.0,
 							368.0,
@@ -2412,18 +2412,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Все другие двери оказались закрыты и точно также скованы цепями. Дальше по коридору слышались шаги и выстрелы, и Дэвид поспешил туда. Выглянув из-за угла, он заметил вооруженных людей, яростно отбивающихся от толпы мертвецов и пытающихся прорваться к одному из выходов..."
+				"text": "@loc:episode2.nodes.e2_first_9.data.text"
 			},
 			"position": [
 				23800.0,
 				3900.0
 			],
-			"title": "e2_first_9"
+			"title": "@loc:episode2.nodes.e2_first_9.title"
 		},
 		"e2_first_9__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_first_9__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -2435,7 +2435,7 @@
 				24190.0,
 				3900.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_first_9__choice_0.title"
 		},
 		"e2_first_10": {
 			"type": "scene",
@@ -2448,7 +2448,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Дэвид выскочил из-за угла и ринулся к военным. В горячке боя бойцы стреляли во все, что движется. И вот хирург с удивлением смотрит на вороненый ствол Кольта 1911, обращенный в его сторону...",
+						"text": "@loc:episode2.nodes.e2_first_10.data.blocks.0.text",
 						"rect": [
 							11.0,
 							394.1,
@@ -2460,13 +2460,13 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Дэвид выскочил из-за угла и ринулся к военным. В горячке боя бойцы стреляли во все, что движется. И вот хирург с удивлением смотрит на вороненый ствол Кольта 1911, обращенный в его сторону..."
+				"text": "@loc:episode2.nodes.e2_first_10.data.text"
 			},
 			"position": [
 				27200.0,
 				3900.0
 			],
-			"title": "e2_first_10"
+			"title": "@loc:episode2.nodes.e2_first_10.title"
 		},
 		"e2_first_10__variant_0": {
 			"type": "condition",
@@ -2477,7 +2477,7 @@
 				"patch": {
 					"blocks": [
 						{
-							"text": "Дэвид выскочил из-за угла и ринулся к военным. Ник последовал его примеру. В горячке боя бойцы стреляли во все, что движется. И вот хирург с удивлением смотрит на вороненый ствол Кольта 1911, обращенный в его сторону...",
+							"text": "@loc:episode2.nodes.e2_first_10__variant_0.data.patch.blocks.0.text",
 							"rect": [
 								11.0,
 								394.1,
@@ -2495,12 +2495,12 @@
 				26820.0,
 				4080.0
 			],
-			"title": "Вариант сцены"
+			"title": "@loc:episode2.nodes.e2_first_10__variant_0.title"
 		},
 		"e2_first_10__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_first_10__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -2512,7 +2512,7 @@
 				27590.0,
 				3900.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_first_10__choice_0.title"
 		},
 		"e2_first_11": {
 			"type": "scene",
@@ -2525,7 +2525,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "В ушах Дэвида болезненно звенело, он на некоторое время перестал слышать. Все-таки, стрелять в замкнутом помещении — то еще удовольствие.",
+						"text": "@loc:episode2.nodes.e2_first_11.data.blocks.0.text",
 						"rect": [
 							11.0,
 							420.95,
@@ -2537,19 +2537,19 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "В ушах Дэвида болезненно звенело, он на некоторое время перестал слышать. Все-таки, стрелять в замкнутом помещении — то еще удовольствие.",
+				"text": "@loc:episode2.nodes.e2_first_11.data.text",
 				"sound": "TryToBreak3"
 			},
 			"position": [
 				23800.0,
 				5200.0
 			],
-			"title": "e2_first_11"
+			"title": "@loc:episode2.nodes.e2_first_11.title"
 		},
 		"e2_first_11__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_first_11__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -2561,7 +2561,7 @@
 				24190.0,
 				5200.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_first_11__choice_0.title"
 		},
 		"e2_first_12": {
 			"type": "scene",
@@ -2574,7 +2574,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "В ушах Дэвида болезненно звенело, он на некоторое время перестал слышать. Все-таки, стрелять в замкнутом помещении — то еще удовольствие.",
+						"text": "@loc:episode2.nodes.e2_first_12.data.blocks.0.text",
 						"rect": [
 							11.0,
 							420.95,
@@ -2586,19 +2586,19 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "В ушах Дэвида болезненно звенело, он на некоторое время перестал слышать. Все-таки, стрелять в замкнутом помещении — то еще удовольствие.",
+				"text": "@loc:episode2.nodes.e2_first_12.data.text",
 				"sound": "TryToBreak2"
 			},
 			"position": [
 				23800.0,
 				6500.0
 			],
-			"title": "e2_first_12"
+			"title": "@loc:episode2.nodes.e2_first_12.title"
 		},
 		"e2_first_12__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_first_12__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -2610,7 +2610,7 @@
 				24190.0,
 				6500.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_first_12__choice_0.title"
 		},
 		"e2_hall_1": {
 			"type": "scene",
@@ -2623,7 +2623,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Дэвид шагнул за угол и понял, что в главную часть больницы ему придется идти по плохо освещенному коридору. Это серьезно давило на нервы.",
+						"text": "@loc:episode2.nodes.e2_hall_1.data.blocks.0.text",
 						"rect": [
 							11.0,
 							420.95,
@@ -2635,18 +2635,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Дэвид шагнул за угол и понял, что в главную часть больницы ему придется идти по плохо освещенному коридору. Это серьезно давило на нервы."
+				"text": "@loc:episode2.nodes.e2_hall_1.data.text"
 			},
 			"position": [
 				15300.0,
 				3900.0
 			],
-			"title": "e2_hall_1"
+			"title": "@loc:episode2.nodes.e2_hall_1.title"
 		},
 		"e2_hall_1__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hall_1__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -2658,7 +2658,7 @@
 				15690.0,
 				3900.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hall_1__choice_0.title"
 		},
 		"e2_hall_2": {
 			"type": "scene",
@@ -2671,7 +2671,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Повсюду была кровь и разруха, как будто бы здесь прошел локальный смерч. «Странно, — подумал хирург. — Нигде не видно трупов. Зомби их что, утаскивают?»",
+						"text": "@loc:episode2.nodes.e2_hall_2.data.blocks.0.text",
 						"rect": [
 							11.0,
 							418.95,
@@ -2683,18 +2683,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Повсюду была кровь и разруха, как будто бы здесь прошел локальный смерч. «Странно, — подумал хирург. — Нигде не видно трупов. Зомби их что, утаскивают?»"
+				"text": "@loc:episode2.nodes.e2_hall_2.data.text"
 			},
 			"position": [
 				17000.0,
 				2600.0
 			],
-			"title": "e2_hall_2"
+			"title": "@loc:episode2.nodes.e2_hall_2.title"
 		},
 		"e2_hall_2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hall_2__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -2706,7 +2706,7 @@
 				17390.0,
 				2600.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hall_2__choice_0.title"
 		},
 		"e2_hall_3": {
 			"type": "scene",
@@ -2719,7 +2719,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Дэвид дошел до холла этажа. Много раз он слышал чавканье из-за дверей. Возможно, что это и помогло ему так просто добраться практически до лестницы вниз. Но теперь это самое чавканье доносилось из-за стойки справочной... Проклятье.",
+						"text": "@loc:episode2.nodes.e2_hall_3.data.blocks.0.text",
 						"rect": [
 							11.0,
 							394.95,
@@ -2731,18 +2731,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Дэвид дошел до холла этажа. Много раз он слышал чавканье из-за дверей. Возможно, что это и помогло ему так просто добраться практически до лестницы вниз. Но теперь это самое чавканье доносилось из-за стойки справочной... Проклятье."
+				"text": "@loc:episode2.nodes.e2_hall_3.data.text"
 			},
 			"position": [
 				18700.0,
 				6500.0
 			],
-			"title": "e2_hall_3"
+			"title": "@loc:episode2.nodes.e2_hall_3.title"
 		},
 		"e2_hall_3__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hall_3__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -2754,7 +2754,7 @@
 				19090.0,
 				6500.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hall_3__choice_0.title"
 		},
 		"e2_hall_3__choice_0__requires": {
 			"type": "condition",
@@ -2769,12 +2769,12 @@
 				19510.0,
 				6500.0
 			],
-			"title": "Доступность ответа"
+			"title": "@loc:episode2.nodes.e2_hall_3__choice_0__requires.title"
 		},
 		"e2_hall_3__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hall_3__choice_1.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -2786,7 +2786,7 @@
 				19090.0,
 				6790.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hall_3__choice_1.title"
 		},
 		"e2_hall_3__choice_1__requires": {
 			"type": "condition",
@@ -2801,7 +2801,7 @@
 				19510.0,
 				6790.0
 			],
-			"title": "Доступность ответа"
+			"title": "@loc:episode2.nodes.e2_hall_3__choice_1__requires.title"
 		},
 		"e2_hall_4": {
 			"type": "scene",
@@ -2814,7 +2814,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Неожиданно за спиной у Дэвида снова раздались эти тихие шаги. Он резко обернулся, но сзади как обычно никого не оказалось. Что-то тут не так. Каховски занервничал и случайно задел ногой какой-то мусор под ногами... Чавканье за стойкой прекратилось.",
+						"text": "@loc:episode2.nodes.e2_hall_4.data.blocks.0.text",
 						"rect": [
 							11.0,
 							393.95,
@@ -2826,18 +2826,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Неожиданно за спиной у Дэвида снова раздались эти тихие шаги. Он резко обернулся, но сзади как обычно никого не оказалось. Что-то тут не так. Каховски занервничал и случайно задел ногой какой-то мусор под ногами... Чавканье за стойкой прекратилось."
+				"text": "@loc:episode2.nodes.e2_hall_4.data.text"
 			},
 			"position": [
 				20400.0,
 				5200.0
 			],
-			"title": "e2_hall_4"
+			"title": "@loc:episode2.nodes.e2_hall_4.title"
 		},
 		"e2_hall_4__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hall_4__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -2849,7 +2849,7 @@
 				20790.0,
 				5200.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hall_4__choice_0.title"
 		},
 		"e2_hall_5": {
 			"type": "scene",
@@ -2862,7 +2862,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Хирург присмотрелся получше и увидел бледную окровавленную «маску» — лицо мертвеца, показавшегося из-за стойки. Он не знал как поступить. Убить мертвеца? Звук выстрела привлечет зомби со всей больницы!",
+						"text": "@loc:episode2.nodes.e2_hall_5.data.blocks.0.text",
 						"rect": [
 							11.0,
 							6.95,
@@ -2874,18 +2874,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Хирург присмотрелся получше и увидел бледную окровавленную «маску» — лицо мертвеца, показавшегося из-за стойки. Он не знал как поступить. Убить мертвеца? Звук выстрела привлечет зомби со всей больницы!"
+				"text": "@loc:episode2.nodes.e2_hall_5.data.text"
 			},
 			"position": [
 				22100.0,
 				6500.0
 			],
-			"title": "e2_hall_5"
+			"title": "@loc:episode2.nodes.e2_hall_5.title"
 		},
 		"e2_hall_5__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hall_5__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -2897,7 +2897,7 @@
 				22490.0,
 				6500.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hall_5__choice_0.title"
 		},
 		"e2_hall_6": {
 			"type": "scene",
@@ -2917,12 +2917,12 @@
 				23800.0,
 				7800.0
 			],
-			"title": "e2_hall_6"
+			"title": "@loc:episode2.nodes.e2_hall_6.title"
 		},
 		"e2_hall_6__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hall_6__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -2934,7 +2934,7 @@
 				24190.0,
 				7800.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hall_6__choice_0.title"
 		},
 		"e2_hall_7": {
 			"type": "scene",
@@ -2947,7 +2947,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Дэвид перемахивает через информационную стойку, хватает тяжеленный железный ящик и со всей силы обрушивает его на голову мертвеца. Он уже слышит шаркающие шаги буквально за ближайшим углом, поэтому берет все тот же ящик и бросает его в сторону, откуда только что пришел.",
+						"text": "@loc:episode2.nodes.e2_hall_7.data.blocks.0.text",
 						"rect": [
 							11.0,
 							6.75,
@@ -2959,18 +2959,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Дэвид перемахивает через информационную стойку, хватает тяжеленный железный ящик и со всей силы обрушивает его на голову мертвеца. Он уже слышит шаркающие шаги буквально за ближайшим углом, поэтому берет все тот же ящик и бросает его в сторону, откуда только что пришел."
+				"text": "@loc:episode2.nodes.e2_hall_7.data.text"
 			},
 			"position": [
 				22100.0,
 				7800.0
 			],
-			"title": "e2_hall_7"
+			"title": "@loc:episode2.nodes.e2_hall_7.title"
 		},
 		"e2_hall_7__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hall_7__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -2982,7 +2982,7 @@
 				22490.0,
 				7800.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hall_7__choice_0.title"
 		},
 		"e2_hall_8": {
 			"type": "scene",
@@ -2995,7 +2995,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Каховски, старась даже не дышать, буквально прополз мимо информационной стойки и находящегося там зомби. Свернул за угол и... тут же вынужден был чуть ли не прыгнуть за ближайщую раскрытую дверь в палату: он нос к носу столкнулся с мертвецами.",
+						"text": "@loc:episode2.nodes.e2_hall_8.data.blocks.0.text",
 						"rect": [
 							11.0,
 							391.75,
@@ -3007,18 +3007,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Каховски, старась даже не дышать, буквально прополз мимо информационной стойки и находящегося там зомби. Свернул за угол и... тут же вынужден был чуть ли не прыгнуть за ближайщую раскрытую дверь в палату: он нос к носу столкнулся с мертвецами."
+				"text": "@loc:episode2.nodes.e2_hall_8.data.text"
 			},
 			"position": [
 				22100.0,
 				9100.0
 			],
-			"title": "e2_hall_8"
+			"title": "@loc:episode2.nodes.e2_hall_8.title"
 		},
 		"e2_hall_8__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hall_8__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -3030,7 +3030,7 @@
 				22490.0,
 				9100.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hall_8__choice_0.title"
 		},
 		"e2_hall_9": {
 			"type": "scene",
@@ -3043,7 +3043,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Дэвид панически вжался в дверь, пытаясь удержать рвущихся в палату зомби. Краем глаза он уловил какое-то движение, но было слишком поздно: зомби, которого он сразу не заметил в темноте вцепился ему в плечо.",
+						"text": "@loc:episode2.nodes.e2_hall_9.data.blocks.0.text",
 						"rect": [
 							11.0,
 							395.7,
@@ -3055,18 +3055,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Дэвид панически вжался в дверь, пытаясь удержать рвущихся в палату зомби. Краем глаза он уловил какое-то движение, но было слишком поздно: зомби, которого он сразу не заметил в темноте вцепился ему в плечо."
+				"text": "@loc:episode2.nodes.e2_hall_9.data.text"
 			},
 			"position": [
 				23800.0,
 				9100.0
 			],
-			"title": "e2_hall_9"
+			"title": "@loc:episode2.nodes.e2_hall_9.title"
 		},
 		"e2_hall_9__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hall_9__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -3078,7 +3078,7 @@
 				24190.0,
 				9100.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hall_9__choice_0.title"
 		},
 		"e2_back_1": {
 			"type": "scene",
@@ -3091,7 +3091,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Пока бывший хирург, яростно орудуя прутом на бегу, расталкивал мертвецов, Ник нервно глядел по сторонам и отчаянно старался не отстать. Неожиданный резкий хрип прямо за спиной застал его врасплох...",
+						"text": "@loc:episode2.nodes.e2_back_1.data.blocks.0.text",
 						"rect": [
 							11.0,
 							393.7,
@@ -3103,19 +3103,19 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Пока бывший хирург, яростно орудуя прутом на бегу, расталкивал мертвецов, Ник нервно глядел по сторонам и отчаянно старался не отстать. Неожиданный резкий хрип прямо за спиной застал его врасплох...",
+				"text": "@loc:episode2.nodes.e2_back_1.data.text",
 				"sound": "FightWithZombieHosp"
 			},
 			"position": [
 				18700.0,
 				7800.0
 			],
-			"title": "e2_back_1"
+			"title": "@loc:episode2.nodes.e2_back_1.title"
 		},
 		"e2_back_1__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_back_1__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -3127,7 +3127,7 @@
 				19090.0,
 				7800.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_back_1__choice_0.title"
 		},
 		"e2_back_2": {
 			"type": "scene",
@@ -3140,7 +3140,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Дэвид резко обернулся на крик и увидел, как существо, раньше бывшее парнем по имени Дин, вцепилось Нику в шею. Из ближайшей двери палаты показались два мертвеца в окровавленных больничных рубашках... Хирурга охватила паника, и он бросился бежать, не разбирая дороги.",
+						"text": "@loc:episode2.nodes.e2_back_2.data.blocks.0.text",
 						"rect": [
 							59.0,
 							193.0,
@@ -3152,19 +3152,19 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Дэвид резко обернулся на крик и увидел, как существо, раньше бывшее парнем по имени Дин, вцепилось Нику в шею. Из ближайшей двери палаты показались два мертвеца в окровавленных больничных рубашках... Хирурга охватила паника, и он бросился бежать, не разбирая дороги.",
+				"text": "@loc:episode2.nodes.e2_back_2.data.text",
 				"sound": "ZombieBiteTheNeck"
 			},
 			"position": [
 				20400.0,
 				6500.0
 			],
-			"title": "e2_back_2"
+			"title": "@loc:episode2.nodes.e2_back_2.title"
 		},
 		"e2_back_2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_back_2__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -3176,7 +3176,7 @@
 				20790.0,
 				6500.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_back_2__choice_0.title"
 		},
 		"e2_back_2__choice_0__requires": {
 			"type": "condition",
@@ -3191,12 +3191,12 @@
 				21210.0,
 				6500.0
 			],
-			"title": "Доступность ответа"
+			"title": "@loc:episode2.nodes.e2_back_2__choice_0__requires.title"
 		},
 		"e2_back_2__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_back_2__choice_1.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -3208,7 +3208,7 @@
 				20790.0,
 				6790.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_back_2__choice_1.title"
 		},
 		"e2_back_2__choice_1__requires": {
 			"type": "condition",
@@ -3221,7 +3221,7 @@
 				21210.0,
 				6790.0
 			],
-			"title": "Доступность ответа"
+			"title": "@loc:episode2.nodes.e2_back_2__choice_1__requires.title"
 		},
 		"e2_main_1": {
 			"type": "scene",
@@ -3234,7 +3234,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Как Дэвид умудрился преодолеть целое больничное крыло — он не помнил. В приступе животного ужаса хирург бежал так, как никогда не бегал. И теперь Дэвид стоял, оперевшись на стену, и пытался прийти в себя. Ужасно кружилась голова от перенапряжения. Но надо идти дальше...",
+						"text": "@loc:episode2.nodes.e2_main_1.data.blocks.0.text",
 						"rect": [
 							11.0,
 							7.2,
@@ -3246,19 +3246,19 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Как Дэвид умудрился преодолеть целое больничное крыло — он не помнил. В приступе животного ужаса хирург бежал так, как никогда не бегал. И теперь Дэвид стоял, оперевшись на стену, и пытался прийти в себя. Ужасно кружилась голова от перенапряжения. Но надо идти дальше...",
+				"text": "@loc:episode2.nodes.e2_main_1.data.text",
 				"controls_art": "e2_main_1_controls"
 			},
 			"position": [
 				22100.0,
 				10400.0
 			],
-			"title": "e2_main_1"
+			"title": "@loc:episode2.nodes.e2_main_1.title"
 		},
 		"e2_main_1__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Спуститься по лестнице",
+				"text": "@loc:episode2.nodes.e2_main_1__choice_0.data.text",
 				"rect": [
 					44.5,
 					248.5,
@@ -3271,12 +3271,12 @@
 				22490.0,
 				10400.0
 			],
-			"title": "Спуститься по лестнице"
+			"title": "@loc:episode2.nodes.e2_main_1__choice_0.title"
 		},
 		"e2_main_1__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Вызвать лифт",
+				"text": "@loc:episode2.nodes.e2_main_1__choice_1.data.text",
 				"rect": [
 					552.0,
 					266.0,
@@ -3289,7 +3289,7 @@
 				22490.0,
 				10690.0
 			],
-			"title": "Вызвать лифт"
+			"title": "@loc:episode2.nodes.e2_main_1__choice_1.title"
 		},
 		"e2_main_2": {
 			"type": "scene",
@@ -3302,7 +3302,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Подходя к лестнице, Дэвид услышал бряцанье оружия буквально этажом ниже. «Эй! Вы меня слышите? Там, внизу!» — позвал Каховски, увидев вооруженных бойцов какого-то спецподразделения. Его услышали, подпустили поближе и буквально с ног до головы обсветили фонарем — сюрпризы были никому не нужны.",
+						"text": "@loc:episode2.nodes.e2_main_2.data.blocks.0.text",
 						"rect": [
 							11.0,
 							368.2,
@@ -3314,18 +3314,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Подходя к лестнице, Дэвид услышал бряцанье оружия буквально этажом ниже. «Эй! Вы меня слышите? Там, внизу!» — позвал Каховски, увидев вооруженных бойцов какого-то спецподразделения. Его услышали, подпустили поближе и буквально с ног до головы обсветили фонарем — сюрпризы были никому не нужны."
+				"text": "@loc:episode2.nodes.e2_main_2.data.text"
 			},
 			"position": [
 				23800.0,
 				10400.0
 			],
-			"title": "e2_main_2"
+			"title": "@loc:episode2.nodes.e2_main_2.title"
 		},
 		"e2_main_2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_main_2__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -3337,7 +3337,7 @@
 				24190.0,
 				10400.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_main_2__choice_0.title"
 		},
 		"e2_main_3": {
 			"type": "scene",
@@ -3350,7 +3350,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Света на лестнице не было. Это усложняло задачу бойцам, двигавшимся к одному из пожарных выходов. По главному же выходу сейчас работали крупнокалиберные пулеметы, выкашивая прущих из больницы мертвецов.",
+						"text": "@loc:episode2.nodes.e2_main_3.data.blocks.0.text",
 						"rect": [
 							11.0,
 							7.25,
@@ -3362,18 +3362,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Света на лестнице не было. Это усложняло задачу бойцам, двигавшимся к одному из пожарных выходов. По главному же выходу сейчас работали крупнокалиберные пулеметы, выкашивая прущих из больницы мертвецов."
+				"text": "@loc:episode2.nodes.e2_main_3.data.text"
 			},
 			"position": [
 				25500.0,
 				5200.0
 			],
-			"title": "e2_main_3"
+			"title": "@loc:episode2.nodes.e2_main_3.title"
 		},
 		"e2_main_3__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_main_3__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -3385,7 +3385,7 @@
 				25890.0,
 				5200.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_main_3__choice_0.title"
 		},
 		"e2_main_4": {
 			"type": "scene",
@@ -3398,7 +3398,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Иногда то с одной стороны, то с другой на отряд набредали мертвые, но спецназ четко и слажено устранял угрозу. Короткие автоматические ружья (Дэвид никогда не разбирался в оружии), которыми были вооружены бойцы, идеально подходили для таких боев.",
+						"text": "@loc:episode2.nodes.e2_main_4.data.blocks.0.text",
 						"rect": [
 							11.0,
 							394.15,
@@ -3410,18 +3410,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Иногда то с одной стороны, то с другой на отряд набредали мертвые, но спецназ четко и слажено устранял угрозу. Короткие автоматические ружья (Дэвид никогда не разбирался в оружии), которыми были вооружены бойцы, идеально подходили для таких боев."
+				"text": "@loc:episode2.nodes.e2_main_4.data.text"
 			},
 			"position": [
 				28900.0,
 				1300.0
 			],
-			"title": "e2_main_4"
+			"title": "@loc:episode2.nodes.e2_main_4.title"
 		},
 		"e2_main_4__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_main_4__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -3433,7 +3433,7 @@
 				29290.0,
 				1300.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_main_4__choice_0.title"
 		},
 		"e2_main_5": {
 			"type": "scene",
@@ -3446,7 +3446,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Бойцы авангарда группы подошли к выходу на первый этаж и тут же уткнулись в гору трупов. Здесь спецназ впервые столкнулся с зомби. И понес первые потери.",
+						"text": "@loc:episode2.nodes.e2_main_5.data.blocks.0.text",
 						"rect": [
 							11.0,
 							7.05,
@@ -3458,18 +3458,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Бойцы авангарда группы подошли к выходу на первый этаж и тут же уткнулись в гору трупов. Здесь спецназ впервые столкнулся с зомби. И понес первые потери."
+				"text": "@loc:episode2.nodes.e2_main_5.data.text"
 			},
 			"position": [
 				30600.0,
 				0.0
 			],
-			"title": "e2_main_5"
+			"title": "@loc:episode2.nodes.e2_main_5.title"
 		},
 		"e2_main_5__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_main_5__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -3481,7 +3481,7 @@
 				30990.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_main_5__choice_0.title"
 		},
 		"e2_main_6": {
 			"type": "scene",
@@ -3494,7 +3494,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Двери пожарного выхода оказалась закрыта снаружи, ручки с обратной стороны были перемотаны цепями, но спецназ знал об этом — это было частью плана. Командир отряда приказал использовать взрывчатку, чтобы разделаться с препятствием.",
+						"text": "@loc:episode2.nodes.e2_main_6.data.blocks.0.text",
 						"rect": [
 							11.0,
 							7.05,
@@ -3506,18 +3506,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Двери пожарного выхода оказалась закрыта снаружи, ручки с обратной стороны были перемотаны цепями, но спецназ знал об этом — это было частью плана. Командир отряда приказал использовать взрывчатку, чтобы разделаться с препятствием."
+				"text": "@loc:episode2.nodes.e2_main_6.data.text"
 			},
 			"position": [
 				32300.0,
 				0.0
 			],
-			"title": "e2_main_6"
+			"title": "@loc:episode2.nodes.e2_main_6.title"
 		},
 		"e2_main_6__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_main_6__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -3529,7 +3529,7 @@
 				32690.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_main_6__choice_0.title"
 		},
 		"e2_main_7": {
 			"type": "scene",
@@ -3542,7 +3542,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Все были заняты своими обязанностями, поэтому лишь Дэвид заметил, как один из бойцов сел на одно колено, как будто завязывая шнурки. Вдруг его передернуло, а затем из глаз, носа и ушей хлынула кровь. Все это происходило удивительно быстро...",
+						"text": "@loc:episode2.nodes.e2_main_7.data.blocks.0.text",
 						"rect": [
 							11.0,
 							7.05,
@@ -3554,18 +3554,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Все были заняты своими обязанностями, поэтому лишь Дэвид заметил, как один из бойцов сел на одно колено, как будто завязывая шнурки. Вдруг его передернуло, а затем из глаз, носа и ушей хлынула кровь. Все это происходило удивительно быстро..."
+				"text": "@loc:episode2.nodes.e2_main_7.data.text"
 			},
 			"position": [
 				34000.0,
 				0.0
 			],
-			"title": "e2_main_7"
+			"title": "@loc:episode2.nodes.e2_main_7.title"
 		},
 		"e2_main_7__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_main_7__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -3577,7 +3577,7 @@
 				34390.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_main_7__choice_0.title"
 		},
 		"e2_main_8": {
 			"type": "scene",
@@ -3590,7 +3590,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Все всё поняли без слов. В следующий момент боец, контролировавший лестницу примчался, крича: «Много, очень! Готовьтесь!». Спецназовцы, все как один, направили стволы в темный проход коридора и...",
+						"text": "@loc:episode2.nodes.e2_main_8.data.blocks.0.text",
 						"rect": [
 							11.0,
 							7.05,
@@ -3602,19 +3602,19 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Все всё поняли без слов. В следующий момент боец, контролировавший лестницу примчался, крича: «Много, очень! Готовьтесь!». Спецназовцы, все как один, направили стволы в темный проход коридора и...",
+				"text": "@loc:episode2.nodes.e2_main_8.data.text",
 				"sound": "MarkShot"
 			},
 			"position": [
 				37400.0,
 				0.0
 			],
-			"title": "e2_main_8"
+			"title": "@loc:episode2.nodes.e2_main_8.title"
 		},
 		"e2_main_8__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_main_8__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -3626,7 +3626,7 @@
 				37790.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_main_8__choice_0.title"
 		},
 		"e2_main_9": {
 			"type": "scene",
@@ -3639,7 +3639,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Послышался взрыв, створки двери с треском распахнулись под ударом армейского сапога, и отряд ринулся на улицу. Замыкающие бойцы еще какое-то время яростно поливали прущих зомби свинцом, но затем и они рванули следом.",
+						"text": "@loc:episode2.nodes.e2_main_9.data.blocks.0.text",
 						"rect": [
 							11.0,
 							7.1,
@@ -3651,19 +3651,19 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Послышался взрыв, створки двери с треском распахнулись под ударом армейского сапога, и отряд ринулся на улицу. Замыкающие бойцы еще какое-то время яростно поливали прущих зомби свинцом, но затем и они рванули следом.",
+				"text": "@loc:episode2.nodes.e2_main_9.data.text",
 				"sound": "MP5Group"
 			},
 			"position": [
 				39100.0,
 				0.0
 			],
-			"title": "e2_main_9"
+			"title": "@loc:episode2.nodes.e2_main_9.title"
 		},
 		"e2_main_9__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_main_9__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -3675,7 +3675,7 @@
 				39490.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_main_9__choice_0.title"
 		},
 		"e2_main_10": {
 			"type": "scene",
@@ -3688,7 +3688,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Вылетев на улицу, небольшой отряд, в котором находился Дэвид, тут же рванул к припаркованному неподалеку темному фургону. Преследующие людей зомби то и дело падали, их координация все же была несравнима с человеческой. Этот факт и не прекращающийся огонь бойцов — все это помогло почти всем погрузиться в фургон.",
+						"text": "@loc:episode2.nodes.e2_main_10.data.blocks.0.text",
 						"rect": [
 							11.0,
 							369.05,
@@ -3700,19 +3700,19 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Вылетев на улицу, небольшой отряд, в котором находился Дэвид, тут же рванул к припаркованному неподалеку темному фургону. Преследующие людей зомби то и дело падали, их координация все же была несравнима с человеческой. Этот факт и не прекращающийся огонь бойцов — все это помогло почти всем погрузиться в фургон.",
+				"text": "@loc:episode2.nodes.e2_main_10.data.text",
 				"controls_art": "e2_main_1_controls"
 			},
 			"position": [
 				40800.0,
 				0.0
 			],
-			"title": "e2_main_10"
+			"title": "@loc:episode2.nodes.e2_main_10.title"
 		},
 		"e2_main_10__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_main_10__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -3724,7 +3724,7 @@
 				41190.0,
 				0.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_main_10__choice_0.title"
 		},
 		"e2_main_11": {
 			"type": "scene",
@@ -3744,12 +3744,12 @@
 				37400.0,
 				1300.0
 			],
-			"title": "e2_main_11"
+			"title": "@loc:episode2.nodes.e2_main_11.title"
 		},
 		"e2_main_11__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_main_11__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -3761,7 +3761,7 @@
 				37790.0,
 				1300.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_main_11__choice_0.title"
 		},
 		"e2_lift_1": {
 			"type": "scene",
@@ -3774,7 +3774,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Маленький отряд Дэвида кое-как добрался до лифтов. По дороге пришлось прикончить парочку живых трупов, но им это было уже не впервой. Раненого положили прямо на пол, и Ник нажал на клавишу вызова.",
+						"text": "@loc:episode2.nodes.e2_lift_1.data.blocks.0.text",
 						"rect": [
 							13.0,
 							338.75,
@@ -3786,19 +3786,19 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Маленький отряд Дэвида кое-как добрался до лифтов. По дороге пришлось прикончить парочку живых трупов, но им это было уже не впервой. Раненого положили прямо на пол, и Ник нажал на клавишу вызова.",
+				"text": "@loc:episode2.nodes.e2_lift_1.data.text",
 				"sound": "ElevatorClick"
 			},
 			"position": [
 				17000.0,
 				3900.0
 			],
-			"title": "e2_lift_1"
+			"title": "@loc:episode2.nodes.e2_lift_1.title"
 		},
 		"e2_lift_1__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_lift_1__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -3810,7 +3810,7 @@
 				17390.0,
 				3900.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_lift_1__choice_0.title"
 		},
 		"e2_lift_2": {
 			"type": "scene",
@@ -3823,7 +3823,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Внизу неспешно загудел лифт, поднимаясь на нужный этаж. Неужели они выберутся? Дэвид взял Дина под руки, Ник взялся за его ноги. Лифт был уже совсем рядом...",
+						"text": "@loc:episode2.nodes.e2_lift_2.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.7,
@@ -3835,18 +3835,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Внизу неспешно загудел лифт, поднимаясь на нужный этаж. Неужели они выберутся? Дэвид взял Дина под руки, Ник взялся за его ноги. Лифт был уже совсем рядом..."
+				"text": "@loc:episode2.nodes.e2_lift_2.data.text"
 			},
 			"position": [
 				18700.0,
 				9100.0
 			],
-			"title": "e2_lift_2"
+			"title": "@loc:episode2.nodes.e2_lift_2.title"
 		},
 		"e2_lift_2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_lift_2__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -3858,7 +3858,7 @@
 				19090.0,
 				9100.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_lift_2__choice_0.title"
 		},
 		"e2_lift_3": {
 			"type": "scene",
@@ -3878,12 +3878,12 @@
 				20400.0,
 				7800.0
 			],
-			"title": "e2_lift_3"
+			"title": "@loc:episode2.nodes.e2_lift_3.title"
 		},
 		"e2_lift_3__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_lift_3__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -3895,7 +3895,7 @@
 				20790.0,
 				7800.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_lift_3__choice_0.title"
 		},
 		"e2_attack_1": {
 			"type": "scene",
@@ -3908,7 +3908,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Дэвид тихо, стараясь не спровоцировать обратившегося, толкнул в плечо ближайщего бойца и, когда тот обернулся, указал ему на существо, некогда бывшее его боевым товарищем. Спецназовец медлил, не решаясь стрелять. На звуки, издаваемые мертвецом, обернулись остальные бойцы...",
+						"text": "@loc:episode2.nodes.e2_attack_1.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.7,
@@ -3920,18 +3920,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Дэвид тихо, стараясь не спровоцировать обратившегося, толкнул в плечо ближайщего бойца и, когда тот обернулся, указал ему на существо, некогда бывшее его боевым товарищем. Спецназовец медлил, не решаясь стрелять. На звуки, издаваемые мертвецом, обернулись остальные бойцы..."
+				"text": "@loc:episode2.nodes.e2_attack_1.data.text"
 			},
 			"position": [
 				37400.0,
 				2600.0
 			],
-			"title": "e2_attack_1"
+			"title": "@loc:episode2.nodes.e2_attack_1.title"
 		},
 		"e2_attack_1__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_attack_1__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -3943,7 +3943,7 @@
 				37790.0,
 				2600.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_attack_1__choice_0.title"
 		},
 		"e2_attack_2": {
 			"type": "scene",
@@ -3963,12 +3963,12 @@
 				39100.0,
 				1300.0
 			],
-			"title": "e2_attack_2"
+			"title": "@loc:episode2.nodes.e2_attack_2.title"
 		},
 		"e2_attack_2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_attack_2__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -3980,7 +3980,7 @@
 				39490.0,
 				1300.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_attack_2__choice_0.title"
 		},
 		"e2_hospital_7_v2": {
 			"type": "scene",
@@ -3993,7 +3993,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Дэвид тихонько приоткрыл дверь и заглянул в операционную: зомби (этих существ обычно так называли в фильмах) на столе не было. Хирург медленно, стараясь не привлечь к себе внимание, начал осматривать помещение. Неожиданно он услышал громкий шорох прямо за дверью...",
+						"text": "@loc:episode2.nodes.e2_hospital_7_v2.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.0,
@@ -4005,18 +4005,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Дэвид тихонько приоткрыл дверь и заглянул в операционную: зомби (этих существ обычно так называли в фильмах) на столе не было. Хирург медленно, стараясь не привлечь к себе внимание, начал осматривать помещение. Неожиданно он услышал громкий шорох прямо за дверью..."
+				"text": "@loc:episode2.nodes.e2_hospital_7_v2.data.text"
 			},
 			"position": [
 				13600.0,
 				1300.0
 			],
-			"title": "e2_hospital_7_v2"
+			"title": "@loc:episode2.nodes.e2_hospital_7_v2.title"
 		},
 		"e2_hospital_7_v2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hospital_7_v2__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -4028,7 +4028,7 @@
 				13990.0,
 				1300.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hospital_7_v2__choice_0.title"
 		},
 		"e2_hospital_8_v2": {
 			"type": "scene",
@@ -4041,7 +4041,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "В следующий момент в дверь с обратной стороны ударило что-то тяжелое, и Дэвид, не ожидавший от живого трупа такой прыти, в панике отскочил назад, споткнулся об стоящее сзади инвалидное кресло и полетел на пол. Острый край скамьи завершил его падение...",
+						"text": "@loc:episode2.nodes.e2_hospital_8_v2.data.blocks.0.text",
 						"rect": [
 							11.0,
 							394.0,
@@ -4053,18 +4053,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "В следующий момент в дверь с обратной стороны ударило что-то тяжелое, и Дэвид, не ожидавший от живого трупа такой прыти, в панике отскочил назад, споткнулся об стоящее сзади инвалидное кресло и полетел на пол. Острый край скамьи завершил его падение..."
+				"text": "@loc:episode2.nodes.e2_hospital_8_v2.data.text"
 			},
 			"position": [
 				15300.0,
 				5200.0
 			],
-			"title": "e2_hospital_8_v2"
+			"title": "@loc:episode2.nodes.e2_hospital_8_v2.title"
 		},
 		"e2_hospital_8_v2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hospital_8_v2__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -4076,7 +4076,7 @@
 				15690.0,
 				5200.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hospital_8_v2__choice_0.title"
 		},
 		"e2_hospital_17_v2": {
 			"type": "scene",
@@ -4089,7 +4089,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Несколькими этажами ниже слышались редкие автоматные очереди. Это наверняка были военные! Парни решили попытаться пробиться к ним: Ник несет своего раненого друга, а Дэвид по мере сил разбирается с зомби, которые попадутся им на пути.",
+						"text": "@loc:episode2.nodes.e2_hospital_17_v2.data.blocks.0.text",
 						"rect": [
 							11.0,
 							393.0,
@@ -4101,18 +4101,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Несколькими этажами ниже слышались редкие автоматные очереди. Это наверняка были военные! Парни решили попытаться пробиться к ним: Ник несет своего раненого друга, а Дэвид по мере сил разбирается с зомби, которые попадутся им на пути."
+				"text": "@loc:episode2.nodes.e2_hospital_17_v2.data.text"
 			},
 			"position": [
 				17000.0,
 				5200.0
 			],
-			"title": "e2_hospital_17_v2"
+			"title": "@loc:episode2.nodes.e2_hospital_17_v2.title"
 		},
 		"e2_hospital_17_v2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hospital_17_v2__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -4124,7 +4124,7 @@
 				17390.0,
 				5200.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hospital_17_v2__choice_0.title"
 		},
 		"e2_hospital_16_v3": {
 			"type": "scene",
@@ -4137,7 +4137,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Теперь Дэвиду предстояло выбрать наиболее безопасный маршрут вниз, на котором он встретил бы как можно меньше зомби... Неожиданно он услышал приближающийся гул откуда-то сверху. Это было похоже на... Черт возьми, вертолет! Скорее всего, он прилетел за выжившими!!!",
+						"text": "@loc:episode2.nodes.e2_hospital_16_v3.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.0,
@@ -4149,7 +4149,7 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Теперь Дэвиду предстояло выбрать наиболее безопасный маршрут вниз, на котором он встретил бы как можно меньше зомби... Неожиданно он услышал приближающийся гул откуда-то сверху. Это было похоже на... Черт возьми, вертолет! Скорее всего, он прилетел за выжившими!!!",
+				"text": "@loc:episode2.nodes.e2_hospital_16_v3.data.text",
 				"sound": "Helicopter",
 				"controls_art": "e2_hospital_16_controls"
 			},
@@ -4157,12 +4157,12 @@
 				13600.0,
 				2600.0
 			],
-			"title": "e2_hospital_16_v3"
+			"title": "@loc:episode2.nodes.e2_hospital_16_v3.title"
 		},
 		"e2_hospital_16_v3__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Подняться на крышу",
+				"text": "@loc:episode2.nodes.e2_hospital_16_v3__choice_0.data.text",
 				"rect": [
 					269.5,
 					338.5,
@@ -4175,12 +4175,12 @@
 				13990.0,
 				2600.0
 			],
-			"title": "Подняться на крышу"
+			"title": "@loc:episode2.nodes.e2_hospital_16_v3__choice_0.title"
 		},
 		"e2_hospital_16_v3__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Идти в главную часть больницы",
+				"text": "@loc:episode2.nodes.e2_hospital_16_v3__choice_1.data.text",
 				"rect": [
 					393.0,
 					337.0,
@@ -4193,7 +4193,7 @@
 				13990.0,
 				2890.0
 			],
-			"title": "Идти в главную часть больницы"
+			"title": "@loc:episode2.nodes.e2_hospital_16_v3__choice_1.title"
 		},
 		"e2_hospital_16_v3__choice_1__requires": {
 			"type": "condition",
@@ -4208,12 +4208,12 @@
 				14410.0,
 				2890.0
 			],
-			"title": "Доступность ответа"
+			"title": "@loc:episode2.nodes.e2_hospital_16_v3__choice_1__requires.title"
 		},
 		"e2_hospital_16_v3__choice_2": {
 			"type": "choice",
 			"data": {
-				"text": "Идти в главную часть больницы",
+				"text": "@loc:episode2.nodes.e2_hospital_16_v3__choice_2.data.text",
 				"rect": [
 					393.0,
 					337.0,
@@ -4226,7 +4226,7 @@
 				13990.0,
 				3180.0
 			],
-			"title": "Идти в главную часть больницы"
+			"title": "@loc:episode2.nodes.e2_hospital_16_v3__choice_2.title"
 		},
 		"e2_hospital_16_v3__choice_2__requires": {
 			"type": "condition",
@@ -4241,7 +4241,7 @@
 				14410.0,
 				3180.0
 			],
-			"title": "Доступность ответа"
+			"title": "@loc:episode2.nodes.e2_hospital_16_v3__choice_2__requires.title"
 		},
 		"e2_first_1_v2": {
 			"type": "scene",
@@ -4254,7 +4254,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Операционная Дэвида находилась почти рядом с выходом на пожарную лестницу. Ник взвалил своего друга себе на плечи, и все медленно и осторожно направились к заветной двери.",
+						"text": "@loc:episode2.nodes.e2_first_1_v2.data.blocks.0.text",
 						"rect": [
 							11.0,
 							396.0,
@@ -4266,18 +4266,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Операционная Дэвида находилась почти рядом с выходом на пожарную лестницу. Ник взвалил своего друга себе на плечи, и все медленно и осторожно направились к заветной двери."
+				"text": "@loc:episode2.nodes.e2_first_1_v2.data.text"
 			},
 			"position": [
 				17000.0,
 				6500.0
 			],
-			"title": "e2_first_1_v2"
+			"title": "@loc:episode2.nodes.e2_first_1_v2.title"
 		},
 		"e2_first_1_v2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_first_1_v2__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -4289,7 +4289,7 @@
 				17390.0,
 				6500.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_first_1_v2__choice_0.title"
 		},
 		"e2_first_1_v3": {
 			"type": "scene",
@@ -4302,7 +4302,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Выход на пожарную лестницу находился рядом с операционной Дэвида, и он бегом направился туда. Пробегая мимо выбившегося из сил парня, Каховски изо всех сил толкнул мертвеца в спину. Хоть как-то помог...",
+						"text": "@loc:episode2.nodes.e2_first_1_v3.data.blocks.0.text",
 						"rect": [
 							11.0,
 							396.0,
@@ -4314,18 +4314,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Выход на пожарную лестницу находился рядом с операционной Дэвида, и он бегом направился туда. Пробегая мимо выбившегося из сил парня, Каховски изо всех сил толкнул мертвеца в спину. Хоть как-то помог..."
+				"text": "@loc:episode2.nodes.e2_first_1_v3.data.text"
 			},
 			"position": [
 				22100.0,
 				11700.0
 			],
-			"title": "e2_first_1_v3"
+			"title": "@loc:episode2.nodes.e2_first_1_v3.title"
 		},
 		"e2_first_1_v3__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_first_1_v3__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -4337,7 +4337,7 @@
 				22490.0,
 				11700.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_first_1_v3__choice_0.title"
 		},
 		"e2_first_2_v2": {
 			"type": "scene",
@@ -4350,7 +4350,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Дверь закрылась за тремя выжившими, лестница встретила их тишиной. Лишь однажды во время спуска Дэвид слышал чьи-то торопливые шаги снизу, которые быстро стихли. Третий этаж, второй, первый... Дэвид внутренне собрался, сжал крепче прут и шагнул за дверь, в коридор первого этажа.",
+						"text": "@loc:episode2.nodes.e2_first_2_v2.data.blocks.0.text",
 						"rect": [
 							11.0,
 							367.95,
@@ -4362,18 +4362,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Дверь закрылась за тремя выжившими, лестница встретила их тишиной. Лишь однажды во время спуска Дэвид слышал чьи-то торопливые шаги снизу, которые быстро стихли. Третий этаж, второй, первый... Дэвид внутренне собрался, сжал крепче прут и шагнул за дверь, в коридор первого этажа."
+				"text": "@loc:episode2.nodes.e2_first_2_v2.data.text"
 			},
 			"position": [
 				18700.0,
 				10400.0
 			],
-			"title": "e2_first_2_v2"
+			"title": "@loc:episode2.nodes.e2_first_2_v2.title"
 		},
 		"e2_first_2_v2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_first_2_v2__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -4385,7 +4385,7 @@
 				19090.0,
 				10400.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_first_2_v2__choice_0.title"
 		},
 		"e2_hall_1_v2": {
 			"type": "scene",
@@ -4398,7 +4398,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Дэвид шагнул за угол и понял, что в главную часть больницы ему придется идти по плохо освещенному коридору. Он покрепче сжал рукоять пистолета, и это придало ему уверенности. Ненадолго...",
+						"text": "@loc:episode2.nodes.e2_hall_1_v2.data.blocks.0.text",
 						"rect": [
 							11.0,
 							395.95,
@@ -4410,18 +4410,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Дэвид шагнул за угол и понял, что в главную часть больницы ему придется идти по плохо освещенному коридору. Он покрепче сжал рукоять пистолета, и это придало ему уверенности. Ненадолго..."
+				"text": "@loc:episode2.nodes.e2_hall_1_v2.data.text"
 			},
 			"position": [
 				15300.0,
 				6500.0
 			],
-			"title": "e2_hall_1_v2"
+			"title": "@loc:episode2.nodes.e2_hall_1_v2.title"
 		},
 		"e2_hall_1_v2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hall_1_v2__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -4433,7 +4433,7 @@
 				15690.0,
 				6500.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hall_1_v2__choice_0.title"
 		},
 		"e2_hall_2_v2": {
 			"type": "scene",
@@ -4446,7 +4446,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Нервно водя стволом пистолета, из стороны в сторону, Каховски медленно продвигался вперед. Иногда он слышал какие-то тихие шаги позади, но сзади вроде никого видно не было...",
+						"text": "@loc:episode2.nodes.e2_hall_2_v2.data.blocks.0.text",
 						"rect": [
 							11.0,
 							396.0,
@@ -4458,18 +4458,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Нервно водя стволом пистолета, из стороны в сторону, Каховски медленно продвигался вперед. Иногда он слышал какие-то тихие шаги позади, но сзади вроде никого видно не было..."
+				"text": "@loc:episode2.nodes.e2_hall_2_v2.data.text"
 			},
 			"position": [
 				17000.0,
 				7800.0
 			],
-			"title": "e2_hall_2_v2"
+			"title": "@loc:episode2.nodes.e2_hall_2_v2.title"
 		},
 		"e2_hall_2_v2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_hall_2_v2__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -4481,7 +4481,7 @@
 				17390.0,
 				7800.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_hall_2_v2__choice_0.title"
 		},
 		"e2_main_1_v2": {
 			"type": "scene",
@@ -4494,7 +4494,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Подождав, пока шаги мертвецов затихнут в конце коридора, хирург вышел из-за стойки и направился по направлению к лестнице. Он хотел спуститься туда, где недавно слышались выстрелы автоматического оружия.",
+						"text": "@loc:episode2.nodes.e2_main_1_v2.data.blocks.0.text",
 						"rect": [
 							11.0,
 							7.15,
@@ -4506,19 +4506,19 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Подождав, пока шаги мертвецов затихнут в конце коридора, хирург вышел из-за стойки и направился по направлению к лестнице. Он хотел спуститься туда, где недавно слышались выстрелы автоматического оружия.",
+				"text": "@loc:episode2.nodes.e2_main_1_v2.data.text",
 				"controls_art": "e2_main_1_controls"
 			},
 			"position": [
 				23800.0,
 				11700.0
 			],
-			"title": "e2_main_1_v2"
+			"title": "@loc:episode2.nodes.e2_main_1_v2.title"
 		},
 		"e2_main_1_v2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Спуститься по лестнице",
+				"text": "@loc:episode2.nodes.e2_main_1_v2__choice_0.data.text",
 				"rect": [
 					44.5,
 					248.5,
@@ -4531,12 +4531,12 @@
 				24190.0,
 				11700.0
 			],
-			"title": "Спуститься по лестнице"
+			"title": "@loc:episode2.nodes.e2_main_1_v2__choice_0.title"
 		},
 		"e2_main_1_v2__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Вызвать лифт",
+				"text": "@loc:episode2.nodes.e2_main_1_v2__choice_1.data.text",
 				"rect": [
 					552.0,
 					266.0,
@@ -4549,7 +4549,7 @@
 				24190.0,
 				11990.0
 			],
-			"title": "Вызвать лифт"
+			"title": "@loc:episode2.nodes.e2_main_1_v2__choice_1.title"
 		},
 		"e2_main_1_v3": {
 			"type": "scene",
@@ -4562,7 +4562,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "В приступе животного страха Дэвид пробежал через все больничное крыло. В конце концов он, тяжело дыша, согнулся в попытке отдышаться. «Черт, как же кружится голова... Еще и патронов нет теперь. Проклятье!». Ставший бесполезным пистолет Дэвид просто выбросил, чтобы тот не оттягивал руки.",
+						"text": "@loc:episode2.nodes.e2_main_1_v3.data.blocks.0.text",
 						"rect": [
 							11.0,
 							7.15,
@@ -4574,19 +4574,19 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "В приступе животного страха Дэвид пробежал через все больничное крыло. В конце концов он, тяжело дыша, согнулся в попытке отдышаться. «Черт, как же кружится голова... Еще и патронов нет теперь. Проклятье!». Ставший бесполезным пистолет Дэвид просто выбросил, чтобы тот не оттягивал руки.",
+				"text": "@loc:episode2.nodes.e2_main_1_v3.data.text",
 				"controls_art": "e2_main_1_controls"
 			},
 			"position": [
 				22100.0,
 				13000.0
 			],
-			"title": "e2_main_1_v3"
+			"title": "@loc:episode2.nodes.e2_main_1_v3.title"
 		},
 		"e2_main_1_v3__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Спуститься по лестнице",
+				"text": "@loc:episode2.nodes.e2_main_1_v3__choice_0.data.text",
 				"rect": [
 					44.5,
 					248.5,
@@ -4599,12 +4599,12 @@
 				22490.0,
 				13000.0
 			],
-			"title": "Спуститься по лестнице"
+			"title": "@loc:episode2.nodes.e2_main_1_v3__choice_0.title"
 		},
 		"e2_main_1_v3__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Вызвать лифт",
+				"text": "@loc:episode2.nodes.e2_main_1_v3__choice_1.data.text",
 				"rect": [
 					552.0,
 					266.0,
@@ -4617,7 +4617,7 @@
 				22490.0,
 				13290.0
 			],
-			"title": "Вызвать лифт"
+			"title": "@loc:episode2.nodes.e2_main_1_v3__choice_1.title"
 		},
 		"e2_lift_1_v2": {
 			"type": "scene",
@@ -4630,7 +4630,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Дэвид осторожно подошел к створкам лифта и прислушался. На первый взгляд все было тихо, только грохотал пулемет внизу. Хирург нажал кнопку вызова.",
+						"text": "@loc:episode2.nodes.e2_lift_1_v2.data.blocks.0.text",
 						"rect": [
 							13.0,
 							338.75,
@@ -4642,19 +4642,19 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Дэвид осторожно подошел к створкам лифта и прислушался. На первый взгляд все было тихо, только грохотал пулемет внизу. Хирург нажал кнопку вызова.",
+				"text": "@loc:episode2.nodes.e2_lift_1_v2.data.text",
 				"sound": "ElevatorClick"
 			},
 			"position": [
 				23800.0,
 				13000.0
 			],
-			"title": "e2_lift_1_v2"
+			"title": "@loc:episode2.nodes.e2_lift_1_v2.title"
 		},
 		"e2_lift_1_v2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_lift_1_v2__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -4666,7 +4666,7 @@
 				24190.0,
 				13000.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_lift_1_v2__choice_0.title"
 		},
 		"e2_lift_2_v2": {
 			"type": "scene",
@@ -4679,7 +4679,7 @@
 				"clean_background": true,
 				"blocks": [
 					{
-						"text": "Внизу неспешно загудел лифт, поднимаясь на нужный этаж. Дэвид пока так и не решил: поедет ли он сразу на первый этаж или же выйдет раньше, чтобы объединиться с теми, кто сейчас яростно отстреливался несколькими этажами ниже.",
+						"text": "@loc:episode2.nodes.e2_lift_2_v2.data.blocks.0.text",
 						"rect": [
 							11.0,
 							5.7,
@@ -4691,18 +4691,18 @@
 						"path": "Mov.Hist"
 					}
 				],
-				"text": "Внизу неспешно загудел лифт, поднимаясь на нужный этаж. Дэвид пока так и не решил: поедет ли он сразу на первый этаж или же выйдет раньше, чтобы объединиться с теми, кто сейчас яростно отстреливался несколькими этажами ниже."
+				"text": "@loc:episode2.nodes.e2_lift_2_v2.data.text"
 			},
 			"position": [
 				25500.0,
 				6500.0
 			],
-			"title": "e2_lift_2_v2"
+			"title": "@loc:episode2.nodes.e2_lift_2_v2.title"
 		},
 		"e2_lift_2_v2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_lift_2_v2__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -4714,7 +4714,7 @@
 				25890.0,
 				6500.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_lift_2_v2__choice_0.title"
 		},
 		"e2_result_33": {
 			"type": "scene",
@@ -4724,14 +4724,14 @@
 				"kind": "city_death",
 				"alive": false,
 				"result_id": 33.0,
-				"text": "Гениальный хирург Дэвид Каховски был съеден собственным пациентом, как и встреченные им бедные парни, которые так и не смогли отбиться от все пребывающей толпы живых трупов.",
+				"text": "@loc:episode2.nodes.e2_result_33.data.text",
 				"art": "result_dead"
 			},
 			"position": [
 				17000.0,
 				9100.0
 			],
-			"title": "e2_result_33"
+			"title": "@loc:episode2.nodes.e2_result_33.title"
 		},
 		"e2_result_34": {
 			"type": "scene",
@@ -4741,14 +4741,14 @@
 				"kind": "city_death",
 				"alive": false,
 				"result_id": 34.0,
-				"text": "Зомби вырвал кусок плоти из руки Дэвида, перекусив артерию. Пульсирующая алая кровь стала заливать пол. Погребенный под кучей проводов и приборов Дэвид Каховски был уже не жилец.",
+				"text": "@loc:episode2.nodes.e2_result_34.data.text",
 				"art": "result_dead"
 			},
 			"position": [
 				13600.0,
 				3900.0
 			],
-			"title": "e2_result_34"
+			"title": "@loc:episode2.nodes.e2_result_34.title"
 		},
 		"e2_result_35": {
 			"type": "scene",
@@ -4758,14 +4758,14 @@
 				"kind": "city_death",
 				"alive": false,
 				"result_id": 35.0,
-				"text": "Прошло несколько часов. Ник отключился, добитый смертью своего друга, а Дэвид лежал на операционном столе и, прикрыв глаза, думал о родителях. Как они там? Станции сотовой связи еще работали, и хирург вот уже в десятый раз прослушивал сообщение о «недоступности абонента»... В это же время черный вертолет без каких-либо опознавательных знаков коршуном завис над погибающим городом.",
+				"text": "@loc:episode2.nodes.e2_result_35.data.text",
 				"art": "result_dead"
 			},
 			"position": [
 				27200.0,
 				5200.0
 			],
-			"title": "e2_result_35"
+			"title": "@loc:episode2.nodes.e2_result_35.title"
 		},
 		"e2_result_36": {
 			"type": "scene",
@@ -4775,14 +4775,14 @@
 				"kind": "city_death",
 				"alive": false,
 				"result_id": 36.0,
-				"text": "Лифт был большим и просторным. Казалось бы, если он приехал, значит он пустой. Дэвид ошибся. Двери открылись и многоголосый вой и рык разорвали тишину больницы. Убежать не успел никто.",
+				"text": "@loc:episode2.nodes.e2_result_36.data.text",
 				"art": "result_dead"
 			},
 			"position": [
 				22100.0,
 				14300.0
 			],
-			"title": "e2_result_36"
+			"title": "@loc:episode2.nodes.e2_result_36.title"
 		},
 		"e2_result_37": {
 			"type": "scene",
@@ -4792,14 +4792,14 @@
 				"kind": "city_death",
 				"alive": false,
 				"result_id": 37.0,
-				"text": "Стоящий на ступеньках мертвец дернулся в сторону Дэвида, оступился и полетел вниз. Каховски не успел среагировать и свалился на пол, придавленный тяжеленным зомби. Зубы мертвеца прокусили халат Дэвида, впились ему в бок и тишину больницы разорвал полный ужаса крик. А сверху уже приближались новые мертвецы. Еще секунды и...",
+				"text": "@loc:episode2.nodes.e2_result_37.data.text",
 				"art": "result_dead"
 			},
 			"position": [
 				23800.0,
 				14300.0
 			],
-			"title": "e2_result_37"
+			"title": "@loc:episode2.nodes.e2_result_37.title"
 		},
 		"e2_result_38": {
 			"type": "scene",
@@ -4809,14 +4809,14 @@
 				"kind": "city_ending",
 				"alive": true,
 				"result_id": 38.0,
-				"text": "Спустя некоторое время винтокрылая машина SH-60 Seahawk оторвалась от крыши больницы, и Дэвид полетел прочь от этого склепа, где он еще сегодня работал. Дэвид Каховски был спасен.",
+				"text": "@loc:episode2.nodes.e2_result_38.data.text",
 				"art": "result_alive"
 			},
 			"position": [
 				28900.0,
 				2600.0
 			],
-			"title": "e2_result_38"
+			"title": "@loc:episode2.nodes.e2_result_38.title"
 		},
 		"e2_result_39": {
 			"type": "scene",
@@ -4826,14 +4826,14 @@
 				"kind": "city_death",
 				"alive": false,
 				"result_id": 39.0,
-				"text": "Дэвид Каховски застрелен пулеметчиком, принявшим его за мертвеца.",
+				"text": "@loc:episode2.nodes.e2_result_39.data.text",
 				"art": "result_dead"
 			},
 			"position": [
 				28900.0,
 				3900.0
 			],
-			"title": "e2_result_39"
+			"title": "@loc:episode2.nodes.e2_result_39.title"
 		},
 		"e2_result_40": {
 			"type": "scene",
@@ -4843,14 +4843,14 @@
 				"kind": "city_death",
 				"alive": false,
 				"result_id": 40.0,
-				"text": "Сзади послышались быстрые шаги, и Дэвид понял, что не успевает обернуться... Взмах, затем удар, он провалился в темноту. Он был прав, когда думал, что кто-то его преследует. Он даже догадывался, кто это был... Все же надо было помочь парню.",
+				"text": "@loc:episode2.nodes.e2_result_40.data.text",
 				"art": "result_dead"
 			},
 			"position": [
 				25500.0,
 				7800.0
 			],
-			"title": "e2_result_40"
+			"title": "@loc:episode2.nodes.e2_result_40.title"
 		},
 		"e2_result_41": {
 			"type": "scene",
@@ -4860,14 +4860,14 @@
 				"kind": "city_death",
 				"alive": false,
 				"result_id": 41.0,
-				"text": "Дэвид отскочил от двери, пытаясь оказаться как можно дальше от этих безумных глаз и окровавленных зубов, и в комнату хлынули мертвецы. У хирурга не было шансов выжить.",
+				"text": "@loc:episode2.nodes.e2_result_41.data.text",
 				"art": "result_dead"
 			},
 			"position": [
 				25500.0,
 				9100.0
 			],
-			"title": "e2_result_41"
+			"title": "@loc:episode2.nodes.e2_result_41.title"
 		},
 		"e2_result_42": {
 			"type": "scene",
@@ -4877,14 +4877,14 @@
 				"kind": "city_death",
 				"alive": false,
 				"result_id": 42.0,
-				"text": "Мертвецы оказались сразу всюду: они выбегали из дверей кабинетов, вываливались с лестницы, перли из коридоров. Сначала у Дэвида еще была надежда, что они отобьются, но она очень быстро угасла, когда то у одного, то другого бойца спецназа стали заканчиваться патроны в магазине...",
+				"text": "@loc:episode2.nodes.e2_result_42.data.text",
 				"art": "result_dead"
 			},
 			"position": [
 				40800.0,
 				1300.0
 			],
-			"title": "e2_result_42"
+			"title": "@loc:episode2.nodes.e2_result_42.title"
 		},
 		"e2_result_43": {
 			"type": "scene",
@@ -4894,14 +4894,14 @@
 				"kind": "city_ending",
 				"alive": true,
 				"result_id": 43.0,
-				"text": "Водитель вдавил педаль газа в пол, и темный фургон с надписью «SWAT» на борту рванул прочь от больницы. Дэвид с облегчением откинулся на спинку сидения... Он был спасен! Он жив!",
+				"text": "@loc:episode2.nodes.e2_result_43.data.text",
 				"art": "result_alive"
 			},
 			"position": [
 				42500.0,
 				0.0
 			],
-			"title": "e2_result_43"
+			"title": "@loc:episode2.nodes.e2_result_43.title"
 		},
 		"e2_result_44": {
 			"type": "scene",
@@ -4911,14 +4911,14 @@
 				"kind": "city_death",
 				"alive": false,
 				"result_id": 44.0,
-				"text": "Дэвид пригвоздил мертвеца к земле и собирался уже размозжить ему череп, но один из бойцов, не разобравшись в том, что происходит, врезал хирургу в висок прикладом, от чего тот потерял сознание и был тут же укушен вырвавшимся зомби. То, как толпа живых трупов смела спецназовцев, Дэвид уже не видел...",
+				"text": "@loc:episode2.nodes.e2_result_44.data.text",
 				"art": "result_dead"
 			},
 			"position": [
 				39100.0,
 				2600.0
 			],
-			"title": "e2_result_44"
+			"title": "@loc:episode2.nodes.e2_result_44.title"
 		},
 		"e2_result_45": {
 			"type": "scene",
@@ -4928,14 +4928,14 @@
 				"kind": "city_death",
 				"alive": false,
 				"result_id": 45.0,
-				"text": "Лифт был уже практически рядом, и Дэвид подошел вплотную к дверям, чтобы побыстрее оказаться внутри, ведь на шум могли прийти мертвецы. Лифт оказался не пустым... Каховски совершенно не ожидал, что там мог кто-то находиться. Тем более, толпа живых трупов.",
+				"text": "@loc:episode2.nodes.e2_result_45.data.text",
 				"art": "result_dead"
 			},
 			"position": [
 				28900.0,
 				5200.0
 			],
-			"title": "e2_result_45"
+			"title": "@loc:episode2.nodes.e2_result_45.title"
 		},
 		"e2_result_46": {
 			"type": "scene",
@@ -4945,14 +4945,14 @@
 				"kind": "city_death",
 				"alive": false,
 				"result_id": 46.0,
-				"text": "Мертвец набросился на Дэвида и укусил его. Крики хирурга привлекли других зомби. Спасение было близко...",
+				"text": "@loc:episode2.nodes.e2_result_46.data.text",
 				"art": "result_dead"
 			},
 			"position": [
 				27200.0,
 				6500.0
 			],
-			"title": "e2_result_46"
+			"title": "@loc:episode2.nodes.e2_result_46.title"
 		},
 		"e2_result_47": {
 			"type": "scene",
@@ -4962,14 +4962,14 @@
 				"kind": "city_ending",
 				"alive": true,
 				"result_id": 47.0,
-				"text": "Прошло несколько минут, и под капотом машины заурчало. Дэвид, прикрывавший своего нового напарника на улице, также разбил стекло, уселся на пассажирское сидение и автомобиль рванулся прочь из города.",
+				"text": "@loc:episode2.nodes.e2_result_47.data.text",
 				"art": "result_alive"
 			},
 			"position": [
 				30600.0,
 				1300.0
 			],
-			"title": "e2_result_47"
+			"title": "@loc:episode2.nodes.e2_result_47.title"
 		},
 		"e2_result_48": {
 			"type": "scene",
@@ -4979,14 +4979,14 @@
 				"kind": "city_death",
 				"alive": false,
 				"result_id": 48.0,
-				"text": "Пистолет в руках бойца выпустил на волю смертельный кусочек свинца... Для Дэвида борьба за жизнь была окончена.",
+				"text": "@loc:episode2.nodes.e2_result_48.data.text",
 				"art": "result_dead"
 			},
 			"position": [
 				28900.0,
 				6500.0
 			],
-			"title": "e2_result_48"
+			"title": "@loc:episode2.nodes.e2_result_48.title"
 		},
 		"e2_result_49": {
 			"type": "scene",
@@ -4996,14 +4996,14 @@
 				"kind": "city_death",
 				"alive": false,
 				"result_id": 49.0,
-				"text": "Из окна было видно, что военные подогнали уже несколько танков к больнице. На улице что-то громко ухнуло, и стена рядом с которой находился Дэвид взорвалась, во все стороны полетели осколки стекла и куски бетона. Хирург погиб под завалами.",
+				"text": "@loc:episode2.nodes.e2_result_49.data.text",
 				"art": "result_dead"
 			},
 			"position": [
 				25500.0,
 				10400.0
 			],
-			"title": "e2_result_49"
+			"title": "@loc:episode2.nodes.e2_result_49.title"
 		},
 		"e2_hospital_5_choice_11": {
 			"type": "scene",
@@ -5014,46 +5014,46 @@
 				"art": "e2_hospital_5",
 				"art_extension": "webp",
 				"clean_background": true,
-				"text": "В интернете Дэвид читал о подобных случаях, начавшихся недавно в России. На спинке стула около него висела кобура с пистолетом полицейского... Но вдруг он ошибается?"
+				"text": "@loc:episode2.nodes.e2_hospital_5_choice_11.data.text"
 			},
 			"position": [
 				8500.0,
 				0.0
 			],
-			"title": "e2_hospital_5_choice_11"
+			"title": "@loc:episode2.nodes.e2_hospital_5_choice_11.title"
 		},
 		"e2_hospital_5_choice_11__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Достать пистолет"
+				"text": "@loc:episode2.nodes.e2_hospital_5_choice_11__choice_0.data.text"
 			},
 			"position": [
 				8890.0,
 				0.0
 			],
-			"title": "Достать пистолет"
+			"title": "@loc:episode2.nodes.e2_hospital_5_choice_11__choice_0.title"
 		},
 		"e2_hospital_5_choice_11__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Попытаться помочь пациенту"
+				"text": "@loc:episode2.nodes.e2_hospital_5_choice_11__choice_1.data.text"
 			},
 			"position": [
 				8890.0,
 				290.0
 			],
-			"title": "Попытаться помочь пациенту"
+			"title": "@loc:episode2.nodes.e2_hospital_5_choice_11__choice_1.title"
 		},
 		"e2_hospital_5_choice_11__choice_2": {
 			"type": "choice",
 			"data": {
-				"text": "Выйти и позвать помощь"
+				"text": "@loc:episode2.nodes.e2_hospital_5_choice_11__choice_2.data.text"
 			},
 			"position": [
 				8890.0,
 				580.0
 			],
-			"title": "Выйти и позвать помощь"
+			"title": "@loc:episode2.nodes.e2_hospital_5_choice_11__choice_2.title"
 		},
 		"e2_hospital_6_choice_12": {
 			"type": "scene",
@@ -5064,46 +5064,46 @@
 				"art": "e2_hospital_6",
 				"art_extension": "webp",
 				"clean_background": true,
-				"text": "Черт возьми, почему он не взял пистолет? Быть может, стоит все-таки за ним вернуться?"
+				"text": "@loc:episode2.nodes.e2_hospital_6_choice_12.data.text"
 			},
 			"position": [
 				11900.0,
 				2600.0
 			],
-			"title": "e2_hospital_6_choice_12"
+			"title": "@loc:episode2.nodes.e2_hospital_6_choice_12.title"
 		},
 		"e2_hospital_6_choice_12__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Вернуться за пистолетом"
+				"text": "@loc:episode2.nodes.e2_hospital_6_choice_12__choice_0.data.text"
 			},
 			"position": [
 				12290.0,
 				2600.0
 			],
-			"title": "Вернуться за пистолетом"
+			"title": "@loc:episode2.nodes.e2_hospital_6_choice_12__choice_0.title"
 		},
 		"e2_hospital_6_choice_12__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Помочь парню"
+				"text": "@loc:episode2.nodes.e2_hospital_6_choice_12__choice_1.data.text"
 			},
 			"position": [
 				12290.0,
 				2890.0
 			],
-			"title": "Помочь парню"
+			"title": "@loc:episode2.nodes.e2_hospital_6_choice_12__choice_1.title"
 		},
 		"e2_hospital_6_choice_12__choice_2": {
 			"type": "choice",
 			"data": {
-				"text": "Пробежать мимо"
+				"text": "@loc:episode2.nodes.e2_hospital_6_choice_12__choice_2.data.text"
 			},
 			"position": [
 				12290.0,
 				3180.0
 			],
-			"title": "Пробежать мимо"
+			"title": "@loc:episode2.nodes.e2_hospital_6_choice_12__choice_2.title"
 		},
 		"e2_hospital_9_choice_13": {
 			"type": "scene",
@@ -5114,35 +5114,35 @@
 				"art": "e2_hospital_9",
 				"art_extension": "webp",
 				"clean_background": true,
-				"text": "Мертвец был уже совсем близко. Даже Дэвид уже не сможет промахнуться и попадет ему в голову, как учили фильмы и сводки русских новостей. Решайся же, Каховски!"
+				"text": "@loc:episode2.nodes.e2_hospital_9_choice_13.data.text"
 			},
 			"position": [
 				13600.0,
 				5200.0
 			],
-			"title": "e2_hospital_9_choice_13"
+			"title": "@loc:episode2.nodes.e2_hospital_9_choice_13.title"
 		},
 		"e2_hospital_9_choice_13__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Стрелять в зомби"
+				"text": "@loc:episode2.nodes.e2_hospital_9_choice_13__choice_0.data.text"
 			},
 			"position": [
 				13990.0,
 				5200.0
 			],
-			"title": "Стрелять в зомби"
+			"title": "@loc:episode2.nodes.e2_hospital_9_choice_13__choice_0.title"
 		},
 		"e2_hospital_9_choice_13__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Закрыть кабинет снаружи"
+				"text": "@loc:episode2.nodes.e2_hospital_9_choice_13__choice_1.data.text"
 			},
 			"position": [
 				13990.0,
 				5490.0
 			],
-			"title": "Закрыть кабинет снаружи"
+			"title": "@loc:episode2.nodes.e2_hospital_9_choice_13__choice_1.title"
 		},
 		"e2_hospital_11_choice_14": {
 			"type": "scene",
@@ -5153,35 +5153,35 @@
 				"art": "e2_hospital_11",
 				"art_extension": "webp",
 				"clean_background": true,
-				"text": "Увиденное на миг ошарашило хирурга, заставило того застыть в нерешительности с трясущимся пистолетом в руках: «Дэвид, спокойно. Вдох-выдох, вдох-выдох. Сколько у тебя патронов? 4? 5? Вроде 4, да?»."
+				"text": "@loc:episode2.nodes.e2_hospital_11_choice_14.data.text"
 			},
 			"position": [
 				17000.0,
 				10400.0
 			],
-			"title": "e2_hospital_11_choice_14"
+			"title": "@loc:episode2.nodes.e2_hospital_11_choice_14.title"
 		},
 		"e2_hospital_11_choice_14__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Застрелить мертвеца"
+				"text": "@loc:episode2.nodes.e2_hospital_11_choice_14__choice_0.data.text"
 			},
 			"position": [
 				17390.0,
 				10400.0
 			],
-			"title": "Застрелить мертвеца"
+			"title": "@loc:episode2.nodes.e2_hospital_11_choice_14__choice_0.title"
 		},
 		"e2_hospital_11_choice_14__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Пробежать мимо"
+				"text": "@loc:episode2.nodes.e2_hospital_11_choice_14__choice_1.data.text"
 			},
 			"position": [
 				17390.0,
 				10690.0
 			],
-			"title": "Пробежать мимо"
+			"title": "@loc:episode2.nodes.e2_hospital_11_choice_14__choice_1.title"
 		},
 		"e2_hospital_11_choice_14__choice_1__route_0": {
 			"type": "condition",
@@ -5194,7 +5194,7 @@
 				17810.0,
 				10690.0
 			],
-			"title": "Условный переход"
+			"title": "@loc:episode2.nodes.e2_hospital_11_choice_14__choice_1__route_0.title"
 		},
 		"e2_hospital_15_choice_16": {
 			"type": "scene",
@@ -5205,58 +5205,58 @@
 				"art": "e2_hospital_15",
 				"art_extension": "webp",
 				"clean_background": true,
-				"text": "Оказалось, что друг Ника, лежавший сейчас без сознания на полу, укушен. Ник настаивал, чтобы Дэвид помог ему донести друга до лифта или до лестницы вниз...",
+				"text": "@loc:episode2.nodes.e2_hospital_15_choice_16.data.text",
 				"decision_art": "ep2_decision_4"
 			},
 			"position": [
 				15300.0,
 				7800.0
 			],
-			"title": "e2_hospital_15_choice_16"
+			"title": "@loc:episode2.nodes.e2_hospital_15_choice_16.title"
 		},
 		"e2_hospital_15_choice_16__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Вместе пойти за пистолетом"
+				"text": "@loc:episode2.nodes.e2_hospital_15_choice_16__choice_0.data.text"
 			},
 			"position": [
 				15690.0,
 				7800.0
 			],
-			"title": "Вместе пойти за пистолетом"
+			"title": "@loc:episode2.nodes.e2_hospital_15_choice_16__choice_0.title"
 		},
 		"e2_hospital_15_choice_16__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Идти к пожарной лестнице"
+				"text": "@loc:episode2.nodes.e2_hospital_15_choice_16__choice_1.data.text"
 			},
 			"position": [
 				15690.0,
 				8090.0
 			],
-			"title": "Идти к пожарной лестнице"
+			"title": "@loc:episode2.nodes.e2_hospital_15_choice_16__choice_1.title"
 		},
 		"e2_hospital_15_choice_16__choice_2": {
 			"type": "choice",
 			"data": {
-				"text": "Пробиваться сквозь зомби"
+				"text": "@loc:episode2.nodes.e2_hospital_15_choice_16__choice_2.data.text"
 			},
 			"position": [
 				15690.0,
 				8380.0
 			],
-			"title": "Пробиваться сквозь зомби"
+			"title": "@loc:episode2.nodes.e2_hospital_15_choice_16__choice_2.title"
 		},
 		"e2_hospital_15_choice_16__choice_3": {
 			"type": "choice",
 			"data": {
-				"text": "Нести друга к лифту"
+				"text": "@loc:episode2.nodes.e2_hospital_15_choice_16__choice_3.data.text"
 			},
 			"position": [
 				15690.0,
 				8670.0
 			],
-			"title": "Нести друга к лифту"
+			"title": "@loc:episode2.nodes.e2_hospital_15_choice_16__choice_3.title"
 		},
 		"e2_hospital_15_choice_16_1": {
 			"type": "scene",
@@ -5267,58 +5267,58 @@
 				"art": "e2_hospital_15",
 				"art_extension": "webp",
 				"clean_background": true,
-				"text": "Оказалось, что друг Ника, лежавший сейчас без сознания на полу, укушен. Ник настаивал, чтобы Дэвид помог ему донести друга до лифта или до лестницы вниз...",
+				"text": "@loc:episode2.nodes.e2_hospital_15_choice_16_1.data.text",
 				"decision_art": "ep2_decision_4"
 			},
 			"position": [
 				15300.0,
 				9100.0
 			],
-			"title": "e2_hospital_15_choice_16_1"
+			"title": "@loc:episode2.nodes.e2_hospital_15_choice_16_1.title"
 		},
 		"e2_hospital_15_choice_16_1__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Спрятаться в операционной"
+				"text": "@loc:episode2.nodes.e2_hospital_15_choice_16_1__choice_0.data.text"
 			},
 			"position": [
 				15690.0,
 				9100.0
 			],
-			"title": "Спрятаться в операционной"
+			"title": "@loc:episode2.nodes.e2_hospital_15_choice_16_1__choice_0.title"
 		},
 		"e2_hospital_15_choice_16_1__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Идти к пожарной лестнице"
+				"text": "@loc:episode2.nodes.e2_hospital_15_choice_16_1__choice_1.data.text"
 			},
 			"position": [
 				15690.0,
 				9390.0
 			],
-			"title": "Идти к пожарной лестнице"
+			"title": "@loc:episode2.nodes.e2_hospital_15_choice_16_1__choice_1.title"
 		},
 		"e2_hospital_15_choice_16_1__choice_2": {
 			"type": "choice",
 			"data": {
-				"text": "Пробиваться сквозь зомби"
+				"text": "@loc:episode2.nodes.e2_hospital_15_choice_16_1__choice_2.data.text"
 			},
 			"position": [
 				15690.0,
 				9680.0
 			],
-			"title": "Пробиваться сквозь зомби"
+			"title": "@loc:episode2.nodes.e2_hospital_15_choice_16_1__choice_2.title"
 		},
 		"e2_hospital_15_choice_16_1__choice_3": {
 			"type": "choice",
 			"data": {
-				"text": "Нести друга к лифту"
+				"text": "@loc:episode2.nodes.e2_hospital_15_choice_16_1__choice_3.data.text"
 			},
 			"position": [
 				15690.0,
 				9970.0
 			],
-			"title": "Нести друга к лифту"
+			"title": "@loc:episode2.nodes.e2_hospital_15_choice_16_1__choice_3.title"
 		},
 		"e2_hospital_17_choice_18": {
 			"type": "scene",
@@ -5329,46 +5329,46 @@
 				"art": "e2_hospital_17",
 				"art_extension": "webp",
 				"clean_background": true,
-				"text": "А не переоценивает ли Дэвид свои силы вообще? 4 патрона, 4 мертвеца и один Рэмбо — все обстояло примерно так. Хирург нервно поежился."
+				"text": "@loc:episode2.nodes.e2_hospital_17_choice_18.data.text"
 			},
 			"position": [
 				20400.0,
 				9100.0
 			],
-			"title": "e2_hospital_17_choice_18"
+			"title": "@loc:episode2.nodes.e2_hospital_17_choice_18.title"
 		},
 		"e2_hospital_17_choice_18__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Застрелить зомби"
+				"text": "@loc:episode2.nodes.e2_hospital_17_choice_18__choice_0.data.text"
 			},
 			"position": [
 				20790.0,
 				9100.0
 			],
-			"title": "Застрелить зомби"
+			"title": "@loc:episode2.nodes.e2_hospital_17_choice_18__choice_0.title"
 		},
 		"e2_hospital_17_choice_18__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Вернуться и помочь парню"
+				"text": "@loc:episode2.nodes.e2_hospital_17_choice_18__choice_1.data.text"
 			},
 			"position": [
 				20790.0,
 				9390.0
 			],
-			"title": "Вернуться и помочь парню"
+			"title": "@loc:episode2.nodes.e2_hospital_17_choice_18__choice_1.title"
 		},
 		"e2_hospital_17_choice_18__choice_2": {
 			"type": "choice",
 			"data": {
-				"text": "Бежать к пожарной лестнице"
+				"text": "@loc:episode2.nodes.e2_hospital_17_choice_18__choice_2.data.text"
 			},
 			"position": [
 				20790.0,
 				9680.0
 			],
-			"title": "Бежать к пожарной лестнице"
+			"title": "@loc:episode2.nodes.e2_hospital_17_choice_18__choice_2.title"
 		},
 		"e2_glock": {
 			"type": "scene",
@@ -5378,14 +5378,14 @@
 				"kind": "city_pickup",
 				"art": "ep2_item_glock",
 				"background_art": "e2_hospital_5",
-				"text": "Glock 19 Gen4, 5 патронов 9x19 мм",
+				"text": "@loc:episode2.nodes.e2_glock.data.text",
 				"sound": "GlockPickUp"
 			},
 			"position": [
 				10200.0,
 				2600.0
 			],
-			"title": "e2_glock"
+			"title": "@loc:episode2.nodes.e2_glock.title"
 		},
 		"e2_glock__entry": {
 			"type": "action",
@@ -5398,12 +5398,12 @@
 				9820.0,
 				2780.0
 			],
-			"title": "При входе"
+			"title": "@loc:episode2.nodes.e2_glock__entry.title"
 		},
 		"e2_glock__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Забрать",
+				"text": "@loc:episode2.nodes.e2_glock__choice_0.data.text",
 				"rect": [
 					656.0,
 					326.0,
@@ -5415,7 +5415,7 @@
 				10590.0,
 				2600.0
 			],
-			"title": "Забрать"
+			"title": "@loc:episode2.nodes.e2_glock__choice_0.title"
 		},
 		"e2_glock_friend": {
 			"type": "scene",
@@ -5425,14 +5425,14 @@
 				"kind": "city_pickup",
 				"art": "ep2_item_glock",
 				"background_art": "e2_hospital_5",
-				"text": "Glock 19 Gen4, 5 патронов 9x19 мм",
+				"text": "@loc:episode2.nodes.e2_glock_friend.data.text",
 				"sound": "GlockPickUp"
 			},
 			"position": [
 				0.0,
 				1300.0
 			],
-			"title": "e2_glock_friend"
+			"title": "@loc:episode2.nodes.e2_glock_friend.title"
 		},
 		"e2_glock_friend__entry": {
 			"type": "action",
@@ -5445,12 +5445,12 @@
 				-380.0,
 				1480.0
 			],
-			"title": "При входе"
+			"title": "@loc:episode2.nodes.e2_glock_friend__entry.title"
 		},
 		"e2_glock_friend__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Забрать",
+				"text": "@loc:episode2.nodes.e2_glock_friend__choice_0.data.text",
 				"rect": [
 					656.0,
 					326.0,
@@ -5462,7 +5462,7 @@
 				390.0,
 				1300.0
 			],
-			"title": "Забрать"
+			"title": "@loc:episode2.nodes.e2_glock_friend__choice_0.title"
 		},
 		"e2_mark23": {
 			"type": "scene",
@@ -5472,14 +5472,14 @@
 				"kind": "city_pickup",
 				"art": "ep2_item_mark23",
 				"background_art": "e2_main_3",
-				"text": "Mark 23, 12 патронов .45 ACP",
+				"text": "@loc:episode2.nodes.e2_mark23.data.text",
 				"sound": "TakeMK23"
 			},
 			"position": [
 				28900.0,
 				7800.0
 			],
-			"title": "e2_mark23"
+			"title": "@loc:episode2.nodes.e2_mark23.title"
 		},
 		"e2_mark23__entry": {
 			"type": "action",
@@ -5492,12 +5492,12 @@
 				28520.0,
 				7980.0
 			],
-			"title": "При входе"
+			"title": "@loc:episode2.nodes.e2_mark23__entry.title"
 		},
 		"e2_mark23__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Забрать",
+				"text": "@loc:episode2.nodes.e2_mark23__choice_0.data.text",
 				"rect": [
 					656.0,
 					326.0,
@@ -5509,7 +5509,7 @@
 				29290.0,
 				7800.0
 			],
-			"title": "Забрать"
+			"title": "@loc:episode2.nodes.e2_mark23__choice_0.title"
 		},
 		"e2_first_3_choice_15": {
 			"type": "scene",
@@ -5520,24 +5520,24 @@
 				"art": "e2_first_3",
 				"art_extension": "webp",
 				"clean_background": true,
-				"text": "Быть может, получится перебить цепи выстрелом?"
+				"text": "@loc:episode2.nodes.e2_first_3_choice_15.data.text"
 			},
 			"position": [
 				22100.0,
 				15600.0
 			],
-			"title": "e2_first_3_choice_15"
+			"title": "@loc:episode2.nodes.e2_first_3_choice_15.title"
 		},
 		"e2_first_3_choice_15__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Стрелять по цепям"
+				"text": "@loc:episode2.nodes.e2_first_3_choice_15__choice_0.data.text"
 			},
 			"position": [
 				22490.0,
 				15600.0
 			],
-			"title": "Стрелять по цепям"
+			"title": "@loc:episode2.nodes.e2_first_3_choice_15__choice_0.title"
 		},
 		"e2_first_3_choice_15__choice_0__route_0": {
 			"type": "condition",
@@ -5550,7 +5550,7 @@
 				22910.0,
 				15600.0
 			],
-			"title": "Условный переход"
+			"title": "@loc:episode2.nodes.e2_first_3_choice_15__choice_0__route_0.title"
 		},
 		"e2_first_3_choice_15__choice_0__route_1": {
 			"type": "condition",
@@ -5563,18 +5563,18 @@
 				22910.0,
 				15770.0
 			],
-			"title": "Условный переход"
+			"title": "@loc:episode2.nodes.e2_first_3_choice_15__choice_0__route_1.title"
 		},
 		"e2_first_3_choice_15__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Проверить другие двери"
+				"text": "@loc:episode2.nodes.e2_first_3_choice_15__choice_1.data.text"
 			},
 			"position": [
 				22490.0,
 				15890.0
 			],
-			"title": "Проверить другие двери"
+			"title": "@loc:episode2.nodes.e2_first_3_choice_15__choice_1.title"
 		},
 		"e2_first_3_choice_19": {
 			"type": "scene",
@@ -5585,35 +5585,35 @@
 				"art": "e2_first_3",
 				"art_extension": "webp",
 				"clean_background": true,
-				"text": "Быть может, получится как-то сбить замок прутом?"
+				"text": "@loc:episode2.nodes.e2_first_3_choice_19.data.text"
 			},
 			"position": [
 				22100.0,
 				16900.0
 			],
-			"title": "e2_first_3_choice_19"
+			"title": "@loc:episode2.nodes.e2_first_3_choice_19.title"
 		},
 		"e2_first_3_choice_19__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Попробовать открыть двери"
+				"text": "@loc:episode2.nodes.e2_first_3_choice_19__choice_0.data.text"
 			},
 			"position": [
 				22490.0,
 				16900.0
 			],
-			"title": "Попробовать открыть двери"
+			"title": "@loc:episode2.nodes.e2_first_3_choice_19__choice_0.title"
 		},
 		"e2_first_3_choice_19__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Проверить другие двери"
+				"text": "@loc:episode2.nodes.e2_first_3_choice_19__choice_1.data.text"
 			},
 			"position": [
 				22490.0,
 				17190.0
 			],
-			"title": "Проверить другие двери"
+			"title": "@loc:episode2.nodes.e2_first_3_choice_19__choice_1.title"
 		},
 		"e2_first_locked": {
 			"type": "scene",
@@ -5627,7 +5627,7 @@
 				"blocks": [
 					{
 						"path": "Hist",
-						"text": "Цепи и замок не поддаются. Двери закрыты снаружи.",
+						"text": "@loc:episode2.nodes.e2_first_locked.data.blocks.0.text",
 						"rect": [
 							11.0,
 							7.0,
@@ -5638,19 +5638,19 @@
 						"size": 24.0
 					}
 				],
-				"text": "Эвакуационный выход совершенно неожиданно для Дэвида оказался закрыт снаружи. Ручки дверей были обмотаны цепями и закреплены навесным замком. Кто мог такое сделать и зачем?!",
+				"text": "@loc:episode2.nodes.e2_first_locked.data.text",
 				"sound": "ClosedDoor"
 			},
 			"position": [
 				23800.0,
 				15600.0
 			],
-			"title": "e2_first_locked"
+			"title": "@loc:episode2.nodes.e2_first_locked.title"
 		},
 		"e2_first_locked__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее",
+				"text": "@loc:episode2.nodes.e2_first_locked__choice_0.data.text",
 				"rect": [
 					70.0,
 					0.0,
@@ -5662,7 +5662,7 @@
 				24190.0,
 				15600.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_first_locked__choice_0.title"
 		},
 		"e2_first_9_choice_23": {
 			"type": "scene",
@@ -5673,35 +5673,35 @@
 				"art": "e2_first_9",
 				"art_extension": "webp",
 				"clean_background": true,
-				"text": "Стоит ли, рискуя жизнью, пытаться присоединиться к военным или все же стоит вернуться назад?"
+				"text": "@loc:episode2.nodes.e2_first_9_choice_23.data.text"
 			},
 			"position": [
 				25500.0,
 				11700.0
 			],
-			"title": "e2_first_9_choice_23"
+			"title": "@loc:episode2.nodes.e2_first_9_choice_23.title"
 		},
 		"e2_first_9_choice_23__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Бежать к военным"
+				"text": "@loc:episode2.nodes.e2_first_9_choice_23__choice_0.data.text"
 			},
 			"position": [
 				25890.0,
 				11700.0
 			],
-			"title": "Бежать к военным"
+			"title": "@loc:episode2.nodes.e2_first_9_choice_23__choice_0.title"
 		},
 		"e2_first_9_choice_23__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Вернуться назад"
+				"text": "@loc:episode2.nodes.e2_first_9_choice_23__choice_1.data.text"
 			},
 			"position": [
 				25890.0,
 				11990.0
 			],
-			"title": "Вернуться назад"
+			"title": "@loc:episode2.nodes.e2_first_9_choice_23__choice_1.title"
 		},
 		"e2_roof_3_choice_17": {
 			"type": "scene",
@@ -5712,35 +5712,35 @@
 				"art": "e2_roof_3",
 				"art_extension": "webp",
 				"clean_background": true,
-				"text": "Дэвиду так не хотелось шуметь, стреляя из пистолета, но и оставлять за собой это существо было не лучшей идеей."
+				"text": "@loc:episode2.nodes.e2_roof_3_choice_17.data.text"
 			},
 			"position": [
 				20400.0,
 				10400.0
 			],
-			"title": "e2_roof_3_choice_17"
+			"title": "@loc:episode2.nodes.e2_roof_3_choice_17.title"
 		},
 		"e2_roof_3_choice_17__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Застрелить зомби"
+				"text": "@loc:episode2.nodes.e2_roof_3_choice_17__choice_0.data.text"
 			},
 			"position": [
 				20790.0,
 				10400.0
 			],
-			"title": "Застрелить зомби"
+			"title": "@loc:episode2.nodes.e2_roof_3_choice_17__choice_0.title"
 		},
 		"e2_roof_3_choice_17__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Перепрыгнуть через мертвеца"
+				"text": "@loc:episode2.nodes.e2_roof_3_choice_17__choice_1.data.text"
 			},
 			"position": [
 				20790.0,
 				10690.0
 			],
-			"title": "Перепрыгнуть через мертвеца"
+			"title": "@loc:episode2.nodes.e2_roof_3_choice_17__choice_1.title"
 		},
 		"e2_hall_3_choice_20": {
 			"type": "scene",
@@ -5751,35 +5751,35 @@
 				"art": "e2_hall_3",
 				"art_extension": "webp",
 				"clean_background": true,
-				"text": "С нужной Дэвиду стороны послышались какие-то звуки. Там определенно кто-то был. Что же делать..."
+				"text": "@loc:episode2.nodes.e2_hall_3_choice_20.data.text"
 			},
 			"position": [
 				20400.0,
 				11700.0
 			],
-			"title": "e2_hall_3_choice_20"
+			"title": "@loc:episode2.nodes.e2_hall_3_choice_20.title"
 		},
 		"e2_hall_3_choice_20__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Перепрыгнуть через стойку"
+				"text": "@loc:episode2.nodes.e2_hall_3_choice_20__choice_0.data.text"
 			},
 			"position": [
 				20790.0,
 				11700.0
 			],
-			"title": "Перепрыгнуть через стойку"
+			"title": "@loc:episode2.nodes.e2_hall_3_choice_20__choice_0.title"
 		},
 		"e2_hall_3_choice_20__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Тихо пройти мимо"
+				"text": "@loc:episode2.nodes.e2_hall_3_choice_20__choice_1.data.text"
 			},
 			"position": [
 				20790.0,
 				11990.0
 			],
-			"title": "Тихо пройти мимо"
+			"title": "@loc:episode2.nodes.e2_hall_3_choice_20__choice_1.title"
 		},
 		"e2_main_3_choice_21": {
 			"type": "scene",
@@ -5790,35 +5790,35 @@
 				"art": "e2_main_3",
 				"art_extension": "webp",
 				"clean_background": true,
-				"text": "Быть может, стоит попросить какое-нибудь оружие у одного из бойцов? Тогда Дэвид был бы хоть немного полезен группе."
+				"text": "@loc:episode2.nodes.e2_main_3_choice_21.data.text"
 			},
 			"position": [
 				27200.0,
 				7800.0
 			],
-			"title": "e2_main_3_choice_21"
+			"title": "@loc:episode2.nodes.e2_main_3_choice_21.title"
 		},
 		"e2_main_3_choice_21__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Попросить пистолет у бойца"
+				"text": "@loc:episode2.nodes.e2_main_3_choice_21__choice_0.data.text"
 			},
 			"position": [
 				27590.0,
 				7800.0
 			],
-			"title": "Попросить пистолет у бойца"
+			"title": "@loc:episode2.nodes.e2_main_3_choice_21__choice_0.title"
 		},
 		"e2_main_3_choice_21__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Идти в середине группы"
+				"text": "@loc:episode2.nodes.e2_main_3_choice_21__choice_1.data.text"
 			},
 			"position": [
 				27590.0,
 				8090.0
 			],
-			"title": "Идти в середине группы"
+			"title": "@loc:episode2.nodes.e2_main_3_choice_21__choice_1.title"
 		},
 		"e2_main_7_choice_22": {
 			"type": "scene",
@@ -5829,46 +5829,46 @@
 				"art": "e2_main_7",
 				"art_extension": "webp",
 				"clean_background": true,
-				"text": "На первом этаже, как сказал командир группы, количество мертвецов просто неимоверное. Шум здесь может привлечь их внимание..."
+				"text": "@loc:episode2.nodes.e2_main_7_choice_22.data.text"
 			},
 			"position": [
 				35700.0,
 				0.0
 			],
-			"title": "e2_main_7_choice_22"
+			"title": "@loc:episode2.nodes.e2_main_7_choice_22.title"
 		},
 		"e2_main_7_choice_22__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Свалить мертвеца"
+				"text": "@loc:episode2.nodes.e2_main_7_choice_22__choice_0.data.text"
 			},
 			"position": [
 				36090.0,
 				0.0
 			],
-			"title": "Свалить мертвеца"
+			"title": "@loc:episode2.nodes.e2_main_7_choice_22__choice_0.title"
 		},
 		"e2_main_7_choice_22__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "Поднять тревогу"
+				"text": "@loc:episode2.nodes.e2_main_7_choice_22__choice_1.data.text"
 			},
 			"position": [
 				36090.0,
 				290.0
 			],
-			"title": "Поднять тревогу"
+			"title": "@loc:episode2.nodes.e2_main_7_choice_22__choice_1.title"
 		},
 		"e2_main_7_choice_22__choice_2": {
 			"type": "choice",
 			"data": {
-				"text": "Застрелить обратившегося"
+				"text": "@loc:episode2.nodes.e2_main_7_choice_22__choice_2.data.text"
 			},
 			"position": [
 				36090.0,
 				580.0
 			],
-			"title": "Застрелить обратившегося"
+			"title": "@loc:episode2.nodes.e2_main_7_choice_22__choice_2.title"
 		},
 		"e2_main_7_choice_22__choice_2__effects": {
 			"type": "action",
@@ -5881,7 +5881,7 @@
 				36510.0,
 				580.0
 			],
-			"title": "Последствия выбора"
+			"title": "@loc:episode2.nodes.e2_main_7_choice_22__choice_2__effects.title"
 		},
 		"e2_main_7_choice_22__choice_2__requires": {
 			"type": "condition",
@@ -5894,7 +5894,7 @@
 				36510.0,
 				750.0
 			],
-			"title": "Доступность ответа"
+			"title": "@loc:episode2.nodes.e2_main_7_choice_22__choice_2__requires.title"
 		},
 		"e2_lift_3_v2": {
 			"type": "scene",
@@ -5914,18 +5914,18 @@
 				27200.0,
 				9100.0
 			],
-			"title": "e2_lift_3_v2"
+			"title": "@loc:episode2.nodes.e2_lift_3_v2.title"
 		},
 		"e2_lift_3_v2__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode2.nodes.e2_lift_3_v2__choice_0.data.text"
 			},
 			"position": [
 				27590.0,
 				9100.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_lift_3_v2__choice_0.title"
 		},
 		"e2_boom_4": {
 			"type": "scene",
@@ -5941,18 +5941,18 @@
 				23800.0,
 				16900.0
 			],
-			"title": "e2_boom_4"
+			"title": "@loc:episode2.nodes.e2_boom_4.title"
 		},
 		"e2_boom_4__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode2.nodes.e2_boom_4__choice_0.data.text"
 			},
 			"position": [
 				24190.0,
 				16900.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_boom_4__choice_0.title"
 		},
 		"e2_boom_5": {
 			"type": "scene",
@@ -5968,18 +5968,18 @@
 				25500.0,
 				13000.0
 			],
-			"title": "e2_boom_5"
+			"title": "@loc:episode2.nodes.e2_boom_5.title"
 		},
 		"e2_boom_5__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "Далее"
+				"text": "@loc:episode2.nodes.e2_boom_5__choice_0.data.text"
 			},
 			"position": [
 				25890.0,
 				13000.0
 			],
-			"title": "Далее"
+			"title": "@loc:episode2.nodes.e2_boom_5__choice_0.title"
 		}
 	},
 	"edges": [

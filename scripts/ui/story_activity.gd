@@ -1,4 +1,5 @@
 extends Control
+const LOC := preload("res://scripts/core/localization.gd")
 const QTE := preload("res://scripts/core/qte_rules.gd")
 # Interactive graph blocks own their state in Quest, so pause/resume and saves
 # do not reset the attempt count or grant extra time.
@@ -42,16 +43,16 @@ func build() -> void:
     ui._hit(choices[i].text,Rect2(91,244+i*66,657,64),func():finish(i))
   else:
    for i:int in choices.size():
-    ui._brush_button(choices[i].get("text","Далее"),Rect2(90,245+i*55,620,48),func():finish(i))
+    ui._brush_button(choices[i].get("text",LOC.text("@loc:ui.story_activity.1")),Rect2(90,245+i*55,620,48),func():finish(i))
  elif node.kind=="activity_code":
   input=LineEdit.new();input.position=Vector2(200,230)*2;input.size=Vector2(400,45)*2
   input.text=state.get("input","");input.add_theme_font_size_override("font_size",40)
   ui.screen.add_child(input)
   input.text_changed.connect(func(v):state.input=v)
   input.text_submitted.connect(func(_v):check_code())
-  ui._brush_button("Проверить",Rect2(250,340,300,55),check_code)
+  ui._brush_button(LOC.text("@loc:ui.story_activity.2"),Rect2(250,340,300,55),check_code)
   meter=ui._text("",Rect2(150,290,500,35),22,false,true)
-  meter.text="Осталось попыток: "+str(state.attempts)
+  meter.text=LOC.text("@loc:ui.story_activity.3")+str(state.attempts)
  elif node.kind=="activity_qte":
   QTE.initialize(state,node)
   Quest.save_game()
@@ -60,13 +61,13 @@ func build() -> void:
   meter.add_theme_color_override("font_shadow_color",Color.BLACK)
   meter.add_theme_constant_override("shadow_offset_x",2)
   meter.add_theme_constant_override("shadow_offset_y",2)
-  var targets:Array=node.get("targets",[{"text":"Нажать","rect":node.get("target_rect",[270,315,260,65])}])
+  var targets:Array=node.get("targets",[{"text":LOC.text("@loc:ui.story_activity.4"),"rect":node.get("target_rect",[270,315,260,65])}])
   for i:int in targets.size():
    var r:Array=targets[i].rect
-   var b:Button=ui._hit(targets[i].get("text","Нажать"),Rect2(r[0],r[1],r[2],r[3]),func():press_target(i))
+   var b:Button=ui._hit(targets[i].get("text",LOC.text("@loc:ui.story_activity.5")),Rect2(r[0],r[1],r[2],r[3]),func():press_target(i))
    taps.append(b)
    if not node.get("original_ui",false):
-    b.text=targets[i].get("text","Нажать")
+    b.text=targets[i].get("text",LOC.text("@loc:ui.story_activity.6"))
     b.add_theme_font_override("font",ui.BODY_FONT)
     b.add_theme_font_size_override("font_size",44)
     var style:=StyleBoxFlat.new()
@@ -75,7 +76,7 @@ func build() -> void:
   tap=taps[0]
   if node.get("target_mode","fixed")=="random":move_target()
   update_visuals()
- ui._edge_tab("Пауза",ui._show_pause)
+ ui._edge_tab(LOC.text("@loc:ui.story_activity.7"),ui._show_pause)
 func finish(index:int)->void:
  if done:return
  done=true
@@ -88,7 +89,7 @@ func check_code()->void:
   state.attempts-=1;state.input="";input.clear()
   Quest.save_game()
   if state.attempts<=0:finish(1)
-  else:meter.text="Неверный код. Осталось попыток: "+str(state.attempts)
+  else:meter.text=LOC.text("@loc:ui.story_activity.8")+str(state.attempts)
 func press_target(index:int=0)->void:
  if done or ui.paused:return
  var outcome:=QTE.press(state,node,index)
@@ -113,6 +114,6 @@ func move_target()->void:
 func _process(delta:float)->void:
  if done or is_queued_for_deletion() or ui==null or get_parent()!=ui.screen or ui.paused or node.get("kind")!="activity_qte":return
  state.remaining=maxf(0,float(state.remaining)-delta)
- if is_instance_valid(meter):meter.text="%.1f с · Нажатия %d/%d" % [state.remaining,state.taps,int(state.required_taps)]
+ if is_instance_valid(meter):meter.text=LOC.text("@loc:ui.story_activity.9") % [state.remaining,state.taps,int(state.required_taps)]
  update_visuals()
  if state.remaining<=0:finish(QTE.timeout(state,node))

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "episode": 3,
-  "title": "Пример активностей",
+  "title": "@loc:episode3.examples.activity_demo.title",
   "variables": {
     "secret": "*123#"
   },
@@ -9,10 +9,10 @@
   "nodes": {
     "e3_dialogue": {
       "type": "dialogue",
-      "title": "e3_dialogue",
+      "title": "@loc:episode3.examples.activity_demo.nodes.e3_dialogue.title",
       "data": {
-        "speaker": "Дэвид",
-        "text": "Открой дверь кодом, затем пройди QTE.",
+        "speaker": "@loc:episode3.examples.activity_demo.nodes.e3_dialogue.data.speaker",
+        "text": "@loc:episode3.examples.activity_demo.nodes.e3_dialogue.data.text",
         "source": "Example",
         "art": "result_background"
       },
@@ -23,9 +23,9 @@
     },
     "e3_answer": {
       "type": "choice",
-      "title": "e3_answer",
+      "title": "@loc:episode3.examples.activity_demo.nodes.e3_answer.title",
       "data": {
-        "text": "Начать"
+        "text": "@loc:episode3.examples.activity_demo.nodes.e3_answer.data.text"
       },
       "position": [
         400,
@@ -34,9 +34,9 @@
     },
     "e3_code": {
       "type": "code",
-      "title": "e3_code",
+      "title": "@loc:episode3.examples.activity_demo.nodes.e3_code.title",
       "data": {
-        "text": "Введите *123#",
+        "text": "@loc:episode3.examples.activity_demo.nodes.e3_code.data.text",
         "code_variable": "secret",
         "attempts": 3,
         "source": "Example",
@@ -49,9 +49,9 @@
     },
     "e3_correct": {
       "type": "choice",
-      "title": "e3_correct",
+      "title": "@loc:episode3.examples.activity_demo.nodes.e3_correct.title",
       "data": {
-        "text": "Верный код"
+        "text": "@loc:episode3.examples.activity_demo.nodes.e3_correct.data.text"
       },
       "position": [
         1300,
@@ -60,9 +60,9 @@
     },
     "e3_badcode": {
       "type": "choice",
-      "title": "e3_badcode",
+      "title": "@loc:episode3.examples.activity_demo.nodes.e3_badcode.title",
       "data": {
-        "text": "Попытки исчерпаны"
+        "text": "@loc:episode3.examples.activity_demo.nodes.e3_badcode.data.text"
       },
       "position": [
         1300,
@@ -71,9 +71,9 @@
     },
     "e3_qte": {
       "type": "qte",
-      "title": "e3_qte",
+      "title": "@loc:episode3.examples.activity_demo.nodes.e3_qte.title",
       "data": {
-        "text": "Нажмите 5 раз за 4 секунды",
+        "text": "@loc:episode3.examples.activity_demo.nodes.e3_qte.data.text",
         "taps": 5,
         "seconds": 4,
         "target_mode": "random",
@@ -87,9 +87,9 @@
     },
     "e3_hit": {
       "type": "choice",
-      "title": "e3_hit",
+      "title": "@loc:episode3.examples.activity_demo.nodes.e3_hit.title",
       "data": {
-        "text": "Нажатия выполнены"
+        "text": "@loc:episode3.examples.activity_demo.nodes.e3_hit.data.text"
       },
       "position": [
         2200,
@@ -98,9 +98,9 @@
     },
     "e3_timeout": {
       "type": "choice",
-      "title": "e3_timeout",
+      "title": "@loc:episode3.examples.activity_demo.nodes.e3_timeout.title",
       "data": {
-        "text": "Время истекло"
+        "text": "@loc:episode3.examples.activity_demo.nodes.e3_timeout.data.text"
       },
       "position": [
         2200,
@@ -109,12 +109,12 @@
     },
     "e3_win": {
       "type": "scene",
-      "title": "e3_win",
+      "title": "@loc:episode3.examples.activity_demo.nodes.e3_win.title",
       "data": {
         "kind": "city_ending",
         "alive": true,
         "result_id": 3001,
-        "text": "Пример пройден.",
+        "text": "@loc:episode3.examples.activity_demo.nodes.e3_win.data.text",
         "source": "Example",
         "art": "result_alive"
       },
@@ -125,12 +125,12 @@
     },
     "e3_death": {
       "type": "scene",
-      "title": "e3_death",
+      "title": "@loc:episode3.examples.activity_demo.nodes.e3_death.title",
       "data": {
         "kind": "city_death",
         "alive": false,
         "result_id": 3002,
-        "text": "Пример завершился неудачей.",
+        "text": "@loc:episode3.examples.activity_demo.nodes.e3_death.data.text",
         "source": "Example",
         "art": "result_dead"
       },

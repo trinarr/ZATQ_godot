@@ -1,5 +1,6 @@
 @tool
 extends VBoxContainer
+const LOC = preload("res://scripts/core/localization.gd")
 const MODEL = preload("res://addons/story_graph/graph.gd")
 const CANVAS = preload("res://addons/story_graph/canvas.gd")
 const GRAPH_SCENE = preload("res://addons/dialogue_nodes/editor/Graph.tscn")
@@ -43,7 +44,7 @@ func _ready() -> void:
   if not filename.begins_with("episode") or not filename.ends_with(".json"):continue
   var graph:Dictionary=MODEL.load_graph("res://data/story_graphs/"+filename)
   var number:=int(graph.get("episode",0))
-  if number>2:episode.add_item(graph.get("title","Эпизод "+str(number)),number)
+  if number>2:episode.add_item(LOC.source(graph.get("title","Эпизод "+str(number))),number)
  episode.item_selected.connect(_switch_episode)
  episode.clip_text=true
  episode.custom_minimum_size.x=255
@@ -153,7 +154,8 @@ func load_document(new_path: String) -> void:
  _finish_edit()
  var loaded := MODEL.load_graph(new_path)
  if loaded.is_empty(): status.text = "Не удалось открыть " + new_path; return
- document = loaded
+ LOC.prepare(true)
+ document = LOC.resolve_tree(loaded,true)
  _select_episode(int(document.get("episode",1)))
  path = new_path.trim_suffix(".draft")
  selected = ""
@@ -220,7 +222,7 @@ func save_document() -> bool:
   dirty=false
   status.text="Черновик сохранён: "+path+".draft. Игра использует предыдущий завершённый граф.\n"+"\n".join(errors)
   return true
- var err := MODEL.save_graph(path,document)
+ var err := LOC.publish(path,document)
  if err != OK: status.text = "Ошибка сохранения: " + error_string(err);return false
  if FileAccess.file_exists(path+".draft"):DirAccess.remove_absolute(path+".draft")
  dirty = false

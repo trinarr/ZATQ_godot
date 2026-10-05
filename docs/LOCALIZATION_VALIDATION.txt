@@ -1,0 +1,20 @@
+Godot 4.6.1, headless validation of the localization patch.
+
+PASS: 2696 table rows; unique keys, source coverage and table ownership.
+PASS: exact original Russian strings, node payloads and graph edges in Episodes I–III.
+PASS: original content assets and branching references.
+PASS: 20 localization checks: locale switching, fallback, native UI captions,
+      pause/QTE preservation, CSV quoting/newlines, translation preservation,
+      graph publication and rollback on a failed graph save.
+PASS: 521 graph/editor checks.
+PASS: 52 UI checks.
+PASS: 122 opening/edge-control layout checks.
+PASS: 548 original result screen checks.
+PASS: 17 activity checks.
+PASS: 2901 Episode I checks.
+PASS: 1863 Episode II checks.
+PASS: 390 Episode III checks.
+PASS: Android preset PCK export; all four raw CSV tables included and load correctly.
+
+An APK was not built or installed on a physical device.
+Pre-existing Dialogue Nodes icon UID warnings fall back to resource paths.

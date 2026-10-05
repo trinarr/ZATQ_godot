@@ -1,8 +1,8 @@
 [
   {
     "kind": "episodes",
-    "title": "I. Бегство из Нью-Тауна",
-    "description": "Офис — дом, офис — дом. В это утро привычный ритм жизни Джека летит ко всем чертям. Как и он сам.",
+    "title": "@loc:episode1.selector.title",
+    "description": "@loc:episode1.selector.description",
     "frame": 0,
     "questions": "",
     "available": true,
@@ -10,8 +10,8 @@
   },
   {
     "kind": "episodes",
-    "title": "II. Скорее мертв, чем жив",
-    "description": "Хирург Дэвид Каховски привык быть один на один со смертью. Но теперь все иначе, ведь на кону — его собственная жизнь.",
+    "title": "@loc:episode2.selector.title",
+    "description": "@loc:episode2.selector.description",
     "frame": 2,
     "questions": "",
     "available": true,
@@ -19,80 +19,85 @@
   },
   {
     "kind": "episodes",
-    "title": "III. Преждевременные надежды",
-    "description": "Джек все больше погружается в пучину окружающего хаоса. Будет ли военная база последним спасением?",
+    "title": "@loc:episode3.selector.title",
+    "description": "@loc:episode3.selector.description",
     "frame": 4,
     "questions": "",
-    "available": false
+    "available": false,
+    "episode": 3
   },
   {
     "kind": "episodes",
-    "title": "Веб-эпизод I. Джон",
-    "description": "Монстр? Палач? Психопат? Никто не знал и толики правды об этом человеке",
+    "title": "@loc:ui.selectors.3.title",
+    "description": "@loc:ui.selectors.3.description",
     "frame": 5,
     "questions": "",
-    "available": false
+    "available": false,
+    "episode": 0
   },
   {
     "kind": "episodes",
-    "title": "IV. Исход",
-    "description": "Его не сломать, Джек зубами будет выгрызать себе право жить. Выход близко, но хватит ли сил добраться?",
+    "title": "@loc:ui.selectors.4.title",
+    "description": "@loc:ui.selectors.4.description",
     "frame": 7,
     "questions": "",
-    "available": false
+    "available": false,
+    "episode": 4
   },
   {
     "kind": "episodes",
-    "title": "V. Смерть в воздухе",
-    "description": "Тучи сгущаются над спящим Нью-Тауном, и бегство — лучший выход. Но от некоторых проблем не скрыться.",
+    "title": "@loc:ui.selectors.5.title",
+    "description": "@loc:ui.selectors.5.description",
     "frame": 9,
     "questions": "",
-    "available": false
+    "available": false,
+    "episode": 5
   },
   {
     "kind": "episodes",
-    "title": "VI. Рассвет",
-    "description": "Здесь ничто не стоит на месте. И ты либо приспособлен, либо мертв — законы нового мира предельно просты.",
+    "title": "@loc:ui.selectors.6.title",
+    "description": "@loc:ui.selectors.6.description",
     "frame": 11,
     "questions": "",
-    "available": false
+    "available": false,
+    "episode": 6
   },
   {
     "kind": "tests",
-    "title": "I. «Киношный» апокалипсис",
-    "description": "Нестандартный тест, предсказывающий вашу судьбу во время зомби-апокалипсиса (основан на шаблонах из фильмов).",
+    "title": "@loc:ui.selectors.7.title",
+    "description": "@loc:ui.selectors.7.description",
     "frame": 1,
     "questions": "1—7",
     "available": false
   },
   {
     "kind": "tests",
-    "title": "II. Всегда готов",
-    "description": "Тест на вашу подготовленность к внезапному зомби-апокалипсису.",
+    "title": "@loc:ui.selectors.8.title",
+    "description": "@loc:ui.selectors.8.description",
     "frame": 3,
     "questions": "10",
     "available": false
   },
   {
     "kind": "tests",
-    "title": "III. Эксперт по выживанию",
-    "description": "Вы думаете, что знаете все и способны выжить даже в кишащем мертвецами мегаполисе? Проверим?",
+    "title": "@loc:ui.selectors.9.title",
+    "description": "@loc:ui.selectors.9.description",
     "frame": 6,
     "questions": "15",
     "available": false
   },
   {
     "kind": "tests",
-    "title": "IV. Эра мертвецов",
-    "description": "Вы переживете нашествие зомби и построите цивилизацию заново? Или погибнете в первые дни апокалипсиса? Проверьте!",
+    "title": "@loc:ui.selectors.10.title",
+    "description": "@loc:ui.selectors.10.description",
     "frame": 8,
     "questions": "9",
     "available": false
   },
   {
     "kind": "tests",
-    "title": "V. Оружейник",
-    "description": "Серьезный тест на знание и владение огнестрельным и другими видами оружия",
+    "title": "@loc:ui.selectors.11.title",
+    "description": "@loc:ui.selectors.11.description",
     "frame": 10,
     "questions": "14",
     "available": false

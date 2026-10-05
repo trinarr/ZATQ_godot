@@ -1,4 +1,5 @@
 extends SceneTree
+const LOC = preload("res://scripts/core/localization.gd")
 const MODEL = preload("res://addons/story_graph/graph.gd")
 var checks := 0
 var failures := 0
@@ -16,7 +17,7 @@ func run()->void:
   var compiled:=MODEL.compile(graph)
   check(compiled.size()==expected.size(),"all screens preserved")
   for id:String in expected:
-   check(compiled.get(id)==expected[id],"lossless migration "+id)
+   check(LOC.resolve_tree(compiled.get(id),true)==LOC.resolve_tree(expected[id],true),"lossless migration "+id)
   var quest:Node=root.get_node("Quest")
   for id:String in compiled:check(quest.nodes.get(id)==compiled[id],"runtime uses graph "+id)
   var file: String="user://story_roundtrip.json"

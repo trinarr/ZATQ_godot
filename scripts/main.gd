@@ -1,4 +1,5 @@
 extends Control
+const LOC := preload("res://scripts/core/localization.gd")
 
 const SAFE_CANVAS := preload("res://scripts/ui/adaptive_landscape_canvas.gd")
 const ALPHA_HOTSPOT := preload("res://scripts/ui/alpha_hotspot.gd")
@@ -27,26 +28,26 @@ var section: String = "menu"
 var selector_kind: String = "episodes"
 var selector_index: int = 0
 var selectors: Array = []
+var art_text: Dictionary = {}
 
 func _ready() -> void:
 	get_window().content_scale_aspect = Window.CONTENT_SCALE_ASPECT_EXPAND
 	RenderingServer.set_default_clear_color(Color.BLACK)
 	viewport_canvas = SAFE_CANVAS.new()
 	add_child(viewport_canvas)
+	art_text = JSON.parse_string(FileAccess.get_file_as_string("res://data/ui_text_layout.json"))
 	selectors = JSON.parse_string(FileAccess.get_file_as_string("res://data/selectors.json"))
 	for number: int in Quest.episode_starts:
-		if number <= 2: continue
-		var roman: String = ["", "I", "II", "III", "IV", "V", "VI"][number] if number <= 6 else str(number)
 		var metadata: Dictionary = Quest.episode_metadata.get(number,{})
 		var found := false
 		for entry: Dictionary in selectors:
-			if entry.kind == "episodes" and str(entry.title).begins_with(roman + "."):
+			if entry.kind == "episodes" and int(entry.get("episode",0)) == number:
 				entry.title = metadata.get("title",entry.title)
 				entry.description = metadata.get("description",entry.description)
 				entry.episode = number
 				entry.available = true
 				found = true
-		if not found: selectors.append({"kind":"episodes","title":metadata.get("title","Эпизод " + str(number)),"description":metadata.get("description","Новый сюжет"),"frame":2,"questions":"","available":true,"episode":number})
+		if not found: selectors.append({"kind":"episodes","title":metadata.get("title",LOC.text("@loc:ui.main.1") + str(number)),"description":metadata.get("description",LOC.text("@loc:ui.main.2")),"frame":2,"questions":"","available":true,"episode":number})
 	add_child(music)
 	add_child(effects)
 	music.volume_db = -16
@@ -78,7 +79,9 @@ func _exit_tree() -> void:
 	effects.stream = null
 
 func _notification(what: int) -> void:
-	if what == NOTIFICATION_APPLICATION_PAUSED:
+	if what == NOTIFICATION_TRANSLATION_CHANGED and is_instance_valid(screen):
+		call_deferred("_refresh_locale")
+	elif what == NOTIFICATION_APPLICATION_PAUSED:
 		Quest.save_game()
 		if playing and not paused: _show_pause()
 	elif what == NOTIFICATION_APPLICATION_RESUMED:
@@ -144,6 +147,19 @@ func _art(filename: String, parent: Control = null, rect: Rect2 = Rect2(0,0,800,
 	image.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	(parent if parent != null else screen).add_child(image)
 	image.set_deferred("size",rect.size)
+	for block: Dictionary in art_text.get(filename,[]):
+		var r: Array = block.rect
+		var original_rect := Rect2(r[0],r[1],r[2],r[3])
+		var translated := LOC.text(block.text).replace("{version}",str(ProjectSettings.get_setting("application/config/version","")))
+		var font: Font = load("res://fonts/flash/font_%d.ttf" % int(block.font))
+		var font_size := roundi(block.size)
+		while font_size > 12 and font.get_multiline_string_size(translated,HORIZONTAL_ALIGNMENT_LEFT,original_rect.size.x*2,font_size*2).y > original_rect.size.y*2+4:
+			font_size -= 1
+		var label := _text(translated,original_rect,font_size,false,false,image)
+		label.rotation = float(block.get("rotation",0))
+		label.add_theme_font_override("font",font)
+		label.add_theme_color_override("font_color",Color(block.color))
+		label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER if block.alignment=="center" else HORIZONTAL_ALIGNMENT_RIGHT if block.alignment=="right" else HORIZONTAL_ALIGNMENT_LEFT
 	return image
 
 func _image(filename: String) -> void:
@@ -197,7 +213,7 @@ func _text(text: String, rect: Rect2, font_size: int = 24, title: bool = false, 
 	rect = LAYOUT.scaled_rect(rect)
 	font_size = LAYOUT.scaled_font_size(font_size)
 	var label := Label.new()
-	label.text = text
+	label.text = LOC.text(text)
 	label.position = rect.position
 	label.add_theme_font_override("font", TITLE_FONT if title else BODY_FONT)
 	label.add_theme_font_size_override("font_size", font_size)
@@ -216,6 +232,7 @@ func _hit(name: String, rect: Rect2, action: Callable, parent: Control = null, m
 	if not mask.is_empty():
 		button.hit_image = load("res://assets/flash_ui/" + mask + ".png").get_image()
 		if button.hit_image.is_compressed(): button.hit_image.decompress()
+	name = LOC.text(name)
 	button.name = name
 	button.position = rect.position
 	button.size = rect.size
@@ -242,14 +259,14 @@ func _show_menu() -> void:
 	effects.stop()
 	_reset_screen()
 	_art("menu" if Quest.sound_enabled else "menu_off")
-	_hit("Эпизоды",Rect2(154,51,190,43),func(): _show_selector("episodes"))
-	_hit("Тесты",Rect2(154,110,190,43),func(): _show_selector("tests"))
-	_hit("Справка",Rect2(154,168,190,43),_show_help)
-	_hit("Выход",Rect2(154,226,190,43),func(): Quest.save_game(); get_tree().quit())
-	_hit("Звук",Rect2(451,198,39,36),_toggle_sound)
-	_hit("Достижения",Rect2(519,196,45,42),func(): _message("Достижения", "Сервис достижений ещё не подключён."))
+	_hit(LOC.text("@loc:ui.main.3"),Rect2(154,51,190,43),func(): _show_selector("episodes"))
+	_hit(LOC.text("@loc:ui.main.4"),Rect2(154,110,190,43),func(): _show_selector("tests"))
+	_hit(LOC.text("@loc:ui.main.5"),Rect2(154,168,190,43),_show_help)
+	_hit(LOC.text("@loc:ui.main.6"),Rect2(154,226,190,43),func(): Quest.save_game(); get_tree().quit())
+	_hit(LOC.text("@loc:ui.main.7"),Rect2(451,198,39,36),_toggle_sound)
+	_hit(LOC.text("@loc:ui.main.8"),Rect2(519,196,45,42),func(): _message(LOC.text("@loc:ui.main.9"), LOC.text("@loc:ui.main.10")))
 	if Quest.has_progress:
-		_brush_button("Продолжить",Rect2(155,286,190,44),_resume)
+		_brush_button(LOC.text("@loc:ui.main.11"),Rect2(155,286,190,44),_resume)
 	previous_node = ""
 	if Quest.sound_enabled and not music.playing: music.play()
 
@@ -275,7 +292,7 @@ func _cycle_selector(direction: int) -> void:
 
 func _draw_selector() -> void:
 	_reset_screen()
-	var entry: Dictionary = _selector_items()[selector_index]
+	var entry: Dictionary = LOC.resolve_tree(_selector_items()[selector_index])
 	_art("selector_%d" % int(entry.frame))
 	_text(entry.title,Rect2(56,77,703,35),24,true,true)
 	var body_size: int = 21
@@ -283,39 +300,39 @@ func _draw_selector() -> void:
 		body_size -= 1
 	_text(entry.description,Rect2(435,204,233,100),body_size)
 	if selector_kind == "tests":
-		_text("Последний результат: отсутствует",Rect2(435,162,239,34),16)
-		_text("Количество вопросов: " + entry.questions,Rect2(132,280,282,31),19,false,true)
+		_text(LOC.text("@loc:ui.main.12"),Rect2(435,162,239,34),16)
+		_text(LOC.text("@loc:ui.main.13") + entry.questions,Rect2(132,280,282,31),19,false,true)
 	else:
 		var stats: Dictionary = Quest.stats_for(entry.get("episode",1))
 		_text(": %d" % (stats.wins if entry.available else 0),Rect2(500,160,57,28),21)
 		_text(": %d" % (stats.losses if entry.available else 0),Rect2(585,160,57,28),21)
 	if selector_kind == "episodes" and entry.available:
-		_text("Финалы: %d/%d" % [Quest.stats_for(entry.get("episode",1)).endings.size(),Quest.ending_count(entry.get("episode",1))],Rect2(435,313,239,28),18)
-	_hit("Предыдущий",Rect2(99,69,57,43),func(): _cycle_selector(-1))
-	_hit("Следующий",Rect2(648,69,62,43),func(): _cycle_selector(1))
-	_hit("Начать",Rect2(310,351,205,48),_selector_start)
-	_hit("Закрыть",Rect2(635,348,49,49),_show_menu)
+		_text(LOC.text("@loc:ui.main.14") % [Quest.stats_for(entry.get("episode",1)).endings.size(),Quest.ending_count(entry.get("episode",1))],Rect2(435,313,239,28),18)
+	_hit(LOC.text("@loc:ui.main.15"),Rect2(99,69,57,43),func(): _cycle_selector(-1))
+	_hit(LOC.text("@loc:ui.main.16"),Rect2(648,69,62,43),func(): _cycle_selector(1))
+	_hit(LOC.text("@loc:ui.main.17"),Rect2(310,351,205,48),_selector_start)
+	_hit(LOC.text("@loc:ui.main.18"),Rect2(635,348,49,49),_show_menu)
 
 func _selector_start() -> void:
-	var entry: Dictionary = _selector_items()[selector_index]
+	var entry: Dictionary = LOC.resolve_tree(_selector_items()[selector_index])
 	if entry.available:
 		_request_new(entry.get("episode",1))
 	else:
-		_message(entry.title,"Интерфейс восстановлен. Игровая часть этого раздела ещё не перенесена.")
+		_message(entry.title,LOC.text("@loc:ui.main.19"))
 
 func _show_help() -> void:
 	section = "help"
 	_reset_screen()
 	_art("help")
-	_hit("Закрыть справку",Rect2(652,374,57,60),_show_menu)
-	_hit("Назад",Rect2(63,373,322,66),_show_menu)
+	_hit(LOC.text("@loc:ui.main.20"),Rect2(652,374,57,60),_show_menu)
+	_hit(LOC.text("@loc:ui.main.21"),Rect2(63,373,322,66),_show_menu)
 
 func _request_new(number: int = 0) -> void:
 	if number == 0: number = Quest.episode
 	if not Quest.has_progress:
 		_start_episode(number)
 		return
-	_message("Начать заново?", "Текущее прохождение будет заменено.", _start_episode.bind(number))
+	_message(LOC.text("@loc:ui.main.22"), LOC.text("@loc:ui.main.23"), _start_episode.bind(number))
 
 func _start() -> void:
 	_start_episode(Quest.episode)
@@ -356,12 +373,12 @@ func _show_pause() -> void:
 	screen.add_child(overlay)
 	_shade(overlay,0.6)
 	_art("layout_pause",overlay)
-	_text("Звук: " + ("Вкл" if Quest.sound_enabled else "Выкл"),Rect2(101,179,243,28),22,true,true,overlay)
-	_edge_tab("Продолжить",_resume,overlay)
-	_hit("Начать заново",Rect2(15,94,290,64),func(): _request_new(),overlay)
-	_hit("Звук",Rect2(73,158,280,62),_toggle_sound,overlay)
-	_hit("Выйти в меню",Rect2(72,225,280,62),_show_menu,overlay)
-	_hit("Выйти из игры",Rect2(20,290,290,62),func(): Quest.save_game();get_tree().quit(),overlay)
+	_text(LOC.text("@loc:ui.main.24") + (LOC.text("@loc:ui.main.25") if Quest.sound_enabled else LOC.text("@loc:ui.main.26")),Rect2(101,179,243,28),22,true,true,overlay)
+	_edge_tab(LOC.text("@loc:ui.main.27"),_resume,overlay)
+	_hit(LOC.text("@loc:ui.main.28"),Rect2(15,94,290,64),func(): _request_new(),overlay)
+	_hit(LOC.text("@loc:ui.main.29"),Rect2(73,158,280,62),_toggle_sound,overlay)
+	_hit(LOC.text("@loc:ui.main.30"),Rect2(72,225,280,62),_show_menu,overlay)
+	_hit(LOC.text("@loc:ui.main.31"),Rect2(20,290,290,62),func(): Quest.save_game();get_tree().quit(),overlay)
 
 func _close_overlay() -> void:
 	if is_instance_valid(overlay):
@@ -369,7 +386,7 @@ func _close_overlay() -> void:
 		overlay.queue_free()
 	overlay = null
 
-func _message(title: String, text: String, confirm: Callable = Callable(), confirm_label: String = "Начать", show_cancel: bool = true) -> void:
+func _message(title: String, text: String, confirm: Callable = Callable(), confirm_label: String = "@loc:ui.main.32", show_cancel: bool = true) -> void:
 	television.stop()
 	_stop_cutscene()
 	_close_overlay()
@@ -379,13 +396,13 @@ func _message(title: String, text: String, confirm: Callable = Callable(), confi
 	_shade(overlay,0.75)
 	_art("decision",overlay)
 	_text(title + "\n\n" + text,Rect2(430,72,280,235),22,false,false,overlay)
-	_brush_button(confirm_label if confirm.is_valid() else "Понятно",Rect2(65,65,335,50),func():
+	_brush_button(confirm_label if confirm.is_valid() else LOC.text("@loc:ui.main.33"),Rect2(65,65,335,50),func():
 		_close_overlay()
 		if confirm.is_valid(): confirm.call()
 		elif paused: _show_pause()
 		elif playing: _show_story(),overlay)
 	if confirm.is_valid() and show_cancel:
-		_brush_button("Отмена",Rect2(65,130,335,50),func():
+		_brush_button(LOC.text("@loc:ui.main.34"),Rect2(65,130,335,50),func():
 			_close_overlay()
 			if paused: _show_pause(),overlay)
 
@@ -413,11 +430,11 @@ func _show_story() -> void:
 		CITY.draw(self, node)
 	elif kind == "tv":
 		_opening_art("tv_%d" % Quest.channel)
-		var channel_label := _text("CH %d" % (Quest.channel+1),Rect2(218,290,110,30),20)
+		var channel_label := _text(LOC.text("@loc:ui.main.channel_format") % (Quest.channel+1),Rect2(218,290,110,30),20)
 		channel_label.add_theme_font_override("font",TV_FONT)
 		channel_label.add_theme_color_override("font_color",Color.GREEN)
-		_hit("Следующий канал",Rect2(200,44,447,262),func(): _choose(0))
-		_hit("Выключить телевизор",Rect2(380,382,44,40),func(): _choose(1))
+		_hit(LOC.text("@loc:ui.main.35"),Rect2(200,44,447,262),func(): _choose(0))
+		_hit(LOC.text("@loc:ui.main.36"),Rect2(380,382,44,40),func(): _choose(1))
 		television.start()
 	elif kind == "item":
 		var dim := ColorRect.new()
@@ -426,7 +443,7 @@ func _show_story() -> void:
 		screen.add_child(dim)
 		_art("item_keys")
 		_text(node.text,Rect2(102,71,594,31),24,false,true)
-		_hit("Забрать ключи",Rect2(656,326,65,58),func(): _choose(0))
+		_hit(LOC.text("@loc:ui.main.37"),Rect2(656,326,65,58),func(): _choose(0))
 	elif Quest.current_id == "transport_choice":
 		_opening_art("transport")
 		_shade(screen,0.6)
@@ -437,23 +454,23 @@ func _show_story() -> void:
 			_text(Quest.available_choices()[i].text,Rect2(66,66+i*65,337,50),24,false,true)
 			_hit(Quest.available_choices()[i].text,Rect2(60,54+i*65,349,64),func(): _choose(index))
 	elif kind == "boundary":
-		_message("Продолжение",node.text,_show_menu,"В меню",false)
+		_message(LOC.text("@loc:ui.main.38"),node.text,_show_menu,LOC.text("@loc:ui.main.39"),false)
 	else:
 		_opening_art(Quest.current_id)
 		_opening_caption(node)
 		match Quest.current_id:
 			"morning_choice":
-				_hit("Выйти на улицу",Rect2(273,200,118,85),func(): _choose(0))
-				_hit("Смотреть последние новости",Rect2(470,24,220,134),func(): _choose(1))
+				_hit(LOC.text("@loc:ui.main.40"),Rect2(273,200,118,85),func(): _choose(0))
+				_hit(LOC.text("@loc:ui.main.41"),Rect2(470,24,220,134),func(): _choose(1))
 			"transport":
-				_hit("Выйти на улицу",Rect2(20,18,92,99),func(): _choose(0))
+				_hit(LOC.text("@loc:ui.main.42"),Rect2(20,18,92,99),func(): _choose(0))
 				if not Quest.flags.TakenKey:
-					_hit("Взять ключи",Rect2(325,217,77,80),func(): _choose(1))
-			"lift_button": _hit("Первый этаж",Rect2(200,140,450,280),func(): _choose(0))
-			_: _hit("Далее",Rect2(70,0,730,480),func(): _choose(0))
+					_hit(LOC.text("@loc:ui.main.43"),Rect2(325,217,77,80),func(): _choose(1))
+			"lift_button": _hit(LOC.text("@loc:ui.main.44"),Rect2(200,140,450,280),func(): _choose(0))
+			_: _hit(LOC.text("@loc:ui.main.45"),Rect2(70,0,730,480),func(): _choose(0))
 	# Flash pause control lives at the left edge, not in a new top bar.
 	if not kind.begins_with("city_") and not kind.begins_with("activity_") and kind != "item" and Quest.current_id != "transport_choice":
-		_edge_tab("Пауза",_show_pause)
+		_edge_tab(LOC.text("@loc:ui.main.46"),_show_pause)
 
 func _play_sound(sound_name: String) -> void:
 	if not Quest.sound_enabled or sound_name.is_empty(): return
@@ -466,3 +483,14 @@ func _notify(message: String) -> void:
 	if is_instance_valid(notification): notification.queue_free()
 	notification = _text(message,Rect2(65,420,680,45),20)
 	notification.add_theme_color_override("font_color",Color("ffd893"))
+
+func _refresh_locale() -> void:
+	if not is_inside_tree(): return
+	if playing:
+		var was_paused := paused
+		paused = false
+		_show_story()
+		if was_paused: _show_pause()
+	elif section == "selector": _draw_selector()
+	elif section == "help": _show_help()
+	else: _show_menu()

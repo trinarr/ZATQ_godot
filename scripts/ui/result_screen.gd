@@ -1,11 +1,12 @@
 extends RefCounted
+const LOC := preload("res://scripts/core/localization.gd")
 # ResultBad / Symbol 59, final animation frame. Coordinates are Flash pixels.
 static func draw(ui: Control, node: Dictionary) -> void:
  var alive: bool = node.kind == "city_ending"
  var stats: Dictionary = Quest.stats_for(node.get("episode",1))
  ui._set_backdrop(load("res://assets/flash_ui/result_background.png"))
  ui._art("result_alive" if alive else "result_dead")
- var outcome: Label = ui._text("Итог: жив" if alive else "Итог: мертв",Rect2(73.05,75,652.95,28.2),25,false,true)
+ var outcome: Label = ui._text(LOC.text("@loc:ui.result_screen.1") if alive else LOC.text("@loc:ui.result_screen.2"),Rect2(73.05,75,652.95,28.2),25,false,true)
  outcome.name = "ResultOutcome"
  var count: Label = ui._text("%d/%d" % [stats.endings.size(),Quest.ending_count(node.get("episode",1))] if alive else str(stats.losses),Rect2(76,219,81,36.8),33,false,true)
  count.name = "ResultCount"
@@ -21,8 +22,8 @@ static func draw(ui: Control, node: Dictionary) -> void:
   label.add_theme_color_override("font_shadow_color",Color.BLACK)
   label.add_theme_constant_override("shadow_offset_x",2)
   label.add_theme_constant_override("shadow_offset_y",2)
- ui._hit("Начать заново",Rect2(593,360,73,70),ui._start)
- ui._hit("В меню",Rect2(668,360,73,70),ui._show_menu)
+ ui._hit(LOC.text("@loc:ui.result_screen.3"),Rect2(593,360,73,70),ui._start)
+ ui._hit(LOC.text("@loc:ui.result_screen.4"),Rect2(668,360,73,70),ui._show_menu)
  if alive and Quest.episode_starts.has(int(node.get("episode",1))+1):
   ui._art("ep2_continue_button")
-  ui._hit("Следующий эпизод",Rect2(67,360,73,70),func(): ui._start_episode(int(node.get("episode",1))+1))
+  ui._hit(LOC.text("@loc:ui.result_screen.5"),Rect2(67,360,73,70),func(): ui._start_episode(int(node.get("episode",1))+1))

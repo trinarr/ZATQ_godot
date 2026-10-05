@@ -42,6 +42,8 @@ func run() -> void:
   check(quest.current().get("kind","story")!="boundary" and not quest.available_choices().is_empty(),"legacy boundary continues: "+id)
  # Render every first-episode state and validate every choice under both flag sets.
  for id: String in quest.nodes:
+  if int(quest.nodes[id].get("episode",1))!=1:continue
+  await process_frame
   quest._enter(id)
   check(quest.current().get("kind","story")!="boundary","no unported first-episode boundary: "+id)
   check(not scene.screen.get_children().is_empty(),"state renders: "+id)

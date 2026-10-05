@@ -1,4 +1,5 @@
 extends RefCounted
+const LOC := preload("res://scripts/core/localization.gd")
 const RESULT := preload("res://scripts/ui/result_screen.gd")
 # Coordinates use the original Flash frame; Main applies the uniform 2x scale.
 static func draw(ui: Control, node: Dictionary) -> void:
@@ -15,7 +16,7 @@ static func draw(ui: Control, node: Dictionary) -> void:
 		ui._shade(ui.screen,0.65)
 		ui._art(artwork)
 		ui._text(node.text,Rect2(102,71,594,31),24,false,true)
-		ui._hit("Забрать",Rect2(656,326,65,58),func(): ui._choose(0))
+		ui._hit(LOC.text("@loc:ui.city_gameplay.1"),Rect2(656,326,65,58),func(): ui._choose(0))
 		return
 	ui._set_backdrop(load("res://assets/flash_ui/" + artwork + "."+node.get("art_extension","png")), not node.get("clean_background",false))
 	if Quest.current_id == "metro_junction":
@@ -36,7 +37,7 @@ static func draw(ui: Control, node: Dictionary) -> void:
 			ui._text(choices[i].text, Rect2(66,66+i*65,337,50),22,false,true)
 			ui._hit(choices[i].text, Rect2(60,54+i*65,349,64),func(): ui._choose(index))
 		for rect in [Rect2(0,0,800,35),Rect2(0,35,45,310),Rect2(730,35,70,310),Rect2(0,345,800,135)]:
-			ui._hit("Закрыть выбор",rect,func(): Quest._enter(node.back))
+			ui._hit(LOC.text("@loc:ui.city_gameplay.2"),rect,func(): Quest._enter(node.back))
 	elif kind == "city_cutscene":
 		var duration: float = node.auto_seconds
 		ui.cutscene.start(duration)
@@ -91,4 +92,4 @@ static func draw(ui: Control, node: Dictionary) -> void:
 			var r: Array = choices[i].get("rect",[70,0,730,480])
 			ui._hit(choices[i].text,Rect2(r[0],r[1],r[2],r[3]),func(): ui._choose(index),null,choices[i].get("mask",""))
 	if kind not in ["city_decision", "city_death", "city_ending"]:
-		ui._edge_tab("Пауза",ui._show_pause)
+		ui._edge_tab(LOC.text("@loc:ui.city_gameplay.3"),ui._show_pause)

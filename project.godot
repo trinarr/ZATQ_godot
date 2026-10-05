@@ -63,3 +63,7 @@ interstitial_id="demo-interstitial-yandex"
 rewarded_id="demo-rewarded-yandex"
 age_restricted_user=false
 user_consent=false
+
+[internationalization]
+
+locale/fallback="ru"
