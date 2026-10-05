@@ -50,6 +50,7 @@ class Renderer:
   for idx,paths in groups.items():
    if idx not in fills:continue
    f=fills[idx];color=f.find('x:SolidColor',NS);bitmap=f.find('x:BitmapFill',NS);alpha=1
+   if bitmap is not None and getattr(self,'omit_brushes',False) and bitmap.get('bitmapPath') in {'Bitmap 5.png','Bitmap 62.png','Bitmap 103.png','Bitmap 95.png','Bitmap 206.png','Bitmap 153.png','Bitmap 17.png','Bitmap 91.png'}:continue
    if color is not None:paint=color.get('color','#000000');alpha=float(color.get('alpha','1'))
    elif bitmap is not None:
     self.uid+=1;pid=f'p{self.uid}';file=self.library/bitmap.get('bitmapPath');im=Image.open(file);mime='image/png' if file.suffix=='.png' else 'image/jpeg';url=f'data:{mime};base64,'+base64.b64encode(file.read_bytes()).decode()
@@ -114,6 +115,10 @@ class Renderer:
   self.defs=[];body=''
   for item in symbols:
    name,frame,x,y,overrides,hide=item;body+=f'<g transform="translate({x},{y})">{self.symbol(name,frame,overrides,hide)}</g>'
+  if getattr(self,'clip_rects',None):
+   rects=''.join(f'<rect x="{r[0]}" y="{r[1]}" width="{r[2]}" height="{r[3]}"/>' for r in self.clip_rects)
+   self.defs.append('<clipPath id="buttonIconsClip">'+rects+'</clipPath>')
+   body='<g clip-path="url(#buttonIconsClip)">'+body+'</g>'
   svg=f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{width}" height="{height}" viewBox="0 0 {width} {height}"><defs>{"".join(self.defs)}</defs>{body}</svg>'
   self.out.mkdir(parents=True,exist_ok=True)
   with tempfile.TemporaryDirectory() as tmp:

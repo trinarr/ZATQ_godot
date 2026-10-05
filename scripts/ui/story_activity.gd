@@ -36,10 +36,11 @@ func build() -> void:
    var body_size:=23
    while body_size>14 and ui.BODY_FONT.get_multiline_string_size(node.text,HORIZONTAL_ALIGNMENT_LEFT,465*2,body_size*2).y>137*2:body_size-=1
    ui._text(node.text,Rect2(122,72,465,137),body_size)
+   ui._draw_brushes(node.art,ui.screen)
    for i:int in choices.size():
     var answer_size:=22
     while answer_size>14 and ui.BODY_FONT.get_multiline_string_size(choices[i].text,HORIZONTAL_ALIGNMENT_LEFT,620*2,answer_size*2).y>55*2:answer_size-=1
-    ui._text(choices[i].text,Rect2(110,250+i*66,620,55),answer_size)
+    ui._button_text(choices[i].text,Rect2(110,250+i*66,620,55),answer_size)
     ui._hit(choices[i].text,Rect2(91,244+i*66,657,64),func():finish(i))
   else:
    for i:int in choices.size():

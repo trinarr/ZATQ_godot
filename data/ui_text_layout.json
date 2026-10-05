@@ -563,5 +563,16 @@
       "alignment": "center",
       "color": "#e1e1e1"
     }
-  ]
+  ],
+  "item_keys": [],
+  "ep2_item_glock": [],
+  "ep2_item_mark23": [],
+  "e3_item_knife": [],
+  "e3_item_glock16": [],
+  "e3_item_glock7": [],
+  "e3_dialogue_john": [],
+  "decision": [],
+  "city_decision_3": [],
+  "ep2_decision_4": [],
+  "ep2_continue_button": []
 }

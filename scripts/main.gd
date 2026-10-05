@@ -1,6 +1,7 @@
 extends Control
 const LOC := preload("res://scripts/core/localization.gd")
 
+const BRUSH := preload("res://scripts/ui/torn_brush.gd")
 const SAFE_CANVAS := preload("res://scripts/ui/adaptive_landscape_canvas.gd")
 const ALPHA_HOTSPOT := preload("res://scripts/ui/alpha_hotspot.gd")
 const ACTIVITY := preload("res://scripts/ui/story_activity.gd")
@@ -29,12 +30,14 @@ var selector_kind: String = "episodes"
 var selector_index: int = 0
 var selectors: Array = []
 var art_text: Dictionary = {}
+var art_brushes: Dictionary = {}
 
 func _ready() -> void:
 	get_window().content_scale_aspect = Window.CONTENT_SCALE_ASPECT_EXPAND
 	RenderingServer.set_default_clear_color(Color.BLACK)
 	viewport_canvas = SAFE_CANVAS.new()
 	add_child(viewport_canvas)
+	art_brushes = JSON.parse_string(FileAccess.get_file_as_string("res://data/ui_brush_layout.json"))
 	art_text = JSON.parse_string(FileAccess.get_file_as_string("res://data/ui_text_layout.json"))
 	selectors = JSON.parse_string(FileAccess.get_file_as_string("res://data/selectors.json"))
 	for number: int in Quest.episode_starts:
@@ -147,19 +150,36 @@ func _art(filename: String, parent: Control = null, rect: Rect2 = Rect2(0,0,800,
 	image.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	(parent if parent != null else screen).add_child(image)
 	image.set_deferred("size",rect.size)
+	_draw_brushes(filename,image)
+	var icons_path:="res://assets/flash_ui/"+filename+"_icons.png"
+	if ResourceLoader.exists(icons_path):
+		var icons:=TextureRect.new()
+		icons.texture=load(icons_path)
+		icons.expand_mode=TextureRect.EXPAND_IGNORE_SIZE
+		icons.size=rect.size
+		icons.mouse_filter=Control.MOUSE_FILTER_IGNORE
+		image.add_child(icons)
 	for block: Dictionary in art_text.get(filename,[]):
 		var r: Array = block.rect
 		var original_rect := Rect2(r[0],r[1],r[2],r[3])
 		var translated := LOC.text(block.text).replace("{version}",str(ProjectSettings.get_setting("application/config/version","")))
 		var font: Font = load("res://fonts/flash/font_%d.ttf" % int(block.font))
-		var font_size := roundi(block.size)
-		while font_size > 12 and font.get_multiline_string_size(translated,HORIZONTAL_ALIGNMENT_LEFT,original_rect.size.x*2,font_size*2).y > original_rect.size.y*2+4:
-			font_size -= 1
-		var label := _text(translated,original_rect,font_size,false,false,image)
+		var brush_rect := Rect2()
+		for brush:Dictionary in art_brushes.get(filename,[]):
+			var b:Array=brush.rect
+			var area:=Rect2(b[0],b[1],b[2],b[3])
+			if area.has_point(original_rect.get_center()):brush_rect=area;break
+		var label:Label
+		if brush_rect.has_area():
+			label=_button_text(translated,brush_rect.grow_individual(-10,-4,-10,-4),roundi(block.size),image,font)
+		else:
+			var font_size:=roundi(block.size)
+			while font_size>12 and font.get_multiline_string_size(translated,HORIZONTAL_ALIGNMENT_LEFT,original_rect.size.x*2,font_size*2).y>original_rect.size.y*2+4:font_size-=1
+			label=_text(translated,original_rect,font_size,false,false,image)
 		label.rotation = float(block.get("rotation",0))
 		label.add_theme_font_override("font",font)
 		label.add_theme_color_override("font_color",Color(block.color))
-		label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER if block.alignment=="center" else HORIZONTAL_ALIGNMENT_RIGHT if block.alignment=="right" else HORIZONTAL_ALIGNMENT_LEFT
+		if not label.has_meta("button_caption"):label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER if block.alignment=="center" else HORIZONTAL_ALIGNMENT_RIGHT if block.alignment=="right" else HORIZONTAL_ALIGNMENT_LEFT
 	return image
 
 func _image(filename: String) -> void:
@@ -271,8 +291,8 @@ func _show_menu() -> void:
 	if Quest.sound_enabled and not music.playing: music.play()
 
 func _brush_button(text: String, rect: Rect2, action: Callable, parent: Control = null) -> void:
-	_art("brush",parent,rect)
-	_text(text,Rect2(rect.position+Vector2(0,11),rect.size-Vector2(0,9)),20,true,true,parent)
+	_brush(rect,parent,Color("803c3c"))
+	_button_text(text,rect.grow_individual(-12,-5,-12,-5),20,parent,TITLE_FONT)
 	_hit(text,rect,action,parent)
 
 func _selector_items() -> Array:
@@ -373,7 +393,7 @@ func _show_pause() -> void:
 	screen.add_child(overlay)
 	_shade(overlay,0.6)
 	_art("layout_pause",overlay)
-	_text(LOC.text("@loc:ui.main.24") + (LOC.text("@loc:ui.main.25") if Quest.sound_enabled else LOC.text("@loc:ui.main.26")),Rect2(101,179,243,28),22,true,true,overlay)
+	_button_text(LOC.text("@loc:ui.main.24") + (LOC.text("@loc:ui.main.25") if Quest.sound_enabled else LOC.text("@loc:ui.main.26")),Rect2(101,170,243,42),22,overlay,TITLE_FONT)
 	_edge_tab(LOC.text("@loc:ui.main.27"),_resume,overlay)
 	_hit(LOC.text("@loc:ui.main.28"),Rect2(15,94,290,64),func(): _request_new(),overlay)
 	_hit(LOC.text("@loc:ui.main.29"),Rect2(73,158,280,62),_toggle_sound,overlay)
@@ -451,7 +471,7 @@ func _show_story() -> void:
 		_text(node.text,Rect2(430,72,280,235),24)
 		for i in 2:
 			var index: int = i
-			_text(Quest.available_choices()[i].text,Rect2(66,66+i*65,337,50),24,false,true)
+			_button_text(Quest.available_choices()[i].text,Rect2(66,66+i*65,337,50),24)
 			_hit(Quest.available_choices()[i].text,Rect2(60,54+i*65,349,64),func(): _choose(index))
 	elif kind == "boundary":
 		_message(LOC.text("@loc:ui.main.38"),node.text,_show_menu,LOC.text("@loc:ui.main.39"),false)
@@ -494,3 +514,34 @@ func _refresh_locale() -> void:
 	elif section == "selector": _draw_selector()
 	elif section == "help": _show_help()
 	else: _show_menu()
+
+func _brush(rect:Rect2,parent:Control=null,color:Color=Color("803c3c"),seed_value:float=1.0)->Control:
+	var brush:=BRUSH.new()
+	brush.position=rect.position*2
+	brush.size=rect.size*2
+	brush.brush_color=color
+	brush.brush_seed=seed_value
+	(parent if parent!=null else screen).add_child(brush)
+	return brush
+
+func _draw_brushes(filename:String,parent:Control,behind:bool=false)->void:
+	var index:=0
+	for record:Dictionary in art_brushes.get(filename,[]):
+		var r:Array=record.rect
+		var c:Array=record.color
+		var brush:=_brush(Rect2(r[0],r[1],r[2],r[3]),parent,Color(c[0],c[1],c[2],c[3]),float(index+1))
+		brush.rotation=float(record.get("rotation",0))
+		if behind:brush.show_behind_parent=true
+		index+=1
+
+func _button_text(value:String,rect:Rect2,font_size:int=22,parent:Control=null,font:Font=null)->Label:
+	var text:=" ".join(LOC.text(value).replace("\r"," ").replace("\n"," ").split(" ",false))
+	if font==null:font=BODY_FONT
+	while font_size>1 and (font.get_string_size(text,HORIZONTAL_ALIGNMENT_LEFT,-1,font_size*2).x>rect.size.x*2 or font.get_height(font_size*2)>rect.size.y*2):font_size-=1
+	var label:=_text(text,rect,font_size,false,true,parent)
+	label.add_theme_font_override("font",font)
+	label.autowrap_mode=TextServer.AUTOWRAP_OFF
+	label.vertical_alignment=VERTICAL_ALIGNMENT_CENTER
+	label.clip_text=true
+	label.set_meta("button_caption",true)
+	return label

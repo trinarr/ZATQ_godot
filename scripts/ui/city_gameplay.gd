@@ -34,7 +34,7 @@ static func draw(ui: Control, node: Dictionary) -> void:
 		ui._text(node.text, Rect2(430,72,280,235),body_size)
 		for i in choices.size():
 			var index: int = i
-			ui._text(choices[i].text, Rect2(66,66+i*65,337,50),22,false,true)
+			ui._button_text(choices[i].text, Rect2(66,66+i*65,337,50),22)
 			ui._hit(choices[i].text, Rect2(60,54+i*65,349,64),func(): ui._choose(index))
 		for rect in [Rect2(0,0,800,35),Rect2(0,35,45,310),Rect2(730,35,70,310),Rect2(0,345,800,135)]:
 			ui._hit(LOC.text("@loc:ui.city_gameplay.2"),rect,func(): Quest._enter(node.back))
