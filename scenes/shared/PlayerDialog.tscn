@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/shared/player_dialog.gd" id="1"]
+
+[node name="PlayerDialog" type="Control"]
+layout_mode = 0
+offset_right = 1600.0
+offset_bottom = 960.0
+mouse_filter = 2
+script = ExtResource("1")

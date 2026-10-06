@@ -1,14 +1,11 @@
-extends Control
-const LOC := preload("res://scripts/core/localization.gd")
+extends "res://scripts/ui/shared/shared_view.gd"
 
-const BRUSH := preload("res://scripts/ui/torn_brush.gd")
+const PAUSE_MENU := preload("res://scenes/shared/PauseMenu.tscn")
+const ITEM_POPUP := preload("res://scenes/shared/ItemPopup.tscn")
+const PLAYER_DIALOG := preload("res://scenes/shared/PlayerDialog.tscn")
 const SAFE_CANVAS := preload("res://scripts/ui/adaptive_landscape_canvas.gd")
-const ALPHA_HOTSPOT := preload("res://scripts/ui/alpha_hotspot.gd")
 const ACTIVITY := preload("res://scripts/ui/story_activity.gd")
 const CITY := preload("res://scripts/ui/city_gameplay.gd")
-const LAYOUT := preload("res://scripts/ui/landscape_stage_layout.gd")
-const TITLE_FONT: Font = preload("res://fonts/flash/font_1.ttf")
-const BODY_FONT: Font = preload("res://fonts/flash/font_2.ttf")
 const TV_FONT: Font = preload("res://fonts/flash/font_2836.ttf")
 var viewport_canvas: Control
 var edge_tab: TextureRect
@@ -29,26 +26,12 @@ var section: String = "menu"
 var selector_kind: String = "episodes"
 var selector_index: int = 0
 var selectors: Array = []
-var art_text: Dictionary = {}
-var art_brushes: Dictionary = {}
-var art_components: Dictionary = {}
-var episode_components: Dictionary = {}
-const COMPONENTS := preload("res://scripts/ui/flash_components.gd")
 
 func _ready() -> void:
 	get_window().content_scale_aspect = Window.CONTENT_SCALE_ASPECT_EXPAND
 	RenderingServer.set_default_clear_color(Color.BLACK)
 	viewport_canvas = SAFE_CANVAS.new()
 	add_child(viewport_canvas)
-	episode_components = JSON.parse_string(FileAccess.get_file_as_string("res://data/episode1_components.json"))
-	episode_components.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/episode2_components.json")),true)
-	episode_components.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/episode3_components.json")),true)
-	art_components = JSON.parse_string(FileAccess.get_file_as_string("res://data/ui_components.json"))
-	art_brushes = JSON.parse_string(FileAccess.get_file_as_string("res://data/ui_brush_layout.json"))
-	art_brushes.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/episode1_brushes.json")),true)
-	art_brushes.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/episode2_brushes.json")),true)
-	art_brushes.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/episode3_brushes.json")),true)
-	art_text = JSON.parse_string(FileAccess.get_file_as_string("res://data/ui_text_layout.json"))
 	selectors = JSON.parse_string(FileAccess.get_file_as_string("res://data/selectors.json"))
 	for number: int in Quest.episode_starts:
 		var metadata: Dictionary = Quest.episode_metadata.get(number,{})
@@ -122,6 +105,8 @@ func _fit_stage() -> void:
 	screen.scale = Vector2.ONE * fit
 	screen.position = LAYOUT.centered_offset(safe.size)
 	_layout_edge_tab()
+	for child: Node in screen.get_children():
+		if child.has_method("set_cover_rect"): child.set_cover_rect(_cover_rect())
 
 func _stop_cutscene() -> void:
 	cutscene.stop()
@@ -147,56 +132,6 @@ func _reset_screen() -> void:
 
 func _set_backdrop(texture: Texture2D, crop_pause: bool = false) -> void:
 	viewport_canvas.set_background(texture, crop_pause)
-
-func _art(filename: String, parent: Control = null, rect: Rect2 = Rect2(0,0,800,480)) -> Control:
-	if filename in ["menu", "menu_off", "help"] or filename.begins_with("selector_"):
-		filename = "adaptive_" + filename
-	rect = LAYOUT.scaled_rect(rect)
-	var composed: bool = art_components.has(filename) or episode_components.has(filename)
-	var image: Control = Control.new() if composed else TextureRect.new()
-	if not composed:
-		(image as TextureRect).texture = load("res://assets/flash_ui/" + filename + ".png")
-		(image as TextureRect).expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	image.position = rect.position
-	image.size = rect.size
-	image.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	(parent if parent != null else screen).add_child(image)
-	image.set_deferred("size",rect.size)
-	if art_components.has(filename): _draw_components(filename,image,"background")
-	elif episode_components.has(filename): COMPONENTS.draw(image,episode_components[filename],"background")
-	_draw_brushes(filename,image)
-	if art_components.has(filename): _draw_components(filename,image,"foreground")
-	elif episode_components.has(filename): COMPONENTS.draw(image,episode_components[filename],"foreground")
-	var icons_path:="res://assets/flash_ui/"+filename+"_icons.png"
-	if not composed and ResourceLoader.exists(icons_path):
-		var icons:=TextureRect.new()
-		icons.texture=load(icons_path)
-		icons.expand_mode=TextureRect.EXPAND_IGNORE_SIZE
-		icons.size=rect.size
-		icons.mouse_filter=Control.MOUSE_FILTER_IGNORE
-		image.add_child(icons)
-	for block: Dictionary in art_text.get(filename,[]):
-		var r: Array = block.rect
-		var original_rect := Rect2(r[0],r[1],r[2],r[3])
-		var translated := LOC.text(block.text).replace("{version}",str(ProjectSettings.get_setting("application/config/version","")))
-		var font: Font = load("res://fonts/flash/font_%d.ttf" % int(block.font))
-		var brush_rect := Rect2()
-		for brush:Dictionary in art_brushes.get(filename,[]):
-			var b:Array=brush.rect
-			var area:=Rect2(b[0],b[1],b[2],b[3])
-			if area.has_point(original_rect.get_center()):brush_rect=area;break
-		var label:Label
-		if brush_rect.has_area():
-			label=_button_text(translated,brush_rect.grow_individual(-10,-4,-10,-4),roundi(block.size),image,font)
-		else:
-			var font_size:=roundi(block.size)
-			while font_size>12 and font.get_multiline_string_size(translated,HORIZONTAL_ALIGNMENT_LEFT,original_rect.size.x*2,font_size*2).y>original_rect.size.y*2+4:font_size-=1
-			label=_text(translated,original_rect,font_size,false,false,image)
-		label.rotation = float(block.get("rotation",0))
-		label.add_theme_font_override("font",font)
-		label.add_theme_color_override("font_color",Color(block.color))
-		if not label.has_meta("button_caption"):label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER if block.alignment=="center" else HORIZONTAL_ALIGNMENT_RIGHT if block.alignment=="right" else HORIZONTAL_ALIGNMENT_LEFT
-	return image
 
 func _image(filename: String) -> void:
 	_set_backdrop(load("res://assets/images/" + filename))
@@ -244,42 +179,6 @@ func _opening_caption(node: Dictionary) -> void:
 	while font_size > 16 and BODY_FONT.get_string_size(node.text,HORIZONTAL_ALIGNMENT_LEFT,-1,font_size*2).x > 1550:
 		font_size -= 1
 	_text(node.text,Rect2(11,y,775,34),font_size)
-
-func _text(text: String, rect: Rect2, font_size: int = 24, title: bool = false, center: bool = false, parent: Control = null) -> Label:
-	rect = LAYOUT.scaled_rect(rect)
-	font_size = LAYOUT.scaled_font_size(font_size)
-	var label := Label.new()
-	label.text = LOC.text(text)
-	label.position = rect.position
-	label.add_theme_font_override("font", TITLE_FONT if title else BODY_FONT)
-	label.add_theme_font_size_override("font_size", font_size)
-	label.add_theme_color_override("font_color", Color("e1e1e1"))
-	label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER if center else HORIZONTAL_ALIGNMENT_LEFT
-	label.size = rect.size
-	label.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	(parent if parent != null else screen).add_child(label)
-	label.set_deferred("size",rect.size)
-	return label
-
-func _hit(name: String, rect: Rect2, action: Callable, parent: Control = null, mask: String = "") -> Button:
-	rect = LAYOUT.scaled_rect(rect)
-	var button: Button = Button.new() if mask.is_empty() else ALPHA_HOTSPOT.new()
-	if not mask.is_empty():
-		button.hit_image = load("res://assets/flash_ui/" + mask + ".png").get_image()
-		if button.hit_image.is_compressed(): button.hit_image.decompress()
-	name = LOC.text(name)
-	button.name = name
-	button.position = rect.position
-	button.size = rect.size
-	button.flat = true
-	button.tooltip_text = name
-	var empty := StyleBoxEmpty.new()
-	for style in ["normal","hover","pressed","focus","disabled"]:
-		button.add_theme_stylebox_override(style,empty)
-	button.pressed.connect(action)
-	(parent if parent != null else screen).add_child(button)
-	return button
 
 func _shade(parent: Control, alpha: float = 0.65) -> void:
 	var shade := ColorRect.new()
@@ -404,17 +303,17 @@ func _show_pause() -> void:
 	_stop_cutscene()
 	effects.stop()
 	_close_overlay()
-	overlay = Control.new()
-	overlay.size = LAYOUT.BASE_SIZE
-	screen.add_child(overlay)
-	_shade(overlay,0.6)
-	_art("layout_pause",overlay)
-	_button_text(LOC.text("@loc:ui.main.24") + (LOC.text("@loc:ui.main.25") if Quest.sound_enabled else LOC.text("@loc:ui.main.26")),Rect2(101,170,243,42),22,overlay,TITLE_FONT)
-	_edge_tab(LOC.text("@loc:ui.main.27"),_resume,overlay)
-	_hit(LOC.text("@loc:ui.main.28"),Rect2(15,94,290,64),func(): _request_new(),overlay)
-	_hit(LOC.text("@loc:ui.main.29"),Rect2(73,158,280,62),_toggle_sound,overlay)
-	_hit(LOC.text("@loc:ui.main.30"),Rect2(72,225,280,62),_show_menu,overlay)
-	_hit(LOC.text("@loc:ui.main.31"),Rect2(20,290,290,62),func(): Quest.save_game();get_tree().quit(),overlay)
+	if is_instance_valid(edge_tab): edge_tab.hide()
+	if is_instance_valid(edge_hit): edge_hit.hide()
+	var panel := PAUSE_MENU.instantiate()
+	overlay = panel
+	_attach_panel(panel)
+	panel.resume_requested.connect(_resume)
+	panel.restart_requested.connect(_request_new)
+	panel.sound_requested.connect(_toggle_sound)
+	panel.menu_requested.connect(_show_menu)
+	panel.quit_requested.connect(func(): Quest.save_game(); get_tree().quit())
+	panel.configure(Quest.sound_enabled)
 
 func _close_overlay() -> void:
 	if is_instance_valid(overlay):
@@ -426,21 +325,17 @@ func _message(title: String, text: String, confirm: Callable = Callable(), confi
 	television.stop()
 	_stop_cutscene()
 	_close_overlay()
-	overlay = Control.new()
-	overlay.size = LAYOUT.BASE_SIZE
-	screen.add_child(overlay)
-	_shade(overlay,0.75)
-	_art("decision",overlay)
-	_text(title + "\n\n" + text,Rect2(430,72,280,235),22,false,false,overlay)
-	_brush_button(confirm_label if confirm.is_valid() else LOC.text("@loc:ui.main.33"),Rect2(65,65,335,50),func():
+	var panel := PLAYER_DIALOG.instantiate()
+	overlay = panel
+	_attach_panel(panel)
+	var choices: Array = [{"text":confirm_label if confirm.is_valid() else "@loc:ui.main.33"}]
+	if confirm.is_valid() and show_cancel: choices.append({"text":"@loc:ui.main.34"})
+	panel.choice_selected.connect(func(index: int):
 		_close_overlay()
-		if confirm.is_valid(): confirm.call()
+		if index == 0 and confirm.is_valid(): confirm.call()
 		elif paused: _show_pause()
-		elif playing: _show_story(),overlay)
-	if confirm.is_valid() and show_cancel:
-		_brush_button(LOC.text("@loc:ui.main.34"),Rect2(65,130,335,50),func():
-			_close_overlay()
-			if paused: _show_pause(),overlay)
+		elif playing: _show_story())
+	panel.configure({"style":"confirmation","text":title+"\n\n"+text,"font_size":22,"shade_alpha":0.75},choices)
 
 func _choose(index: int) -> void:
 	var choice: Dictionary = Quest.available_choices()[index]
@@ -473,22 +368,10 @@ func _show_story() -> void:
 		_hit(LOC.text("@loc:ui.main.36"),Rect2(380,382,44,40),func(): _choose(1))
 		television.start()
 	elif kind == "item":
-		var dim := ColorRect.new()
-		dim.size=LAYOUT.BASE_SIZE
-		dim.color=Color(0,0,0,0.65)
-		screen.add_child(dim)
-		_art("item_keys")
-		_text(node.text,Rect2(102,71,594,31),24,false,true)
-		_hit(LOC.text("@loc:ui.main.37"),Rect2(656,326,65,58),func(): _choose(0))
+		_show_item_popup("item_keys",node.text)
 	elif Quest.current_id == "transport_choice":
 		_opening_art("transport")
-		_shade(screen,0.6)
-		_art("decision")
-		_text(node.text,Rect2(430,72,280,235),24)
-		for i in 2:
-			var index: int = i
-			_button_text(Quest.available_choices()[i].text,Rect2(66,66+i*65,337,50),24)
-			_hit(Quest.available_choices()[i].text,Rect2(60,54+i*65,349,64),func(): _choose(index))
+		_show_player_dialog({"text":node.text,"answer_size":24},Quest.available_choices())
 	elif kind == "boundary":
 		_message(LOC.text("@loc:ui.main.38"),node.text,_show_menu,LOC.text("@loc:ui.main.39"),false)
 	else:
@@ -531,50 +414,30 @@ func _refresh_locale() -> void:
 	elif section == "help": _show_help()
 	else: _show_menu()
 
-func _brush(rect:Rect2,parent:Control=null,color:Color=Color("803c3c"),seed_value:float=1.0)->Control:
-	var brush:=BRUSH.new()
-	brush.position=rect.position*2
-	brush.size=rect.size*2
-	brush.brush_color=color
-	brush.brush_seed=seed_value
-	(parent if parent!=null else screen).add_child(brush)
-	return brush
-
-func _draw_brushes(filename:String,parent:Control,behind:bool=false)->void:
-	var index:=0
-	for record:Dictionary in art_brushes.get(filename,[]):
-		var r:Array=record.rect
-		var c:Array=record.color
-		var brush:=_brush(Rect2(r[0],r[1],r[2],r[3]),parent,Color(c[0],c[1],c[2],c[3]),float(index+1))
-		brush.rotation=float(record.get("rotation",0))
-		if behind:brush.show_behind_parent=true
-		index+=1
-
-func _button_text(value:String,rect:Rect2,font_size:int=22,parent:Control=null,font:Font=null)->Label:
-	var text:=" ".join(LOC.text(value).replace("\r"," ").replace("\n"," ").split(" ",false))
-	if font==null:font=BODY_FONT
-	while font_size>1 and (font.get_string_size(text,HORIZONTAL_ALIGNMENT_LEFT,-1,font_size*2).x>rect.size.x*2 or font.get_height(font_size*2)>rect.size.y*2):font_size-=1
-	var label:=_text(text,rect,font_size,false,true,parent)
-	label.add_theme_font_override("font",font)
-	label.autowrap_mode=TextServer.AUTOWRAP_OFF
-	label.vertical_alignment=VERTICAL_ALIGNMENT_CENTER
-	label.clip_text=true
-	label.set_meta("button_caption",true)
-	return label
-
-func _draw_components(filename: String, parent: Control, layer: String) -> void:
-	for part: Dictionary in art_components[filename]:
-		if part.layer != layer: continue
-		var component := TextureRect.new()
-		component.texture = load("res://assets/flash_ui/" + part.texture)
-		var r: Array = part.rect
-		component.position = Vector2(r[0], r[1]) * 2
-		component.size = Vector2(r[2], r[3]) * 2
-		component.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		component.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		parent.add_child(component)
-
 func _component_backdrop(filename: String) -> bool:
 	if not episode_components.has(filename): return false
 	viewport_canvas.set_component_background(episode_components[filename])
 	return true
+
+func _default_parent() -> Control:
+	return screen
+
+func _cover_rect() -> Rect2:
+	return Rect2(-screen.position/screen.scale,viewport_canvas.safe_layer.size/screen.scale)
+
+func _attach_panel(panel: Control) -> void:
+	screen.add_child(panel)
+	panel.set_cover_rect(_cover_rect())
+
+func _show_item_popup(artwork: String, caption: String) -> void:
+	var panel := ITEM_POPUP.instantiate()
+	_attach_panel(panel)
+	panel.accepted.connect(func(): _choose(0))
+	panel.configure(artwork,caption)
+
+func _show_player_dialog(data: Dictionary, choices: Array, selected: Callable = Callable(), dismissed: Callable = Callable()) -> void:
+	var panel := PLAYER_DIALOG.instantiate()
+	_attach_panel(panel)
+	panel.choice_selected.connect(selected if selected.is_valid() else _choose)
+	if dismissed.is_valid(): panel.dismissed.connect(dismissed)
+	panel.configure(data,choices)

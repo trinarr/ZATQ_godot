@@ -14,10 +14,7 @@ static func draw(ui: Control, node: Dictionary) -> void:
 	if node.kind == "city_pickup":
 		if not ui._component_backdrop(node.background_art):
 			ui._set_backdrop(load("res://assets/flash_ui/"+node.background_art+".png"))
-		ui._shade(ui.screen,0.65)
-		ui._art(artwork)
-		ui._text(node.text,Rect2(102,71,594,31),24,false,true)
-		ui._hit(LOC.text("@loc:ui.city_gameplay.1"),Rect2(656,326,65,58),func(): ui._choose(0))
+		ui._show_item_popup(artwork,node.text)
 		return
 	if not ui._component_backdrop(artwork):
 		ui._set_backdrop(load("res://assets/flash_ui/" + artwork + "."+node.get("art_extension","png")), not node.get("clean_background",false))
@@ -28,18 +25,7 @@ static func draw(ui: Control, node: Dictionary) -> void:
 		ui._art(node.controls_art)
 	var kind: String = node.kind
 	if kind == "city_decision":
-		ui._shade(ui.screen, 0.6)
-		ui._art(node.get("decision_art", "city_decision_3" if choices.size() == 3 else "decision"))
-		var body_size: int = 24
-		while body_size > 16 and ui.BODY_FONT.get_multiline_string_size(node.text, HORIZONTAL_ALIGNMENT_LEFT, 280, body_size).y > 235:
-			body_size -= 1
-		ui._text(node.text, Rect2(430,72,280,235),body_size)
-		for i in choices.size():
-			var index: int = i
-			ui._button_text(choices[i].text, Rect2(66,66+i*65,337,50),22)
-			ui._hit(choices[i].text, Rect2(60,54+i*65,349,64),func(): ui._choose(index))
-		for rect in [Rect2(0,0,800,35),Rect2(0,35,45,310),Rect2(730,35,70,310),Rect2(0,345,800,135)]:
-			ui._hit(LOC.text("@loc:ui.city_gameplay.2"),rect,func(): Quest._enter(node.back))
+		ui._show_player_dialog({"text":node.text,"art":node.get("decision_art","city_decision_3" if choices.size()==3 else "decision"),"fit_body":true,"dismissable":true},choices,Callable(),func(): Quest._enter(node.back))
 	elif kind == "city_cutscene":
 		var duration: float = node.auto_seconds
 		ui.cutscene.start(duration)

@@ -20,8 +20,9 @@ static func draw(owner: Control, data: Dictionary) -> void:
  activity.build()
 func build() -> void:
  var path: String="res://assets/flash_ui/"+node.get("art","result_background")+"."+node.get("art_extension","png")
- if not ui._component_backdrop(node.get("art","result_background")) and ResourceLoader.exists(path):ui._set_backdrop(load(path))
- if not node.get("original_ui",false):
+ if node.kind=="activity_dialogue":ui._set_backdrop(null)
+ elif not ui._component_backdrop(node.get("art","result_background")) and ResourceLoader.exists(path):ui._set_backdrop(load(path))
+ if not node.get("original_ui",false) and node.kind!="activity_dialogue":
   ui._shade(ui.screen,0.65)
   ui._text(node.get("speaker",""),Rect2(90,40,620,45),26,true)
   ui._text(node.get("text",""),Rect2(90,90,620,145),23)
@@ -30,21 +31,7 @@ func build() -> void:
   Quest.save_game()
  state=Quest.activity
  if node.kind=="activity_dialogue":
-  var choices:Array=Quest.available_choices()
-  if node.get("original_ui",false):
-   ui._text(node.get("speaker",""),Rect2(597,209,155,23),17,false,true)
-   var body_size:=23
-   while body_size>14 and ui.BODY_FONT.get_multiline_string_size(node.text,HORIZONTAL_ALIGNMENT_LEFT,465*2,body_size*2).y>137*2:body_size-=1
-   ui._text(node.text,Rect2(122,72,465,137),body_size)
-   ui._draw_brushes(node.art,ui.screen)
-   for i:int in choices.size():
-    var answer_size:=22
-    while answer_size>14 and ui.BODY_FONT.get_multiline_string_size(choices[i].text,HORIZONTAL_ALIGNMENT_LEFT,620*2,answer_size*2).y>55*2:answer_size-=1
-    ui._button_text(choices[i].text,Rect2(110,250+i*66,620,55),answer_size)
-    ui._hit(choices[i].text,Rect2(91,244+i*66,657,64),func():finish(i))
-  else:
-   for i:int in choices.size():
-    ui._brush_button(choices[i].get("text",LOC.text("@loc:ui.story_activity.1")),Rect2(90,245+i*55,620,48),func():finish(i))
+  ui._show_player_dialog({"style":"speaker","text":node.get("text",""),"speaker":node.get("speaker",""),"art":node.get("art","result_background"),"original_ui":node.get("original_ui",false),"shade":not node.get("original_ui",false),"shade_alpha":0.65},Quest.available_choices(),finish)
  elif node.kind=="activity_code":
   input=LineEdit.new();input.position=Vector2(200,230)*2;input.size=Vector2(400,45)*2
   input.text=state.get("input","");input.add_theme_font_size_override("font_size",40)

@@ -23,7 +23,15 @@ func run() -> void:
    ui._stop_cutscene();ui.paused=true
    await process_frame
    check(ui.screen!=null,"screen instantiated: "+id)
-   if data.kind not in ["city_ending","city_death"]:
+   if data.kind=="activity_dialogue":
+    var dialogue: Control
+    for child: Node in ui.screen.get_children():
+     if child.get_script()==load("res://scripts/ui/shared/player_dialog.gd"):dialogue=child
+    check(dialogue!=null and dialogue.backdrop!=null,"dialogue owns art: "+id)
+    if dialogue!=null:
+     for part: Node in dialogue.backdrop.get_children():
+      if part is TextureRect:check(part.texture!=null,"dialogue texture: "+id)
+   if data.kind not in ["city_ending","city_death","activity_dialogue"]:
     check(ui.viewport_canvas.component_background_active,"component backdrop: "+id)
    if data.kind not in ["city_ending","city_death","city_pickup","city_decision"]:
     check(ui.edge_hit!=null,"separate pause control: "+id)
