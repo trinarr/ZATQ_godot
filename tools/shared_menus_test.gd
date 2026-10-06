@@ -36,7 +36,7 @@ func run() -> void:
 				if count in [1,2,4]:
 					if textures.has(count):check(textures[count]==child.texture,"shared item chrome")
 					textures[count]=child.texture
-		check(count==4,"frame, header, item and arrow: "+artwork)
+		check(count==6,"frame, caption band, item, arrow and title header: "+artwork)
 		check(panel.find_children("*","TextureRect",true,false)[3].get_parent().has_meta("torn_button"),"pickup arrow belongs to its button")
 		accepted=false
 		for child: Node in panel.get_children():

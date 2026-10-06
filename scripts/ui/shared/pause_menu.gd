@@ -80,8 +80,7 @@ func set_sound_enabled(enabled: bool) -> void:
 		sound_button.set_caption(LOC.text("@loc:ui.main.24") + LOC.text("@loc:ui.main.25" if enabled else "@loc:ui.main.26"))
 
 func _shade_input(event: InputEvent) -> void:
-	if (event is InputEventMouseButton and event.button_index==MOUSE_BUTTON_LEFT and event.pressed) or (event is InputEventScreenTouch and event.pressed):
-		resume_requested.emit()
+	dismiss_on_shade_release(event,resume_requested.emit)
 
 func _set_opening_frame(frame: int) -> void:
 	opening_frame = frame

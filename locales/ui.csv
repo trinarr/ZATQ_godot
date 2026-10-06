@@ -125,3 +125,4 @@ ui.story_activity.7,Пауза,
 ui.story_activity.8,Неверный код. Осталось попыток: ,
 ui.story_activity.9,%.1f с · Нажатия %d/%d,
 ui.qte.press,Жми!,Press!
+ui.item_popup.title,Получен новый предмет:,New item received:

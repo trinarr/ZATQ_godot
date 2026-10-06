@@ -2,6 +2,9 @@ extends "res://scripts/ui/shared/shared_view.gd"
 # The host supplies the visible safe area in this component's coordinates.
 var cover_rect := Rect2(Vector2.ZERO, LAYOUT.BASE_SIZE)
 var dimmer: ColorRect
+var shade_mouse_down := false
+var shade_touches: Dictionary = {}
+var shade_closing := false
 
 func _init() -> void:
 	super()
@@ -41,3 +44,26 @@ func set_cover_rect(rect: Rect2) -> void:
 	if is_instance_valid(dimmer):
 		dimmer.position = rect.position
 		dimmer.size = rect.size
+
+func dismiss_on_shade_release(event: InputEvent, action: Callable) -> void:
+	# Keep the blocker alive through press, release and synthesized mouse input.
+	# Rebuilding the story during GUI dispatch can target the new story controls.
+	dimmer.accept_event()
+	if shade_closing: return
+	var completed := false
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+		if event.pressed: shade_mouse_down = true
+		else:
+			completed = shade_mouse_down
+			shade_mouse_down = false
+	elif event is InputEventScreenTouch:
+		if event.pressed: shade_touches[event.index] = true
+		else:
+			completed = shade_touches.has(event.index)
+			shade_touches.erase(event.index)
+	if completed:
+		shade_closing = true
+		call_deferred("_finish_shade_gesture",action)
+
+func _finish_shade_gesture(action: Callable) -> void:
+	if not is_queued_for_deletion() and action.is_valid(): action.call()

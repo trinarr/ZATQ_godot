@@ -3,7 +3,7 @@ extends Control
 const LOC := preload("res://scripts/core/localization.gd")
 const FONT: Font = preload("res://fonts/flash/font_1.ttf")
 var text_key := "@loc:ui.qte.press"
-var caption := Label.new()
+var caption := preload("res://scripts/ui/shared/shader_text.gd").new()
 
 func _init() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE

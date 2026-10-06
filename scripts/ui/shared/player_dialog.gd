@@ -10,7 +10,7 @@ var backdrop: Control
 # choices contain text; the caller owns conditions, routes and save state.
 func configure(data: Dictionary, choices: Array) -> void:
 	var style: String = data.get("style","decision")
-	if data.get("shade",true): add_shade(float(data.get("shade_alpha",0.6)))
+	if data.get("shade",true): add_shade(float(data.get("shade_alpha",0.9)))
 	if style == "speaker":
 		build_speaker(data,choices)
 		return
@@ -44,8 +44,7 @@ func configure(data: Dictionary, choices: Array) -> void:
 		dimmer.gui_input.connect(_dismiss_on_shade)
 
 func _dismiss_on_shade(event: InputEvent) -> void:
-	if (event is InputEventMouseButton and event.button_index==MOUSE_BUTTON_LEFT and event.pressed) or (event is InputEventScreenTouch and event.pressed):
-		dismissed.emit()
+	dismiss_on_shade_release(event,dismissed.emit)
 
 func build_speaker(data: Dictionary, choices: Array) -> void:
 	var artwork: String = data.get("art","")

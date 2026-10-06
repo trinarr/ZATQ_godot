@@ -15,6 +15,7 @@ const VERSION := 1
 const TV_IMAGES := ["flash_2821.png", "flash_2823.png", "flash_2825.png", "flash_2827.png", "flash_2829.png", "flash_2831.png", "flash_2833.png"]
 var nodes: Dictionary = {}
 var current_id: String = ""
+var popup_origin: String = ""
 var activity: Dictionary = {}
 var flags: Dictionary = {"TakenKey": false, "Auto": 0}
 var episode_starts: Dictionary = {}
@@ -46,8 +47,8 @@ func _ready() -> void:
 		episode_metadata[int(graph.episode)] = graph
 	_load_save()
 
-func current() -> Dictionary:
-	var node: Dictionary = nodes.get(current_id, {})
+func current(id: String = "") -> Dictionary:
+	var node: Dictionary = nodes.get(current_id if id.is_empty() else id, {})
 	if not node.has("variants"): return LOC.resolve_tree(node)
 	var resolved: Dictionary = node.duplicate(true)
 	for variant: Dictionary in node.variants:
@@ -104,6 +105,8 @@ func new_game(number: int = 1) -> void:
 func _enter(id: String) -> void:
 	if not nodes.has(id):
 		return
+	if nodes[id].get("kind","") in ["item","city_pickup","city_death","city_ending"] and current().get("kind","") not in ["item","city_pickup","city_death","city_ending"]:
+		popup_origin = current_id if int(current().get("episode",1)) == int(nodes[id].get("episode",1)) else ""
 	if current_id != id: activity = {}
 	current_id = id
 	episode = int(nodes[id].get("episode",1))
@@ -172,11 +175,12 @@ func set_sound(enabled: bool) -> void:
 	save_game()
 
 func _snapshot() -> Dictionary:
-	return {"version":VERSION,"extra_stats":extra_stats,"activity":activity,"current_id":current_id,"flags":flags,"channel":channel,"sound_enabled":sound_enabled,"has_progress":has_progress,"episode":episode,"episode1_stats":episode1_stats,"episode2_stats":episode2_stats,"result_recorded":result_recorded}
+	return {"version":VERSION,"extra_stats":extra_stats,"activity":activity,"current_id":current_id,"popup_origin":popup_origin,"flags":flags,"channel":channel,"sound_enabled":sound_enabled,"has_progress":has_progress,"episode":episode,"episode1_stats":episode1_stats,"episode2_stats":episode2_stats,"result_recorded":result_recorded}
 
 func _valid(data: Variant) -> bool:
 	if not data is Dictionary or data.get("version") != VERSION:
 		return false
+	if not data.get("popup_origin","") is String or (not str(data.get("popup_origin","")).is_empty() and not nodes.has(data.popup_origin)): return false
 	if not data.get("current_id") is String or not data.get("flags") is Dictionary:
 		return false
 	if not data.get("has_progress") is bool or not data.get("sound_enabled") is bool:
@@ -255,6 +259,7 @@ func _load_save() -> void:
 			return
 		recovery_message = LOC.text("@loc:ui.quest_state.1")
 	current_id = data.current_id
+	popup_origin = data.get("popup_origin","")
 	flags = data.flags.duplicate(true)
 	flags.Auto = int(flags.Auto)
 	flags.BulletsNumber = int(flags.get("BulletsNumber",-1))

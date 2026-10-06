@@ -11,7 +11,7 @@ var caption: Label
 var padding := Vector2(20,8)
 func _init() -> void:
  super()
- caption = Label.new()
+ caption = preload("res://scripts/ui/shared/shader_text.gd").new()
  caption.name = "Caption"
  caption.mouse_filter = Control.MOUSE_FILTER_IGNORE
  caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER

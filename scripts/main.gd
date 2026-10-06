@@ -402,17 +402,33 @@ func _choose(index: int) -> void:
 
 func _show_story() -> void:
 	if not playing or paused: return
+	var was_story := section == "story"
 	section = "story"
 	var node: Dictionary = Quest.current()
 	var kind: String = node.get("kind", "story")
-	_reset_screen()
-	if kind == "item":
-		_set_backdrop(load("res://assets/images/Fon1_1.png"))
+	var pickup := kind in ["item","city_pickup"]
+	var result := kind in ["city_death","city_ending"]
+	if pickup or result:
+		television.stop()
+		_stop_cutscene()
+		if not was_story or previous_node.is_empty():
+			_reset_screen()
+			_restore_modal_backdrop(node)
+		_close_overlay()
+		if is_instance_valid(edge_tab): edge_tab.hide()
+		if is_instance_valid(edge_hit): edge_hit.hide()
+		var backdrop: String = node.get("background_art","")
+		if not backdrop.is_empty(): _pickup_backdrop(backdrop)
+	else:
+		_reset_screen()
 	if previous_node != Quest.current_id:
 		effects.stop()
 		_play_sound(transition_sound if not transition_sound.is_empty() else node.get("sound", ""))
 		transition_sound = ""
 	previous_node = Quest.current_id
+	if pickup:
+		_show_item_popup(node.get("art","item_keys"),node.text)
+		return
 	if kind.begins_with("activity_"):
 		ACTIVITY.draw(self, node)
 	elif kind.begins_with("city_"):
@@ -425,8 +441,6 @@ func _show_story() -> void:
 		_world_hit(LOC.text("@loc:ui.main.35"),Rect2(200,44,447,262),func(): _choose(0))
 		_world_hit(LOC.text("@loc:ui.main.36"),Rect2(380,382,44,40),func(): _choose(1))
 		television.start()
-	elif kind == "item":
-		_show_item_popup("item_keys",node.text)
 	elif Quest.current_id == "transport_choice":
 		_opening_art("transport")
 		_show_player_dialog({"text":node.text,"answer_size":24},Quest.available_choices())
@@ -485,8 +499,31 @@ func _attach_panel(panel: Control) -> void:
 	screen.add_child(panel)
 	panel.set_cover_rect(_cover_rect())
 
+func _pickup_backdrop(artwork: String) -> void:
+	if not _component_backdrop(artwork):
+		_set_backdrop(load("res://assets/flash_ui/"+artwork+".png"))
+	_layout_world_layer()
+
+func _restore_modal_backdrop(node: Dictionary) -> void:
+	# Saved games can resume directly at an item/result popup without a live scene.
+	var origin: String = Quest.popup_origin
+	if origin.is_empty():
+		for id: String in Quest.nodes:
+			for choice: Dictionary in Quest.nodes[id].get("choices",[]):
+				if choice.get("next","") == Quest.current_id: origin = id; break
+			if not origin.is_empty(): break
+	var previous: Dictionary = Quest.current(origin) if not origin.is_empty() else {}
+	var art: String = previous.get("art","")
+	if Quest.flags.Auto == 0: art = previous.get("art_on_foot",art)
+	if episode_components.has("layout_bg_"+origin):
+		_component_backdrop("layout_bg_"+origin)
+	elif not art.is_empty():
+		_pickup_backdrop(art)
+	_layout_world_layer()
+
 func _show_item_popup(artwork: String, caption: String) -> void:
 	var panel := ITEM_POPUP.instantiate()
+	overlay = panel
 	_attach_panel(panel)
 	panel.accepted.connect(func(): _choose(0))
 	panel.configure(artwork,caption)

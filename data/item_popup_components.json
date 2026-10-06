@@ -1,0 +1,28 @@
+{
+  "header": [
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_4c241560532984aa6b29.png",
+      "rect": [
+        35,
+        0,
+        729,
+        60
+      ],
+      "source": "/Symbol 57",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "components/panel_header_shadow_tail.png",
+      "rect": [
+        35,
+        60,
+        729,
+        22
+      ],
+      "source": "/Symbol 57 shadow tail",
+      "layer": "background"
+    }
+  ]
+}

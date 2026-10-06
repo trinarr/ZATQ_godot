@@ -28,7 +28,7 @@ func configure(value: String, available: bool = true, font_size: int = 24) -> vo
   COMPONENTS.draw(self,parts.decision_disabled_mark)
   unavailable_mark = get_child(1)
  else:
-  caption = Label.new()
+  caption = preload("res://scripts/ui/shared/shader_text.gd").new()
   caption.name = "Caption"
   caption.mouse_filter = Control.MOUSE_FILTER_IGNORE
   caption.text = LOC.text(value)

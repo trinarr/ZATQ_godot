@@ -36,7 +36,7 @@ func run() -> void:
   scene._show_story()
   quest._load_save()
   check(quest.episode2_stats==stats,"resume does not recount result")
-  check(scene.screen.get_node("ResultCount").text==("%d/3" % stats.endings.size() if quest.current().alive else str(stats.losses)),"result shows episode-local statistic")
+  check(scene.screen.find_child("ResultCount",true,false).text==("%d/3" % stats.endings.size() if quest.current().alive else str(stats.losses)),"result shows episode-local statistic")
  check(quest.episode2_stats.wins==3 and quest.episode2_stats.losses==14,"three escapes and fourteen deaths")
  check(quest.episode2_stats.endings.size()==3,"all original surviving endings")
  check(quest.episode1_stats.wins==0 and quest.episode1_stats.losses==0,"statistics remain separate")
@@ -90,6 +90,7 @@ func run() -> void:
  # Enter through the episode selector, restart the current episode, and return to menu.
  quest.has_progress=false
  scene._show_selector("episodes")
+ await create_timer(0.3).timeout # Wait for the original selector opening before input.
  scene._cycle_selector(1)
  scene.screen.get_node("Начать").pressed.emit()
  await settle()
@@ -98,14 +99,14 @@ func run() -> void:
  scene.overlay.resume_hit.pressed.emit()
  check(scene.playing and not scene.paused,"pause resumes second episode")
  quest._enter("e2_result_38")
- scene.screen.get_node("Начать заново").pressed.emit()
+ scene.screen.find_child("Начать заново",true,false).pressed.emit()
  check(quest.current_id=="e2_hospital_1","restart retains episode")
  quest._enter("e2_result_38")
- scene.screen.get_node("В меню").pressed.emit()
+ scene.screen.find_child("В меню",true,false).pressed.emit()
  check(scene.section=="menu","result returns to menu")
  scene._start_episode(1)
  quest._enter("ending_6")
- scene.screen.get_node("Следующий эпизод").pressed.emit()
+ scene.screen.find_child("Следующий эпизод",true,false).pressed.emit()
  check(quest.current_id=="e2_hospital_1" and quest.episode==2,"first episode continues into second")
  # Existing v1 saves remain readable; invalid second-episode data is rejected.
  var data: Dictionary = quest._snapshot().duplicate(true)

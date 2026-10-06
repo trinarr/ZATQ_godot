@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2gibdhf8hqlx"
-path="res://.godot/imported/Fon1_1.png-eb92a16dfa5f9e5dc61e7ecf2e85c8da.ctex"
+uid="uid://2cr6yl8tald"
+path="res://.godot/imported/panel_header_shadow_tail.png-a8a294f33250150eb5588bb5a8fea0e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/Fon1_1.png"
-dest_files=["res://.godot/imported/Fon1_1.png-eb92a16dfa5f9e5dc61e7ecf2e85c8da.ctex"]
+source_file="res://assets/flash_ui/components/panel_header_shadow_tail.png"
+dest_files=["res://.godot/imported/panel_header_shadow_tail.png-a8a294f33250150eb5588bb5a8fea0e2.ctex"]
 
 [params]
 

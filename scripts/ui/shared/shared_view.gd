@@ -90,7 +90,7 @@ func _art(filename: String, parent: Control = null, rect: Rect2 = Rect2(0,0,800,
 func _text(text: String, rect: Rect2, font_size: int = 24, title: bool = false, center: bool = false, parent: Control = null) -> Label:
 	rect = LAYOUT.scaled_rect(rect)
 	font_size = LAYOUT.scaled_font_size(font_size)
-	var label := Label.new()
+	var label := preload("res://scripts/ui/shared/shader_text.gd").new()
 	label.text = LOC.text(text)
 	label.position = rect.position
 	label.add_theme_font_override("font", TITLE_FONT if title else BODY_FONT)
@@ -115,7 +115,7 @@ func _hit(name: String, rect: Rect2, action: Callable, parent: Control = null, m
 		painted.mouse_filter = Control.MOUSE_FILTER_STOP
 		painted.focus_mode = Control.FOCUS_ALL
 		painted.set_meta("bound_action",true)
-		painted.pressed.connect(action)
+		painted.pressed.connect(func(): _dispatch_action(painted,action))
 		return painted
 	var button: Button = Button.new() if mask.is_empty() else ALPHA_HOTSPOT.new()
 	if not mask.is_empty():
@@ -130,9 +130,24 @@ func _hit(name: String, rect: Rect2, action: Callable, parent: Control = null, m
 	var empty := StyleBoxEmpty.new()
 	for style in ["normal","hover","pressed","focus","disabled"]:
 		button.add_theme_stylebox_override(style,empty)
-	button.pressed.connect(action)
+	button.pressed.connect(func(): _dispatch_action(button,action))
 	(parent if parent != null else _default_parent()).add_child(button)
 	return button
+
+func _dispatch_action(button: Control, action: Callable) -> void:
+	if _interaction_allowed(button): action.call()
+
+func _interaction_allowed(control: Control) -> bool:
+	if not is_instance_valid(control) or not control.is_inside_tree(): return false
+	var ancestor: Node = control
+	while ancestor != null:
+		if ancestor.is_queued_for_deletion(): return false
+		var top: Control
+		for sibling: Node in ancestor.get_children():
+			if sibling is Control and sibling.has_meta("modal_view") and sibling.is_visible_in_tree() and not sibling.is_queued_for_deletion(): top = sibling
+		if top != null and top != control and not top.is_ancestor_of(control): return false
+		ancestor = ancestor.get_parent()
+	return true
 
 func _draw_brushes(filename:String,parent:Control,behind:bool=false)->void:
 	var index:=0
@@ -175,7 +190,7 @@ func _torn_text_button(value: String, rect: Rect2, action: Callable, parent: Con
 	button.tooltip_text = LOC.text(value)
 	button.set_meta("bound_action",true)
 	button.set_caption(value,font,font_size*2)
-	button.pressed.connect(action)
+	button.pressed.connect(func(): _dispatch_action(button,action))
 	(parent if parent!=null else _default_parent()).add_child(button)
 	return button
 

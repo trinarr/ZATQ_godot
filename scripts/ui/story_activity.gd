@@ -1,5 +1,6 @@
 extends Control
 const LOC := preload("res://scripts/core/localization.gd")
+const DEFAULT_BACKGROUND := preload("res://assets/flash_ui/result_background.png")
 const QTE := preload("res://scripts/core/qte_rules.gd")
 # Interactive graph blocks own their state in Quest, so pause/resume and saves
 # do not reset the attempt count or grant extra time.
@@ -21,7 +22,7 @@ static func draw(owner: Control, data: Dictionary) -> void:
 func build() -> void:
  var path: String="res://assets/flash_ui/"+node.get("art","result_background")+"."+node.get("art_extension","png")
  if node.kind=="activity_dialogue":ui._set_backdrop(null)
- elif not ui._component_backdrop(node.get("art","result_background")) and ResourceLoader.exists(path):ui._set_backdrop(load(path))
+ elif not ui._component_backdrop(node.get("art","result_background")) and ResourceLoader.exists(path):ui._set_backdrop(DEFAULT_BACKGROUND if not node.has("art") else load(path))
  if not node.get("original_ui",false) and node.kind!="activity_dialogue":
   ui._shade(ui.screen,0.65)
   ui._text(node.get("speaker",""),Rect2(90,40,620,45),26,true)
@@ -46,9 +47,6 @@ func build() -> void:
   Quest.save_game()
   var m:Array=node.get("meter_rect",[150,245,500,40])
   meter=ui._text("",Rect2(m[0],m[1],m[2],m[3]),22,false,true)
-  meter.add_theme_color_override("font_shadow_color",Color.BLACK)
-  meter.add_theme_constant_override("shadow_offset_x",2)
-  meter.add_theme_constant_override("shadow_offset_y",2)
   var targets:Array=node.get("targets",[{"text":LOC.text("@loc:ui.story_activity.4"),"rect":node.get("target_rect",[270,315,260,65])}])
   for i:int in targets.size():
    var r:Array=targets[i].rect
