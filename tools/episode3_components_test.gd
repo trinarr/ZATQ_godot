@@ -36,7 +36,7 @@ func run() -> void:
    if data.kind not in ["city_ending","city_death","city_pickup","city_decision"]:
     check(ui.edge_hit!=null,"separate pause control: "+id)
    for child: Node in ui.viewport_canvas.art_layer.get_children():
-    check(child is TextureRect or child is ColorRect,"art is a primitive component")
+    check(child is TextureRect or child is ColorRect or child.get_script()==load("res://scripts/ui/qte_prompt.gd"),"art is a primitive component")
     check(child.mouse_filter==Control.MOUSE_FILTER_IGNORE,"art leaves clicks to original hotspots")
     if child is TextureRect:check(child.texture!=null,"texture loaded: "+id)
    if data.kind=="activity_qte":
@@ -57,6 +57,7 @@ func run() -> void:
  for name: String in parts:
   for part: Dictionary in parts[name]:
    if part.type=="texture":check(ResourceLoader.exists("res://assets/flash_ui/"+part.texture),"component resource: "+name)
+   elif part.type=="qte_prompt":check(part.transform.size()==6,"native QTE prompt")
    else:check(part.type=="panel" and part.color.size()==4,"native panel")
  ui.queue_free();await process_frame
  for path: String in [quest.save_path,quest.tmp_path,quest.backup_path]:

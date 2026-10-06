@@ -124,3 +124,4 @@ ui.story_activity.6,Нажать,
 ui.story_activity.7,Пауза,
 ui.story_activity.8,Неверный код. Осталось попыток: ,
 ui.story_activity.9,%.1f с · Нажатия %d/%d,
+ui.qte.press,Жми!,Press!

@@ -60,6 +60,11 @@ class Exporter(ResultRenderer):
   return True
  def walk(self,name,frame,ov,hide,path='',t=(1,0,0,1,0,0),alpha=1,depth=0):
   if depth>35 or name in self.omit_symbols or name in ['Symbol 88']:return
+  if name=='Symbol 27' and getattr(self,'native_qte_buttons',False):
+   points=[(t[0]*x+t[2]*y+t[4],t[1]*x+t[3]*y+t[5]) for x,y in [(0,0),(112,0),(0,112),(112,112)]]
+   xs,ys=zip(*points)
+   self.parts.append({'type':'qte_prompt','rect':[min(xs),min(ys),max(xs)-min(xs),max(ys)-min(ys)],'transform':list(t),'opacity':alpha,'text':'@loc:ui.qte.press','source':path+'/'+name})
+   return
   if self.photo and path==self.photo_path:
    file=self.photos/self.photo
    with Image.open(file) as im:w,h=im.size

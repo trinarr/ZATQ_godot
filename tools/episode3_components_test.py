@@ -18,9 +18,13 @@ for name in textures:
 for name,ps in parts.items():
  for extension in ['png']:assert not (ROOT/'assets/flash_ui'/(name+'.'+extension)).exists(),name
  for p in ps:
-  assert p['type'] in ['texture','panel'] and all(math.isfinite(v) for v in p['rect'])
+  assert p['type'] in ['texture','panel','qte_prompt'] and all(math.isfinite(v) for v in p['rect'])
   assert p['rect'][2]>=0 and p['rect'][3]>=0 and p.get('source')
   if p['type']=='panel':assert len(p['color'])==4 and all(0<=v<=1 for v in p['color'])
+  elif p['type']=='qte_prompt':
+   assert p['text']=='@loc:ui.qte.press' and len(p['transform'])==6
+   assert all(math.isfinite(v) for v in p['transform'])
+   assert abs(p['transform'][0]*p['transform'][2]+p['transform'][1]*p['transform'][3])<0.0001
   else:
    with Image.open(ROOT/'assets/flash_ui'/p['texture']) as im:assert im.size==tuple(round(v*2) for v in p['rect'][2:])
 second=json.loads((ROOT/'data/episode2_components.json').read_text())

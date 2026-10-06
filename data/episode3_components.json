@@ -958,14 +958,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_b988c68c72f6e792c1d1.png",
+      "type": "qte_prompt",
       "rect": [
-        204.5,
-        31.0,
-        113.0,
-        113.0
+        194.3127380371094,
+        21.110845947265624,
+        133.340087890625,
+        133.340087890625
       ],
+      "transform": [
+        0.9929962158203125,
+        -0.197540283203125,
+        0.197540283203125,
+        0.9929962158203125,
+        194.3127380371094,
+        43.235357666015624
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -996,14 +1005,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_6bd83941c78718c44dcf.png",
+      "type": "qte_prompt",
       "rect": [
-        77.5,
-        135.0,
-        113.0,
-        113.0
+        67.42026062011719,
+        125.09786987304688,
+        132.697509765625,
+        132.697509765625
       ],
+      "transform": [
+        0.9951934814453125,
+        -0.189605712890625,
+        0.189605712890625,
+        0.9951934814453125,
+        67.42026062011719,
+        146.33370971679688
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1034,14 +1052,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_cfe7ed5b71a5db88ddb8.png",
+      "type": "qte_prompt",
       "rect": [
-        75.0,
-        130.5,
-        113.5,
-        113.5
+        65.42367706298829,
+        120.93809967041017,
+        132.489013671875,
+        132.489013671875
       ],
+      "transform": [
+        0.9979705810546875,
+        -0.184967041015625,
+        0.184967041015625,
+        0.9979705810546875,
+        65.42367706298829,
+        141.65440826416017
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1072,14 +1099,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_0e8d0ef5f58ed7374d56.png",
+      "type": "qte_prompt",
       "rect": [
-        73.5,
-        125.5,
-        113.5,
-        113.5
+        64.11894760131835,
+        116.18558273315429,
+        131.832763671875,
+        131.832763671875
       ],
+      "transform": [
+        1.0000762939453125,
+        -0.177001953125,
+        0.177001953125,
+        1.0000762939453125,
+        64.11894760131835,
+        136.0098014831543
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1110,14 +1146,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_40e701de866e4213ca9e.png",
+      "type": "qte_prompt",
       "rect": [
-        83.0,
-        138.5,
-        114.0,
-        114.0
+        74.13725357055664,
+        129.93601760864257,
+        131.60546875,
+        131.60546875000003
       ],
+      "transform": [
+        1.0027313232421875,
+        -0.1723175048828125,
+        0.1723175048828125,
+        1.0027313232421875,
+        74.13725357055664,
+        149.23557815551757
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1148,14 +1193,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_1f9792c099c40061467f.png",
+      "type": "qte_prompt",
       "rect": [
-        82.0,
-        128.5,
-        114.0,
-        114.0
+        73.58491592407225,
+        120.11848144531251,
+        130.940673828125,
+        130.940673828125
       ],
+      "transform": [
+        1.00482177734375,
+        -0.1642913818359375,
+        0.1642913818359375,
+        1.00482177734375,
+        73.58491592407225,
+        138.5191162109375
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1186,14 +1240,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_f6ad597eaa2874208e52.png",
+      "type": "qte_prompt",
       "rect": [
-        81.0,
-        119.0,
-        114.0,
-        114.0
+        72.46773376464844,
+        110.8017547607422,
+        130.69970703125,
+        130.69970703125
       ],
+      "transform": [
+        1.0074005126953125,
+        -0.1595611572265625,
+        0.1595611572265625,
+        1.0074005126953125,
+        72.46773376464844,
+        128.6726043701172
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1224,14 +1287,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_00cdb62537b70ffd4ec5.png",
+      "type": "qte_prompt",
       "rect": [
-        78.0,
-        121.0,
-        114.5,
-        114.5
+        70.17158813476561,
+        113.28477172851564,
+        130.01953125,
+        130.01953125
       ],
+      "transform": [
+        1.0093994140625,
+        -0.1514892578125,
+        0.1514892578125,
+        1.0093994140625,
+        70.17158813476561,
+        130.25156860351564
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1262,14 +1334,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_02a1ac367c1142c98f36.png",
+      "type": "qte_prompt",
       "rect": [
-        75.0,
-        124.0,
-        114.5,
-        114.5
+        67.27843475341797,
+        116.32204742431642,
+        129.761474609375,
+        129.761474609375
       ],
+      "transform": [
+        1.0118560791015625,
+        -0.146728515625,
+        0.146728515625,
+        1.0118560791015625,
+        67.27843475341797,
+        132.75564117431642
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1300,14 +1381,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_f2ea8fa6b17f498fe529.png",
+      "type": "qte_prompt",
       "rect": [
-        77.5,
-        116.5,
-        114.5,
-        114.5
+        70.2004608154297,
+        109.1894287109375,
+        129.067626953125,
+        129.067626953125
       ],
+      "transform": [
+        1.0137939453125,
+        -0.1385955810546875,
+        0.1385955810546875,
+        1.0137939453125,
+        70.2004608154297,
+        124.7121337890625
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1338,14 +1428,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_f25e5e1d43d618684571.png",
+      "type": "qte_prompt",
       "rect": [
-        199.0,
-        44.0,
-        111.0,
-        111.0
+        186.21612548828125,
+        31.476770019531244,
+        136.458984375,
+        136.458984375
       ],
+      "transform": [
+        0.97161865234375,
+        -0.24676513671875,
+        0.24676513671875,
+        0.97161865234375,
+        186.21612548828125,
+        59.114465332031244
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1376,14 +1475,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_16170ddcb10a9ebde4c3.png",
+      "type": "qte_prompt",
       "rect": [
-        421.5,
-        0.0,
-        115.0,
-        112.0
+        414.55324401855466,
+        -9.667285156250003,
+        128.797607421875,
+        128.797607421875
       ],
+      "transform": [
+        1.01617431640625,
+        -0.1338043212890625,
+        0.1338043212890625,
+        1.01617431640625,
+        414.55324401855466,
+        5.318798828124997
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1414,14 +1522,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_83fdc7428ef6894d54f2.png",
+      "type": "qte_prompt",
       "rect": [
-        421.5,
-        0.0,
-        115.0,
-        109.5
+        414.82866210937505,
+        -11.991424560546875,
+        128.091796875,
+        128.091796875
       ],
+      "transform": [
+        1.01806640625,
+        -0.1256103515625,
+        0.1256103515625,
+        1.01806640625,
+        414.82866210937505,
+        2.076934814453125
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1452,14 +1569,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_06e896e257849e611b4d.png",
+      "type": "qte_prompt",
       "rect": [
-        420.5,
-        0.0,
-        115.5,
-        106.5
+        414.32891540527345,
+        -14.854536437988287,
+        127.80297851562494,
+        127.802978515625
       ],
+      "transform": [
+        1.02032470703125,
+        -0.1207733154296875,
+        0.1207733154296875,
+        1.02032470703125,
+        414.32891540527345,
+        -1.327925109863287
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1490,14 +1616,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_c2b513d05f6d9bc960be.png",
+      "type": "qte_prompt",
       "rect": [
-        431.5,
-        7.5,
-        115.5,
-        115.5
+        425.6014038085938,
+        1.8967803955078075,
+        127.0869140625,
+        127.08691406250001
       ],
+      "transform": [
+        1.02215576171875,
+        -0.112548828125,
+        0.112548828125,
+        1.02215576171875,
+        425.6014038085938,
+        14.502249145507808
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1528,14 +1663,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_6d1c71b410b3b44f3088.png",
+      "type": "qte_prompt",
       "rect": [
-        431.5,
-        0.0,
-        116.0,
-        115.5
+        426.06239852905276,
+        -5.929257202148435,
+        126.781005859375,
+        126.781005859375
       ],
+      "transform": [
+        1.0243072509765625,
+        -0.107666015625,
+        0.107666015625,
+        1.0243072509765625,
+        426.06239852905276,
+        6.129336547851565
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1566,14 +1710,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_88d99e6b1f22a94f1497.png",
+      "type": "qte_prompt",
       "rect": [
-        432.5,
-        0.0,
-        116.0,
-        108.0
+        427.4644775390625,
+        -13.185673522949216,
+        126.05126953125,
+        126.05126953125
       ],
+      "transform": [
+        1.0260772705078125,
+        -0.0993804931640625,
+        0.0993804931640625,
+        1.0260772705078125,
+        427.4644775390625,
+        -2.055058288574216
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1604,14 +1757,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_7fa85c3fd8190732a901.png",
+      "type": "qte_prompt",
       "rect": [
-        430.5,
-        0.0,
-        116.0,
-        112.0
+        425.5087310791015,
+        -8.654017639160159,
+        125.731689453125,
+        125.731689453125
       ],
+      "transform": [
+        1.028106689453125,
+        -0.0944976806640625,
+        0.0944976806640625,
+        1.028106689453125,
+        425.5087310791015,
+        1.929722595214841
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1642,14 +1804,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_6595053174cd67a787dc.png",
+      "type": "qte_prompt",
       "rect": [
-        428.5,
-        0.5,
-        116.5,
-        116.5
+        424.2671783447266,
+        -3.6250732421875007,
+        124.98828124999994,
+        124.98828125
       ],
+      "transform": [
+        1.029815673828125,
+        -0.086151123046875,
+        0.086151123046875,
+        1.029815673828125,
+        424.2671783447266,
+        6.023852539062499
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1680,14 +1851,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_a7efa8dd8f2f59385c4b.png",
+      "type": "qte_prompt",
       "rect": [
-        432.0,
-        0.0,
-        116.5,
-        112.5
+        427.88010559082034,
+        -8.136923217773436,
+        124.6533203125,
+        124.6533203125
       ],
+      "transform": [
+        1.0317535400390625,
+        -0.0812225341796875,
+        0.0812225341796875,
+        1.0317535400390625,
+        427.88010559082034,
+        0.9600006103515639
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1718,14 +1898,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_386afdc17b60157d99e0.png",
+      "type": "qte_prompt",
       "rect": [
-        322.5,
-        318.0,
-        116.5,
-        116.5
+        318.586962890625,
+        314.2266052246094,
+        123.899658203125,
+        123.899658203125
       ],
+      "transform": [
+        1.0334014892578125,
+        -0.072845458984375,
+        0.072845458984375,
+        1.0334014892578125,
+        318.586962890625,
+        322.3852966308594
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1756,14 +1945,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_239fe99e3f6364edb93c.png",
+      "type": "qte_prompt",
       "rect": [
-        198.0,
-        40.0,
-        111.0,
-        111.0
+        185.39068298339842,
+        27.60771789550781,
+        135.86767578124997,
+        135.86767578125
       ],
+      "transform": [
+        0.9740142822265625,
+        -0.2390899658203125,
+        0.2390899658203125,
+        0.9740142822265625,
+        185.39068298339842,
+        54.38579406738281
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1794,14 +1992,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_2d0a24970d8f2312d328.png",
+      "type": "qte_prompt",
       "rect": [
-        320.0,
-        314.5,
-        117.0,
-        117.0
+        316.8125541687012,
+        311.2282577514648,
+        123.547607421875,
+        123.547607421875
       ],
+      "transform": [
+        1.0352325439453125,
+        -0.06787109375,
+        0.06787109375,
+        1.0352325439453125,
+        316.8125541687012,
+        318.8298202514648
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1832,14 +2039,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_7b17f7596edadb7013a6.png",
+      "type": "qte_prompt",
       "rect": [
-        318.0,
-        311.0,
-        116.5,
-        117.0
+        314.78183364868164,
+        308.2020462036133,
+        122.778564453125,
+        122.778564453125
       ],
+      "transform": [
+        1.03680419921875,
+        -0.0594329833984375,
+        0.0594329833984375,
+        1.03680419921875,
+        314.78183364868164,
+        314.8585403442383
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1870,14 +2086,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_19de958e17db278fb050.png",
+      "type": "qte_prompt",
       "rect": [
-        325.5,
-        327.5,
-        117.0,
-        117.0
+        322.8210983276367,
+        324.9844116210938,
+        122.409423828125,
+        122.409423828125
       ],
+      "transform": [
+        1.03851318359375,
+        -0.0544281005859375,
+        0.0544281005859375,
+        1.03851318359375,
+        322.8210983276367,
+        331.0803588867188
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1908,14 +2133,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_49a753d2b6631bd4b9fb.png",
+      "type": "qte_prompt",
       "rect": [
-        324.0,
-        319.5,
-        117.0,
-        117.0
+        321.74427185058596,
+        317.1042709350586,
+        121.6318359375,
+        121.6318359375
       ],
+      "transform": [
+        1.0400238037109375,
+        -0.0459747314453125,
+        0.0459747314453125,
+        1.0400238037109375,
+        321.74427185058596,
+        322.2534408569336
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1946,14 +2180,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_a9e873d8e74688898674.png",
+      "type": "qte_prompt",
       "rect": [
-        322.5,
-        311.0,
-        117.5,
-        117.5
+        320.83927078247075,
+        309.2557228088379,
+        120.8662109375,
+        120.8662109375
       ],
+      "transform": [
+        1.0416717529296875,
+        -0.0374908447265625,
+        0.0374908447265625,
+        1.0416717529296875,
+        320.83927078247075,
+        313.4546974182129
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -1984,14 +2227,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_f3711ad53155c32a29db.png",
+      "type": "qte_prompt",
       "rect": [
-        318.5,
-        315.0,
-        117.5,
-        117.5
+        316.9318542480469,
+        313.54042510986324,
+        120.45947265625,
+        120.45947265625
       ],
+      "transform": [
+        1.0430755615234375,
+        -0.0324554443359375,
+        0.0324554443359375,
+        1.0430755615234375,
+        316.9318542480469,
+        317.17543487548824
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -2022,14 +2274,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_847448552f0f088eef97.png",
+      "type": "qte_prompt",
       "rect": [
-        314.5,
-        319.0,
-        117.5,
-        117.5
+        313.00545272827145,
+        317.80519714355466,
+        120.061279296875,
+        120.061279296875
       ],
+      "transform": [
+        1.0446014404296875,
+        -0.027374267578125,
+        0.027374267578125,
+        1.0446014404296875,
+        313.00545272827145,
+        320.87111511230466
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -2060,14 +2321,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_260fa45cf80e16ea407c.png",
+      "type": "qte_prompt",
       "rect": [
-        316.5,
-        314.5,
-        117.5,
-        117.5
+        315.6910369873047,
+        313.5695007324219,
+        119.254638671875,
+        119.254638671875
       ],
+      "transform": [
+        1.04595947265625,
+        -0.0188140869140625,
+        0.0188140869140625,
+        1.04595947265625,
+        315.6910369873047,
+        315.6766784667969
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -2126,14 +2396,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_5881433a019e0c067774.png",
+      "type": "qte_prompt",
       "rect": [
-        196.0,
-        35.5,
-        111.5,
-        111.5
+        183.79721679687498,
+        23.640014648437507,
+        135.720703125,
+        135.720703125
       ],
+      "transform": [
+        0.9771728515625,
+        -0.234619140625,
+        0.234619140625,
+        0.9771728515625,
+        183.79721679687498,
+        49.91735839843751
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -2178,14 +2457,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_5a9aa698c3b6a64affbc.png",
+      "type": "qte_prompt",
       "rect": [
-        208.0,
-        48.5,
-        111.5,
-        112.0
+        196.09663467407225,
+        37.040428924560544,
+        135.11914062499997,
+        135.119140625
       ],
+      "transform": [
+        0.9795379638671875,
+        -0.2268829345703125,
+        0.2268829345703125,
+        0.9795379638671875,
+        196.09663467407225,
+        62.451317596435544
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -2216,14 +2504,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_32e414e63e5a2dc3db9e.png",
+      "type": "qte_prompt",
       "rect": [
-        206.5,
-        40.0,
-        112.0,
-        111.5
+        194.98601989746095,
+        28.30880432128906,
+        134.955078125,
+        134.955078125
       ],
+      "transform": [
+        0.98260498046875,
+        -0.22235107421875,
+        0.22235107421875,
+        0.98260498046875,
+        194.98601989746095,
+        53.21212463378906
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -2254,14 +2551,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_7b9e3325e49eb319e4bd.png",
+      "type": "qte_prompt",
       "rect": [
-        206.0,
-        30.5,
-        112.0,
-        112.0
+        194.8574378967285,
+        19.575621795654293,
+        134.34155273437497,
+        134.341552734375
       ],
+      "transform": [
+        0.98492431640625,
+        -0.2145538330078125,
+        0.2145538330078125,
+        0.98492431640625,
+        194.8574378967285,
+        43.60565109252929
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -2292,14 +2598,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_1e9dc87f39e61541321f.png",
+      "type": "qte_prompt",
       "rect": [
-        204.0,
-        34.0,
-        112.0,
-        112.5
+        192.90044479370118,
+        23.125397491455075,
+        134.162109375,
+        134.162109375
       ],
+      "transform": [
+        0.9878692626953125,
+        -0.2100067138671875,
+        0.2100067138671875,
+        0.9878692626953125,
+        192.90044479370118,
+        46.646149444580075
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }
@@ -2330,14 +2645,23 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_089c6dff753941329727.png",
+      "type": "qte_prompt",
       "rect": [
-        202.0,
-        37.0,
-        113.0,
-        112.5
+        191.66865005493165,
+        26.617400360107432,
+        133.53149414062497,
+        133.531494140625
       ],
+      "transform": [
+        0.9901123046875,
+        -0.2021331787109375,
+        0.2021331787109375,
+        0.9901123046875,
+        191.66865005493165,
+        49.25631637573243
+      ],
+      "opacity": 1,
+      "text": "@loc:ui.qte.press",
       "source": "Mov.Mov/Symbol 27",
       "layer": "background"
     }

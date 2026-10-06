@@ -33,7 +33,7 @@ def build(archive,root,only=None):
    for n in z.namelist():
     if '/ZombieApocalypse/LIBRARY/' in n and n.endswith(('.xml','.png','.jpg')):(lib/Path(n).name).write_bytes(z.read(n))
     elif n.startswith('assets/Images/') and not n.endswith('/'):(photos/Path(n).name).write_bytes(z.read(n))
-  r=Exporter(lib,destination,root/'fonts/flash');r.photos=photos;r.scratch=tmp;r.raster_cache={};r.omit_brushes=True
+  r=Exporter(lib,destination,root/'fonts/flash');r.photos=photos;r.scratch=tmp;r.raster_cache={};r.omit_brushes=True;r.native_qte_buttons=True
   result=json.loads((root/'data/episode3_components.json').read_text()) if only else {}
   for name,(items,spec) in sorted(plans(root).items()):
    if only and name not in only:continue
