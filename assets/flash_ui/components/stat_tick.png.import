@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crf140nk1y4bg"
-path="res://.godot/imported/part_ad6b91577988ccaf5ef3.png-a8cf28932cb8e5178243156e6b293ac4.ctex"
+uid="uid://jil854ma86bd"
+path="res://.godot/imported/stat_tick.png-7a4e89d3860b97b4d35fbd806aa57a28.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/flash_ui/components/part_ad6b91577988ccaf5ef3.png"
-dest_files=["res://.godot/imported/part_ad6b91577988ccaf5ef3.png-a8cf28932cb8e5178243156e6b293ac4.ctex"]
+source_file="res://assets/flash_ui/components/stat_tick.png"
+dest_files=["res://.godot/imported/stat_tick.png-7a4e89d3860b97b4d35fbd806aa57a28.ctex"]
 
 [params]
 

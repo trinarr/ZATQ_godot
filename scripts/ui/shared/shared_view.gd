@@ -4,6 +4,7 @@ const LOC := preload("res://scripts/core/localization.gd")
 const BRUSH := preload("res://scripts/ui/torn_brush.gd")
 const ALPHA_HOTSPOT := preload("res://scripts/ui/alpha_hotspot.gd")
 const LAYOUT := preload("res://scripts/ui/landscape_stage_layout.gd")
+const STATISTIC_ICON := preload("res://scripts/ui/statistic_icon.gd")
 const COMPONENTS := preload("res://scripts/ui/flash_components.gd")
 
 const TITLE_FONT: Font = preload("res://fonts/flash/font_1.ttf")
@@ -153,7 +154,8 @@ func _button_text(value:String,rect:Rect2,font_size:int=22,parent:Control=null,f
 func _draw_components(filename: String, parent: Control, layer: String) -> void:
 	for part: Dictionary in art_components[filename]:
 		if part.layer != layer: continue
-		var component := TextureRect.new()
+		var component: TextureRect = STATISTIC_ICON.new() if part.get("style","")=="statistics_icon" else TextureRect.new()
+		component.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		component.texture = load("res://assets/flash_ui/" + part.texture)
 		var r: Array = part.rect
 		component.position = Vector2(r[0], r[1]) * 2

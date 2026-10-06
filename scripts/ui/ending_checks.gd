@@ -2,8 +2,10 @@ extends Control
 # Flash: Symbol 211.LeftOpt (132,280), Tick1/2/3 at (152/167/182,4).
 # ResultBad.Summer orders Episode III as 64, 68, then the shared 67/73 ending.
 const ORIGINAL_SLOTS := {1:[6,77,78],2:[38,43,47],3:[64,68,67]}
-const FOUND: Texture2D = preload("res://assets/flash_ui/components/ending_found.png")
-const UNSEEN: Texture2D = preload("res://assets/flash_ui/components/ending_unseen.png")
+# Same clean tick sprite and shader extrusion as the win counter.
+const ICON_VIEW := preload("res://scripts/ui/statistic_icon.gd")
+const ICON: Texture2D = preload("res://assets/flash_ui/components/stat_tick.png")
+const UNSEEN_COLOR := Color("803c3c")
 const LAYOUT := preload("res://scripts/ui/landscape_stage_layout.gd")
 
 static func ending_slots(number: int, nodes: Dictionary) -> Array:
@@ -23,13 +25,14 @@ func configure(number: int, unlocked: Array, nodes: Dictionary) -> void:
 		child.queue_free()
 	var slots := ending_slots(number,nodes)
 	for i: int in slots.size():
-		var tick := TextureRect.new()
+		var tick := ICON_VIEW.new()
+		tick.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		tick.name = "EndingTick%d" % (i+1)
-		tick.texture = FOUND if slots[i] in unlocked else UNSEEN
+		tick.texture = ICON
+		tick.modulate = Color.WHITE if slots[i] in unlocked else UNSEEN_COLOR
 		var rect := LAYOUT.scaled_rect(Rect2(284+i*15,284,14,17))
 		tick.position = rect.position
 		tick.size = rect.size
-		tick.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		tick.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		tick.set_meta("ending_id",slots[i])
 		add_child(tick)

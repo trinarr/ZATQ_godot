@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ccybadwrgd8c1"
-path="res://.godot/imported/ending_found.png-0482493afe4e665b50df75523d0dad28.ctex"
+uid="uid://f2h7ih8stt2f"
+path="res://.godot/imported/stat_skull.png-a90bcf97d11ccbac29ad836810fcaa8e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/flash_ui/components/ending_found.png"
-dest_files=["res://.godot/imported/ending_found.png-0482493afe4e665b50df75523d0dad28.ctex"]
+source_file="res://assets/flash_ui/components/stat_skull.png"
+dest_files=["res://.godot/imported/stat_skull.png-a90bcf97d11ccbac29ad836810fcaa8e.ctex"]
 
 [params]
 

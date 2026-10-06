@@ -28,7 +28,7 @@ def menu_plans():
             'RightOpt': 1 if i in [1, 3, 6, 8, 10] else 0,
             'But3': 1, 'But4': 1, 'But1': 1, 'But2': 1},
             h={'NameTxt', 'EpOptions', 'InfoOpt', 'AnsNumb', 'txtWins', 'txtLoses',
-               'LeftOpt.Tick1', 'LeftOpt.Tick2', 'LeftOpt.Tick3'})]
+               'LeftOpt.Tick1', 'LeftOpt.Tick2', 'LeftOpt.Tick3', 'RightOpt'})]
     return plans
 
 
@@ -85,6 +85,10 @@ def export_components(renderer, plans, root):
                                           'rect': [bounds[0]/2, bounds[1]/2, image.width/2, image.height/2],
                                           'layer': 'background' if not parts else 'foreground',
                                           'source': symbol + '/' + (element.get('name') or element.get('libraryItemName') or layer.get('name', 'shape'))})
+            if screen.startswith('adaptive_selector_') and int(screen.removeprefix('adaptive_selector_')) in [0,2,4,5,7,9,11]:
+                parts.extend([
+                    {'texture':'components/stat_skull.png','rect':[482.0,161.0,14.0,19.0], 'source':'Symbol 211/RightOpt/skull','layer':'foreground','style':'statistics_icon'},
+                    {'texture':'components/stat_tick.png','rect':[568.0,162.0,15.0,18.0], 'source':'Symbol 211/RightOpt/tick','layer':'foreground','style':'statistics_icon'}])
             manifest[screen] = parts
     renderer.out = original_output
     for path in destination.glob('part_*.png'):

@@ -37,7 +37,8 @@ func run() -> void:
 			if view==null:continue
 			for i: int in 3:
 				var tick: TextureRect = view.get_child(i)
-				check(tick.texture==(CHECKS.FOUND if slots[i] in unlocked else CHECKS.UNSEEN),"ending-specific state, not completed count")
+				check(tick.texture==CHECKS.ICON and tick.get_script()==CHECKS.ICON_VIEW,"same statistics icon resource")
+				check(tick.modulate==(Color.WHITE if slots[i] in unlocked else CHECKS.UNSEEN_COLOR),"ending-specific state, not completed count")
 				check(tick.position==Vector2(284+i*15,284)*2 and tick.size==Vector2(28,34),"original geometry")
 				check(tick.mouse_filter==Control.MOUSE_FILTER_IGNORE,"indicator does not intercept input")
 				check(tick.get_meta("ending_id")==slots[i],"original ending order")
@@ -58,7 +59,7 @@ func run() -> void:
 		if int(ui._selector_items()[i].get("episode",0))==3:ui.selector_index=i
 	ui._draw_selector()
 	var view := indicators(ui)
-	check(view.get_child(0).texture==CHECKS.UNSEEN and view.get_child(1).texture==CHECKS.UNSEEN and view.get_child(2).texture==CHECKS.FOUND,"67/73 marks only third slot after load")
+	check(view.get_child(0).modulate==CHECKS.UNSEEN_COLOR and view.get_child(1).modulate==CHECKS.UNSEEN_COLOR and view.get_child(2).modulate==Color.WHITE,"67/73 marks only third slot after load")
 	ui._show_selector("tests")
 	check(indicators(ui)==null,"quiz selector has no ending checks")
 	ui._show_selector("episodes")

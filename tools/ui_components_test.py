@@ -30,11 +30,7 @@ def main():
     screens = json.loads((ROOT / 'data/ui_components.json').read_text())
     assert len(screens) == 14
     assets = {p['texture'] for parts in screens.values() for p in parts}
-    ending_assets = {'components/ending_found.png', 'components/ending_unseen.png'}
-    assert assets | ending_assets == {'components/' + p.name for p in (ART / 'components').glob('*.png')}
-    for name in ending_assets:
-        with Image.open(ART / name) as tick:
-            assert tick.size == (14,17) and tick.mode == 'RGBA', name
+    assert assets == {'components/' + p.name for p in (ART / 'components').glob('*.png')}
     # Every selector shares its original frame; image changes independently.
     shared = set(p['texture'] for p in screens['adaptive_selector_0'])
     for i in range(12):
@@ -50,9 +46,12 @@ def main():
         assert not (ART / (screen.removeprefix('adaptive_') + '.png')).exists()
         image = compose(parts)
         if screen.startswith("adaptive_selector_") and int(screen.removeprefix("adaptive_selector_")) in [0,2,4,5,7,9,11]:
-            with Image.open(ART / "components/ending_unseen.png") as tick:
+            with Image.open(ART / "components/stat_tick.png") as source:
+                tick = source.convert('RGBA').resize((28,34),Image.Resampling.BILINEAR)
+                r,g,b,a = tick.split()
+                tick = Image.merge('RGBA',(r.point(lambda v:round(v*128/255)),g.point(lambda v:round(v*60/255)),b.point(lambda v:round(v*60/255)),a))
                 for i in range(3):
-                    image.alpha_composite(tick.resize((28,34),Image.Resampling.BILINEAR),(568+i*30,568))
+                    image.alpha_composite(tick,(568+i*30,568))
         if args.baseline:
             old = subprocess.check_output(['git', 'show', args.baseline + ':assets/flash_ui/' + screen + '.png'], cwd=ROOT)
             reference = Image.open(io.BytesIO(old)).convert('RGBA')

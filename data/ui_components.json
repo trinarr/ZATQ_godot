@@ -214,15 +214,28 @@
       "layer": "foreground"
     },
     {
-      "texture": "components/part_ad6b91577988ccaf5ef3.png",
+      "texture": "components/stat_skull.png",
       "rect": [
         482.0,
         161.0,
-        101.0,
+        14.0,
         19.0
       ],
-      "source": "Symbol 211/RightOpt",
-      "layer": "foreground"
+      "source": "Symbol 211/RightOpt/skull",
+      "layer": "foreground",
+      "style": "statistics_icon"
+    },
+    {
+      "texture": "components/stat_tick.png",
+      "rect": [
+        568.0,
+        162.0,
+        15.0,
+        18.0
+      ],
+      "source": "Symbol 211/RightOpt/tick",
+      "layer": "foreground",
+      "style": "statistics_icon"
     }
   ],
   "adaptive_selector_1": [
@@ -339,15 +352,28 @@
       "layer": "foreground"
     },
     {
-      "texture": "components/part_ad6b91577988ccaf5ef3.png",
+      "texture": "components/stat_skull.png",
       "rect": [
         482.0,
         161.0,
-        101.0,
+        14.0,
         19.0
       ],
-      "source": "Symbol 211/RightOpt",
-      "layer": "foreground"
+      "source": "Symbol 211/RightOpt/skull",
+      "layer": "foreground",
+      "style": "statistics_icon"
+    },
+    {
+      "texture": "components/stat_tick.png",
+      "rect": [
+        568.0,
+        162.0,
+        15.0,
+        18.0
+      ],
+      "source": "Symbol 211/RightOpt/tick",
+      "layer": "foreground",
+      "style": "statistics_icon"
     }
   ],
   "adaptive_selector_3": [
@@ -464,15 +490,28 @@
       "layer": "foreground"
     },
     {
-      "texture": "components/part_ad6b91577988ccaf5ef3.png",
+      "texture": "components/stat_skull.png",
       "rect": [
         482.0,
         161.0,
-        101.0,
+        14.0,
         19.0
       ],
-      "source": "Symbol 211/RightOpt",
-      "layer": "foreground"
+      "source": "Symbol 211/RightOpt/skull",
+      "layer": "foreground",
+      "style": "statistics_icon"
+    },
+    {
+      "texture": "components/stat_tick.png",
+      "rect": [
+        568.0,
+        162.0,
+        15.0,
+        18.0
+      ],
+      "source": "Symbol 211/RightOpt/tick",
+      "layer": "foreground",
+      "style": "statistics_icon"
     }
   ],
   "adaptive_selector_5": [
@@ -532,15 +571,28 @@
       "layer": "foreground"
     },
     {
-      "texture": "components/part_ad6b91577988ccaf5ef3.png",
+      "texture": "components/stat_skull.png",
       "rect": [
         482.0,
         161.0,
-        101.0,
+        14.0,
         19.0
       ],
-      "source": "Symbol 211/RightOpt",
-      "layer": "foreground"
+      "source": "Symbol 211/RightOpt/skull",
+      "layer": "foreground",
+      "style": "statistics_icon"
+    },
+    {
+      "texture": "components/stat_tick.png",
+      "rect": [
+        568.0,
+        162.0,
+        15.0,
+        18.0
+      ],
+      "source": "Symbol 211/RightOpt/tick",
+      "layer": "foreground",
+      "style": "statistics_icon"
     }
   ],
   "adaptive_selector_6": [
@@ -657,15 +709,28 @@
       "layer": "foreground"
     },
     {
-      "texture": "components/part_ad6b91577988ccaf5ef3.png",
+      "texture": "components/stat_skull.png",
       "rect": [
         482.0,
         161.0,
-        101.0,
+        14.0,
         19.0
       ],
-      "source": "Symbol 211/RightOpt",
-      "layer": "foreground"
+      "source": "Symbol 211/RightOpt/skull",
+      "layer": "foreground",
+      "style": "statistics_icon"
+    },
+    {
+      "texture": "components/stat_tick.png",
+      "rect": [
+        568.0,
+        162.0,
+        15.0,
+        18.0
+      ],
+      "source": "Symbol 211/RightOpt/tick",
+      "layer": "foreground",
+      "style": "statistics_icon"
     }
   ],
   "adaptive_selector_8": [
@@ -782,15 +847,28 @@
       "layer": "foreground"
     },
     {
-      "texture": "components/part_ad6b91577988ccaf5ef3.png",
+      "texture": "components/stat_skull.png",
       "rect": [
         482.0,
         161.0,
-        101.0,
+        14.0,
         19.0
       ],
-      "source": "Symbol 211/RightOpt",
-      "layer": "foreground"
+      "source": "Symbol 211/RightOpt/skull",
+      "layer": "foreground",
+      "style": "statistics_icon"
+    },
+    {
+      "texture": "components/stat_tick.png",
+      "rect": [
+        568.0,
+        162.0,
+        15.0,
+        18.0
+      ],
+      "source": "Symbol 211/RightOpt/tick",
+      "layer": "foreground",
+      "style": "statistics_icon"
     }
   ],
   "adaptive_selector_10": [
@@ -907,15 +985,28 @@
       "layer": "foreground"
     },
     {
-      "texture": "components/part_ad6b91577988ccaf5ef3.png",
+      "texture": "components/stat_skull.png",
       "rect": [
         482.0,
         161.0,
-        101.0,
+        14.0,
         19.0
       ],
-      "source": "Symbol 211/RightOpt",
-      "layer": "foreground"
+      "source": "Symbol 211/RightOpt/skull",
+      "layer": "foreground",
+      "style": "statistics_icon"
+    },
+    {
+      "texture": "components/stat_tick.png",
+      "rect": [
+        568.0,
+        162.0,
+        15.0,
+        18.0
+      ],
+      "source": "Symbol 211/RightOpt/tick",
+      "layer": "foreground",
+      "style": "statistics_icon"
     }
   ]
 }
