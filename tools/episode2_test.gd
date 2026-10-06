@@ -84,7 +84,7 @@ func run() -> void:
   var choices: Array = quest.available_choices()
   for choice: Dictionary in choices:
    check(choice.has("mask") and choice.rect[2]<730,"arrow uses cropped alpha hit region")
-   var button: Button = scene.screen.get_node(choice.text)
+   var button: Button = scene.screen.find_child(choice.text,true,false)
    check(button.hit_image!=null,"arrow mask imported")
    check(button.size.x==choice.rect[2]*2 and button.size.y==choice.rect[3]*2,"arrow hit size is uniformly doubled")
  # Enter through the episode selector, restart the current episode, and return to menu.

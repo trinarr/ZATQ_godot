@@ -155,6 +155,9 @@ def build(archive,root,only=None):
      if bx<=x+w/2<=bx+bw and by<=y+h/2<=by+bh and w<=bw*1.4 and h<=bh*1.4:part['layer']='foreground';break
   (root/'data/episode1_brushes.json').write_text(json.dumps(brush_sets,ensure_ascii=False,indent=2)+'\n')
   (root/'data/episode1_components.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
+  from build_episode1_highlights import migrate
+  migrate(root)
+  result=json.loads((root/'data/episode1_components.json').read_text())
   used={p['texture'].split('/')[-1] for ps in result.values() for p in ps if p['type']=='texture'}
   for f in destination.glob('*.png'):
    if f.name not in used:f.unlink();Path(str(f)+'.import').unlink(missing_ok=True)

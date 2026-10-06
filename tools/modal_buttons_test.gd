@@ -88,7 +88,8 @@ func run() -> void:
  quest.sound_enabled=false;quest.save_path="user://modal_buttons_test.json";quest.tmp_path="user://modal_buttons_test.tmp";quest.backup_path="user://modal_buttons_test.bak"
  var ui: Control=load("res://scenes/Main.tscn").instantiate();root.add_child(ui)
  await process_frame
- for name: String in ["Эпизоды","Тесты","Справка","Выход"]:
+ check(ui.find_child("Выход",true,false)==null,"main menu has no Exit button")
+ for name: String in ["Эпизоды","Тесты","Справка"]:
   check(ui.screen.get_node(name).get_script()==TEXT,"main menu uses text component: "+name)
  check(ui.screen.get_node("Звук").get_script()==ICON,"sound uses icon component")
  check(ui.screen.get_node("Звук").icons.size()==1,"sound icon belongs to its button")

@@ -14,8 +14,8 @@ from PIL import Image
 from build_episode1_components import Exporter
 
 ROOT = Path(__file__).resolve().parents[1]
-BUTTONS = [('restart', 0, 13), ('sound', 54, 79),
-           ('menu', 54, 144), ('quit', 10, 210)]
+BUTTONS = [('row_1', 0, 13), ('row_2', 54, 79),
+           ('row_3', 54, 144), ('row_4', 10, 210)]
 
 
 def build(archive, root=ROOT):

@@ -5,6 +5,7 @@ from PIL import Image
 from story_graph_format import load_all
 from clean_episode1_art import retired
 ROOT=Path(__file__).resolve().parents[1]
+highlights=json.loads((ROOT/'data/episode1_highlights.json').read_text())
 parts=json.loads((ROOT/'data/episode1_components.json').read_text())
 textures={p['texture'] for ps in parts.values() for p in ps if p['type']=='texture'}
 for name in textures:
@@ -16,10 +17,11 @@ for name in textures:
 for name,ps in parts.items():
  assert not (ROOT/'assets/flash_ui'/(name+'.png')).exists(),name
  for p in ps:
-  assert p['type'] in ['texture','panel'] and all(math.isfinite(v) for v in p['rect'])
+  assert p['type'] in ['texture','panel','highlight'] and all(math.isfinite(v) for v in p['rect'])
   assert p['rect'][2]>=0 and p['rect'][3]>=0
   assert p.get('source')
   if p['type']=='panel':assert len(p['color'])==4 and all(0<=v<=1 for v in p['color'])
+  elif p['type']=='highlight':assert p['region'] in highlights['regions']
   else:
    with Image.open(ROOT/'assets/flash_ui'/p['texture']) as im:assert im.size==tuple(round(v*2) for v in p['rect'][2:])
 for n in load_all(ROOT).values():
@@ -27,7 +29,7 @@ for n in load_all(ROOT).values():
  for key in ['art','art_on_foot','controls_art','decision_art']:
   if key in n:assert n[key] in parts,(key,n[key])
  for c in n.get('choices',[]):
-  if 'mask' in c:assert (ROOT/'assets/flash_ui'/(c['mask']+'.png')).exists()
+  if 'mask' in c and c['mask'] not in highlights['masks']:assert (ROOT/'assets/flash_ui'/(c['mask']+'.png')).exists()
 assert not retired(ROOT),'retired composites were left behind'
 assert textures=={'episode1_components/'+p.name for p in (ROOT/'assets/flash_ui/episode1_components').glob('*.png')}
 print(f'PASS: {len(parts)} component sets, {len(textures)} complete shared lossless PNG textures, native panels, masks, cleanup')

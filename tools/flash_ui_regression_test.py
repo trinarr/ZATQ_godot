@@ -7,7 +7,10 @@ ART=ROOT/'assets/flash_ui'
 layout=json.loads((ROOT/'data/ui_brush_layout.json').read_text())
 components=json.loads((ROOT/'data/ui_components.json').read_text())
 for name in ['adaptive_menu','adaptive_menu_off']:
- assert len(layout[name])==6,name
+ assert len(layout[name])==5,name
+ assert all(b["path"]!="But4" for b in layout[name]),name
+ text_layout=json.loads((ROOT/"data/ui_text_layout.json").read_text())
+ assert len(text_layout[name])==3 and all(b["text"]!="@loc:ui.art."+name+".0" for b in text_layout[name]),name
  assert all(b['color'][0]>b['color'][1]*1.4 for b in layout[name]),name
  assert components[name],name
  assert not (ART/(name+'.png')).exists(),name

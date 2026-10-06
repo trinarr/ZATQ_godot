@@ -1,5 +1,7 @@
 extends "res://scripts/ui/shared/shared_view.gd"
 
+const MENU_LOGO := preload("res://scripts/ui/menu_logo.gd")
+const MENU_TIMELINE := preload("res://scripts/ui/menu_timeline.gd")
 const PAUSE_MENU := preload("res://scenes/shared/PauseMenu.tscn")
 const ITEM_POPUP := preload("res://scenes/shared/ItemPopup.tscn")
 const PLAYER_DIALOG := preload("res://scenes/shared/PlayerDialog.tscn")
@@ -12,6 +14,9 @@ var viewport_canvas: Control
 var edge_tab: TextureRect
 var edge_hit: Button
 var screen: Control
+var world_layer: Control
+var menu_logo: Control
+var menu_opening: Node
 var overlay: Control
 var music := AudioStreamPlayer.new()
 var effects := AudioStreamPlayer.new()
@@ -87,6 +92,9 @@ func _notification(what: int) -> void:
 		Quest.save_game()
 
 func _unhandled_key_input(event: InputEvent) -> void:
+	if is_instance_valid(menu_opening) and menu_opening.playing:
+		get_viewport().set_input_as_handled()
+		return
 	if event.is_action_pressed("ui_cancel"):
 		if is_instance_valid(overlay): _close_overlay()
 		elif paused: _resume()
@@ -105,6 +113,7 @@ func _fit_stage() -> void:
 	var fit: float = LAYOUT.fit_scale(safe.size)
 	screen.scale = Vector2.ONE * fit
 	screen.position = LAYOUT.centered_offset(safe.size)
+	_layout_world_layer()
 	_layout_edge_tab()
 	for child: Node in screen.get_children():
 		if child.has_method("set_cover_rect"): child.set_cover_rect(_cover_rect())
@@ -116,7 +125,13 @@ func _stop_cutscene() -> void:
 	if is_instance_valid(screen): screen.modulate = Color.WHITE
 	if is_instance_valid(viewport_canvas): viewport_canvas.background.modulate = Color.WHITE
 
-func _reset_screen() -> void:
+func _reset_screen(preserve_logo: bool = false) -> void:
+	menu_opening = null
+	if is_instance_valid(menu_logo):
+		if preserve_logo: menu_logo.reparent(self)
+		else:
+			menu_logo.free()
+			menu_logo = null
 	television.stop()
 	_stop_cutscene()
 	if is_instance_valid(screen):
@@ -128,11 +143,32 @@ func _reset_screen() -> void:
 	screen = Control.new()
 	screen.size = LAYOUT.BASE_SIZE
 	viewport_canvas.safe_layer.add_child(screen)
+	world_layer = Control.new()
+	world_layer.name = "WorldInteraction"
+	world_layer.size = LAYOUT.BASE_SIZE
+	world_layer.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	screen.add_child(world_layer)
 	_set_backdrop(load("res://assets/flash_ui/background.png"))
 	_fit_stage()
 
 func _set_backdrop(texture: Texture2D, crop_pause: bool = false) -> void:
 	viewport_canvas.set_background(texture, crop_pause)
+
+func _layout_world_layer() -> void:
+	if not is_instance_valid(world_layer): return
+	# Background art fills the safe rectangle; story interaction shares its
+	# exact transform while captions, pause and modals keep the fitted UI space.
+	world_layer.scale = viewport_canvas.art_layer.scale / screen.scale
+	world_layer.position = screen.get_global_transform().affine_inverse() * viewport_canvas.art_layer.global_position
+
+func _world_host() -> Control:
+	return world_layer if viewport_canvas.component_background_active else screen
+
+func _world_art(filename: String) -> Control:
+	return _art(filename,_world_host())
+
+func _world_hit(label: String, rect: Rect2, action: Callable, mask: String = "") -> Button:
+	return _hit(label,rect,action,_world_host(),mask)
 
 func _layout_edge_tab() -> void:
 	if not is_instance_valid(edge_tab) or not is_instance_valid(edge_hit): return
@@ -162,7 +198,7 @@ func _edge_tab(label: String, action: Callable, parent: Control = null) -> void:
 
 func _opening_art(name: String) -> void:
 	_component_backdrop("layout_bg_" + name)
-	_art("layout_controls_tv" if name.begins_with("tv_") else "layout_controls_transport_no_keys" if name == "transport" and Quest.flags.TakenKey else "layout_controls_" + name)
+	_world_art("layout_controls_tv" if name.begins_with("tv_") else "layout_controls_transport_no_keys" if name == "transport" and Quest.flags.TakenKey else "layout_controls_" + name)
 
 func _opening_caption(node: Dictionary) -> void:
 	var y: float = 416 if Quest.current_id in ["wake","screams","transport"] else 445
@@ -186,22 +222,41 @@ func _shade(parent: Control, alpha: float = 0.65) -> void:
 	parent.add_child(shade)
 
 func _show_menu() -> void:
+	var preserve_logo := section in ["menu","help"]
 	playing = false
 	paused = false
 	section = "menu"
 	effects.stop()
-	_reset_screen()
-	_art("menu" if Quest.sound_enabled else "menu_off")
+	_reset_screen(preserve_logo)
+	var menu_art := _art("menu" if Quest.sound_enabled else "menu_off")
 	_hit(LOC.text("@loc:ui.main.3"),Rect2(154,51,190,43),func(): _show_selector("episodes"))
 	_hit(LOC.text("@loc:ui.main.4"),Rect2(154,110,190,43),func(): _show_selector("tests"))
 	_hit(LOC.text("@loc:ui.main.5"),Rect2(154,168,190,43),_show_help)
-	_hit(LOC.text("@loc:ui.main.6"),Rect2(154,226,190,43),func(): Quest.save_game(); get_tree().quit())
 	_hit(LOC.text("@loc:ui.main.7"),Rect2(451,198,39,36),_toggle_sound)
 	_hit(LOC.text("@loc:ui.main.8"),Rect2(519,196,45,42),func(): _message(LOC.text("@loc:ui.main.9"), LOC.text("@loc:ui.main.10")))
 	if Quest.has_progress:
 		_brush_button(LOC.text("@loc:ui.main.11"),Rect2(155,286,190,44),_resume)
+	_mount_menu_logo(menu_art,70)
 	previous_node = ""
 	if Quest.sound_enabled and not music.playing: music.play()
+
+func _mount_menu_logo(art: Control, y: float) -> void:
+	# Replace the final-frame preview with the same four reusable texture parts.
+	if art != null:
+		for child: Node in art.get_children():
+			if String(child.get_meta("flash_source"," ")).begins_with("Symbol 132/"):
+				child.free()
+	if not is_instance_valid(menu_logo):
+		menu_logo = MENU_LOGO.new()
+		menu_logo.name = "MenuLogo"
+		screen.add_child(menu_logo)
+	else: menu_logo.reparent(screen)
+	menu_logo.position = Vector2(415,y)*2
+
+func _animate_menu_panel(panel: String) -> void:
+	menu_opening = MENU_TIMELINE.new()
+	screen.add_child(menu_opening)
+	menu_opening.configure(screen,panel,menu_logo)
 
 func _brush_button(text: String, rect: Rect2, action: Callable, parent: Control = null) -> void:
 	_torn_text_button(text,rect,action,parent)
@@ -215,13 +270,14 @@ func _show_selector(kind: String) -> void:
 	section = "selector"
 	selector_kind = kind
 	selector_index = 0
-	_draw_selector()
+	_draw_selector(true)
 
 func _cycle_selector(direction: int) -> void:
+	if is_instance_valid(menu_opening) and menu_opening.playing: return
 	selector_index = wrapi(selector_index+direction,0,_selector_items().size())
 	_draw_selector()
 
-func _draw_selector() -> void:
+func _draw_selector(animate: bool = false) -> void:
 	_reset_screen()
 	var entry: Dictionary = LOC.resolve_tree(_selector_items()[selector_index])
 	_art("selector_%d" % int(entry.frame))
@@ -245,6 +301,7 @@ func _draw_selector() -> void:
 	_hit(LOC.text("@loc:ui.main.16"),Rect2(648,69,62,43),func(): _cycle_selector(1))
 	_hit(LOC.text("@loc:ui.main.17"),Rect2(310,351,205,48),_selector_start)
 	_hit(LOC.text("@loc:ui.main.18"),Rect2(635,348,49,49),_show_menu)
+	if animate: _animate_menu_panel("selector")
 
 func _selector_start() -> void:
 	var entry: Dictionary = LOC.resolve_tree(_selector_items()[selector_index])
@@ -255,10 +312,12 @@ func _selector_start() -> void:
 
 func _show_help() -> void:
 	section = "help"
-	_reset_screen()
+	_reset_screen(true)
 	_art("help")
 	_hit(LOC.text("@loc:ui.main.20"),Rect2(652,374,57,60),_show_menu)
 	_hit(LOC.text("@loc:ui.main.21"),Rect2(63,373,322,66),_show_menu)
+	_mount_menu_logo(null,140)
+	_animate_menu_panel("help")
 
 func _request_new(number: int = 0) -> void:
 	if number == 0: number = Quest.episode
@@ -312,7 +371,6 @@ func _show_pause() -> void:
 	panel.restart_requested.connect(_request_new)
 	panel.sound_requested.connect(_toggle_sound)
 	panel.menu_requested.connect(_show_menu)
-	panel.quit_requested.connect(func(): Quest.save_game(); get_tree().quit())
 	panel.configure(Quest.sound_enabled)
 
 func _close_overlay() -> void:
@@ -361,11 +419,11 @@ func _show_story() -> void:
 		CITY.draw(self, node)
 	elif kind == "tv":
 		_opening_art("tv_%d" % Quest.channel)
-		var channel_label := _text(LOC.text("@loc:ui.main.channel_format") % (Quest.channel+1),Rect2(218,290,110,30),20)
+		var channel_label := _text(LOC.text("@loc:ui.main.channel_format") % (Quest.channel+1),Rect2(218,290,110,30),20,false,false,_world_host())
 		channel_label.add_theme_font_override("font",TV_FONT)
 		channel_label.add_theme_color_override("font_color",Color.GREEN)
-		_hit(LOC.text("@loc:ui.main.35"),Rect2(200,44,447,262),func(): _choose(0))
-		_hit(LOC.text("@loc:ui.main.36"),Rect2(380,382,44,40),func(): _choose(1))
+		_world_hit(LOC.text("@loc:ui.main.35"),Rect2(200,44,447,262),func(): _choose(0))
+		_world_hit(LOC.text("@loc:ui.main.36"),Rect2(380,382,44,40),func(): _choose(1))
 		television.start()
 	elif kind == "item":
 		_show_item_popup("item_keys",node.text)
@@ -377,14 +435,14 @@ func _show_story() -> void:
 		_opening_caption(node)
 		match Quest.current_id:
 			"morning_choice":
-				_hit(LOC.text("@loc:ui.main.40"),Rect2(273,200,118,85),func(): _choose(0))
-				_hit(LOC.text("@loc:ui.main.41"),Rect2(470,24,220,134),func(): _choose(1))
+				_world_hit(LOC.text("@loc:ui.main.40"),Rect2(273,200,118,85),func(): _choose(0))
+				_world_hit(LOC.text("@loc:ui.main.41"),Rect2(470,24,220,134),func(): _choose(1))
 			"transport":
-				_hit(LOC.text("@loc:ui.main.42"),Rect2(20,18,92,99),func(): _choose(0))
+				_world_hit(LOC.text("@loc:ui.main.42"),Rect2(20,18,92,99),func(): _choose(0))
 				if not Quest.flags.TakenKey:
-					_hit(LOC.text("@loc:ui.main.43"),Rect2(325,217,77,80),func(): _choose(1))
-			"lift_button": _hit(LOC.text("@loc:ui.main.44"),Rect2(200,140,450,280),func(): _choose(0))
-			_: _hit(LOC.text("@loc:ui.main.45"),Rect2(70,0,730,480),func(): _choose(0))
+					_world_hit(LOC.text("@loc:ui.main.43"),Rect2(325,217,77,80),func(): _choose(1))
+			"lift_button": _world_hit(LOC.text("@loc:ui.main.44"),Rect2(200,140,450,280),func(): _choose(0))
+			_: _world_hit(LOC.text("@loc:ui.main.45"),Rect2(70,0,730,480),func(): _choose(0))
 	# Flash pause control lives at the left edge, not in a new top bar.
 	if not kind.begins_with("city_") and not kind.begins_with("activity_") and kind != "item" and Quest.current_id != "transport_choice":
 		_edge_tab(LOC.text("@loc:ui.main.46"),_show_pause)

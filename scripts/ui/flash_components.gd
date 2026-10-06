@@ -1,9 +1,15 @@
 extends RefCounted
+const HIGHLIGHT := preload("res://scripts/ui/interactive_highlight.gd")
 const QTE_PROMPT := preload("res://scripts/ui/qte_prompt.gd")
 # Primitive Flash display-list layers. Coordinates are authored at 800x480.
 static func draw(parent: Control, parts: Array, layer: String = "") -> void:
  for part: Dictionary in parts:
   if not layer.is_empty() and part.get("layer","background") != layer: continue
+  if part.type == "highlight":
+   var glow := HIGHLIGHT.new()
+   glow.configure(part)
+   parent.add_child(glow)
+   continue
   var control: Control
   if part.type == "qte_prompt":
    var prompt := QTE_PROMPT.new()

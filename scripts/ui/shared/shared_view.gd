@@ -119,7 +119,7 @@ func _hit(name: String, rect: Rect2, action: Callable, parent: Control = null, m
 		return painted
 	var button: Button = Button.new() if mask.is_empty() else ALPHA_HOTSPOT.new()
 	if not mask.is_empty():
-		button.hit_image = load("res://assets/flash_ui/" + mask + ".png").get_image()
+		button.hit_image = COMPONENTS.HIGHLIGHT.mask_image(mask) if COMPONENTS.HIGHLIGHT.has_mask(mask) else load("res://assets/flash_ui/" + mask + ".png").get_image()
 		if button.hit_image.is_compressed(): button.hit_image.decompress()
 	name = LOC.text(name)
 	button.name = name
@@ -225,6 +225,7 @@ func _draw_components(filename: String, parent: Control, layer: String) -> void:
 		var component: TextureRect = STATISTIC_ICON.new() if part.get("style","")=="statistics_icon" else TextureRect.new()
 		component.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		component.texture = load("res://assets/flash_ui/" + part.texture)
+		component.set_meta("flash_source",part.source)
 		var r: Array = part.rect
 		component.position = Vector2(r[0], r[1]) * 2
 		component.size = Vector2(r[2], r[3]) * 2

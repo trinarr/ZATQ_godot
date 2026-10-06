@@ -55,7 +55,7 @@
       "layer": "background"
     }
   ],
-  "pause_restart_shadow": [
+  "pause_row_1_shadow": [
     {
       "type": "texture",
       "texture": "pause_components/part_ae41a76d6f9aa5e5c3b6.png",
@@ -69,7 +69,7 @@
       "layer": "background"
     }
   ],
-  "pause_sound_shadow": [
+  "pause_row_2_shadow": [
     {
       "type": "texture",
       "texture": "pause_components/part_5420528eaf3d74395afd.png",
@@ -83,7 +83,7 @@
       "layer": "background"
     }
   ],
-  "pause_menu_shadow": [
+  "pause_row_3_shadow": [
     {
       "type": "texture",
       "texture": "pause_components/part_78e4100c7aeb0be79791.png",
@@ -97,7 +97,7 @@
       "layer": "background"
     }
   ],
-  "pause_quit_shadow": [
+  "pause_row_4_shadow": [
     {
       "type": "texture",
       "texture": "pause_components/part_6daf34daef9d816ca445.png",

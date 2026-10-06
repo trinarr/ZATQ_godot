@@ -51,7 +51,6 @@ func run() -> void:
 	pause.restart_requested.connect(func(): requested="restart")
 	pause.sound_requested.connect(func(): requested="sound")
 	pause.menu_requested.connect(func(): requested="menu")
-	pause.quit_requested.connect(func(): requested="quit")
 	pause.set_cover_rect(Rect2(-300,-40,2200,1040))
 	check(pause.dimmer.position==Vector2(-300,-40) and pause.dimmer.size==Vector2(2200,1040),"pause covers visible safe area")
 	await pause.opening_tween.finished
@@ -62,7 +61,7 @@ func run() -> void:
 		if child is Button:
 			child.pressed.emit()
 			actions.append(requested)
-	check(actions==["resume","restart","sound","menu","quit"],"all pause actions emit signals")
+	check(actions==["resume","resume","sound","restart","menu"],"all pause actions emit signals")
 	check(quest.current_id==initial_id,"pause does not route")
 	pause.free()
 	for data: Dictionary in [{"text":"Выбор","art":"decision"},{"style":"confirmation","text":"Подтвердить?"},{"style":"speaker","text":"Реплика","speaker":"Дэвид","art":"result_background"},{"style":"speaker","original_ui":true,"text":"Реплика","speaker":"Джон","art":"e3_dialogue_john","shade":false}]:

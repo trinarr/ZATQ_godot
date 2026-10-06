@@ -23,6 +23,8 @@ func run() -> void:
 	await pause.opening_tween.finished
 	check(pause.opening_frame==5,"opening reaches final authored frame")
 	check(pause.buttons.size()==4,"four independent action buttons")
+	check(pause.buttons.map(func(button: Button): return String(button.name))==["Продолжить","Звук","Начать заново","Выйти в меню"],"requested pause order")
+	check(not pause.has_signal("quit_requested"),"pause cannot request application exit")
 	for button: Button in pause.buttons:
 		check(button.get_child_count()==3,"each button owns shadow, background and caption")
 		check(button.background.material is ShaderMaterial,"each background has independent shader state")

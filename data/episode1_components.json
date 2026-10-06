@@ -15,8 +15,7 @@
   ],
   "adaptive_metro_controls": [
     {
-      "type": "texture",
-      "texture": "episode1_components/part_07e212e809f44acd19ef.png",
+      "type": "highlight",
       "rect": [
         615.0,
         245.0,
@@ -24,11 +23,11 @@
         105.5
       ],
       "source": "But1/Symbol 2901",
-      "layer": "background"
+      "layer": "background",
+      "region": "region_c1867f4e6addc4e4"
     },
     {
-      "type": "texture",
-      "texture": "episode1_components/part_105186a52f8cc3c93f88.png",
+      "type": "highlight",
       "rect": [
         178.5,
         146.5,
@@ -36,7 +35,8 @@
         113.5
       ],
       "source": "But2/Symbol 2905",
-      "layer": "background"
+      "layer": "background",
+      "region": "region_92150316a6446ef7"
     }
   ],
   "city_bite_transition": [
@@ -305,8 +305,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode1_components/part_07e212e809f44acd19ef.png",
+      "type": "highlight",
       "rect": [
         615.0,
         245.0,
@@ -314,11 +313,11 @@
         105.5
       ],
       "source": "But1/Symbol 2901",
-      "layer": "background"
+      "layer": "background",
+      "region": "region_c1867f4e6addc4e4"
     },
     {
-      "type": "texture",
-      "texture": "episode1_components/part_105186a52f8cc3c93f88.png",
+      "type": "highlight",
       "rect": [
         178.5,
         146.5,
@@ -326,7 +325,8 @@
         113.5
       ],
       "source": "But2/Symbol 2905",
-      "layer": "background"
+      "layer": "background",
+      "region": "region_92150316a6446ef7"
     }
   ],
   "city_metro_platform": [
@@ -854,8 +854,7 @@
   ],
   "ep1_farm_entry_1_controls": [
     {
-      "type": "texture",
-      "texture": "episode1_components/part_fd9edecc65e2532579e0.png",
+      "type": "highlight",
       "rect": [
         300.0,
         296.5,
@@ -863,11 +862,11 @@
         183.5
       ],
       "source": "But1/Symbol 2554",
-      "layer": "background"
+      "layer": "background",
+      "region": "region_6e28adc2ab19e2e2"
     },
     {
-      "type": "texture",
-      "texture": "episode1_components/part_f3d8041b43bfea451834.png",
+      "type": "highlight",
       "rect": [
         379.5,
         155.5,
@@ -875,13 +874,13 @@
         183.0
       ],
       "source": "But2/Symbol 2558",
-      "layer": "background"
+      "layer": "background",
+      "region": "region_ab5fafe588803042"
     }
   ],
   "ep1_farm_entry_2_controls": [
     {
-      "type": "texture",
-      "texture": "episode1_components/part_fd9edecc65e2532579e0.png",
+      "type": "highlight",
       "rect": [
         300.0,
         296.5,
@@ -889,11 +888,11 @@
         183.5
       ],
       "source": "But1/Symbol 2554",
-      "layer": "background"
+      "layer": "background",
+      "region": "region_6e28adc2ab19e2e2"
     },
     {
-      "type": "texture",
-      "texture": "episode1_components/part_f3d8041b43bfea451834.png",
+      "type": "highlight",
       "rect": [
         379.5,
         155.5,
@@ -901,7 +900,8 @@
         183.0
       ],
       "source": "But2/Symbol 2558",
-      "layer": "background"
+      "layer": "background",
+      "region": "region_ab5fafe588803042"
     }
   ],
   "ep1_farm_inside": [
@@ -920,8 +920,7 @@
   ],
   "ep1_farm_inside_controls": [
     {
-      "type": "texture",
-      "texture": "episode1_components/part_12a251a7975f932ce3e7.png",
+      "type": "highlight",
       "rect": [
         641.0,
         159.0,
@@ -929,11 +928,11 @@
         93.0
       ],
       "source": "But2/Symbol 2567",
-      "layer": "background"
+      "layer": "background",
+      "region": "region_1bbca6e2c256260b"
     },
     {
-      "type": "texture",
-      "texture": "episode1_components/part_80948bb822964f49559a.png",
+      "type": "highlight",
       "rect": [
         395.0,
         43.0,
@@ -941,7 +940,8 @@
         276.0
       ],
       "source": "But1/Symbol 2571",
-      "layer": "background"
+      "layer": "background",
+      "region": "region_2d49de7eede7c0c6"
     }
   ],
   "ep1_farm_leave": [
@@ -1168,8 +1168,7 @@
   ],
   "ep1_forest_lost_controls": [
     {
-      "type": "texture",
-      "texture": "episode1_components/part_42e6a9107d57843674a1.png",
+      "type": "highlight",
       "rect": [
         277.5,
         334.5,
@@ -1177,11 +1176,11 @@
         85.5
       ],
       "source": "But2/Symbol 2770",
-      "layer": "background"
+      "layer": "background",
+      "region": "region_fd7a245900901646"
     },
     {
-      "type": "texture",
-      "texture": "episode1_components/part_15d8695532ba983bb161.png",
+      "type": "highlight",
       "rect": [
         480.5,
         419.5,
@@ -1189,7 +1188,8 @@
         54.5
       ],
       "source": "But1/Symbol 2776",
-      "layer": "background"
+      "layer": "background",
+      "region": "region_10f003348f45937f"
     }
   ],
   "ep1_forest_marauder_1": [
@@ -1351,8 +1351,7 @@
   ],
   "ep1_forest_village_1_controls": [
     {
-      "type": "texture",
-      "texture": "episode1_components/part_9d73b663ef78b61dfb23.png",
+      "type": "highlight",
       "rect": [
         553.0,
         222.5,
@@ -1360,11 +1359,11 @@
         156.5
       ],
       "source": "But2/Symbol 2725",
-      "layer": "background"
+      "layer": "background",
+      "region": "region_fbf3af82c0aad0fc"
     },
     {
-      "type": "texture",
-      "texture": "episode1_components/part_988164c2b189165cbb04.png",
+      "type": "highlight",
       "rect": [
         392.5,
         96.5,
@@ -1372,7 +1371,8 @@
         69.5
       ],
       "source": "But1/Symbol 2729",
-      "layer": "background"
+      "layer": "background",
+      "region": "region_2f6dd3dea30588f1"
     }
   ],
   "ep1_forest_walk": [
@@ -2041,25 +2041,19 @@
   "layout_controls_lift_button": [],
   "layout_controls_morning_choice": [
     {
-      "type": "panel",
+      "type": "highlight",
       "rect": [
         471.5,
         29.0,
         211.5,
         121.0
       ],
-      "color": [
-        0.6,
-        0.0,
-        0.0,
-        0.6015625
-      ],
       "source": "But2/Symbol 2809",
-      "layer": "background"
+      "layer": "background",
+      "region": "region_b18e689e74b27334"
     },
     {
-      "type": "texture",
-      "texture": "episode1_components/part_ebcdd8fcf70fde9300fc.png",
+      "type": "highlight",
       "rect": [
         273.0,
         200.5,
@@ -2067,14 +2061,14 @@
         85.0
       ],
       "source": "But1/Symbol 2813",
-      "layer": "background"
+      "layer": "background",
+      "region": "region_357195bd981dcaa8"
     }
   ],
   "layout_controls_screams": [],
   "layout_controls_transport": [
     {
-      "type": "texture",
-      "texture": "episode1_components/part_c7c868de9faf20a00cbe.png",
+      "type": "highlight",
       "rect": [
         22.0,
         20.0,
@@ -2082,11 +2076,11 @@
         349.0
       ],
       "source": "But1/Symbol 2853",
-      "layer": "background"
+      "layer": "background",
+      "region": "region_035734dadd078627"
     },
     {
-      "type": "texture",
-      "texture": "episode1_components/part_0b2d2c18c265a3e515ba.png",
+      "type": "highlight",
       "rect": [
         330.5,
         223.5,
@@ -2094,13 +2088,13 @@
         13.5
       ],
       "source": "But2/Symbol 2857",
-      "layer": "background"
+      "layer": "background",
+      "region": "region_cb2917e87e6caab8"
     }
   ],
   "layout_controls_transport_no_keys": [
     {
-      "type": "texture",
-      "texture": "episode1_components/part_c7c868de9faf20a00cbe.png",
+      "type": "highlight",
       "rect": [
         22.0,
         20.0,
@@ -2108,7 +2102,8 @@
         349.0
       ],
       "source": "But1/Symbol 2853",
-      "layer": "background"
+      "layer": "background",
+      "region": "region_035734dadd078627"
     }
   ],
   "layout_controls_tv": [
@@ -2125,8 +2120,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode1_components/part_156049d66001ea4cda7f.png",
+      "type": "highlight",
       "rect": [
         380.0,
         382.0,
@@ -2134,7 +2128,8 @@
         52.5
       ],
       "source": "/Symbol 2819",
-      "layer": "background"
+      "layer": "background",
+      "region": "region_046fdc8aa8a67cb2"
     }
   ],
   "layout_controls_wake": [],

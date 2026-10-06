@@ -32,6 +32,8 @@ def audit(root=ROOT):
         resources.update('assets/flash_ui/' + p['texture'] for p in parts if 'texture' in p)
     text = json.loads((root / 'data/ui_text_layout.json').read_text())
     resources.update(f"fonts/flash/font_{int(block['font'])}.ttf" for block in dictionaries(text) if 'font' in block)
+    highlight_path = root / "data/episode1_highlights.json"
+    dynamic_masks = json.loads(highlight_path.read_text()).get("masks", {}) if highlight_path.exists() else {}
     nodes = load_all(root)
     for record in dictionaries(nodes):
         for key in ['art', 'art_on_foot', 'controls_art', 'decision_art', 'background_art']:
@@ -44,7 +46,7 @@ def audit(root=ROOT):
         for name in record.get('animation_frames', []):
             if name not in components:
                 resources.add('assets/flash_ui/' + name + '.png')
-        if 'mask' in record:
+        if 'mask' in record and record['mask'] not in dynamic_masks:
             resources.add('assets/flash_ui/' + record['mask'] + '.png')
         if 'sound' in record and record['sound']:
             resources.add('assets/audio/' + record['sound'] + '.mp3')

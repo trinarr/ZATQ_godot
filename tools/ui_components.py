@@ -20,8 +20,8 @@ def is_component_screen(name):
 def menu_plans():
     def s(n, f=0, x=0, y=0, o=None, h=None):
         return (f'Symbol {n}', f, x, y, o or {}, h or set())
-    plans = {'adaptive_menu': [s(118), s(132, 8, 415, 70)],
-             'adaptive_menu_off': [s(118, o={'SndCheck': 1}), s(132, 8, 415, 70)]}
+    plans = {'adaptive_menu': [s(118,h={'But4'}), s(132, 8, 415, 70)],
+             'adaptive_menu_off': [s(118, o={'SndCheck': 1}, h={'But4'}), s(132, 8, 415, 70)]}
     for i in range(12):
         plans[f'adaptive_selector_{i}'] = [s(211, o={
             'EpImg': i, 'LeftOpt': 2 if i in [1, 3, 6, 8, 10] else 0,

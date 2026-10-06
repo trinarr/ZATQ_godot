@@ -3,7 +3,6 @@ signal resume_requested
 signal restart_requested
 signal sound_requested
 signal menu_requested
-signal quit_requested
 const ACTION_BUTTON := preload("res://scripts/ui/shared/pause_action_button.gd")
 const DRUM_X := [-14.0,-5.6,-2.4,0.0,0.0,0.0]
 const BUTTONS_X := [-9.0,3.6,10.4,14.55,18.0,16.0]
@@ -31,7 +30,7 @@ func configure(sound_enabled: bool) -> void:
 	# Flash's central button has its own larger, alpha-shaped hit state.
 	var hit: Dictionary = parts.pause_resume_hit[0]
 	resume_hit = ALPHA_HOTSPOT.new()
-	resume_hit.name = LOC.text("@loc:ui.main.27")
+	resume_hit.name = "ResumeCenter"
 	resume_hit.tooltip_text = LOC.text("@loc:ui.main.27")
 	resume_hit.hit_image = load("res://assets/flash_ui/" + hit.texture).get_image()
 	if resume_hit.hit_image.is_compressed(): resume_hit.hit_image.decompress()
@@ -51,10 +50,10 @@ func configure(sound_enabled: bool) -> void:
 	COMPONENTS.draw(center,parts.pause_arrow,"background")
 	resume_hit.button_down.connect(func(): resume_art.self_modulate.a = 0.69921875)
 	resume_hit.button_up.connect(func(): resume_art.self_modulate.a = 0.5)
-	_action("restart", "@loc:ui.main.28", "@loc:ui.art.layout_pause.2", Vector2(0,13), func(): restart_requested.emit())
-	sound_button = _action("sound", "@loc:ui.main.29", "", Vector2(54,79), func(): sound_requested.emit())
-	_action("menu", "@loc:ui.main.30", "@loc:ui.art.layout_pause.1", Vector2(54,144), func(): menu_requested.emit())
-	_action("quit", "@loc:ui.main.31", "@loc:ui.art.layout_pause.0", Vector2(10,210), func(): quit_requested.emit())
+	_action("row_1", "@loc:ui.main.27", "@loc:ui.main.27", Vector2(0,13), func(): resume_requested.emit())
+	sound_button = _action("row_2", "@loc:ui.main.29", "", Vector2(54,79), func(): sound_requested.emit())
+	_action("row_3", "@loc:ui.main.28", "@loc:ui.main.28", Vector2(54,144), func(): restart_requested.emit())
+	_action("row_4", "@loc:ui.main.30", "@loc:ui.main.30", Vector2(10,210), func(): menu_requested.emit())
 	set_sound_enabled(sound_enabled)
 	# Six authored keyframes at the original 19 fps, including the overshoot.
 	_set_opening_frame(0)

@@ -20,9 +20,9 @@ static func draw(ui: Control, node: Dictionary) -> void:
 		ui._set_backdrop(load("res://assets/flash_ui/" + artwork + "."+node.get("art_extension","png")), not node.get("clean_background",false))
 	if Quest.current_id == "metro_junction":
 		ui._component_backdrop("adaptive_metro_background")
-		ui._art("adaptive_metro_controls")
+		ui._world_art("adaptive_metro_controls")
 	if node.has("controls_art"):
-		ui._art(node.controls_art)
+		ui._world_art(node.controls_art)
 	var kind: String = node.kind
 	if kind == "city_decision":
 		ui._show_player_dialog({"text":node.text,"art":node.get("decision_art","city_decision_3" if choices.size()==3 else "decision"),"fit_body":true,"dismissable":true},choices,Callable(),func(): Quest._enter(node.back))
@@ -78,6 +78,6 @@ static func draw(ui: Control, node: Dictionary) -> void:
 		for i in choices.size():
 			var index: int = i
 			var r: Array = choices[i].get("rect",[70,0,730,480])
-			ui._hit(choices[i].text,Rect2(r[0],r[1],r[2],r[3]),func(): ui._choose(index),null,choices[i].get("mask",""))
+			ui._world_hit(choices[i].text,Rect2(r[0],r[1],r[2],r[3]),func(): ui._choose(index),choices[i].get("mask",""))
 	if kind not in ["city_decision", "city_death", "city_ending"]:
 		ui._edge_tab(LOC.text("@loc:ui.city_gameplay.3"),ui._show_pause)

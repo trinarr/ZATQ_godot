@@ -75,7 +75,7 @@ func run() -> void:
  check(quest.current().has("text_on_foot"),"original pedestrian office narration retained")
  # Arrow hit regions follow the exported silhouettes, including transparent gaps.
  quest._enter("farm_boundary")
- var arrow: Button=scene.screen.get_node("Продолжить путь")
+ var arrow: Button=scene.screen.find_child("Продолжить путь",true,false)
  check(arrow.hit_image!=null,"arrow alpha mask loaded")
  check(not arrow._has_point(Vector2(-1,-1)),"arrow rejects outside coordinates")
  var opaque_found:=false
