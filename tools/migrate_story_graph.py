@@ -12,7 +12,7 @@ def migrate(episode, routes):
  def link(a,p,b):edges.append({'from':a,'port':p,'to':b})
  for index,(id,src) in enumerate(routes.items()):
   x=(index//10)*1550;y=(index%10)*460
-  data={k:v for k,v in src.items() if k not in ['choices','set','add','variants','pickup_if','back']}
+  data={k:v for k,v in src.items() if k not in ['choices','set','add','variants','pickup_if','back','image']}
   put(id,'scene',data,[x,y],id)
   if 'back' in src:link(id,'back',src['back'])
   if 'set' in src or 'add' in src:

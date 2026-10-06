@@ -14,6 +14,11 @@ func run()->void:
   var expected:Dictionary={}
   for path:String in (["opening","city_routes","episode1_routes"] if episode==1 else ["episode2_routes"]):
    expected.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/"+path+".json")).nodes,true)
+  # Legacy image fields described superseded full-screen opening rasters.
+  for id:String in expected:
+   expected[id].erase("image")
+   if expected[id].get("kind","") in ["city_death","city_ending"] and not graph.nodes[id].data.has("art"):
+    expected[id].erase("art") # Shared result component replaced the old raster.
   var compiled:=MODEL.compile(graph)
   check(compiled.size()==expected.size(),"all screens preserved")
   for id:String in expected:

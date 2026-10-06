@@ -9,3 +9,6 @@ __pycache__/
 /export_credentials.cfg
 *.keystore
 *.jks
+
+# Atomic exporter intermediates
+/assets/**/*.tmp

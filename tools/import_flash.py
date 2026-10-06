@@ -40,12 +40,10 @@ def main():
                 'root_members_referenced':flags, 'status':'Reference catalog, not executable GDScript'}
         (out/'data').mkdir(parents=True,exist_ok=True)
         (out/'data/flash_catalog.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
-        images = ['Fon1_1.png','NewYork.png','LiftKnop.jpg','OnTheStreet.jpg']
+        images = ['Fon1_1.png']
         sounds = ['MainTheme','TVSwitchOn','TVSwitchOff','FootSteps','KeysTake','LiftOpenSound','LiftClosing','LiftButton']
         for kind, items in [('Images',images),('Sound',[s+'.mp3' for s in sounds])]:
             folder=out/'assets'/('images' if kind=='Images' else 'audio');folder.mkdir(parents=True,exist_ok=True)
             for item in items: (folder/item).write_bytes(z.read('assets/'+kind+'/'+item))
-        for num in [2821,2823,2825,2827,2829,2831,2833,2868]:
-            (out/'assets/images'/f'flash_{num}.png').write_bytes(z.read(library+f'Bitmap {num}.png'))
         print(f'Imported {len(catalog)} symbols, {len(actions)} ActionScript files; opening assets ready.')
 if __name__ == '__main__': main()

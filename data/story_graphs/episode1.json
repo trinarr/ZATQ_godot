@@ -7,8 +7,7 @@
 			"type": "scene",
 			"data": {
 				"source": "Episode1 frame 1 / Symbol 2794",
-				"text": "@loc:episode1.nodes.wake.data.text",
-				"image": "Fon1_1.png"
+				"text": "@loc:episode1.nodes.wake.data.text"
 			},
 			"position": [
 				0.0,
@@ -31,8 +30,7 @@
 			"type": "scene",
 			"data": {
 				"source": "Episode1 frame 2 / Symbol 2799",
-				"text": "@loc:episode1.nodes.screams.data.text",
-				"image": "Fon1_1.png"
+				"text": "@loc:episode1.nodes.screams.data.text"
 			},
 			"position": [
 				1700.0,
@@ -55,8 +53,7 @@
 			"type": "scene",
 			"data": {
 				"source": "Episode1 frame 3 / Symbol 2805, 2809, 2817",
-				"text": "@loc:episode1.nodes.morning_choice.data.text",
-				"image": "Fon1_1.png"
+				"text": "@loc:episode1.nodes.morning_choice.data.text"
 			},
 			"position": [
 				3400.0,
@@ -91,7 +88,6 @@
 			"data": {
 				"source": "Episode1 frame 4 / Symbol 2835; Episode1.Switcher",
 				"text": "@loc:episode1.nodes.tv.data.text",
-				"image": "flash_2821.png",
 				"kind": "tv",
 				"sound": "TVSwitchOn"
 			},
@@ -130,7 +126,6 @@
 			"data": {
 				"source": "Episode1 frame 5 / Symbol 2848",
 				"text": "@loc:episode1.nodes.transport.data.text",
-				"image": "Fon1_1.png",
 				"sound": "FootSteps"
 			},
 			"position": [
@@ -178,7 +173,6 @@
 			"data": {
 				"source": "AddItem(1); AddItem.weapStrings[0]",
 				"text": "@loc:episode1.nodes.keys.data.text",
-				"image": "Fon1_1.png",
 				"kind": "item",
 				"sound": "KeysTake"
 			},
@@ -216,8 +210,7 @@
 			"type": "scene",
 			"data": {
 				"source": "NewItem(1).itemStrings[0], but1Str[1], but2Str[1]",
-				"text": "@loc:episode1.nodes.transport_choice.data.text",
-				"image": "Fon1_1.png"
+				"text": "@loc:episode1.nodes.transport_choice.data.text"
 			},
 			"position": [
 				6800.0,
@@ -278,7 +271,6 @@
 			"data": {
 				"source": "Episode1 frame 6 / Symbol 2872",
 				"text": "@loc:episode1.nodes.lift.data.text",
-				"image": "flash_2868.png",
 				"sound": "LiftOpenSound"
 			},
 			"position": [
@@ -303,7 +295,6 @@
 			"data": {
 				"source": "Episode1 frame 7 / Symbol 2880; MovClickFunc case 7",
 				"text": "@loc:episode1.nodes.lift_button.data.text",
-				"image": "LiftKnop.jpg",
 				"sound": "LiftClosing"
 			},
 			"position": [
@@ -329,7 +320,6 @@
 			"data": {
 				"source": "MovCityAuto(4) frame 8 / Symbol 2639; MovCityAuto(4).as",
 				"text": "@loc:episode1.nodes.city_foot.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_city_foot",
 				"text_rect": [
@@ -367,7 +357,6 @@
 			"data": {
 				"source": "MovCityAuto frame 1 / Symbol 2639; MovCityAuto.as",
 				"text": "@loc:episode1.nodes.city_car.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_city_car",
 				"text_rect": [
@@ -405,7 +394,6 @@
 			"data": {
 				"source": "NewItem(2); NewItem.But1/2/3MouseUpFunc",
 				"text": "@loc:episode1.nodes.car_decision.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_decision",
 				"art": "city_city_car"
 			},
@@ -442,7 +430,6 @@
 			"data": {
 				"source": "MovCityAuto frame 2 / Symbol 2639; MovCityAuto.as",
 				"text": "@loc:episode1.nodes.car_drive.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_car_drive",
 				"text_rect": [
@@ -480,7 +467,6 @@
 			"data": {
 				"source": "MovCityAuto frame 3 / Symbol 2639; MovCityAuto.as",
 				"text": "@loc:episode1.nodes.car_battery.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_car_battery",
 				"text_rect": [
@@ -518,7 +504,6 @@
 			"data": {
 				"source": "NewItem(5); NewItem.But1/2/3MouseUpFunc",
 				"text": "@loc:episode1.nodes.battery_decision.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_decision",
 				"art": "city_car_battery"
 			},
@@ -555,7 +540,6 @@
 			"data": {
 				"source": "MovCityAuto frame 4 / Symbol 2639; MovCityAuto.as",
 				"text": "@loc:episode1.nodes.car_crowd.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_car_crowd",
 				"text_rect": [
@@ -593,7 +577,6 @@
 			"data": {
 				"source": "MovCityAuto frame 5 / Symbol 2639; MovCityAuto.as",
 				"text": "@loc:episode1.nodes.car_trapped.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_car_trapped",
 				"text_rect": [
@@ -631,7 +614,6 @@
 			"data": {
 				"source": "MovCityAuto frame 5 / Symbol 2639; MovCityAuto.as",
 				"text": "",
-				"image": "Fon1_1.png",
 				"kind": "city_cutscene",
 				"art": "city_car_trapped",
 				"auto_seconds": 0.3684210526315789,
@@ -659,7 +641,6 @@
 			"data": {
 				"source": "MovCityAuto frame 6 / Symbol 2639; MovCityAuto.as",
 				"text": "@loc:episode1.nodes.office_drive.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_office_drive",
 				"text_rect": [
@@ -697,7 +678,6 @@
 			"data": {
 				"source": "MovCityAuto frame 7 / Symbol 2639; MovCityAuto.as",
 				"text": "@loc:episode1.nodes.office_gate.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_office_gate",
 				"text_rect": [
@@ -735,7 +715,6 @@
 			"data": {
 				"source": "NewItem(9); NewItem.But1/2/3MouseUpFunc",
 				"text": "@loc:episode1.nodes.office_decision.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_decision",
 				"art": "city_office_gate"
 			},
@@ -772,7 +751,6 @@
 			"data": {
 				"source": "MovCityAuto(2) frame 3 / Symbol 2639; MovCityAuto(2).as",
 				"text": "@loc:episode1.nodes.car_battery_return.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_car_battery_return",
 				"text_rect": [
@@ -810,7 +788,6 @@
 			"data": {
 				"source": "NewItem(5); NewItem.But1/2/3MouseUpFunc",
 				"text": "@loc:episode1.nodes.battery_return_decision.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_decision",
 				"art": "city_car_battery_return"
 			},
@@ -847,7 +824,6 @@
 			"data": {
 				"source": "MovCityAuto frame 9 / Symbol 2639; MovCityAuto.as",
 				"text": "@loc:episode1.nodes.street_stretcher.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_street_stretcher",
 				"text_rect": [
@@ -885,7 +861,6 @@
 			"data": {
 				"source": "NewItem(3); NewItem.But1/2/3MouseUpFunc",
 				"text": "@loc:episode1.nodes.street_decision.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_decision",
 				"art": "city_street_stretcher"
 			},
@@ -933,7 +908,6 @@
 			"data": {
 				"source": "IntoTheOffice frame 1 / Symbol 2706; IntoTheOffice.as",
 				"text": "@loc:episode1.nodes.office_enter.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_office_enter",
 				"art_on_foot": "city_office_enter_foot",
@@ -985,7 +959,6 @@
 			"data": {
 				"source": "IntoTheOffice frame 2 / Symbol 2706; IntoTheOffice.as",
 				"text": "@loc:episode1.nodes.office_floor.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_office_floor",
 				"text_rect": [
@@ -1023,7 +996,6 @@
 			"data": {
 				"source": "IntoTheOffice frame 3 / Symbol 2706; IntoTheOffice.as",
 				"text": "@loc:episode1.nodes.office_documents.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_office_documents",
 				"text_rect": [
@@ -1061,7 +1033,6 @@
 			"data": {
 				"source": "NewItem(10); NewItem.But1/2/3MouseUpFunc",
 				"text": "@loc:episode1.nodes.documents_decision.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_decision",
 				"art": "city_office_documents"
 			},
@@ -1109,7 +1080,6 @@
 			"data": {
 				"source": "IntoTheOffice frame 6 / Symbol 2706; IntoTheOffice.as",
 				"text": "@loc:episode1.nodes.office_threat.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_office_threat",
 				"sound": "OfficeZombieScream",
@@ -1148,7 +1118,6 @@
 			"data": {
 				"source": "IntoTheOffice frame 6 / Symbol 2706; IntoTheOffice.as",
 				"text": "",
-				"image": "Fon1_1.png",
 				"kind": "city_cutscene",
 				"art": "city_office_threat",
 				"auto_seconds": 0.3157894736842105
@@ -1175,7 +1144,6 @@
 			"data": {
 				"source": "IntoTheOffice frame 7 / Symbol 2706; IntoTheOffice.as",
 				"text": "@loc:episode1.nodes.office_fire_escape.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_office_fire_escape",
 				"text_rect": [
@@ -1213,7 +1181,6 @@
 			"data": {
 				"source": "IntoTheOffice frame 8 / Symbol 2706; IntoTheOffice.as",
 				"text": "@loc:episode1.nodes.office_exit.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_office_exit",
 				"text_rect": [
@@ -1251,7 +1218,6 @@
 			"data": {
 				"source": "IntoTheOffice frame 4 / Symbol 2706; IntoTheOffice.as",
 				"text": "@loc:episode1.nodes.office_roof_stairs.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_office_roof_stairs",
 				"text_rect": [
@@ -1289,7 +1255,6 @@
 			"data": {
 				"source": "IntoTheOffice frame 5 / Symbol 2706; IntoTheOffice.as",
 				"text": "@loc:episode1.nodes.office_roof.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_office_roof",
 				"text_rect": [
@@ -1327,7 +1292,6 @@
 			"data": {
 				"source": "CarGet(2) frame 1 / Symbol 2979; CarGet(2).as",
 				"text": "@loc:episode1.nodes.paid_car.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_paid_car",
 				"text_rect": [
@@ -1365,7 +1329,6 @@
 			"data": {
 				"source": "CarGet(2) frame 2 / Symbol 2979; CarGet(2).as",
 				"text": "@loc:episode1.nodes.paid_car_outside.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_paid_car_outside",
 				"text_rect": [
@@ -1403,7 +1366,6 @@
 			"data": {
 				"source": "DvrMov frame 1 / Symbol 2925; DvrMov.as",
 				"text": "@loc:episode1.nodes.metro_start.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_metro_start",
 				"text_rect": [
@@ -1441,7 +1403,6 @@
 			"data": {
 				"source": "DvrMov frame 2 / Symbol 2925; DvrMov.as",
 				"text": "@loc:episode1.nodes.metro_descent.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_metro_descent",
 				"text_rect": [
@@ -1479,7 +1440,6 @@
 			"data": {
 				"source": "DvrMov frame 3 / Symbol 2925; DvrMov.as",
 				"text": "@loc:episode1.nodes.metro_junction.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_metro_junction",
 				"text_rect": [
@@ -1540,7 +1500,6 @@
 			"data": {
 				"source": "DvrMov frame 5 / Symbol 2925; DvrMov.as",
 				"text": "@loc:episode1.nodes.metro_chase.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_metro_chase",
 				"sound": "MetroZombieRoar",
@@ -1579,7 +1538,6 @@
 			"data": {
 				"source": "DvrMov frame 6 / Symbol 2925; DvrMov.as",
 				"text": "@loc:episode1.nodes.metro_platform.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_metro_platform",
 				"text_rect": [
@@ -1617,7 +1575,6 @@
 			"data": {
 				"source": "DvrMov frame 7 / Symbol 2925; DvrMov.as",
 				"text": "@loc:episode1.nodes.metro_train.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_metro_train",
 				"sound": "ZombieGetOn",
@@ -1657,7 +1614,6 @@
 			"data": {
 				"source": "DvrMov frame 4 / Symbol 2925; DvrMov.as",
 				"text": "@loc:episode1.nodes.metro_surface.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_metro_surface",
 				"text_rect": [
@@ -1695,7 +1651,6 @@
 			"data": {
 				"source": "VitrMov frame 1 / Symbol 2479; VitrMov.as",
 				"text": "@loc:episode1.nodes.shop_window.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_shop_window",
 				"text_rect": [
@@ -1733,7 +1688,6 @@
 			"data": {
 				"source": "NewItem(4); NewItem.But1/2/3MouseUpFunc",
 				"text": "@loc:episode1.nodes.shop_decision.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_decision",
 				"art": "city_shop_window"
 			},
@@ -1781,7 +1735,6 @@
 			"data": {
 				"source": "VitrMov frame 2 / Symbol 2479; VitrMov.as",
 				"text": "@loc:episode1.nodes.bitten.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_bitten",
 				"text_rect": [
@@ -1819,7 +1772,6 @@
 			"data": {
 				"source": "VitrMov frame 3 / Symbol 2470 frames 1–51",
 				"text": "",
-				"image": "Fon1_1.png",
 				"kind": "city_cutscene",
 				"art": "city_bite_transition",
 				"auto_seconds": 2.6842105263157894
@@ -1846,7 +1798,6 @@
 			"data": {
 				"source": "VitrMov frame 4 / Symbol 2479; VitrMov.as",
 				"text": "@loc:episode1.nodes.checkpoint.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_checkpoint",
 				"text_rect": [
@@ -1884,7 +1835,6 @@
 			"data": {
 				"source": "VitrMov frame 5 / Symbol 2479; VitrMov.as",
 				"text": "@loc:episode1.nodes.checkpoint_shot.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_checkpoint_shot",
 				"text_rect": [
@@ -1922,7 +1872,6 @@
 			"data": {
 				"source": "MovBoom frame 4; MovBoom.Checker",
 				"text": "",
-				"image": "Fon1_1.png",
 				"kind": "city_cutscene",
 				"art": "city_roof_explosion",
 				"auto_seconds": 0.8
@@ -1949,7 +1898,6 @@
 			"data": {
 				"source": "MovBoom frame 1; MovBoom.Checker",
 				"text": "",
-				"image": "Fon1_1.png",
 				"kind": "city_cutscene",
 				"art": "city_door_explosion",
 				"auto_seconds": 0.8
@@ -1976,7 +1924,6 @@
 			"data": {
 				"source": "MovBoom frame 2; MovBoom.Checker",
 				"text": "",
-				"image": "Fon1_1.png",
 				"kind": "city_cutscene",
 				"art": "city_door_blast",
 				"auto_seconds": 0.8
@@ -2003,7 +1950,6 @@
 			"data": {
 				"source": "MovBoom frame 3; MovBoom.Checker",
 				"text": "",
-				"image": "Fon1_1.png",
 				"kind": "city_cutscene",
 				"art": "city_door_blast_inner",
 				"auto_seconds": 0.8
@@ -2030,7 +1976,6 @@
 			"data": {
 				"source": "MovBoom frame 5; MovBoom.Checker",
 				"text": "",
-				"image": "Fon1_1.png",
 				"kind": "city_cutscene",
 				"art": "city_explosion_flash",
 				"auto_seconds": 0.65,
@@ -2058,7 +2003,6 @@
 			"data": {
 				"source": "ResultBad(2); ResultArr[1]",
 				"text": "@loc:episode1.nodes.death_2.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_death",
 				"result_id": 2.0,
 				"alive": false
@@ -2074,7 +2018,6 @@
 			"data": {
 				"source": "ResultBad(3); ResultArr[2]",
 				"text": "@loc:episode1.nodes.death_3.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_death",
 				"result_id": 3.0,
 				"alive": false
@@ -2090,7 +2033,6 @@
 			"data": {
 				"source": "ResultBad(5); ResultArr[4]",
 				"text": "@loc:episode1.nodes.death_5.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_death",
 				"result_id": 5.0,
 				"alive": false
@@ -2106,7 +2048,6 @@
 			"data": {
 				"source": "ResultBad(10); ResultArr[9]",
 				"text": "@loc:episode1.nodes.death_10.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_death",
 				"result_id": 10.0,
 				"alive": false
@@ -2122,7 +2063,6 @@
 			"data": {
 				"source": "ResultBad(11); ResultArr[10]",
 				"text": "@loc:episode1.nodes.death_11.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_death",
 				"result_id": 11.0,
 				"alive": false
@@ -2140,7 +2080,6 @@
 				"kind": "city_story",
 				"art": "ep1_farm_entry_1",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.farm_boundary.data.text",
 				"blocks": [
 					{
@@ -2207,7 +2146,6 @@
 				"kind": "city_story",
 				"art": "ep1_forest_village_1",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.forest_boundary.data.text",
 				"blocks": [
 					{
@@ -2274,7 +2212,6 @@
 				"kind": "city_story",
 				"art": "ep1_mainstreet_choice",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.mainstreet_boundary.data.text",
 				"blocks": [],
 				"controls_art": "ep1_mainstreet_choice_controls"
@@ -2360,7 +2297,6 @@
 				"kind": "city_story",
 				"art": "ep1_taxi_entry_1",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.taxi_boundary.data.text",
 				"blocks": [
 					{
@@ -2401,7 +2337,6 @@
 				"kind": "city_story",
 				"art": "ep1_taxi_entry_1",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.taxi_escape_boundary.data.text",
 				"blocks": [
 					{
@@ -2442,7 +2377,6 @@
 				"kind": "city_story",
 				"art": "ep1_dorvud_entry_1",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.suburb_boundary.data.text",
 				"blocks": [
 					{
@@ -2483,7 +2417,6 @@
 				"kind": "city_story",
 				"art": "ep1_farm_entry_1",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.farm_entry_1.data.text",
 				"blocks": [
 					{
@@ -2550,7 +2483,6 @@
 				"kind": "city_story",
 				"art": "ep1_farm_entry_1",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.farm_entry_2.data.text",
 				"blocks": [
 					{
@@ -2617,7 +2549,6 @@
 				"kind": "city_story",
 				"art": "ep1_farm_inside",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.farm_inside.data.text",
 				"blocks": [
 					{
@@ -2684,7 +2615,6 @@
 				"kind": "city_story",
 				"art": "ep1_farm_search",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.farm_search.data.text",
 				"blocks": [
 					{
@@ -2725,7 +2655,6 @@
 				"kind": "city_story",
 				"art": "ep1_farm_leave",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.farm_leave.data.text",
 				"blocks": [
 					{
@@ -2766,7 +2695,6 @@
 				"kind": "city_story",
 				"art": "ep1_farm_noise",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.farm_noise.data.text",
 				"blocks": [
 					{
@@ -2808,7 +2736,6 @@
 				"kind": "city_story",
 				"art": "ep1_farm_sound",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.farm_sound.data.text",
 				"blocks": [
 					{
@@ -2862,7 +2789,6 @@
 				"kind": "city_story",
 				"art": "ep1_farm_awake",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.farm_awake.data.text",
 				"blocks": [
 					{
@@ -2928,7 +2854,6 @@
 				"kind": "city_cutscene",
 				"art": "ep1_farm_chase",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "",
 				"blocks": [],
 				"sound": "ZombiesGroup",
@@ -2958,7 +2883,6 @@
 				"kind": "city_story",
 				"art": "ep1_forest_road",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.forest_road.data.text",
 				"blocks": [
 					{
@@ -2999,7 +2923,6 @@
 				"kind": "city_decision",
 				"art": "ep1_forest_road",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.forest_choice.data.text"
 			},
 			"position": [
@@ -3037,7 +2960,6 @@
 				"kind": "city_story",
 				"art": "ep1_forest_walk",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.forest_walk.data.text",
 				"blocks": [
 					{
@@ -3078,7 +3000,6 @@
 				"kind": "city_story",
 				"art": "ep1_forest_village_1",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.forest_village_1.data.text",
 				"blocks": [
 					{
@@ -3145,7 +3066,6 @@
 				"kind": "city_story",
 				"art": "ep1_forest_village_1",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.forest_village_2.data.text",
 				"blocks": [
 					{
@@ -3212,7 +3132,6 @@
 				"kind": "city_story",
 				"art": "ep1_forest_house",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.forest_house.data.text",
 				"blocks": [
 					{
@@ -3253,7 +3172,6 @@
 				"kind": "city_story",
 				"art": "ep1_forest_cellar",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.forest_cellar.data.text",
 				"blocks": [
 					{
@@ -3294,7 +3212,6 @@
 				"kind": "city_story",
 				"art": "ep1_farm_chase",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.forest_shelter_1.data.text",
 				"blocks": [
 					{
@@ -3335,7 +3252,6 @@
 				"kind": "city_story",
 				"art": "ep1_farm_chase",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.forest_shelter_2.data.text",
 				"blocks": [
 					{
@@ -3388,7 +3304,6 @@
 				"kind": "city_story",
 				"art": "ep1_farm_chase",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.forest_shelter_3.data.text",
 				"blocks": [
 					{
@@ -3453,7 +3368,6 @@
 				"kind": "city_story",
 				"art": "ep1_forest_marauder_1",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "",
 				"blocks": []
 			},
@@ -3481,7 +3395,6 @@
 				"kind": "city_story",
 				"art": "ep1_forest_marauder_2",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "",
 				"blocks": []
 			},
@@ -3509,7 +3422,6 @@
 				"kind": "city_story",
 				"art": "ep1_forest_marauder_3",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.forest_marauder_3.data.text",
 				"blocks": [
 					{
@@ -3550,7 +3462,6 @@
 				"kind": "city_story",
 				"art": "ep1_forest_enter",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.forest_enter.data.text",
 				"blocks": [
 					{
@@ -3591,7 +3502,6 @@
 				"kind": "city_story",
 				"art": "ep1_forest_lost",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.forest_lost.data.text",
 				"blocks": [
 					{
@@ -3658,7 +3568,6 @@
 				"kind": "city_story",
 				"art": "ep1_forest_horde",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.forest_horde.data.text",
 				"blocks": [
 					{
@@ -3700,7 +3609,6 @@
 				"kind": "city_story",
 				"art": "ep1_forest_caught",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.forest_caught.data.text",
 				"blocks": [
 					{
@@ -3742,7 +3650,6 @@
 				"kind": "city_story",
 				"art": "ep1_taxi_entry_1",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.taxi_entry_1.data.text",
 				"blocks": [
 					{
@@ -3783,7 +3690,6 @@
 				"kind": "city_story",
 				"art": "ep1_taxi_entry_1",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.taxi_entry_2.data.text",
 				"blocks": [
 					{
@@ -3824,7 +3730,6 @@
 				"kind": "city_story",
 				"art": "ep1_taxi_depart",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.taxi_depart.data.text",
 				"blocks": [
 					{
@@ -3865,7 +3770,6 @@
 				"kind": "city_story",
 				"art": "ep1_taxi_checkpoint",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.taxi_checkpoint.data.text",
 				"blocks": [
 					{
@@ -3906,7 +3810,6 @@
 				"kind": "city_decision",
 				"art": "ep1_taxi_checkpoint",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.taxi_choice.data.text"
 			},
 			"position": [
@@ -3944,7 +3847,6 @@
 				"kind": "city_story",
 				"art": "ep1_taxi_road",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.taxi_road.data.text",
 				"blocks": [
 					{
@@ -3985,7 +3887,6 @@
 				"kind": "city_story",
 				"art": "ep1_taxi_house",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.taxi_house.data.text",
 				"blocks": [
 					{
@@ -4026,7 +3927,6 @@
 				"kind": "city_story",
 				"art": "ep1_farm_chase",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.taxi_shelter_1.data.text",
 				"blocks": [
 					{
@@ -4067,7 +3967,6 @@
 				"kind": "city_story",
 				"art": "ep1_farm_chase",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.taxi_shelter_2.data.text",
 				"blocks": [
 					{
@@ -4120,7 +4019,6 @@
 				"kind": "city_story",
 				"art": "ep1_farm_chase",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.taxi_shelter_3.data.text",
 				"blocks": [
 					{
@@ -4185,7 +4083,6 @@
 				"kind": "city_story",
 				"art": "ep1_dorvud_entry_1",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.dorvud_entry_1.data.text",
 				"blocks": [
 					{
@@ -4226,7 +4123,6 @@
 				"kind": "city_story",
 				"art": "ep1_dorvud_entry_1",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.dorvud_entry_2.data.text",
 				"blocks": [
 					{
@@ -4267,7 +4163,6 @@
 				"kind": "city_story",
 				"art": "ep1_dorvud_street",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.dorvud_street.data.text",
 				"blocks": [
 					{
@@ -4308,7 +4203,6 @@
 				"kind": "city_story",
 				"art": "ep1_dorvud_shop",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.dorvud_shop.data.text",
 				"blocks": [
 					{
@@ -4349,7 +4243,6 @@
 				"kind": "city_decision",
 				"art": "ep1_dorvud_shop",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.dorvud_choice.data.text"
 			},
 			"position": [
@@ -4387,7 +4280,6 @@
 				"kind": "city_story",
 				"art": "ep1_dorvud_stairs",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.dorvud_stairs.data.text",
 				"blocks": [
 					{
@@ -4428,7 +4320,6 @@
 				"kind": "city_story",
 				"art": "ep1_dorvud_fall",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.dorvud_fall.data.text",
 				"blocks": [
 					{
@@ -4470,7 +4361,6 @@
 				"kind": "city_story",
 				"art": "ep1_dorvud_floor",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.dorvud_floor.data.text",
 				"blocks": [
 					{
@@ -4511,7 +4401,6 @@
 				"kind": "city_story",
 				"art": "ep1_dorvud_room",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.dorvud_room.data.text",
 				"blocks": [
 					{
@@ -4552,7 +4441,6 @@
 				"kind": "city_story",
 				"art": "ep1_farm_chase",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.dorvud_shelter_1.data.text",
 				"blocks": [
 					{
@@ -4593,7 +4481,6 @@
 				"kind": "city_story",
 				"art": "ep1_farm_chase",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.dorvud_shelter_2.data.text",
 				"blocks": [
 					{
@@ -4646,7 +4533,6 @@
 				"kind": "city_story",
 				"art": "ep1_farm_chase",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.dorvud_shelter_3.data.text",
 				"blocks": [
 					{
@@ -4711,7 +4597,6 @@
 				"kind": "city_story",
 				"art": "ep1_mainstreet_choice",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.mainstreet_choice.data.text",
 				"blocks": [],
 				"controls_art": "ep1_mainstreet_choice_controls"
@@ -4797,7 +4682,6 @@
 				"kind": "city_cutscene",
 				"art": "ep1_mainstreet_run",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "",
 				"blocks": [],
 				"auto_seconds": 0.7
@@ -4826,7 +4710,6 @@
 				"kind": "city_cutscene",
 				"art": "ep1_mainstreet_attack",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "",
 				"blocks": [],
 				"auto_seconds": 0.7,
@@ -4856,7 +4739,6 @@
 				"kind": "city_story",
 				"art": "ep1_car_to_office",
 				"clean_background": true,
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.car_to_office.data.text",
 				"blocks": [
 					{
@@ -4895,7 +4777,6 @@
 			"data": {
 				"source": "ResultBad(1)",
 				"kind": "city_death",
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.death_1.data.text",
 				"result_id": 1.0,
 				"alive": false
@@ -4911,7 +4792,6 @@
 			"data": {
 				"source": "ResultBad(4)",
 				"kind": "city_death",
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.death_4.data.text",
 				"result_id": 4.0,
 				"alive": false
@@ -4927,7 +4807,6 @@
 			"data": {
 				"source": "ResultBad(7)",
 				"kind": "city_death",
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.death_7.data.text",
 				"result_id": 7.0,
 				"alive": false
@@ -4943,7 +4822,6 @@
 			"data": {
 				"source": "ResultBad(8)",
 				"kind": "city_death",
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.death_8.data.text",
 				"result_id": 8.0,
 				"alive": false
@@ -4959,7 +4837,6 @@
 			"data": {
 				"source": "ResultBad(9)",
 				"kind": "city_death",
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.death_9.data.text",
 				"result_id": 9.0,
 				"alive": false
@@ -4975,7 +4852,6 @@
 			"data": {
 				"source": "ResultBad(6)",
 				"kind": "city_ending",
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.ending_6.data.text",
 				"result_id": 6.0,
 				"alive": true
@@ -4991,7 +4867,6 @@
 			"data": {
 				"source": "ResultBad(77)",
 				"kind": "city_ending",
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.ending_77.data.text",
 				"result_id": 77.0,
 				"alive": true
@@ -5007,7 +4882,6 @@
 			"data": {
 				"source": "ResultBad(78)",
 				"kind": "city_ending",
-				"image": "OnTheStreet.jpg",
 				"text": "@loc:episode1.nodes.ending_78.data.text",
 				"result_id": 78.0,
 				"alive": true
@@ -5023,7 +4897,6 @@
 			"data": {
 				"source": "CarGet(1) -> MovCityAuto(3) frame 7; direct entry to IntoTheOffice",
 				"text": "@loc:episode1.nodes.hired_office_gate.data.text",
-				"image": "Fon1_1.png",
 				"kind": "city_story",
 				"art": "city_office_gate",
 				"text_rect": [

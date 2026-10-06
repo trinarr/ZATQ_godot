@@ -95,7 +95,7 @@ func run() -> void:
  await settle()
  check(quest.episode==2 and quest.current_id=="e2_hospital_1","selector starts second episode")
  scene._show_pause()
- scene.edge_hit.pressed.emit()
+ scene.overlay.resume_hit.pressed.emit()
  check(scene.playing and not scene.paused,"pause resumes second episode")
  quest._enter("e2_result_38")
  scene.screen.get_node("Начать заново").pressed.emit()

@@ -134,9 +134,6 @@ func _reset_screen() -> void:
 func _set_backdrop(texture: Texture2D, crop_pause: bool = false) -> void:
 	viewport_canvas.set_background(texture, crop_pause)
 
-func _image(filename: String) -> void:
-	_set_backdrop(load("res://assets/images/" + filename))
-
 func _layout_edge_tab() -> void:
 	if not is_instance_valid(edge_tab) or not is_instance_valid(edge_hit): return
 	var safe_size: Vector2 = viewport_canvas.safe_layer.size / screen.scale
@@ -351,8 +348,8 @@ func _show_story() -> void:
 	var node: Dictionary = Quest.current()
 	var kind: String = node.get("kind", "story")
 	_reset_screen()
-	if not kind.begins_with("city_") and not kind.begins_with("activity_"):
-		_image(node.get("image","Fon1_1.png"))
+	if kind == "item":
+		_set_backdrop(load("res://assets/images/Fon1_1.png"))
 	if previous_node != Quest.current_id:
 		effects.stop()
 		_play_sound(transition_sound if not transition_sound.is_empty() else node.get("sound", ""))
@@ -375,8 +372,6 @@ func _show_story() -> void:
 	elif Quest.current_id == "transport_choice":
 		_opening_art("transport")
 		_show_player_dialog({"text":node.text,"answer_size":24},Quest.available_choices())
-	elif kind == "boundary":
-		_message(LOC.text("@loc:ui.main.38"),node.text,_show_menu,LOC.text("@loc:ui.main.39"),false)
 	else:
 		_opening_art(Quest.current_id)
 		_opening_caption(node)
