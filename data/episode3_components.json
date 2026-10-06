@@ -1,0 +1,7448 @@
+{
+  "e3_dialogue_john": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_93463c4c703deffab8d6.webp",
+      "rect": [
+        63.0,
+        0.0,
+        711.0,
+        471.0
+      ],
+      "source": "/Symbol 237",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_2a7ba13c8a91ac682ed1.webp",
+      "rect": [
+        619.0,
+        55.0,
+        116.0,
+        152.0
+      ],
+      "source": "Ava/Symbol 234",
+      "layer": "background"
+    }
+  ],
+  "e3_item_glock16": [
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_172085922d7d44dd15b3.webp",
+      "rect": [
+        51.0,
+        30.0,
+        707.0,
+        394.0
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_bc68d77e23a7b55342b7.webp",
+      "rect": [
+        75.5,
+        56.0,
+        642.5,
+        47.5
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8331e031d42625517a2b.webp",
+      "rect": [
+        211.0,
+        118.5,
+        383.5,
+        262.5
+      ],
+      "source": "Weapons/Symbol 250",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_22e42f16a9a1f3164f51.webp",
+      "rect": [
+        680.0,
+        345.0,
+        27.0,
+        23.0
+      ],
+      "source": "/Symbol 12",
+      "layer": "foreground"
+    }
+  ],
+  "e3_item_glock7": [
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_172085922d7d44dd15b3.webp",
+      "rect": [
+        51.0,
+        30.0,
+        707.0,
+        394.0
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_bc68d77e23a7b55342b7.webp",
+      "rect": [
+        75.5,
+        56.0,
+        642.5,
+        47.5
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8331e031d42625517a2b.webp",
+      "rect": [
+        211.0,
+        118.5,
+        383.5,
+        262.5
+      ],
+      "source": "Weapons/Symbol 250",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_22e42f16a9a1f3164f51.webp",
+      "rect": [
+        680.0,
+        345.0,
+        27.0,
+        23.0
+      ],
+      "source": "/Symbol 12",
+      "layer": "foreground"
+    }
+  ],
+  "e3_item_knife": [
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_172085922d7d44dd15b3.webp",
+      "rect": [
+        51.0,
+        30.0,
+        707.0,
+        394.0
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_bc68d77e23a7b55342b7.webp",
+      "rect": [
+        75.5,
+        56.0,
+        642.5,
+        47.5
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_2530c760b74b9c2cbf6b.webp",
+      "rect": [
+        176.0,
+        174.0,
+        455.0,
+        138.5
+      ],
+      "source": "Weapons/Symbol 273",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_22e42f16a9a1f3164f51.webp",
+      "rect": [
+        680.0,
+        345.0,
+        27.0,
+        23.0
+      ],
+      "source": "/Symbol 12",
+      "layer": "foreground"
+    }
+  ],
+  "e3_john_1": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c81bf87b6f9665823ce2.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1555",
+      "layer": "background"
+    }
+  ],
+  "e3_john_10": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f2e4919583355e96e617.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:WithJohnTun.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_john_11": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_5b4e5790aa189382095a.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:CreatureKill.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_john_12": [],
+  "e3_john_13": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_86ac6f91db03e35004a7.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:LightInTheEyes.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_john_14": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_5d556dd3e55d3405ea44.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:KnifeKick.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_john_15": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_9fcff1b6c1b7da4380ca.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1598",
+      "layer": "background"
+    }
+  ],
+  "e3_john_16": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8b92f70f09614674635a.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:MeetTheGroup2.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_john_17": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_9bfb100e0c2a108d8181.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:MapFind1.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_john_18_anim_0": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_693108e0291a7c17bb98.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1638",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8d60833c8b933f62dd7a.webp",
+      "rect": [
+        199.5,
+        0.0,
+        444.0,
+        479.0
+      ],
+      "source": "Mov/Symbol 1644",
+      "layer": "background"
+    }
+  ],
+  "e3_john_18_anim_1": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_693108e0291a7c17bb98.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1638",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_d58ff12b57ba35f770cc.webp",
+      "rect": [
+        196.5,
+        0.0,
+        449.5,
+        479.0
+      ],
+      "source": "Mov/Symbol 1644",
+      "layer": "background"
+    }
+  ],
+  "e3_john_18_anim_10": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_693108e0291a7c17bb98.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1638",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_e0de6db9b5a3629c6ade.webp",
+      "rect": [
+        195.5,
+        0.0,
+        451.0,
+        479.0
+      ],
+      "source": "Mov/Symbol 1644",
+      "layer": "background"
+    }
+  ],
+  "e3_john_18_anim_11": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_693108e0291a7c17bb98.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1638",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8d60833c8b933f62dd7a.webp",
+      "rect": [
+        199.5,
+        0.0,
+        444.0,
+        479.0
+      ],
+      "source": "Mov/Symbol 1644",
+      "layer": "background"
+    }
+  ],
+  "e3_john_18_anim_12": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_693108e0291a7c17bb98.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1638",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_e0de6db9b5a3629c6ade.webp",
+      "rect": [
+        195.5,
+        0.0,
+        451.0,
+        479.0
+      ],
+      "source": "Mov/Symbol 1644",
+      "layer": "background"
+    }
+  ],
+  "e3_john_18_anim_13": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_693108e0291a7c17bb98.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1638",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_39ddf20978f1128699f9.webp",
+      "rect": [
+        193.5,
+        0.0,
+        606.5,
+        479.0
+      ],
+      "source": "Mov/Symbol 1644",
+      "layer": "background"
+    }
+  ],
+  "e3_john_18_anim_14": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_693108e0291a7c17bb98.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1638",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_d039ffaa1251dae7c25a.webp",
+      "rect": [
+        192.5,
+        0.0,
+        607.5,
+        479.0
+      ],
+      "source": "Mov/Symbol 1644",
+      "layer": "background"
+    }
+  ],
+  "e3_john_18_anim_15": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_693108e0291a7c17bb98.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1638",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_664319048ba2d21bedea.webp",
+      "rect": [
+        192.5,
+        0.0,
+        607.5,
+        479.0
+      ],
+      "source": "Mov/Symbol 1644",
+      "layer": "background"
+    }
+  ],
+  "e3_john_18_anim_16": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_693108e0291a7c17bb98.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1638",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_6a3cff75d2226d11d5ea.webp",
+      "rect": [
+        190.0,
+        0.0,
+        610.0,
+        479.0
+      ],
+      "source": "Mov/Symbol 1644",
+      "layer": "background"
+    }
+  ],
+  "e3_john_18_anim_17": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_693108e0291a7c17bb98.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1638",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_711171acde6f01036b6a.webp",
+      "rect": [
+        192.5,
+        0.0,
+        607.5,
+        479.0
+      ],
+      "source": "Mov/Symbol 1644",
+      "layer": "background"
+    }
+  ],
+  "e3_john_18_anim_18": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_693108e0291a7c17bb98.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1638",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_d31bf4a1cfeaa0cfbef8.webp",
+      "rect": [
+        193.5,
+        0.0,
+        606.5,
+        479.0
+      ],
+      "source": "Mov/Symbol 1644",
+      "layer": "background"
+    }
+  ],
+  "e3_john_18_anim_19": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_693108e0291a7c17bb98.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1638",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_5602eaf58440b382e3f2.webp",
+      "rect": [
+        194.5,
+        0.0,
+        605.5,
+        479.0
+      ],
+      "source": "Mov/Symbol 1644",
+      "layer": "background"
+    }
+  ],
+  "e3_john_18_anim_2": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_693108e0291a7c17bb98.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1638",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8ee190cb7ea28f729388.webp",
+      "rect": [
+        194.5,
+        0.0,
+        605.5,
+        479.0
+      ],
+      "source": "Mov/Symbol 1644",
+      "layer": "background"
+    }
+  ],
+  "e3_john_18_anim_20": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_693108e0291a7c17bb98.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1638",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8d60833c8b933f62dd7a.webp",
+      "rect": [
+        199.5,
+        0.0,
+        444.0,
+        479.0
+      ],
+      "source": "Mov/Symbol 1644",
+      "layer": "background"
+    }
+  ],
+  "e3_john_18_anim_3": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_693108e0291a7c17bb98.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1638",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_d31bf4a1cfeaa0cfbef8.webp",
+      "rect": [
+        193.5,
+        0.0,
+        606.5,
+        479.0
+      ],
+      "source": "Mov/Symbol 1644",
+      "layer": "background"
+    }
+  ],
+  "e3_john_18_anim_4": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_693108e0291a7c17bb98.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1638",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_0eae04c0ee6881a7ea8d.webp",
+      "rect": [
+        192.5,
+        0.0,
+        607.5,
+        479.0
+      ],
+      "source": "Mov/Symbol 1644",
+      "layer": "background"
+    }
+  ],
+  "e3_john_18_anim_5": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_693108e0291a7c17bb98.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1638",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_664319048ba2d21bedea.webp",
+      "rect": [
+        192.5,
+        0.0,
+        607.5,
+        479.0
+      ],
+      "source": "Mov/Symbol 1644",
+      "layer": "background"
+    }
+  ],
+  "e3_john_18_anim_6": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_693108e0291a7c17bb98.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1638",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_6a3cff75d2226d11d5ea.webp",
+      "rect": [
+        190.0,
+        0.0,
+        610.0,
+        479.0
+      ],
+      "source": "Mov/Symbol 1644",
+      "layer": "background"
+    }
+  ],
+  "e3_john_18_anim_7": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_693108e0291a7c17bb98.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1638",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_664319048ba2d21bedea.webp",
+      "rect": [
+        192.5,
+        0.0,
+        607.5,
+        479.0
+      ],
+      "source": "Mov/Symbol 1644",
+      "layer": "background"
+    }
+  ],
+  "e3_john_18_anim_8": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_693108e0291a7c17bb98.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1638",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_d039ffaa1251dae7c25a.webp",
+      "rect": [
+        192.5,
+        0.0,
+        607.5,
+        479.0
+      ],
+      "source": "Mov/Symbol 1644",
+      "layer": "background"
+    }
+  ],
+  "e3_john_18_anim_9": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_693108e0291a7c17bb98.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1638",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_39ddf20978f1128699f9.webp",
+      "rect": [
+        193.5,
+        0.0,
+        606.5,
+        479.0
+      ],
+      "source": "Mov/Symbol 1644",
+      "layer": "background"
+    }
+  ],
+  "e3_john_19": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_26cd879df484954d3efa.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:PovorotVtupik.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_john_2": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_9293b538e834bddd84ea.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1558",
+      "layer": "background"
+    }
+  ],
+  "e3_john_20": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_bcb31bcde3fcf9570b8f.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:Tupik.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_john_21": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_2c0bb0a15d5fd0c5cad6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        450.0
+      ],
+      "source": "Mov.Mov/external:MeetTheCreature.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_john_22": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c3d18e508c7a763401ed.webp",
+      "rect": [
+        0.0,
+        86.0,
+        800.0,
+        394.0
+      ],
+      "source": "Mov.Mov/external:FindTheCreature1.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_0": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_012005c722eb173c49f4.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_1": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_5ab789f64442d239bbd0.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_10": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_5756549ff36d5d5bb93b.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_3598d4fd8b8d1e7bb5a7.webp",
+      "rect": [
+        196.0,
+        19.5,
+        126.5,
+        192.5
+      ],
+      "source": "Mov.Mov.Mov4/Symbol 1670",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_b988c68c72f6e792c1d1.webp",
+      "rect": [
+        204.5,
+        31.0,
+        113.0,
+        113.0
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_11": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8c17c6de1d736ab7ffc7.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_675078976611eb7c489a.webp",
+      "rect": [
+        76.0,
+        149.5,
+        115.0,
+        161.0
+      ],
+      "source": "Mov.Mov.Mov3/Symbol 1673",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_6bd83941c78718c44dcf.webp",
+      "rect": [
+        77.5,
+        135.0,
+        113.0,
+        113.0
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_12": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_07dda2043e1808e6cce5.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_dbf69c87394930b41d60.webp",
+      "rect": [
+        76.0,
+        148.0,
+        114.0,
+        161.0
+      ],
+      "source": "Mov.Mov.Mov3/Symbol 1673",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_cfe7ed5b71a5db88ddb8.webp",
+      "rect": [
+        75.0,
+        130.5,
+        113.5,
+        113.5
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_13": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8f168fe7270645e02727.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_3a1241c5902f4b8c8102.webp",
+      "rect": [
+        76.0,
+        146.0,
+        113.5,
+        161.0
+      ],
+      "source": "Mov.Mov.Mov3/Symbol 1673",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_0e8d0ef5f58ed7374d56.webp",
+      "rect": [
+        73.5,
+        125.5,
+        113.5,
+        113.5
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_14": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_b666b87f06d3f894d00a.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_18ba33780099857abe11.webp",
+      "rect": [
+        77.0,
+        144.5,
+        112.0,
+        161.0
+      ],
+      "source": "Mov.Mov.Mov3/Symbol 1673",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_40e701de866e4213ca9e.webp",
+      "rect": [
+        83.0,
+        138.5,
+        114.0,
+        114.0
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_15": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_924e1c289dbcd08a05ed.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_57d3339bfb735884d1ef.webp",
+      "rect": [
+        76.5,
+        142.5,
+        112.0,
+        160.5
+      ],
+      "source": "Mov.Mov.Mov3/Symbol 1673",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1f9792c099c40061467f.webp",
+      "rect": [
+        82.0,
+        128.5,
+        114.0,
+        114.0
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_16": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_e3aec2ff5d469b923eb4.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_351f5285968c2a3d3cb9.webp",
+      "rect": [
+        77.5,
+        141.0,
+        110.5,
+        160.5
+      ],
+      "source": "Mov.Mov.Mov3/Symbol 1673",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f6ad597eaa2874208e52.webp",
+      "rect": [
+        81.0,
+        119.0,
+        114.0,
+        114.0
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_17": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_a7383e01b112091547ab.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_eb03e62316f91e18d215.webp",
+      "rect": [
+        77.0,
+        139.0,
+        110.5,
+        160.5
+      ],
+      "source": "Mov.Mov.Mov3/Symbol 1673",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_00cdb62537b70ffd4ec5.webp",
+      "rect": [
+        78.0,
+        121.0,
+        114.5,
+        114.5
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_18": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_d3826676c4d5fede3040.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_ad9759fdb0b979089a64.webp",
+      "rect": [
+        76.5,
+        137.5,
+        110.5,
+        160.5
+      ],
+      "source": "Mov.Mov.Mov3/Symbol 1673",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_02a1ac367c1142c98f36.webp",
+      "rect": [
+        75.0,
+        124.0,
+        114.5,
+        114.5
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_19": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c21339eb0c4330598bd4.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_3c2ddc00047791511012.webp",
+      "rect": [
+        77.5,
+        135.0,
+        109.0,
+        160.5
+      ],
+      "source": "Mov.Mov.Mov3/Symbol 1673",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f2ea8fa6b17f498fe529.webp",
+      "rect": [
+        77.5,
+        116.5,
+        114.5,
+        114.5
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_2": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_959324a8a2fc153ae7ac.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_987a1b9cdc221eb0fc20.webp",
+      "rect": [
+        189.5,
+        28.0,
+        128.5,
+        190.0
+      ],
+      "source": "Mov.Mov.Mov4/Symbol 1670",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f25e5e1d43d618684571.webp",
+      "rect": [
+        199.0,
+        44.0,
+        111.0,
+        111.0
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_20": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8181d64924a38e0ecd51.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_58bbb158097f53c738cd.webp",
+      "rect": [
+        443.0,
+        0.0,
+        57.5,
+        142.5
+      ],
+      "source": "Mov.Mov.Mov2/Symbol 1676",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_16170ddcb10a9ebde4c3.webp",
+      "rect": [
+        421.5,
+        0.0,
+        115.0,
+        112.0
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_21": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_e789fde976e182fe0768.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_e7cd6696469680c10333.webp",
+      "rect": [
+        445.0,
+        0.0,
+        56.5,
+        143.0
+      ],
+      "source": "Mov.Mov.Mov2/Symbol 1676",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_83fdc7428ef6894d54f2.webp",
+      "rect": [
+        421.5,
+        0.0,
+        115.0,
+        109.5
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_22": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_b8268f9dd06511ccebca.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_7931d8ec0adb505c181c.webp",
+      "rect": [
+        446.0,
+        0.0,
+        56.0,
+        143.0
+      ],
+      "source": "Mov.Mov.Mov2/Symbol 1676",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_06e896e257849e611b4d.webp",
+      "rect": [
+        420.5,
+        0.0,
+        115.5,
+        106.5
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_23": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_0ba236049adc4ab84cda.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_86f00cfd25330ac0e253.webp",
+      "rect": [
+        448.0,
+        0.0,
+        55.5,
+        143.5
+      ],
+      "source": "Mov.Mov.Mov2/Symbol 1676",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c2b513d05f6d9bc960be.webp",
+      "rect": [
+        431.5,
+        7.5,
+        115.5,
+        115.5
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_24": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_07d7268d7e948264987f.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_74bd5bc695314485d242.webp",
+      "rect": [
+        449.5,
+        0.0,
+        54.5,
+        144.0
+      ],
+      "source": "Mov.Mov.Mov2/Symbol 1676",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_6d1c71b410b3b44f3088.webp",
+      "rect": [
+        431.5,
+        0.0,
+        116.0,
+        115.5
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_25": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_59e818c293e6d90c5d9f.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_6cec753449ca38385cba.webp",
+      "rect": [
+        451.5,
+        0.0,
+        53.5,
+        144.0
+      ],
+      "source": "Mov.Mov.Mov2/Symbol 1676",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88d99e6b1f22a94f1497.webp",
+      "rect": [
+        432.5,
+        0.0,
+        116.0,
+        108.0
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_26": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_5fbb765a091ac1ed208c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_a371d1f400526b440385.webp",
+      "rect": [
+        452.5,
+        0.0,
+        53.5,
+        144.5
+      ],
+      "source": "Mov.Mov.Mov2/Symbol 1676",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_7fa85c3fd8190732a901.webp",
+      "rect": [
+        430.5,
+        0.0,
+        116.0,
+        112.0
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_27": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_2c87271c73a24a00dadf.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_22f7c0898b032483b3a2.webp",
+      "rect": [
+        454.5,
+        0.0,
+        52.5,
+        145.0
+      ],
+      "source": "Mov.Mov.Mov2/Symbol 1676",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_6595053174cd67a787dc.webp",
+      "rect": [
+        428.5,
+        0.5,
+        116.5,
+        116.5
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_28": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_e69ccce26864355b9c9a.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_b899ea4f72e8685a101e.webp",
+      "rect": [
+        455.5,
+        0.0,
+        52.5,
+        145.0
+      ],
+      "source": "Mov.Mov.Mov2/Symbol 1676",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_a7efa8dd8f2f59385c4b.webp",
+      "rect": [
+        432.0,
+        0.0,
+        116.5,
+        112.5
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_29": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_50a2dd38e21301fbcd64.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_0fac5e02c3f3f4f1cc88.webp",
+      "rect": [
+        359.0,
+        373.5,
+        115.0,
+        106.5
+      ],
+      "source": "Mov.Mov.Mov1/Symbol 1679",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_386afdc17b60157d99e0.webp",
+      "rect": [
+        322.5,
+        318.0,
+        116.5,
+        116.5
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_3": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_3cf85111ac36490fd655.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_2f0daaee21f960f15e0e.webp",
+      "rect": [
+        190.5,
+        27.0,
+        127.5,
+        190.0
+      ],
+      "source": "Mov.Mov.Mov4/Symbol 1670",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_239fe99e3f6364edb93c.webp",
+      "rect": [
+        198.0,
+        40.0,
+        111.0,
+        111.0
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_30": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_13d64f7f30b48bc71cde.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_e734cb1e40747444ccb0.webp",
+      "rect": [
+        358.5,
+        374.0,
+        114.5,
+        106.0
+      ],
+      "source": "Mov.Mov.Mov1/Symbol 1679",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_2d0a24970d8f2312d328.webp",
+      "rect": [
+        320.0,
+        314.5,
+        117.0,
+        117.0
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_31": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f0e5f7052ecf820b383c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_0b1965dfe2777f464f21.webp",
+      "rect": [
+        357.0,
+        374.5,
+        114.0,
+        105.5
+      ],
+      "source": "Mov.Mov.Mov1/Symbol 1679",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_7b17f7596edadb7013a6.webp",
+      "rect": [
+        318.0,
+        311.0,
+        116.5,
+        117.0
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_32": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_814b386c88bdd4da92bd.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_edd287d21ee00e55edda.webp",
+      "rect": [
+        356.5,
+        375.0,
+        113.5,
+        105.0
+      ],
+      "source": "Mov.Mov.Mov1/Symbol 1679",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_19de958e17db278fb050.webp",
+      "rect": [
+        325.5,
+        327.5,
+        117.0,
+        117.0
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_33": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_6f60273ff8c75f92a89b.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_d4498ec5055ca17ac87f.webp",
+      "rect": [
+        355.0,
+        375.5,
+        113.0,
+        104.5
+      ],
+      "source": "Mov.Mov.Mov1/Symbol 1679",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_49a753d2b6631bd4b9fb.webp",
+      "rect": [
+        324.0,
+        319.5,
+        117.0,
+        117.0
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_34": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_5db97980c185996cc32b.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_a8e0fd06b3434618fe45.webp",
+      "rect": [
+        354.0,
+        376.0,
+        112.0,
+        104.0
+      ],
+      "source": "Mov.Mov.Mov1/Symbol 1679",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_a9e873d8e74688898674.webp",
+      "rect": [
+        322.5,
+        311.0,
+        117.5,
+        117.5
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_35": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_be9a8792ec8fad1db6e3.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_eec6aaee63039d01a17c.webp",
+      "rect": [
+        353.0,
+        376.5,
+        112.0,
+        103.5
+      ],
+      "source": "Mov.Mov.Mov1/Symbol 1679",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f3711ad53155c32a29db.webp",
+      "rect": [
+        318.5,
+        315.0,
+        117.5,
+        117.5
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_36": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_850b473f8b7f256d66de.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_182736c6abc935fdf36d.webp",
+      "rect": [
+        352.5,
+        376.5,
+        111.5,
+        103.5
+      ],
+      "source": "Mov.Mov.Mov1/Symbol 1679",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_847448552f0f088eef97.webp",
+      "rect": [
+        314.5,
+        319.0,
+        117.5,
+        117.5
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_37": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_60dea4852802c614a2e4.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_3faef216692a545f4d04.webp",
+      "rect": [
+        351.5,
+        377.0,
+        110.5,
+        103.0
+      ],
+      "source": "Mov.Mov.Mov1/Symbol 1679",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_260fa45cf80e16ea407c.webp",
+      "rect": [
+        316.5,
+        314.5,
+        117.5,
+        117.5
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_38": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fca4fea225258d89ba47.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_39": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_4672d49b1cbff43d8495.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_4": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_02af81fc472629cf2124.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_b92cc6cd0c35aaecd4d8.webp",
+      "rect": [
+        191.0,
+        26.0,
+        127.5,
+        190.5
+      ],
+      "source": "Mov.Mov.Mov4/Symbol 1670",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_5881433a019e0c067774.webp",
+      "rect": [
+        196.0,
+        35.5,
+        111.5,
+        111.5
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_40": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_319e57a90ad18147f374.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_5": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_de408d6ae2d086ef02b9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_227cb378eb395f1cf81d.webp",
+      "rect": [
+        192.0,
+        24.5,
+        127.5,
+        191.0
+      ],
+      "source": "Mov.Mov.Mov4/Symbol 1670",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_5a9aa698c3b6a64affbc.webp",
+      "rect": [
+        208.0,
+        48.5,
+        111.5,
+        112.0
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_6": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_9e4f523de049d5420170.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_5cf199c2a25644527fc0.webp",
+      "rect": [
+        192.5,
+        23.5,
+        127.5,
+        191.5
+      ],
+      "source": "Mov.Mov.Mov4/Symbol 1670",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_32e414e63e5a2dc3db9e.webp",
+      "rect": [
+        206.5,
+        40.0,
+        112.0,
+        111.5
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_7": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8a8bae3e6e7f052f3dfe.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_dbc8f8ac94fbafc59e41.webp",
+      "rect": [
+        193.5,
+        22.5,
+        127.0,
+        191.5
+      ],
+      "source": "Mov.Mov.Mov4/Symbol 1670",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_7b9e3325e49eb319e4bd.webp",
+      "rect": [
+        206.0,
+        30.5,
+        112.0,
+        112.0
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_8": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_703b9db9a4106e2656ab.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_04670ef6ee302bc759fc.webp",
+      "rect": [
+        194.0,
+        21.5,
+        127.0,
+        191.5
+      ],
+      "source": "Mov.Mov.Mov4/Symbol 1670",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1e9dc87f39e61541321f.webp",
+      "rect": [
+        204.0,
+        34.0,
+        112.0,
+        112.5
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_23_anim_9": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_bc2be9acf98327fa8a14.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_015042dab5c8e52dd824.webp",
+      "rect": [
+        195.5,
+        20.5,
+        126.5,
+        192.0
+      ],
+      "source": "Mov.Mov.Mov4/Symbol 1670",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_089c6dff753941329727.webp",
+      "rect": [
+        202.0,
+        37.0,
+        113.0,
+        112.5
+      ],
+      "source": "Mov.Mov/Symbol 27",
+      "layer": "background"
+    }
+  ],
+  "e3_john_24": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_70a4fca59c0fab1bdfc8.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:InjCreature.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_john_25": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_d496e6dba9bdeb9f5542.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:RunFromCrt.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_john_26": [
+    {
+      "type": "panel",
+      "rect": [
+        0.0,
+        0.0,
+        799.9898334145546,
+        479.99657944589853
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov/Symbol 133",
+      "layer": "background"
+    }
+  ],
+  "e3_john_27": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_3982438a9cd11f2e74bf.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:MeetSZ.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_john_28": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_176a7ebd2ce6f37971e4.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1702",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_706b4b2c4c4cb46ecc5e.webp",
+      "rect": [
+        425.0,
+        360.5,
+        226.5,
+        78.5
+      ],
+      "source": "Mov.But2/Symbol 1708",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_a21a4c9ce935daf524cf.webp",
+      "rect": [
+        225.0,
+        306.0,
+        141.0,
+        83.5
+      ],
+      "source": "Mov.But1/Symbol 1712",
+      "layer": "background"
+    }
+  ],
+  "e3_john_29": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_754168f7d073ba99d026.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:StairsUpSewers.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_john_3": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_9230b09e235a1b14ff6d.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:BunkerEntrance.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_john_30": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_d83500ca6cb0f78c5feb.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:TunnelDeath.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_john_4": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_58a224577679f8e23ebc.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:FistPunch.jpg",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_85ff12e2e13efaa66045.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1570",
+      "layer": "background"
+    }
+  ],
+  "e3_john_5": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_a231717a6c559e033a5f.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:BunkerEntrance1.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_john_6_anim_0": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fe9d1980277367769936.webp",
+      "rect": [
+        44.0,
+        0.0,
+        756.0,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1589",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        50.95,
+        86.45,
+        606.0003662109375,
+        154.96994018554688
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_32747b0ec45b54270944.webp",
+      "rect": [
+        68.0,
+        108.5,
+        573.0,
+        109.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 1587",
+      "layer": "background"
+    }
+  ],
+  "e3_john_6_anim_1": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_4de745054b9c373be583.webp",
+      "rect": [
+        41.5,
+        0.0,
+        758.5,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1589",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        48.900000000000006,
+        86.45,
+        606.0003662109375,
+        154.96994018554688
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_aa73bf862c1932b8b4fc.webp",
+      "rect": [
+        66.0,
+        108.5,
+        573.0,
+        109.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 1587",
+      "layer": "background"
+    }
+  ],
+  "e3_john_6_anim_10": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_93b6598f6ad357a24527.webp",
+      "rect": [
+        23.0,
+        0.0,
+        777.0,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1589",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        30.0,
+        86.45,
+        606.0003662109375,
+        154.96994018554688
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_2dbb46bd4414fb98f06d.webp",
+      "rect": [
+        47.0,
+        108.5,
+        573.0,
+        109.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 1587",
+      "layer": "background"
+    }
+  ],
+  "e3_john_6_anim_11": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_2a4765b58a05a7b3e26e.webp",
+      "rect": [
+        21.0,
+        0.0,
+        779.0,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1589",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        27.950000000000003,
+        86.45,
+        606.0003662109375,
+        154.96994018554688
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_32747b0ec45b54270944.webp",
+      "rect": [
+        45.0,
+        108.5,
+        573.0,
+        109.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 1587",
+      "layer": "background"
+    }
+  ],
+  "e3_john_6_anim_12": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_a2186218e29e184589ee.webp",
+      "rect": [
+        18.5,
+        0.0,
+        781.5,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1589",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        25.849999999999994,
+        86.45,
+        606.0003662109375,
+        154.96994018554688
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_dc77875be5197f6a547e.webp",
+      "rect": [
+        42.5,
+        108.5,
+        573.5,
+        109.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 1587",
+      "layer": "background"
+    }
+  ],
+  "e3_john_6_anim_13": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_48f4173c059e97ffa02e.webp",
+      "rect": [
+        16.5,
+        0.0,
+        783.5,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1589",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        23.75,
+        86.45,
+        606.0003662109375,
+        154.96994018554688
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_0a7adf33c7b234795f5e.webp",
+      "rect": [
+        40.5,
+        108.5,
+        573.5,
+        109.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 1587",
+      "layer": "background"
+    }
+  ],
+  "e3_john_6_anim_14": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c734ffff4862a2647a92.webp",
+      "rect": [
+        14.5,
+        0.0,
+        785.5,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1589",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        21.65,
+        86.45,
+        606.0003662109375,
+        154.96994018554688
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_4fc7da740802bc333853.webp",
+      "rect": [
+        38.5,
+        108.5,
+        573.5,
+        109.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 1587",
+      "layer": "background"
+    }
+  ],
+  "e3_john_6_anim_15": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_376f8d81fc50a61536fa.webp",
+      "rect": [
+        12.5,
+        0.0,
+        787.5,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1589",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        19.549999999999997,
+        86.45,
+        606.0003662109375,
+        154.96994018554688
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_e8b114fa6543eccf38c7.webp",
+      "rect": [
+        36.5,
+        108.5,
+        573.5,
+        109.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 1587",
+      "layer": "background"
+    }
+  ],
+  "e3_john_6_anim_16": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8559cfe0f90119e350fa.webp",
+      "rect": [
+        10.5,
+        0.0,
+        789.5,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1589",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        17.450000000000003,
+        86.45,
+        606.0003662109375,
+        154.96994018554688
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_32747b0ec45b54270944.webp",
+      "rect": [
+        34.5,
+        108.5,
+        573.0,
+        109.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 1587",
+      "layer": "background"
+    }
+  ],
+  "e3_john_6_anim_17": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_b32b7abed3b4c3b56b8f.webp",
+      "rect": [
+        8.0,
+        0.0,
+        792.0,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1589",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        15.350000000000001,
+        86.45,
+        606.0003662109375,
+        154.96994018554688
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_dc77875be5197f6a547e.webp",
+      "rect": [
+        32.0,
+        108.5,
+        573.5,
+        109.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 1587",
+      "layer": "background"
+    }
+  ],
+  "e3_john_6_anim_18": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_551d25ae29131c8f8bd0.webp",
+      "rect": [
+        6.0,
+        0.0,
+        794.0,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1589",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        13.25,
+        86.45,
+        606.0003662109375,
+        154.96994018554688
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_0a7adf33c7b234795f5e.webp",
+      "rect": [
+        30.0,
+        108.5,
+        573.5,
+        109.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 1587",
+      "layer": "background"
+    }
+  ],
+  "e3_john_6_anim_19": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_d5103d51749aa3245b54.webp",
+      "rect": [
+        4.0,
+        0.0,
+        796.0,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1589",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        11.149999999999999,
+        86.45,
+        606.0003662109375,
+        154.96994018554688
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_4fc7da740802bc333853.webp",
+      "rect": [
+        28.0,
+        108.5,
+        573.5,
+        109.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 1587",
+      "layer": "background"
+    }
+  ],
+  "e3_john_6_anim_2": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_d37de272090e4c7511ec.webp",
+      "rect": [
+        39.5,
+        0.0,
+        760.5,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1589",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        46.8,
+        86.45,
+        606.0003662109375,
+        154.96994018554688
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_637b43d423f949f14c10.webp",
+      "rect": [
+        63.5,
+        108.5,
+        573.5,
+        109.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 1587",
+      "layer": "background"
+    }
+  ],
+  "e3_john_6_anim_20": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_7835b8aa4e8667f74960.webp",
+      "rect": [
+        2.0,
+        0.0,
+        798.0,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1589",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        9.05,
+        86.45,
+        606.0003662109375,
+        154.96994018554688
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_e8b114fa6543eccf38c7.webp",
+      "rect": [
+        26.0,
+        108.5,
+        573.5,
+        109.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 1587",
+      "layer": "background"
+    }
+  ],
+  "e3_john_6_anim_21": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_9678c3123443f31040cf.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1589",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        6.949999999999999,
+        86.45,
+        606.0003662109375,
+        154.96994018554688
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_32747b0ec45b54270944.webp",
+      "rect": [
+        24.0,
+        108.5,
+        573.0,
+        109.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 1587",
+      "layer": "background"
+    }
+  ],
+  "e3_john_6_anim_3": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_09ff46ccf17d47e6b9d6.webp",
+      "rect": [
+        37.5,
+        0.0,
+        762.5,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1589",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        44.7,
+        86.45,
+        606.0003662109375,
+        154.96994018554688
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_b6b1e152a00352706862.webp",
+      "rect": [
+        61.5,
+        108.5,
+        573.5,
+        109.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 1587",
+      "layer": "background"
+    }
+  ],
+  "e3_john_6_anim_4": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_d0ed5d3c7b5683038a6a.webp",
+      "rect": [
+        35.5,
+        0.0,
+        764.5,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1589",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        42.599999999999994,
+        86.45,
+        606.0003662109375,
+        154.96994018554688
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8d8d3d21950dc1ec791b.webp",
+      "rect": [
+        59.5,
+        108.5,
+        573.5,
+        109.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 1587",
+      "layer": "background"
+    }
+  ],
+  "e3_john_6_anim_5": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c063fa4029653ad0b8ed.webp",
+      "rect": [
+        33.5,
+        0.0,
+        766.5,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1589",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        40.5,
+        86.45,
+        606.0003662109375,
+        154.96994018554688
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_2dbb46bd4414fb98f06d.webp",
+      "rect": [
+        57.5,
+        108.5,
+        573.0,
+        109.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 1587",
+      "layer": "background"
+    }
+  ],
+  "e3_john_6_anim_6": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f0173fd710332a0826d1.webp",
+      "rect": [
+        31.0,
+        0.0,
+        769.0,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1589",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        38.4,
+        86.45,
+        606.0003662109375,
+        154.96994018554688
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_aa73bf862c1932b8b4fc.webp",
+      "rect": [
+        55.5,
+        108.5,
+        573.0,
+        109.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 1587",
+      "layer": "background"
+    }
+  ],
+  "e3_john_6_anim_7": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_494741ce780266c7b62a.webp",
+      "rect": [
+        29.0,
+        0.0,
+        771.0,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1589",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        36.3,
+        86.45,
+        606.0003662109375,
+        154.96994018554688
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_637b43d423f949f14c10.webp",
+      "rect": [
+        53.0,
+        108.5,
+        573.5,
+        109.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 1587",
+      "layer": "background"
+    }
+  ],
+  "e3_john_6_anim_8": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_97eb34ccb4d7bd2391ad.webp",
+      "rect": [
+        27.0,
+        0.0,
+        773.0,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1589",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        34.2,
+        86.45,
+        606.0003662109375,
+        154.96994018554688
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_b6b1e152a00352706862.webp",
+      "rect": [
+        51.0,
+        108.5,
+        573.5,
+        109.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 1587",
+      "layer": "background"
+    }
+  ],
+  "e3_john_6_anim_9": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_0684c5d790d09fb11bad.webp",
+      "rect": [
+        25.0,
+        0.0,
+        775.0,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1589",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        32.099999999999994,
+        86.45,
+        606.0003662109375,
+        154.96994018554688
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8d8d3d21950dc1ec791b.webp",
+      "rect": [
+        49.0,
+        108.5,
+        573.5,
+        109.0
+      ],
+      "source": "Mov.Mov.Circle/Symbol 1587",
+      "layer": "background"
+    }
+  ],
+  "e3_john_7": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_bb77003b9ee542152970.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:FirstStepTunnel.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_john_8": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_9fcff1b6c1b7da4380ca.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1598",
+      "layer": "background"
+    }
+  ],
+  "e3_john_9": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_57e8906397676182b4d4.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:Raztyazka.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_1": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_5ea7bc3f96b772f7fa9b.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1829",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_2": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_b9b57528fda304838f58.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1832",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_3": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8486e2146390c432f92e.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:MapFind.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_4": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_b3e0a31b413dbb2c5a35.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1842",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_5": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_18847c707801c795414b.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:ZombieInTun.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_6_anim_0": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c7265ccfcc6d2301d26c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_b6a3ab7710a1009b4e60.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1859",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1455429bcb1a3a0fcb97.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_6_anim_1": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c7265ccfcc6d2301d26c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_05a2da9aa8f3a00cb5dd.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1859",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1455429bcb1a3a0fcb97.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_6_anim_10": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c7265ccfcc6d2301d26c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c90da43fb84ccfdd8300.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1859",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1455429bcb1a3a0fcb97.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_6_anim_11": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c7265ccfcc6d2301d26c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_b6a3ab7710a1009b4e60.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1859",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1455429bcb1a3a0fcb97.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_6_anim_12": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c7265ccfcc6d2301d26c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_697acccb3cbca9b5c74f.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1859",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1455429bcb1a3a0fcb97.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_6_anim_13": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c7265ccfcc6d2301d26c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_6d9629206c5621173270.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1859",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1455429bcb1a3a0fcb97.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_6_anim_14": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c7265ccfcc6d2301d26c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_3f2f6011ce52b8ee3781.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1859",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1455429bcb1a3a0fcb97.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_6_anim_15": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c7265ccfcc6d2301d26c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c9a257b19b6b9f2a0a77.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1859",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1455429bcb1a3a0fcb97.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_6_anim_16": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c7265ccfcc6d2301d26c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_55087c5c1cbc92767159.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1859",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1455429bcb1a3a0fcb97.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_6_anim_17": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c7265ccfcc6d2301d26c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_de0ff3a0fe72530af3a5.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1859",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1455429bcb1a3a0fcb97.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_6_anim_18": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c7265ccfcc6d2301d26c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_14a8ffe820836bcc21f1.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1859",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1455429bcb1a3a0fcb97.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_6_anim_19": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c7265ccfcc6d2301d26c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_b1d8a06aa1a71a0326c3.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1859",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1455429bcb1a3a0fcb97.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_6_anim_2": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c7265ccfcc6d2301d26c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_e27d0a21ffdae8acefe8.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1859",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1455429bcb1a3a0fcb97.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_6_anim_20": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c7265ccfcc6d2301d26c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_a5333757eb2a524e2ed2.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1859",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1455429bcb1a3a0fcb97.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_6_anim_21": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c7265ccfcc6d2301d26c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_e27d0a21ffdae8acefe8.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1859",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1455429bcb1a3a0fcb97.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_6_anim_22": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c7265ccfcc6d2301d26c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_05a2da9aa8f3a00cb5dd.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1859",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1455429bcb1a3a0fcb97.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_6_anim_23": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c7265ccfcc6d2301d26c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_b6a3ab7710a1009b4e60.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1859",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1455429bcb1a3a0fcb97.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_6_anim_3": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c7265ccfcc6d2301d26c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_a5333757eb2a524e2ed2.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1859",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1455429bcb1a3a0fcb97.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_6_anim_4": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c7265ccfcc6d2301d26c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_b1d8a06aa1a71a0326c3.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1859",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1455429bcb1a3a0fcb97.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_6_anim_5": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c7265ccfcc6d2301d26c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_14a8ffe820836bcc21f1.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1859",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1455429bcb1a3a0fcb97.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_6_anim_6": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c7265ccfcc6d2301d26c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_ccd28ad30cad696388a3.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1859",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1455429bcb1a3a0fcb97.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_6_anim_7": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c7265ccfcc6d2301d26c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_5b0fbe8e5870052db601.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1859",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1455429bcb1a3a0fcb97.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_6_anim_8": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c7265ccfcc6d2301d26c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_304f84571aedf1d7131e.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1859",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1455429bcb1a3a0fcb97.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_6_anim_9": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c7265ccfcc6d2301d26c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c3639c8821186ea809a9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1859",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1455429bcb1a3a0fcb97.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1865",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_7": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_af6eedd4e154f5be3f3d.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:MythicalSculptures.png",
+      "layer": "background"
+    }
+  ],
+  "e3_kill_8": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_9887c521efdc3a1847ea.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:AimOnJack.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_north_1": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1def33e99db479911730.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1728",
+      "layer": "background"
+    }
+  ],
+  "e3_north_10": [
+    {
+      "type": "panel",
+      "rect": [
+        0.0,
+        0.0,
+        799.9898334145546,
+        479.99657944589853
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov/Symbol 133",
+      "layer": "background"
+    }
+  ],
+  "e3_north_11": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_599a89ed98edfb76aa01.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1783",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        0.0,
+        0.0,
+        799.9898334145546,
+        479.99657944589853
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov/Symbol 133",
+      "layer": "background"
+    }
+  ],
+  "e3_north_12": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_3370af5de3a3b0d637a2.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:ToTheTerry.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_north_13": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_02591a09650fb1ef30e8.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:ZombieTerryStart.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_north_14": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_34e5a69664bdeca55f69.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:DestroyTerry.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_north_15": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_852bb857b413427e4c54.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:LastAttack.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_north_2": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_2d9fc384620c1ca42035.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:LayingZombie.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_north_3": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_ace4c55081f631e6886f.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:InsideTheChurch.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_north_4": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_e4c1841df8a87c086878.webp",
+      "rect": [
+        0.0,
+        1.5,
+        800.0,
+        478.5
+      ],
+      "source": "Mov.Mov/external:HandOnGrass.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_north_5": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_cb4384199a70e56dc49f.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 516",
+      "layer": "background"
+    }
+  ],
+  "e3_north_6": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1d43d1b01c4756150dbf.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:MeetTheDavid.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_north_7": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1016cbfe4607567cb478.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:SpeakTheDavid.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_north_8": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_de5a321fa8e47959cdd6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:MeetThePeople.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_north_9": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_4d171725b2e283f3c35c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:BanditAttack.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_1": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_386b33cb749eb45d1f72.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:StartForThird.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_10": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_4ff5c2c7d86bf7c7340e.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:ZombieHand.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_11_anim_0": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_5f74e4c981a3a8e7c704.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1953",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_b088a9151161fd1731e9.webp",
+      "rect": [
+        580.5,
+        0.0,
+        219.5,
+        457.0
+      ],
+      "source": "But2/Symbol 1957",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_ae628c47736442193b30.webp",
+      "rect": [
+        54.0,
+        0.0,
+        468.0,
+        464.0
+      ],
+      "source": "But1/Symbol 1961",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_11_anim_1": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_214bb1144c53a53f7aec.webp",
+      "rect": [
+        1.0,
+        2.0,
+        799.0,
+        478.0
+      ],
+      "source": "Mov.Mov/Symbol 1953",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_b088a9151161fd1731e9.webp",
+      "rect": [
+        580.5,
+        0.0,
+        219.5,
+        457.0
+      ],
+      "source": "But2/Symbol 1957",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_ae628c47736442193b30.webp",
+      "rect": [
+        54.0,
+        0.0,
+        468.0,
+        464.0
+      ],
+      "source": "But1/Symbol 1961",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_11_anim_2": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_67505d040669799b12dc.webp",
+      "rect": [
+        4.0,
+        5.5,
+        796.0,
+        474.5
+      ],
+      "source": "Mov.Mov/Symbol 1953",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_b088a9151161fd1731e9.webp",
+      "rect": [
+        580.5,
+        0.0,
+        219.5,
+        457.0
+      ],
+      "source": "But2/Symbol 1957",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_ae628c47736442193b30.webp",
+      "rect": [
+        54.0,
+        0.0,
+        468.0,
+        464.0
+      ],
+      "source": "But1/Symbol 1961",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_11_anim_3": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_2a532095410673857988.webp",
+      "rect": [
+        1.5,
+        8.5,
+        798.5,
+        471.5
+      ],
+      "source": "Mov.Mov/Symbol 1953",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_b088a9151161fd1731e9.webp",
+      "rect": [
+        580.5,
+        0.0,
+        219.5,
+        457.0
+      ],
+      "source": "But2/Symbol 1957",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_ae628c47736442193b30.webp",
+      "rect": [
+        54.0,
+        0.0,
+        468.0,
+        464.0
+      ],
+      "source": "But1/Symbol 1961",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_11_anim_4": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_60ff66e167685bee8647.webp",
+      "rect": [
+        0.0,
+        12.0,
+        799.0,
+        468.0
+      ],
+      "source": "Mov.Mov/Symbol 1953",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_b088a9151161fd1731e9.webp",
+      "rect": [
+        580.5,
+        0.0,
+        219.5,
+        457.0
+      ],
+      "source": "But2/Symbol 1957",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_ae628c47736442193b30.webp",
+      "rect": [
+        54.0,
+        0.0,
+        468.0,
+        464.0
+      ],
+      "source": "But1/Symbol 1961",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_11_anim_5": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_28e2488c328b7f0b01ba.webp",
+      "rect": [
+        0.0,
+        17.0,
+        800.0,
+        463.0
+      ],
+      "source": "Mov.Mov/Symbol 1953",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_b088a9151161fd1731e9.webp",
+      "rect": [
+        580.5,
+        0.0,
+        219.5,
+        457.0
+      ],
+      "source": "But2/Symbol 1957",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_ae628c47736442193b30.webp",
+      "rect": [
+        54.0,
+        0.0,
+        468.0,
+        464.0
+      ],
+      "source": "But1/Symbol 1961",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_12": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_31f10051d8b387aa3413.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1968",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_13": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_7a00dd7582bcb215b667.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:ThroughTheWindow.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_14": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_009ab5be024bd568b765.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1986",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_26bd8d9df7acc77c7467.webp",
+      "rect": [
+        353.5,
+        162.5,
+        73.5,
+        98.5
+      ],
+      "source": "Mov/Symbol 1982",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c2d657038fabb3951144.webp",
+      "rect": [
+        400.5,
+        0.0,
+        130.5,
+        271.5
+      ],
+      "source": "Mov/Symbol 1985",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_15": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_4466487a4dab1f914b16.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:HideInTheCloset.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_16": [
+    {
+      "type": "panel",
+      "rect": [
+        0.0,
+        0.0,
+        799.9898334145546,
+        479.99657944589853
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov/Symbol 133",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_17": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c46556d1266791720230.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:DeahtFromSkaph.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_2": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_908b1728a9b1cc140b27.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:Kazah.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_3": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_56e2549adc04b03e2d41.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1887",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_4": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_18dc730068a3141d5793.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1895",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_5": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_5e196f267de118ebe713.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:Hellcptr.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_6": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_b47017514ec9b607a59f.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:FromTop.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_7": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_baec6cc4925dbc705260.webp",
+      "rect": [
+        319.0,
+        162.0,
+        440.0,
+        294.0
+      ],
+      "source": "Mov/Symbol 1919",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_0": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_ac547880bc2275225e88.webp",
+      "rect": [
+        90.0,
+        27.0,
+        386.0,
+        451.0
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_1": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_974e5ce2219a8e729870.webp",
+      "rect": [
+        88.5,
+        27.0,
+        386.0,
+        450.0
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_10": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_b857378f6c263d9c99a6.webp",
+      "rect": [
+        77.5,
+        27.0,
+        386.0,
+        438.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_11": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_74a4f9c02272ad5149e3.webp",
+      "rect": [
+        76.5,
+        27.5,
+        386.0,
+        436.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_12": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_0972cf0b90bac82be0e6.webp",
+      "rect": [
+        75.0,
+        27.0,
+        386.0,
+        436.0
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_13": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_5595c1f9c799b1a771d5.webp",
+      "rect": [
+        74.0,
+        27.5,
+        386.0,
+        433.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_14": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_881a224a6d1cfe3ff6ea.webp",
+      "rect": [
+        73.0,
+        27.0,
+        386.0,
+        433.0
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_15": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_7505d0f8cdd81b1ada75.webp",
+      "rect": [
+        72.0,
+        27.0,
+        386.0,
+        431.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_16": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_529635592747113b2778.webp",
+      "rect": [
+        71.0,
+        27.0,
+        386.0,
+        429.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_17": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_369816c734795fea6370.webp",
+      "rect": [
+        70.0,
+        27.0,
+        385.5,
+        428.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_18": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_05d83dc9a6597e4a3d1a.webp",
+      "rect": [
+        69.0,
+        27.0,
+        385.5,
+        426.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_19": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_de13599b05c5d0959456.webp",
+      "rect": [
+        68.0,
+        26.0,
+        385.5,
+        427.0
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_2": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c53a057f5285bef0ba16.webp",
+      "rect": [
+        87.0,
+        26.5,
+        386.0,
+        449.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_20": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_dbaaf8df54fe1094efd4.webp",
+      "rect": [
+        67.0,
+        24.5,
+        385.5,
+        428.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_21": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_38d10d755a96c67119ab.webp",
+      "rect": [
+        66.0,
+        23.0,
+        385.5,
+        429.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_22": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_042bf5277dedd71dba87.webp",
+      "rect": [
+        65.0,
+        21.0,
+        386.0,
+        431.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_23": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_3ea604d5aea9eb3f78fb.webp",
+      "rect": [
+        64.0,
+        19.5,
+        386.0,
+        432.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_24": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_3197a9c6c118f4331d62.webp",
+      "rect": [
+        63.0,
+        17.5,
+        386.0,
+        434.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_25": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_4cd42a2a05348e4638cb.webp",
+      "rect": [
+        62.0,
+        16.0,
+        386.0,
+        435.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_26": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_1d4f65c47342f3d53391.webp",
+      "rect": [
+        61.5,
+        14.0,
+        386.0,
+        437.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_27": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_d5614c03dd0145819e1e.webp",
+      "rect": [
+        60.5,
+        12.5,
+        386.0,
+        438.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_28": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_6900eae9299a30ca4fc3.webp",
+      "rect": [
+        59.5,
+        10.5,
+        386.5,
+        440.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_29": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_5043b6dda99614f87e53.webp",
+      "rect": [
+        59.0,
+        9.5,
+        386.0,
+        441.0
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_3": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f76197b12086f62c65df.webp",
+      "rect": [
+        86.0,
+        27.0,
+        386.0,
+        447.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_30": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f231e9c06ecac8efb32b.webp",
+      "rect": [
+        58.0,
+        7.5,
+        386.0,
+        442.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_31": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_d33db846d40b5890a344.webp",
+      "rect": [
+        57.5,
+        5.5,
+        386.0,
+        444.0
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_32": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_ca290d147e0f66b4ceff.webp",
+      "rect": [
+        56.5,
+        4.0,
+        386.0,
+        445.0
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_33": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_e0380be856a7510de027.webp",
+      "rect": [
+        56.0,
+        2.0,
+        386.0,
+        446.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_34": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_7e4053a2d559f8748d1b.webp",
+      "rect": [
+        55.0,
+        0.5,
+        386.0,
+        447.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_4": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_a34a273f0b4898aac7a1.webp",
+      "rect": [
+        84.5,
+        27.0,
+        386.0,
+        446.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_5": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_e693340446748e748dd2.webp",
+      "rect": [
+        83.5,
+        27.0,
+        386.0,
+        445.0
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_6": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_43418025eba6beda11fd.webp",
+      "rect": [
+        82.0,
+        27.0,
+        386.0,
+        444.0
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_7": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_95e7b11e1d20ba264d07.webp",
+      "rect": [
+        81.0,
+        27.0,
+        386.0,
+        442.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_8": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_c3e8e96339a7df6c4980.webp",
+      "rect": [
+        79.5,
+        27.0,
+        386.5,
+        441.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_8_anim_9": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f754703eb56dd4b3abc9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        319.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1924",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_9ac7cdfba2056fc2f8ee.webp",
+      "rect": [
+        78.5,
+        27.5,
+        386.5,
+        439.5
+      ],
+      "source": "Mov/Symbol 1928",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_fad88462ab62832537b5.webp",
+      "rect": [
+        148.5,
+        0.0,
+        651.5,
+        480.0
+      ],
+      "source": "Mov/Symbol 1930",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_88a3eabde5695b3229a6.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 1934",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8cad490fe4441e7b4714.webp",
+      "rect": [
+        144.5,
+        80.0,
+        325.5,
+        280.5
+      ],
+      "source": "Hand/Symbol 1937",
+      "layer": "background"
+    }
+  ],
+  "e3_opening_9": [],
+  "e3_out_2": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_8b15b680719dc75281ec.webp",
+      "rect": [
+        0.0,
+        17.0,
+        800.0,
+        463.0
+      ],
+      "source": "Mov.Mov/external:OnTheStreet.jpg",
+      "layer": "background"
+    }
+  ],
+  "e3_out_3": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_a7fca7891a13e18a6768.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/Symbol 1811",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_9b8433f07d452cd8ac98.webp",
+      "rect": [
+        348.0,
+        228.0,
+        107.0,
+        158.0
+      ],
+      "source": "Mov.Mov/Symbol 1810",
+      "layer": "background"
+    }
+  ],
+  "e3_out_4": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_69d3b8d5a3d054b88c4d.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:HideBehind.png",
+      "layer": "background"
+    }
+  ],
+  "e3_out_5": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_f51c9a0e6f9a6fe32e1f.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:PistolBarrel.jpg",
+      "layer": "background"
+    }
+  ]
+}

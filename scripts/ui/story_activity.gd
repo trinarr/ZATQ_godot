@@ -20,7 +20,7 @@ static func draw(owner: Control, data: Dictionary) -> void:
  activity.build()
 func build() -> void:
  var path: String="res://assets/flash_ui/"+node.get("art","result_background")+"."+node.get("art_extension","png")
- if ResourceLoader.exists(path):ui._set_backdrop(load(path))
+ if not ui._component_backdrop(node.get("art","result_background")) and ResourceLoader.exists(path):ui._set_backdrop(load(path))
  if not node.get("original_ui",false):
   ui._shade(ui.screen,0.65)
   ui._text(node.get("speaker",""),Rect2(90,40,620,45),26,true)
@@ -103,7 +103,8 @@ func update_visuals()->void:
   if node.get("qte_mode","")=="branch":frame=0
   if frame!=animation_index:
    animation_index=frame
-   ui._set_backdrop(load("res://assets/flash_ui/"+str(frames[frame])+".webp"))
+   if not ui._component_backdrop(str(frames[frame])):
+    ui._set_backdrop(load("res://assets/flash_ui/"+str(frames[frame])+".webp"))
  if node.has("target_windows") and is_instance_valid(tap):
   var window:=QTE.window_index(state,node)
   tap.visible=window>=0 and window not in state.hit_windows

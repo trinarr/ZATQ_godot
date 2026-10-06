@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://decojbk4p85hc"
-path="res://.godot/imported/e3_kill_4.webp-c2907c91320291c28a2b28ad44142bd5.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://bxf5ev1pfh8jb"
+valid=false
 
 [deps]
 
 source_file="res://assets/flash_ui/e3_kill_4.webp"
-dest_files=["res://.godot/imported/e3_kill_4.webp-c2907c91320291c28a2b28ad44142bd5.ctex"]
 
 [params]
 

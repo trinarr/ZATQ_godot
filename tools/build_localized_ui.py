@@ -109,6 +109,8 @@ def build(library):
  plans['ep2_continue_button']=[s(8,1,67.05,360),s(54,0,93,376)]
  export_components(r,plans,ROOT)
  episode_parts=json.loads((ROOT/'data/episode1_components.json').read_text()) if (ROOT/'data/episode1_components.json').exists() else {}
+ if (ROOT/"data/episode2_components.json").exists():episode_parts.update(json.loads((ROOT/"data/episode2_components.json").read_text()))
+ if (ROOT/"data/episode3_components.json").exists():episode_parts.update(json.loads((ROOT/"data/episode3_components.json").read_text()))
  tables={};layout={};brush_layout={}
  for table_name in ['ui','episode1']:
   with (ROOT/f'locales/{table_name}.csv').open(newline='',encoding='utf-8') as f:

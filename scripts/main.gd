@@ -41,9 +41,13 @@ func _ready() -> void:
 	viewport_canvas = SAFE_CANVAS.new()
 	add_child(viewport_canvas)
 	episode_components = JSON.parse_string(FileAccess.get_file_as_string("res://data/episode1_components.json"))
+	episode_components.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/episode2_components.json")),true)
+	episode_components.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/episode3_components.json")),true)
 	art_components = JSON.parse_string(FileAccess.get_file_as_string("res://data/ui_components.json"))
 	art_brushes = JSON.parse_string(FileAccess.get_file_as_string("res://data/ui_brush_layout.json"))
 	art_brushes.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/episode1_brushes.json")),true)
+	art_brushes.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/episode2_brushes.json")),true)
+	art_brushes.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/episode3_brushes.json")),true)
 	art_text = JSON.parse_string(FileAccess.get_file_as_string("res://data/ui_text_layout.json"))
 	selectors = JSON.parse_string(FileAccess.get_file_as_string("res://data/selectors.json"))
 	for number: int in Quest.episode_starts:
@@ -164,7 +168,7 @@ func _art(filename: String, parent: Control = null, rect: Rect2 = Rect2(0,0,800,
 	if art_components.has(filename): _draw_components(filename,image,"foreground")
 	elif episode_components.has(filename): COMPONENTS.draw(image,episode_components[filename],"foreground")
 	var icons_path:="res://assets/flash_ui/"+filename+"_icons.png"
-	if not art_components.has(filename) and ResourceLoader.exists(icons_path):
+	if not composed and ResourceLoader.exists(icons_path):
 		var icons:=TextureRect.new()
 		icons.texture=load(icons_path)
 		icons.expand_mode=TextureRect.EXPAND_IGNORE_SIZE

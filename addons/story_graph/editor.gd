@@ -4,6 +4,9 @@ const LOC = preload("res://scripts/core/localization.gd")
 const MODEL = preload("res://addons/story_graph/graph.gd")
 const CANVAS = preload("res://addons/story_graph/canvas.gd")
 const GRAPH_SCENE = preload("res://addons/dialogue_nodes/editor/Graph.tscn")
+const COMPONENTS := preload("res://scripts/ui/flash_components.gd")
+var component_previews: Dictionary = {}
+var component_previews_loaded := false
 const QTE := preload("res://scripts/core/qte_rules.gd")
 const LABELS := {"scene":"Сцена", "choice":"Ответ", "condition":"Условие", "action":"Действие", "dialogue":"Реплика", "code":"Ввод кода", "qte":"QTE"}
 const COLORS := {"scene":Color("6d9bea"),"choice":Color("72caba"),"condition":Color("eab761"),"action":Color("bda0ed"),"dialogue":Color("69cbde"),"code":Color("e6a5cc"),"qte":Color("e77973")}
@@ -320,7 +323,22 @@ func rebuild(refresh_inspector: bool = true) -> void:
   var art: String = data.data.get("art","")
   if not art.is_empty() and data.type in MODEL.SCENE_TYPES:
    var texture_path: String = "res://assets/flash_ui/"+art+"."+data.data.get("art_extension","png")
-   if ResourceLoader.exists(texture_path):
+   if not component_previews_loaded:
+    for manifest: String in ["episode1_components","episode2_components","episode3_components"]:
+     var resource := "res://data/"+manifest+".json"
+     if FileAccess.file_exists(resource):component_previews.merge(JSON.parse_string(FileAccess.get_file_as_string(resource)),true)
+    component_previews_loaded=true
+   if component_previews.has(art):
+    var preview_holder := Control.new();preview_holder.custom_minimum_size=Vector2(260,110)
+    preview_holder.mouse_filter=Control.MOUSE_FILTER_IGNORE
+    node.add_child(preview_holder)
+    var layers := Control.new();layers.size=Vector2(1600,960)
+    layers.scale=Vector2.ONE*(110.0/960.0);layers.position.x=(260-1600*layers.scale.x)*0.5
+    layers.mouse_filter=Control.MOUSE_FILTER_IGNORE;preview_holder.add_child(layers)
+    var black := ColorRect.new();black.size=layers.size;black.color=Color.BLACK
+    black.mouse_filter=Control.MOUSE_FILTER_IGNORE;layers.add_child(black)
+    COMPONENTS.draw(layers,component_previews[art])
+   elif ResourceLoader.exists(texture_path):
     var image := TextureRect.new();image.texture=load(texture_path)
     image.custom_minimum_size=Vector2(260,110)
     image.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;image.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED

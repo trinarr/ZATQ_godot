@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bq6iyjb57oihk"
-path="res://.godot/imported/e3_dialogue_john_icons.png-1a17af3c727aa493bd6fe0aa366b0bad.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://c1m6bv6xwht1d"
+valid=false
 
 [deps]
 
 source_file="res://assets/flash_ui/e3_dialogue_john_icons.png"
-dest_files=["res://.godot/imported/e3_dialogue_john_icons.png-1a17af3c727aa493bd6fe0aa366b0bad.ctex"]
 
 [params]
 

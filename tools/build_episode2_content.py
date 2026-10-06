@@ -233,5 +233,9 @@ def main():
     elif name.startswith('assets/Images/') and not name.endswith('/'):(photos/Path(name).name).write_bytes(z.read(name))
     elif name.startswith('assets/Sound/') and name.endswith('.mp3'):(Path(tmp)/'Sound'/Path(name).name).write_bytes(z.read(name))
     elif name.endswith('.as'):sources[Path(name).stem]=z.read(name).decode('utf-8-sig')
-  build(library,photos,sources,args.output,not args.content_only,args.reuse_art)
+  # Component export replaces the former flattened image generation.
+  build(library,photos,sources,args.output,False,args.reuse_art)
+ if not args.content_only:
+  from build_episode2_components import build as build_components
+  build_components(args.archive,args.output)
 if __name__=='__main__':main()

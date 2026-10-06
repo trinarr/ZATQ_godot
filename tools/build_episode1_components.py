@@ -42,7 +42,7 @@ class Exporter(ResultRenderer):
    im.save(temporary,format='WEBP',lossless=True,method=4,exact=True)
    with temporary.open('rb') as complete:os.fsync(complete.fileno())
    os.replace(temporary,dest)
-  return {'type':'texture','texture':'episode1_components/'+filename,'rect':[bounds[0]/2,bounds[1]/2,im.width/2,im.height/2]}
+  return {'type':'texture','texture':self.out.name+'/'+filename,'rect':[bounds[0]/2,bounds[1]/2,im.width/2,im.height/2]}
  def panel(self,e,t,alpha,path):
   fills=e.findall('./x:fills/x:FillStyle',NS);edges=e.findall('./x:edges/x:Edge',NS)
   if len(fills)!=1 or len(edges)!=1 or e.find('./x:strokes/*',NS)is not None:return False

@@ -12,7 +12,8 @@ static func draw(ui: Control, node: Dictionary) -> void:
 		RESULT.draw(ui,node)
 		return
 	if node.kind == "city_pickup":
-		ui._set_backdrop(load("res://assets/flash_ui/"+node.background_art+".webp"))
+		if not ui._component_backdrop(node.background_art):
+			ui._set_backdrop(load("res://assets/flash_ui/"+node.background_art+".webp"))
 		ui._shade(ui.screen,0.65)
 		ui._art(artwork)
 		ui._text(node.text,Rect2(102,71,594,31),24,false,true)

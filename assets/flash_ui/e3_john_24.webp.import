@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5pepbqj41d8s"
-path="res://.godot/imported/e3_john_24.webp-0c9013cee5f78b3eac814d196272744e.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://bmb62xr8dxjwi"
+valid=false
 
 [deps]
 
 source_file="res://assets/flash_ui/e3_john_24.webp"
-dest_files=["res://.godot/imported/e3_john_24.webp-0c9013cee5f78b3eac814d196272744e.ctex"]
 
 [params]
 

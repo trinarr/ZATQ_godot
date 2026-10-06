@@ -22,14 +22,6 @@ def build(library, photos, sounds, sources, output, reuse=False):
  def render(key,symbol,frame,ov,photo='',photo_path='Mov.Mov',hide=None,transparent=False,y=0):
   spec={'symbol':symbol,'frame':frame,'overrides':ov,'photo':photo,'photo_path':photo_path,'hide':sorted(hide or []),'offset_y':y}
   visuals[key]=spec
-  ext='png' if transparent else 'webp'
-  if not reuse or not (art/(key+'.'+ext)).exists() or (art/(key+'.'+ext)).stat().st_size==0:
-   r.photo=photo;r.photo_path=photo_path
-   r.render(key+'.png',[(f'Symbol {symbol}',frame,0,y,ov,set(hide or []))])
-   if not transparent:
-    with Image.open(art/(key+'.png')) as im:
-     bg=Image.new('RGBA',im.size,'black');bg.alpha_composite(im.convert('RGBA'));buffer=io.BytesIO();bg.convert('RGB').save(buffer,format='WEBP',quality=95,method=6);(art/(key+'.webp.tmp')).write_bytes(buffer.getvalue());(art/(key+'.webp.tmp')).replace(art/(key+'.webp'))
-    (art/(key+'.png')).unlink()
  def add(cls,fr):
   name,sym,_=CLASSES[cls];symbol=f'Symbol {sym}';ov={};photo='';sound=''
   for e in active_elements(r,symbol,fr-1):
@@ -216,4 +208,6 @@ def main():
     elif n.startswith('assets/Sound/') and n.endswith('.mp3'):(sounds/Path(n).name).write_bytes(z.read(n))
     elif n.endswith('.as'):sources[Path(n).stem]=z.read(n).decode('utf-8-sig')
   build(lib,photos,sounds,sources,a.output,a.reuse_art)
+ from build_episode3_components import build as build_components
+ build_components(a.archive,a.output)
 if __name__=='__main__':main()

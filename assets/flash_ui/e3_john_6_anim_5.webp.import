@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8483qi8yfi3h"
-path="res://.godot/imported/e3_john_6_anim_5.webp-24a43f9f3e24a547ff15b75185a9140c.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://b7mw7gkh5b63c"
+valid=false
 
 [deps]
 
 source_file="res://assets/flash_ui/e3_john_6_anim_5.webp"
-dest_files=["res://.godot/imported/e3_john_6_anim_5.webp-24a43f9f3e24a547ff15b75185a9140c.ctex"]
 
 [params]
 

@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbxv6f7qhmdh3"
-path="res://.godot/imported/e3_kill_6_anim_10.webp-81ea621d2a936818ab685686a2ab2918.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://dkka7p7f4yhdj"
+valid=false
 
 [deps]
 
 source_file="res://assets/flash_ui/e3_kill_6_anim_10.webp"
-dest_files=["res://.godot/imported/e3_kill_6_anim_10.webp-81ea621d2a936818ab685686a2ab2918.ctex"]
 
 [params]
 

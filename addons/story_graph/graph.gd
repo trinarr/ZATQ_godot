@@ -67,7 +67,7 @@ static var component_art_names: Dictionary = {}
 static var components_loaded: bool = false
 static func has_art(name: String) -> bool:
  if not components_loaded:
-  for path: String in ["res://data/episode1_components.json","res://data/ui_components.json"]:
+  for path: String in ["res://data/episode1_components.json","res://data/episode2_components.json","res://data/episode3_components.json","res://data/ui_components.json"]:
    var parts: Variant = JSON.parse_string(FileAccess.get_file_as_string(path))
    if parts is Dictionary:
     for key: String in parts: component_art_names[key] = true
@@ -131,7 +131,7 @@ static func validate(graph: Dictionary) -> PackedStringArray:
     if float(window.get("start",-1))<previous_end or float(window.get("end",0))<=float(window.get("start",0)) or float(window.get("end",0))>float(data.get("seconds",0)) or window.get("rect",[]).size()!=4:errors.append("Неверное окно QTE: "+id)
     previous_end=float(window.get("end",0))
    for frame: String in data.get("animation_frames",[]):
-    if not ResourceLoader.exists("res://assets/flash_ui/"+frame+".webp"):errors.append("Не найден кадр: "+id+" / "+frame)
+    if not has_art(frame) and not ResourceLoader.exists("res://assets/flash_ui/"+frame+".webp"):errors.append("Не найден кадр: "+id+" / "+frame)
   for key: String in ["art","art_on_foot","controls_art","decision_art","background_art"]:
    var art: String = data.get(key,"")
    if art.is_empty():continue

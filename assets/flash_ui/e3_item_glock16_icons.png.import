@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://t1n7gqqccb6d"
-path="res://.godot/imported/e3_item_glock16_icons.png-1de91548493302754ace425d560b9203.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://wvp1hpiu0wob"
+valid=false
 
 [deps]
 
 source_file="res://assets/flash_ui/e3_item_glock16_icons.png"
-dest_files=["res://.godot/imported/e3_item_glock16_icons.png-1de91548493302754ace425d560b9203.ctex"]
 
 [params]
 

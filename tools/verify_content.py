@@ -5,6 +5,8 @@ root=Path(__file__).resolve().parents[1]
 from story_graph_format import load_all
 nodes=load_all(root)
 components=json.loads((root/"data/episode1_components.json").read_text())
+components.update(json.loads((root/"data/episode2_components.json").read_text()))
+components.update(json.loads((root/"data/episode3_components.json").read_text()))
 assert all(n.get('kind','story') != 'boundary' for n in nodes.values())
 assert sum(n.get('kind','story') == 'city_ending' for n in nodes.values()) == 10
 for key,node in nodes.items():

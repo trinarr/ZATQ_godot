@@ -1,0 +1,1430 @@
+{
+  "e2_attack_1": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_1d73d93c07da97354864.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2015",
+      "layer": "background"
+    }
+  ],
+  "e2_attack_2": [],
+  "e2_back_1": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_c55e1903ab8e1e947217.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:ZombieTeeth.jpg",
+      "layer": "background"
+    }
+  ],
+  "e2_back_2": [
+    {
+      "type": "panel",
+      "rect": [
+        0.0,
+        0.0,
+        800.000244140625,
+        480.0004119873047
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "source": "Mov.Mov/Symbol 133",
+      "layer": "background"
+    }
+  ],
+  "e2_first_1": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_09f20cf580fd1e5a40ce.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2153",
+      "layer": "background"
+    }
+  ],
+  "e2_first_10": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_da5c5a85ecb1d911a74a.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2211",
+      "layer": "background"
+    }
+  ],
+  "e2_first_11": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_76518f9f34a286c5650c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2212",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_0c64b3d472bb19097b75.webp",
+      "rect": [
+        368.0,
+        301.5,
+        13.5,
+        12.5
+      ],
+      "source": "Mov/Symbol 2212",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_81002a73113831cfd445.webp",
+      "rect": [
+        426.5,
+        292.5,
+        12.5,
+        10.5
+      ],
+      "source": "Mov/Symbol 2212",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_81002a73113831cfd445.webp",
+      "rect": [
+        352.5,
+        292.5,
+        12.5,
+        10.5
+      ],
+      "source": "Mov/Symbol 2212",
+      "layer": "background"
+    }
+  ],
+  "e2_first_12": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_76518f9f34a286c5650c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2214",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_0c64b3d472bb19097b75.webp",
+      "rect": [
+        368.0,
+        301.5,
+        13.5,
+        12.5
+      ],
+      "source": "Mov/Symbol 2214",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_81002a73113831cfd445.webp",
+      "rect": [
+        352.5,
+        292.5,
+        12.5,
+        10.5
+      ],
+      "source": "Mov/Symbol 2214",
+      "layer": "background"
+    }
+  ],
+  "e2_first_2": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_414c05705eba4155a668.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2159",
+      "layer": "background"
+    }
+  ],
+  "e2_first_3": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_727e105da01a17236ccc.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2170",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_8a415447f1fd3e4c6101.webp",
+      "rect": [
+        106.5,
+        306.5,
+        403.0,
+        173.5
+      ],
+      "source": "Mov/Symbol 2169",
+      "layer": "background"
+    }
+  ],
+  "e2_first_4": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_76518f9f34a286c5650c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2173",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_0c64b3d472bb19097b75.webp",
+      "rect": [
+        368.0,
+        301.5,
+        13.5,
+        12.5
+      ],
+      "source": "Mov/Symbol 2173",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_81002a73113831cfd445.webp",
+      "rect": [
+        426.5,
+        292.5,
+        12.5,
+        10.5
+      ],
+      "source": "Mov/Symbol 2173",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_fba3517f1338382be02a.webp",
+      "rect": [
+        423.5,
+        334.0,
+        13.5,
+        12.0
+      ],
+      "source": "Mov/Symbol 2175",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_81002a73113831cfd445.webp",
+      "rect": [
+        352.5,
+        292.5,
+        12.5,
+        10.5
+      ],
+      "source": "Mov/Symbol 2179",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_c785fd2d7d6e84d8cf3a.webp",
+      "rect": [
+        0.0,
+        414.0,
+        800.0,
+        66.0
+      ],
+      "source": "Mov.Mov/Symbol 506",
+      "layer": "background"
+    }
+  ],
+  "e2_first_5": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_1fc87239720b40bf92e2.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:ZombieAttackBack.jpg",
+      "layer": "background"
+    }
+  ],
+  "e2_first_6": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_b44d24a66377bb2edcfb.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2189",
+      "layer": "background"
+    }
+  ],
+  "e2_first_7": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_4c2ca9e4856bd5c7da9e.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2194",
+      "layer": "background"
+    }
+  ],
+  "e2_first_8": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_25d0b0ede5e7a180e0f9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2199",
+      "layer": "background"
+    }
+  ],
+  "e2_first_9": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_e4c0675c789077c50fc7.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2204",
+      "layer": "background"
+    }
+  ],
+  "e2_hall_1": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_73f4ace063d59951d82a.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2027",
+      "layer": "background"
+    }
+  ],
+  "e2_hall_2": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_7e57a185fbf1ef0cac4c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2033",
+      "layer": "background"
+    }
+  ],
+  "e2_hall_3": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_042859ceae8b2980c43d.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2038",
+      "layer": "background"
+    }
+  ],
+  "e2_hall_4": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_8c1d9f9ebff1f057f326.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2046",
+      "layer": "background"
+    }
+  ],
+  "e2_hall_5": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_662303299ae1ee6d1e0c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2054",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_68c33f0c42dd0632d3b4.webp",
+      "rect": [
+        291.5,
+        208.5,
+        425.5,
+        271.5
+      ],
+      "source": "Mov/Symbol 2050",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_68c33f0c42dd0632d3b4.webp",
+      "rect": [
+        291.5,
+        208.5,
+        425.5,
+        271.5
+      ],
+      "source": "Mov/Symbol 2050",
+      "layer": "background"
+    }
+  ],
+  "e2_hall_6": [],
+  "e2_hall_7": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_3ef26d6d54804a848c4c.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2061",
+      "layer": "background"
+    }
+  ],
+  "e2_hall_8": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_bc7f618576c0997cb42f.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2070",
+      "layer": "background"
+    }
+  ],
+  "e2_hall_9": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_a710919d49ec868d049d.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2076",
+      "layer": "background"
+    }
+  ],
+  "e2_hospital_1": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_14203715c2492121cc9f.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:HospitalMain.png",
+      "layer": "background"
+    }
+  ],
+  "e2_hospital_10": [
+    {
+      "type": "panel",
+      "rect": [
+        0.0,
+        0.0,
+        800.000244140625,
+        480.0004119873047
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "source": "Mov/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_b06699c14e591f424cf6.webp",
+      "rect": [
+        28.5,
+        414.0,
+        13.0,
+        40.5
+      ],
+      "source": "Mov/Symbol 2372",
+      "layer": "background"
+    }
+  ],
+  "e2_hospital_11": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_bb8b11f7ba7ebc2c0b36.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2381",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_204b1139a9338cf190c0.webp",
+      "rect": [
+        155.0,
+        192.0,
+        425.5,
+        288.0
+      ],
+      "source": "Mov/Symbol 2169",
+      "layer": "background"
+    }
+  ],
+  "e2_hospital_12": [
+    {
+      "type": "panel",
+      "rect": [
+        0.0,
+        0.0,
+        800.000244140625,
+        480.0004119873047
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "source": "Mov/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_b06699c14e591f424cf6.webp",
+      "rect": [
+        28.5,
+        414.0,
+        13.0,
+        40.5
+      ],
+      "source": "Mov/Symbol 2372",
+      "layer": "background"
+    }
+  ],
+  "e2_hospital_13": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_c5c2dd33e2596a593938.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2391",
+      "layer": "background"
+    }
+  ],
+  "e2_hospital_14": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_455a67c07282acd474ce.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2396",
+      "layer": "background"
+    }
+  ],
+  "e2_hospital_15": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_97994b4b9da7b3687825.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/external:KillTheZombie.png",
+      "layer": "background"
+    }
+  ],
+  "e2_hospital_16": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_a14da772c51506210458.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2410",
+      "layer": "background"
+    }
+  ],
+  "e2_hospital_16_controls": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_bef87960f20b74b0c788.webp",
+      "rect": [
+        269.5,
+        338.5,
+        117.5,
+        76.0
+      ],
+      "source": "But1/Symbol 2413",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_f7ac1091b82f9b0202e8.webp",
+      "rect": [
+        393.0,
+        337.0,
+        109.0,
+        35.0
+      ],
+      "source": "But2/Symbol 2417",
+      "layer": "background"
+    }
+  ],
+  "e2_hospital_17": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_8e4f88842140217e54fc.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2425",
+      "layer": "background"
+    }
+  ],
+  "e2_hospital_18": [],
+  "e2_hospital_19": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_ddf8d59858ac46f839e1.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2437",
+      "layer": "background"
+    }
+  ],
+  "e2_hospital_2": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_430b6b22567dc01ec45d.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:HospitalRunning.png",
+      "layer": "background"
+    }
+  ],
+  "e2_hospital_20": [
+    {
+      "type": "panel",
+      "rect": [
+        0.0,
+        0.0,
+        800.000244140625,
+        480.0004119873047
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "source": "Mov/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_b06699c14e591f424cf6.webp",
+      "rect": [
+        28.5,
+        414.0,
+        13.0,
+        40.5
+      ],
+      "source": "Mov/Symbol 2372",
+      "layer": "background"
+    }
+  ],
+  "e2_hospital_3": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_c4e6c913fcb0c8c19594.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2316",
+      "layer": "background"
+    }
+  ],
+  "e2_hospital_4": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_136c207bc1f8ac08259d.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2338",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_5b82a7037f81012a13d2.webp",
+      "rect": [
+        163.0,
+        114.5,
+        65.0,
+        32.5
+      ],
+      "source": "Mov/Symbol 2322",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        113.0,
+        114.95,
+        147.99737548828125,
+        31.9994659423828
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "source": "Mov/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_7f0cd21937c4949a131a.webp",
+      "rect": [
+        166.5,
+        172.0,
+        60.0,
+        29.5
+      ],
+      "source": "Mov/Symbol 2325",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        114.0,
+        171.4,
+        147.99737548828125,
+        31.999465942382812
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "source": "Mov/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_fa205472a468f0b209b0.webp",
+      "rect": [
+        177.5,
+        61.5,
+        80.5,
+        34.0
+      ],
+      "source": "Mov/Symbol 2328",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_f72d1f2d3d5db3dac1d7.webp",
+      "rect": [
+        113.5,
+        58.0,
+        149.5,
+        37.5
+      ],
+      "source": "Mov/Symbol 133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_da32b7c44a531eb71a5b.webp",
+      "rect": [
+        265.5,
+        51.0,
+        22.0,
+        20.5
+      ],
+      "source": "Mov/Symbol 2331",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_df1204276414296ea85e.webp",
+      "rect": [
+        264.0,
+        107.5,
+        23.0,
+        71.5
+      ],
+      "source": "Mov/Symbol 2331",
+      "layer": "background"
+    }
+  ],
+  "e2_hospital_5": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_95521f5d376193e1a7d9.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:EyeOfZombie.jpg",
+      "layer": "background"
+    }
+  ],
+  "e2_hospital_6": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_b1aaab2700c6ea43893b.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2348",
+      "layer": "background"
+    }
+  ],
+  "e2_hospital_7": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_bca22815ae37adb4dde3.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2355",
+      "layer": "background"
+    }
+  ],
+  "e2_hospital_8": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_84cc177e05b9b4d18361.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2362",
+      "layer": "background"
+    }
+  ],
+  "e2_hospital_9": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_bccf5a54aa5254d0a9b3.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2367",
+      "layer": "background"
+    }
+  ],
+  "e2_lift_1": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_b2200de07e44f2f5f392.webp",
+      "rect": [
+        0.0,
+        0.0,
+        777.0,
+        238.0
+      ],
+      "source": "Mov.Mov/external:ElevatorCall.png",
+      "layer": "background"
+    }
+  ],
+  "e2_lift_2": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_f58e59243c275b0ed521.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2296",
+      "layer": "background"
+    }
+  ],
+  "e2_lift_3": [],
+  "e2_main_1": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_7efed414d63b4eaa5565.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2084",
+      "layer": "background"
+    }
+  ],
+  "e2_main_10": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_e257e0ec3f6885d4ab10.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2143",
+      "layer": "background"
+    }
+  ],
+  "e2_main_11": [],
+  "e2_main_1_controls": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_fb25de9fc3b35a02645c.webp",
+      "rect": [
+        552.0,
+        266.0,
+        195.0,
+        147.5
+      ],
+      "source": "But2/Symbol 2087",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_c4f2816d5981ca733ac4.webp",
+      "rect": [
+        44.5,
+        248.5,
+        102.0,
+        58.0
+      ],
+      "source": "But1/Symbol 2091",
+      "layer": "background"
+    }
+  ],
+  "e2_main_2": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_046e4d1af0fb8d96f378.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2098",
+      "layer": "background"
+    }
+  ],
+  "e2_main_3": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_1bb3c0e31c7e5418e9e8.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2103",
+      "layer": "background"
+    }
+  ],
+  "e2_main_4": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_1fa9884d758c46ee34d4.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2108",
+      "layer": "background"
+    }
+  ],
+  "e2_main_5": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_587417efbf2450540651.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2113",
+      "layer": "background"
+    }
+  ],
+  "e2_main_6": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_43a9a0624d1834bc6d51.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2118",
+      "layer": "background"
+    }
+  ],
+  "e2_main_7": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_2b864b2e4704c04061a4.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2124",
+      "layer": "background"
+    }
+  ],
+  "e2_main_8": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_e4d0e6023563ec26ccf2.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2133",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_927ec14710b30e43926b.webp",
+      "rect": [
+        0.0,
+        23.0,
+        449.0,
+        457.0
+      ],
+      "source": "Mov/Symbol 2132",
+      "layer": "background"
+    }
+  ],
+  "e2_main_9": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_b94f5a4b75c57b3dfdfc.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:Explode.jpg",
+      "layer": "background"
+    }
+  ],
+  "e2_roof_1": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_ef805d3d8d065f9fc547.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov.Mov/external:StairsUp.jpg",
+      "layer": "background"
+    }
+  ],
+  "e2_roof_10": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_4c592f66de18bcef3210.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2269",
+      "layer": "background"
+    }
+  ],
+  "e2_roof_11": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_c501edff743b7760252d.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2274",
+      "layer": "background"
+    }
+  ],
+  "e2_roof_12": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_58dcf3b85593adc5f526.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2280",
+      "layer": "background"
+    }
+  ],
+  "e2_roof_2": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_1d512542b64b7a660535.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2225",
+      "layer": "background"
+    }
+  ],
+  "e2_roof_3": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_d06f6a3b21e2d5a75272.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2236",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_d3045b9c6ccad370f4f7.webp",
+      "rect": [
+        155.0,
+        191.0,
+        425.5,
+        289.0
+      ],
+      "source": "Mov/Symbol 2235",
+      "layer": "background"
+    }
+  ],
+  "e2_roof_4": [],
+  "e2_roof_5": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_9949c223368e43753aad.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2240",
+      "layer": "background"
+    }
+  ],
+  "e2_roof_6": [],
+  "e2_roof_7": [
+    {
+      "type": "panel",
+      "rect": [
+        0.0,
+        0.0,
+        800.000244140625,
+        480.0004119873047
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "source": "Mov/Symbol 133",
+      "layer": "background"
+    }
+  ],
+  "e2_roof_8": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_6e9cd9986c7dd4f366ac.webp",
+      "rect": [
+        24.5,
+        0.0,
+        775.5,
+        445.0
+      ],
+      "source": "Mov.Mov/external:FallingZombie.jpg",
+      "layer": "background"
+    }
+  ],
+  "e2_roof_9": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_f8c3ee3b643dcbf1839f.webp",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/external:LayingKilledZombie.jpg",
+      "layer": "background"
+    }
+  ],
+  "ep2_continue_button": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_517bd4a55625f81adad0.webp",
+      "rect": [
+        112.0,
+        376.0,
+        19.0,
+        27.0
+      ],
+      "source": "/Symbol 53",
+      "layer": "foreground"
+    }
+  ],
+  "ep2_item_glock": [
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_172085922d7d44dd15b3.webp",
+      "rect": [
+        51.0,
+        30.0,
+        707.0,
+        394.0
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_bc68d77e23a7b55342b7.webp",
+      "rect": [
+        75.5,
+        56.0,
+        642.5,
+        47.5
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_1e009135e97f443dc7cc.webp",
+      "rect": [
+        214.0,
+        120.5,
+        382.0,
+        258.5
+      ],
+      "source": "Weapons/Symbol 273",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_22e42f16a9a1f3164f51.webp",
+      "rect": [
+        680.0,
+        345.0,
+        27.0,
+        23.0
+      ],
+      "source": "/Symbol 12",
+      "layer": "foreground"
+    }
+  ],
+  "ep2_item_mark23": [
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_172085922d7d44dd15b3.webp",
+      "rect": [
+        51.0,
+        30.0,
+        707.0,
+        394.0
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_bc68d77e23a7b55342b7.webp",
+      "rect": [
+        75.5,
+        56.0,
+        642.5,
+        47.5
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_ca24cea2e6dd388bdb4a.webp",
+      "rect": [
+        194.0,
+        123.0,
+        417.5,
+        249.0
+      ],
+      "source": "Weapons/Symbol 273",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_22e42f16a9a1f3164f51.webp",
+      "rect": [
+        680.0,
+        345.0,
+        27.0,
+        23.0
+      ],
+      "source": "/Symbol 12",
+      "layer": "foreground"
+    }
+  ]
+}
