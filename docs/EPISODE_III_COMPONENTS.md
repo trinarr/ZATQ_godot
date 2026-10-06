@@ -1,6 +1,6 @@
 # Episode III: Flash components
 
-All 131 runtime screens and every QTE timeline frame use the original XFL leaf display lists. `data/episode3_components.json` records textures, native ColorRects, stacking order and source paths. `data/episode3_brushes.json` records shader brush geometry. Bitmap parts use lossless WebP, are trimmed and deduplicated by RGBA pixel hash, including identical textures from Episodes I and II.
+All 131 runtime screens and every QTE timeline frame use the original XFL leaf display lists. `data/episode3_components.json` records textures, native ColorRects, stacking order and source paths. `data/episode3_brushes.json` records shader brush geometry. Bitmap parts use lossless PNG, are trimmed and deduplicated by RGBA pixel hash, including identical textures from Episodes I and II.
 
 Native text, pause, dialogue choices, code entry, ammunition and pickup buttons remain independent controls. Animated QTE backgrounds now select component groups using the original `animation_frames` list at its original rate. Timer, hit windows, branch behavior and save state are unchanged. Black animation frames are represented by empty groups.
 

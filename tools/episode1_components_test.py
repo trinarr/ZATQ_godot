@@ -12,7 +12,7 @@ for name in textures:
   image.load();image=image.convert('RGBA')
   assert image.getchannel('A').getbbox()==(0,0,image.width,image.height),name
   digest=hashlib.sha256(str(image.size).encode()+image.tobytes()).hexdigest()[:20]
-  assert name.endswith('part_'+digest+'.webp'),name
+  assert name.endswith('part_'+digest+'.png'),name
 for name,ps in parts.items():
  assert not (ROOT/'assets/flash_ui'/(name+'.png')).exists(),name
  for p in ps:
@@ -29,5 +29,5 @@ for n in load_all(ROOT).values():
  for c in n.get('choices',[]):
   if 'mask' in c:assert (ROOT/'assets/flash_ui'/(c['mask']+'.png')).exists()
 assert not retired(ROOT),'retired composites were left behind'
-assert textures=={'episode1_components/'+p.name for p in (ROOT/'assets/flash_ui/episode1_components').glob('*.webp')}
-print(f'PASS: {len(parts)} component sets, {len(textures)} complete shared lossless WebP textures, native panels, masks, cleanup')
+assert textures=={'episode1_components/'+p.name for p in (ROOT/'assets/flash_ui/episode1_components').glob('*.png')}
+print(f'PASS: {len(parts)} component sets, {len(textures)} complete shared lossless PNG textures, native panels, masks, cleanup')

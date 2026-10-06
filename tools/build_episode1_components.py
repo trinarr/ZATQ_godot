@@ -31,7 +31,7 @@ class Exporter(ResultRenderer):
   if bounds is None:return None
   im=im.crop(bounds)
   digest=hashlib.sha256(str(im.size).encode()+im.tobytes()).hexdigest()[:20]
-  filename='part_'+digest+'.webp';dest=self.out/filename
+  filename='part_'+digest+'.png';dest=self.out/filename
   valid=False
   if dest.exists():
    try:
@@ -39,7 +39,8 @@ class Exporter(ResultRenderer):
    except (OSError,ValueError):pass
   if not valid:
    temporary=dest.with_suffix('.tmp')
-   im.save(temporary,format='WEBP',lossless=True,method=4,exact=True)
+   encoded=im.convert('RGB') if im.getchannel('A').getextrema()==(255,255) else im
+   encoded.save(temporary,format='PNG',compress_level=6)
    with temporary.open('rb') as complete:os.fsync(complete.fileno())
    os.replace(temporary,dest)
   return {'type':'texture','texture':self.out.name+'/'+filename,'rect':[bounds[0]/2,bounds[1]/2,im.width/2,im.height/2]}
@@ -149,7 +150,7 @@ def build(archive,root,only=None):
   (root/'data/episode1_brushes.json').write_text(json.dumps(brush_sets,ensure_ascii=False,indent=2)+'\n')
   (root/'data/episode1_components.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
   used={p['texture'].split('/')[-1] for ps in result.values() for p in ps if p['type']=='texture'}
-  for f in destination.glob('*.webp'):
+  for f in destination.glob('*.png'):
    if f.name not in used:f.unlink();Path(str(f)+'.import').unlink(missing_ok=True)
  from clean_episode1_art import retired
  for f in retired(root):f.unlink();Path(str(f)+'.import').unlink(missing_ok=True)

@@ -2,7 +2,7 @@
   "e2_attack_1": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_1d73d93c07da97354864.webp",
+      "texture": "episode2_components/part_1d73d93c07da97354864.png",
       "rect": [
         0.0,
         0.0,
@@ -17,7 +17,7 @@
   "e2_back_1": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_c55e1903ab8e1e947217.webp",
+      "texture": "episode2_components/part_c55e1903ab8e1e947217.png",
       "rect": [
         0.0,
         0.0,
@@ -50,7 +50,7 @@
   "e2_first_1": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_09f20cf580fd1e5a40ce.webp",
+      "texture": "episode2_components/part_09f20cf580fd1e5a40ce.png",
       "rect": [
         0.0,
         0.0,
@@ -64,7 +64,7 @@
   "e2_first_10": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_da5c5a85ecb1d911a74a.webp",
+      "texture": "episode2_components/part_da5c5a85ecb1d911a74a.png",
       "rect": [
         0.0,
         0.0,
@@ -78,7 +78,7 @@
   "e2_first_11": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_76518f9f34a286c5650c.webp",
+      "texture": "episode2_components/part_76518f9f34a286c5650c.png",
       "rect": [
         0.0,
         0.0,
@@ -90,7 +90,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_0c64b3d472bb19097b75.webp",
+      "texture": "episode2_components/part_0c64b3d472bb19097b75.png",
       "rect": [
         368.0,
         301.5,
@@ -102,7 +102,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_81002a73113831cfd445.webp",
+      "texture": "episode2_components/part_81002a73113831cfd445.png",
       "rect": [
         426.5,
         292.5,
@@ -114,7 +114,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_81002a73113831cfd445.webp",
+      "texture": "episode2_components/part_81002a73113831cfd445.png",
       "rect": [
         352.5,
         292.5,
@@ -128,7 +128,7 @@
   "e2_first_12": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_76518f9f34a286c5650c.webp",
+      "texture": "episode2_components/part_76518f9f34a286c5650c.png",
       "rect": [
         0.0,
         0.0,
@@ -140,7 +140,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_0c64b3d472bb19097b75.webp",
+      "texture": "episode2_components/part_0c64b3d472bb19097b75.png",
       "rect": [
         368.0,
         301.5,
@@ -152,7 +152,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_81002a73113831cfd445.webp",
+      "texture": "episode2_components/part_81002a73113831cfd445.png",
       "rect": [
         352.5,
         292.5,
@@ -166,7 +166,7 @@
   "e2_first_2": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_414c05705eba4155a668.webp",
+      "texture": "episode2_components/part_414c05705eba4155a668.png",
       "rect": [
         0.0,
         0.0,
@@ -180,7 +180,7 @@
   "e2_first_3": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_727e105da01a17236ccc.webp",
+      "texture": "episode2_components/part_727e105da01a17236ccc.png",
       "rect": [
         0.0,
         0.0,
@@ -192,7 +192,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_8a415447f1fd3e4c6101.webp",
+      "texture": "episode2_components/part_8a415447f1fd3e4c6101.png",
       "rect": [
         106.5,
         306.5,
@@ -206,7 +206,7 @@
   "e2_first_4": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_76518f9f34a286c5650c.webp",
+      "texture": "episode2_components/part_76518f9f34a286c5650c.png",
       "rect": [
         0.0,
         0.0,
@@ -218,7 +218,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_0c64b3d472bb19097b75.webp",
+      "texture": "episode2_components/part_0c64b3d472bb19097b75.png",
       "rect": [
         368.0,
         301.5,
@@ -230,7 +230,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_81002a73113831cfd445.webp",
+      "texture": "episode2_components/part_81002a73113831cfd445.png",
       "rect": [
         426.5,
         292.5,
@@ -242,7 +242,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_fba3517f1338382be02a.webp",
+      "texture": "episode2_components/part_fba3517f1338382be02a.png",
       "rect": [
         423.5,
         334.0,
@@ -254,7 +254,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_81002a73113831cfd445.webp",
+      "texture": "episode2_components/part_81002a73113831cfd445.png",
       "rect": [
         352.5,
         292.5,
@@ -266,7 +266,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_c785fd2d7d6e84d8cf3a.webp",
+      "texture": "episode2_components/part_c785fd2d7d6e84d8cf3a.png",
       "rect": [
         0.0,
         414.0,
@@ -280,7 +280,7 @@
   "e2_first_5": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_1fc87239720b40bf92e2.webp",
+      "texture": "episode2_components/part_1fc87239720b40bf92e2.png",
       "rect": [
         0.0,
         0.0,
@@ -294,7 +294,7 @@
   "e2_first_6": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_b44d24a66377bb2edcfb.webp",
+      "texture": "episode2_components/part_b44d24a66377bb2edcfb.png",
       "rect": [
         0.0,
         0.0,
@@ -308,7 +308,7 @@
   "e2_first_7": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_4c2ca9e4856bd5c7da9e.webp",
+      "texture": "episode2_components/part_4c2ca9e4856bd5c7da9e.png",
       "rect": [
         0.0,
         0.0,
@@ -322,7 +322,7 @@
   "e2_first_8": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_25d0b0ede5e7a180e0f9.webp",
+      "texture": "episode2_components/part_25d0b0ede5e7a180e0f9.png",
       "rect": [
         0.0,
         0.0,
@@ -336,7 +336,7 @@
   "e2_first_9": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_e4c0675c789077c50fc7.webp",
+      "texture": "episode2_components/part_e4c0675c789077c50fc7.png",
       "rect": [
         0.0,
         0.0,
@@ -350,7 +350,7 @@
   "e2_hall_1": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_73f4ace063d59951d82a.webp",
+      "texture": "episode2_components/part_73f4ace063d59951d82a.png",
       "rect": [
         0.0,
         0.0,
@@ -364,7 +364,7 @@
   "e2_hall_2": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_7e57a185fbf1ef0cac4c.webp",
+      "texture": "episode2_components/part_7e57a185fbf1ef0cac4c.png",
       "rect": [
         0.0,
         0.0,
@@ -378,7 +378,7 @@
   "e2_hall_3": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_042859ceae8b2980c43d.webp",
+      "texture": "episode2_components/part_042859ceae8b2980c43d.png",
       "rect": [
         0.0,
         0.0,
@@ -392,7 +392,7 @@
   "e2_hall_4": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_8c1d9f9ebff1f057f326.webp",
+      "texture": "episode2_components/part_8c1d9f9ebff1f057f326.png",
       "rect": [
         0.0,
         0.0,
@@ -406,7 +406,7 @@
   "e2_hall_5": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_662303299ae1ee6d1e0c.webp",
+      "texture": "episode2_components/part_662303299ae1ee6d1e0c.png",
       "rect": [
         0.0,
         0.0,
@@ -418,7 +418,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_68c33f0c42dd0632d3b4.webp",
+      "texture": "episode2_components/part_68c33f0c42dd0632d3b4.png",
       "rect": [
         291.5,
         208.5,
@@ -430,7 +430,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_68c33f0c42dd0632d3b4.webp",
+      "texture": "episode2_components/part_68c33f0c42dd0632d3b4.png",
       "rect": [
         291.5,
         208.5,
@@ -445,7 +445,7 @@
   "e2_hall_7": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_3ef26d6d54804a848c4c.webp",
+      "texture": "episode2_components/part_3ef26d6d54804a848c4c.png",
       "rect": [
         0.0,
         0.0,
@@ -459,7 +459,7 @@
   "e2_hall_8": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_bc7f618576c0997cb42f.webp",
+      "texture": "episode2_components/part_bc7f618576c0997cb42f.png",
       "rect": [
         0.0,
         0.0,
@@ -473,7 +473,7 @@
   "e2_hall_9": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_a710919d49ec868d049d.webp",
+      "texture": "episode2_components/part_a710919d49ec868d049d.png",
       "rect": [
         0.0,
         0.0,
@@ -487,7 +487,7 @@
   "e2_hospital_1": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_14203715c2492121cc9f.webp",
+      "texture": "episode2_components/part_14203715c2492121cc9f.png",
       "rect": [
         0.0,
         0.0,
@@ -518,7 +518,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_b06699c14e591f424cf6.webp",
+      "texture": "episode2_components/part_b06699c14e591f424cf6.png",
       "rect": [
         28.5,
         414.0,
@@ -532,7 +532,7 @@
   "e2_hospital_11": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_bb8b11f7ba7ebc2c0b36.webp",
+      "texture": "episode2_components/part_bb8b11f7ba7ebc2c0b36.png",
       "rect": [
         0.0,
         0.0,
@@ -544,7 +544,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_204b1139a9338cf190c0.webp",
+      "texture": "episode2_components/part_204b1139a9338cf190c0.png",
       "rect": [
         155.0,
         192.0,
@@ -575,7 +575,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_b06699c14e591f424cf6.webp",
+      "texture": "episode2_components/part_b06699c14e591f424cf6.png",
       "rect": [
         28.5,
         414.0,
@@ -589,7 +589,7 @@
   "e2_hospital_13": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_c5c2dd33e2596a593938.webp",
+      "texture": "episode2_components/part_c5c2dd33e2596a593938.png",
       "rect": [
         0.0,
         0.0,
@@ -603,7 +603,7 @@
   "e2_hospital_14": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_455a67c07282acd474ce.webp",
+      "texture": "episode2_components/part_455a67c07282acd474ce.png",
       "rect": [
         0.0,
         0.0,
@@ -617,7 +617,7 @@
   "e2_hospital_15": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_97994b4b9da7b3687825.webp",
+      "texture": "episode2_components/part_97994b4b9da7b3687825.png",
       "rect": [
         0.0,
         0.0,
@@ -631,7 +631,7 @@
   "e2_hospital_16": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_a14da772c51506210458.webp",
+      "texture": "episode2_components/part_a14da772c51506210458.png",
       "rect": [
         0.0,
         0.0,
@@ -645,7 +645,7 @@
   "e2_hospital_16_controls": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_bef87960f20b74b0c788.webp",
+      "texture": "episode2_components/part_bef87960f20b74b0c788.png",
       "rect": [
         269.5,
         338.5,
@@ -657,7 +657,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_f7ac1091b82f9b0202e8.webp",
+      "texture": "episode2_components/part_f7ac1091b82f9b0202e8.png",
       "rect": [
         393.0,
         337.0,
@@ -671,7 +671,7 @@
   "e2_hospital_17": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_8e4f88842140217e54fc.webp",
+      "texture": "episode2_components/part_8e4f88842140217e54fc.png",
       "rect": [
         0.0,
         0.0,
@@ -686,7 +686,7 @@
   "e2_hospital_19": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_ddf8d59858ac46f839e1.webp",
+      "texture": "episode2_components/part_ddf8d59858ac46f839e1.png",
       "rect": [
         0.0,
         0.0,
@@ -700,7 +700,7 @@
   "e2_hospital_2": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_430b6b22567dc01ec45d.webp",
+      "texture": "episode2_components/part_430b6b22567dc01ec45d.png",
       "rect": [
         0.0,
         0.0,
@@ -731,7 +731,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_b06699c14e591f424cf6.webp",
+      "texture": "episode2_components/part_b06699c14e591f424cf6.png",
       "rect": [
         28.5,
         414.0,
@@ -745,7 +745,7 @@
   "e2_hospital_3": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_c4e6c913fcb0c8c19594.webp",
+      "texture": "episode2_components/part_c4e6c913fcb0c8c19594.png",
       "rect": [
         0.0,
         0.0,
@@ -759,7 +759,7 @@
   "e2_hospital_4": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_136c207bc1f8ac08259d.webp",
+      "texture": "episode2_components/part_136c207bc1f8ac08259d.png",
       "rect": [
         0.0,
         0.0,
@@ -771,7 +771,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_5b82a7037f81012a13d2.webp",
+      "texture": "episode2_components/part_5b82a7037f81012a13d2.png",
       "rect": [
         163.0,
         114.5,
@@ -800,7 +800,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_7f0cd21937c4949a131a.webp",
+      "texture": "episode2_components/part_7f0cd21937c4949a131a.png",
       "rect": [
         166.5,
         172.0,
@@ -829,7 +829,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_fa205472a468f0b209b0.webp",
+      "texture": "episode2_components/part_fa205472a468f0b209b0.png",
       "rect": [
         177.5,
         61.5,
@@ -841,7 +841,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_f72d1f2d3d5db3dac1d7.webp",
+      "texture": "episode2_components/part_f72d1f2d3d5db3dac1d7.png",
       "rect": [
         113.5,
         58.0,
@@ -853,7 +853,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_da32b7c44a531eb71a5b.webp",
+      "texture": "episode2_components/part_da32b7c44a531eb71a5b.png",
       "rect": [
         265.5,
         51.0,
@@ -865,7 +865,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_df1204276414296ea85e.webp",
+      "texture": "episode2_components/part_df1204276414296ea85e.png",
       "rect": [
         264.0,
         107.5,
@@ -879,7 +879,7 @@
   "e2_hospital_5": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_95521f5d376193e1a7d9.webp",
+      "texture": "episode2_components/part_95521f5d376193e1a7d9.png",
       "rect": [
         0.0,
         0.0,
@@ -893,7 +893,7 @@
   "e2_hospital_6": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_b1aaab2700c6ea43893b.webp",
+      "texture": "episode2_components/part_b1aaab2700c6ea43893b.png",
       "rect": [
         0.0,
         0.0,
@@ -907,7 +907,7 @@
   "e2_hospital_7": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_bca22815ae37adb4dde3.webp",
+      "texture": "episode2_components/part_bca22815ae37adb4dde3.png",
       "rect": [
         0.0,
         0.0,
@@ -921,7 +921,7 @@
   "e2_hospital_8": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_84cc177e05b9b4d18361.webp",
+      "texture": "episode2_components/part_84cc177e05b9b4d18361.png",
       "rect": [
         0.0,
         0.0,
@@ -935,7 +935,7 @@
   "e2_hospital_9": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_bccf5a54aa5254d0a9b3.webp",
+      "texture": "episode2_components/part_bccf5a54aa5254d0a9b3.png",
       "rect": [
         0.0,
         0.0,
@@ -949,7 +949,7 @@
   "e2_lift_1": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_b2200de07e44f2f5f392.webp",
+      "texture": "episode2_components/part_b2200de07e44f2f5f392.png",
       "rect": [
         0.0,
         0.0,
@@ -963,7 +963,7 @@
   "e2_lift_2": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_f58e59243c275b0ed521.webp",
+      "texture": "episode2_components/part_f58e59243c275b0ed521.png",
       "rect": [
         0.0,
         0.0,
@@ -978,7 +978,7 @@
   "e2_main_1": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_7efed414d63b4eaa5565.webp",
+      "texture": "episode2_components/part_7efed414d63b4eaa5565.png",
       "rect": [
         0.0,
         0.0,
@@ -992,7 +992,7 @@
   "e2_main_10": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_e257e0ec3f6885d4ab10.webp",
+      "texture": "episode2_components/part_e257e0ec3f6885d4ab10.png",
       "rect": [
         0.0,
         0.0,
@@ -1007,7 +1007,7 @@
   "e2_main_1_controls": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_fb25de9fc3b35a02645c.webp",
+      "texture": "episode2_components/part_fb25de9fc3b35a02645c.png",
       "rect": [
         552.0,
         266.0,
@@ -1019,7 +1019,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_c4f2816d5981ca733ac4.webp",
+      "texture": "episode2_components/part_c4f2816d5981ca733ac4.png",
       "rect": [
         44.5,
         248.5,
@@ -1033,7 +1033,7 @@
   "e2_main_2": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_046e4d1af0fb8d96f378.webp",
+      "texture": "episode2_components/part_046e4d1af0fb8d96f378.png",
       "rect": [
         0.0,
         0.0,
@@ -1047,7 +1047,7 @@
   "e2_main_3": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_1bb3c0e31c7e5418e9e8.webp",
+      "texture": "episode2_components/part_1bb3c0e31c7e5418e9e8.png",
       "rect": [
         0.0,
         0.0,
@@ -1061,7 +1061,7 @@
   "e2_main_4": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_1fa9884d758c46ee34d4.webp",
+      "texture": "episode2_components/part_1fa9884d758c46ee34d4.png",
       "rect": [
         0.0,
         0.0,
@@ -1075,7 +1075,7 @@
   "e2_main_5": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_587417efbf2450540651.webp",
+      "texture": "episode2_components/part_587417efbf2450540651.png",
       "rect": [
         0.0,
         0.0,
@@ -1089,7 +1089,7 @@
   "e2_main_6": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_43a9a0624d1834bc6d51.webp",
+      "texture": "episode2_components/part_43a9a0624d1834bc6d51.png",
       "rect": [
         0.0,
         0.0,
@@ -1103,7 +1103,7 @@
   "e2_main_7": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_2b864b2e4704c04061a4.webp",
+      "texture": "episode2_components/part_2b864b2e4704c04061a4.png",
       "rect": [
         0.0,
         0.0,
@@ -1117,7 +1117,7 @@
   "e2_main_8": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_e4d0e6023563ec26ccf2.webp",
+      "texture": "episode2_components/part_e4d0e6023563ec26ccf2.png",
       "rect": [
         0.0,
         0.0,
@@ -1129,7 +1129,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_927ec14710b30e43926b.webp",
+      "texture": "episode2_components/part_927ec14710b30e43926b.png",
       "rect": [
         0.0,
         23.0,
@@ -1143,7 +1143,7 @@
   "e2_main_9": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_b94f5a4b75c57b3dfdfc.webp",
+      "texture": "episode2_components/part_b94f5a4b75c57b3dfdfc.png",
       "rect": [
         0.0,
         0.0,
@@ -1157,7 +1157,7 @@
   "e2_roof_1": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_ef805d3d8d065f9fc547.webp",
+      "texture": "episode2_components/part_ef805d3d8d065f9fc547.png",
       "rect": [
         0.0,
         0.0,
@@ -1171,7 +1171,7 @@
   "e2_roof_10": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_4c592f66de18bcef3210.webp",
+      "texture": "episode2_components/part_4c592f66de18bcef3210.png",
       "rect": [
         0.0,
         0.0,
@@ -1185,7 +1185,7 @@
   "e2_roof_11": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_c501edff743b7760252d.webp",
+      "texture": "episode2_components/part_c501edff743b7760252d.png",
       "rect": [
         0.0,
         0.0,
@@ -1199,7 +1199,7 @@
   "e2_roof_12": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_58dcf3b85593adc5f526.webp",
+      "texture": "episode2_components/part_58dcf3b85593adc5f526.png",
       "rect": [
         0.0,
         0.0,
@@ -1213,7 +1213,7 @@
   "e2_roof_2": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_1d512542b64b7a660535.webp",
+      "texture": "episode2_components/part_1d512542b64b7a660535.png",
       "rect": [
         0.0,
         0.0,
@@ -1227,7 +1227,7 @@
   "e2_roof_3": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_d06f6a3b21e2d5a75272.webp",
+      "texture": "episode2_components/part_d06f6a3b21e2d5a75272.png",
       "rect": [
         0.0,
         0.0,
@@ -1239,7 +1239,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_d3045b9c6ccad370f4f7.webp",
+      "texture": "episode2_components/part_d3045b9c6ccad370f4f7.png",
       "rect": [
         155.0,
         191.0,
@@ -1254,7 +1254,7 @@
   "e2_roof_5": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_9949c223368e43753aad.webp",
+      "texture": "episode2_components/part_9949c223368e43753aad.png",
       "rect": [
         0.0,
         0.0,
@@ -1288,7 +1288,7 @@
   "e2_roof_8": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_6e9cd9986c7dd4f366ac.webp",
+      "texture": "episode2_components/part_6e9cd9986c7dd4f366ac.png",
       "rect": [
         24.5,
         0.0,
@@ -1302,7 +1302,7 @@
   "e2_roof_9": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_f8c3ee3b643dcbf1839f.webp",
+      "texture": "episode2_components/part_f8c3ee3b643dcbf1839f.png",
       "rect": [
         0.0,
         0.0,
@@ -1316,7 +1316,7 @@
   "ep2_continue_button": [
     {
       "type": "texture",
-      "texture": "episode2_components/part_517bd4a55625f81adad0.webp",
+      "texture": "episode2_components/part_517bd4a55625f81adad0.png",
       "rect": [
         112.0,
         376.0,
@@ -1330,7 +1330,7 @@
   "ep2_item_glock": [
     {
       "type": "texture",
-      "texture": "episode1_components/part_172085922d7d44dd15b3.webp",
+      "texture": "episode1_components/part_172085922d7d44dd15b3.png",
       "rect": [
         51.0,
         30.0,
@@ -1342,7 +1342,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode1_components/part_bc68d77e23a7b55342b7.webp",
+      "texture": "episode1_components/part_bc68d77e23a7b55342b7.png",
       "rect": [
         75.5,
         56.0,
@@ -1354,7 +1354,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_1e009135e97f443dc7cc.webp",
+      "texture": "episode2_components/part_1e009135e97f443dc7cc.png",
       "rect": [
         214.0,
         120.5,
@@ -1366,7 +1366,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode1_components/part_22e42f16a9a1f3164f51.webp",
+      "texture": "episode1_components/part_22e42f16a9a1f3164f51.png",
       "rect": [
         680.0,
         345.0,
@@ -1380,7 +1380,7 @@
   "ep2_item_mark23": [
     {
       "type": "texture",
-      "texture": "episode1_components/part_172085922d7d44dd15b3.webp",
+      "texture": "episode1_components/part_172085922d7d44dd15b3.png",
       "rect": [
         51.0,
         30.0,
@@ -1392,7 +1392,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode1_components/part_bc68d77e23a7b55342b7.webp",
+      "texture": "episode1_components/part_bc68d77e23a7b55342b7.png",
       "rect": [
         75.5,
         56.0,
@@ -1404,7 +1404,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode2_components/part_ca24cea2e6dd388bdb4a.webp",
+      "texture": "episode2_components/part_ca24cea2e6dd388bdb4a.png",
       "rect": [
         194.0,
         123.0,
@@ -1416,7 +1416,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode1_components/part_22e42f16a9a1f3164f51.webp",
+      "texture": "episode1_components/part_22e42f16a9a1f3164f51.png",
       "rect": [
         680.0,
         345.0,

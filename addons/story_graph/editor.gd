@@ -482,7 +482,7 @@ func _inspect_id(id: String) -> void:
  if node.type in MODEL.SCENE_TYPES:
   text_field(inspector,"Фон (имя в assets/flash_ui)",d.get("art",""),func(v):begin_edit();d.art=v)
   text_field(inspector,"Звук (имя в assets/audio)",d.get("sound",""),func(v):begin_edit();d.sound=v)
-  button(inspector,"Выбрать фон…",func():_resource_picker(id,"art","*.png,*.webp","res://assets/flash_ui"))
+  button(inspector,"Выбрать фон…",func():_resource_picker(id,"art","*.png","res://assets/flash_ui"))
   button(inspector,"Выбрать звук…",func():_resource_picker(id,"sound","*.mp3","res://assets/audio"))
  if node.type=="choice":
   for pair:Array in [["effects","action","Добавить последствия"],["requires","condition","Добавить условие доступности"]]:

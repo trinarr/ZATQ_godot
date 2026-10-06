@@ -104,7 +104,7 @@ func update_visuals()->void:
   if frame!=animation_index:
    animation_index=frame
    if not ui._component_backdrop(str(frames[frame])):
-    ui._set_backdrop(load("res://assets/flash_ui/"+str(frames[frame])+".webp"))
+    ui._set_backdrop(load("res://assets/flash_ui/"+str(frames[frame])+".png"))
  if node.has("target_windows") and is_instance_valid(tap):
   var window:=QTE.window_index(state,node)
   tap.visible=window>=0 and window not in state.hit_windows

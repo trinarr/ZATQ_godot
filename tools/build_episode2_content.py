@@ -58,21 +58,15 @@ def build(library,photos,sources,output,render=True,reuse_art=False):
   blocks=text_blocks(r,symbol,frame-1,ov)
   if not blocks:blocks=text_blocks(r,symbol,frame-1,{k:v for k,v in ov.items() if k!='Mov'})
   key=nid(cls,frame) # Hist variants only change native text; backgrounds are identical.
-  node={'episode':2,'source':AS[cls]+' frame '+str(frame)+'; Hist '+str(variant),'kind':'city_story','art':key,'art_extension':'webp','clean_background':True,'blocks':blocks,'text':' '.join(b['text'] for b in blocks),'choices':[{'text':'Далее','next':nid(cls,frame+1),'rect':[70,0,730,480]}]}
+  node={'episode':2,'source':AS[cls]+' frame '+str(frame)+'; Hist '+str(variant),'kind':'city_story','art':key,'art_extension':'png','clean_background':True,'blocks':blocks,'text':' '.join(b['text'] for b in blocks),'choices':[{'text':'Далее','next':nid(cls,frame+1),'rect':[70,0,730,480]}]}
   if snd:node['sound']=snd
   nodes[id]=node
   if key not in visuals:
    visual={'symbol':CLASSES[cls],'frame':frame-1,'overrides':ov,'photo':photo,'photo_path':photo_path,'hide':['Hist','But1','But2','NumB']}
    visuals[key]=visual
-   if render and (not reuse_art or not (art/(key+".webp")).exists() or (art/(key+".webp")).stat().st_size==0):
+   if render and (not reuse_art or not (art/(key+".png")).exists() or (art/(key+".png")).stat().st_size==0):
     r.photo=photo;r.photo_path=photo_path
     r.render(key+'.png',[(symbol,frame-1,0,0,ov,set(visual['hide']))])
-    with Image.open(art/(key+'.png')) as im:
-     bg=Image.new('RGBA',im.size,'black');bg.alpha_composite(im.convert('RGBA'));buffer=io.BytesIO();bg.convert('RGB').save(buffer,format='WEBP',quality=95,method=6)
-     temporary=art/(key+'.webp.tmp')
-     with temporary.open('wb') as f:f.write(buffer.getvalue());f.flush();os.fsync(f.fileno())
-     os.replace(temporary,art/(key+'.webp'))
-    (art/(key+'.png')).unlink()
   return id
  for cls,last in [('hospital',20),('roof',12),('first',12),('hall',9),('back',2),('main',11),('lift',3),('attack',2)]:
   for frame in range(1,last+1):add(cls,frame)
@@ -100,7 +94,7 @@ def build(library,photos,sources,output,render=True,reuse_art=False):
  for m in re.finditer(r'this.but([1-4])Str\[([\d.]+)\](?:\s*=\s*this.but[1-4]Str\[[\d.]+\])?\s*=\s*"([^"]*)"',sources['NewItem']):labels[(float(m[2]),int(m[1]))]=m[3]
  def decision(cls,fr,item,targets,back=None):
   id=nid(cls,fr)+'_choice_'+str(item).replace('.','_');base=nodes[nid(cls,fr)]
-  node={'episode':2,'source':'NewItem('+str(item)+')','kind':'city_decision','art':base['art'],'art_extension':'webp','clean_background':True,'text':questions[int(item)-1],'choices':[],'back':back or nid(cls,fr)}
+  node={'episode':2,'source':'NewItem('+str(item)+')','kind':'city_decision','art':base['art'],'art_extension':'png','clean_background':True,'text':questions[int(item)-1],'choices':[],'back':back or nid(cls,fr)}
   for i,target in enumerate(targets,1):
    choice={'text':labels.get((float(item),i),labels.get((float(int(item)),i),'')),'next':target} if isinstance(target,str) else dict(target)
    choice['text']=labels.get((float(item),i),labels.get((float(int(item)),i),choice.get('text','')));node['choices'].append(choice)

@@ -131,11 +131,11 @@ static func validate(graph: Dictionary) -> PackedStringArray:
     if float(window.get("start",-1))<previous_end or float(window.get("end",0))<=float(window.get("start",0)) or float(window.get("end",0))>float(data.get("seconds",0)) or window.get("rect",[]).size()!=4:errors.append("Неверное окно QTE: "+id)
     previous_end=float(window.get("end",0))
    for frame: String in data.get("animation_frames",[]):
-    if not has_art(frame) and not ResourceLoader.exists("res://assets/flash_ui/"+frame+".webp"):errors.append("Не найден кадр: "+id+" / "+frame)
+    if not has_art(frame) and not ResourceLoader.exists("res://assets/flash_ui/"+frame+".png"):errors.append("Не найден кадр: "+id+" / "+frame)
   for key: String in ["art","art_on_foot","controls_art","decision_art","background_art"]:
    var art: String = data.get(key,"")
    if art.is_empty():continue
-   var extension: String = data.get("art_extension","png") if key in ["art","art_on_foot"] else ("webp" if key=="background_art" else "png")
+   var extension: String = data.get("art_extension","png") if key in ["art","art_on_foot"] else ("png" if key=="background_art" else "png")
    if not has_art(art) and not ResourceLoader.exists("res://assets/flash_ui/"+art+"."+extension):errors.append("Не найдено изображение: "+id+" / "+art)
   var sound: String = data.get("sound","")
   if not sound.is_empty() and not ResourceLoader.exists("res://assets/audio/"+sound+".mp3"):errors.append("Не найден звук: "+id+" / "+sound)

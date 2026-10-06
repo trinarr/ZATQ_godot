@@ -39,7 +39,7 @@ def build(library, photos, sounds, sources, output, reuse=False):
   if cls=='kill' and fr==4:ov['Mov.Hist']=1
   blocks=text_blocks(r,symbol,fr-1,ov)
   key=nid(cls,fr)
-  node={'episode':3,'source':f'{name} frame {fr}','kind':'city_story','art':key,'art_extension':'webp','clean_background':True,'blocks':blocks,'text':' '.join(b['text'] for b in blocks),'choices':[{'text':'Далее','next':nid(cls,fr+1),'rect':[70,0,730,480]}]}
+  node={'episode':3,'source':f'{name} frame {fr}','kind':'city_story','art':key,'art_extension':'png','clean_background':True,'blocks':blocks,'text':' '.join(b['text'] for b in blocks),'choices':[{'text':'Далее','next':nid(cls,fr+1),'rect':[70,0,730,480]}]}
   if sound:node['sound']=sound
   nodes[key]=node
   render(key,sym,fr-1,ov,photo,photo_path,{'Hist','MvMg','NumB'})
@@ -102,7 +102,7 @@ def build(library, photos, sounds, sources, output, reuse=False):
  for m in re.finditer(r'this.but([1-4])Str\[([\d.]+)\](?:\s*=\s*this.but[1-4]Str\[[\d.]+\])?\s*=\s*"([^"]*)"',sources['NewItem']):labels[(float(m[2]),int(m[1]))]=m[3]
  def decision(cls,fr,item,targets):
   base=nodes[nid(cls,fr)];id=nid(cls,fr)+f'_choice_{item}'
-  nodes[id]={'episode':3,'source':f'NewItem({item})','kind':'city_decision','art':base['art'],'art_extension':'webp','clean_background':True,'text':questions[item-1],'back':nid(cls,fr),'choices':[]}
+  nodes[id]={'episode':3,'source':f'NewItem({item})','kind':'city_decision','art':base['art'],'art_extension':'png','clean_background':True,'text':questions[item-1],'back':nid(cls,fr),'choices':[]}
   for i,t in enumerate(targets,1):
    c={'next':t} if isinstance(t,str) else copy.deepcopy(t);c['text']=labels[(float(item),i)];nodes[id]['choices'].append(c)
   return id
@@ -134,7 +134,7 @@ def build(library, photos, sounds, sources, output, reuse=False):
    next_index=n*3+i;target=terminal.get(next_index,f'e3_dialogue_{next_index}')
    if next_index not in terminal and next_index not in arrays:raise ValueError(f'Missing dialogue {next_index}')
    cs.append({'text':text,'next':target})
-  nodes[id]={'episode':3,'source':f'DialogMov(1) DlgArr[{n}], PersonSwitcher2','kind':'activity_dialogue','speaker':'Джон Доннатон','text':arr[0],'art':'e3_dialogue_john','art_extension':'webp','original_ui':True,'choices':cs}
+  nodes[id]={'episode':3,'source':f'DialogMov(1) DlgArr[{n}], PersonSwitcher2','kind':'activity_dialogue','speaker':'Джон Доннатон','text':arr[0],'art':'e3_dialogue_john','art_extension':'png','original_ui':True,'choices':cs}
  render('e3_dialogue_john',237,1,{'Ava':1,'Dlg1':0,'Dlg2':0,'Dlg3':0},hide={'Txt','PrsnTxt','DlgTxt'})
  # Weapon pickups have the original silhouettes, captions and ammunition.
  weapons={4:'Кухонный нож',5:'Glock 17, 16 патронов 9x19 мм',6:'Glock 17, 7 патронов 9x19 мм'}

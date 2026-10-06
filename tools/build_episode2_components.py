@@ -26,7 +26,7 @@ def retired(root):
  nodes=load_all(root)
  masks={c['mask'] for n in nodes.values() for c in n.get('choices',[]) if 'mask' in c}
  live={n[k] for n in nodes.values() for k in ['art','art_on_foot','controls_art','decision_art','background_art'] if k in n}
- return [p for p in (root/'assets/flash_ui').iterdir() if p.suffix in ['.png','.webp'] and p.stem not in masks and
+ return [p for p in (root/'assets/flash_ui').iterdir() if p.suffix in ['.png'] and p.stem not in masks and
          (p.stem in components or p.stem.removesuffix('_icons') in components or
           (p.stem.startswith(('e2_','ep2_')) and p.stem not in live))]
 
@@ -62,7 +62,7 @@ def build(archive,root,only=None):
   (root/'data/episode2_brushes.json').write_text(json.dumps(brush_sets,ensure_ascii=False,indent=2)+'\n')
   (root/'data/episode2_components.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
   used={Path(p['texture']).name for ps in result.values() for p in ps if p['type']=='texture' and p['texture'].startswith('episode2_components/')}
-  for f in destination.glob('*.webp'):
+  for f in destination.glob('*.png'):
    if f.name not in used:f.unlink();Path(str(f)+'.import').unlink(missing_ok=True)
  for f in retired(root):f.unlink();Path(str(f)+'.import').unlink(missing_ok=True)
 

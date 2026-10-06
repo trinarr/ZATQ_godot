@@ -118,9 +118,6 @@ def build(library):
  for filename,items in plans.items():
   renderer=rr if filename.startswith('result_') else r
   if not is_component_screen(filename) and filename not in episode_parts:renderer.render(filename+'.png',items)
-  if filename=='e3_dialogue_john':
-   with Image.open(renderer.out/(filename+'.png')) as image:image.save(renderer.out/(filename+'.webp'),format='WEBP',lossless=True)
-   (renderer.out/(filename+'.png')).unlink()
   brush_layout[filename]=[]
   for name,frame,x,y,ov,hide in items:brush_layout[filename]+=brushes(renderer,name,frame,ov,hide,transform=(1,0,0,1,x,y))
   if brush_layout[filename] and not is_component_screen(filename) and filename not in episode_parts:

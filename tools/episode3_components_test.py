@@ -14,9 +14,9 @@ for name in textures:
   image.load();image=image.convert('RGBA')
   assert image.getchannel('A').getbbox()==(0,0,image.width,image.height),name
   digest=hashlib.sha256(str(image.size).encode()+image.tobytes()).hexdigest()[:20]
-  assert name.endswith('part_'+digest+'.webp'),name
+  assert name.endswith('part_'+digest+'.png'),name
 for name,ps in parts.items():
- for extension in ['png','webp']:assert not (ROOT/'assets/flash_ui'/(name+'.'+extension)).exists(),name
+ for extension in ['png']:assert not (ROOT/'assets/flash_ui'/(name+'.'+extension)).exists(),name
  for p in ps:
   assert p['type'] in ['texture','panel'] and all(math.isfinite(v) for v in p['rect'])
   assert p['rect'][2]>=0 and p['rect'][3]>=0 and p.get('source')
@@ -36,6 +36,6 @@ for id,n in episode.items():
   if 'mask' in c:
    with Image.open(ROOT/'assets/flash_ui'/(c['mask']+'.png')) as im:im.load();assert im.getbbox()
 assert not retired(ROOT)
-assert {t for t in textures if t.startswith('episode3_components/')}=={'episode3_components/'+p.name for p in (ROOT/'assets/flash_ui/episode3_components').glob('*.webp')}
+assert {t for t in textures if t.startswith('episode3_components/')}=={'episode3_components/'+p.name for p in (ROOT/'assets/flash_ui/episode3_components').glob('*.png')}
 assert any(t.startswith('episode1_components/') for t in textures),'shared first-episode textures'
 print(f'PASS: {len(episode)} screens, {len(parts)} component sets, {len(textures)} textures, reuse, masks, cleanup')

@@ -2,7 +2,7 @@
 
 All 122 runtime screens use separate artwork, native text/dimmers, pause and interactive controls. Backgrounds are reconstructed from original XFL leaf display lists, including loaded photographs and authored frame/override selection. Empty final animation frames intentionally remain black.
 
-`data/episode2_components.json` contains 76 named groups. `data/episode2_brushes.json` contains shader button geometry. Shared textures are trimmed, lossless WebP and deduplicated by RGBA pixel hash, including reuse of Episode I resources. Original cropped alpha masks remain for the two arrow branches.
+`data/episode2_components.json` contains 76 named groups. `data/episode2_brushes.json` contains shader button geometry. Shared textures are trimmed, lossless PNG and deduplicated by RGBA pixel hash, including reuse of Episode I resources. Original cropped alpha masks remain for the two arrow branches.
 
 Pickup backdrops also use components. Result panels and decision templates reuse Episode I groups. Scene IDs, graph links, translations and save data are unchanged.
 

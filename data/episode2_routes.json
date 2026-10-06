@@ -7,7 +7,7 @@
       "source": "Episode2 frame 1; Hist 1",
       "kind": "city_story",
       "art": "e2_hospital_1",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -42,7 +42,7 @@
       "source": "Episode2 frame 2; Hist 1",
       "kind": "city_story",
       "art": "e2_hospital_2",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -77,7 +77,7 @@
       "source": "Episode2 frame 3; Hist 1",
       "kind": "city_story",
       "art": "e2_hospital_3",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -112,7 +112,7 @@
       "source": "Episode2 frame 4; Hist 1",
       "kind": "city_story",
       "art": "e2_hospital_4",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -148,7 +148,7 @@
       "source": "Episode2 frame 5; Hist 1",
       "kind": "city_story",
       "art": "e2_hospital_5",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -183,7 +183,7 @@
       "source": "Episode2 frame 6; Hist 1",
       "kind": "city_story",
       "art": "e2_hospital_6",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -218,7 +218,7 @@
       "source": "Episode2 frame 7; Hist 1",
       "kind": "city_story",
       "art": "e2_hospital_7",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -253,7 +253,7 @@
       "source": "Episode2 frame 8; Hist 1",
       "kind": "city_story",
       "art": "e2_hospital_8",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -288,7 +288,7 @@
       "source": "Episode2 frame 9; Hist 1",
       "kind": "city_story",
       "art": "e2_hospital_9",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -323,7 +323,7 @@
       "source": "Episode2 frame 10; Hist 1",
       "kind": "city_story",
       "art": "e2_hospital_10",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -362,7 +362,7 @@
       "source": "Episode2 frame 11; Hist 1",
       "kind": "city_story",
       "art": "e2_hospital_11",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -397,7 +397,7 @@
       "source": "Episode2 frame 12; Hist 1",
       "kind": "city_story",
       "art": "e2_hospital_12",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -436,7 +436,7 @@
       "source": "Episode2 frame 13; Hist 1",
       "kind": "city_story",
       "art": "e2_hospital_13",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -471,7 +471,7 @@
       "source": "Episode2 frame 14; Hist 1",
       "kind": "city_story",
       "art": "e2_hospital_14",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -506,7 +506,7 @@
       "source": "Episode2 frame 15; Hist 1",
       "kind": "city_story",
       "art": "e2_hospital_15",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -585,7 +585,7 @@
       "source": "Episode2 frame 16; Hist 1",
       "kind": "city_story",
       "art": "e2_hospital_16",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -695,7 +695,7 @@
       "source": "Episode2 frame 17; Hist 1",
       "kind": "city_story",
       "art": "e2_hospital_17",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -730,7 +730,7 @@
       "source": "Episode2 frame 18; Hist 1",
       "kind": "city_cutscene",
       "art": "e2_hospital_18",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [],
       "text": "",
@@ -757,7 +757,7 @@
       "source": "Episode2 frame 19; Hist 1",
       "kind": "city_story",
       "art": "e2_hospital_19",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -798,7 +798,7 @@
       "source": "Episode2 frame 20; Hist 1",
       "kind": "city_story",
       "art": "e2_hospital_20",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -837,7 +837,7 @@
       "source": "StairsToTheRoof frame 1; Hist 1",
       "kind": "city_story",
       "art": "e2_roof_1",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -873,7 +873,7 @@
       "source": "StairsToTheRoof frame 2; Hist 1",
       "kind": "city_story",
       "art": "e2_roof_2",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -908,7 +908,7 @@
       "source": "StairsToTheRoof frame 3; Hist 1",
       "kind": "city_story",
       "art": "e2_roof_3",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -964,7 +964,7 @@
       "source": "StairsToTheRoof frame 4; Hist 1",
       "kind": "city_cutscene",
       "art": "e2_roof_4",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [],
       "text": "",
@@ -988,7 +988,7 @@
       "source": "StairsToTheRoof frame 5; Hist 1",
       "kind": "city_story",
       "art": "e2_roof_5",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -1023,7 +1023,7 @@
       "source": "StairsToTheRoof frame 6; Hist 1",
       "kind": "city_cutscene",
       "art": "e2_roof_6",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [],
       "text": "",
@@ -1047,7 +1047,7 @@
       "source": "StairsToTheRoof frame 7; Hist 1",
       "kind": "city_story",
       "art": "e2_roof_7",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -1082,7 +1082,7 @@
       "source": "StairsToTheRoof frame 8; Hist 1",
       "kind": "city_cutscene",
       "art": "e2_roof_8",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [],
       "text": "",
@@ -1143,7 +1143,7 @@
       "source": "StairsToTheRoof frame 9; Hist 1",
       "kind": "city_story",
       "art": "e2_roof_9",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -1178,7 +1178,7 @@
       "source": "StairsToTheRoof frame 10; Hist 1",
       "kind": "city_story",
       "art": "e2_roof_10",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -1213,7 +1213,7 @@
       "source": "StairsToTheRoof frame 11; Hist 1",
       "kind": "city_story",
       "art": "e2_roof_11",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -1248,7 +1248,7 @@
       "source": "StairsToTheRoof frame 12; Hist 1",
       "kind": "city_story",
       "art": "e2_roof_12",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -1284,7 +1284,7 @@
       "source": "ToFirstFloor frame 1; Hist 1",
       "kind": "city_story",
       "art": "e2_first_1",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -1319,7 +1319,7 @@
       "source": "ToFirstFloor frame 2; Hist 1",
       "kind": "city_story",
       "art": "e2_first_2",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -1354,7 +1354,7 @@
       "source": "ToFirstFloor frame 3; Hist 1",
       "kind": "city_story",
       "art": "e2_first_3",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -1410,7 +1410,7 @@
       "source": "ToFirstFloor frame 4; Hist 1",
       "kind": "city_story",
       "art": "e2_first_4",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -1462,7 +1462,7 @@
       "source": "ToFirstFloor frame 5; Hist 1",
       "kind": "city_story",
       "art": "e2_first_5",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -1498,7 +1498,7 @@
       "source": "ToFirstFloor frame 6; Hist 1",
       "kind": "city_story",
       "art": "e2_first_6",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -1533,7 +1533,7 @@
       "source": "ToFirstFloor frame 7; Hist 1",
       "kind": "city_story",
       "art": "e2_first_7",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -1568,7 +1568,7 @@
       "source": "ToFirstFloor frame 8; Hist 1",
       "kind": "city_story",
       "art": "e2_first_8",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -1603,7 +1603,7 @@
       "source": "ToFirstFloor frame 9; Hist 1",
       "kind": "city_story",
       "art": "e2_first_9",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -1638,7 +1638,7 @@
       "source": "ToFirstFloor frame 10; Hist 1",
       "kind": "city_story",
       "art": "e2_first_10",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -1694,7 +1694,7 @@
       "source": "ToFirstFloor frame 11; Hist 1",
       "kind": "city_story",
       "art": "e2_first_11",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -1730,7 +1730,7 @@
       "source": "ToFirstFloor frame 12; Hist 1",
       "kind": "city_story",
       "art": "e2_first_12",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -1766,7 +1766,7 @@
       "source": "ToTheKilling frame 1; Hist 1",
       "kind": "city_story",
       "art": "e2_hall_1",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -1801,7 +1801,7 @@
       "source": "ToTheKilling frame 2; Hist 1",
       "kind": "city_story",
       "art": "e2_hall_2",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -1836,7 +1836,7 @@
       "source": "ToTheKilling frame 3; Hist 1",
       "kind": "city_story",
       "art": "e2_hall_3",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -1891,7 +1891,7 @@
       "source": "ToTheKilling frame 4; Hist 1",
       "kind": "city_story",
       "art": "e2_hall_4",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -1926,7 +1926,7 @@
       "source": "ToTheKilling frame 5; Hist 1",
       "kind": "city_story",
       "art": "e2_hall_5",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -1961,7 +1961,7 @@
       "source": "ToTheKilling frame 6; Hist 1",
       "kind": "city_cutscene",
       "art": "e2_hall_6",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [],
       "text": "",
@@ -1985,7 +1985,7 @@
       "source": "ToTheKilling frame 7; Hist 1",
       "kind": "city_story",
       "art": "e2_hall_7",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -2020,7 +2020,7 @@
       "source": "ToTheKilling frame 8; Hist 1",
       "kind": "city_story",
       "art": "e2_hall_8",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -2055,7 +2055,7 @@
       "source": "ToTheKilling frame 9; Hist 1",
       "kind": "city_story",
       "art": "e2_hall_9",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -2090,7 +2090,7 @@
       "source": "ZombieOnTheBack frame 1; Hist 1",
       "kind": "city_story",
       "art": "e2_back_1",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -2126,7 +2126,7 @@
       "source": "ZombieOnTheBack frame 2; Hist 1",
       "kind": "city_story",
       "art": "e2_back_2",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -2180,7 +2180,7 @@
       "source": "ToMainPart frame 1; Hist 1",
       "kind": "city_story",
       "art": "e2_main_1",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -2228,7 +2228,7 @@
       "source": "ToMainPart frame 2; Hist 1",
       "kind": "city_story",
       "art": "e2_main_2",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -2263,7 +2263,7 @@
       "source": "ToMainPart frame 3; Hist 1",
       "kind": "city_story",
       "art": "e2_main_3",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -2298,7 +2298,7 @@
       "source": "ToMainPart frame 4; Hist 1",
       "kind": "city_story",
       "art": "e2_main_4",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -2333,7 +2333,7 @@
       "source": "ToMainPart frame 5; Hist 1",
       "kind": "city_story",
       "art": "e2_main_5",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -2368,7 +2368,7 @@
       "source": "ToMainPart frame 6; Hist 1",
       "kind": "city_story",
       "art": "e2_main_6",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -2403,7 +2403,7 @@
       "source": "ToMainPart frame 7; Hist 1",
       "kind": "city_story",
       "art": "e2_main_7",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -2438,7 +2438,7 @@
       "source": "ToMainPart frame 8; Hist 1",
       "kind": "city_story",
       "art": "e2_main_8",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -2474,7 +2474,7 @@
       "source": "ToMainPart frame 9; Hist 1",
       "kind": "city_story",
       "art": "e2_main_9",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -2510,7 +2510,7 @@
       "source": "ToMainPart frame 10; Hist 1",
       "kind": "city_story",
       "art": "e2_main_10",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -2546,7 +2546,7 @@
       "source": "ToMainPart frame 11; Hist 1",
       "kind": "city_cutscene",
       "art": "e2_main_11",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [],
       "text": "",
@@ -2570,7 +2570,7 @@
       "source": "LiftCall frame 1; Hist 1",
       "kind": "city_story",
       "art": "e2_lift_1",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -2606,7 +2606,7 @@
       "source": "LiftCall frame 2; Hist 1",
       "kind": "city_story",
       "art": "e2_lift_2",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -2641,7 +2641,7 @@
       "source": "LiftCall frame 3; Hist 1",
       "kind": "city_cutscene",
       "art": "e2_lift_3",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [],
       "text": "",
@@ -2665,7 +2665,7 @@
       "source": "ZombieAttackKill frame 1; Hist 1",
       "kind": "city_story",
       "art": "e2_attack_1",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -2700,7 +2700,7 @@
       "source": "ZombieAttackKill frame 2; Hist 1",
       "kind": "city_cutscene",
       "art": "e2_attack_2",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [],
       "text": "",
@@ -2724,7 +2724,7 @@
       "source": "Episode2 frame 7; Hist 2",
       "kind": "city_story",
       "art": "e2_hospital_7",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -2759,7 +2759,7 @@
       "source": "Episode2 frame 8; Hist 2",
       "kind": "city_story",
       "art": "e2_hospital_8",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -2794,7 +2794,7 @@
       "source": "Episode2 frame 17; Hist 2",
       "kind": "city_story",
       "art": "e2_hospital_17",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -2829,7 +2829,7 @@
       "source": "Episode2 frame 16; Hist 3",
       "kind": "city_story",
       "art": "e2_hospital_16",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -2899,7 +2899,7 @@
       "source": "ToFirstFloor frame 1; Hist 2",
       "kind": "city_story",
       "art": "e2_first_1",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -2934,7 +2934,7 @@
       "source": "ToFirstFloor frame 1; Hist 3",
       "kind": "city_story",
       "art": "e2_first_1",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -2969,7 +2969,7 @@
       "source": "ToFirstFloor frame 2; Hist 2",
       "kind": "city_story",
       "art": "e2_first_2",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -3004,7 +3004,7 @@
       "source": "ToTheKilling frame 1; Hist 2",
       "kind": "city_story",
       "art": "e2_hall_1",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -3039,7 +3039,7 @@
       "source": "ToTheKilling frame 2; Hist 2",
       "kind": "city_story",
       "art": "e2_hall_2",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -3074,7 +3074,7 @@
       "source": "ToMainPart frame 1; Hist 2",
       "kind": "city_story",
       "art": "e2_main_1",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -3122,7 +3122,7 @@
       "source": "ToMainPart frame 1; Hist 3",
       "kind": "city_story",
       "art": "e2_main_1",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -3170,7 +3170,7 @@
       "source": "LiftCall frame 1; Hist 2",
       "kind": "city_story",
       "art": "e2_lift_1",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -3206,7 +3206,7 @@
       "source": "LiftCall frame 2; Hist 2",
       "kind": "city_story",
       "art": "e2_lift_2",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -3411,7 +3411,7 @@
       "source": "NewItem(11)",
       "kind": "city_decision",
       "art": "e2_hospital_5",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "text": "@loc:episode2.archive.episode2_routes.nodes.e2_hospital_5_choice_11.text",
       "choices": [
@@ -3435,7 +3435,7 @@
       "source": "NewItem(12)",
       "kind": "city_decision",
       "art": "e2_hospital_6",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "text": "@loc:episode2.archive.episode2_routes.nodes.e2_hospital_6_choice_12.text",
       "choices": [
@@ -3459,7 +3459,7 @@
       "source": "NewItem(13)",
       "kind": "city_decision",
       "art": "e2_hospital_9",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "text": "@loc:episode2.archive.episode2_routes.nodes.e2_hospital_9_choice_13.text",
       "choices": [
@@ -3479,7 +3479,7 @@
       "source": "NewItem(14)",
       "kind": "city_decision",
       "art": "e2_hospital_11",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "text": "@loc:episode2.archive.episode2_routes.nodes.e2_hospital_11_choice_14.text",
       "choices": [
@@ -3507,7 +3507,7 @@
       "source": "NewItem(16)",
       "kind": "city_decision",
       "art": "e2_hospital_15",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "text": "@loc:episode2.archive.episode2_routes.nodes.e2_hospital_15_choice_16.text",
       "choices": [
@@ -3536,7 +3536,7 @@
       "source": "NewItem(16.1)",
       "kind": "city_decision",
       "art": "e2_hospital_15",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "text": "@loc:episode2.archive.episode2_routes.nodes.e2_hospital_15_choice_16_1.text",
       "choices": [
@@ -3565,7 +3565,7 @@
       "source": "NewItem(18)",
       "kind": "city_decision",
       "art": "e2_hospital_17",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "text": "@loc:episode2.archive.episode2_routes.nodes.e2_hospital_17_choice_18.text",
       "choices": [
@@ -3661,7 +3661,7 @@
       "source": "NewItem(15)",
       "kind": "city_decision",
       "art": "e2_first_3",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "text": "@loc:episode2.archive.episode2_routes.nodes.e2_first_3_choice_15.text",
       "choices": [
@@ -3695,7 +3695,7 @@
       "source": "NewItem(19)",
       "kind": "city_decision",
       "art": "e2_first_3",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "text": "@loc:episode2.archive.episode2_routes.nodes.e2_first_3_choice_19.text",
       "choices": [
@@ -3715,7 +3715,7 @@
       "source": "NewItem(19), closed door",
       "kind": "city_story",
       "art": "e2_first_3",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [
         {
@@ -3751,7 +3751,7 @@
       "source": "NewItem(23)",
       "kind": "city_decision",
       "art": "e2_first_9",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "text": "@loc:episode2.archive.episode2_routes.nodes.e2_first_9_choice_23.text",
       "choices": [
@@ -3771,7 +3771,7 @@
       "source": "NewItem(17)",
       "kind": "city_decision",
       "art": "e2_roof_3",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "text": "@loc:episode2.archive.episode2_routes.nodes.e2_roof_3_choice_17.text",
       "choices": [
@@ -3791,7 +3791,7 @@
       "source": "NewItem(20)",
       "kind": "city_decision",
       "art": "e2_hall_3",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "text": "@loc:episode2.archive.episode2_routes.nodes.e2_hall_3_choice_20.text",
       "choices": [
@@ -3811,7 +3811,7 @@
       "source": "NewItem(21)",
       "kind": "city_decision",
       "art": "e2_main_3",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "text": "@loc:episode2.archive.episode2_routes.nodes.e2_main_3_choice_21.text",
       "choices": [
@@ -3831,7 +3831,7 @@
       "source": "NewItem(22)",
       "kind": "city_decision",
       "art": "e2_main_7",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "text": "@loc:episode2.archive.episode2_routes.nodes.e2_main_7_choice_22.text",
       "choices": [
@@ -3861,7 +3861,7 @@
       "source": "LiftCall(2) frame 3",
       "kind": "city_cutscene",
       "art": "e2_lift_3",
-      "art_extension": "webp",
+      "art_extension": "png",
       "clean_background": true,
       "blocks": [],
       "text": "",

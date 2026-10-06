@@ -10,7 +10,7 @@
 				"source": "Episode3 frame 1",
 				"kind": "city_story",
 				"art": "e3_opening_1",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -58,7 +58,7 @@
 				"source": "Episode3 frame 2",
 				"kind": "city_story",
 				"art": "e3_opening_2",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -106,7 +106,7 @@
 				"source": "Episode3 frame 3",
 				"kind": "city_story",
 				"art": "e3_opening_3",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -154,7 +154,7 @@
 				"source": "Episode3 frame 4",
 				"kind": "city_story",
 				"art": "e3_opening_4",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -203,7 +203,7 @@
 				"source": "Episode3 frame 5",
 				"kind": "city_story",
 				"art": "e3_opening_5",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -251,7 +251,7 @@
 				"source": "Episode3 frame 6",
 				"kind": "city_story",
 				"art": "e3_opening_6",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -300,7 +300,7 @@
 				"source": "Episode3 frame 7",
 				"kind": "city_cutscene",
 				"art": "e3_opening_7",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [],
 				"text": "",
@@ -336,7 +336,7 @@
 				"source": "Episode3 frame 8",
 				"kind": "activity_qte",
 				"art": "e3_opening_8_anim_0",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [],
 				"text": "",
@@ -445,7 +445,7 @@
 				"source": "Episode3 frame 9",
 				"kind": "city_cutscene",
 				"art": "e3_opening_9",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [],
 				"text": "",
@@ -482,7 +482,7 @@
 				"source": "Episode3 frame 10",
 				"kind": "city_story",
 				"art": "e3_opening_10",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -530,7 +530,7 @@
 				"source": "Episode3 frame 11",
 				"kind": "activity_qte",
 				"art": "e3_opening_11_anim_0",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [],
 				"text": "",
@@ -643,7 +643,7 @@
 				"source": "Episode3 frame 12",
 				"kind": "city_story",
 				"art": "e3_opening_12",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -691,7 +691,7 @@
 				"source": "Episode3 frame 13",
 				"kind": "city_story",
 				"art": "e3_opening_13",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -739,7 +739,7 @@
 				"source": "Episode3 frame 14",
 				"kind": "city_cutscene",
 				"art": "e3_opening_14",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [],
 				"text": "",
@@ -776,7 +776,7 @@
 				"source": "Episode3 frame 15",
 				"kind": "city_story",
 				"art": "e3_opening_15",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -824,7 +824,7 @@
 				"source": "Episode3 frame 16",
 				"kind": "city_story",
 				"art": "e3_opening_16",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -872,7 +872,7 @@
 				"source": "Episode3 frame 17",
 				"kind": "city_cutscene",
 				"art": "e3_opening_17",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [],
 				"text": "",
@@ -908,7 +908,7 @@
 				"source": "OutTheHouse frame 2",
 				"kind": "city_cutscene",
 				"art": "e3_out_2",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [],
 				"text": "",
@@ -944,7 +944,7 @@
 				"source": "OutTheHouse frame 3",
 				"kind": "city_story",
 				"art": "e3_out_3",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -992,7 +992,7 @@
 				"source": "OutTheHouse frame 4",
 				"kind": "city_cutscene",
 				"art": "e3_out_4",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [],
 				"text": "",
@@ -1029,7 +1029,7 @@
 				"source": "OutTheHouse frame 5",
 				"kind": "city_story",
 				"art": "e3_out_5",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -1078,7 +1078,7 @@
 				"source": "WithJohn frame 1",
 				"kind": "city_story",
 				"art": "e3_john_1",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -1126,7 +1126,7 @@
 				"source": "WithJohn frame 2",
 				"kind": "city_story",
 				"art": "e3_john_2",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -1174,7 +1174,7 @@
 				"source": "WithJohn frame 3",
 				"kind": "city_story",
 				"art": "e3_john_3",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -1222,7 +1222,7 @@
 				"source": "WithJohn frame 4",
 				"kind": "city_story",
 				"art": "e3_john_4",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -1270,7 +1270,7 @@
 				"source": "WithJohn frame 5",
 				"kind": "city_story",
 				"art": "e3_john_5",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -1318,7 +1318,7 @@
 				"source": "WithJohn frame 6",
 				"kind": "activity_qte",
 				"art": "e3_john_6_anim_0",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [],
 				"text": "",
@@ -1408,7 +1408,7 @@
 				"source": "WithJohn frame 7",
 				"kind": "city_story",
 				"art": "e3_john_7",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -1456,7 +1456,7 @@
 				"source": "WithJohn frame 8",
 				"kind": "city_cutscene",
 				"art": "e3_john_8",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [],
 				"text": "",
@@ -1493,7 +1493,7 @@
 				"source": "WithJohn frame 9",
 				"kind": "city_story",
 				"art": "e3_john_9",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -1541,7 +1541,7 @@
 				"source": "WithJohn frame 10",
 				"kind": "city_story",
 				"art": "e3_john_10",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -1589,7 +1589,7 @@
 				"source": "WithJohn frame 11",
 				"kind": "city_story",
 				"art": "e3_john_11",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -1667,7 +1667,7 @@
 				"source": "WithJohn frame 12",
 				"kind": "city_cutscene",
 				"art": "e3_john_12",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [],
 				"text": "",
@@ -1703,7 +1703,7 @@
 				"source": "WithJohn frame 13",
 				"kind": "city_cutscene",
 				"art": "e3_john_13",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [],
 				"text": "",
@@ -1752,7 +1752,7 @@
 				"source": "WithJohn frame 14",
 				"kind": "city_story",
 				"art": "e3_john_14",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -1800,7 +1800,7 @@
 				"source": "WithJohn frame 15",
 				"kind": "city_cutscene",
 				"art": "e3_john_15",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [],
 				"text": "",
@@ -1837,7 +1837,7 @@
 				"source": "WithJohn frame 16",
 				"kind": "city_story",
 				"art": "e3_john_16",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -1885,7 +1885,7 @@
 				"source": "WithJohn frame 17",
 				"kind": "city_story",
 				"art": "e3_john_17",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -1933,7 +1933,7 @@
 				"source": "WithJohn frame 18",
 				"kind": "activity_qte",
 				"art": "e3_john_18_anim_0",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -2035,7 +2035,7 @@
 				"source": "WithJohn frame 19",
 				"kind": "city_story",
 				"art": "e3_john_19",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -2083,7 +2083,7 @@
 				"source": "WithJohn frame 20",
 				"kind": "city_story",
 				"art": "e3_john_20",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -2131,7 +2131,7 @@
 				"source": "WithJohn frame 21",
 				"kind": "city_story",
 				"art": "e3_john_21",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -2180,7 +2180,7 @@
 				"source": "WithJohn frame 22",
 				"kind": "city_story",
 				"art": "e3_john_22",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -2228,7 +2228,7 @@
 				"source": "WithJohn frame 23",
 				"kind": "activity_qte",
 				"art": "e3_john_23_anim_0",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [],
 				"text": "",
@@ -2380,7 +2380,7 @@
 				"source": "WithJohn frame 24",
 				"kind": "city_story",
 				"art": "e3_john_24",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -2428,7 +2428,7 @@
 				"source": "WithJohn frame 25",
 				"kind": "city_story",
 				"art": "e3_john_25",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -2476,7 +2476,7 @@
 				"source": "WithJohn frame 26",
 				"kind": "city_story",
 				"art": "e3_john_26",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -2524,7 +2524,7 @@
 				"source": "WithJohn frame 27",
 				"kind": "city_story",
 				"art": "e3_john_27",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -2572,7 +2572,7 @@
 				"source": "WithJohn frame 28",
 				"kind": "city_story",
 				"art": "e3_john_28",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -2637,7 +2637,7 @@
 				"source": "WithJohn frame 29",
 				"kind": "city_story",
 				"art": "e3_john_29",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -2685,7 +2685,7 @@
 				"source": "WithJohn frame 30",
 				"kind": "city_story",
 				"art": "e3_john_30",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -2733,7 +2733,7 @@
 				"source": "KillTheJohn frame 1",
 				"kind": "city_story",
 				"art": "e3_kill_1",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -2781,7 +2781,7 @@
 				"source": "KillTheJohn frame 2",
 				"kind": "city_story",
 				"art": "e3_kill_2",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -2829,7 +2829,7 @@
 				"source": "KillTheJohn frame 3",
 				"kind": "city_story",
 				"art": "e3_kill_3",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -2877,7 +2877,7 @@
 				"source": "KillTheJohn frame 4",
 				"kind": "city_story",
 				"art": "e3_kill_4",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -2925,7 +2925,7 @@
 				"source": "KillTheJohn frame 5",
 				"kind": "city_story",
 				"art": "e3_kill_5",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -2973,7 +2973,7 @@
 				"source": "KillTheJohn frame 6",
 				"kind": "activity_qte",
 				"art": "e3_kill_6_anim_0",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -3079,7 +3079,7 @@
 				"source": "KillTheJohn frame 7",
 				"kind": "city_story",
 				"art": "e3_kill_7",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -3127,7 +3127,7 @@
 				"source": "KillTheJohn frame 8",
 				"kind": "city_story",
 				"art": "e3_kill_8",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -3175,7 +3175,7 @@
 				"source": "SeveroZapad frame 1",
 				"kind": "city_story",
 				"art": "e3_north_1",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -3223,7 +3223,7 @@
 				"source": "SeveroZapad frame 2",
 				"kind": "city_story",
 				"art": "e3_north_2",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -3271,7 +3271,7 @@
 				"source": "SeveroZapad frame 3",
 				"kind": "city_story",
 				"art": "e3_north_3",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -3319,7 +3319,7 @@
 				"source": "SeveroZapad frame 4",
 				"kind": "city_story",
 				"art": "e3_north_4",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -3367,7 +3367,7 @@
 				"source": "SeveroZapad frame 5",
 				"kind": "city_story",
 				"art": "e3_north_5",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -3428,7 +3428,7 @@
 				"source": "SeveroZapad frame 6",
 				"kind": "city_story",
 				"art": "e3_north_6",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -3476,7 +3476,7 @@
 				"source": "SeveroZapad frame 7",
 				"kind": "city_story",
 				"art": "e3_north_7",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -3524,7 +3524,7 @@
 				"source": "SeveroZapad frame 8",
 				"kind": "city_story",
 				"art": "e3_north_8",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -3572,7 +3572,7 @@
 				"source": "SeveroZapad frame 9",
 				"kind": "city_story",
 				"art": "e3_north_9",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -3620,7 +3620,7 @@
 				"source": "SeveroZapad frame 10",
 				"kind": "city_story",
 				"art": "e3_north_10",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -3668,7 +3668,7 @@
 				"source": "SeveroZapad frame 11",
 				"kind": "city_story",
 				"art": "e3_north_11",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -3716,7 +3716,7 @@
 				"source": "SeveroZapad frame 12",
 				"kind": "city_story",
 				"art": "e3_north_12",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -3764,7 +3764,7 @@
 				"source": "SeveroZapad frame 13",
 				"kind": "city_story",
 				"art": "e3_north_13",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -3812,7 +3812,7 @@
 				"source": "SeveroZapad frame 14",
 				"kind": "city_story",
 				"art": "e3_north_14",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -3860,7 +3860,7 @@
 				"source": "SeveroZapad frame 15",
 				"kind": "city_story",
 				"art": "e3_north_15",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -4351,7 +4351,7 @@
 				"source": "NewItem(24)",
 				"kind": "city_decision",
 				"art": "e3_opening_15",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"text": "@loc:episode3.nodes.e3_opening_15_choice_24.data.text"
 			},
@@ -4392,7 +4392,7 @@
 				"speaker": "@loc:episode3.nodes.e3_dialogue_0.data.speaker",
 				"text": "@loc:episode3.nodes.e3_dialogue_0.data.text",
 				"art": "e3_dialogue_john",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"original_ui": true
 			},
 			"position": [
@@ -4443,7 +4443,7 @@
 				"speaker": "@loc:episode3.nodes.e3_dialogue_1.data.speaker",
 				"text": "@loc:episode3.nodes.e3_dialogue_1.data.text",
 				"art": "e3_dialogue_john",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"original_ui": true
 			},
 			"position": [
@@ -4494,7 +4494,7 @@
 				"speaker": "@loc:episode3.nodes.e3_dialogue_2.data.speaker",
 				"text": "@loc:episode3.nodes.e3_dialogue_2.data.text",
 				"art": "e3_dialogue_john",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"original_ui": true
 			},
 			"position": [
@@ -4545,7 +4545,7 @@
 				"speaker": "@loc:episode3.nodes.e3_dialogue_4.data.speaker",
 				"text": "@loc:episode3.nodes.e3_dialogue_4.data.text",
 				"art": "e3_dialogue_john",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"original_ui": true
 			},
 			"position": [
@@ -4596,7 +4596,7 @@
 				"speaker": "@loc:episode3.nodes.e3_dialogue_5.data.speaker",
 				"text": "@loc:episode3.nodes.e3_dialogue_5.data.text",
 				"art": "e3_dialogue_john",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"original_ui": true
 			},
 			"position": [
@@ -4647,7 +4647,7 @@
 				"speaker": "@loc:episode3.nodes.e3_dialogue_6.data.speaker",
 				"text": "@loc:episode3.nodes.e3_dialogue_6.data.text",
 				"art": "e3_dialogue_john",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"original_ui": true
 			},
 			"position": [
@@ -4698,7 +4698,7 @@
 				"speaker": "@loc:episode3.nodes.e3_dialogue_7.data.speaker",
 				"text": "@loc:episode3.nodes.e3_dialogue_7.data.text",
 				"art": "e3_dialogue_john",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"original_ui": true
 			},
 			"position": [
@@ -4749,7 +4749,7 @@
 				"speaker": "@loc:episode3.nodes.e3_dialogue_8.data.speaker",
 				"text": "@loc:episode3.nodes.e3_dialogue_8.data.text",
 				"art": "e3_dialogue_john",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"original_ui": true
 			},
 			"position": [
@@ -4800,7 +4800,7 @@
 				"speaker": "@loc:episode3.nodes.e3_dialogue_14.data.speaker",
 				"text": "@loc:episode3.nodes.e3_dialogue_14.data.text",
 				"art": "e3_dialogue_john",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"original_ui": true
 			},
 			"position": [
@@ -4851,7 +4851,7 @@
 				"speaker": "@loc:episode3.nodes.e3_dialogue_16.data.speaker",
 				"text": "@loc:episode3.nodes.e3_dialogue_16.data.text",
 				"art": "e3_dialogue_john",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"original_ui": true
 			},
 			"position": [
@@ -4902,7 +4902,7 @@
 				"speaker": "@loc:episode3.nodes.e3_dialogue_19.data.speaker",
 				"text": "@loc:episode3.nodes.e3_dialogue_19.data.text",
 				"art": "e3_dialogue_john",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"original_ui": true
 			},
 			"position": [
@@ -4953,7 +4953,7 @@
 				"speaker": "@loc:episode3.nodes.e3_dialogue_17.data.speaker",
 				"text": "@loc:episode3.nodes.e3_dialogue_17.data.text",
 				"art": "e3_dialogue_john",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"original_ui": true
 			},
 			"position": [
@@ -5004,7 +5004,7 @@
 				"speaker": "@loc:episode3.nodes.e3_dialogue_22.data.speaker",
 				"text": "@loc:episode3.nodes.e3_dialogue_22.data.text",
 				"art": "e3_dialogue_john",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"original_ui": true
 			},
 			"position": [
@@ -5055,7 +5055,7 @@
 				"speaker": "@loc:episode3.nodes.e3_dialogue_26.data.speaker",
 				"text": "@loc:episode3.nodes.e3_dialogue_26.data.text",
 				"art": "e3_dialogue_john",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"original_ui": true
 			},
 			"position": [
@@ -5245,7 +5245,7 @@
 				"source": "WithJohn frame 1; Hist 2",
 				"kind": "city_story",
 				"art": "e3_john_1",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -5306,7 +5306,7 @@
 				"source": "WithJohn frame 1; Hist 3",
 				"kind": "city_story",
 				"art": "e3_john_1",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -5367,7 +5367,7 @@
 				"source": "OutTheHouse frame 3; Hist 1",
 				"kind": "city_story",
 				"art": "e3_out_3",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -5415,7 +5415,7 @@
 				"source": "WithJohn frame 5; Hist 2",
 				"kind": "city_story",
 				"art": "e3_john_5",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -5463,7 +5463,7 @@
 				"source": "NewItem(25)",
 				"kind": "city_decision",
 				"art": "e3_john_3",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"text": "@loc:episode3.nodes.e3_john_3_choice_25.data.text"
 			},
@@ -5521,7 +5521,7 @@
 				"source": "NewItem(28)",
 				"kind": "city_decision",
 				"art": "e3_john_7",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"text": "@loc:episode3.nodes.e3_john_7_choice_28.data.text"
 			},
@@ -5560,7 +5560,7 @@
 				"source": "NewItem(30)",
 				"kind": "city_decision",
 				"art": "e3_john_10",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"text": "@loc:episode3.nodes.e3_john_10_choice_30.data.text"
 			},
@@ -5610,7 +5610,7 @@
 				"source": "NewItem(26)",
 				"kind": "city_decision",
 				"art": "e3_kill_3",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"text": "@loc:episode3.nodes.e3_kill_3_choice_26.data.text"
 			},
@@ -5649,7 +5649,7 @@
 				"source": "KillTheJohn frame 4; Hist 1",
 				"kind": "city_story",
 				"art": "e3_kill_4",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -5697,7 +5697,7 @@
 				"source": "KillTheJohn frame 5; Hist 2",
 				"kind": "city_story",
 				"art": "e3_kill_5",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -5758,7 +5758,7 @@
 				"source": "SeveroZapad frame 1; Hist 3",
 				"kind": "city_story",
 				"art": "e3_north_1",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"blocks": [
 					{
@@ -5806,7 +5806,7 @@
 				"source": "NewItem(27)",
 				"kind": "city_decision",
 				"art": "e3_north_1",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"text": "@loc:episode3.nodes.e3_north_1_choice_27.data.text"
 			},
@@ -5845,7 +5845,7 @@
 				"source": "NewItem(29)",
 				"kind": "city_decision",
 				"art": "e3_north_9",
-				"art_extension": "webp",
+				"art_extension": "png",
 				"clean_background": true,
 				"text": "@loc:episode3.nodes.e3_north_9_choice_29.data.text"
 			},
