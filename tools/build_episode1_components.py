@@ -117,8 +117,9 @@ def plans(root):
  result['adaptive_metro_controls']=([s(2925,2,h=['Mov'])],{})
  # Common episode UI is reused by later episodes, so migrate all its callers.
  result['item_keys']=([s(274,y=30,o={'Weapons':1,'ButExit':1},h=['Txt'])],{})
- for name,count in [('decision',2),('city_decision_3',3),('ep2_decision_4',4)]:result[name]=([s(99,y=-18,h=['Txt']+[f'But{i}' for i in range(count+1,5)]+[f'But{i}.Txt' for i in range(1,5)])],{})
- result['layout_pause']=([s(83,5,y=61,o={'Butns.But2':1,'Butns.But3':1,'Butns.But4':1,'Butns.But5':1},h=['ForSound','Grey'])],{})
+ # Metal answers are separate native buttons; these sets contain only the frame.
+ for name in ['decision','city_decision_3','ep2_decision_4']:result[name]=([s(99,y=-18,h=['Txt']+[f'But{i}' for i in range(1,5)])],{})
+ # PauseMov is exported independently by build_pause_components.py.
  for name,alive in [('result_dead',False),('result_alive',True)]:result[name]=([s(59,6,o={'Mov.Rezt':0,'Mov.Rezt.Symb':int(alive),'Mov.But1':1,'Mov.But2':1},h=['Itog','Mov.Rezt.Txt','Mov.Rezt.Opt','Mov.But3','Mov.StrBut3'])],{})
  return result
 

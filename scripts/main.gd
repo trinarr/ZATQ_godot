@@ -204,9 +204,7 @@ func _show_menu() -> void:
 	if Quest.sound_enabled and not music.playing: music.play()
 
 func _brush_button(text: String, rect: Rect2, action: Callable, parent: Control = null) -> void:
-	_brush(rect,parent,Color("803c3c"))
-	_button_text(text,rect.grow_individual(-12,-5,-12,-5),20,parent,TITLE_FONT)
-	_hit(text,rect,action,parent)
+	_torn_text_button(text,rect,action,parent)
 
 func _selector_items() -> Array:
 	return selectors.filter(func(item: Dictionary): return item.kind == selector_kind)
@@ -294,7 +292,9 @@ func _toggle_sound() -> void:
 	if not Quest.sound_enabled:
 		music.stop()
 		effects.stop()
-	if paused: _show_pause()
+	if paused and is_instance_valid(overlay) and overlay.has_method("set_sound_enabled"):
+		overlay.set_sound_enabled(Quest.sound_enabled)
+	elif paused: _show_pause()
 	else: _show_menu()
 
 func _show_pause() -> void:

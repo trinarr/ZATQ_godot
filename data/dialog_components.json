@@ -1,0 +1,30 @@
+{
+  "decision_plate": [
+    {
+      "type": "texture",
+      "texture": "dialog_components/part_29ff3a62777fe01000fb.png",
+      "rect": [
+        0.0,
+        0.0,
+        347.0,
+        64.0
+      ],
+      "source": "/Symbol 93",
+      "layer": "background"
+    }
+  ],
+  "decision_disabled_mark": [
+    {
+      "type": "texture",
+      "texture": "dialog_components/part_614927eae91a694c82e3.png",
+      "rect": [
+        154.0,
+        15.0,
+        29.0,
+        29.0
+      ],
+      "source": "/Symbol 97",
+      "layer": "background"
+    }
+  ]
+}

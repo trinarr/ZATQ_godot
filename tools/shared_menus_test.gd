@@ -29,7 +29,7 @@ func run() -> void:
 		panel.configure(artwork,"Предмет / Item")
 		await process_frame
 		var count := 0
-		for child: Node in panel.get_children():
+		for child: Node in panel.find_children("*","TextureRect",true,false):
 			if child is TextureRect:
 				count += 1
 				check(child.texture!=null,"item texture: "+artwork)
@@ -37,6 +37,7 @@ func run() -> void:
 					if textures.has(count):check(textures[count]==child.texture,"shared item chrome")
 					textures[count]=child.texture
 		check(count==4,"frame, header, item and arrow: "+artwork)
+		check(panel.find_children("*","TextureRect",true,false)[3].get_parent().has_meta("torn_button"),"pickup arrow belongs to its button")
 		accepted=false
 		for child: Node in panel.get_children():
 			if child is Button:child.pressed.emit()
@@ -53,13 +54,15 @@ func run() -> void:
 	pause.quit_requested.connect(func(): requested="quit")
 	pause.set_cover_rect(Rect2(-300,-40,2200,1040))
 	check(pause.dimmer.position==Vector2(-300,-40) and pause.dimmer.size==Vector2(2200,1040),"pause covers visible safe area")
-	check(pause.resume_art.position.x==-300,"pause resume tab stays at safe edge")
+	await pause.opening_tween.finished
+	check(pause.drum.position.x==-300,"pause drum stays at safe edge")
+	check(is_equal_approx(pause.resume_art.get_global_rect().get_center().y,480),"pause central button replaces opening tab")
 	var actions: Array[String] = []
 	for child: Node in pause.get_children():
 		if child is Button:
 			child.pressed.emit()
 			actions.append(requested)
-	check(actions==["restart","sound","menu","quit","resume"],"all pause actions emit signals")
+	check(actions==["resume","restart","sound","menu","quit"],"all pause actions emit signals")
 	check(quest.current_id==initial_id,"pause does not route")
 	pause.free()
 	for data: Dictionary in [{"text":"Выбор","art":"decision"},{"style":"confirmation","text":"Подтвердить?"},{"style":"speaker","text":"Реплика","speaker":"Дэвид","art":"result_background"},{"style":"speaker","original_ui":true,"text":"Реплика","speaker":"Джон","art":"e3_dialogue_john","shade":false}]:

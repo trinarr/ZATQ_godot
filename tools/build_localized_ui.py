@@ -88,7 +88,8 @@ def build(library):
  r.omit_brushes=True;rr.omit_brushes=True
  icons=IconRenderer(library,r.out,ROOT/"fonts/flash");icons.omit_brushes=True
  def s(n,f=0,x=0,y=0,o=None,h=None):return(f'Symbol {n}',f,x,y,o or {},h or set())
- plans={'adaptive_menu':[s(118),s(132,8,415,70)],'adaptive_menu_off':[s(118,o={'SndCheck':1}),s(132,8,415,70)],'adaptive_help':[s(147,6)],'layout_pause':[s(83,5,0,61,{'Butns.But2':1,'Butns.But3':1,'Butns.But4':1,'Butns.But5':1},{'ForSound','Grey'})]}
+ plans={'adaptive_menu':[s(118),s(132,8,415,70)],'adaptive_menu_off':[s(118,o={'SndCheck':1}),s(132,8,415,70)],'adaptive_help':[s(147,6)]}
+ # PauseMov has its own component exporter and native button captions.
  for name,fr in [('wake',0),('screams',1),('morning_choice',2),('transport',4),('lift',5),('lift_button',6)]:
   plans['layout_controls_'+name]=[s(2882,fr,o={'Mov':14 if name=='wake' else 4 if name=='lift_button' else 0},h={'Mov'})]
  plans['layout_controls_transport_no_keys']=[s(2882,4,h={'Mov','But2'})]
@@ -103,9 +104,7 @@ def build(library):
  for name,weapon in [('ep2_item_glock',2),('ep2_item_mark23',3)]:plans[name]=[s(274,y=30,o={'Weapons':weapon,'ButExit':1},h={'Txt'})]
  for name,weapon in [('knife',4),('glock16',5),('glock7',6)]:plans['e3_item_'+name]=[s(274,y=30,o={'Weapons':weapon,'ButExit':1},h={'Txt'})]
  plans['e3_dialogue_john']=[s(237,1,o={'Ava':1,'Dlg1':0,'Dlg2':0,'Dlg3':0},h={'Txt','PrsnTxt','DlgTxt'})]
- plans['decision']=[s(99,y=-18,h={'Txt','But3','But4','But1.Txt','But2.Txt'})]
- plans['city_decision_3']=[s(99,y=-18,h={'Txt','But4','But1.Txt','But2.Txt','But3.Txt'})]
- plans['ep2_decision_4']=[s(99,y=-18,h={'Txt','But1.Txt','But2.Txt','But3.Txt','But4.Txt'})]
+ for name in ['decision','city_decision_3','ep2_decision_4']:plans[name]=[s(99,y=-18,h={'Txt','But1','But2','But3','But4'})]
  plans['ep2_continue_button']=[s(8,1,67.05,360),s(54,0,93,376)]
  export_components(r,plans,ROOT)
  episode_parts=json.loads((ROOT/'data/episode1_components.json').read_text()) if (ROOT/'data/episode1_components.json').exists() else {}

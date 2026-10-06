@@ -145,50 +145,6 @@
       "color": "#e1e1e1"
     }
   ],
-  "layout_pause": [
-    {
-      "text": "@loc:ui.art.layout_pause.0",
-      "rect": [
-        47.3,
-        311.0,
-        260.35,
-        23.0
-      ],
-      "size": 22.75,
-      "rotation": 0.0,
-      "font": 1,
-      "alignment": "center",
-      "color": "#e1e1e1"
-    },
-    {
-      "text": "@loc:ui.art.layout_pause.1",
-      "rect": [
-        98.3,
-        245.0,
-        260.35,
-        23.0
-      ],
-      "size": 22.75,
-      "rotation": 0.0,
-      "font": 1,
-      "alignment": "center",
-      "color": "#e1e1e1"
-    },
-    {
-      "text": "@loc:ui.art.layout_pause.2",
-      "rect": [
-        44.3,
-        114.0,
-        260.35,
-        23.0
-      ],
-      "size": 22.75,
-      "rotation": 0.0,
-      "font": 1,
-      "alignment": "center",
-      "color": "#e1e1e1"
-    }
-  ],
   "layout_controls_wake": [],
   "layout_controls_screams": [],
   "layout_controls_morning_choice": [

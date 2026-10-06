@@ -1,7 +1,8 @@
 extends Control
 # Reusable Flash view primitives; no dependency on Main or Quest.
 const LOC := preload("res://scripts/core/localization.gd")
-const BRUSH := preload("res://scripts/ui/torn_brush.gd")
+const TORN_TEXT := preload("res://scripts/ui/shared/torn_text_button.gd")
+const TORN_ICON := preload("res://scripts/ui/shared/torn_icon_button.gd")
 const ALPHA_HOTSPOT := preload("res://scripts/ui/alpha_hotspot.gd")
 const LAYOUT := preload("res://scripts/ui/landscape_stage_layout.gd")
 const STATISTIC_ICON := preload("res://scripts/ui/statistic_icon.gd")
@@ -60,6 +61,7 @@ func _art(filename: String, parent: Control = null, rect: Rect2 = Rect2(0,0,800,
 		icons.expand_mode=TextureRect.EXPAND_IGNORE_SIZE
 		icons.size=rect.size
 		icons.mouse_filter=Control.MOUSE_FILTER_IGNORE
+		icons.set_meta("button_icon_sheet",true)
 		image.add_child(icons)
 	for block: Dictionary in art_text.get(filename,[]):
 		var r: Array = block.rect
@@ -82,6 +84,7 @@ func _art(filename: String, parent: Control = null, rect: Rect2 = Rect2(0,0,800,
 		label.add_theme_font_override("font",font)
 		label.add_theme_color_override("font_color",Color(block.color))
 		if not label.has_meta("button_caption"):label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER if block.alignment=="center" else HORIZONTAL_ALIGNMENT_RIGHT if block.alignment=="right" else HORIZONTAL_ALIGNMENT_LEFT
+	_adopt_button_icons(image)
 	return image
 
 func _text(text: String, rect: Rect2, font_size: int = 24, title: bool = false, center: bool = false, parent: Control = null) -> Label:
@@ -103,6 +106,17 @@ func _text(text: String, rect: Rect2, font_size: int = 24, title: bool = false, 
 
 func _hit(name: String, rect: Rect2, action: Callable, parent: Control = null, mask: String = "") -> Button:
 	rect = LAYOUT.scaled_rect(rect)
+	var host: Control = parent if parent != null else _default_parent()
+	var painted: Button = _find_painted_button(host,rect)
+	if painted != null:
+		if painted.get_parent()!=host: painted.reparent(host,true)
+		painted.name = LOC.text(name)
+		painted.tooltip_text = LOC.text(name)
+		painted.mouse_filter = Control.MOUSE_FILTER_STOP
+		painted.focus_mode = Control.FOCUS_ALL
+		painted.set_meta("bound_action",true)
+		painted.pressed.connect(action)
+		return painted
 	var button: Button = Button.new() if mask.is_empty() else ALPHA_HOTSPOT.new()
 	if not mask.is_empty():
 		button.hit_image = load("res://assets/flash_ui/" + mask + ".png").get_image()
@@ -120,26 +134,28 @@ func _hit(name: String, rect: Rect2, action: Callable, parent: Control = null, m
 	(parent if parent != null else _default_parent()).add_child(button)
 	return button
 
-func _brush(rect:Rect2,parent:Control=null,color:Color=Color("803c3c"),seed_value:float=1.0)->Control:
-	var brush:=BRUSH.new()
-	brush.position=rect.position*2
-	brush.size=rect.size*2
-	brush.brush_color=color
-	brush.brush_seed=seed_value
-	(parent if parent!=null else _default_parent()).add_child(brush)
-	return brush
-
 func _draw_brushes(filename:String,parent:Control,behind:bool=false)->void:
 	var index:=0
 	for record:Dictionary in art_brushes.get(filename,[]):
 		var r:Array=record.rect
 		var c:Array=record.color
-		var brush:=_brush(Rect2(r[0],r[1],r[2],r[3]),parent,Color(c[0],c[1],c[2],c[3]),float(index+1))
+		var brush: Button = TORN_ICON.new() if absf(float(r[2])-float(r[3]))<1 else TORN_TEXT.new()
+		brush.position = Vector2(r[0],r[1])*2
+		brush.size = Vector2(r[2],r[3])*2
+		brush.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		brush.focus_mode = Control.FOCUS_NONE
+		brush.set_palette(Color(c[0],c[1],c[2],c[3]),float(index+1))
+		parent.add_child(brush)
 		brush.rotation=float(record.get("rotation",0))
 		if behind:brush.show_behind_parent=true
 		index+=1
 
 func _button_text(value:String,rect:Rect2,font_size:int=22,parent:Control=null,font:Font=null)->Label:
+	var host: Control = parent if parent != null else _default_parent()
+	var painted: Button = _find_painted_button(host,LAYOUT.scaled_rect(rect))
+	if painted != null and painted.get_script()==TORN_TEXT:
+		painted.set_caption(value,font if font!=null else BODY_FONT,font_size*2)
+		return painted.caption
 	var text:=" ".join(LOC.text(value).replace("\r"," ").replace("\n"," ").split(" ",false))
 	if font==null:font=BODY_FONT
 	while font_size>1 and (font.get_string_size(text,HORIZONTAL_ALIGNMENT_LEFT,-1,font_size*2).x>rect.size.x*2 or font.get_height(font_size*2)>rect.size.y*2):font_size-=1
@@ -150,6 +166,58 @@ func _button_text(value:String,rect:Rect2,font_size:int=22,parent:Control=null,f
 	label.clip_text=true
 	label.set_meta("button_caption",true)
 	return label
+
+func _torn_text_button(value: String, rect: Rect2, action: Callable, parent: Control = null, font: Font = TITLE_FONT, font_size: int = 20) -> Button:
+	var button := TORN_TEXT.new()
+	button.position = rect.position*2
+	button.size = rect.size*2
+	button.name = LOC.text(value)
+	button.tooltip_text = LOC.text(value)
+	button.set_meta("bound_action",true)
+	button.set_caption(value,font,font_size*2)
+	button.pressed.connect(action)
+	(parent if parent!=null else _default_parent()).add_child(button)
+	return button
+
+func _find_painted_button(parent: Control, rect: Rect2) -> Button:
+	var point := parent.get_global_transform()*rect.get_center()
+	return _find_painted_at(parent,point,rect.size*parent.get_global_transform().get_scale().abs())
+
+func _find_painted_at(parent: Control, point: Vector2, requested: Vector2) -> Button:
+	for child: Node in parent.get_children():
+		if child is Button and child.has_meta("torn_button") and not child.get_meta("bound_action",false):
+			var area: Rect2 = child.get_global_rect()
+			if area.has_point(point) and requested.x<=area.size.x*1.5 and requested.y<=area.size.y*1.5: return child
+		elif child is Control and not child is Button and not child.has_meta("modal_view"):
+			var found := _find_painted_at(child,point,requested)
+			if found != null: return found
+	return null
+
+func _adopt_button_icons(parent: Control) -> void:
+	for image: Node in parent.get_children():
+		if not image is TextureRect: continue
+		if image.has_meta("button_icon_sheet"):
+			# Legacy help icons share one transparent sheet. Atlas regions reuse it
+			# without copying pixels or leaving a second overlay above the buttons.
+			for button: Node in parent.get_children():
+				if button.get_script()!=TORN_ICON: continue
+				var atlas := AtlasTexture.new()
+				atlas.atlas = image.texture
+				atlas.region = Rect2((button.position-image.position)/image.size*image.texture.get_size(),button.size/image.size*image.texture.get_size())
+				var icon := TextureRect.new()
+				icon.texture = atlas
+				icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+				icon.position = button.position
+				icon.size = button.size
+				parent.add_child(icon)
+				button.add_icon(icon)
+			parent.remove_child(image)
+			image.queue_free()
+			continue
+		for button: Node in parent.get_children():
+			if button.get_script()==TORN_ICON and button.get_rect().encloses(image.get_rect()):
+				button.add_icon(image)
+				break
 
 func _draw_components(filename: String, parent: Control, layer: String) -> void:
 	for part: Dictionary in art_components[filename]:

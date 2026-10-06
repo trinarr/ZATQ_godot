@@ -2138,20 +2138,6 @@
     }
   ],
   "layout_controls_wake": [],
-  "layout_pause": [
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_cb95175da5f876a8d557.png",
-      "rect": [
-        12.0,
-        83.0,
-        357.0,
-        287.0
-      ],
-      "source": "Butns/Symbol 70",
-      "layer": "background"
-    }
-  ],
   "result_alive": [
     {
       "type": "texture",

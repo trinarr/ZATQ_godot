@@ -13,5 +13,6 @@ func configure(artwork: String, caption: String) -> void:
 			COMPONENTS.draw(self,[part])
 	_draw_brushes("item_keys",self)
 	COMPONENTS.draw(self,frame,"foreground")
+	_adopt_button_icons(self)
 	_text(caption,Rect2(102,71,594,31),24,false,true)
 	_hit("@loc:ui.main.37",Rect2(656,326,65,58),func(): accepted.emit())

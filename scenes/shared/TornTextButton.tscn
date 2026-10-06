@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+[ext_resource type="Script" path="res://scripts/ui/shared/torn_text_button.gd" id="1"]
+[node name="TornTextButton" type="Button"]
+offset_right = 432.0
+offset_bottom = 118.0
+script = ExtResource("1")

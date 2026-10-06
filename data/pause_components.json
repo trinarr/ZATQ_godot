@@ -1,0 +1,114 @@
+{
+  "pause_drum": [
+    {
+      "type": "texture",
+      "texture": "pause_components/part_3be9028662a1a617541d.png",
+      "rect": [
+        0.0,
+        1.5,
+        203.5,
+        321.0
+      ],
+      "source": "/Symbol 82",
+      "layer": "background"
+    }
+  ],
+  "pause_arrow": [
+    {
+      "type": "texture",
+      "texture": "pause_components/part_a7a6f54279861a73717d.png",
+      "rect": [
+        5.5,
+        15.050000000000011,
+        15.0,
+        24.5
+      ],
+      "source": "/Symbol 82",
+      "layer": "background"
+    }
+  ],
+  "pause_resume": [
+    {
+      "type": "texture",
+      "texture": "pause_components/part_4d1613f584e0e27a70cf.png",
+      "rect": [
+        0.0,
+        0.0,
+        37.0,
+        55.0
+      ],
+      "source": "/Symbol 74",
+      "layer": "background"
+    }
+  ],
+  "pause_resume_hit": [
+    {
+      "type": "texture",
+      "texture": "pause_components/part_53a5bbc146a7e2a3becc.png",
+      "rect": [
+        0.0,
+        -37.25,
+        70.0,
+        147.0
+      ],
+      "source": "/Symbol 78",
+      "layer": "background"
+    }
+  ],
+  "pause_restart_shadow": [
+    {
+      "type": "texture",
+      "texture": "pause_components/part_ae41a76d6f9aa5e5c3b6.png",
+      "rect": [
+        -4.0,
+        -10.5,
+        315.5,
+        69.5
+      ],
+      "source": "Butns/Symbol 70/Bitmap 60.png rows 0:72",
+      "layer": "background"
+    }
+  ],
+  "pause_sound_shadow": [
+    {
+      "type": "texture",
+      "texture": "pause_components/part_5420528eaf3d74395afd.png",
+      "rect": [
+        -58.0,
+        -7.0,
+        357.5,
+        66.0
+      ],
+      "source": "Butns/Symbol 70/Bitmap 60.png rows 72:138",
+      "layer": "background"
+    }
+  ],
+  "pause_menu_shadow": [
+    {
+      "type": "texture",
+      "texture": "pause_components/part_78e4100c7aeb0be79791.png",
+      "rect": [
+        -58.0,
+        -6.0,
+        349.5,
+        65.0
+      ],
+      "source": "Butns/Symbol 70/Bitmap 60.png rows 138:203",
+      "layer": "background"
+    }
+  ],
+  "pause_quit_shadow": [
+    {
+      "type": "texture",
+      "texture": "pause_components/part_6daf34daef9d816ca445.png",
+      "rect": [
+        -14.0,
+        -7.0,
+        345.0,
+        87.5
+      ],
+      "source": "Butns/Symbol 70/Bitmap 60.png rows 203:293",
+      "layer": "background"
+    }
+  ]
+}
