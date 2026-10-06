@@ -3,6 +3,7 @@ extends "res://scripts/ui/shared/shared_view.gd"
 const PAUSE_MENU := preload("res://scenes/shared/PauseMenu.tscn")
 const ITEM_POPUP := preload("res://scenes/shared/ItemPopup.tscn")
 const PLAYER_DIALOG := preload("res://scenes/shared/PlayerDialog.tscn")
+const ENDING_CHECKS := preload("res://scripts/ui/ending_checks.gd")
 const SAFE_CANVAS := preload("res://scripts/ui/adaptive_landscape_canvas.gd")
 const ACTIVITY := preload("res://scripts/ui/story_activity.gd")
 const CITY := preload("res://scripts/ui/city_gameplay.gd")
@@ -242,7 +243,9 @@ func _draw_selector() -> void:
 		_text(": %d" % (stats.wins if entry.available else 0),Rect2(500,160,57,28),21)
 		_text(": %d" % (stats.losses if entry.available else 0),Rect2(585,160,57,28),21)
 	if selector_kind == "episodes" and entry.available:
-		_text(LOC.text("@loc:ui.main.14") % [Quest.stats_for(entry.get("episode",1)).endings.size(),Quest.ending_count(entry.get("episode",1))],Rect2(435,313,239,28),18)
+		var checks := ENDING_CHECKS.new()
+		screen.add_child(checks)
+		checks.configure(int(entry.get("episode",1)),Quest.stats_for(entry.get("episode",1)).endings,Quest.nodes)
 	_hit(LOC.text("@loc:ui.main.15"),Rect2(99,69,57,43),func(): _cycle_selector(-1))
 	_hit(LOC.text("@loc:ui.main.16"),Rect2(648,69,62,43),func(): _cycle_selector(1))
 	_hit(LOC.text("@loc:ui.main.17"),Rect2(310,351,205,48),_selector_start)

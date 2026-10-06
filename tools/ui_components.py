@@ -27,7 +27,8 @@ def menu_plans():
             'EpImg': i, 'LeftOpt': 2 if i in [1, 3, 6, 8, 10] else 0,
             'RightOpt': 1 if i in [1, 3, 6, 8, 10] else 0,
             'But3': 1, 'But4': 1, 'But1': 1, 'But2': 1},
-            h={'NameTxt', 'EpOptions', 'InfoOpt', 'AnsNumb', 'txtWins', 'txtLoses'})]
+            h={'NameTxt', 'EpOptions', 'InfoOpt', 'AnsNumb', 'txtWins', 'txtLoses',
+               'LeftOpt.Tick1', 'LeftOpt.Tick2', 'LeftOpt.Tick3'})]
     return plans
 
 

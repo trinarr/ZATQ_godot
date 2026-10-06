@@ -214,17 +214,6 @@
       "layer": "foreground"
     },
     {
-      "texture": "components/part_6a07acbcd65fbe5ae791.png",
-      "rect": [
-        284.0,
-        284.0,
-        44.0,
-        17.0
-      ],
-      "source": "Symbol 211/LeftOpt",
-      "layer": "foreground"
-    },
-    {
       "texture": "components/part_ad6b91577988ccaf5ef3.png",
       "rect": [
         482.0,
@@ -347,17 +336,6 @@
         27.0
       ],
       "source": "Symbol 211/But1",
-      "layer": "foreground"
-    },
-    {
-      "texture": "components/part_6a07acbcd65fbe5ae791.png",
-      "rect": [
-        284.0,
-        284.0,
-        44.0,
-        17.0
-      ],
-      "source": "Symbol 211/LeftOpt",
       "layer": "foreground"
     },
     {
@@ -486,17 +464,6 @@
       "layer": "foreground"
     },
     {
-      "texture": "components/part_6a07acbcd65fbe5ae791.png",
-      "rect": [
-        284.0,
-        284.0,
-        44.0,
-        17.0
-      ],
-      "source": "Symbol 211/LeftOpt",
-      "layer": "foreground"
-    },
-    {
       "texture": "components/part_ad6b91577988ccaf5ef3.png",
       "rect": [
         482.0,
@@ -562,17 +529,6 @@
         27.0
       ],
       "source": "Symbol 211/But1",
-      "layer": "foreground"
-    },
-    {
-      "texture": "components/part_6a07acbcd65fbe5ae791.png",
-      "rect": [
-        284.0,
-        284.0,
-        44.0,
-        17.0
-      ],
-      "source": "Symbol 211/LeftOpt",
       "layer": "foreground"
     },
     {
@@ -701,17 +657,6 @@
       "layer": "foreground"
     },
     {
-      "texture": "components/part_6a07acbcd65fbe5ae791.png",
-      "rect": [
-        284.0,
-        284.0,
-        44.0,
-        17.0
-      ],
-      "source": "Symbol 211/LeftOpt",
-      "layer": "foreground"
-    },
-    {
       "texture": "components/part_ad6b91577988ccaf5ef3.png",
       "rect": [
         482.0,
@@ -837,17 +782,6 @@
       "layer": "foreground"
     },
     {
-      "texture": "components/part_6a07acbcd65fbe5ae791.png",
-      "rect": [
-        284.0,
-        284.0,
-        44.0,
-        17.0
-      ],
-      "source": "Symbol 211/LeftOpt",
-      "layer": "foreground"
-    },
-    {
       "texture": "components/part_ad6b91577988ccaf5ef3.png",
       "rect": [
         482.0,
@@ -970,17 +904,6 @@
         27.0
       ],
       "source": "Symbol 211/But1",
-      "layer": "foreground"
-    },
-    {
-      "texture": "components/part_6a07acbcd65fbe5ae791.png",
-      "rect": [
-        284.0,
-        284.0,
-        44.0,
-        17.0
-      ],
-      "source": "Symbol 211/LeftOpt",
       "layer": "foreground"
     },
     {
