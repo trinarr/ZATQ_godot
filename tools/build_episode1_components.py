@@ -130,6 +130,17 @@ def plans(root):
  for name,alive in [('result_dead',False),('result_alive',True)]:result[name]=([s(59,6,o={'Mov.Rezt':0,'Mov.Rezt.Symb':int(alive),'Mov.But1':1,'Mov.But2':1},h=['Itog','Mov.Rezt.Txt','Mov.Rezt.Opt','Mov.But3','Mov.StrBut3'])],{})
  return result
 
+def shared_texture_references(root):
+ # Other episodes reuse exported primitives, so cleanup checks every catalog.
+ used=set()
+ for manifest in (root/'data').glob('episode*_components.json'):
+  for parts in json.loads(manifest.read_text()).values():
+   used.update(p['texture'] for p in parts if 'texture' in p)
+ for manifest in (root/'data').glob('episode*_animations.json'):
+  for clip in json.loads(manifest.read_text()).get('art',{}).values():
+   used.update(p['texture'] for p in clip.get('parts',{}).values() if 'texture' in p)
+ return used
+
 def build(archive,root,only=None):
  destination=root/'assets/flash_ui/episode1_components';destination.mkdir(exist_ok=True)
  with tempfile.TemporaryDirectory() as tmp:
@@ -166,6 +177,7 @@ def build(archive,root,only=None):
   migrate(root)
   result=json.loads((root/'data/episode1_components.json').read_text())
   used={p['texture'].split('/')[-1] for ps in result.values() for p in ps if p['type']=='texture'}
+  used.update(Path(p).name for p in shared_texture_references(root) if p.startswith(destination.name+'/'))
   for f in destination.glob('*.png'):
    if f.name not in used:f.unlink();Path(str(f)+'.import').unlink(missing_ok=True)
  from clean_episode1_art import retired

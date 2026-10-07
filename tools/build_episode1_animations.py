@@ -7,7 +7,7 @@ import argparse,base64,copy,json,math,subprocess,tempfile,zipfile
 from pathlib import Path
 import xml.etree.ElementTree as ET
 from PIL import Image
-from build_episode1_components import Exporter,plans
+from build_episode1_components import Exporter,plans,shared_texture_references
 from episode1_blur import blur_spec
 from build_localized_ui import matrix,combine
 from render_flash_ui import NS
@@ -92,6 +92,24 @@ class Timelines:
      records.append({'key':k+':'+tag,'source':p+'/'+name,'element':e,'matrix':m,'color':co})
   return records
 
+def native_caption_track(tl,items,spec):
+ phases={};anchors={}
+ for phase in ['intro','outro']:
+  frames=[]
+  for tick in range(40 if spec.get('script_cycle') else 81):
+   row=[]
+   for ri,(symbol,index,x,y,ov,hide) in enumerate(items):
+    frame=index;origin=index
+    if symbol=='Symbol 2545' and index==11:
+     frame=min(tick,11) if phase=='intro' else min(12+tick,15);origin=0 if phase=='intro' else 12
+    for r in tl.walk(symbol,frame,tick,ov,set(hide),spec,t=(1,0,0,1,x,y),key=str(ri),outro=phase=='outro',origin=origin,text_only=True):
+     text=' '.join(r['text'].split())
+     row.append([text,list(r['matrix']),list(r['color'])]);anchors[text]=list(r['matrix'])
+   frames.append(row)
+  while len(frames)>1 and frames[-1]==frames[-2]:frames.pop()
+  phases[phase]=frames
+ return {'anchors':anchors,**phases} if any(len(f)>1 for f in phases.values()) else None
+
 def build(archive,only=None):
  with tempfile.TemporaryDirectory() as td:
   temp=Path(td);lib=temp/'LIBRARY';lib.mkdir();photos=temp/'Images';photos.mkdir()
@@ -102,6 +120,8 @@ def build(archive,only=None):
   tl=Timelines(lib);out=ROOT/'assets/flash_ui/episode1_animation_parts';out.mkdir(exist_ok=True)
   renderer=Exporter(lib,out,ROOT/'fonts/flash');renderer.scratch=temp;renderer.raster_cache={};renderer.parts=[];renderer.result_mode=False
   result=json.loads((ROOT/'data/episode1_animations.json').read_text()) if only else {'fps':19,'art':{},'audit':{}}
+  text_path=ROOT/'data/episode1_text_animations.json'
+  text_result=json.loads(text_path.read_text()) if only and text_path.exists() else {}
   components=json.loads((ROOT/'data/episode1_components.json').read_text())
   for art,(items,spec) in sorted(plans(ROOT).items()):
    if only and art not in only:continue
@@ -175,13 +195,22 @@ def build(archive,only=None):
      frames.append(row)
     while len(frames)>1 and frames[-1]==frames[-2]:frames.pop()
     phase_records[phase]=frames
+   # A plain background still needs a player when its native text animates.
+   caption_track=native_caption_track(tl,items,spec)
+   if caption_track:
+    text_result[art]=caption_track
+    for phase in ['intro','outro']:
+     while len(phase_records[phase])<len(caption_track[phase]):phase_records[phase].append(copy.deepcopy(phase_records[phase][-1]))
+   else:text_result.pop(art,None)
    if len(phase_records['intro'])>1 or len(phase_records['outro'])>1:
     result['art'][art]={'parts':primitives,'clip':str(items[0][0])+':'+str(items[0][1]),'intro_loop':periods[0] if len(phase_records['intro'])==81 else 0,**phase_records}
     annotate(result['art'][art])
     print(art,len(primitives),'intro',len(phase_records['intro']),'outro',len(phase_records['outro']),flush=True)
   result.setdefault('audit',{}).update(tl.audit)
   (ROOT/'data/episode1_animations.json').write_text(json.dumps(result,separators=(',',':'))+'\n')
+  text_path.write_text(json.dumps(text_result,separators=(',',':'),ensure_ascii=False)+'\n')
   used={Path(p['texture']).name for v in result['art'].values() for p in v['parts'].values() if p.get('texture','').startswith(out.name+'/')}
+  used.update(Path(p).name for p in shared_texture_references(ROOT) if p.startswith(out.name+'/'))
   for file in out.glob('*.png'):
    if file.name not in used:
     file.unlink();Path(str(file)+".import").unlink(missing_ok=True)

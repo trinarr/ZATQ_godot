@@ -814,5 +814,149 @@
       840
     ],
     "transparent": true
+  },
+  "ep1_forest_shelter_1": {
+    "symbol": 2791,
+    "frame": 5,
+    "overrides": {
+      "Mov": 4
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_forest_shelter_2": {
+    "symbol": 2791,
+    "frame": 5,
+    "overrides": {
+      "Mov": 9
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_forest_shelter_3": {
+    "symbol": 2791,
+    "frame": 5,
+    "overrides": {
+      "Mov": 14
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_taxi_shelter_1": {
+    "symbol": 2515,
+    "frame": 5,
+    "overrides": {
+      "Mov": 4
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_taxi_shelter_2": {
+    "symbol": 2515,
+    "frame": 5,
+    "overrides": {
+      "Mov": 9
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_taxi_shelter_3": {
+    "symbol": 2515,
+    "frame": 5,
+    "overrides": {
+      "Mov": 14
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_dorvud_shelter_1": {
+    "symbol": 2968,
+    "frame": 7,
+    "overrides": {
+      "Mov": 4
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_dorvud_shelter_2": {
+    "symbol": 2968,
+    "frame": 7,
+    "overrides": {
+      "Mov": 9
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
+  },
+  "ep1_dorvud_shelter_3": {
+    "symbol": 2968,
+    "frame": 7,
+    "overrides": {
+      "Mov": 14
+    },
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "But3",
+      "But4"
+    ],
+    "photo": "",
+    "photo_path": "Mov.Mov"
   }
 }

@@ -3241,7 +3241,7 @@
 			"data": {
 				"source": "ForestRun frame 6; overrides {'Mov': 4}",
 				"kind": "city_story",
-				"art": "ep1_farm_chase",
+				"art": "ep1_forest_shelter_1",
 				"clean_background": true,
 				"text": "@loc:episode1.nodes.forest_shelter_1.data.text",
 				"blocks": [
@@ -3257,7 +3257,8 @@
 						"size": 24.0,
 						"path": "Mov"
 					}
-				]
+				],
+				"input_after_intro": true
 			},
 			"position": [
 				27200.0,
@@ -3281,7 +3282,7 @@
 			"data": {
 				"source": "ForestRun frame 6; overrides {'Mov': 9}",
 				"kind": "city_story",
-				"art": "ep1_farm_chase",
+				"art": "ep1_forest_shelter_2",
 				"clean_background": true,
 				"text": "@loc:episode1.nodes.forest_shelter_2.data.text",
 				"blocks": [
@@ -3309,7 +3310,8 @@
 						"size": 24.0,
 						"path": "Mov"
 					}
-				]
+				],
+				"input_after_intro": true
 			},
 			"position": [
 				28900.0,
@@ -3333,7 +3335,7 @@
 			"data": {
 				"source": "ForestRun frame 6; overrides {'Mov': 14}",
 				"kind": "city_story",
-				"art": "ep1_farm_chase",
+				"art": "ep1_forest_shelter_3",
 				"clean_background": true,
 				"text": "@loc:episode1.nodes.forest_shelter_3.data.text",
 				"blocks": [
@@ -3373,7 +3375,8 @@
 						"size": 24.0,
 						"path": "Mov"
 					}
-				]
+				],
+				"input_after_intro": true
 			},
 			"position": [
 				30600.0,
@@ -3956,7 +3959,7 @@
 			"data": {
 				"source": "TaxiMov frame 6; overrides {'Mov': 4}",
 				"kind": "city_story",
-				"art": "ep1_farm_chase",
+				"art": "ep1_taxi_shelter_1",
 				"clean_background": true,
 				"text": "@loc:episode1.nodes.taxi_shelter_1.data.text",
 				"blocks": [
@@ -3972,7 +3975,8 @@
 						"size": 24.0,
 						"path": "Mov"
 					}
-				]
+				],
+				"input_after_intro": true
 			},
 			"position": [
 				25500.0,
@@ -3996,7 +4000,7 @@
 			"data": {
 				"source": "TaxiMov frame 6; overrides {'Mov': 9}",
 				"kind": "city_story",
-				"art": "ep1_farm_chase",
+				"art": "ep1_taxi_shelter_2",
 				"clean_background": true,
 				"text": "@loc:episode1.nodes.taxi_shelter_2.data.text",
 				"blocks": [
@@ -4024,7 +4028,8 @@
 						"size": 24.0,
 						"path": "Mov"
 					}
-				]
+				],
+				"input_after_intro": true
 			},
 			"position": [
 				27200.0,
@@ -4048,7 +4053,7 @@
 			"data": {
 				"source": "TaxiMov frame 6; overrides {'Mov': 14}",
 				"kind": "city_story",
-				"art": "ep1_farm_chase",
+				"art": "ep1_taxi_shelter_3",
 				"clean_background": true,
 				"text": "@loc:episode1.nodes.taxi_shelter_3.data.text",
 				"blocks": [
@@ -4088,7 +4093,8 @@
 						"size": 24.0,
 						"path": "Mov"
 					}
-				]
+				],
+				"input_after_intro": true
 			},
 			"position": [
 				28900.0,
@@ -4470,7 +4476,7 @@
 			"data": {
 				"source": "Dorvud frame 8; overrides {'Mov': 4}",
 				"kind": "city_story",
-				"art": "ep1_farm_chase",
+				"art": "ep1_dorvud_shelter_1",
 				"clean_background": true,
 				"text": "@loc:episode1.nodes.dorvud_shelter_1.data.text",
 				"blocks": [
@@ -4486,7 +4492,8 @@
 						"size": 24.0,
 						"path": "Mov"
 					}
-				]
+				],
+				"input_after_intro": true
 			},
 			"position": [
 				30600.0,
@@ -4510,7 +4517,7 @@
 			"data": {
 				"source": "Dorvud frame 8; overrides {'Mov': 9}",
 				"kind": "city_story",
-				"art": "ep1_farm_chase",
+				"art": "ep1_dorvud_shelter_2",
 				"clean_background": true,
 				"text": "@loc:episode1.nodes.dorvud_shelter_2.data.text",
 				"blocks": [
@@ -4538,7 +4545,8 @@
 						"size": 24.0,
 						"path": "Mov"
 					}
-				]
+				],
+				"input_after_intro": true
 			},
 			"position": [
 				32300.0,
@@ -4562,7 +4570,7 @@
 			"data": {
 				"source": "Dorvud frame 8; overrides {'Mov': 14}",
 				"kind": "city_story",
-				"art": "ep1_farm_chase",
+				"art": "ep1_dorvud_shelter_3",
 				"clean_background": true,
 				"text": "@loc:episode1.nodes.dorvud_shelter_3.data.text",
 				"blocks": [
@@ -4602,7 +4610,8 @@
 						"size": 24.0,
 						"path": "Mov"
 					}
-				]
+				],
+				"input_after_intro": true
 			},
 			"position": [
 				34000.0,

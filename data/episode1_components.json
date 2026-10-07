@@ -2316,5 +2316,176 @@
       "source": "/Symbol 57",
       "layer": "background"
     }
+  ],
+  "ep1_dorvud_shelter_1": [
+    {
+      "type": "panel",
+      "rect": [
+        0.0,
+        0.0,
+        800.000244140625,
+        480.0004119873047
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov/Symbol 133",
+      "layer": "background"
+    }
+  ],
+  "ep1_dorvud_shelter_2": [
+    {
+      "type": "panel",
+      "rect": [
+        0.0,
+        0.0,
+        800.000244140625,
+        480.0004119873047
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov/Symbol 133",
+      "layer": "background"
+    }
+  ],
+  "ep1_dorvud_shelter_3": [
+    {
+      "type": "panel",
+      "rect": [
+        0.0,
+        0.0,
+        800.000244140625,
+        480.0004119873047
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov/Symbol 133",
+      "layer": "background"
+    }
+  ],
+  "ep1_forest_shelter_1": [
+    {
+      "type": "panel",
+      "rect": [
+        7.0,
+        5.0,
+        800.000244140625,
+        480.0004119873047
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov/Symbol 133",
+      "layer": "background"
+    }
+  ],
+  "ep1_forest_shelter_2": [
+    {
+      "type": "panel",
+      "rect": [
+        7.0,
+        5.0,
+        800.000244140625,
+        480.0004119873047
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov/Symbol 133",
+      "layer": "background"
+    }
+  ],
+  "ep1_forest_shelter_3": [
+    {
+      "type": "panel",
+      "rect": [
+        7.0,
+        5.0,
+        800.000244140625,
+        480.0004119873047
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov/Symbol 133",
+      "layer": "background"
+    }
+  ],
+  "ep1_taxi_shelter_1": [
+    {
+      "type": "panel",
+      "rect": [
+        0.0,
+        0.0,
+        800.000244140625,
+        480.0004119873047
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov/Symbol 133",
+      "layer": "background"
+    }
+  ],
+  "ep1_taxi_shelter_2": [
+    {
+      "type": "panel",
+      "rect": [
+        0.0,
+        0.0,
+        800.000244140625,
+        480.0004119873047
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov/Symbol 133",
+      "layer": "background"
+    }
+  ],
+  "ep1_taxi_shelter_3": [
+    {
+      "type": "panel",
+      "rect": [
+        0.0,
+        0.0,
+        800.000244140625,
+        480.0004119873047
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov/Symbol 133",
+      "layer": "background"
+    }
   ]
 }
