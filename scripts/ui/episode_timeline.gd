@@ -3,7 +3,6 @@ extends Node2D
 signal finished
 static var data: Dictionary = {}
 const BLUR_CACHE := preload("res://scripts/ui/blur_texture_cache.gd")
-static var prewarmed_episodes: Dictionary = {}
 const EYE_CLOSURE := preload("res://scripts/ui/eye_closure.gd")
 var eye_closure: Node2D
 const QTE_PROMPT := preload("res://scripts/ui/qte_prompt.gd")
@@ -21,6 +20,9 @@ var current_frame := 0
 var playing := false
 var suspended := false
 var phase := "intro"
+var applied_frame := -1
+var applied_phase := ""
+var pose_updates := 0
 static func catalog() -> Dictionary:
  if data.is_empty():
   data={"fps":19,"art":{}}
@@ -37,13 +39,6 @@ static func has_art(art: String) -> bool:return catalog().art.has(art)
 func configure(art: String) -> void:
  art_name=art
  spec=catalog().art[art]
- var episode: int=int(spec.get("episode",1))
- if not prewarmed_episodes.has(episode):
-  prewarmed_episodes[episode]=true
-  var artwork: Dictionary={}
-  for key: String in catalog().art:
-   if int(catalog().art[key].get("episode",1))==episode:artwork[key]=catalog().art[key]
-  BLUR_CACHE.prewarm(artwork)
  for key: String in spec.parts:
   var part: Dictionary=spec.parts[key]
   var pivot: Node2D
@@ -78,6 +73,7 @@ func configure(art: String) -> void:
   sprites[key]=pivot
  play("intro")
 func play(next_phase: String) -> void:
+ applied_frame=-1
  phase=next_phase;frames=_phase_frames(phase);elapsed=0;playing=true
  seek_frame(0)
 func _phase_frames(next_phase: String) -> Array:
@@ -101,24 +97,26 @@ func seek_frame(index: int, subframe: float = 0.0) -> void:
  if cycle>1 and index>=frames.size():
   index=frames.size()-cycle+(index-(frames.size()-cycle))%cycle
  current_frame=clampi(index,0,frames.size()-1)
- for pivot: Node2D in sprites.values():pivot.visible=false
- var order:=0
- var ordered: Dictionary={}
- for record: Array in frames[current_frame]:
-  var pivot: Node2D=sprites[record[0]]
-  var m: Array=record[1];var c: Array=record[2]
-  pivot.transform=Transform2D(Vector2(m[0],m[1]),Vector2(m[2],m[3]),Vector2(m[4],m[5])*2)
-  var visual: Control=pivot.get_child(0)
-  var paint: ShaderMaterial=visual.material
-  if paint:
-   paint.set_shader_parameter("multiplier",Color(c[0],c[1],c[2],c[3]))
-   paint.set_shader_parameter("offset",Vector3(c[4],c[5],c[6]))
-  else:visual.modulate=Color(c[0],c[1],c[2],c[3])
-  pivot.visible=true
-  var layer: Node=eye_closure if pivot.get_parent()==eye_closure else pivot
-  if not ordered.has(layer):
-   move_child(layer,order);order+=1;ordered[layer]=true
- _update_captions(index)
+ if applied_frame!=current_frame or applied_phase!=phase:
+  applied_frame=current_frame;applied_phase=phase;pose_updates+=1
+  for pivot: Node2D in sprites.values():pivot.visible=false
+  var order:=0
+  var ordered: Dictionary={}
+  for record: Array in frames[current_frame]:
+   var pivot: Node2D=sprites[record[0]]
+   var m: Array=record[1];var c: Array=record[2]
+   pivot.transform=Transform2D(Vector2(m[0],m[1]),Vector2(m[2],m[3]),Vector2(m[4],m[5])*2)
+   var visual: Control=pivot.get_child(0)
+   var paint: ShaderMaterial=visual.material
+   if paint:
+    paint.set_shader_parameter("multiplier",Color(c[0],c[1],c[2],c[3]))
+    paint.set_shader_parameter("offset",Vector3(c[4],c[5],c[6]))
+   else:visual.modulate=Color(c[0],c[1],c[2],c[3])
+   pivot.visible=true
+   var layer: Node=eye_closure if pivot.get_parent()==eye_closure else pivot
+   if not ordered.has(layer):
+    move_child(layer,order);order+=1;ordered[layer]=true
+  _update_captions(index)
  _update_blur_strength(float(current_frame)+subframe)
  if current_frame==frames.size()-1 and playing and cycle<=1:
   playing=false;finished.emit()
@@ -171,10 +169,13 @@ func bind_caption(label: Label, alias: String = "", decoration: Control = null) 
       if not translation.is_empty():caption_aliases[normalized_caption(translation)]=original
   text=caption_aliases.get(text,text)
  if not caption_data[art_name].anchors.has(text):return
- captions.append({"label":label,"text":text,"origin":label.position,"scale":label.scale,"color":label.modulate})
+ captions.append({"label":label,"text":text,"origin":label.position,"scale":label.scale,"color":label.modulate,"inverse":_caption_inverse(text)})
  if decoration!=null:
-  captions.append({"label":decoration,"text":text,"origin":decoration.position,"scale":decoration.scale,"color":decoration.modulate})
+  captions.append({"label":decoration,"text":text,"origin":decoration.position,"scale":decoration.scale,"color":decoration.modulate,"inverse":_caption_inverse(text)})
  _update_captions(current_frame)
+func _caption_inverse(text: String) -> Transform2D:
+ var base: Array=caption_data[art_name].anchors[text]
+ return Transform2D(Vector2(base[0],base[1]),Vector2(base[2],base[3]),Vector2(base[4],base[5])*2).affine_inverse()
 func _update_captions(index: int) -> void:
  if captions.is_empty():return
  var spec_text: Dictionary=caption_data[art_name]
@@ -185,10 +186,9 @@ func _update_captions(index: int) -> void:
   label.visible=false
   for record: Array in row:
    if record[0]!=entry.text:continue
-   var m: Array=record[1];var base: Array=spec_text.anchors[entry.text];var c: Array=record[2]
+   var m: Array=record[1];var c: Array=record[2]
    var pose:=Transform2D(Vector2(m[0],m[1]),Vector2(m[2],m[3]),Vector2(m[4],m[5])*2)
-   var anchor:=Transform2D(Vector2(base[0],base[1]),Vector2(base[2],base[3]),Vector2(base[4],base[5])*2)
-   var delta:=pose*anchor.affine_inverse()
+   var delta: Transform2D=pose*entry.inverse
    label.position=delta*entry.origin;label.scale=entry.scale*delta.get_scale();label.rotation=delta.get_rotation()
    label.modulate=entry.color*Color(c[0],c[1],c[2],c[3]);label.visible=true
    break

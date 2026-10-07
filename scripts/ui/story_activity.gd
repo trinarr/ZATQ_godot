@@ -25,11 +25,10 @@ func build() -> void:
  elif not ui._component_backdrop(node.get("art","result_background")) and ResourceLoader.exists(path):ui._set_backdrop(DEFAULT_BACKGROUND if not node.has("art") else load(path))
  if not node.get("original_ui",false) and node.kind!="activity_dialogue":
   ui._shade(ui.screen,0.65)
-  ui._text(node.get("speaker",""),Rect2(90,40,620,45),26,true)
-  ui._text(node.get("text",""),Rect2(90,90,620,145),23)
+  ui._narrative_text(node.get("speaker",""),Rect2(90,40,620,45),26,{"font":ui.TITLE_FONT})
+  ui._narrative_text(node.get("text",""),Rect2(90,90,620,145),23)
  if Quest.activity.is_empty():
   Quest.activity={"id":Quest.current_id,"input":"","attempts":int(node.get("attempts",3)),"taps":0,"remaining":float(node.get("seconds",5))}
-  Quest.save_game()
  state=Quest.activity
  if node.kind=="activity_dialogue":
   ui._show_player_dialog({"style":"speaker","text":node.get("text",""),"speaker":node.get("speaker",""),"art":node.get("art","result_background"),"original_ui":node.get("original_ui",false),"shade":not node.get("original_ui",false),"shade_alpha":0.65},Quest.available_choices(),finish)
@@ -44,7 +43,6 @@ func build() -> void:
   meter.text=LOC.text("@loc:ui.story_activity.3")+str(state.attempts)
  elif node.kind=="activity_qte":
   QTE.initialize(state,node)
-  Quest.save_game()
   var m:Array=node.get("meter_rect",[150,245,500,40])
   meter=ui._text("",Rect2(m[0],m[1],m[2],m[3]),22,false,true)
   var targets:Array=node.get("targets",[{"text":LOC.text("@loc:ui.story_activity.4"),"rect":node.get("target_rect",[270,315,260,65])}])
@@ -63,6 +61,8 @@ func build() -> void:
   if node.get("target_mode","fixed")=="random":move_target()
   update_visuals()
  ui._edge_tab(LOC.text("@loc:ui.story_activity.7"),ui._show_pause)
+ Quest.save_game()
+
 func finish(index:int)->void:
  if done:return
  done=true

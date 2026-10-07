@@ -50,14 +50,10 @@ static func draw(ui: Control, node: Dictionary) -> void:
 	else:
 		for block: Dictionary in node.get("blocks",[]):
 			var b: Array = block.rect.duplicate()
-			var band: ColorRect
+			var options: Dictionary = {"fit":"multiline","minimum":14,"padding":4,"host":ui._world_host() if block.get("world",false) else ui.screen}
 			if "Hist" in block.get("path", ""):
-				band = ColorRect.new()
-				band.position = Vector2(-ui.screen.position.x/ui.screen.scale.x, maxf(0,b[1]-6)*2)
-				band.size = Vector2(ui.viewport_canvas.safe_layer.size.x/ui.screen.scale.x,(b[3]+12)*2)
-				band.color = Color.BLACK
-				band.mouse_filter = Control.MOUSE_FILTER_IGNORE
-				ui.screen.add_child(band)
+				options.band_host = ui.screen
+				options.band_rect = Rect2(-ui.screen.position.x/ui.screen.scale.x,maxf(0,b[1]-6)*2,ui.viewport_canvas.safe_layer.size.x/ui.screen.scale.x,(b[3]+12)*2)
 			if b[1] < 128 and b[0] < 70:
 				b[2] -= 70 - b[0]
 				b[0] = 70
@@ -66,34 +62,21 @@ static func draw(ui: Control, node: Dictionary) -> void:
 				block_font = load("res://fonts/flash/font_2508.ttf")
 			elif block.font == "B52 Regular":
 				block_font = load("res://fonts/flash/font_2511.ttf")
-			var block_text: String = LOC.text(block.text)
-			var block_size: int = block.size
-			while block_size > 14 and block_font.get_multiline_string_size(block_text,HORIZONTAL_ALIGNMENT_LEFT,b[2]*2,block_size*2).y > b[3]*2-4:
-				block_size -= 1
-			var label: Label = ui._text(block_text,Rect2(b[0],b[1],b[2],b[3]),block_size,false,false,ui._world_host() if block.get("world",false) else ui.screen)
-			label.add_theme_font_override("font",block_font)
-			label.add_theme_constant_override("line_spacing",0)
-			ui._bind_episode_caption(label,band if Quest.episode>1 else null)
+			options.font = block_font
+			var label: Label = ui._narrative_text(block.text,Rect2(b[0],b[1],b[2],b[3]),int(block.size),options)
+			ui._bind_episode_caption(label,ui.narrative_layer.band_for(label) if Quest.episode>1 else null)
 		if node.has("text_rect"):
 			var panel: Array = node.panel_rect
 			if Quest.flags.Auto == 0: panel = node.get("panel_rect_on_foot",panel)
-			var shade := ColorRect.new()
 			var rect: Rect2 = ui.LAYOUT.scaled_rect(Rect2(panel[0],panel[1],panel[2],panel[3]))
-			shade.position = Vector2(-ui.screen.position.x/ui.screen.scale.x,rect.position.y)
-			shade.size = Vector2(ui.viewport_canvas.safe_layer.size.x/ui.screen.scale.x,rect.size.y)
-			shade.color = Color.BLACK
-			shade.mouse_filter = Control.MOUSE_FILTER_IGNORE
-			ui.screen.add_child(shade)
+			var band_rect := Rect2(-ui.screen.position.x/ui.screen.scale.x,rect.position.y,ui.viewport_canvas.safe_layer.size.x/ui.screen.scale.x,rect.size.y)
 			var box: Array = node.text_rect.duplicate()
 			if Quest.flags.Auto == 0: box = node.get("text_rect_on_foot",box).duplicate()
 			if box[1] < 128 and box[0] < 70:
 				box[2] -= 70 - box[0]
 				box[0] = 70
-			var font_size: int = 24
-			while font_size > 15 and ui.BODY_FONT.get_multiline_string_size(story_text,HORIZONTAL_ALIGNMENT_LEFT,box[2],font_size).y > box[3]:
-				font_size -= 1
-			var description: Label = ui._text(story_text,Rect2(box[0],box[1],box[2],box[3]),font_size)
-			ui._bind_episode_caption(description,shade if Quest.episode>1 else null)
+			var description: Label = ui._narrative_text(story_text,Rect2(box[0],box[1],box[2],box[3]),24,{"fit":"multiline","minimum":15,"band_rect":band_rect})
+			ui._bind_episode_caption(description,ui.narrative_layer.band_for(description) if Quest.episode>1 else null)
 		var choice_buttons: Array[Control] = []
 		for i in choices.size():
 			var index: int = i

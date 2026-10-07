@@ -13,6 +13,7 @@ const TITLE_FONT: Font = preload("res://fonts/flash/font_1.ttf")
 const BODY_FONT: Font = preload("res://fonts/flash/font_2.ttf")
 
 static var catalog: Dictionary = {}
+static var raster_masks: Dictionary = {}
 var art_text: Dictionary
 var art_brushes: Dictionary
 var art_components: Dictionary
@@ -119,8 +120,14 @@ func _hit(name: String, rect: Rect2, action: Callable, parent: Control = null, m
 		return painted
 	var button: Button = Button.new() if mask.is_empty() else ALPHA_HOTSPOT.new()
 	if not mask.is_empty():
-		button.hit_image = COMPONENTS.HIGHLIGHT.mask_image(mask) if COMPONENTS.HIGHLIGHT.has_mask(mask) else load("res://assets/flash_ui/" + mask + ".png").get_image()
-		if button.hit_image.is_compressed(): button.hit_image.decompress()
+		if COMPONENTS.HIGHLIGHT.has_mask(mask):
+			button.hit_image = COMPONENTS.HIGHLIGHT.mask_image(mask)
+		else:
+			if not raster_masks.has(mask):
+				var image: Image = load("res://assets/flash_ui/" + mask + ".png").get_image()
+				if image.is_compressed(): image.decompress()
+				raster_masks[mask] = image
+			button.hit_image = raster_masks[mask]
 	name = LOC.text(name)
 	button.name = name
 	button.position = rect.position

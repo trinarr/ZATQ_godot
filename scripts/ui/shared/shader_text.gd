@@ -3,8 +3,13 @@ extends Label
 const SHADOW := preload("res://shaders/text_shadow.gdshader")
 static var shadow_material: ShaderMaterial
 var shadow_pass: Label
-var shadow_offset := Vector2.ONE
+var shadow_offset := Vector2.ONE:
+	set(value):
+		shadow_offset = value
+		request_shadow_sync()
 var signature: Array = []
+var sync_pending := false
+var shadow_updates := 0
 
 func _init() -> void:
 	add_theme_color_override("font_shadow_color",Color.TRANSPARENT)
@@ -21,17 +26,31 @@ func _init() -> void:
 	shadow_pass.add_theme_color_override("font_outline_color",Color.TRANSPARENT)
 	shadow_pass.add_theme_constant_override("outline_size",0)
 	add_child(shadow_pass)
+	set_process(false)
+	resized.connect(request_shadow_sync)
+	theme_changed.connect(request_shadow_sync)
+	visibility_changed.connect(request_shadow_sync)
+	draw.connect(request_shadow_sync)
+	tree_entered.connect(request_shadow_sync)
 
-func _process(_delta: float) -> void:
-	sync_shadow()
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_TRANSLATION_CHANGED:
+		request_shadow_sync()
+
+func request_shadow_sync() -> void:
+	if sync_pending or not is_instance_valid(shadow_pass): return
+	sync_pending = true
+	sync_shadow.call_deferred()
 
 func sync_shadow() -> void:
+	sync_pending = false
 	var font := get_theme_font("font")
 	var font_size := get_theme_font_size("font_size")
 	var spacing := get_theme_constant("line_spacing")
 	var next: Array = [text,size,font,font_size,spacing,horizontal_alignment,vertical_alignment,autowrap_mode,justification_flags,clip_text,visible_characters,uppercase,language,text_direction,shadow_offset,get_theme_color("font_color").a]
 	if next == signature: return
 	signature = next
+	shadow_updates += 1
 	shadow_pass.horizontal_alignment = horizontal_alignment
 	shadow_pass.vertical_alignment = vertical_alignment
 	shadow_pass.autowrap_mode = autowrap_mode

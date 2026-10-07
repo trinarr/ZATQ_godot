@@ -74,6 +74,12 @@ func _clear_art() -> void:
 	for child: Node in art_layer.get_children():
 		art_layer.remove_child(child)
 		child.queue_free()
+	# Connect a static callback so queued scene destruction cannot resume a
+	# coroutine on a freed canvas. Old visuals are released before the next frame.
+	if is_inside_tree():
+		var prune: Callable = preload("res://scripts/ui/blur_texture_cache.gd").prune
+		if not get_tree().process_frame.is_connected(prune):
+			get_tree().process_frame.connect(prune,CONNECT_ONE_SHOT)
 
 func set_component_background(parts: Array) -> void:
 	_clear_art()

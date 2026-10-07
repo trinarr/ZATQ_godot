@@ -30,6 +30,15 @@ var has_progress: bool = false
 var recovery_message: String = ""
 var episode1_stats: Dictionary = {"wins":0,"losses":0,"endings":[]}
 var result_recorded: bool = false
+# Bounded view cache. Callers treat resolved nodes as read-only presentation data.
+var _view_cache: Dictionary = {}
+var current_resolutions := 0
+var save_writes := 0
+var _last_saved_text := ""
+var _last_saved_paths := ""
+
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_TRANSLATION_CHANGED: _view_cache.clear()
 
 func _ready() -> void:
 	LOC.prepare()
@@ -48,14 +57,26 @@ func _ready() -> void:
 	_load_save()
 
 func current(id: String = "") -> Dictionary:
-	var node: Dictionary = nodes.get(current_id if id.is_empty() else id, {})
-	if not node.has("variants"): return LOC.resolve_tree(node)
-	var resolved: Dictionary = node.duplicate(true)
-	for variant: Dictionary in node.variants:
-		if matches(variant.when):
-			for key: String in variant:
-				if key != "when": resolved[key] = variant[key]
-	return LOC.resolve_tree(resolved)
+	var key: String = current_id if id.is_empty() else id
+	var node: Dictionary = nodes.get(key, {})
+	var locale: String = TranslationServer.get_locale()
+	var entry: Dictionary = _view_cache.get(key,{})
+	# Hash the source too: editor/tests can replace or modify a graph in place.
+	var source_hash: int = node.hash()
+	if not entry.is_empty() and entry.locale == locale and entry.source_hash == source_hash and entry.flags == flags:
+		return entry.view
+	var resolved: Dictionary = node
+	if node.has("variants"):
+		resolved = node.duplicate(true)
+		for variant: Dictionary in node.variants:
+			if matches(variant.when):
+				for field: String in variant:
+					if field != "when": resolved[field] = variant[field]
+	var view: Dictionary = LOC.resolve_tree(resolved)
+	current_resolutions += 1
+	if _view_cache.size() >= 16: _view_cache.erase(_view_cache.keys()[0])
+	_view_cache[key] = {"locale":locale,"source_hash":source_hash,"flags":flags.duplicate(true),"view":view}
+	return view
 
 func matches(conditions: Dictionary) -> bool:
 	for key: String in conditions:
@@ -115,18 +136,21 @@ func _enter(id: String) -> void:
 	if not pickup.is_empty() and matches(pickup.when):
 		_enter(pickup.next)
 		return
-	for key in current().get("set", {}):
-		flags[key] = current().set[key]
-	for key in current().get("add", {}):
-		flags[key] = flags.get(key,0) + current().add[key]
+	var settings: Dictionary = current().get("set", {})
+	for key in settings:
+		flags[key] = settings[key]
+	var additions: Dictionary = current().get("add", {})
+	for key in additions:
+		flags[key] = flags.get(key,0) + additions[key]
 	_record_result()
 	save_game()
 	changed.emit()
 
 func _record_result() -> void:
-	if result_recorded or not current().has("result_id"): return
-	result_recorded = true
+	if result_recorded: return
 	var node: Dictionary = current()
+	if not node.has("result_id"): return
+	result_recorded = true
 	var stats: Dictionary = stats_for(episode)
 	if node.get("alive",false):
 		stats.wins += 1
@@ -288,11 +312,14 @@ func _load_save() -> void:
 	if has_progress: _record_result()
 
 func save_game() -> bool:
+	var serialized: String = JSON.stringify(_snapshot())
+	var paths: String = save_path + "|" + tmp_path + "|" + backup_path
+	if serialized == _last_saved_text and paths == _last_saved_paths and FileAccess.file_exists(save_path): return true
 	var file := FileAccess.open(tmp_path, FileAccess.WRITE)
 	if file == null:
 		save_failed.emit(LOC.text("@loc:ui.quest_state.2"))
 		return false
-	file.store_string(JSON.stringify(_snapshot()))
+	file.store_string(serialized)
 	file.flush()
 	var write_error: Error = file.get_error()
 	file.close()
@@ -309,4 +336,7 @@ func save_game() -> bool:
 	if error != OK:
 		save_failed.emit(LOC.text("@loc:ui.quest_state.5"))
 		return false
+	_last_saved_text = serialized
+	_last_saved_paths = paths
+	save_writes += 1
 	return true

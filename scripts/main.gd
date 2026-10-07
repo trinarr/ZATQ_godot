@@ -13,6 +13,14 @@ const TV_FONT: Font = preload("res://fonts/flash/font_2836.ttf")
 var viewport_canvas: Control
 var edge_tab: TextureRect
 var edge_hit: Button
+const NARRATIVE_LAYER := preload("res://scripts/ui/shared/narrative_layer.gd")
+var narrative_layer: Control
+var pause_storage: Control
+var reusable_pause_tab: TextureRect
+var reusable_pause_hit: Button
+var pause_action: Callable
+var texture_prefetch: Node
+static var pause_atlas: AtlasTexture
 var screen: Control
 var world_layer: Control
 var menu_logo: Control
@@ -134,22 +142,47 @@ func _reset_screen(preserve_logo: bool = false) -> void:
 			menu_logo = null
 	television.stop()
 	_stop_cutscene()
-	if is_instance_valid(screen):
-		screen.get_parent().remove_child(screen)
-		screen.queue_free()
+	if narrative_layer == null:
+		texture_prefetch = preload("res://scripts/ui/texture_prefetch.gd").new()
+		add_child(texture_prefetch)
+		narrative_layer = NARRATIVE_LAYER.new()
+		add_child(narrative_layer)
+		pause_storage = Control.new()
+		pause_storage.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		pause_storage.hide()
+		add_child(pause_storage)
+	narrative_layer.reset()
+	for item: Control in [reusable_pause_tab,reusable_pause_hit]:
+		if is_instance_valid(item):
+			item.reparent(pause_storage,false)
+			item.hide()
 	overlay = null
 	edge_tab = null
 	edge_hit = null
-	screen = Control.new()
-	screen.size = LAYOUT.BASE_SIZE
-	viewport_canvas.safe_layer.add_child(screen)
-	world_layer = Control.new()
-	world_layer.name = "WorldInteraction"
-	world_layer.size = LAYOUT.BASE_SIZE
-	world_layer.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	screen.add_child(world_layer)
+	pause_action = Callable()
+	if screen == null:
+		screen = Control.new()
+		screen.size = LAYOUT.BASE_SIZE
+		viewport_canvas.safe_layer.add_child(screen)
+		world_layer = Control.new()
+		world_layer.name = "WorldInteraction"
+		world_layer.size = LAYOUT.BASE_SIZE
+		world_layer.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		screen.add_child(world_layer)
+	for host: Control in [world_layer,screen]:
+		for child: Node in host.get_children():
+			if child == world_layer: continue
+			host.remove_child(child)
+			child.queue_free()
+		if host.has_meta("episode_animation_block"): host.remove_meta("episode_animation_block")
+		if host.has_meta("pause_locked"): host.remove_meta("pause_locked")
 	_set_backdrop(load("res://assets/flash_ui/background.png"))
 	_fit_stage()
+
+func _narrative_text(value: String, rect: Rect2, font_size: int = 24, options: Dictionary = {}) -> Label:
+	var host: Control = options.get("host",screen)
+	var font: Font = options.get("font",BODY_FONT)
+	return narrative_layer.show_block(host,value,rect,font,font_size,options)
 
 func _set_backdrop(texture: Texture2D, crop_pause: bool = false) -> void:
 	viewport_canvas.set_background(texture, crop_pause)
@@ -180,21 +213,31 @@ func _layout_edge_tab() -> void:
 
 func _edge_tab(label: String, action: Callable, parent: Control = null) -> void:
 	if not _can_pause(): return
-	if is_instance_valid(edge_tab): edge_tab.hide()
-	if is_instance_valid(edge_hit): edge_hit.hide()
-	var source: Texture2D = load("res://assets/flash_ui/pause_button.png")
-	var image: Image = source.get_image()
-	if image.is_compressed(): image.decompress()
-	var atlas := AtlasTexture.new()
-	atlas.atlas = source
-	atlas.region = image.get_used_rect()
-	edge_tab = TextureRect.new()
-	edge_tab.texture = atlas
-	edge_tab.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	edge_tab.size = atlas.region.size
-	edge_tab.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	(parent if parent != null else screen).add_child(edge_tab)
-	edge_hit = _hit(label,Rect2(Vector2.ZERO,atlas.region.size/2),action,parent)
+	if pause_atlas == null:
+		var source: Texture2D = load("res://assets/flash_ui/pause_button.png")
+		var image: Image = source.get_image()
+		if image.is_compressed(): image.decompress()
+		pause_atlas = AtlasTexture.new()
+		pause_atlas.atlas = source
+		pause_atlas.region = image.get_used_rect()
+	if reusable_pause_tab == null:
+		reusable_pause_tab = TextureRect.new()
+		reusable_pause_tab.texture = pause_atlas
+		reusable_pause_tab.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		reusable_pause_tab.size = pause_atlas.region.size
+		reusable_pause_tab.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		pause_storage.add_child(reusable_pause_tab)
+		reusable_pause_hit = _hit(label,Rect2(Vector2.ZERO,pause_atlas.region.size/2),func():
+			if pause_action.is_valid(): pause_action.call(),pause_storage)
+	pause_action = action
+	edge_tab = reusable_pause_tab
+	edge_hit = reusable_pause_hit
+	var host: Control = parent if parent != null else screen
+	for item: Control in [edge_tab,edge_hit]:
+		if item.get_parent()!=host: item.reparent(host,false)
+		item.show()
+	edge_hit.name = LOC.text(label)
+	edge_hit.tooltip_text = LOC.text(label)
 	_layout_edge_tab()
 
 func _opening_art(name: String) -> Control:
@@ -213,16 +256,8 @@ func _world_highlight_hit(label: String, artwork: String, source: String, action
 func _opening_caption(node: Dictionary) -> void:
 	var y: float = 416 if Quest.current_id in ["wake","screams","transport"] else 445
 	if Quest.current_id == "lift_button": y = 5.75
-	var band := ColorRect.new()
-	band.position = Vector2(-screen.position.x/screen.scale.x,(y-6)*2)
-	band.size = Vector2(viewport_canvas.safe_layer.size.x/screen.scale.x,(480-y+6)*2 if y>400 else 80)
-	band.color = Color.BLACK
-	band.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	screen.add_child(band)
-	var font_size := 24
-	while font_size > 16 and BODY_FONT.get_string_size(node.text,HORIZONTAL_ALIGNMENT_LEFT,-1,font_size*2).x > 1550:
-		font_size -= 1
-	var caption := _text(node.text,Rect2(11,y,775,34),font_size)
+	var band_rect := Rect2(-screen.position.x/screen.scale.x,(y-6)*2,viewport_canvas.safe_layer.size.x/screen.scale.x,(480-y+6)*2 if y>400 else 80)
+	var caption := _narrative_text(node.text,Rect2(11,y,775,34),24,{"fit":"single","minimum":16,"band_rect":band_rect})
 	_bind_episode_caption(caption)
 
 func _shade(parent: Control, alpha: float = 0.65) -> void:
@@ -466,6 +501,7 @@ func _show_story() -> void:
 	var changing_channel := Quest.current_id == "tv" and previous_node == "tv"
 	section = "story"
 	var node: Dictionary = Quest.current()
+	_prefetch_story_resources()
 	var kind: String = node.get("kind", "story")
 	var pickup := kind in ["item","city_pickup"]
 	var result := kind in ["city_death","city_ending"]
@@ -528,6 +564,28 @@ func _show_story() -> void:
 	# Flash pause control lives at the left edge, not in a new top bar.
 	if not kind.begins_with("city_") and not kind.begins_with("activity_") and kind != "item" and Quest.current_id != "transport_choice":
 		_edge_tab(LOC.text("@loc:ui.main.46"),_show_pause)
+
+func _prefetch_story_resources() -> void:
+	if texture_prefetch == null: return
+	var paths: Array[String] = []
+	var timeline := preload("res://scripts/ui/episode_timeline.gd")
+	for choice: Dictionary in Quest.available_choices().slice(0,2):
+		var target: String = choice.get("next","")
+		if target.is_empty(): continue
+		var next_node: Dictionary = Quest.current(target)
+		var art: String = next_node.get("art","")
+		if timeline.has_art(art):
+			for part: Dictionary in timeline.catalog().art[art].parts.values():
+				if part.has("texture"):
+					var path: String = "res://assets/flash_ui/" + part.texture
+					if path not in paths: paths.append(path)
+		elif episode_components.has(art):
+			for part: Dictionary in episode_components[art]:
+				if part.has("texture"):
+					var path: String = "res://assets/flash_ui/" + part.texture
+					if path not in paths: paths.append(path)
+		elif not art.is_empty(): paths.append("res://assets/flash_ui/"+art+"."+next_node.get("art_extension","png"))
+	texture_prefetch.request(paths)
 
 func _play_sound(sound_name: String) -> void:
 	if not Quest.sound_enabled or sound_name.is_empty(): return
