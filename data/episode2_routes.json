@@ -1403,7 +1403,15 @@
           }
         }
       ],
-      "sound": "ClosedDoor"
+      "sound": "ClosedDoor",
+      "variants": [
+        {
+          "when": {
+            "BulletsNumber": -1
+          },
+          "art": "e2_first_3_unarmed"
+        }
+      ]
     },
     "e2_first_4": {
       "episode": 2,
@@ -3688,7 +3696,15 @@
           "next": "e2_first_9"
         }
       ],
-      "back": "e2_first_3"
+      "back": "e2_first_3",
+      "variants": [
+        {
+          "when": {
+            "BulletsNumber": -1
+          },
+          "art": "e2_first_3_unarmed"
+        }
+      ]
     },
     "e2_first_3_choice_19": {
       "episode": 2,
@@ -3708,7 +3724,15 @@
           "next": "e2_first_9"
         }
       ],
-      "back": "e2_first_3"
+      "back": "e2_first_3",
+      "variants": [
+        {
+          "when": {
+            "BulletsNumber": -1
+          },
+          "art": "e2_first_3_unarmed"
+        }
+      ]
     },
     "e2_first_locked": {
       "episode": 2,
@@ -3744,7 +3768,15 @@
           ]
         }
       ],
-      "sound": "ClosedDoor"
+      "sound": "ClosedDoor",
+      "variants": [
+        {
+          "when": {
+            "BulletsNumber": -1
+          },
+          "art": "e2_first_3_unarmed"
+        }
+      ]
     },
     "e2_first_9_choice_23": {
       "episode": 2,

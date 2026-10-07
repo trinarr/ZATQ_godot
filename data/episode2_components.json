@@ -1318,7 +1318,7 @@
       "type": "texture",
       "texture": "episode2_components/part_517bd4a55625f81adad0.png",
       "rect": [
-        112.0,
+        93.0,
         376.0,
         19.0,
         27.0
@@ -1425,6 +1425,20 @@
       ],
       "source": "/Symbol 12",
       "layer": "foreground"
+    }
+  ],
+  "e2_first_3_unarmed": [
+    {
+      "type": "texture",
+      "texture": "episode2_components/part_76518f9f34a286c5650c.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 2170",
+      "layer": "background"
     }
   ]
 }

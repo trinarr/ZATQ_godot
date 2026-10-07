@@ -21,7 +21,7 @@ def build(archive,root=ROOT):
   disabled=symbol(97,5)
   assert len(plate)==1 and len(disabled)==2
   # Keep one plate texture. Disabled/hover/pressed states use original tint.
-  parts={'decision_plate':plate,'decision_disabled_mark':[disabled[-1]]}
+  parts={'decision_plate':plate,'decision_disabled_mark':[disabled[-1]],'speaker_plate':symbol(215)}
   for records in parts.values():
    for p in records:p['layer']='background'
   (root/'data/dialog_components.json').write_text(json.dumps(parts,indent=2)+'\n')

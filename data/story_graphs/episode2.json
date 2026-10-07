@@ -6001,6 +6001,70 @@
 				13000.0
 			],
 			"title": "@loc:episode2.nodes.e2_boom_5__choice_0.title"
+		},
+		"e2_first_3__unarmed_art": {
+			"type": "condition",
+			"data": {
+				"when": {
+					"BulletsNumber": -1
+				},
+				"patch": {
+					"art": "e2_first_3_unarmed"
+				}
+			},
+			"position": [
+				20740.0,
+				4080.0
+			],
+			"title": "@loc:episode2.nodes.e2_first_3.title"
+		},
+		"e2_first_3_choice_15__unarmed_art": {
+			"type": "condition",
+			"data": {
+				"when": {
+					"BulletsNumber": -1
+				},
+				"patch": {
+					"art": "e2_first_3_unarmed"
+				}
+			},
+			"position": [
+				22440.0,
+				15780.0
+			],
+			"title": "@loc:episode2.nodes.e2_first_3_choice_15.title"
+		},
+		"e2_first_3_choice_19__unarmed_art": {
+			"type": "condition",
+			"data": {
+				"when": {
+					"BulletsNumber": -1
+				},
+				"patch": {
+					"art": "e2_first_3_unarmed"
+				}
+			},
+			"position": [
+				22440.0,
+				17080.0
+			],
+			"title": "@loc:episode2.nodes.e2_first_3_choice_19.title"
+		},
+		"e2_first_locked__unarmed_art": {
+			"type": "condition",
+			"data": {
+				"when": {
+					"BulletsNumber": -1
+				},
+				"patch": {
+					"art": "e2_first_3_unarmed"
+				}
+			},
+			"position": [
+				24140.0,
+				15780.0
+			],
+			"title": "@loc:episode2.nodes.e2_first_locked.title"
 		}
 	},
 	"edges": [
@@ -7693,6 +7757,26 @@
 			"from": "e2_boom_5__choice_0",
 			"port": "next",
 			"to": "e2_result_35"
+		},
+		{
+			"from": "e2_first_3",
+			"port": "variant:0",
+			"to": "e2_first_3__unarmed_art"
+		},
+		{
+			"from": "e2_first_3_choice_15",
+			"port": "variant:0",
+			"to": "e2_first_3_choice_15__unarmed_art"
+		},
+		{
+			"from": "e2_first_3_choice_19",
+			"port": "variant:0",
+			"to": "e2_first_3_choice_19__unarmed_art"
+		},
+		{
+			"from": "e2_first_locked",
+			"port": "variant:0",
+			"to": "e2_first_locked__unarmed_art"
 		}
 	]
 }

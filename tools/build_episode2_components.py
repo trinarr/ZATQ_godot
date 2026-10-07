@@ -11,7 +11,7 @@ ROOT=Path(__file__).resolve().parents[1]
 def plans(root):
  def s(n,f=0,x=0,y=0,o=None,h=None):return(f'Symbol {n}',f,x,y,o or {},h or [])
  nodes={k:v for k,v in load_all(root).items() if v.get('episode',1)==2}
- live={n[k] for n in nodes.values() for k in ['art','background_art','controls_art','decision_art'] if k in n}
+ live={v[k] for n in nodes.values() for v in [n,*n.get('variants',[])] for k in ['art','background_art','controls_art','decision_art'] if k in v}
  visuals=json.loads((root/'data/episode2_visuals.json').read_text())
  result={name:([s(v['symbol'],v['frame'],o=v.get('overrides'),h=v.get('hide'))],v) for name,v in visuals.items() if name in live}
  for cls,symbol,frame in [('hospital',2443,15),('main',2145,0)]:

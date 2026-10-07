@@ -1113,5 +1113,27 @@
     "photo": "",
     "photo_path": "Mov.Mov",
     "hide": []
+  },
+  "e2_first_3_unarmed": {
+    "symbol": 2216,
+    "frame": 2,
+    "overrides": {
+      "Mov.Hist": 0,
+      "Mov": 8
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Hist",
+      "But1",
+      "But2",
+      "NumB"
+    ],
+    "omit_symbols": [
+      "Symbol 2169"
+    ],
+    "bitmap_replacements": {
+      "Bitmap 2165.png": "Bitmap 2160.png"
+    }
   }
 }

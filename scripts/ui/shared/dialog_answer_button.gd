@@ -7,15 +7,17 @@ var caption: Label
 var background: TextureRect
 var unavailable_mark: TextureRect
 var caption_size := 48
+var speaker_layout := false
 var animate_flash_hover := false
 var hover_elapsed := 0.0
 var previous_hover := false
 var hover_keys: Array = []
-func configure(value: String, available: bool = true, font_size: int = 24) -> void:
+func configure(value: String, available: bool = true, font_size: int = 24, speaker: bool = false) -> void:
  if parts.is_empty(): parts = JSON.parse_string(FileAccess.get_file_as_string("res://data/dialog_components.json"))
  name = LOC.text(value) if available else "UnavailableAnswer"
  tooltip_text = LOC.text(value) if available else ""
- size = Vector2(694,128)
+ speaker_layout = speaker
+ size = Vector2(1314,128) if speaker else Vector2(694,128)
  mouse_filter = Control.MOUSE_FILTER_STOP
  mouse_force_pass_scroll_events = false
  disabled = not available
@@ -26,7 +28,7 @@ func configure(value: String, available: bool = true, font_size: int = 24) -> vo
  focus.border_color = Color("c8c8c8")
  focus.set_border_width_all(2)
  add_theme_stylebox_override("focus",focus)
- COMPONENTS.draw(self,parts.decision_plate)
+ COMPONENTS.draw(self,parts.speaker_plate if speaker else parts.decision_plate)
  background = get_child(0)
  if not available:
   COMPONENTS.draw(self,parts.decision_disabled_mark)
@@ -36,7 +38,7 @@ func configure(value: String, available: bool = true, font_size: int = 24) -> vo
   caption.name = "Caption"
   caption.mouse_filter = Control.MOUSE_FILTER_IGNORE
   caption.text = LOC.text(value)
-  caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+  caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT if speaker else HORIZONTAL_ALIGNMENT_CENTER
   caption.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
   caption.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
   caption.clip_text = true
@@ -50,10 +52,10 @@ func configure(value: String, available: bool = true, font_size: int = 24) -> vo
  _update_state()
 func _layout_caption() -> void:
  if not is_instance_valid(caption): return
- caption.position = Vector2(30,12)
- caption.size = (size-Vector2(60,24)).max(Vector2.ONE)
+ caption.position = Vector2(32,31.9) if speaker_layout else Vector2(30,12)
+ caption.size = (size-Vector2(64,63.8) if speaker_layout else size-Vector2(60,24)).max(Vector2.ONE)
  var fitted := caption_size
- while fitted>16 and FONT.get_multiline_string_size(caption.text,HORIZONTAL_ALIGNMENT_CENTER,caption.size.x,fitted).y>caption.size.y: fitted-=1
+ while fitted>16 and FONT.get_multiline_string_size(caption.text,caption.horizontal_alignment,caption.size.x,fitted).y>caption.size.y: fitted-=1
  caption.add_theme_font_size_override("font_size",fitted)
 func _update_state() -> void:
  # Symbol 97's endpoint tint is 0.69921875; the caption does not move.

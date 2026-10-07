@@ -43,7 +43,8 @@ func run()->void:
  editor.redo()
  check(editor.document.nodes.size()==278,"redo activity")
  editor.load_document("res://data/story_graphs/episode2.json")
- check(editor.document.nodes.size()==301,"editor loads second episode")
+ var second_episode_blocks: int=MODEL.load_graph("res://data/story_graphs/episode2.json").nodes.size()
+ check(editor.document.nodes.size()==second_episode_blocks,"editor loads every second episode block")
  editor.focus_block("e2_hospital_1")
  check(editor.selected=="e2_hospital_1","search/focus screen")
  var choice_id: String="e2_hospital_1__choice_0"
@@ -66,7 +67,7 @@ func run()->void:
  check(FileAccess.file_exists(editor.path+".draft") and not FileAccess.file_exists(editor.path),"draft does not replace published graph")
  var draft_path:String=editor.path+".draft"
  editor.load_document(draft_path)
- check(editor.document.nodes.size()==302 and editor.path==draft_path.trim_suffix(".draft"),"draft can be reopened for completion")
+ check(editor.document.nodes.size()==second_episode_blocks+1 and editor.path==draft_path.trim_suffix(".draft"),"draft can be reopened for completion")
  for suffix:String in [".draft",".draft.bak"]:
   if FileAccess.file_exists(editor.path+suffix):DirAccess.remove_absolute(editor.path+suffix)
  editor.queue_free()

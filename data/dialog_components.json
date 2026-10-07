@@ -26,5 +26,19 @@
       "source": "/Symbol 97",
       "layer": "background"
     }
+  ],
+  "speaker_plate": [
+    {
+      "type": "texture",
+      "texture": "dialog_components/part_8478f8ddd692f8fefc94.png",
+      "rect": [
+        0.0,
+        0.0,
+        657.0,
+        64.0
+      ],
+      "source": "/Symbol 18",
+      "layer": "background"
+    }
   ]
 }

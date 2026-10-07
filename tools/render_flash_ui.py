@@ -31,7 +31,15 @@ class Renderer:
  def __init__(self,library,out,fonts):
   self.library=Path(library);self.out=Path(out);self.fonts={i:TTFont(Path(fonts)/f'font_{i}.ttf') for i in set(FONT_IDS.values())};self.defs=[];self.uid=0;self.cache={}
  def root(self,name):
-  if name not in self.cache:self.cache[name]=E.parse(self.library/(name+'.xml')).getroot()
+  if name not in self.cache:
+   root=E.parse(self.library/(name+'.xml')).getroot()
+   # The navigation chevron occupies the right half of its bitmap sheet.
+   # Register the visible half at x=0 instead of retaining 380 source units.
+   if name=='Symbol 53':
+    for shape in root.findall('.//x:DOMShape',NS):
+     matrix=E.SubElement(shape,'{'+NS['x']+'}matrix')
+     E.SubElement(matrix,'{'+NS['x']+'}Matrix',{'tx':'-380','ty':'0'})
+   self.cache[name]=root
   return self.cache[name]
  def matrix(self,e,bitmap=False):
   m=e.find('./x:matrix/x:Matrix',NS)

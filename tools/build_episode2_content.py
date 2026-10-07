@@ -214,6 +214,14 @@ def build(library,photos,sources,output,render=True,reuse_art=False):
    if sound and (photos.parent/'Sound'/(sound+'.mp3')).exists():
     target=output/'assets/audio'/(sound+'.mp3')
     if not target.exists():target.write_bytes((photos.parent/'Sound'/(sound+'.mp3')).read_bytes())
+ # -1 means no weapon; zero means a weapon with an empty magazine.
+ # The door clip's unnamed Symbol 2169 hand must not create a gun on its own.
+ visuals['e2_first_3_unarmed']=json.loads(json.dumps(visuals['e2_first_3']))
+ visuals['e2_first_3_unarmed']['omit_symbols']=['Symbol 2169']
+ visuals['e2_first_3_unarmed']['bitmap_replacements']={'Bitmap 2165.png':'Bitmap 2160.png'}
+ for node in nodes.values():
+  if node.get('art')=='e2_first_3':
+   node.setdefault('variants',[]).append({'when':{'BulletsNumber':-1},'art':'e2_first_3_unarmed'})
  output.joinpath('data/episode2_routes.json').write_text(json.dumps({'episode':2,'start':'e2_hospital_1','nodes':nodes},ensure_ascii=False,indent=2)+'\n')
  output.joinpath('data/episode2_visuals.json').write_text(json.dumps(visuals,ensure_ascii=False,indent=2)+'\n')
  print('Episode II:',len(nodes),'nodes;',len([n for n in nodes.values() if n.get('result_id')]),'results')
