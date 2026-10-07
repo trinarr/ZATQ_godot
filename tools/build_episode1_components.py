@@ -16,19 +16,21 @@ class Exporter(ResultRenderer):
   e=sharp_element(e)
   return ResultRenderer.shape(self,e) if self.result_mode else Renderer.shape(self,e)
  def text(self,e):return ''
- def emit(self,body,transform,opacity,path,blur=None):
+ def emit(self,body,transform,opacity,path,blur=None,viewport=(0,0,800,480)):
   if not body or opacity<=0:return
+  x,y,w,h=viewport
   m=' '.join(str(v) for v in transform)
-  svg=f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="480" viewBox="0 0 800 480"><defs>{"".join(self.defs)}</defs><g transform="matrix({m})" opacity="{opacity}">{body}</g></svg>'
+  svg=f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{w}" height="{h}" viewBox="{x} {y} {w} {h}"><defs>{"".join(self.defs)}</defs><g transform="matrix({m})" opacity="{opacity}">{body}</g></svg>'
   key=hashlib.sha256(svg.encode()).hexdigest()
   if key not in self.raster_cache:
    source=self.scratch/'part.svg';source.write_text(svg)
    result=self.scratch/'part.png'
-   subprocess.run(['inkscape',str(source),'--export-type=png',f'--export-filename={result}','--export-width=1600','--export-height=960'],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+   subprocess.run(['inkscape',str(source),'--export-type=png',f'--export-filename={result}',f'--export-width={round(w*2)}',f'--export-height={round(h*2)}'],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
    with Image.open(result) as im:self.raster_cache[key]=self.store(im.convert('RGBA'))
   part=self.raster_cache[key]
   if part:
    record=dict(part,source=path)
+   record['rect']=[part['rect'][0]+x,part['rect'][1]+y,*part['rect'][2:]]
    if blur:record["blur"]=blur
    self.parts.append(record)
  def store(self,im):

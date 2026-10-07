@@ -11,6 +11,7 @@ from build_episode1_components import Exporter,plans
 from episode1_blur import blur_spec
 from build_localized_ui import matrix,combine
 from render_flash_ui import NS
+from eye_closure_parts import eye_part,export_texture,annotate
 ROOT=Path(__file__).resolve().parents[1]
 IDENTITY=(1,0,0,1,0,0)
 
@@ -130,7 +131,9 @@ def build(archive,only=None):
     # Anchor on a visible, neutral-color frame; animated matrices remain data.
     ref=max(records,key=lambda r:-abs(r['matrix'][4])-abs(r['matrix'][5])-800*abs(r['matrix'][0]-1)-480*abs(r['matrix'][3]-1))
     renderer.parts=[]
-    if 'existing' in ref:part=dict(ref['existing'])
+    native_eye=eye_part(ref['source'],ref['matrix'])
+    if native_eye:part=native_eye;export_texture(lib,ROOT)
+    elif 'existing' in ref:part=dict(ref['existing'])
     else:
      e=ref.get('element');renderer.defs=[];renderer.uid=0
      if 'photo' in ref:
@@ -148,7 +151,7 @@ def build(archive,only=None):
      if not renderer.parts:continue
      part=renderer.parts[0]
     # Existing art is reused when the unmodified pixels already exist.
-    if part.get('texture'):
+    if part.get('texture') and 'eye_lid' not in part:
      filename=Path(part['texture']).name
      old=ROOT/'assets/flash_ui/episode1_components'/filename
      if old.exists():
@@ -174,6 +177,7 @@ def build(archive,only=None):
     phase_records[phase]=frames
    if len(phase_records['intro'])>1 or len(phase_records['outro'])>1:
     result['art'][art]={'parts':primitives,'clip':str(items[0][0])+':'+str(items[0][1]),'intro_loop':periods[0] if len(phase_records['intro'])==81 else 0,**phase_records}
+    annotate(result['art'][art])
     print(art,len(primitives),'intro',len(phase_records['intro']),'outro',len(phase_records['outro']),flush=True)
   result.setdefault('audit',{}).update(tl.audit)
   (ROOT/'data/episode1_animations.json').write_text(json.dumps(result,separators=(',',':'))+'\n')

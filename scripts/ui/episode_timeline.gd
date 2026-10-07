@@ -4,6 +4,8 @@ signal finished
 static var data: Dictionary = {}
 const BLUR_CACHE := preload("res://scripts/ui/blur_texture_cache.gd")
 static var prewarmed_episodes: Dictionary = {}
+const EYE_CLOSURE := preload("res://scripts/ui/eye_closure.gd")
+var eye_closure: Node2D
 const QTE_PROMPT := preload("res://scripts/ui/qte_prompt.gd")
 const LOC := preload("res://scripts/core/localization.gd")
 static var caption_aliases: Dictionary = {}
@@ -44,9 +46,16 @@ func configure(art: String) -> void:
   BLUR_CACHE.prewarm(artwork)
  for key: String in spec.parts:
   var part: Dictionary=spec.parts[key]
-  var pivot:=Node2D.new()
+  var pivot: Node2D
   var visual: Control
-  if part.type=="qte_prompt":
+  if part.has("eye_lid"):
+   if eye_closure==null:
+    eye_closure=EYE_CLOSURE.new();add_child(eye_closure)
+   pivot=eye_closure.add_lid(part)
+   visual=pivot.get_child(0)
+  else:pivot=Node2D.new()
+  if part.has("eye_lid"):pass
+  elif part.type=="qte_prompt":
    visual=QTE_PROMPT.new()
   elif part.type=="panel":
    var panel:=ColorRect.new()
@@ -64,7 +73,9 @@ func configure(art: String) -> void:
    visual.texture_filter=CanvasItem.TEXTURE_FILTER_LINEAR
    BLUR_CACHE.bind(paint,visual.texture,part.blur)
   if part.type!="qte_prompt":visual.material=paint
-  pivot.add_child(visual);add_child(pivot);sprites[key]=pivot
+  if not part.has("eye_lid"):
+   pivot.add_child(visual);add_child(pivot)
+  sprites[key]=pivot
  play("intro")
 func play(next_phase: String) -> void:
  phase=next_phase;frames=_phase_frames(phase);elapsed=0;playing=true
@@ -92,6 +103,7 @@ func seek_frame(index: int, subframe: float = 0.0) -> void:
  current_frame=clampi(index,0,frames.size()-1)
  for pivot: Node2D in sprites.values():pivot.visible=false
  var order:=0
+ var ordered: Dictionary={}
  for record: Array in frames[current_frame]:
   var pivot: Node2D=sprites[record[0]]
   var m: Array=record[1];var c: Array=record[2]
@@ -103,7 +115,9 @@ func seek_frame(index: int, subframe: float = 0.0) -> void:
    paint.set_shader_parameter("offset",Vector3(c[4],c[5],c[6]))
   else:visual.modulate=Color(c[0],c[1],c[2],c[3])
   pivot.visible=true
-  move_child(pivot,order);order+=1
+  var layer: Node=eye_closure if pivot.get_parent()==eye_closure else pivot
+  if not ordered.has(layer):
+   move_child(layer,order);order+=1;ordered[layer]=true
  _update_captions(index)
  _update_blur_strength(float(current_frame)+subframe)
  if current_frame==frames.size()-1 and playing and cycle<=1:
@@ -115,10 +129,14 @@ func _process(delta: float) -> void:
  seek_frame(int(floor(frame_time)),fposmod(frame_time,1.0))
 
 func _update_blur_strength(frame_time: float) -> void:
- if art_name!="ep1_mainstreet_choice":return
- var progress: float=clampf(frame_time/float(maxi(1,frames.size()-1)),0.0,1.0)
- var eased: float=smoothstep(0.0,1.0,progress)
- var strength: float=1.0-eased if phase=="intro" else eased
+ var strength: float
+ if art_name=="ep1_mainstreet_choice":
+  var progress: float=clampf(frame_time/float(maxi(1,frames.size()-1)),0.0,1.0)
+  var eased: float=smoothstep(0.0,1.0,progress)
+  strength=1.0-eased if phase=="intro" else eased
+ elif spec.has("eye_blur"):
+  strength=EYE_CLOSURE.blur_strength_at(frame_time,phase,spec.eye_blur)
+ else:return
  for key: String in spec.parts:
   if not spec.parts[key].has("blur"):continue
   var paint: ShaderMaterial=sprites[key].get_child(0).material

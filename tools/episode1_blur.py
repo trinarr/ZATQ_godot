@@ -2,6 +2,8 @@
 import copy
 from render_flash_ui import NS
 BLUR_BITMAPS = {
+ 'Bitmap 1776.png': ('Bitmap 1781.png',2.5,2.5,0.),
+ 'Bitmap 1891.png': ('Bitmap 1893.png',2.5,2.5,0.),
  'Bitmap 2454.png': ('Bitmap 2460.png',10.1,.6,0.),
  'Bitmap 2457.png': ('Bitmap 2460.png',5.1,.2,0.),
  'Bitmap 2462.png': ('Bitmap 2468.png',9.8,.4,0.),

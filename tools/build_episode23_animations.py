@@ -13,6 +13,7 @@ from build_localized_ui import combine
 from render_flash_ui import NS
 from episode1_blur import blur_spec
 from story_graph_format import load_all
+from eye_closure_parts import eye_part,export_texture,annotate
 ROOT=Path(__file__).resolve().parents[1]
 
 class EpisodeTimelines(Timelines):
@@ -83,6 +84,10 @@ def sequences(tl,items,spec,text_only=False):
  return result,periods
 
 def render_part(renderer,record,lib,photos):
+ native_eye=eye_part(record.get('source',''),record['matrix'])
+ if native_eye:
+  export_texture(lib,ROOT)
+  return native_eye
  if record.get('prompt'):
   return {'type':'qte_prompt','rect':[0,0,112,112],'text':'@loc:ui.qte.press','source':'Symbol 27'}
  renderer.parts=[];renderer.defs=[];renderer.uid=0
@@ -124,7 +129,7 @@ def build(archive,episodes=(2,3)):
      if ref.get('prompt'):ref=dict(ref,matrix=(1,0,0,1,0,0))
      part=render_part(renderer,ref,lib,photos)
      if not part:continue
-     if part.get('texture'):
+     if part.get('texture') and 'eye_lid' not in part:
       filename=Path(part['texture']).name
       for directory in ['episode1_components','episode2_components','episode3_components','episode1_animation_parts','episode2_animation_parts']:
        old=ROOT/'assets/flash_ui'/directory/filename
@@ -179,6 +184,7 @@ def build(archive,episodes=(2,3)):
      used_text={r[0] for fs in texts.values() for row in fs for r in row}
      anchors={k:v for k,v in anchors.items() if k in used_text}
      result['art'][art]={'parts':primitives,'clip':str(items[0][0])+':'+str(items[0][1]),'intro_loop':periods['intro'] if len(tracks['intro'])==len(states['intro']) else 0,'qte':bool(spec.get('qte')),'outro_hold':bool(hold_outro),**tracks}
+     annotate(result['art'][art])
      text_result[art]={'anchors':anchors,**texts}
      print(ep,art,len(primitives),len(tracks['intro']),len(tracks['outro']),flush=True)
    result['audit']=tl.audit

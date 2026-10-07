@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6njxivit4ieg"
-path="res://.godot/imported/part_f5bda0a8fdc3f6c8a9a7.png-248c774417be3a03a0b8d6a6b6d9746d.ctex"
+uid="uid://b2jtepmts5bgu"
+path="res://.godot/imported/eye_lid.png-fff38b17d3926b065e504505b781e6fc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/flash_ui/episode3_animation_parts/part_f5bda0a8fdc3f6c8a9a7.png"
-dest_files=["res://.godot/imported/part_f5bda0a8fdc3f6c8a9a7.png-248c774417be3a03a0b8d6a6b6d9746d.ctex"]
+source_file="res://assets/flash_ui/shared_components/eye_lid.png"
+dest_files=["res://.godot/imported/eye_lid.png-fff38b17d3926b065e504505b781e6fc.ctex"]
 
 [params]
 
