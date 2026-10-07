@@ -25,9 +25,12 @@ func _init() -> void:
 		catalog.components = JSON.parse_string(FileAccess.get_file_as_string("res://data/ui_components.json"))
 		catalog.brushes = JSON.parse_string(FileAccess.get_file_as_string("res://data/ui_brush_layout.json"))
 		catalog.episodes = {}
-		for number: int in range(1,4):
-			catalog.episodes.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/episode%d_components.json" % number)),true)
-			catalog.brushes.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/episode%d_brushes.json" % number)),true)
+		for filename: String in DirAccess.get_files_at("res://data"):
+			if not filename.begins_with("episode") or not filename.ends_with("_components.json"): continue
+			catalog.episodes.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/"+filename)),true)
+			var brushes_path: String = "res://data/"+filename.replace("_components.json","_brushes.json")
+			if FileAccess.file_exists(brushes_path):catalog.brushes.merge(JSON.parse_string(FileAccess.get_file_as_string(brushes_path)),true)
+
 	art_text = catalog.text
 	art_components = catalog.components
 	art_brushes = catalog.brushes

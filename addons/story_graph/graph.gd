@@ -67,9 +67,13 @@ static var component_art_names: Dictionary = {}
 static var components_loaded: bool = false
 static func has_art(name: String) -> bool:
  if not components_loaded:
-  for path: String in ["res://data/episode1_components.json","res://data/episode2_components.json","res://data/episode3_components.json","res://data/ui_components.json"]:
+  for filename: String in DirAccess.get_files_at("res://data"):
+   if filename != "ui_components.json" and not (filename.begins_with("episode") and (filename.ends_with("_components.json") or filename.ends_with("_animations.json"))): continue
+   if filename.ends_with("_text_animations.json") or filename.ends_with("_ui_animations.json"): continue
+   var path: String = "res://data/" + filename
    var parts: Variant = JSON.parse_string(FileAccess.get_file_as_string(path))
    if parts is Dictionary:
+    parts = parts.get("art", parts)
     for key: String in parts: component_art_names[key] = true
   components_loaded = true
  return component_art_names.has(name)

@@ -20,6 +20,11 @@ static func draw(ui: Control, node: Dictionary) -> void:
 	if Quest.current_id == "metro_junction":
 		ui._component_backdrop("adaptive_metro_background")
 		ui._world_art("adaptive_metro_controls")
+	if node.get("input_after_intro",false) and is_instance_valid(ui.viewport_canvas.episode_timeline) and ui.viewport_canvas.episode_timeline.playing:
+		var origin: String = Quest.current_id
+		ui.world_layer.set_meta("episode_animation_block",true)
+		ui.viewport_canvas.episode_timeline.finished.connect(func():
+			if Quest.current_id==origin and is_instance_valid(ui.world_layer):ui.world_layer.remove_meta("episode_animation_block"),CONNECT_ONE_SHOT)
 	var controls: Control
 	if node.has("controls_art"):
 		controls = ui._world_art(node.controls_art)

@@ -23,7 +23,7 @@ def run():
     audit(x,prefix)
   elif isinstance(v,list):
    for x in v:audit(x,prefix)
- for n in [1,2,3]:audit(json.loads((ROOT/f'data/story_graphs/episode{n}.json').read_text()),f'episode{n}')
+ for graph in sorted((ROOT/'data/story_graphs').glob('episode*.json')):audit(json.loads(graph.read_text()),graph.stem)
  audit(json.loads((ROOT/'data/story_graphs/examples/activity_demo.json').read_text()),'episode3')
  for entry in json.loads((ROOT/'data/selectors.json').read_text()):audit(entry,'episode'+str(entry['episode']) if entry.get('episode') in [1,2,3] else 'ui')
  for name,blocks in json.loads((ROOT/'data/ui_text_layout.json').read_text()).items():audit(blocks,'episode1' if name.startswith('layout_controls_') or name=='adaptive_metro_controls' else 'ui')

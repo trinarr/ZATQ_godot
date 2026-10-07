@@ -1,4 +1,4 @@
-"""Export Episode II/III MovieClip layers and native caption/QTE tracks.
+"""Export Episode II/III/IV MovieClip layers and native caption/QTE tracks.
 Usage: python tools/build_episode23_animations.py ORIGINAL.zip
 The frame budget follows the source timelines (including the 126-frame roof).
 """
@@ -24,6 +24,9 @@ class EpisodeTimelines(Timelines):
    return 0,target if target is not None else length-1,False
   return super().segment(name,target,outro)
  def walk(self,*args,**kwargs):
+  spec=kwargs.get("spec",args[5] if len(args)>5 else {})
+  name=kwargs.get("name",args[0] if args else "")
+  if name in spec.get("omit_symbols",[]):return []
   result=super().walk(*args,**kwargs)
   depth=kwargs.get('depth',args[10] if len(args)>10 else 0)
   if depth==0:
@@ -38,7 +41,7 @@ class EpisodeTimelines(Timelines):
   return result
 
 def selected_plans(ep):
- plans=(plans2 if ep==2 else plans3)(ROOT)
+ plans=plans2(ROOT) if ep==2 else plans3(ROOT,ep)
  result={}
  cutscene_art={n.get('art') for n in load_all(ROOT).values() if n.get('episode')==ep and n.get('kind')=='city_cutscene'}
  for art,(items,spec) in sorted(plans.items()):
@@ -131,7 +134,7 @@ def build(archive,episodes=(2,3)):
      if not part:continue
      if part.get('texture') and 'eye_lid' not in part:
       filename=Path(part['texture']).name
-      for directory in ['episode1_components','episode2_components','episode3_components','episode1_animation_parts','episode2_animation_parts']:
+      for directory in [f'episode{i}_components' for i in range(1,ep+1)]+[f'episode{i}_animation_parts' for i in range(1,ep)]:
        old=ROOT/'assets/flash_ui'/directory/filename
        if old.exists() and old!=ROOT/'assets/flash_ui'/part['texture']:
         (ROOT/'assets/flash_ui'/part['texture']).unlink(missing_ok=True)
@@ -193,6 +196,29 @@ def build(archive,episodes=(2,3)):
    used={Path(p['texture']).name for v in result['art'].values() for p in v['parts'].values() if p.get('texture','').startswith(out.name+'/')}
    for f in out.glob('*.png'):
     if f.name not in used:f.unlink();Path(str(f)+'.import').unlink(missing_ok=True)
+   if ep>=4:deduplicate_episode(ep)
    print('Episode',ep,'animated scenes',len(result['art']),'new unique textures',len(used),flush=True)
+def deduplicate_episode(ep):
+ """Keep one primitive asset across static and animated versions of a scene."""
+ components_path=ROOT/f'data/episode{ep}_components.json'
+ animations_path=ROOT/f'data/episode{ep}_animations.json'
+ components=json.loads(components_path.read_text());animations=json.loads(animations_path.read_text())
+ for spec in animations['art'].values():
+  for part in spec['parts'].values():
+   if 'texture' not in part:continue
+   name=Path(part['texture']).name
+   candidate=ROOT/f'assets/flash_ui/episode{ep}_components'/name
+   if candidate.exists():part['texture']=f'episode{ep}_components/'+name
+ # Runtime selects EpisodeTimeline for these names; the final-frame static
+ # copies are unreachable. Retain controls, portraits, items and static scenes.
+ components={k:v for k,v in components.items() if k not in animations['art']}
+ components_path.write_text(json.dumps(components,ensure_ascii=False,indent=2)+'\n')
+ animations_path.write_text(json.dumps(animations,separators=(',',':'))+'\n')
+ referenced={p.get('texture') for parts in components.values() for p in parts}
+ referenced.update(p.get('texture') for spec in animations['art'].values() for p in spec['parts'].values())
+ for directory in [f'episode{ep}_components',f'episode{ep}_animation_parts']:
+  for file in (ROOT/'assets/flash_ui'/directory).glob('*.png'):
+   if directory+'/'+file.name not in referenced:file.unlink();Path(str(file)+'.import').unlink(missing_ok=True)
+
 if __name__=='__main__':
- p=argparse.ArgumentParser(description=__doc__);p.add_argument('archive',type=Path);p.add_argument('--episode',type=int,choices=[2,3]);a=p.parse_args();build(a.archive,(a.episode,) if a.episode else (2,3))
+ p=argparse.ArgumentParser(description=__doc__);p.add_argument('archive',type=Path);p.add_argument('--episode',type=int,choices=[2,3,4]);a=p.parse_args();build(a.archive,(a.episode,) if a.episode else (2,3))

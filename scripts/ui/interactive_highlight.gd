@@ -8,7 +8,12 @@ var region_id := ""
 
 static func definitions() -> Dictionary:
 	if data.is_empty():
-		data = JSON.parse_string(FileAccess.get_file_as_string("res://data/episode1_highlights.json"))
+		data = {"regions":{},"masks":{}}
+		for filename: String in DirAccess.get_files_at("res://data"):
+			if not filename.begins_with("episode") or not filename.ends_with("_highlights.json"): continue
+			var source: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/"+filename))
+			data.regions.merge(source.regions,true)
+			data.masks.merge(source.get("masks",{}),true)
 	return data
 
 static func has_mask(id: String) -> bool:

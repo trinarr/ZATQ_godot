@@ -1,0 +1,3954 @@
+{
+  "e4_church_1_v1": {
+    "symbol": 1512,
+    "frame": 0,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "OldChurch.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_church_2_v1": {
+    "symbol": 1512,
+    "frame": 1,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_church_3_v1": {
+    "symbol": 1512,
+    "frame": 2,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_church_5_v1": {
+    "symbol": 1512,
+    "frame": 4,
+    "overrides": {
+      "Mov": 0,
+      "Mov.Hist": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_church_6_v1": {
+    "symbol": 1512,
+    "frame": 5,
+    "overrides": {
+      "Mov": 6,
+      "Mov.Hist": 0
+    },
+    "photo": "MeetTheDeadDavid.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_church_7_v1": {
+    "symbol": 1512,
+    "frame": 6,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_church_8_v1": {
+    "symbol": 1512,
+    "frame": 7,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 0
+    },
+    "photo": "RoadToConnect.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_church_9_v1": {
+    "symbol": 1512,
+    "frame": 8,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_church_4_v2": {
+    "symbol": 1512,
+    "frame": 3,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "WalkingToChurch.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_church_5_v2": {
+    "symbol": 1512,
+    "frame": 4,
+    "overrides": {
+      "Mov": 0,
+      "Mov.Hist": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_church_6_v2": {
+    "symbol": 1512,
+    "frame": 5,
+    "overrides": {
+      "Mov": 6,
+      "Mov.Hist": 1
+    },
+    "photo": "MeetTheDeadDavid.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_church_8_v2": {
+    "symbol": 1512,
+    "frame": 7,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 1
+    },
+    "photo": "RoadToConnect.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_church_10_v2": {
+    "symbol": 1512,
+    "frame": 9,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "DogRunning.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_church_11_v2": {
+    "symbol": 1512,
+    "frame": 10,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "GrizzlyBear.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_church_12_v2": {
+    "symbol": 1512,
+    "frame": 11,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "WalkingBack.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_church_13_v2": {
+    "symbol": 1512,
+    "frame": 12,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "GrizzlyAttacks.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_church_14_v2": {
+    "symbol": 1512,
+    "frame": 13,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "HideFromBer.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_church_15_v2": {
+    "symbol": 1512,
+    "frame": 14,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "BearBleeding.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_church_16_v2": {
+    "symbol": 1512,
+    "frame": 15,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "FishermanHouse.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_church_17_v2": {
+    "symbol": 1512,
+    "frame": 16,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "HandsToLeg.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_church_18_v2": {
+    "symbol": 1512,
+    "frame": 17,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "OldZombie.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_camp_1_v1": {
+    "symbol": 1428,
+    "frame": 0,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "EarlyMorning.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_camp_2_v1": {
+    "symbol": 1428,
+    "frame": 1,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_camp_3_v1": {
+    "symbol": 1428,
+    "frame": 2,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "ZombiesFromForest.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_camp_4_v1": {
+    "symbol": 1428,
+    "frame": 3,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_camp_5_v1": {
+    "symbol": 1428,
+    "frame": 4,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "ZombieAttackForest.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_camp_6_v1": {
+    "symbol": 1428,
+    "frame": 5,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "CallingTravis.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_camp_7_v1": {
+    "symbol": 1428,
+    "frame": 6,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_camp_8_v1": {
+    "symbol": 1428,
+    "frame": 7,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "SleepTravis.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_camp_9_v1": {
+    "symbol": 1428,
+    "frame": 8,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "CarFromCamp.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_camp_10_v1": {
+    "symbol": 1428,
+    "frame": 9,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_camp_13_v1": {
+    "symbol": 1428,
+    "frame": 12,
+    "overrides": {
+      "Mov": 6,
+      "Mov.Hist": 0
+    },
+    "photo": "RunningForest.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_camp_14_v1": {
+    "symbol": 1428,
+    "frame": 13,
+    "overrides": {
+      "Mov": 7
+    },
+    "photo": "BrokenGlass.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_camp_11_v2": {
+    "symbol": 1428,
+    "frame": 10,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "Flash.jpg",
+    "photo_path": "Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_camp_12_v2": {
+    "symbol": 1428,
+    "frame": 11,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_camp_13_v2": {
+    "symbol": 1428,
+    "frame": 12,
+    "overrides": {
+      "Mov": 6,
+      "Mov.Hist": 1
+    },
+    "photo": "RunningForest.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_army_1_v1": {
+    "symbol": 1350,
+    "frame": 0,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "ArmyGone.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_army_2_v1": {
+    "symbol": 1350,
+    "frame": 1,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "BrokenJeep.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_1_v1": {
+    "symbol": 1340,
+    "frame": 0,
+    "overrides": {
+      "Mov": 0,
+      "Mov.Hist": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_3_v1": {
+    "symbol": 1340,
+    "frame": 2,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_10_v1": {
+    "symbol": 1340,
+    "frame": 9,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "SweemingUp.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_1_v2": {
+    "symbol": 1340,
+    "frame": 0,
+    "overrides": {
+      "Mov": 0,
+      "Mov.Hist": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_2_v2": {
+    "symbol": 1340,
+    "frame": 1,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "FindTheMatt.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_4_v2": {
+    "symbol": 1340,
+    "frame": 3,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 1
+    },
+    "photo": "TakeDeagle.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_5_v2": {
+    "symbol": 1340,
+    "frame": 4,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_9_v2": {
+    "symbol": 1340,
+    "frame": 8,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 0
+    },
+    "photo": "DrivingBoat.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_16_v2": {
+    "symbol": 1340,
+    "frame": 15,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "NightRiver.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_17_v2": {
+    "symbol": 1340,
+    "frame": 16,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_4_v3": {
+    "symbol": 1340,
+    "frame": 3,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 2
+    },
+    "photo": "TakeDeagle.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_5_v3": {
+    "symbol": 1340,
+    "frame": 4,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_6_v3": {
+    "symbol": 1340,
+    "frame": 5,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "DesertShot.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_7_v3": {
+    "symbol": 1340,
+    "frame": 6,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "SecondZombieKill.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_8_v3": {
+    "symbol": 1340,
+    "frame": 7,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_9_v3": {
+    "symbol": 1340,
+    "frame": 8,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 1
+    },
+    "photo": "DrivingBoat.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_11_v3": {
+    "symbol": 1340,
+    "frame": 10,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_12_v3": {
+    "symbol": 1340,
+    "frame": 11,
+    "overrides": {
+      "Mov": 6,
+      "Mov.Hist": 0
+    },
+    "photo": "MistralNight.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_13_v3": {
+    "symbol": 1340,
+    "frame": 12,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "ManWithGun.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_14_v3": {
+    "symbol": 1340,
+    "frame": 13,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_15_v3": {
+    "symbol": 1340,
+    "frame": 14,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "MistralMorning.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_17_v3": {
+    "symbol": 1340,
+    "frame": 16,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_9_v4": {
+    "symbol": 1340,
+    "frame": 8,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 2
+    },
+    "photo": "DrivingBoat.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_11_v4": {
+    "symbol": 1340,
+    "frame": 10,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_12_v4": {
+    "symbol": 1340,
+    "frame": 11,
+    "overrides": {
+      "Mov": 6,
+      "Mov.Hist": 1
+    },
+    "photo": "MistralNight.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_13_v4": {
+    "symbol": 1340,
+    "frame": 12,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "ManWithGun.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_14_v4": {
+    "symbol": 1340,
+    "frame": 13,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_15_v4": {
+    "symbol": 1340,
+    "frame": 14,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "MistralMorning.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_4_v5": {
+    "symbol": 1340,
+    "frame": 3,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 0
+    },
+    "photo": "TakeDeagle.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_alone_17_v5": {
+    "symbol": 1340,
+    "frame": 16,
+    "overrides": {
+      "Mov": 0,
+      "Mov.Hist": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_1_v1": {
+    "symbol": 1229,
+    "frame": 0,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 0
+    },
+    "photo": "RidingForest.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_2_v1": {
+    "symbol": 1229,
+    "frame": 1,
+    "overrides": {
+      "Mov": 0,
+      "Mov.Hist": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_3_v1": {
+    "symbol": 1229,
+    "frame": 2,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_4_v1": {
+    "symbol": 1229,
+    "frame": 3,
+    "overrides": {
+      "Mov": 8
+    },
+    "photo": "ForestTable.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_5_v1": {
+    "symbol": 1229,
+    "frame": 4,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "ZombieFromWater.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_6_v1": {
+    "symbol": 1229,
+    "frame": 5,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_7_v1": {
+    "symbol": 1229,
+    "frame": 6,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "ZombiesWakeUp.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_8_v1": {
+    "symbol": 1229,
+    "frame": 7,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_9_v1": {
+    "symbol": 1229,
+    "frame": 8,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_10_v1": {
+    "symbol": 1229,
+    "frame": 9,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "TravelAlone.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_11_v1": {
+    "symbol": 1229,
+    "frame": 10,
+    "overrides": {
+      "Mov": 9,
+      "Mov.Hist": 0
+    },
+    "photo": "GoingToHotel.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_12_v1": {
+    "symbol": 1229,
+    "frame": 11,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_13_v1": {
+    "symbol": 1229,
+    "frame": 12,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_14_v1": {
+    "symbol": 1229,
+    "frame": 13,
+    "overrides": {
+      "Mov": 6,
+      "Mov.Hist": 0
+    },
+    "photo": "RushTheLake.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_15_v1": {
+    "symbol": 1229,
+    "frame": 14,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "HideInCupboard.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_16_v1": {
+    "symbol": 1229,
+    "frame": 15,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "M923Truck.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_17_v1": {
+    "symbol": 1229,
+    "frame": 16,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_1_v2": {
+    "symbol": 1229,
+    "frame": 0,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 1
+    },
+    "photo": "RidingForest.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_2_v2": {
+    "symbol": 1229,
+    "frame": 1,
+    "overrides": {
+      "Mov": 0,
+      "Mov.Hist": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_3_v2": {
+    "symbol": 1229,
+    "frame": 2,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_4_v2": {
+    "symbol": 1229,
+    "frame": 3,
+    "overrides": {
+      "Mov": 8
+    },
+    "photo": "ForestTable.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_5_v2": {
+    "symbol": 1229,
+    "frame": 4,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "ZombieFromWater.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_11_v2": {
+    "symbol": 1229,
+    "frame": 10,
+    "overrides": {
+      "Mov": 9,
+      "Mov.Hist": 1
+    },
+    "photo": "GoingToHotel.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_12_v2": {
+    "symbol": 1229,
+    "frame": 11,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_13_v2": {
+    "symbol": 1229,
+    "frame": 12,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_14_v2": {
+    "symbol": 1229,
+    "frame": 13,
+    "overrides": {
+      "Mov": 6,
+      "Mov.Hist": 1
+    },
+    "photo": "RushTheLake.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_15_v2": {
+    "symbol": 1229,
+    "frame": 14,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "HideInCupboard.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_11_v3": {
+    "symbol": 1229,
+    "frame": 10,
+    "overrides": {
+      "Mov": 9,
+      "Mov.Hist": 2
+    },
+    "photo": "GoingToHotel.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_12_v3": {
+    "symbol": 1229,
+    "frame": 11,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_14_v3": {
+    "symbol": 1229,
+    "frame": 13,
+    "overrides": {
+      "Mov": 6,
+      "Mov.Hist": 2
+    },
+    "photo": "RushTheLake.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_15_v3": {
+    "symbol": 1229,
+    "frame": 14,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "HideInCupboard.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jess_1_v1": {
+    "symbol": 1546,
+    "frame": 0,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "ToHotelStairs.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jess_5_v1": {
+    "symbol": 1546,
+    "frame": 4,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jess_6_v1": {
+    "symbol": 1546,
+    "frame": 5,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "ZombieOnAttic.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jess_7_v1": {
+    "symbol": 1546,
+    "frame": 6,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jess_2_v2": {
+    "symbol": 1546,
+    "frame": 1,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 0
+    },
+    "photo": "RunningForJessica.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jess_3_v2": {
+    "symbol": 1546,
+    "frame": 2,
+    "overrides": {
+      "Mov": 6,
+      "Mov.Hist": 0
+    },
+    "photo": "RushTheLake.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jess_4_v2": {
+    "symbol": 1546,
+    "frame": 3,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "HideInCupboard.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jess_2_v3": {
+    "symbol": 1546,
+    "frame": 1,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 1
+    },
+    "photo": "RunningForJessica.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jess_3_v3": {
+    "symbol": 1546,
+    "frame": 2,
+    "overrides": {
+      "Mov": 6,
+      "Mov.Hist": 1
+    },
+    "photo": "RushTheLake.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_harlem_1_v1": {
+    "symbol": 1108,
+    "frame": 0,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "RoadToHarlem.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_harlem_2_v1": {
+    "symbol": 1108,
+    "frame": 1,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "NearHarlem.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_harlem_3_v1": {
+    "symbol": 1108,
+    "frame": 2,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_harlem_4_v1": {
+    "symbol": 1108,
+    "frame": 3,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "SnowBlood.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_harlem_5_v1": {
+    "symbol": 1108,
+    "frame": 4,
+    "overrides": {
+      "Mov": 9,
+      "Mov.Hist": 0
+    },
+    "photo": "NewMorning.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_harlem_6_v1": {
+    "symbol": 1108,
+    "frame": 5,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "SnowSniper.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_harlem_7_v1": {
+    "symbol": 1108,
+    "frame": 6,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_harlem_8_v1": {
+    "symbol": 1108,
+    "frame": 7,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_harlem_9_v1": {
+    "symbol": 1108,
+    "frame": 8,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_harlem_1_v2": {
+    "symbol": 1108,
+    "frame": 0,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "RoadToHarlem.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_harlem_2_v2": {
+    "symbol": 1108,
+    "frame": 1,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "NearHarlem.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_harlem_3_v2": {
+    "symbol": 1108,
+    "frame": 2,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_harlem_4_v2": {
+    "symbol": 1108,
+    "frame": 3,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "SnowBlood.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_harlem_5_v2": {
+    "symbol": 1108,
+    "frame": 4,
+    "overrides": {
+      "Mov": 9,
+      "Mov.Hist": 1
+    },
+    "photo": "NewMorning.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_harlem_6_v2": {
+    "symbol": 1108,
+    "frame": 5,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "SnowSniper.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_harlem_7_v2": {
+    "symbol": 1108,
+    "frame": 6,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_harlem_8_v2": {
+    "symbol": 1108,
+    "frame": 7,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_harlem_1_v3": {
+    "symbol": 1108,
+    "frame": 0,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "RoadToHarlem.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_harlem_2_v3": {
+    "symbol": 1108,
+    "frame": 1,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "NearHarlem.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_harlem_3_v3": {
+    "symbol": 1108,
+    "frame": 2,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_harlem_4_v3": {
+    "symbol": 1108,
+    "frame": 3,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "SnowBlood.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_harlem_6_v3": {
+    "symbol": 1108,
+    "frame": 5,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "SnowSniper.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_harlem_7_v3": {
+    "symbol": 1108,
+    "frame": 6,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_harlem_8_v3": {
+    "symbol": 1108,
+    "frame": 7,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_exp_1_v1": {
+    "symbol": 1126,
+    "frame": 0,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "BlackHawk.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_exp_2_v1": {
+    "symbol": 1126,
+    "frame": 1,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "BlackHawk-2.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_exp_3_v1": {
+    "symbol": 1126,
+    "frame": 2,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "BrainTest.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_exp_4_v1": {
+    "symbol": 1126,
+    "frame": 3,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "DeadEye.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "But5",
+      "But6",
+      "But7",
+      "But8",
+      "Hist",
+      "MvMg",
+      "NumB"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_item_flashbang": {
+    "symbol": 274,
+    "frame": 0,
+    "overrides": {
+      "Weapons": 8,
+      "ButExit": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Txt"
+    ],
+    "offset_y": 30,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_item_remington": {
+    "symbol": 274,
+    "frame": 0,
+    "overrides": {
+      "Weapons": 7,
+      "ButExit": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Txt"
+    ],
+    "offset_y": 30,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_camp_10_v1_controls": {
+    "symbol": 1428,
+    "frame": 9,
+    "overrides": {
+      "But1": 4,
+      "But2": 4,
+      "But3": 4,
+      "But4": 4,
+      "But5": 4,
+      "But6": 4,
+      "But7": 4,
+      "But8": 4
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Mov"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ],
+    "omit_root_shapes": true
+  },
+  "e4_jeep_3_v1_controls": {
+    "symbol": 1229,
+    "frame": 2,
+    "overrides": {
+      "But1": 4,
+      "But2": 4,
+      "But3": 4,
+      "But4": 4,
+      "But5": 4,
+      "But6": 4,
+      "But7": 4,
+      "But8": 4
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Mov"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ],
+    "omit_root_shapes": true
+  },
+  "e4_item_knife": {
+    "symbol": 274,
+    "frame": 0,
+    "overrides": {
+      "Weapons": 9,
+      "ButExit": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Txt"
+    ],
+    "offset_y": 30,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_jeep_3_v2_controls": {
+    "symbol": 1229,
+    "frame": 2,
+    "overrides": {
+      "But1": 4,
+      "But2": 4,
+      "But3": 4,
+      "But4": 4,
+      "But5": 4,
+      "But6": 4,
+      "But7": 4,
+      "But8": 4
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Mov"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ],
+    "omit_root_shapes": true
+  },
+  "e4_alone_1_v1_controls": {
+    "symbol": 1340,
+    "frame": 0,
+    "overrides": {
+      "But1": 4,
+      "But2": 4,
+      "But3": 4,
+      "But4": 4,
+      "But5": 4,
+      "But6": 4,
+      "But7": 4,
+      "But8": 4
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Mov"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ],
+    "omit_root_shapes": true
+  },
+  "e4_alone_1_v2_controls": {
+    "symbol": 1340,
+    "frame": 0,
+    "overrides": {
+      "But1": 4,
+      "But2": 4,
+      "But3": 4,
+      "But4": 4,
+      "But5": 4,
+      "But6": 4,
+      "But7": 4,
+      "But8": 4
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Mov"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ],
+    "omit_root_shapes": true
+  },
+  "e4_alone_5_v2_controls": {
+    "symbol": 1340,
+    "frame": 4,
+    "overrides": {
+      "But1": 4,
+      "But2": 4,
+      "But3": 4,
+      "But4": 4,
+      "But5": 4,
+      "But6": 4,
+      "But7": 4,
+      "But8": 4
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Mov"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ],
+    "omit_root_shapes": true
+  },
+  "e4_alone_5_v3_controls": {
+    "symbol": 1340,
+    "frame": 4,
+    "overrides": {
+      "But1": 4,
+      "But2": 4,
+      "But3": 4,
+      "But4": 4,
+      "But5": 4,
+      "But6": 4,
+      "But7": 4,
+      "But8": 4
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Mov"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ],
+    "omit_root_shapes": true
+  },
+  "e4_alone_11_v3_controls": {
+    "symbol": 1340,
+    "frame": 10,
+    "overrides": {
+      "But1": 4,
+      "But2": 4,
+      "But3": 4,
+      "But4": 4,
+      "But5": 4,
+      "But6": 4,
+      "But7": 4,
+      "But8": 4
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Mov"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ],
+    "omit_root_shapes": true
+  },
+  "e4_alone_11_v4_controls": {
+    "symbol": 1340,
+    "frame": 10,
+    "overrides": {
+      "But1": 4,
+      "But2": 4,
+      "But3": 4,
+      "But4": 4,
+      "But5": 4,
+      "But6": 4,
+      "But7": 4,
+      "But8": 4
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Mov"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ],
+    "omit_root_shapes": true
+  },
+  "e4_item_deagle": {
+    "symbol": 274,
+    "frame": 0,
+    "overrides": {
+      "Weapons": 10,
+      "ButExit": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Txt"
+    ],
+    "offset_y": 30,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_item_army_knife": {
+    "symbol": 274,
+    "frame": 0,
+    "overrides": {
+      "Weapons": 4,
+      "ButExit": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Txt"
+    ],
+    "offset_y": 30,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_item_mark23": {
+    "symbol": 274,
+    "frame": 0,
+    "overrides": {
+      "Weapons": 3,
+      "ButExit": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Txt"
+    ],
+    "offset_y": 30,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_dialogue_jess": {
+    "symbol": 237,
+    "frame": 2,
+    "overrides": {
+      "Ava": 2,
+      "Dlg1": 0,
+      "Dlg2": 0,
+      "Dlg3": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "DlgTxt",
+      "PrsnTxt",
+      "Txt"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_dialogue_matt": {
+    "symbol": 237,
+    "frame": 3,
+    "overrides": {
+      "Ava": 3,
+      "Dlg1": 0,
+      "Dlg2": 0,
+      "Dlg3": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "DlgTxt",
+      "PrsnTxt",
+      "Txt"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  },
+  "e4_dialogue_victor": {
+    "symbol": 237,
+    "frame": 4,
+    "overrides": {
+      "Ava": 4,
+      "Dlg1": 0,
+      "Dlg2": 0,
+      "Dlg3": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "DlgTxt",
+      "PrsnTxt",
+      "Txt"
+    ],
+    "offset_y": 0,
+    "omit_symbols": [
+      "Symbol 539"
+    ]
+  }
+}

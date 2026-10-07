@@ -121,7 +121,14 @@ func new_game(number: int = 1) -> void:
 	flags.merge(episode_defaults.get(number,{}),true)
 	channel = 0
 	has_progress = true
-	_enter(episode_starts[number])
+	var metadata: Dictionary = episode_metadata.get(number,{})
+	var start: String = episode_starts[number]
+	var continuations: Dictionary = metadata.get("continuations",{})
+	if not continuations.is_empty():
+		var previous: Dictionary = stats_for(number-1)
+		var last: int = int(previous.get("last_ending",previous.endings[-1] if not previous.endings.is_empty() else -1))
+		start = continuations.get(str(last),start)
+	_enter(start)
 
 func _enter(id: String) -> void:
 	if not nodes.has(id):
@@ -155,6 +162,7 @@ func _record_result() -> void:
 	if node.get("alive",false):
 		stats.wins += 1
 		var result_id: int = int(node.get("ending_id",node.result_id))
+		stats.last_ending = result_id
 		if result_id not in stats.endings:
 			stats.endings.append(result_id)
 	else:
@@ -261,6 +269,9 @@ func _valid_stats(stats: Variant, endings: Array) -> bool:
 	for key: String in ["wins","losses"]:
 		var counter: Variant = stats.get(key)
 		if not (counter is int or counter is float) or counter < 0 or counter != int(counter): return false
+	if stats.has("last_ending"):
+		var last: Variant = stats.last_ending
+		if not (last is int or last is float) or last != int(last) or (int(last) != -1 and int(last) not in endings): return false
 	var seen: Array = []
 	for ending: Variant in stats.endings:
 		if not (ending is int or ending is float) or ending != int(ending) or int(ending) not in endings or int(ending) in seen: return false
@@ -293,6 +304,7 @@ func _load_save() -> void:
 	for stats: Dictionary in extra_stats.values():
 		stats.wins = int(stats.wins)
 		stats.losses = int(stats.losses)
+		if stats.has("last_ending"): stats.last_ending = int(stats.last_ending)
 		for i: int in stats.endings.size(): stats.endings[i] = int(stats.endings[i])
 	episode = int(data.get("episode",1))
 	channel = int(data.channel)
@@ -306,6 +318,7 @@ func _load_save() -> void:
 			var stats: Dictionary = stats_for(number)
 			stats.wins = int(data[key].wins)
 			stats.losses = int(data[key].losses)
+			if data[key].has("last_ending"): stats.last_ending = int(data[key].last_ending)
 			stats.endings = data[key].endings.duplicate()
 			for i: int in stats.endings.size(): stats.endings[i] = int(stats.endings[i])
 	result_recorded = data.get("result_recorded",false)

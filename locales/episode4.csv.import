@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://db5b47psrp2n3"
+
+[deps]
+
+files=["res://locales/episode4.ru.translation", "res://locales/episode4.en.translation"]
+
+source_file="res://locales/episode4.csv"
+dest_files=["res://locales/episode4.ru.translation", "res://locales/episode4.en.translation"]
+
+[params]
+
+compress=0
+delimiter=0
+unescape_keys=false
+unescape_translations=false

@@ -26,9 +26,10 @@ var pose_updates := 0
 static func catalog() -> Dictionary:
  if data.is_empty():
   data={"fps":19,"art":{}}
-  for episode: int in [1,2,3]:
-   var path: String="res://data/episode%d_animations.json" % episode
-   if not FileAccess.file_exists(path):continue
+  for filename: String in DirAccess.get_files_at("res://data"):
+   if not filename.begins_with("episode") or not filename.ends_with("_animations.json") or filename.ends_with("_text_animations.json") or filename.ends_with("_ui_animations.json"):continue
+   var episode: int=int(filename.get_slice("_",0).trim_prefix("episode"))
+   var path: String="res://data/"+filename
    var source: Dictionary=JSON.parse_string(FileAccess.get_file_as_string(path))
    for art: String in source.art:
     var entry: Dictionary=source.art[art].duplicate(true)
@@ -153,9 +154,9 @@ static func normalized_caption(text: String) -> String:
 
 func bind_caption(label: Label, alias: String = "", decoration: Control = null) -> void:
  if caption_data.is_empty():
-  for episode: int in [1,2,3]:
-   var path: String="res://data/episode%d_text_animations.json" % episode
-   if FileAccess.file_exists(path):caption_data.merge(JSON.parse_string(FileAccess.get_file_as_string(path)))
+  for filename: String in DirAccess.get_files_at("res://data"):
+   if filename.begins_with("episode") and filename.ends_with("_text_animations.json"):
+    caption_data.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/"+filename)))
  if not caption_data.has(art_name):return
  var text: String=normalized_caption(label.text if alias.is_empty() else alias)
  if not caption_data[art_name].anchors.has(text) and alias.is_empty():

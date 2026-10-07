@@ -1,0 +1,2546 @@
+{
+  "starts": [
+    "e4_camp_1_v1",
+    "e4_church_1_v1",
+    "e4_army_1_v1"
+  ],
+  "results": {
+    "e4_result_79": {
+      "start": "e4_camp_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    "e4_result_81": {
+      "start": "e4_camp_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "e4_result_80": {
+      "start": "e4_camp_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0
+      ]
+    },
+    "e4_result_104": {
+      "start": "e4_church_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "e4_result_103": {
+      "start": "e4_church_1_v1",
+      "choices": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "e4_result_92": {
+      "start": "e4_camp_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "e4_result_85": {
+      "start": "e4_camp_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    "e4_result_110": {
+      "start": "e4_church_1_v1",
+      "choices": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "e4_result_111": {
+      "start": "e4_church_1_v1",
+      "choices": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        2,
+        0
+      ]
+    },
+    "e4_result_109": {
+      "start": "e4_camp_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "e4_result_93": {
+      "start": "e4_camp_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    "e4_result_113": {
+      "start": "e4_camp_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "e4_result_86": {
+      "start": "e4_camp_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    "e4_result_82": {
+      "start": "e4_camp_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "e4_result_87": {
+      "start": "e4_camp_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0
+      ]
+    },
+    "e4_result_88": {
+      "start": "e4_camp_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    "e4_result_89": {
+      "start": "e4_camp_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    "e4_result_83": {
+      "start": "e4_camp_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "e4_result_90": {
+      "start": "e4_camp_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "e4_result_91": {
+      "start": "e4_camp_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "e4_result_84": {
+      "start": "e4_church_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "e4_result_95": {
+      "start": "e4_church_1_v1",
+      "choices": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ]
+    },
+    "e4_result_94": {
+      "start": "e4_camp_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "e4_result_96": {
+      "start": "e4_church_1_v1",
+      "choices": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "e4_result_106": {
+      "start": "e4_camp_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "e4_result_97": {
+      "start": "e4_camp_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    "e4_result_107": {
+      "start": "e4_church_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "e4_result_105": {
+      "start": "e4_church_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "e4_result_108": {
+      "start": "e4_camp_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    "e4_result_98": {
+      "start": "e4_camp_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "e4_result_99": {
+      "start": "e4_camp_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "e4_result_101": {
+      "start": "e4_camp_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    "e4_result_112": {
+      "start": "e4_church_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "e4_result_102": {
+      "start": "e4_camp_1_v1",
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    }
+  },
+  "states": {
+    "e4_camp_1_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_1_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_army_1_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_camp_2_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_2_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_army_2_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_camp_3_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_2_v1_choice_39": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_camp_3_v1_choice_31": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_5_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_3_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_camp_4_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_camp_5_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_camp_10_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_6_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_4_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_camp_4_v1_choice_32": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_camp_6_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_pickup_flashbang": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_pickup_remington": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_7_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_4_v2_choice_40": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_camp_14_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_camp_7_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_camp_8_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_result_79": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_camp_11_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_camp_12_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_7_v1_choice_41": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_5_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_10_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_result_81": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_camp_13_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_camp_9_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_camp_13_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_result_80": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_8_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_8_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_6_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_11_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_alone_1_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_1_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_alone_1_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_result_104": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_9_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_result_103": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_11_v2_choice_43": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_result_92": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_alone_3_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_2_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_alone_4_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_alone_2_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_1_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_12_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_14_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_13_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_result_85": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_3_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_alone_4_v2_choice_35": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_matt_0": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_2_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_result_110": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_15_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_result_111": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_4_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_6_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_11_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_alone_17_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_alone_5_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_matt_1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_matt_2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_matt_3": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_3_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_16_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_5_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_7_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_pickup_knife": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_result_109": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 10
+      }
+    ],
+    "e4_result_93": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_result_113": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_matt_4": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_matt_5": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_pickup_deagle": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 10
+      }
+    ],
+    "e4_result_86": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_matt_8": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_matt_10": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_4_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_11_v3": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_11_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_16_v2_choice_44": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_result_82": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_7_v1_choice_33": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_12_v1": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_matt_13": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_matt_14": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_matt_17": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_alone_4_v3": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 10
+      }
+    ],
+    "e4_dialogue_matt_25": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_result_87": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_5_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_12_v3": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_12_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_17_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_alone_4_v5": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_9_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_8_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_12_v1_choice_34": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_matt_40": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_result_88": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_matt_52": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_alone_4_v3_choice_35": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 10
+      }
+    ],
+    "e4_result_89": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_14_v3": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_12_v2_choice_34": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_church_18_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_alone_17_v5": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_result_83": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_10_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_13_v1": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_14_v1": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_result_90": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_alone_17_v3": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 10
+      }
+    ],
+    "e4_alone_5_v3": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 10
+      }
+    ],
+    "e4_jeep_15_v3": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_13_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_14_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_alone_9_v4": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_16_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_0": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_15_v1": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_alone_6_v3": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 10
+      }
+    ],
+    "e4_result_91": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 10
+      }
+    ],
+    "e4_result_84": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_15_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_alone_11_v4": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jeep_17_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_1": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_2": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_3": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_alone_7_v3": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 10
+      }
+    ],
+    "e4_alone_12_v4": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_result_95": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 10
+      }
+    ],
+    "e4_dialogue_victor_0": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_4": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_5": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_6": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_7": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_8": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_9": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_10": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_11": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_12": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_alone_8_v3": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 10
+      }
+    ],
+    "e4_alone_13_v4": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_victor_1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_victor_2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_13": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_14": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jess_2_v2": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_17": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_19": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_20": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_22": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_23": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_24": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_25": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_26": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_28": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_29": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_32": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_35": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_37": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_38": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_alone_8_v3_choice_36": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 10
+      }
+    ],
+    "e4_alone_14_v4": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_harlem_1_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_victor_5": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_victor_7": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_victor_8": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jess_1_v1": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_44": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jess_3_v2": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_53": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_59": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jess_2_v3": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_68": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_71": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_73": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_74": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_76": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_77": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_86": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_alone_10_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 10
+      }
+    ],
+    "e4_alone_9_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 10
+      }
+    ],
+    "e4_alone_9_v3": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 10
+      }
+    ],
+    "e4_alone_15_v4": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_harlem_2_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_pickup_army_knife": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_victor_22": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_victor_26": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jess_1_v1_choice_42": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jess_4_v2": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_179": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jess_3_v3": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_233": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_jess_260": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_result_94": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 10
+      }
+    ],
+    "e4_alone_16_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 10
+      }
+    ],
+    "e4_alone_11_v3": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 10
+      }
+    ],
+    "e4_result_96": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 10
+      }
+    ],
+    "e4_harlem_2_v1_choice_37": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_harlem_1_v2": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_victor_67": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_dialogue_victor_68": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_jess_5_v1": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_result_106": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_result_97": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 10
+      }
+    ],
+    "e4_alone_12_v3": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 10
+      }
+    ],
+    "e4_result_107": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_result_105": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_harlem_3_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_harlem_6_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_harlem_2_v2": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_pickup_mark23": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 12
+      }
+    ],
+    "e4_jess_6_v1": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_alone_13_v3": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 10
+      }
+    ],
+    "e4_harlem_4_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_harlem_6_v1_choice_38": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_harlem_2_v2_choice_37": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_harlem_1_v3": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 12
+      }
+    ],
+    "e4_result_108": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_alone_14_v3": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 10
+      }
+    ],
+    "e4_jess_7_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_harlem_5_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 12
+      }
+    ],
+    "e4_harlem_8_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_harlem_7_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_harlem_3_v2": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_harlem_6_v2": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_harlem_2_v3": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 12
+      }
+    ],
+    "e4_alone_15_v3": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 10
+      }
+    ],
+    "e4_exp_1_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_result_98": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 12
+      }
+    ],
+    "e4_result_99": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      },
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 12
+      }
+    ],
+    "e4_harlem_9_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_harlem_4_v2": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_harlem_6_v2_choice_38": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_harlem_2_v3_choice_37": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 12
+      }
+    ],
+    "e4_exp_2_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_harlem_5_v2": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_harlem_8_v2": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_harlem_7_v2": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_harlem_3_v3": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 12
+      }
+    ],
+    "e4_harlem_6_v3": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 12
+      }
+    ],
+    "e4_exp_3_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_result_101": [
+      {
+        "TakenKnife": true,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_harlem_4_v3": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 12
+      }
+    ],
+    "e4_harlem_6_v3_choice_38": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 12
+      }
+    ],
+    "e4_exp_4_v1": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_harlem_8_v3": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 12
+      }
+    ],
+    "e4_harlem_7_v3": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 12
+      }
+    ],
+    "e4_result_112": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": -1
+      }
+    ],
+    "e4_result_102": [
+      {
+        "TakenKnife": false,
+        "BulletsNumber": 12
+      }
+    ]
+  }
+}
