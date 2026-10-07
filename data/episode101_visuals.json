@@ -158,5 +158,222 @@
     ],
     "offset_y": 30,
     "photo": ""
+  },
+  "john2_1": {
+    "symbol": 10312,
+    "frame": 0,
+    "overrides": {
+      "Mov": 9
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john2_2": {
+    "symbol": 10312,
+    "frame": 1,
+    "overrides": {
+      "Mov": 9
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john2_3": {
+    "symbol": 10312,
+    "frame": 2,
+    "overrides": {
+      "Mov": 0
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john2_4": {
+    "symbol": 10312,
+    "frame": 3,
+    "overrides": {
+      "Mov": 0
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john2_5": {
+    "symbol": 10312,
+    "frame": 4,
+    "overrides": {
+      "Mov": 14
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john2_6": {
+    "symbol": 10312,
+    "frame": 5,
+    "overrides": {
+      "Mov": 6
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john2_7": {
+    "symbol": 10312,
+    "frame": 6,
+    "overrides": {
+      "Mov": 5
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john2_8": {
+    "symbol": 10312,
+    "frame": 7,
+    "overrides": {
+      "Mov": 0
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john2_9": {
+    "symbol": 10312,
+    "frame": 8,
+    "overrides": {
+      "Mov": 9
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john2_10": {
+    "symbol": 10312,
+    "frame": 9,
+    "overrides": {
+      "Mov": 19
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john2_11": {
+    "symbol": 10312,
+    "frame": 10,
+    "overrides": {
+      "Mov": 7
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john2_12": {
+    "symbol": 10312,
+    "frame": 11,
+    "overrides": {
+      "Mov": 15
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john2_13": {
+    "symbol": 10312,
+    "frame": 12,
+    "overrides": {
+      "Mov": 39
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john2_14": {
+    "symbol": 10312,
+    "frame": 13,
+    "overrides": {
+      "Mov": 15
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john2_15": {
+    "symbol": 10312,
+    "frame": 14,
+    "overrides": {
+      "Mov": 22
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john2_16": {
+    "symbol": 10312,
+    "frame": 15,
+    "overrides": {
+      "Mov": 15
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john2_pickup_laser_item": {
+    "symbol": 10177,
+    "frame": 0,
+    "overrides": {
+      "Weapons": 2,
+      "ButExit": 1
+    },
+    "hide": [
+      "Txt"
+    ],
+    "offset_y": 30,
+    "photo": ""
+  },
+  "john2_8_departure": {
+    "symbol": 10312,
+    "frame": 7,
+    "overrides": {
+      "Mov": 8
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
   }
 }

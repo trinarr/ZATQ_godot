@@ -332,7 +332,30 @@ func _read(path: String) -> Variant:
 	var parser := JSON.new()
 	if parser.parse(FileAccess.get_file_as_string(path)) != OK:
 		return null
-	return parser.data
+	return _migrate_episode_aliases(parser.data)
+
+func _migrate_episode_aliases(data: Variant) -> Variant:
+	if not data is Dictionary: return data
+	for number: int in episode_metadata:
+		for old_number: int in episode_metadata[number].get("legacy_episodes",[]):
+			if data.get("episode") == old_number: data.episode = number
+			var stats: Variant = data.get("extra_stats",{})
+			if not stats is Dictionary or not stats.has(str(old_number)): continue
+			var allowed: Array = []
+			for node: Dictionary in nodes.values():
+				if int(node.get("episode",1)) == number and node.get("alive",false): allowed.append(int(node.get("ending_id",node.get("result_id",0))))
+			var previous: Variant = stats[str(old_number)]
+			var combined: Variant = stats.get(str(number),{"wins":0,"losses":0,"endings":[]})
+			if not _valid_stats(previous,allowed) or not _valid_stats(combined,allowed): continue
+			combined = combined.duplicate(true)
+			combined.wins += previous.wins
+			combined.losses += previous.losses
+			for ending: Variant in previous.endings:
+				if ending not in combined.endings: combined.endings.append(ending)
+			if previous.has("last_ending"): combined.last_ending = previous.last_ending
+			stats[str(number)] = combined
+			stats.erase(str(old_number))
+	return data
 
 func _load_save() -> void:
 	var data: Variant = _read(save_path)

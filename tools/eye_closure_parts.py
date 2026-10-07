@@ -2,14 +2,15 @@
 from PIL import Image
 SHARED_TEXTURE='shared_components/eye_lid.png'
 def eye_part(source,transform):
- side='upper' if source.endswith('/Symbol 327') else 'lower' if source.endswith('/Symbol 325') else None
+ side='upper' if source.endswith(('/Symbol 327','/Symbol 10373')) else 'lower' if source.endswith(('/Symbol 325','/Symbol 10371')) else None
  if side is None:return None
  a,b,c,d,x,y=transform
  if (a,b,c,d)!=(1,0,0,1):raise ValueError('Eyelid needs translation-only source matrix')
  return {'type':'texture','texture':SHARED_TEXTURE,'rect':[x-1,y-260.95 if side=='upper' else y,802,433],'source':source,'eye_lid':side}
 def export_texture(library,root):
  dest=root/'assets/flash_ui'/SHARED_TEXTURE;dest.parent.mkdir(parents=True,exist_ok=True)
- with Image.open(library/'Bitmap 323.png') as source:
+ bitmap='Bitmap 323.png' if (library/'Bitmap 323.png').exists() else 'Bitmap 10369.png'
+ with Image.open(library/bitmap) as source:
   im=source.convert('RGBA')
   # One opaque row beyond the source bounds covers the 0.05 px Flash offset
   # at the fully closed pose; keep the soft edge pixels unchanged.

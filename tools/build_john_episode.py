@@ -1,7 +1,7 @@
 """Recover both John web-story parts from the actual SWF, never the stale bundled XFL.
 Usage: python tools/build_john_episode.py SOURCE.zip --ffdec /path/to/ffdec.jar
 Requires Java/JPEXS, Inkscape and the existing component-export dependencies.
-Numbers 101/102 reserve the bonus story without occupying main-story Episode VI.
+The two source parts are exported separately, then unified as bonus episode 101.
 """
 import argparse,csv,json,re,subprocess,tempfile,zipfile
 from pathlib import Path
@@ -147,6 +147,53 @@ def selectors():
  for art,frame in [('john2_6',6),('john2_7',5)]:tracks['art'][art]['input_ready_frame']=frame
  animation_path.write_text(json.dumps(tracks,separators=(',',':'))+'\n')
 
+def unify():
+ """Publish both source timelines as one playable, localized bonus episode."""
+ def read(path):return json.loads((ROOT/path).read_text())
+ def write(path,value):
+  compact=Path(path).name in ['episode101_animations.json','episode101_text_animations.json','episode101_highlights.json']
+  (ROOT/path).write_text(json.dumps(value,ensure_ascii=False,**({'separators':(',',':')} if compact else {'indent':2}))+'\n')
+ def remap(value):
+  if isinstance(value,str):return value.replace('@loc:episode102.','@loc:episode101.')
+  if isinstance(value,list):return [remap(v) for v in value]
+  if isinstance(value,dict):return {k:remap(v) for k,v in value.items()}
+  return value
+ graph=read('data/story_graphs/episode101.json');second=remap(read('data/story_graphs/episode102.json'))
+ for node in second['nodes'].values():
+  if 'episode' in node.get('data',{}):node['data']['episode']=101
+ graph['nodes'].update(second['nodes']);graph['edges'].extend(second['edges'])
+ graph['legacy_episodes']=[102]
+ graph['nodes']['john1_11']['data'].pop('unfinished',None)
+ key='episode101.nodes.john1_11__choice_0.data.text'
+ graph['nodes']['john1_11__choice_0']={'type':'choice','data':{'text':'@loc:'+key,'rect':[70,0,730,480]},'position':[1970,0],'title':'@loc:'+key}
+ graph['edges'].extend([{'from':'john1_11','port':'choice:0','to':'john1_11__choice_0'},{'from':'john1_11__choice_0','port':'next','to':'john2_1'}])
+ write('data/story_graphs/episode101.json',graph)
+ rows={}
+ for ep in [101,102]:
+  with (ROOT/f'locales/episode{ep}.csv').open(newline='') as f:
+   for row in list(csv.reader(f))[1:]:
+    k=row[0].replace('episode102.','episode101.')
+    if ep==102 and k in rows:continue
+    rows[k]=row[1:]
+ rows['episode101.title']=['ВЕБ-ЭПИЗОД 1. ДЖОН',''];rows['episode101.description']=['История Джона Доннатона: события на базе Терри и побег.',''];rows[key]=['Далее','']
+ with (ROOT/'locales/episode101.csv').open('w',newline='') as f:
+  w=csv.writer(f,lineterminator='\n');w.writerow(['key','ru','en']);w.writerows([k,*v] for k,v in sorted(rows.items()))
+ # OptimizedTranslation cannot enumerate keys; Localization builds its fallback
+ # tables by enumeration, including in Android exports without source CSV.
+ (ROOT/'locales/episode101.csv.import').write_text('[remap]\n\nimporter="csv_translation"\ntype="Translation"\nuid="uid://csds3ebackt2k"\n\n[deps]\n\nfiles=["res://locales/episode101.ru.translation", "res://locales/episode101.en.translation"]\nsource_file="res://locales/episode101.csv"\ndest_files=["res://locales/episode101.ru.translation", "res://locales/episode101.en.translation"]\n\n[params]\n\ncompress=0\ndelimiter=0\nunescape_keys=false\nunescape_translations=true\n')
+ for path in sorted((ROOT/'data').glob('episode102_*.json')):
+  target=path.with_name(path.name.replace('episode102_','episode101_'));first=json.loads(target.read_text());second=json.loads(path.read_text())
+  if path.name=='episode102_animations.json':
+   for group in ['art','audit']:first[group].update(second[group])
+  elif path.name.endswith('_highlights.json'):
+   for group in ['regions','masks']:first[group].update(second[group])
+  else:first.update(second)
+  first.pop('john_selector_102',None)
+  write(target.relative_to(ROOT),first);path.unlink()
+ texts=read('data/ui_text_layout.json');texts.pop('john_selector_102',None);write('data/ui_text_layout.json',texts)
+ for name in ['data/story_graphs/episode102.json','locales/episode102.csv','locales/episode102.csv.import','locales/episode102.ru.translation','locales/episode102.en.translation']:
+  (ROOT/name).unlink(missing_ok=True)
+
 if __name__=='__main__':
  p=argparse.ArgumentParser(description=__doc__);p.add_argument('archive',type=Path);p.add_argument('--ffdec',type=Path,required=True);a=p.parse_args()
  with tempfile.TemporaryDirectory() as td:
@@ -160,3 +207,4 @@ if __name__=='__main__':
   for ep in [101,102]:components(archive,ROOT,episode=ep)
   animations(archive,episodes=(101,102))
   selectors()
+  unify()

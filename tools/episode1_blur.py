@@ -2,6 +2,8 @@
 import copy
 from render_flash_ui import NS
 BLUR_BITMAPS = {
+ # John web story uses the same soft eyelids with a separately painted blur.
+ 'Bitmap 10367.png': ('Bitmap 10374.png',2.5,2.5,0.),
  'Bitmap 1776.png': ('Bitmap 1781.png',2.5,2.5,0.),
  'Bitmap 1891.png': ('Bitmap 1893.png',2.5,2.5,0.),
  'Bitmap 2454.png': ('Bitmap 2460.png',10.1,.6,0.),

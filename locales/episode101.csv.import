@@ -13,7 +13,7 @@ dest_files=["res://locales/episode101.ru.translation"]
 
 [params]
 
-compress=1
+compress=0
 delimiter=0
 unescape_keys=false
 unescape_translations=true
