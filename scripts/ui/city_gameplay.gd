@@ -23,7 +23,8 @@ static func draw(ui: Control, node: Dictionary) -> void:
 	if node.get("input_after_intro",false) and is_instance_valid(ui.viewport_canvas.episode_timeline) and ui.viewport_canvas.episode_timeline.playing:
 		var origin: String = Quest.current_id
 		ui.world_layer.set_meta("episode_animation_block",true)
-		ui.viewport_canvas.episode_timeline.finished.connect(func():
+		var ready_signal: Signal = ui.viewport_canvas.episode_timeline.input_ready if ui.viewport_canvas.episode_timeline.spec.has("input_ready_frame") else ui.viewport_canvas.episode_timeline.finished
+		ready_signal.connect(func():
 			if Quest.current_id==origin and is_instance_valid(ui.world_layer):ui.world_layer.remove_meta("episode_animation_block"),CONNECT_ONE_SHOT)
 	var controls: Control
 	if node.has("controls_art"):
@@ -59,7 +60,7 @@ static func draw(ui: Control, node: Dictionary) -> void:
 			if "Hist" in block.get("path", ""):
 				options.band_host = ui.screen
 				options.band_rect = Rect2(-ui.screen.position.x/ui.screen.scale.x,maxf(0,b[1]-6)*2,ui.viewport_canvas.safe_layer.size.x/ui.screen.scale.x,(b[3]+12)*2)
-			if b[1] < 128 and b[0] < 70:
+			if b[1] < 128 and b[0] < 70 and not block.has("font_file"):
 				b[2] -= 70 - b[0]
 				b[0] = 70
 			var block_font: Font = ui.BODY_FONT
@@ -67,6 +68,10 @@ static func draw(ui: Control, node: Dictionary) -> void:
 				block_font = load("res://fonts/flash/font_2508.ttf")
 			elif block.font == "B52 Regular":
 				block_font = load("res://fonts/flash/font_2511.ttf")
+			if block.has("font_file"):
+				block_font = load(block.font_file)
+			for key: String in ["minimum","padding","line_spacing","wrap"]:
+				if block.has(key): options[key] = block[key]
 			options.font = block_font
 			var label: Label = ui._narrative_text(block.text,Rect2(b[0],b[1],b[2],b[3]),int(block.size),options)
 			ui._bind_episode_caption(label,ui.narrative_layer.band_for(label) if Quest.episode>1 else null)

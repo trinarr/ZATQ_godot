@@ -203,6 +203,7 @@ func choose(index: int) -> void:
 	if index < 0 or index >= choices.size():
 		return
 	var choice: Dictionary = choices[index]
+	if choice.get("disabled",false): return
 	if choice.get("action", "") == "channel":
 		next_channel()
 		return

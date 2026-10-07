@@ -1,0 +1,1067 @@
+{
+  "john1_1": [
+    {
+      "type": "panel",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "color": [
+        0.00392156862745098,
+        0.027450980392156862,
+        0.09019607843137255,
+        1.0
+      ],
+      "source": "Mov/Symbol 10313",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode101_components/part_9a6b534b029d21202c98.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        40.0
+      ],
+      "source": "Mov/Symbol 10313",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode101_components/part_a137e47766ecd33dfb94.png",
+      "rect": [
+        761.5,
+        76.0,
+        24.5,
+        329.0
+      ],
+      "source": "Mov/Symbol 10317",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        0,
+        0,
+        800,
+        1
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        0,
+        479,
+        800,
+        1
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        0,
+        0,
+        1,
+        480
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        799,
+        0,
+        1,
+        480
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        0,
+        39,
+        800,
+        1
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        0,
+        443,
+        800,
+        1
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        757,
+        48,
+        31,
+        1
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        757,
+        433,
+        31,
+        1
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        757,
+        48,
+        1,
+        386
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        787,
+        48,
+        1,
+        386
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          765,
+          65
+        ],
+        [
+          773,
+          57
+        ],
+        [
+          781,
+          65
+        ],
+        [
+          780,
+          66
+        ],
+        [
+          773,
+          59
+        ],
+        [
+          766,
+          66
+        ]
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          765,
+          416
+        ],
+        [
+          773,
+          424
+        ],
+        [
+          781,
+          416
+        ],
+        [
+          780,
+          415
+        ],
+        [
+          773,
+          422
+        ],
+        [
+          766,
+          415
+        ]
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    }
+  ],
+  "john1_2": [
+    {
+      "type": "panel",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "color": [
+        0.00392156862745098,
+        0.027450980392156862,
+        0.09019607843137255,
+        1.0
+      ],
+      "source": "Mov/Symbol 10313",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode101_components/part_9a6b534b029d21202c98.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        40.0
+      ],
+      "source": "Mov/Symbol 10313",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode101_components/part_a137e47766ecd33dfb94.png",
+      "rect": [
+        761.5,
+        76.0,
+        24.5,
+        329.0
+      ],
+      "source": "Mov/Symbol 10317",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        0,
+        0,
+        800,
+        1
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        0,
+        479,
+        800,
+        1
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        0,
+        0,
+        1,
+        480
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        799,
+        0,
+        1,
+        480
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        0,
+        39,
+        800,
+        1
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        0,
+        443,
+        800,
+        1
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        757,
+        48,
+        31,
+        1
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        757,
+        433,
+        31,
+        1
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        757,
+        48,
+        1,
+        386
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        787,
+        48,
+        1,
+        386
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          765,
+          65
+        ],
+        [
+          773,
+          57
+        ],
+        [
+          781,
+          65
+        ],
+        [
+          780,
+          66
+        ],
+        [
+          773,
+          59
+        ],
+        [
+          766,
+          66
+        ]
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          765,
+          416
+        ],
+        [
+          773,
+          424
+        ],
+        [
+          781,
+          416
+        ],
+        [
+          780,
+          415
+        ],
+        [
+          773,
+          422
+        ],
+        [
+          766,
+          415
+        ]
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    }
+  ],
+  "john1_3": [
+    {
+      "type": "panel",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "color": [
+        0.00392156862745098,
+        0.027450980392156862,
+        0.09019607843137255,
+        1.0
+      ],
+      "source": "Mov/Symbol 10313",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode101_components/part_9a6b534b029d21202c98.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        40.0
+      ],
+      "source": "Mov/Symbol 10313",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode101_components/part_a137e47766ecd33dfb94.png",
+      "rect": [
+        761.5,
+        76.0,
+        24.5,
+        329.0
+      ],
+      "source": "Mov/Symbol 10317",
+      "layer": "background"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        0,
+        0,
+        800,
+        1
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        0,
+        479,
+        800,
+        1
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        0,
+        0,
+        1,
+        480
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        799,
+        0,
+        1,
+        480
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        0,
+        39,
+        800,
+        1
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        0,
+        443,
+        800,
+        1
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        757,
+        48,
+        31,
+        1
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        757,
+        433,
+        31,
+        1
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        757,
+        48,
+        1,
+        386
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        787,
+        48,
+        1,
+        386
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          765,
+          65
+        ],
+        [
+          773,
+          57
+        ],
+        [
+          781,
+          65
+        ],
+        [
+          780,
+          66
+        ],
+        [
+          773,
+          59
+        ],
+        [
+          766,
+          66
+        ]
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          765,
+          416
+        ],
+        [
+          773,
+          424
+        ],
+        [
+          781,
+          416
+        ],
+        [
+          780,
+          415
+        ],
+        [
+          773,
+          422
+        ],
+        [
+          766,
+          415
+        ]
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": "JohnConsoleStroke",
+      "layer": "foreground"
+    }
+  ],
+  "john1_7": [
+    {
+      "type": "texture",
+      "texture": "episode101_components/part_64b6848447fd39198b32.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 10350",
+      "layer": "background"
+    }
+  ],
+  "john1_9": [
+    {
+      "type": "texture",
+      "texture": "episode101_components/part_f5dabaa56526538cca78.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 10360",
+      "layer": "background"
+    }
+  ],
+  "john1_dialogue_alex": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_93463c4c703deffab8d6.png",
+      "rect": [
+        63.0,
+        0.0,
+        711.0,
+        471.0
+      ],
+      "source": "/Symbol 10165",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode101_components/part_9d52f6ae02fbbc4ca0bf.png",
+      "rect": [
+        619.5,
+        55.5,
+        113.0,
+        149.0
+      ],
+      "source": "Ava/Symbol 10162",
+      "layer": "background"
+    }
+  ],
+  "john1_pickup_note_item": [
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_172085922d7d44dd15b3.png",
+      "rect": [
+        51.0,
+        30.0,
+        707.0,
+        394.0
+      ],
+      "source": "/Symbol 10168",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_bc68d77e23a7b55342b7.png",
+      "rect": [
+        75.5,
+        56.0,
+        642.5,
+        47.5
+      ],
+      "source": "/Symbol 10168",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode101_components/part_a68b3aeab948267da9d3.png",
+      "rect": [
+        172.0,
+        132.0,
+        456.0,
+        205.0
+      ],
+      "source": "Weapons/Symbol 10174",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode101_components/part_f8612bc050a0a146a7ab.png",
+      "rect": [
+        655.0,
+        323.0,
+        74.0,
+        74.0
+      ],
+      "source": "ButExit/Symbol 10031",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode101_components/part_1a9637c47b64cefb0321.png",
+      "rect": [
+        680.0,
+        345.0,
+        27.0,
+        23.0
+      ],
+      "source": "/Symbol 10177",
+      "layer": "background"
+    }
+  ],
+  "john_selector_101": [
+    {
+      "texture": "components/part_709d3c3e8144ae6368cf.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Symbol 211/Layer 12",
+      "layer": "background",
+      "type": "texture"
+    },
+    {
+      "texture": "components/part_41ba67bdf954e7cf80a9.png",
+      "rect": [
+        657.0,
+        367.0,
+        24.0,
+        24.0
+      ],
+      "source": "Symbol 211/Symbol 10",
+      "layer": "foreground",
+      "type": "texture"
+    },
+    {
+      "texture": "episode101_components/part_a45bb9bbb09399c7d78f.png",
+      "rect": [
+        122.0,
+        153.0,
+        295.0,
+        118.0
+      ],
+      "source": "Symbol 211/EpImg",
+      "layer": "foreground",
+      "type": "texture"
+    },
+    {
+      "texture": "components/part_027d2a498ce88bdf70af.png",
+      "rect": [
+        681.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But2",
+      "layer": "foreground",
+      "type": "texture"
+    },
+    {
+      "texture": "components/part_9aa906bece3845f60e7d.png",
+      "rect": [
+        103.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But1",
+      "layer": "foreground",
+      "type": "texture"
+    },
+    {
+      "texture": "components/stat_skull.png",
+      "rect": [
+        482.0,
+        161.0,
+        14.0,
+        19.0
+      ],
+      "source": "Symbol 211/RightOpt/skull",
+      "layer": "foreground",
+      "style": "statistics_icon",
+      "type": "texture"
+    },
+    {
+      "texture": "components/stat_tick.png",
+      "rect": [
+        568.0,
+        162.0,
+        15.0,
+        18.0
+      ],
+      "source": "Symbol 211/RightOpt/tick",
+      "layer": "foreground",
+      "style": "statistics_icon",
+      "type": "texture"
+    }
+  ]
+}

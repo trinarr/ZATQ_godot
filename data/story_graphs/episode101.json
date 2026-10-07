@@ -1,0 +1,1001 @@
+{
+  "version": 1,
+  "episode": 101,
+  "start": "john1_1",
+  "nodes": {
+    "john1_1": {
+      "type": "scene",
+      "data": {
+        "episode": 101,
+        "source": "Web Episode1 frame 1",
+        "kind": "city_story",
+        "art": "john1_1",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode101.nodes.john1_1.data.blocks.0.text",
+            "rect": [
+              22,
+              54,
+              715,
+              385
+            ],
+            "size": 19,
+            "font": "Lucida Console",
+            "path": "ConsoleReport",
+            "line_spacing": -4,
+            "padding": 0,
+            "minimum": 19,
+            "font_file": "res://fonts/flash/john_console.ttf",
+            "wrap": false
+          },
+          {
+            "text": "@loc:episode101.nodes.john1_1.data.blocks.1.text",
+            "rect": [
+              13.75,
+              9.3,
+              220,
+              30
+            ],
+            "size": 22,
+            "font": "Lucida Console",
+            "path": "ConsoleHeading",
+            "padding": 0,
+            "minimum": 22,
+            "font_file": "res://fonts/flash/john_console.ttf",
+            "wrap": false
+          },
+          {
+            "text": "@loc:episode101.nodes.john1_1.data.blocks.2.text",
+            "rect": [
+              171.55,
+              454,
+              623,
+              22
+            ],
+            "size": 15,
+            "font": "Lucida Console",
+            "path": "ConsoleFooter",
+            "padding": 0,
+            "minimum": 15,
+            "font_file": "res://fonts/flash/john_console.ttf",
+            "wrap": false
+          }
+        ],
+        "text": "@loc:episode101.nodes.john1_1.data.text",
+        "sound": "john_NewMessage"
+      },
+      "position": [
+        0,
+        0
+      ],
+      "title": "@loc:episode101.nodes.john1_1.title"
+    },
+    "john1_1__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode101.nodes.john1_1__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        420,
+        0
+      ],
+      "title": "@loc:episode101.nodes.john1_1__choice_0.title"
+    },
+    "john1_2": {
+      "type": "scene",
+      "data": {
+        "episode": 101,
+        "source": "Web Episode1 frame 2",
+        "kind": "city_story",
+        "art": "john1_2",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode101.nodes.john1_2.data.blocks.0.text",
+            "rect": [
+              22,
+              54,
+              715,
+              385
+            ],
+            "size": 19,
+            "font": "Lucida Console",
+            "path": "ConsoleReport",
+            "line_spacing": -4,
+            "padding": 0,
+            "minimum": 19,
+            "font_file": "res://fonts/flash/john_console.ttf",
+            "wrap": false
+          },
+          {
+            "text": "@loc:episode101.nodes.john1_2.data.blocks.1.text",
+            "rect": [
+              13.75,
+              9.3,
+              220,
+              30
+            ],
+            "size": 22,
+            "font": "Lucida Console",
+            "path": "ConsoleHeading",
+            "padding": 0,
+            "minimum": 22,
+            "font_file": "res://fonts/flash/john_console.ttf",
+            "wrap": false
+          },
+          {
+            "text": "@loc:episode101.nodes.john1_2.data.blocks.2.text",
+            "rect": [
+              171.55,
+              454,
+              623,
+              22
+            ],
+            "size": 15,
+            "font": "Lucida Console",
+            "path": "ConsoleFooter",
+            "padding": 0,
+            "minimum": 15,
+            "font_file": "res://fonts/flash/john_console.ttf",
+            "wrap": false
+          }
+        ],
+        "text": "@loc:episode101.nodes.john1_2.data.text",
+        "sound": "john_NewMessage"
+      },
+      "position": [
+        0,
+        460
+      ],
+      "title": "@loc:episode101.nodes.john1_2.title"
+    },
+    "john1_2__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode101.nodes.john1_2__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        420,
+        460
+      ],
+      "title": "@loc:episode101.nodes.john1_2__choice_0.title"
+    },
+    "john1_3": {
+      "type": "scene",
+      "data": {
+        "episode": 101,
+        "source": "Web Episode1 frame 3",
+        "kind": "city_story",
+        "art": "john1_3",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode101.nodes.john1_3.data.blocks.0.text",
+            "rect": [
+              22,
+              54,
+              715,
+              385
+            ],
+            "size": 19,
+            "font": "Lucida Console",
+            "path": "ConsoleReport",
+            "line_spacing": -4,
+            "padding": 0,
+            "minimum": 19,
+            "font_file": "res://fonts/flash/john_console.ttf",
+            "wrap": false
+          },
+          {
+            "text": "@loc:episode101.nodes.john1_3.data.blocks.1.text",
+            "rect": [
+              13.75,
+              9.3,
+              220,
+              30
+            ],
+            "size": 22,
+            "font": "Lucida Console",
+            "path": "ConsoleHeading",
+            "padding": 0,
+            "minimum": 22,
+            "font_file": "res://fonts/flash/john_console.ttf",
+            "wrap": false
+          },
+          {
+            "text": "@loc:episode101.nodes.john1_3.data.blocks.2.text",
+            "rect": [
+              171.55,
+              454,
+              623,
+              22
+            ],
+            "size": 15,
+            "font": "Lucida Console",
+            "path": "ConsoleFooter",
+            "padding": 0,
+            "minimum": 15,
+            "font_file": "res://fonts/flash/john_console.ttf",
+            "wrap": false
+          }
+        ],
+        "text": "@loc:episode101.nodes.john1_3.data.text",
+        "sound": "john_NewMessage"
+      },
+      "position": [
+        0,
+        920
+      ],
+      "title": "@loc:episode101.nodes.john1_3.title"
+    },
+    "john1_3__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode101.nodes.john1_3__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        420,
+        920
+      ],
+      "title": "@loc:episode101.nodes.john1_3__choice_0.title"
+    },
+    "john1_4": {
+      "type": "scene",
+      "data": {
+        "episode": 101,
+        "source": "Web Episode1 frame 4",
+        "kind": "city_story",
+        "art": "john1_4",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode101.nodes.john1_4.data.blocks.0.text",
+            "rect": [
+              11.0,
+              6.7,
+              769.0,
+              141.4
+            ],
+            "font": "GraffitiC1 Medium",
+            "size": 26,
+            "path": "Mov.Hist"
+          }
+        ],
+        "text": "@loc:episode101.nodes.john1_4.data.text",
+        "sound": "john_MouseSquick"
+      },
+      "position": [
+        0,
+        1380
+      ],
+      "title": "@loc:episode101.nodes.john1_4.title"
+    },
+    "john1_4__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode101.nodes.john1_4__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        420,
+        1380
+      ],
+      "title": "@loc:episode101.nodes.john1_4__choice_0.title"
+    },
+    "john1_5": {
+      "type": "scene",
+      "data": {
+        "episode": 101,
+        "source": "Web Episode1 frame 5",
+        "kind": "city_story",
+        "art": "john1_5",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode101.nodes.john1_5.data.blocks.0.text",
+            "rect": [
+              11.0,
+              368.7,
+              769.0,
+              111.30000000000001
+            ],
+            "font": "GraffitiC1 Medium",
+            "size": 26,
+            "path": "Mov.Hist"
+          }
+        ],
+        "text": "@loc:episode101.nodes.john1_5.data.text"
+      },
+      "position": [
+        0,
+        1840
+      ],
+      "title": "@loc:episode101.nodes.john1_5.title"
+    },
+    "john1_5__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode101.nodes.john1_5__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        420,
+        1840
+      ],
+      "title": "@loc:episode101.nodes.john1_5__choice_0.title"
+    },
+    "john1_6": {
+      "type": "scene",
+      "data": {
+        "episode": 101,
+        "source": "Web Episode1 frame 6",
+        "kind": "city_story",
+        "art": "john1_6",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode101.nodes.john1_6.data.blocks.0.text",
+            "rect": [
+              11.0,
+              343.7,
+              769.0,
+              136.3
+            ],
+            "font": "GraffitiC1 Medium",
+            "size": 26,
+            "path": "Mov.Hist"
+          }
+        ],
+        "text": "@loc:episode101.nodes.john1_6.data.text"
+      },
+      "position": [
+        0,
+        2300
+      ],
+      "title": "@loc:episode101.nodes.john1_6.title"
+    },
+    "john1_6__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode101.nodes.john1_6__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        420,
+        2300
+      ],
+      "title": "@loc:episode101.nodes.john1_6__choice_0.title"
+    },
+    "john1_7": {
+      "type": "scene",
+      "data": {
+        "episode": 101,
+        "source": "Web Episode1 frame 7",
+        "kind": "city_story",
+        "art": "john1_7",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode101.nodes.john1_7.data.blocks.0.text",
+            "rect": [
+              11.0,
+              343.7,
+              769.0,
+              136.3
+            ],
+            "font": "GraffitiC1 Medium",
+            "size": 26,
+            "path": "Mov.Hist"
+          }
+        ],
+        "text": "@loc:episode101.nodes.john1_7.data.text"
+      },
+      "position": [
+        0,
+        2760
+      ],
+      "title": "@loc:episode101.nodes.john1_7.title"
+    },
+    "john1_7__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode101.nodes.john1_7__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        420,
+        2760
+      ],
+      "title": "@loc:episode101.nodes.john1_7__choice_0.title"
+    },
+    "john1_8": {
+      "type": "scene",
+      "data": {
+        "episode": 101,
+        "source": "Web Episode1 frame 8",
+        "kind": "city_story",
+        "art": "john1_8",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode101.nodes.john1_8.data.blocks.0.text",
+            "rect": [
+              11.0,
+              366.7,
+              769.0,
+              113.30000000000001
+            ],
+            "font": "GraffitiC1 Medium",
+            "size": 26,
+            "path": "Mov.Hist"
+          }
+        ],
+        "text": "@loc:episode101.nodes.john1_8.data.text"
+      },
+      "position": [
+        0,
+        3220
+      ],
+      "title": "@loc:episode101.nodes.john1_8.title"
+    },
+    "john1_8__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode101.nodes.john1_8__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        420,
+        3220
+      ],
+      "title": "@loc:episode101.nodes.john1_8__choice_0.title"
+    },
+    "john1_9": {
+      "type": "scene",
+      "data": {
+        "episode": 101,
+        "source": "Web Episode1 frame 9",
+        "kind": "city_story",
+        "art": "john1_9",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode101.nodes.john1_9.data.blocks.0.text",
+            "rect": [
+              11.0,
+              6.7,
+              769.0,
+              141.4
+            ],
+            "font": "GraffitiC1 Medium",
+            "size": 26,
+            "path": "Mov.Hist"
+          }
+        ],
+        "text": "@loc:episode101.nodes.john1_9.data.text"
+      },
+      "position": [
+        0,
+        3680
+      ],
+      "title": "@loc:episode101.nodes.john1_9.title"
+    },
+    "john1_9__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode101.nodes.john1_9__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        420,
+        3680
+      ],
+      "title": "@loc:episode101.nodes.john1_9__choice_0.title"
+    },
+    "john1_10": {
+      "type": "scene",
+      "data": {
+        "episode": 101,
+        "source": "Web Episode1 frame 10",
+        "kind": "city_story",
+        "art": "john1_10",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode101.nodes.john1_10.data.blocks.0.text",
+            "rect": [
+              29.0,
+              162.0,
+              751.0,
+              169.05
+            ],
+            "font": "GraffitiC1 Medium",
+            "size": 26,
+            "path": "Mov.Hist"
+          }
+        ],
+        "text": "@loc:episode101.nodes.john1_10.data.text"
+      },
+      "position": [
+        0,
+        4140
+      ],
+      "title": "@loc:episode101.nodes.john1_10.title"
+    },
+    "john1_10__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode101.nodes.john1_10__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        420,
+        4140
+      ],
+      "title": "@loc:episode101.nodes.john1_10__choice_0.title"
+    },
+    "john1_11": {
+      "type": "scene",
+      "data": {
+        "episode": 101,
+        "source": "Web Episode1 frame 11",
+        "kind": "city_story",
+        "art": "john1_11",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode101.nodes.john1_11.data.blocks.0.text",
+            "rect": [
+              11.0,
+              342.7,
+              769.0,
+              137.3
+            ],
+            "font": "GraffitiC1 Medium",
+            "size": 26,
+            "path": "Mov.Hist"
+          }
+        ],
+        "text": "@loc:episode101.nodes.john1_11.data.text",
+        "unfinished": true
+      },
+      "position": [
+        1550,
+        0
+      ],
+      "title": "@loc:episode101.nodes.john1_11.title"
+    },
+    "john1_7_choice": {
+      "type": "scene",
+      "data": {
+        "episode": 101,
+        "source": "Web NewItem(1)",
+        "kind": "city_decision",
+        "art": "john1_7",
+        "clean_background": true,
+        "text": "@loc:episode101.nodes.john1_7_choice.data.text"
+      },
+      "position": [
+        1550,
+        460
+      ],
+      "title": "@loc:episode101.nodes.john1_7_choice.title"
+    },
+    "john1_7_choice__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode101.nodes.john1_7_choice__choice_0.data.text",
+        "unfinished": true
+      },
+      "position": [
+        1970,
+        460
+      ],
+      "title": "@loc:episode101.nodes.john1_7_choice__choice_0.title"
+    },
+    "john1_7_choice__choice_1": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode101.nodes.john1_7_choice__choice_1.data.text"
+      },
+      "position": [
+        1970,
+        600
+      ],
+      "title": "@loc:episode101.nodes.john1_7_choice__choice_1.title"
+    },
+    "john1_7_choice__choice_2": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode101.nodes.john1_7_choice__choice_2.data.text",
+        "unfinished": true
+      },
+      "position": [
+        1970,
+        740
+      ],
+      "title": "@loc:episode101.nodes.john1_7_choice__choice_2.title"
+    },
+    "john1_pickup_note": {
+      "type": "scene",
+      "data": {
+        "episode": 101,
+        "source": "Web AddItem(1)",
+        "kind": "city_pickup",
+        "art": "john1_pickup_note_item",
+        "background_art": "john1_9",
+        "text": "@loc:episode101.nodes.john1_pickup_note.data.text",
+        "sound": "john_TakeMessage"
+      },
+      "position": [
+        1550,
+        920
+      ],
+      "title": "@loc:episode101.nodes.john1_pickup_note.title"
+    },
+    "john1_pickup_note__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode101.nodes.john1_pickup_note__choice_0.data.text"
+      },
+      "position": [
+        1970,
+        920
+      ],
+      "title": "@loc:episode101.nodes.john1_pickup_note__choice_0.title"
+    },
+    "john1_alex_0": {
+      "type": "dialogue",
+      "data": {
+        "episode": 101,
+        "source": "Web DialogMov(1) DlgArr[0], only answer 1 enabled",
+        "kind": "activity_dialogue",
+        "original_ui": true,
+        "art": "john1_dialogue_alex",
+        "speaker": "@loc:episode101.nodes.john1_alex_0.data.speaker",
+        "text": "@loc:episode101.nodes.john1_alex_0.data.text"
+      },
+      "position": [
+        1550,
+        1380
+      ],
+      "title": "@loc:episode101.nodes.john1_alex_0.title"
+    },
+    "john1_alex_0__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode101.nodes.john1_alex_0__choice_0.data.text",
+        "disabled": false
+      },
+      "position": [
+        1970,
+        1380
+      ],
+      "title": "@loc:episode101.nodes.john1_alex_0__choice_0.title"
+    },
+    "john1_alex_0__choice_1": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode101.nodes.john1_alex_0__choice_1.data.text",
+        "disabled": true
+      },
+      "position": [
+        1970,
+        1520
+      ],
+      "title": "@loc:episode101.nodes.john1_alex_0__choice_1.title"
+    },
+    "john1_alex_0__choice_2": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode101.nodes.john1_alex_0__choice_2.data.text",
+        "disabled": true
+      },
+      "position": [
+        1970,
+        1660
+      ],
+      "title": "@loc:episode101.nodes.john1_alex_0__choice_2.title"
+    },
+    "john1_alex_1": {
+      "type": "dialogue",
+      "data": {
+        "episode": 101,
+        "source": "Web DialogMov(1) DlgArr[1], only answer 2 enabled",
+        "kind": "activity_dialogue",
+        "original_ui": true,
+        "art": "john1_dialogue_alex",
+        "speaker": "@loc:episode101.nodes.john1_alex_1.data.speaker",
+        "text": "@loc:episode101.nodes.john1_alex_1.data.text"
+      },
+      "position": [
+        1550,
+        1840
+      ],
+      "title": "@loc:episode101.nodes.john1_alex_1.title"
+    },
+    "john1_alex_1__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode101.nodes.john1_alex_1__choice_0.data.text",
+        "disabled": true
+      },
+      "position": [
+        1970,
+        1840
+      ],
+      "title": "@loc:episode101.nodes.john1_alex_1__choice_0.title"
+    },
+    "john1_alex_1__choice_1": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode101.nodes.john1_alex_1__choice_1.data.text",
+        "disabled": false
+      },
+      "position": [
+        1970,
+        1980
+      ],
+      "title": "@loc:episode101.nodes.john1_alex_1__choice_1.title"
+    }
+  },
+  "edges": [
+    {
+      "from": "john1_1",
+      "port": "choice:0",
+      "to": "john1_1__choice_0"
+    },
+    {
+      "from": "john1_1__choice_0",
+      "port": "next",
+      "to": "john1_2"
+    },
+    {
+      "from": "john1_2",
+      "port": "choice:0",
+      "to": "john1_2__choice_0"
+    },
+    {
+      "from": "john1_2__choice_0",
+      "port": "next",
+      "to": "john1_3"
+    },
+    {
+      "from": "john1_3",
+      "port": "choice:0",
+      "to": "john1_3__choice_0"
+    },
+    {
+      "from": "john1_3__choice_0",
+      "port": "next",
+      "to": "john1_4"
+    },
+    {
+      "from": "john1_4",
+      "port": "choice:0",
+      "to": "john1_4__choice_0"
+    },
+    {
+      "from": "john1_4__choice_0",
+      "port": "next",
+      "to": "john1_5"
+    },
+    {
+      "from": "john1_5",
+      "port": "choice:0",
+      "to": "john1_5__choice_0"
+    },
+    {
+      "from": "john1_5__choice_0",
+      "port": "next",
+      "to": "john1_6"
+    },
+    {
+      "from": "john1_6",
+      "port": "choice:0",
+      "to": "john1_6__choice_0"
+    },
+    {
+      "from": "john1_6__choice_0",
+      "port": "next",
+      "to": "john1_7"
+    },
+    {
+      "from": "john1_7",
+      "port": "choice:0",
+      "to": "john1_7__choice_0"
+    },
+    {
+      "from": "john1_7__choice_0",
+      "port": "next",
+      "to": "john1_7_choice"
+    },
+    {
+      "from": "john1_8",
+      "port": "choice:0",
+      "to": "john1_8__choice_0"
+    },
+    {
+      "from": "john1_8__choice_0",
+      "port": "next",
+      "to": "john1_alex_0"
+    },
+    {
+      "from": "john1_9",
+      "port": "choice:0",
+      "to": "john1_9__choice_0"
+    },
+    {
+      "from": "john1_9__choice_0",
+      "port": "next",
+      "to": "john1_10"
+    },
+    {
+      "from": "john1_10",
+      "port": "choice:0",
+      "to": "john1_10__choice_0"
+    },
+    {
+      "from": "john1_10__choice_0",
+      "port": "next",
+      "to": "john1_11"
+    },
+    {
+      "from": "john1_7_choice",
+      "port": "back",
+      "to": "john1_7"
+    },
+    {
+      "from": "john1_7_choice",
+      "port": "choice:0",
+      "to": "john1_7_choice__choice_0"
+    },
+    {
+      "from": "john1_7_choice__choice_0",
+      "port": "next",
+      "to": "john1_7"
+    },
+    {
+      "from": "john1_7_choice",
+      "port": "choice:1",
+      "to": "john1_7_choice__choice_1"
+    },
+    {
+      "from": "john1_7_choice__choice_1",
+      "port": "next",
+      "to": "john1_8"
+    },
+    {
+      "from": "john1_7_choice",
+      "port": "choice:2",
+      "to": "john1_7_choice__choice_2"
+    },
+    {
+      "from": "john1_7_choice__choice_2",
+      "port": "next",
+      "to": "john1_7"
+    },
+    {
+      "from": "john1_pickup_note",
+      "port": "choice:0",
+      "to": "john1_pickup_note__choice_0"
+    },
+    {
+      "from": "john1_pickup_note__choice_0",
+      "port": "next",
+      "to": "john1_9"
+    },
+    {
+      "from": "john1_alex_0",
+      "port": "choice:0",
+      "to": "john1_alex_0__choice_0"
+    },
+    {
+      "from": "john1_alex_0__choice_0",
+      "port": "next",
+      "to": "john1_alex_1"
+    },
+    {
+      "from": "john1_alex_0",
+      "port": "choice:1",
+      "to": "john1_alex_0__choice_1"
+    },
+    {
+      "from": "john1_alex_0__choice_1",
+      "port": "next",
+      "to": "john1_alex_0"
+    },
+    {
+      "from": "john1_alex_0",
+      "port": "choice:2",
+      "to": "john1_alex_0__choice_2"
+    },
+    {
+      "from": "john1_alex_0__choice_2",
+      "port": "next",
+      "to": "john1_alex_0"
+    },
+    {
+      "from": "john1_alex_1",
+      "port": "choice:0",
+      "to": "john1_alex_1__choice_0"
+    },
+    {
+      "from": "john1_alex_1__choice_0",
+      "port": "next",
+      "to": "john1_alex_1"
+    },
+    {
+      "from": "john1_alex_1",
+      "port": "choice:1",
+      "to": "john1_alex_1__choice_1"
+    },
+    {
+      "from": "john1_alex_1__choice_1",
+      "port": "next",
+      "to": "john1_pickup_note"
+    }
+  ],
+  "title": "@loc:episode101.title",
+  "description": "@loc:episode101.description",
+  "variables": {
+    "BulletsNumber": -1
+  },
+  "bonus": true,
+  "source_fps": 19,
+  "selector_art": "john_selector_101"
+}

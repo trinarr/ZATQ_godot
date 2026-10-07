@@ -6,6 +6,15 @@ const QTE_PROMPT := preload("res://scripts/ui/qte_prompt.gd")
 static func draw(parent: Control, parts: Array, layer: String = "") -> void:
  for part: Dictionary in parts:
   if not layer.is_empty() and part.get("layer","background") != layer: continue
+  if part.type == "polygon":
+   var polygon := Polygon2D.new()
+   var points := PackedVector2Array()
+   for point: Array in part.points: points.append(Vector2(point[0],point[1])*2)
+   polygon.polygon = points
+   var color: Array = part.color
+   polygon.color = Color(color[0],color[1],color[2],color[3])
+   parent.add_child(polygon)
+   continue
   if part.type == "highlight":
    var glow := HIGHLIGHT.new()
    glow.configure(part)

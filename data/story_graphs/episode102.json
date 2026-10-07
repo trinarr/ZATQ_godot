@@ -1,0 +1,1319 @@
+{
+  "version": 1,
+  "episode": 102,
+  "start": "john2_1",
+  "nodes": {
+    "john2_1": {
+      "type": "scene",
+      "data": {
+        "episode": 102,
+        "source": "Web Episode2 frame 1",
+        "kind": "city_story",
+        "art": "john2_1",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode102.nodes.john2_1.data.blocks.0.text",
+            "rect": [
+              -28.8,
+              379.0,
+              793.7,
+              66.4
+            ],
+            "font": "GraffitiC1 Medium",
+            "size": 30,
+            "path": "Mov"
+          }
+        ],
+        "text": "@loc:episode102.nodes.john2_1.data.text",
+        "sound": "john_PromtingLetters"
+      },
+      "position": [
+        0,
+        0
+      ],
+      "title": "@loc:episode102.nodes.john2_1.title"
+    },
+    "john2_1__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_1__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        420,
+        0
+      ],
+      "title": "@loc:episode102.nodes.john2_1__choice_0.title"
+    },
+    "john2_2": {
+      "type": "scene",
+      "data": {
+        "episode": 102,
+        "source": "Web Episode2 frame 2",
+        "kind": "city_story",
+        "art": "john2_2",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode102.nodes.john2_2.data.blocks.0.text",
+            "rect": [
+              20.0,
+              110.0,
+              471.7,
+              279.55
+            ],
+            "font": "GraffitiC1 Medium",
+            "size": 26,
+            "path": "Mov.Hist"
+          }
+        ],
+        "text": "@loc:episode102.nodes.john2_2.data.text"
+      },
+      "position": [
+        0,
+        460
+      ],
+      "title": "@loc:episode102.nodes.john2_2.title"
+    },
+    "john2_2__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_2__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        420,
+        460
+      ],
+      "title": "@loc:episode102.nodes.john2_2__choice_0.title"
+    },
+    "john2_3": {
+      "type": "scene",
+      "data": {
+        "episode": 102,
+        "source": "Web Episode2 frame 3",
+        "kind": "city_story",
+        "art": "john2_3",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode102.nodes.john2_3.data.blocks.0.text",
+            "rect": [
+              11.0,
+              6.7,
+              769.0,
+              141.4
+            ],
+            "font": "GraffitiC1 Medium",
+            "size": 26,
+            "path": "Mov.Hist"
+          }
+        ],
+        "text": "@loc:episode102.nodes.john2_3.data.text"
+      },
+      "position": [
+        0,
+        920
+      ],
+      "title": "@loc:episode102.nodes.john2_3.title"
+    },
+    "john2_3__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_3__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        420,
+        920
+      ],
+      "title": "@loc:episode102.nodes.john2_3__choice_0.title"
+    },
+    "john2_4": {
+      "type": "scene",
+      "data": {
+        "episode": 102,
+        "source": "Web Episode2 frame 4",
+        "kind": "city_story",
+        "art": "john2_4",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode102.nodes.john2_4.data.blocks.0.text",
+            "rect": [
+              11.0,
+              6.7,
+              769.0,
+              141.4
+            ],
+            "font": "GraffitiC1 Medium",
+            "size": 26,
+            "path": "Mov.Hist"
+          }
+        ],
+        "text": "@loc:episode102.nodes.john2_4.data.text"
+      },
+      "position": [
+        0,
+        1380
+      ],
+      "title": "@loc:episode102.nodes.john2_4.title"
+    },
+    "john2_4__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_4__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        420,
+        1380
+      ],
+      "title": "@loc:episode102.nodes.john2_4__choice_0.title"
+    },
+    "john2_5": {
+      "type": "scene",
+      "data": {
+        "episode": 102,
+        "source": "Web Episode2 frame 5",
+        "kind": "city_story",
+        "art": "john2_5",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode102.nodes.john2_5.data.blocks.0.text",
+            "rect": [
+              11.0,
+              341.7,
+              769.0,
+              138.3
+            ],
+            "font": "GraffitiC1 Medium",
+            "size": 26,
+            "path": "Mov.Hist"
+          }
+        ],
+        "text": "@loc:episode102.nodes.john2_5.data.text"
+      },
+      "position": [
+        0,
+        1840
+      ],
+      "title": "@loc:episode102.nodes.john2_5.title"
+    },
+    "john2_5__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_5__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        420,
+        1840
+      ],
+      "title": "@loc:episode102.nodes.john2_5__choice_0.title"
+    },
+    "john2_6": {
+      "type": "scene",
+      "data": {
+        "episode": 102,
+        "source": "Web Episode2 frame 6",
+        "kind": "city_story",
+        "art": "john2_6",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode102.nodes.john2_6.data.blocks.0.text",
+            "rect": [
+              27.0,
+              49.0,
+              11.0,
+              27.0
+            ],
+            "font": "GraffitiC1 Medium",
+            "size": 25,
+            "path": "Mov.Numb"
+          }
+        ],
+        "text": "@loc:episode102.nodes.john2_6.data.text",
+        "input_after_intro": true
+      },
+      "position": [
+        0,
+        2300
+      ],
+      "title": "@loc:episode102.nodes.john2_6.title"
+    },
+    "john2_6__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_6__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        420,
+        2300
+      ],
+      "title": "@loc:episode102.nodes.john2_6__choice_0.title"
+    },
+    "john2_7": {
+      "type": "scene",
+      "data": {
+        "episode": 102,
+        "source": "Web Episode2 frame 7",
+        "kind": "city_story",
+        "art": "john2_7",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode102.nodes.john2_7.data.blocks.0.text",
+            "rect": [
+              61.0,
+              162.0,
+              719.0,
+              169.05
+            ],
+            "font": "GraffitiC1 Medium",
+            "size": 26,
+            "path": "Mov.Hist"
+          }
+        ],
+        "text": "@loc:episode102.nodes.john2_7.data.text",
+        "input_after_intro": true,
+        "sound": "john_AlarmLoud"
+      },
+      "position": [
+        0,
+        2760
+      ],
+      "title": "@loc:episode102.nodes.john2_7.title"
+    },
+    "john2_7__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_7__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        420,
+        2760
+      ],
+      "title": "@loc:episode102.nodes.john2_7__choice_0.title"
+    },
+    "john2_8": {
+      "type": "scene",
+      "data": {
+        "episode": 102,
+        "source": "Web Episode2 frame 8",
+        "kind": "city_story",
+        "art": "john2_8",
+        "clean_background": true,
+        "blocks": [],
+        "text": "",
+        "sound": "john_AlarmSilent"
+      },
+      "position": [
+        0,
+        3220
+      ],
+      "title": "@loc:episode102.nodes.john2_8.title"
+    },
+    "john2_8__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_8__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        420,
+        3220
+      ],
+      "title": "@loc:episode102.nodes.john2_8__choice_0.title"
+    },
+    "john2_9": {
+      "type": "scene",
+      "data": {
+        "episode": 102,
+        "source": "Web Episode2 frame 9",
+        "kind": "city_story",
+        "art": "john2_9",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode102.nodes.john2_9.data.blocks.0.text",
+            "rect": [
+              -28.8,
+              379.0,
+              793.7,
+              66.4
+            ],
+            "font": "GraffitiC1 Medium",
+            "size": 30,
+            "path": "Mov"
+          }
+        ],
+        "text": "@loc:episode102.nodes.john2_9.data.text",
+        "sound": "john_PromtingLetters"
+      },
+      "position": [
+        0,
+        3680
+      ],
+      "title": "@loc:episode102.nodes.john2_9.title"
+    },
+    "john2_9__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_9__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        420,
+        3680
+      ],
+      "title": "@loc:episode102.nodes.john2_9__choice_0.title"
+    },
+    "john2_10": {
+      "type": "scene",
+      "data": {
+        "episode": 102,
+        "source": "Web Episode2 frame 10",
+        "kind": "city_story",
+        "art": "john2_10",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode102.nodes.john2_10.data.blocks.0.text",
+            "rect": [
+              11.0,
+              6.7,
+              769.0,
+              141.4
+            ],
+            "font": "GraffitiC1 Medium",
+            "size": 26,
+            "path": "Mov.Hist"
+          }
+        ],
+        "text": "@loc:episode102.nodes.john2_10.data.text",
+        "sound": "john_LiftBaseCLose"
+      },
+      "position": [
+        0,
+        4140
+      ],
+      "title": "@loc:episode102.nodes.john2_10.title"
+    },
+    "john2_10__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_10__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        420,
+        4140
+      ],
+      "title": "@loc:episode102.nodes.john2_10__choice_0.title"
+    },
+    "john2_11": {
+      "type": "scene",
+      "data": {
+        "episode": 102,
+        "source": "Web Episode2 frame 11",
+        "kind": "city_story",
+        "art": "john2_11",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode102.nodes.john2_11.data.blocks.0.text",
+            "rect": [
+              11.0,
+              344.7,
+              769.0,
+              135.3
+            ],
+            "font": "GraffitiC1 Medium",
+            "size": 26,
+            "path": "Mov.Hist"
+          }
+        ],
+        "text": "@loc:episode102.nodes.john2_11.data.text",
+        "sound": "john_ChaosAnimals1"
+      },
+      "position": [
+        1550,
+        0
+      ],
+      "title": "@loc:episode102.nodes.john2_11.title"
+    },
+    "john2_11__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_11__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        1970,
+        0
+      ],
+      "title": "@loc:episode102.nodes.john2_11__choice_0.title"
+    },
+    "john2_12": {
+      "type": "scene",
+      "data": {
+        "episode": 102,
+        "source": "Web Episode2 frame 12",
+        "kind": "city_story",
+        "art": "john2_12",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode102.nodes.john2_12.data.blocks.0.text",
+            "rect": [
+              11.0,
+              367.7,
+              769.0,
+              112.30000000000001
+            ],
+            "font": "GraffitiC1 Medium",
+            "size": 26,
+            "path": "Mov"
+          }
+        ],
+        "text": "@loc:episode102.nodes.john2_12.data.text"
+      },
+      "position": [
+        1550,
+        460
+      ],
+      "title": "@loc:episode102.nodes.john2_12.title"
+    },
+    "john2_12__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_12__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        1970,
+        460
+      ],
+      "title": "@loc:episode102.nodes.john2_12__choice_0.title"
+    },
+    "john2_13": {
+      "type": "scene",
+      "data": {
+        "episode": 102,
+        "source": "Web Episode2 frame 13",
+        "kind": "city_story",
+        "art": "john2_13",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode102.nodes.john2_13.data.blocks.0.text",
+            "rect": [
+              11.0,
+              6.7,
+              769.0,
+              141.4
+            ],
+            "font": "GraffitiC1 Medium",
+            "size": 26,
+            "path": "Mov.Hist"
+          }
+        ],
+        "text": "@loc:episode102.nodes.john2_13.data.text",
+        "sound": "john_WeaponAim"
+      },
+      "position": [
+        1550,
+        920
+      ],
+      "title": "@loc:episode102.nodes.john2_13.title"
+    },
+    "john2_13__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_13__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        1970,
+        920
+      ],
+      "title": "@loc:episode102.nodes.john2_13__choice_0.title"
+    },
+    "john2_14": {
+      "type": "scene",
+      "data": {
+        "episode": 102,
+        "source": "Web Episode2 frame 14",
+        "kind": "city_story",
+        "art": "john2_14",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode102.nodes.john2_14.data.blocks.0.text",
+            "rect": [
+              9.0,
+              343.7,
+              771.0,
+              136.3
+            ],
+            "font": "GraffitiC1 Medium",
+            "size": 26,
+            "path": "Mov"
+          }
+        ],
+        "text": "@loc:episode102.nodes.john2_14.data.text",
+        "sound": "john_ChaosAnimals2"
+      },
+      "position": [
+        1550,
+        1380
+      ],
+      "title": "@loc:episode102.nodes.john2_14.title"
+    },
+    "john2_14__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_14__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        1970,
+        1380
+      ],
+      "title": "@loc:episode102.nodes.john2_14__choice_0.title"
+    },
+    "john2_15": {
+      "type": "scene",
+      "data": {
+        "episode": 102,
+        "source": "Web Episode2 frame 15",
+        "kind": "city_story",
+        "art": "john2_15",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode102.nodes.john2_15.data.blocks.0.text",
+            "rect": [
+              9.0,
+              4.7,
+              771.0,
+              141.4
+            ],
+            "font": "GraffitiC1 Medium",
+            "size": 26,
+            "path": "Mov.Hist"
+          }
+        ],
+        "text": "@loc:episode102.nodes.john2_15.data.text",
+        "sound": "john_BreathingTrash"
+      },
+      "position": [
+        1550,
+        1840
+      ],
+      "title": "@loc:episode102.nodes.john2_15.title"
+    },
+    "john2_15__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_15__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        1970,
+        1840
+      ],
+      "title": "@loc:episode102.nodes.john2_15__choice_0.title"
+    },
+    "john2_16": {
+      "type": "scene",
+      "data": {
+        "episode": 102,
+        "source": "Web Episode2 frame 16",
+        "kind": "city_story",
+        "art": "john2_16",
+        "clean_background": true,
+        "blocks": [
+          {
+            "text": "@loc:episode102.nodes.john2_16.data.blocks.0.text",
+            "rect": [
+              11.0,
+              367.7,
+              769.0,
+              112.30000000000001
+            ],
+            "font": "GraffitiC1 Medium",
+            "size": 26,
+            "path": "Mov"
+          }
+        ],
+        "text": "@loc:episode102.nodes.john2_16.data.text"
+      },
+      "position": [
+        1550,
+        2300
+      ],
+      "title": "@loc:episode102.nodes.john2_16.title"
+    },
+    "john2_16__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_16__choice_0.data.text",
+        "rect": [
+          70,
+          0,
+          730,
+          480
+        ]
+      },
+      "position": [
+        1970,
+        2300
+      ],
+      "title": "@loc:episode102.nodes.john2_16__choice_0.title"
+    },
+    "john2_pickup_laser": {
+      "type": "scene",
+      "data": {
+        "episode": 102,
+        "source": "Web AddItem(2)",
+        "kind": "city_pickup",
+        "art": "john2_pickup_laser_item",
+        "background_art": "john2_4",
+        "text": "@loc:episode102.nodes.john2_pickup_laser.data.text",
+        "sound": "john_LaserTake"
+      },
+      "position": [
+        1550,
+        2760
+      ],
+      "title": "@loc:episode102.nodes.john2_pickup_laser.title"
+    },
+    "john2_pickup_laser__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_pickup_laser__choice_0.data.text"
+      },
+      "position": [
+        1970,
+        2760
+      ],
+      "title": "@loc:episode102.nodes.john2_pickup_laser__choice_0.title"
+    },
+    "john2_4_choice": {
+      "type": "scene",
+      "data": {
+        "episode": 102,
+        "source": "Web NewItem(2)",
+        "kind": "city_decision",
+        "art": "john2_4",
+        "clean_background": true,
+        "text": "@loc:episode102.nodes.john2_4_choice.data.text"
+      },
+      "position": [
+        1550,
+        3220
+      ],
+      "title": "@loc:episode102.nodes.john2_4_choice.title"
+    },
+    "john2_4_choice__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_4_choice__choice_0.data.text"
+      },
+      "position": [
+        1970,
+        3220
+      ],
+      "title": "@loc:episode102.nodes.john2_4_choice__choice_0.title"
+    },
+    "john2_4_choice__choice_1": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_4_choice__choice_1.data.text",
+        "unfinished": true
+      },
+      "position": [
+        1970,
+        3360
+      ],
+      "title": "@loc:episode102.nodes.john2_4_choice__choice_1.title"
+    },
+    "john2_4_choice__choice_2": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_4_choice__choice_2.data.text",
+        "unfinished": true
+      },
+      "position": [
+        1970,
+        3500
+      ],
+      "title": "@loc:episode102.nodes.john2_4_choice__choice_2.title"
+    },
+    "john2_7_choice": {
+      "type": "scene",
+      "data": {
+        "episode": 102,
+        "source": "Web NewItem(3)",
+        "kind": "city_decision",
+        "art": "john2_7",
+        "clean_background": true,
+        "text": "@loc:episode102.nodes.john2_7_choice.data.text"
+      },
+      "position": [
+        1550,
+        3680
+      ],
+      "title": "@loc:episode102.nodes.john2_7_choice.title"
+    },
+    "john2_7_choice__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_7_choice__choice_0.data.text",
+        "unfinished": true
+      },
+      "position": [
+        1970,
+        3680
+      ],
+      "title": "@loc:episode102.nodes.john2_7_choice__choice_0.title"
+    },
+    "john2_7_choice__choice_1": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_7_choice__choice_1.data.text"
+      },
+      "position": [
+        1970,
+        3820
+      ],
+      "title": "@loc:episode102.nodes.john2_7_choice__choice_1.title"
+    },
+    "john2_10_choice": {
+      "type": "scene",
+      "data": {
+        "episode": 102,
+        "source": "Web NewItem(4)",
+        "kind": "city_decision",
+        "art": "john2_10",
+        "clean_background": true,
+        "text": "@loc:episode102.nodes.john2_10_choice.data.text"
+      },
+      "position": [
+        1550,
+        4140
+      ],
+      "title": "@loc:episode102.nodes.john2_10_choice.title"
+    },
+    "john2_10_choice__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_10_choice__choice_0.data.text"
+      },
+      "position": [
+        1970,
+        4140
+      ],
+      "title": "@loc:episode102.nodes.john2_10_choice__choice_0.title"
+    },
+    "john2_10_choice__choice_1": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_10_choice__choice_1.data.text",
+        "unfinished": true
+      },
+      "position": [
+        1970,
+        4280
+      ],
+      "title": "@loc:episode102.nodes.john2_10_choice__choice_1.title"
+    },
+    "john2_11_choice": {
+      "type": "scene",
+      "data": {
+        "episode": 102,
+        "source": "Web NewItem(5)",
+        "kind": "city_decision",
+        "art": "john2_11",
+        "clean_background": true,
+        "text": "@loc:episode102.nodes.john2_11_choice.data.text"
+      },
+      "position": [
+        3100,
+        0
+      ],
+      "title": "@loc:episode102.nodes.john2_11_choice.title"
+    },
+    "john2_11_choice__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_11_choice__choice_0.data.text",
+        "unfinished": true
+      },
+      "position": [
+        3520,
+        0
+      ],
+      "title": "@loc:episode102.nodes.john2_11_choice__choice_0.title"
+    },
+    "john2_11_choice__choice_1": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_11_choice__choice_1.data.text"
+      },
+      "position": [
+        3520,
+        140
+      ],
+      "title": "@loc:episode102.nodes.john2_11_choice__choice_1.title"
+    },
+    "john2_11_choice__choice_2": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_11_choice__choice_2.data.text",
+        "unfinished": true
+      },
+      "position": [
+        3520,
+        280
+      ],
+      "title": "@loc:episode102.nodes.john2_11_choice__choice_2.title"
+    },
+    "john2_8_departure": {
+      "type": "scene",
+      "data": {
+        "episode": 102,
+        "source": "Web Episode2 frame 8 Mov.gotoAndPlay(2), End -> frame 9",
+        "kind": "city_cutscene",
+        "art": "john2_8_departure",
+        "clean_background": true,
+        "auto_seconds": 0.42105263157894735
+      },
+      "position": [
+        3100,
+        460
+      ],
+      "title": "@loc:episode102.nodes.john2_8_departure.title"
+    },
+    "john2_8_departure__choice_0": {
+      "type": "choice",
+      "data": {
+        "text": "@loc:episode102.nodes.john2_8_departure__choice_0.data.text"
+      },
+      "position": [
+        3520,
+        460
+      ],
+      "title": "@loc:episode102.nodes.john2_8_departure__choice_0.title"
+    },
+    "john2_result": {
+      "type": "scene",
+      "data": {
+        "episode": 102,
+        "source": "Web ResultBad(1), Summer(0): survived",
+        "kind": "city_ending",
+        "alive": true,
+        "result_id": 1,
+        "text": "@loc:episode102.nodes.john2_result.data.text",
+        "sound": "john_Ending"
+      },
+      "position": [
+        3100,
+        920
+      ],
+      "title": "@loc:episode102.nodes.john2_result.title"
+    }
+  },
+  "edges": [
+    {
+      "from": "john2_1",
+      "port": "choice:0",
+      "to": "john2_1__choice_0"
+    },
+    {
+      "from": "john2_1__choice_0",
+      "port": "next",
+      "to": "john2_2"
+    },
+    {
+      "from": "john2_2",
+      "port": "choice:0",
+      "to": "john2_2__choice_0"
+    },
+    {
+      "from": "john2_2__choice_0",
+      "port": "next",
+      "to": "john2_3"
+    },
+    {
+      "from": "john2_3",
+      "port": "choice:0",
+      "to": "john2_3__choice_0"
+    },
+    {
+      "from": "john2_3__choice_0",
+      "port": "next",
+      "to": "john2_pickup_laser"
+    },
+    {
+      "from": "john2_4",
+      "port": "choice:0",
+      "to": "john2_4__choice_0"
+    },
+    {
+      "from": "john2_4__choice_0",
+      "port": "next",
+      "to": "john2_4_choice"
+    },
+    {
+      "from": "john2_5",
+      "port": "choice:0",
+      "to": "john2_5__choice_0"
+    },
+    {
+      "from": "john2_5__choice_0",
+      "port": "next",
+      "to": "john2_6"
+    },
+    {
+      "from": "john2_6",
+      "port": "choice:0",
+      "to": "john2_6__choice_0"
+    },
+    {
+      "from": "john2_6__choice_0",
+      "port": "next",
+      "to": "john2_7"
+    },
+    {
+      "from": "john2_7",
+      "port": "choice:0",
+      "to": "john2_7__choice_0"
+    },
+    {
+      "from": "john2_7__choice_0",
+      "port": "next",
+      "to": "john2_7_choice"
+    },
+    {
+      "from": "john2_8",
+      "port": "choice:0",
+      "to": "john2_8__choice_0"
+    },
+    {
+      "from": "john2_8__choice_0",
+      "port": "next",
+      "to": "john2_8_departure"
+    },
+    {
+      "from": "john2_9",
+      "port": "choice:0",
+      "to": "john2_9__choice_0"
+    },
+    {
+      "from": "john2_9__choice_0",
+      "port": "next",
+      "to": "john2_10"
+    },
+    {
+      "from": "john2_10",
+      "port": "choice:0",
+      "to": "john2_10__choice_0"
+    },
+    {
+      "from": "john2_10__choice_0",
+      "port": "next",
+      "to": "john2_10_choice"
+    },
+    {
+      "from": "john2_11",
+      "port": "choice:0",
+      "to": "john2_11__choice_0"
+    },
+    {
+      "from": "john2_11__choice_0",
+      "port": "next",
+      "to": "john2_11_choice"
+    },
+    {
+      "from": "john2_12",
+      "port": "choice:0",
+      "to": "john2_12__choice_0"
+    },
+    {
+      "from": "john2_12__choice_0",
+      "port": "next",
+      "to": "john2_13"
+    },
+    {
+      "from": "john2_13",
+      "port": "choice:0",
+      "to": "john2_13__choice_0"
+    },
+    {
+      "from": "john2_13__choice_0",
+      "port": "next",
+      "to": "john2_14"
+    },
+    {
+      "from": "john2_14",
+      "port": "choice:0",
+      "to": "john2_14__choice_0"
+    },
+    {
+      "from": "john2_14__choice_0",
+      "port": "next",
+      "to": "john2_15"
+    },
+    {
+      "from": "john2_15",
+      "port": "choice:0",
+      "to": "john2_15__choice_0"
+    },
+    {
+      "from": "john2_15__choice_0",
+      "port": "next",
+      "to": "john2_16"
+    },
+    {
+      "from": "john2_16",
+      "port": "choice:0",
+      "to": "john2_16__choice_0"
+    },
+    {
+      "from": "john2_16__choice_0",
+      "port": "next",
+      "to": "john2_result"
+    },
+    {
+      "from": "john2_pickup_laser",
+      "port": "choice:0",
+      "to": "john2_pickup_laser__choice_0"
+    },
+    {
+      "from": "john2_pickup_laser__choice_0",
+      "port": "next",
+      "to": "john2_4"
+    },
+    {
+      "from": "john2_4_choice",
+      "port": "back",
+      "to": "john2_4"
+    },
+    {
+      "from": "john2_4_choice",
+      "port": "choice:0",
+      "to": "john2_4_choice__choice_0"
+    },
+    {
+      "from": "john2_4_choice__choice_0",
+      "port": "next",
+      "to": "john2_5"
+    },
+    {
+      "from": "john2_4_choice",
+      "port": "choice:1",
+      "to": "john2_4_choice__choice_1"
+    },
+    {
+      "from": "john2_4_choice__choice_1",
+      "port": "next",
+      "to": "john2_4"
+    },
+    {
+      "from": "john2_4_choice",
+      "port": "choice:2",
+      "to": "john2_4_choice__choice_2"
+    },
+    {
+      "from": "john2_4_choice__choice_2",
+      "port": "next",
+      "to": "john2_4"
+    },
+    {
+      "from": "john2_7_choice",
+      "port": "back",
+      "to": "john2_7"
+    },
+    {
+      "from": "john2_7_choice",
+      "port": "choice:0",
+      "to": "john2_7_choice__choice_0"
+    },
+    {
+      "from": "john2_7_choice__choice_0",
+      "port": "next",
+      "to": "john2_7"
+    },
+    {
+      "from": "john2_7_choice",
+      "port": "choice:1",
+      "to": "john2_7_choice__choice_1"
+    },
+    {
+      "from": "john2_7_choice__choice_1",
+      "port": "next",
+      "to": "john2_8"
+    },
+    {
+      "from": "john2_10_choice",
+      "port": "back",
+      "to": "john2_10"
+    },
+    {
+      "from": "john2_10_choice",
+      "port": "choice:0",
+      "to": "john2_10_choice__choice_0"
+    },
+    {
+      "from": "john2_10_choice__choice_0",
+      "port": "next",
+      "to": "john2_11"
+    },
+    {
+      "from": "john2_10_choice",
+      "port": "choice:1",
+      "to": "john2_10_choice__choice_1"
+    },
+    {
+      "from": "john2_10_choice__choice_1",
+      "port": "next",
+      "to": "john2_10"
+    },
+    {
+      "from": "john2_11_choice",
+      "port": "back",
+      "to": "john2_11"
+    },
+    {
+      "from": "john2_11_choice",
+      "port": "choice:0",
+      "to": "john2_11_choice__choice_0"
+    },
+    {
+      "from": "john2_11_choice__choice_0",
+      "port": "next",
+      "to": "john2_11"
+    },
+    {
+      "from": "john2_11_choice",
+      "port": "choice:1",
+      "to": "john2_11_choice__choice_1"
+    },
+    {
+      "from": "john2_11_choice__choice_1",
+      "port": "next",
+      "to": "john2_12"
+    },
+    {
+      "from": "john2_11_choice",
+      "port": "choice:2",
+      "to": "john2_11_choice__choice_2"
+    },
+    {
+      "from": "john2_11_choice__choice_2",
+      "port": "next",
+      "to": "john2_11"
+    },
+    {
+      "from": "john2_8_departure",
+      "port": "choice:0",
+      "to": "john2_8_departure__choice_0"
+    },
+    {
+      "from": "john2_8_departure__choice_0",
+      "port": "next",
+      "to": "john2_9"
+    }
+  ],
+  "title": "@loc:episode102.title",
+  "description": "@loc:episode102.description",
+  "variables": {
+    "BulletsNumber": -1
+  },
+  "bonus": true,
+  "source_fps": 19,
+  "selector_art": "john_selector_102"
+}

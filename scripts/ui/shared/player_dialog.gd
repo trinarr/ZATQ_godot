@@ -75,6 +75,8 @@ func build_speaker(data: Dictionary, choices: Array) -> void:
 			add_child(button)
 			button.position = Vector2(91,244+i*66)*2
 			button.configure(caption,true,answer_size,true)
+			button.disabled = choices[i].get("disabled",false)
+			button._update_state()
 			button.animate_flash_hover = true
 			button.pressed.connect(func(): choice_selected.emit(index))
 			choice_buttons.append(button)

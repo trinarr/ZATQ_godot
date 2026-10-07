@@ -56,8 +56,9 @@ func _ready() -> void:
 				entry.description = metadata.get("description",entry.description)
 				entry.episode = number
 				entry.available = true
+				entry.art = metadata.get("selector_art","")
 				found = true
-		if not found: selectors.append({"kind":"episodes","title":metadata.get("title",LOC.text("@loc:ui.main.1") + str(number)),"description":metadata.get("description",LOC.text("@loc:ui.main.2")),"frame":2,"questions":"","available":true,"episode":number})
+		if not found: selectors.append({"kind":"episodes","title":metadata.get("title",LOC.text("@loc:ui.main.1") + str(number)),"description":metadata.get("description",LOC.text("@loc:ui.main.2")),"frame":2,"questions":"","available":true,"episode":number,"art":metadata.get("selector_art","")})
 	add_child(music)
 	add_child(effects)
 	music.volume_db = -16
@@ -326,7 +327,7 @@ func _cycle_selector(direction: int) -> void:
 func _draw_selector(animate: bool = false) -> void:
 	_reset_screen()
 	var entry: Dictionary = LOC.resolve_tree(_selector_items()[selector_index])
-	_art("selector_%d" % int(entry.frame))
+	_art(entry.art if not str(entry.get("art","")).is_empty() else "selector_%d" % int(entry.frame))
 	_text(entry.title,Rect2(56,77,703,35),24,true,true)
 	var body_size: int = 21
 	while body_size > 13 and BODY_FONT.get_multiline_string_size(entry.description,HORIZONTAL_ALIGNMENT_LEFT,233,body_size).y > 99:

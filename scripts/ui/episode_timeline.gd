@@ -1,6 +1,7 @@
 extends Node2D
 # MovieClip keys are discrete at the original document rate, not invented tweens.
 signal finished
+signal input_ready
 static var data: Dictionary = {}
 const BLUR_CACHE := preload("res://scripts/ui/blur_texture_cache.gd")
 const EYE_CLOSURE := preload("res://scripts/ui/eye_closure.gd")
@@ -18,6 +19,7 @@ var frames: Array = []
 var elapsed := 0.0
 var current_frame := 0
 var playing := false
+var input_ready_emitted := false
 var suspended := false
 var phase := "intro"
 var applied_frame := -1
@@ -82,6 +84,7 @@ func configure(art: String) -> void:
  play("intro")
 func play(next_phase: String) -> void:
  applied_frame=-1
+ input_ready_emitted=false
  phase=next_phase;frames=_phase_frames(phase);elapsed=0;playing=true
  seek_frame(0)
 func _phase_frames(next_phase: String) -> Array:
@@ -101,6 +104,8 @@ func _phase_frames(next_phase: String) -> Array:
   closing.append(row)
  return closing
 func seek_frame(index: int, subframe: float = 0.0) -> void:
+ if phase=="intro" and not input_ready_emitted and spec.has("input_ready_frame") and index>=int(spec.input_ready_frame):
+  input_ready_emitted=true;input_ready.emit()
  var cycle: int=int(spec.get("intro_loop",0)) if phase=="intro" else 0
  if cycle>1 and index>=frames.size():
   index=frames.size()-cycle+(index-(frames.size()-cycle))%cycle

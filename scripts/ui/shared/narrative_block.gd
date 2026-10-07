@@ -48,7 +48,7 @@ func configure(host: Control, value: String, rect: Rect2, font: Font, font_size:
  label.add_theme_font_size_override("font_size",fitted*2)
  label.add_theme_color_override("font_color",Color("e1e1e1"))
  label.add_theme_constant_override("line_spacing",int(options.get("line_spacing",0)))
- label.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
+ label.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART if options.get("wrap",true) else TextServer.AUTOWRAP_OFF
  label.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER if options.get("center",false) else HORIZONTAL_ALIGNMENT_LEFT
  label.vertical_alignment=VERTICAL_ALIGNMENT_TOP
  label.clip_text=false

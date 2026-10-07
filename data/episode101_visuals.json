@@ -1,0 +1,162 @@
+{
+  "john1_1": {
+    "symbol": 10379,
+    "frame": 0,
+    "overrides": {
+      "Mov": 0
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john1_2": {
+    "symbol": 10379,
+    "frame": 1,
+    "overrides": {
+      "Mov": 0
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john1_3": {
+    "symbol": 10379,
+    "frame": 2,
+    "overrides": {
+      "Mov": 0
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john1_4": {
+    "symbol": 10379,
+    "frame": 3,
+    "overrides": {
+      "Mov": 14
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john1_5": {
+    "symbol": 10379,
+    "frame": 4,
+    "overrides": {
+      "Mov": 9
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john1_6": {
+    "symbol": 10379,
+    "frame": 5,
+    "overrides": {
+      "Mov": 19
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john1_7": {
+    "symbol": 10379,
+    "frame": 6,
+    "overrides": {
+      "Mov": 0
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john1_8": {
+    "symbol": 10379,
+    "frame": 7,
+    "overrides": {
+      "Mov": 6
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john1_9": {
+    "symbol": 10379,
+    "frame": 8,
+    "overrides": {
+      "Mov": 0
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john1_10": {
+    "symbol": 10379,
+    "frame": 9,
+    "overrides": {
+      "Mov": 6
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john1_11": {
+    "symbol": 10379,
+    "frame": 10,
+    "overrides": {
+      "Mov": 15
+    },
+    "hide": [
+      "Hist"
+    ],
+    "photo": "",
+    "omit_symbols": []
+  },
+  "john1_dialogue_alex": {
+    "symbol": 10165,
+    "frame": 1,
+    "overrides": {
+      "Ava": 1
+    },
+    "hide": [
+      "Txt",
+      "PrsnTxt",
+      "Dlg1",
+      "Dlg2",
+      "Dlg3"
+    ],
+    "photo": ""
+  },
+  "john1_pickup_note_item": {
+    "symbol": 10177,
+    "frame": 0,
+    "overrides": {
+      "Weapons": 1,
+      "ButExit": 1
+    },
+    "hide": [
+      "Txt"
+    ],
+    "offset_y": 30,
+    "photo": ""
+  }
+}

@@ -502,5 +502,37 @@
   "decision": [],
   "city_decision_3": [],
   "ep2_decision_4": [],
-  "ep2_continue_button": []
+  "ep2_continue_button": [],
+  "john_selector_101": [
+    {
+      "text": "@loc:ui.art.adaptive_selector_2.0",
+      "rect": [
+        374.95,
+        372.0,
+        75.0,
+        23.0
+      ],
+      "size": 22.75,
+      "rotation": 0.0,
+      "font": 1,
+      "alignment": "center",
+      "color": "#e1e1e1"
+    }
+  ],
+  "john_selector_102": [
+    {
+      "text": "@loc:ui.art.adaptive_selector_2.0",
+      "rect": [
+        374.95,
+        372.0,
+        75.0,
+        23.0
+      ],
+      "size": 22.75,
+      "rotation": 0.0,
+      "font": 1,
+      "alignment": "center",
+      "color": "#e1e1e1"
+    }
+  ]
 }

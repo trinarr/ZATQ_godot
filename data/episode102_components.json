@@ -1,0 +1,166 @@
+{
+  "john2_4": [
+    {
+      "type": "texture",
+      "texture": "episode102_components/part_eebe629c7bb1d727d2fc.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 10212",
+      "layer": "background"
+    }
+  ],
+  "john2_pickup_laser_item": [
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_172085922d7d44dd15b3.png",
+      "rect": [
+        51.0,
+        30.0,
+        707.0,
+        394.0
+      ],
+      "source": "/Symbol 10168",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_bc68d77e23a7b55342b7.png",
+      "rect": [
+        75.5,
+        56.0,
+        642.5,
+        47.5
+      ],
+      "source": "/Symbol 10168",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode102_components/part_e49c8d32f9ef1dd498b5.png",
+      "rect": [
+        280.0,
+        139.0,
+        248.0,
+        227.0
+      ],
+      "source": "Weapons/Symbol 10174",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode101_components/part_f8612bc050a0a146a7ab.png",
+      "rect": [
+        655.0,
+        323.0,
+        74.0,
+        74.0
+      ],
+      "source": "ButExit/Symbol 10031",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode101_components/part_1a9637c47b64cefb0321.png",
+      "rect": [
+        680.0,
+        345.0,
+        27.0,
+        23.0
+      ],
+      "source": "/Symbol 10177",
+      "layer": "background"
+    }
+  ],
+  "john_selector_102": [
+    {
+      "texture": "components/part_709d3c3e8144ae6368cf.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Symbol 211/Layer 12",
+      "layer": "background",
+      "type": "texture"
+    },
+    {
+      "texture": "components/part_41ba67bdf954e7cf80a9.png",
+      "rect": [
+        657.0,
+        367.0,
+        24.0,
+        24.0
+      ],
+      "source": "Symbol 211/Symbol 10",
+      "layer": "foreground",
+      "type": "texture"
+    },
+    {
+      "texture": "episode102_animation_parts/part_672d13e50393ae467218.png",
+      "rect": [
+        122.0,
+        153.0,
+        295.0,
+        118.0
+      ],
+      "source": "Symbol 211/EpImg",
+      "layer": "foreground",
+      "type": "texture"
+    },
+    {
+      "texture": "components/part_027d2a498ce88bdf70af.png",
+      "rect": [
+        681.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But2",
+      "layer": "foreground",
+      "type": "texture"
+    },
+    {
+      "texture": "components/part_9aa906bece3845f60e7d.png",
+      "rect": [
+        103.0,
+        75.0,
+        19.0,
+        27.0
+      ],
+      "source": "Symbol 211/But1",
+      "layer": "foreground",
+      "type": "texture"
+    },
+    {
+      "texture": "components/stat_skull.png",
+      "rect": [
+        482.0,
+        161.0,
+        14.0,
+        19.0
+      ],
+      "source": "Symbol 211/RightOpt/skull",
+      "layer": "foreground",
+      "style": "statistics_icon",
+      "type": "texture"
+    },
+    {
+      "texture": "components/stat_tick.png",
+      "rect": [
+        568.0,
+        162.0,
+        15.0,
+        18.0
+      ],
+      "source": "Symbol 211/RightOpt/tick",
+      "layer": "foreground",
+      "style": "statistics_icon",
+      "type": "texture"
+    }
+  ]
+}
