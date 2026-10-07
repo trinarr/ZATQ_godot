@@ -141,7 +141,7 @@ func _interaction_allowed(control: Control) -> bool:
 	if not is_instance_valid(control) or not control.is_inside_tree(): return false
 	var ancestor: Node = control
 	while ancestor != null:
-		if ancestor.is_queued_for_deletion(): return false
+		if ancestor.is_queued_for_deletion() or ancestor.get_meta("episode_animation_block",false): return false
 		var top: Control
 		for sibling: Node in ancestor.get_children():
 			if sibling is Control and sibling.has_meta("modal_view") and sibling.is_visible_in_tree() and not sibling.is_queued_for_deletion(): top = sibling

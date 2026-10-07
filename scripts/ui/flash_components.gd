@@ -37,4 +37,11 @@ static func draw(parent: Control, parts: Array, layer: String = "") -> void:
   control.position = Vector2(r[0],r[1]) * 2
   control.size = Vector2(r[2],r[3]) * 2
   control.mouse_filter = Control.MOUSE_FILTER_IGNORE
+  if part.has("blur"):
+   var paint:=ShaderMaterial.new()
+   paint.shader=preload("res://shaders/flash_color_transform.gdshader")
+   var blur: Dictionary=part.blur
+   paint.set_shader_parameter("blur_sigma",Vector2(blur.sigma[0],blur.sigma[1])*2)
+   paint.set_shader_parameter("blur_angle",float(blur.angle))
+   control.material=paint
   parent.add_child(control)

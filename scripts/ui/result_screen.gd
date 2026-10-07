@@ -10,3 +10,4 @@ static func draw(ui: Control, node: Dictionary) -> void:
 	panel.menu_requested.connect(ui._show_menu)
 	panel.next_episode_requested.connect(func(): ui._start_episode(episode+1))
 	panel.configure(node,Quest.stats_for(episode),Quest.ending_count(episode),Quest.episode_starts.has(episode+1))
+	if episode == 1: panel.play_flash_entrance("result")

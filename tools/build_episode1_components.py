@@ -7,14 +7,16 @@ from PIL import Image,ImageOps
 from render_flash_ui import Renderer,NS,path_data
 from build_localized_ui import matrix,combine,brushes
 from story_graph_format import load_all
+from episode1_blur import sharp_element,blur_spec
 from build_result_ui import ResultRenderer
 
 ROOT=Path(__file__).resolve().parents[1]
 class Exporter(ResultRenderer):
  def shape(self,e):
+  e=sharp_element(e)
   return ResultRenderer.shape(self,e) if self.result_mode else Renderer.shape(self,e)
  def text(self,e):return ''
- def emit(self,body,transform,opacity,path):
+ def emit(self,body,transform,opacity,path,blur=None):
   if not body or opacity<=0:return
   m=' '.join(str(v) for v in transform)
   svg=f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="480" viewBox="0 0 800 480"><defs>{"".join(self.defs)}</defs><g transform="matrix({m})" opacity="{opacity}">{body}</g></svg>'
@@ -25,7 +27,10 @@ class Exporter(ResultRenderer):
    subprocess.run(['inkscape',str(source),'--export-type=png',f'--export-filename={result}','--export-width=1600','--export-height=960'],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
    with Image.open(result) as im:self.raster_cache[key]=self.store(im.convert('RGBA'))
   part=self.raster_cache[key]
-  if part:self.parts.append(dict(part,source=path))
+  if part:
+   record=dict(part,source=path)
+   if blur:record["blur"]=blur
+   self.parts.append(record)
  def store(self,im):
   bounds=im.getchannel('A').getbbox()
   if bounds is None:return None
@@ -84,9 +89,9 @@ class Exporter(ResultRenderer):
     elif tag=='DOMShape':
      if self.omit_root_shapes and depth==0:continue
      if self.panel(e,m,a,p+'/'+name):continue
-     self.defs=[];self.uid=0;self.emit(self.shape(e),m,a,p+'/'+name)
+     self.defs=[];self.uid=0;self.emit(self.shape(e),m,a,p+'/'+name,blur_spec(e))
     elif tag=='DOMGroup':
-     self.defs=[];self.uid=0;body=''.join(self.shape(ch) for ch in e.findall('./x:members/*',NS) if ch.tag.endswith('DOMShape'));self.emit(body,m,a,p+'/'+name)
+     self.defs=[];self.uid=0;body=''.join(self.shape(ch) for ch in e.findall('./x:members/*',NS) if ch.tag.endswith('DOMShape'));self.emit(body,m,a,p+'/'+name,blur_spec(e))
     elif tag=='DOMBitmapInstance':
      f=self.library/e.get('libraryItemName')
      with Image.open(f) as im:w,h=im.size

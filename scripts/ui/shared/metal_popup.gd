@@ -8,9 +8,11 @@ func draw_metal_body(rect: Rect2) -> void:
 func draw_metal_header(text: String, rect: Rect2, center: bool = false, x: float = 35.0) -> Label:
 	if header_parts.is_empty():
 		header_parts = JSON.parse_string(FileAccess.get_file_as_string("res://data/item_popup_components.json"))
+	var before := get_child_count()
 	var parts: Array = header_parts.header.duplicate(true)
 	for part: Dictionary in parts: part.rect[0] = x
 	COMPONENTS.draw(self,parts,"background")
 	var title := _text(text,rect,30,true,center)
 	title.add_theme_color_override("font_color",Color("cccccc"))
+	for i: int in range(before,get_child_count()): get_child(i).set_meta("movie_clip_fixed",true)
 	return title

@@ -4,6 +4,8 @@ var safe_layer := Control.new()
 var background := TextureRect.new()
 var art_layer := Control.new()
 var component_background_active := false
+var episode_timeline: Node2D
+const EPISODE_TIMELINE := preload("res://scripts/ui/episode_timeline.gd")
 const COMPONENTS := preload("res://scripts/ui/flash_components.gd")
 var black := ColorRect.new()
 var safe_override: Rect2 = Rect2()
@@ -65,6 +67,7 @@ func set_background(texture: Texture2D, crop_pause: bool = false) -> void:
 
 func _clear_art() -> void:
 	component_background_active = false
+	episode_timeline = null
 	for child: Node in art_layer.get_children():
 		art_layer.remove_child(child)
 		child.queue_free()
@@ -74,3 +77,13 @@ func set_component_background(parts: Array) -> void:
 	background.texture = null
 	component_background_active = true
 	COMPONENTS.draw(art_layer,parts)
+
+func set_episode_background(artwork: String) -> bool:
+	if not EPISODE_TIMELINE.has_art(artwork): return false
+	_clear_art()
+	background.texture = null
+	component_background_active = true
+	episode_timeline = EPISODE_TIMELINE.new()
+	art_layer.add_child(episode_timeline)
+	episode_timeline.configure(artwork)
+	return true

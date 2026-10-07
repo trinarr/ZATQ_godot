@@ -67,3 +67,8 @@ func dismiss_on_shade_release(event: InputEvent, action: Callable) -> void:
 
 func _finish_shade_gesture(action: Callable) -> void:
 	if not is_queued_for_deletion() and action.is_valid(): action.call()
+
+func play_flash_entrance(kind: String) -> void:
+	var motion := preload("res://scripts/ui/flash_ui_entrance.gd").new()
+	add_child(motion)
+	motion.configure(self,kind)

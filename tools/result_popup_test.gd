@@ -38,6 +38,11 @@ func run() -> void:
 	check(quest.popup_origin=="transport","result stores origin for reload")
 	var body: TextureRect=ui.overlay.get_child(1)
 	check(body.texture==load("res://assets/flash_ui/"+ui.episode_components.item_keys[0].texture),"result reuses item metal texture")
+	for child: Node in ui.overlay.get_children():
+		if child.has_method("configure_targets"): child.seek_frame(1)
+	check(body.position.y<120,"result body uses original entrance")
+	for child: Node in ui.overlay.get_children():
+		if child.has_method("configure_targets"): child.seek_frame(100)
 	check(body.position==Vector2(72,120) and body.size==Vector2(1458,788),"bounded authored metal body")
 	var count_before: int=quest.episode1_stats.losses
 	ui._show_menu();ui.playing=true;ui._show_story()

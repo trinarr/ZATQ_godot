@@ -2212,9 +2212,22 @@
 				"kind": "city_story",
 				"art": "ep1_mainstreet_choice",
 				"clean_background": true,
-				"text": "@loc:episode1.nodes.mainstreet_boundary.data.text",
+				"text": "@loc:episode1.ui.mainstreet_intro",
 				"blocks": [],
-				"controls_art": "ep1_mainstreet_choice_controls"
+				"controls_art": "ep1_mainstreet_choice_controls",
+				"choice_captions": true,
+				"panel_rect": [
+					0,
+					0,
+					800,
+					97.65
+				],
+				"text_rect": [
+					11,
+					5.75,
+					775,
+					86.15
+				]
 			},
 			"position": [
 				15300.0,
@@ -4597,9 +4610,22 @@
 				"kind": "city_story",
 				"art": "ep1_mainstreet_choice",
 				"clean_background": true,
-				"text": "@loc:episode1.nodes.mainstreet_choice.data.text",
+				"text": "@loc:episode1.ui.mainstreet_intro",
 				"blocks": [],
-				"controls_art": "ep1_mainstreet_choice_controls"
+				"controls_art": "ep1_mainstreet_choice_controls",
+				"choice_captions": true,
+				"panel_rect": [
+					0,
+					0,
+					800,
+					97.65
+				],
+				"text_rect": [
+					11,
+					5.75,
+					775,
+					86.15
+				]
 			},
 			"position": [
 				0.0,

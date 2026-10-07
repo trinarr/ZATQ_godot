@@ -98,4 +98,5 @@ func _layout_parts() -> void:
 	var hit: Dictionary = parts.pause_resume_hit[0]
 	resume_hit.position = drum.position+Vector2(hit.rect[0],130.95+hit.rect[1])*2
 	for button: Button in buttons:
+		button.modulate.a = minf(1.0,opening_frame*0.25)
 		button.position = origin+(Vector2(BUTTONS_X[opening_frame],14)+Vector2(button.get_meta("flash_offset")))*2

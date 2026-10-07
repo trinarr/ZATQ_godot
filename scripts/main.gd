@@ -196,9 +196,18 @@ func _edge_tab(label: String, action: Callable, parent: Control = null) -> void:
 	edge_hit = _hit(label,Rect2(Vector2.ZERO,atlas.region.size/2),action,parent)
 	_layout_edge_tab()
 
-func _opening_art(name: String) -> void:
+func _opening_art(name: String) -> Control:
 	_component_backdrop("layout_bg_" + name)
-	_world_art("layout_controls_tv" if name.begins_with("tv_") else "layout_controls_transport_no_keys" if name == "transport" and Quest.flags.TakenKey else "layout_controls_" + name)
+	return _world_art("layout_controls_tv" if name.begins_with("tv_") else "layout_controls_transport_no_keys" if name == "transport" and Quest.flags.TakenKey else "layout_controls_" + name)
+
+func _world_highlight_hit(label: String, artwork: String, source: String, action: Callable) -> Button:
+	# A hotspot and its glow share one contour and authored bounds.
+	for part: Dictionary in episode_components.get(artwork,[]):
+		if part.get("type","") == "highlight" and part.get("source","") == source:
+			var r: Array = part.rect
+			return _world_hit(label,Rect2(r[0],r[1],r[2],r[3]),action,part.region)
+	push_error("Missing interactive highlight: "+artwork+" / "+source)
+	return null
 
 func _opening_caption(node: Dictionary) -> void:
 	var y: float = 416 if Quest.current_id in ["wake","screams","transport"] else 445
@@ -212,7 +221,8 @@ func _opening_caption(node: Dictionary) -> void:
 	var font_size := 24
 	while font_size > 16 and BODY_FONT.get_string_size(node.text,HORIZONTAL_ALIGNMENT_LEFT,-1,font_size*2).x > 1550:
 		font_size -= 1
-	_text(node.text,Rect2(11,y,775,34),font_size)
+	var caption := _text(node.text,Rect2(11,y,775,34),font_size)
+	_bind_episode_caption(caption)
 
 func _shade(parent: Control, alpha: float = 0.65) -> void:
 	var shade := ColorRect.new()
@@ -338,6 +348,14 @@ func _start_episode(number: int) -> void:
 	Quest.new_game(number)
 
 func _resume() -> void:
+	if paused and Quest.episode == 1 and is_instance_valid(viewport_canvas.episode_timeline):
+		paused = false
+		_close_overlay()
+		viewport_canvas.episode_timeline.suspended = false
+		if is_instance_valid(edge_tab): edge_tab.show()
+		if is_instance_valid(edge_hit): edge_hit.show()
+		if Quest.current().get("kind","") == "tv": television.start()
+		return
 	if not Quest.has_progress: return
 	playing = true
 	paused = false
@@ -358,6 +376,7 @@ func _toggle_sound() -> void:
 
 func _show_pause() -> void:
 	paused = true
+	if is_instance_valid(viewport_canvas.episode_timeline): viewport_canvas.episode_timeline.suspended = true
 	television.stop()
 	_stop_cutscene()
 	effects.stop()
@@ -396,6 +415,29 @@ func _message(title: String, text: String, confirm: Callable = Callable(), confi
 	panel.configure({"style":"confirmation","text":title+"\n\n"+text,"font_size":22,"shade_alpha":0.75},choices)
 
 func _choose(index: int) -> void:
+	if screen.get_meta("episode_animation_block",false): return
+	var timeline: Node2D = viewport_canvas.episode_timeline
+	var choice: Dictionary = Quest.available_choices()[index]
+	var next_art: String = Quest.current(choice.get("next","")).get("art","") if choice.has("next") else ""
+	var sequential: bool = is_instance_valid(timeline) and timeline.same_clip(next_art)
+	if Quest.episode == 1 and is_instance_valid(timeline) and timeline.has_outro() and not sequential and not (Quest.current().get("kind","") == "tv" and index == 0):
+		var origin := Quest.current_id
+		screen.set_meta("episode_animation_block",true)
+		television.stop()
+		if Quest.current().get("controls_art","") == "ep1_mainstreet_choice_controls":
+			for child: Node in world_layer.get_children():
+				if child is Control: child.hide()
+			for child: Node in screen.get_children():
+				if child is Label: child.hide()
+		timeline.finished.connect(func():
+			if Quest.current_id == origin and playing:
+				screen.set_meta("episode_animation_block",false)
+				_commit_choice(index),CONNECT_ONE_SHOT)
+		timeline.play("outro")
+		return
+	_commit_choice(index)
+
+func _commit_choice(index: int) -> void:
 	var choice: Dictionary = Quest.available_choices()[index]
 	transition_sound = choice.get("sound", "")
 	Quest.choose(index)
@@ -403,6 +445,7 @@ func _choose(index: int) -> void:
 func _show_story() -> void:
 	if not playing or paused: return
 	var was_story := section == "story"
+	var changing_channel := Quest.current_id == "tv" and previous_node == "tv"
 	section = "story"
 	var node: Dictionary = Quest.current()
 	var kind: String = node.get("kind", "story")
@@ -434,12 +477,19 @@ func _show_story() -> void:
 	elif kind.begins_with("city_"):
 		CITY.draw(self, node)
 	elif kind == "tv":
-		_opening_art("tv_%d" % Quest.channel)
-		var channel_label := _text(LOC.text("@loc:ui.main.channel_format") % (Quest.channel+1),Rect2(218,290,110,30),20,false,false,_world_host())
+		var controls := _opening_art("tv_%d" % Quest.channel)
+		var channel_label := _text(LOC.text("@loc:ui.main.channel_format") % (Quest.channel+1),Rect2(218,66,110,30),20,false,false,_world_host())
+		channel_label.name = "TVChannel"
 		channel_label.add_theme_font_override("font",TV_FONT)
 		channel_label.add_theme_color_override("font_color",Color.GREEN)
+		if is_instance_valid(viewport_canvas.episode_timeline): viewport_canvas.episode_timeline.bind_caption(channel_label,"@tv_channel")
 		_world_hit(LOC.text("@loc:ui.main.35"),Rect2(200,44,447,262),func(): _choose(0))
-		_world_hit(LOC.text("@loc:ui.main.36"),Rect2(380,382,44,40),func(): _choose(1))
+		_world_highlight_hit("@loc:ui.main.36","layout_controls_tv","/Symbol 2819",func(): _choose(1))
+		if changing_channel and is_instance_valid(viewport_canvas.episode_timeline):
+			viewport_canvas.episode_timeline.seek_frame(viewport_canvas.episode_timeline.frames.size()-1)
+			var remote_motion := preload("res://scripts/ui/flash_ui_entrance.gd").new()
+			controls.add_child(remote_motion)
+			remote_motion.configure_targets([controls.get_child(0)],"remote")
 		television.start()
 	elif Quest.current_id == "transport_choice":
 		_opening_art("transport")
@@ -452,7 +502,7 @@ func _show_story() -> void:
 				_world_hit(LOC.text("@loc:ui.main.40"),Rect2(273,200,118,85),func(): _choose(0))
 				_world_hit(LOC.text("@loc:ui.main.41"),Rect2(470,24,220,134),func(): _choose(1))
 			"transport":
-				_world_hit(LOC.text("@loc:ui.main.42"),Rect2(20,18,92,99),func(): _choose(0))
+				_world_highlight_hit("@loc:ui.main.42","layout_controls_transport","But1/Symbol 2853",func(): _choose(0))
 				if not Quest.flags.TakenKey:
 					_world_hit(LOC.text("@loc:ui.main.43"),Rect2(325,217,77,80),func(): _choose(1))
 			"lift_button": _world_hit(LOC.text("@loc:ui.main.44"),Rect2(200,140,450,280),func(): _choose(0))
@@ -485,6 +535,10 @@ func _refresh_locale() -> void:
 	else: _show_menu()
 
 func _component_backdrop(filename: String) -> bool:
+	if playing and Quest.episode == 1 and viewport_canvas.set_episode_background(filename):
+		if Quest.current().get("kind","") in ["city_decision","city_pickup","city_death","city_ending","item"]:
+			viewport_canvas.episode_timeline.seek_frame(viewport_canvas.episode_timeline.frames.size()-1)
+		return true
 	if not episode_components.has(filename): return false
 	viewport_canvas.set_component_background(episode_components[filename])
 	return true
@@ -527,6 +581,7 @@ func _show_item_popup(artwork: String, caption: String) -> void:
 	_attach_panel(panel)
 	panel.accepted.connect(func(): _choose(0))
 	panel.configure(artwork,caption)
+	if Quest.episode == 1: panel.play_flash_entrance("item")
 
 func _show_player_dialog(data: Dictionary, choices: Array, selected: Callable = Callable(), dismissed: Callable = Callable()) -> void:
 	var panel := PLAYER_DIALOG.instantiate()
@@ -534,3 +589,9 @@ func _show_player_dialog(data: Dictionary, choices: Array, selected: Callable = 
 	panel.choice_selected.connect(selected if selected.is_valid() else _choose)
 	if dismissed.is_valid(): panel.dismissed.connect(dismissed)
 	panel.configure(data,choices)
+	if Quest.episode == 1:
+		for answer: Button in panel.answer_slots: answer.animate_flash_hover = true
+		panel.play_flash_entrance("dialog")
+
+func _bind_episode_caption(label: Label) -> void:
+	if Quest.episode == 1 and is_instance_valid(viewport_canvas.episode_timeline): viewport_canvas.episode_timeline.bind_caption(label)

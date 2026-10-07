@@ -10,6 +10,10 @@ func _initialize() -> void: call_deferred("run")
 func settle() -> void:
  await process_frame
  await process_frame
+ var ui: Control=root.get_node_or_null("ZombieApocalypse")
+ if ui!=null and is_instance_valid(ui.overlay):
+  for child: Node in ui.overlay.get_children():
+   if child.has_method("configure_targets"):child.seek_frame(100)
 func run() -> void:
  var quest: Node = root.get_node("Quest")
  quest.save_path="user://result_ui_test.json"

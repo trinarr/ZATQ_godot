@@ -7,6 +7,10 @@ var caption: Label
 var background: TextureRect
 var unavailable_mark: TextureRect
 var caption_size := 48
+var animate_flash_hover := false
+var hover_elapsed := 0.0
+var previous_hover := false
+var hover_keys: Array = []
 func configure(value: String, available: bool = true, font_size: int = 24) -> void:
  if parts.is_empty(): parts = JSON.parse_string(FileAccess.get_file_as_string("res://data/dialog_components.json"))
  name = LOC.text(value) if available else "UnavailableAnswer"
@@ -54,4 +58,12 @@ func _layout_caption() -> void:
 func _update_state() -> void:
  # Symbol 97's endpoint tint is 0.69921875; the caption does not move.
  var tint := 0.69921875 if disabled or is_pressed() else 0.80078125 if is_hovered() else 1.0
+ if animate_flash_hover:
+  if hover_keys.is_empty():hover_keys=preload("res://scripts/ui/flash_ui_entrance.gd").catalog().answer_tint
+  var hovered:=is_hovered() and not disabled
+  if hovered!=previous_hover:hover_elapsed=0.0;previous_hover=hovered
+  tint=hover_keys[4] if disabled or is_pressed() else hover_keys[mini(4,1+int(floor(hover_elapsed*19)))] if hovered else hover_keys[0]
  if is_instance_valid(background): background.self_modulate = Color(tint,tint,tint)
+func _process(delta: float) -> void:
+ if animate_flash_hover and is_hovered() and not is_pressed() and not disabled:
+  hover_elapsed+=delta;_update_state()

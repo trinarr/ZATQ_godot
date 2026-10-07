@@ -20,17 +20,33 @@ static func draw(ui: Control, node: Dictionary) -> void:
 	if Quest.current_id == "metro_junction":
 		ui._component_backdrop("adaptive_metro_background")
 		ui._world_art("adaptive_metro_controls")
+	var controls: Control
 	if node.has("controls_art"):
-		ui._world_art(node.controls_art)
+		controls = ui._world_art(node.controls_art)
 	var kind: String = node.kind
 	if kind == "city_decision":
 		ui._show_player_dialog({"text":node.text,"art":node.get("decision_art","city_decision_3" if choices.size()==3 else "decision"),"fit_body":true,"dismissable":true},choices,Callable(),func(): Quest._enter(node.back))
 	elif kind == "city_cutscene":
-		var duration: float = node.auto_seconds
-		ui.cutscene.start(duration)
-		ui.cutscene_tween = ui.create_tween().bind_node(ui.screen)
-		ui.cutscene_tween.tween_property(ui.screen,"modulate:a",0.0,duration)
-		ui.cutscene_tween.parallel().tween_property(ui.viewport_canvas.background,"modulate:a",0.0,duration)
+		var timeline: Node2D = ui.viewport_canvas.episode_timeline
+		if Quest.episode == 1 and is_instance_valid(timeline):
+			# A Flash End/Next event is emitted at the last authored frame.
+			var origin: String = Quest.current_id
+			var automatic := func():
+				if Quest.current_id == origin and not ui.paused:
+					ui._commit_choice(0)
+			if timeline.has_outro():
+				timeline.finished.connect(automatic,CONNECT_ONE_SHOT)
+				timeline.play("outro")
+			elif timeline.playing:
+				timeline.finished.connect(automatic,CONNECT_ONE_SHOT)
+			else: ui.cutscene.start(node.auto_seconds)
+		else:
+			var duration: float = node.auto_seconds
+			ui.cutscene.start(duration)
+			ui.cutscene_tween = ui.create_tween().bind_node(ui.screen)
+			ui.cutscene_tween.tween_property(ui.screen,"modulate:a",0.0,duration)
+			ui.cutscene_tween.parallel().tween_property(ui.viewport_canvas.background,"modulate:a",0.0,duration)
+
 	else:
 		for block: Dictionary in node.get("blocks",[]):
 			var b: Array = block.rect.duplicate()
@@ -49,12 +65,14 @@ static func draw(ui: Control, node: Dictionary) -> void:
 				block_font = load("res://fonts/flash/font_2508.ttf")
 			elif block.font == "B52 Regular":
 				block_font = load("res://fonts/flash/font_2511.ttf")
+			var block_text: String = LOC.text(block.text)
 			var block_size: int = block.size
-			while block_size > 14 and block_font.get_multiline_string_size(block.text,HORIZONTAL_ALIGNMENT_LEFT,b[2]*2,block_size*2).y > b[3]*2-4:
+			while block_size > 14 and block_font.get_multiline_string_size(block_text,HORIZONTAL_ALIGNMENT_LEFT,b[2]*2,block_size*2).y > b[3]*2-4:
 				block_size -= 1
-			var label: Label = ui._text(block.text,Rect2(b[0],b[1],b[2],b[3]),block_size)
+			var label: Label = ui._text(block_text,Rect2(b[0],b[1],b[2],b[3]),block_size,false,false,ui._world_host() if block.get("world",false) else ui.screen)
 			label.add_theme_font_override("font",block_font)
 			label.add_theme_constant_override("line_spacing",0)
+			ui._bind_episode_caption(label)
 		if node.has("text_rect"):
 			var panel: Array = node.panel_rect
 			if Quest.flags.Auto == 0: panel = node.get("panel_rect_on_foot",panel)
@@ -73,10 +91,22 @@ static func draw(ui: Control, node: Dictionary) -> void:
 			var font_size: int = 24
 			while font_size > 15 and ui.BODY_FONT.get_multiline_string_size(story_text,HORIZONTAL_ALIGNMENT_LEFT,box[2],font_size).y > box[3]:
 				font_size -= 1
-			ui._text(story_text,Rect2(box[0],box[1],box[2],box[3]),font_size)
+			var description: Label = ui._text(story_text,Rect2(box[0],box[1],box[2],box[3]),font_size)
+			ui._bind_episode_caption(description)
+		var choice_buttons: Array[Control] = []
 		for i in choices.size():
 			var index: int = i
 			var r: Array = choices[i].get("rect",[70,0,730,480])
-			ui._world_hit(choices[i].text,Rect2(r[0],r[1],r[2],r[3]),func(): ui._choose(index),choices[i].get("mask",""))
+			var button: Button = ui._world_hit(choices[i].text,Rect2(r[0],r[1],r[2],r[3]),func(): ui._choose(index),choices[i].get("mask",""))
+			choice_buttons.append(button)
+			if node.get("choice_captions",false):
+				ui._button_text(choices[i].text,Rect2(10,4,r[2]-20,r[3]-8),24,button,ui.BODY_FONT)
+		if artwork == "ep1_mainstreet_choice" and is_instance_valid(ui.viewport_canvas.episode_timeline) and ui.viewport_canvas.episode_timeline.playing:
+			var arriving: Array[Control] = choice_buttons.duplicate()
+			if is_instance_valid(controls): arriving.append(controls)
+			for child: Control in arriving: child.hide()
+			ui.viewport_canvas.episode_timeline.finished.connect(func():
+				for child: Control in arriving:
+					if is_instance_valid(child): child.show(),CONNECT_ONE_SHOT)
 	if kind not in ["city_decision", "city_death", "city_ending"]:
 		ui._edge_tab(LOC.text("@loc:ui.city_gameplay.3"),ui._show_pause)

@@ -42,7 +42,7 @@
   "city_bite_transition": [
     {
       "type": "texture",
-      "texture": "episode1_components/part_fdd61c0a5681f07a4b4b.png",
+      "texture": "episode1_components/part_282b81b8c9a3e04687de.png",
       "rect": [
         0.0,
         0.0,
@@ -50,6 +50,15 @@
         480.0
       ],
       "source": "Mov.Mov/Symbol 2464",
+      "blur": {
+        "sigma": [
+          9.8,
+          0.4
+        ],
+        "angle": 0.0,
+        "source_bitmap": "Bitmap 2468.png",
+        "replaces_bitmap": "Bitmap 2462.png"
+      },
       "layer": "background"
     }
   ],
@@ -540,7 +549,7 @@
     },
     {
       "type": "texture",
-      "texture": "episode1_components/part_972a3fd20df33fe7e878.png",
+      "texture": "episode1_components/part_abce4e7d25e479bbb2ee.png",
       "rect": [
         2.0,
         0.0,
@@ -548,11 +557,20 @@
         478.0
       ],
       "source": "Mov/Symbol 2693",
+      "blur": {
+        "sigma": [
+          4.3,
+          0.1
+        ],
+        "angle": -0.946,
+        "source_bitmap": "Bitmap 2694.png",
+        "replaces_bitmap": "Bitmap 2691.png"
+      },
       "layer": "background"
     },
     {
       "type": "texture",
-      "texture": "episode1_components/part_e706e2f60bdbaf59f5ad.png",
+      "texture": "episode1_components/part_a5a0b4dca8f136576288.png",
       "rect": [
         2.0,
         0.0,
@@ -560,6 +578,15 @@
         478.0
       ],
       "source": "Mov/Symbol 2688",
+      "blur": {
+        "sigma": [
+          6.1,
+          0.1
+        ],
+        "angle": -0.961,
+        "source_bitmap": "Bitmap 2694.png",
+        "replaces_bitmap": "Bitmap 2686.png"
+      },
       "layer": "background"
     }
   ],
@@ -1392,7 +1419,7 @@
   "ep1_mainstreet_attack": [
     {
       "type": "texture",
-      "texture": "episode1_components/part_6406003884c9758561b7.png",
+      "texture": "episode1_components/part_ae3d3f02c1270edfecad.png",
       "rect": [
         0.0,
         0.0,
@@ -1400,6 +1427,15 @@
         480.0
       ],
       "source": "Mov/Symbol 2544",
+      "blur": {
+        "sigma": [
+          2.5,
+          2.5
+        ],
+        "angle": 0.0,
+        "source_bitmap": "Bitmap 2539.png",
+        "replaces_bitmap": "Bitmap 2542.png"
+      },
       "layer": "background"
     },
     {

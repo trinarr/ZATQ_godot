@@ -12,10 +12,10 @@ static func definitions() -> Dictionary:
 	return data
 
 static func has_mask(id: String) -> bool:
-	return definitions().masks.has(id)
+	return definitions().masks.has(id) or definitions().regions.has(id)
 
 static func mask_image(id: String) -> Image:
-	return build_region(definitions().masks[id]).hit_image
+	return build_region(str(definitions().masks.get(id,id))).hit_image
 
 static func build_region(id: String) -> Dictionary:
 	if cache.has(id): return cache[id]

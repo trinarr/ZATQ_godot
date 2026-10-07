@@ -30,6 +30,10 @@ def audit(root=ROOT):
         components.update(json.loads(path.read_text()))
     for parts in components.values():
         resources.update('assets/flash_ui/' + p['texture'] for p in parts if 'texture' in p)
+    animation_path = root / 'data/episode1_animations.json'
+    if animation_path.exists():
+        for artwork in json.loads(animation_path.read_text()).get('art', {}).values():
+            resources.update('assets/flash_ui/' + p['texture'] for p in artwork['parts'].values() if 'texture' in p)
     text = json.loads((root / 'data/ui_text_layout.json').read_text())
     resources.update(f"fonts/flash/font_{int(block['font'])}.ttf" for block in dictionaries(text) if 'font' in block)
     highlight_path = root / "data/episode1_highlights.json"
