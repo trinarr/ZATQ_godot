@@ -1,4 +1,5 @@
 extends RefCounted
+const BLUR_CACHE := preload("res://scripts/ui/blur_texture_cache.gd")
 const HIGHLIGHT := preload("res://scripts/ui/interactive_highlight.gd")
 const QTE_PROMPT := preload("res://scripts/ui/qte_prompt.gd")
 # Primitive Flash display-list layers. Coordinates are authored at 800x480.
@@ -38,10 +39,9 @@ static func draw(parent: Control, parts: Array, layer: String = "") -> void:
   control.size = Vector2(r[2],r[3]) * 2
   control.mouse_filter = Control.MOUSE_FILTER_IGNORE
   if part.has("blur"):
+   control.texture_filter=CanvasItem.TEXTURE_FILTER_LINEAR
    var paint:=ShaderMaterial.new()
    paint.shader=preload("res://shaders/flash_color_transform.gdshader")
-   var blur: Dictionary=part.blur
-   paint.set_shader_parameter("blur_sigma",Vector2(blur.sigma[0],blur.sigma[1])*2)
-   paint.set_shader_parameter("blur_angle",float(blur.angle))
+   if control is TextureRect:BLUR_CACHE.bind(paint,control.texture,part.blur)
    control.material=paint
   parent.add_child(control)

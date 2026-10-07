@@ -53,7 +53,7 @@ class Timelines:
    f=active[-1]
    for ei,e in enumerate(f.findall('x:elements/*',NS)):
     tag=e.tag.split('}')[-1];part=e.get('name','');p=(path+'.'+part).strip('.') if part else path
-    if part and ((not text_only and (p in hide or part in hide)) or part.startswith('But') or part=='Vikl'):continue
+    if part and ((not text_only and (p in hide or part in hide)) or (part.startswith('But') and not spec.get('scene_button_art')) or part=='Vikl'):continue
     if tag in ['DOMStaticText','DOMDynamicText'] and not text_only:continue
     m=combine(t,matrix(e));c=e.find('x:color/x:Color',NS)
     vals=tuple(float(c.get(ch+'Multiplier','1')) if c is not None else 1 for ch in ['red','green','blue','alpha'])
@@ -65,6 +65,9 @@ class Timelines:
     elif tag=='DOMSymbolInstance':
      child=e.get('libraryItemName');k+=':'+child
      # A SimpleButton's state timeline must not auto-play.
+     if child=='Symbol 27' and spec.get('native_qte') and not text_only:
+      records.append({'key':k+':prompt','prompt':True,'matrix':m,'color':co})
+      continue
      if e.get('symbolType')=='button' or child=='Symbol 27':continue
      start,end,loop=self.segment(child,ov.get(p) if part else None,outro and bool(part) and (p in ['Mov','Canals'] or p.endswith('.Knop')))
      # Frame overrides for text variants and TV channels are selected states.

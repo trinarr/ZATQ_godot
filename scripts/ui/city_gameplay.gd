@@ -28,7 +28,7 @@ static func draw(ui: Control, node: Dictionary) -> void:
 		ui._show_player_dialog({"text":node.text,"art":node.get("decision_art","city_decision_3" if choices.size()==3 else "decision"),"fit_body":true,"dismissable":true},choices,Callable(),func(): Quest._enter(node.back))
 	elif kind == "city_cutscene":
 		var timeline: Node2D = ui.viewport_canvas.episode_timeline
-		if Quest.episode == 1 and is_instance_valid(timeline):
+		if is_instance_valid(timeline):
 			# A Flash End/Next event is emitted at the last authored frame.
 			var origin: String = Quest.current_id
 			var automatic := func():
@@ -50,8 +50,9 @@ static func draw(ui: Control, node: Dictionary) -> void:
 	else:
 		for block: Dictionary in node.get("blocks",[]):
 			var b: Array = block.rect.duplicate()
+			var band: ColorRect
 			if "Hist" in block.get("path", ""):
-				var band := ColorRect.new()
+				band = ColorRect.new()
 				band.position = Vector2(-ui.screen.position.x/ui.screen.scale.x, maxf(0,b[1]-6)*2)
 				band.size = Vector2(ui.viewport_canvas.safe_layer.size.x/ui.screen.scale.x,(b[3]+12)*2)
 				band.color = Color.BLACK
@@ -72,7 +73,7 @@ static func draw(ui: Control, node: Dictionary) -> void:
 			var label: Label = ui._text(block_text,Rect2(b[0],b[1],b[2],b[3]),block_size,false,false,ui._world_host() if block.get("world",false) else ui.screen)
 			label.add_theme_font_override("font",block_font)
 			label.add_theme_constant_override("line_spacing",0)
-			ui._bind_episode_caption(label)
+			ui._bind_episode_caption(label,band if Quest.episode>1 else null)
 		if node.has("text_rect"):
 			var panel: Array = node.panel_rect
 			if Quest.flags.Auto == 0: panel = node.get("panel_rect_on_foot",panel)
@@ -92,7 +93,7 @@ static func draw(ui: Control, node: Dictionary) -> void:
 			while font_size > 15 and ui.BODY_FONT.get_multiline_string_size(story_text,HORIZONTAL_ALIGNMENT_LEFT,box[2],font_size).y > box[3]:
 				font_size -= 1
 			var description: Label = ui._text(story_text,Rect2(box[0],box[1],box[2],box[3]),font_size)
-			ui._bind_episode_caption(description)
+			ui._bind_episode_caption(description,shade if Quest.episode>1 else null)
 		var choice_buttons: Array[Control] = []
 		for i in choices.size():
 			var index: int = i

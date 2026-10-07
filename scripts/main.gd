@@ -348,7 +348,7 @@ func _start_episode(number: int) -> void:
 	Quest.new_game(number)
 
 func _resume() -> void:
-	if paused and Quest.episode == 1 and is_instance_valid(viewport_canvas.episode_timeline):
+	if paused and is_instance_valid(viewport_canvas.episode_timeline):
 		paused = false
 		_close_overlay()
 		viewport_canvas.episode_timeline.suspended = false
@@ -420,7 +420,7 @@ func _choose(index: int) -> void:
 	var choice: Dictionary = Quest.available_choices()[index]
 	var next_art: String = Quest.current(choice.get("next","")).get("art","") if choice.has("next") else ""
 	var sequential: bool = is_instance_valid(timeline) and timeline.same_clip(next_art)
-	if Quest.episode == 1 and is_instance_valid(timeline) and timeline.has_outro() and not sequential and not (Quest.current().get("kind","") == "tv" and index == 0):
+	if is_instance_valid(timeline) and timeline.has_outro() and not sequential and not (Quest.current().get("kind","") == "tv" and index == 0):
 		var origin := Quest.current_id
 		screen.set_meta("episode_animation_block",true)
 		television.stop()
@@ -535,7 +535,7 @@ func _refresh_locale() -> void:
 	else: _show_menu()
 
 func _component_backdrop(filename: String) -> bool:
-	if playing and Quest.episode == 1 and viewport_canvas.set_episode_background(filename):
+	if playing and viewport_canvas.set_episode_background(filename):
 		if Quest.current().get("kind","") in ["city_decision","city_pickup","city_death","city_ending","item"]:
 			viewport_canvas.episode_timeline.seek_frame(viewport_canvas.episode_timeline.frames.size()-1)
 		return true
@@ -581,7 +581,7 @@ func _show_item_popup(artwork: String, caption: String) -> void:
 	_attach_panel(panel)
 	panel.accepted.connect(func(): _choose(0))
 	panel.configure(artwork,caption)
-	if Quest.episode == 1: panel.play_flash_entrance("item")
+	panel.play_flash_entrance("item")
 
 func _show_player_dialog(data: Dictionary, choices: Array, selected: Callable = Callable(), dismissed: Callable = Callable()) -> void:
 	var panel := PLAYER_DIALOG.instantiate()
@@ -589,9 +589,9 @@ func _show_player_dialog(data: Dictionary, choices: Array, selected: Callable = 
 	panel.choice_selected.connect(selected if selected.is_valid() else _choose)
 	if dismissed.is_valid(): panel.dismissed.connect(dismissed)
 	panel.configure(data,choices)
-	if Quest.episode == 1:
+	if playing:
 		for answer: Button in panel.answer_slots: answer.animate_flash_hover = true
 		panel.play_flash_entrance("dialog")
 
-func _bind_episode_caption(label: Label) -> void:
-	if Quest.episode == 1 and is_instance_valid(viewport_canvas.episode_timeline): viewport_canvas.episode_timeline.bind_caption(label)
+func _bind_episode_caption(label: Label, decoration: Control = null) -> void:
+	if is_instance_valid(viewport_canvas.episode_timeline): viewport_canvas.episode_timeline.bind_caption(label,"",decoration)

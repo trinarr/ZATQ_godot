@@ -82,7 +82,13 @@ func press_target(index:int=0)->void:
  if outcome>=0:finish(outcome)
  elif node.get("target_mode","fixed")=="random":move_target()
 func update_visuals()->void:
- var frames:Array=node.get("animation_frames",[])
+ var timeline: Node2D=ui.viewport_canvas.episode_timeline
+ if is_instance_valid(timeline) and timeline.spec.get("qte",false):
+  timeline.playing=false
+  var authored_frame: int=int(QTE.elapsed(state,node)*float(node.get("animation_fps",19)))
+  if node.get("qte_mode","")=="branch":authored_frame=0
+  timeline.seek_frame(authored_frame)
+ var frames:Array=[] if is_instance_valid(timeline) and timeline.spec.get("qte",false) else node.get("animation_frames",[])
  if not frames.is_empty():
   var frame:=mini(frames.size()-1,int(QTE.elapsed(state,node)*float(node.get("animation_fps",19))))
   if node.get("qte_mode","")=="branch":frame=0
