@@ -163,6 +163,12 @@ def unify():
   if 'episode' in node.get('data',{}):node['data']['episode']=101
  graph['nodes'].update(second['nodes']);graph['edges'].extend(second['edges'])
  graph['legacy_episodes']=[102]
+ graph['selector_art']='selector_5'
+ graph['description']='@loc:episode101.description'
+ entries=read('data/selectors.json')
+ for entry in entries:
+  if entry['kind']=='episodes' and entry['frame']==5:entry.update(episode=101,available=True)
+ write('data/selectors.json',entries)
  graph['nodes']['john1_11']['data'].pop('unfinished',None)
  key='episode101.nodes.john1_11__choice_0.data.text'
  graph['nodes']['john1_11__choice_0']={'type':'choice','data':{'text':'@loc:'+key,'rect':[70,0,730,480]},'position':[1970,0],'title':'@loc:'+key}
@@ -175,7 +181,9 @@ def unify():
     k=row[0].replace('episode102.','episode101.')
     if ep==102 and k in rows:continue
     rows[k]=row[1:]
- rows['episode101.title']=['ВЕБ-ЭПИЗОД 1. ДЖОН',''];rows['episode101.description']=['История Джона Доннатона: события на базе Терри и побег.',''];rows[key]=['Далее','']
+ rows['episode101.title']=['ВЕБ-ЭПИЗОД 1. ДЖОН',''];rows[key]=['Далее','']
+ with (ROOT/'locales/ui.csv').open(newline='') as f:
+  rows['episode101.description']=next(row[1:] for row in csv.reader(f) if row[0]=='ui.selectors.3.description')
  with (ROOT/'locales/episode101.csv').open('w',newline='') as f:
   w=csv.writer(f,lineterminator='\n');w.writerow(['key','ru','en']);w.writerows([k,*v] for k,v in sorted(rows.items()))
  # OptimizedTranslation cannot enumerate keys; Localization builds its fallback
@@ -189,8 +197,15 @@ def unify():
    for group in ['regions','masks']:first[group].update(second[group])
   else:first.update(second)
   first.pop('john_selector_102',None)
+  first.pop('john_selector_101',None)
   write(target.relative_to(ROOT),first);path.unlink()
- texts=read('data/ui_text_layout.json');texts.pop('john_selector_102',None);write('data/ui_text_layout.json',texts)
+ from john_caption_masks import apply
+ tracks=read('data/episode101_animations.json');captions=read('data/episode101_text_animations.json')
+ apply(tracks,captions)
+ write('data/episode101_animations.json',tracks);write('data/episode101_text_animations.json',captions)
+ texts=read('data/ui_text_layout.json');texts.pop('john_selector_102',None);texts.pop('john_selector_101',None)
+ texts['adaptive_selector_5']=[b for b in texts['adaptive_selector_5'] if b['text']!='@loc:ui.art.adaptive_selector_5.1']
+ write('data/ui_text_layout.json',texts)
  for name in ['data/story_graphs/episode102.json','locales/episode102.csv','locales/episode102.csv.import','locales/episode102.ru.translation','locales/episode102.en.translation']:
   (ROOT/name).unlink(missing_ok=True)
 

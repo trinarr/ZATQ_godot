@@ -32,8 +32,8 @@
     "description": "@loc:ui.selectors.3.description",
     "frame": 5,
     "questions": "",
-    "available": false,
-    "episode": 0
+    "available": true,
+    "episode": 101
   },
   {
     "kind": "episodes",

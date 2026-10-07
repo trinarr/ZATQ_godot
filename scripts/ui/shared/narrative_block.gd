@@ -42,6 +42,8 @@ func configure(host: Control, value: String, rect: Rect2, font: Font, font_size:
  else:
   options.storage.add_child(band)
   band.hide()
+ label.material=null
+ label.shadow_pass.material=TEXT.shadow_material
  label.name="NarrativeText"
  label.text=translated
  label.add_theme_font_override("font",font)

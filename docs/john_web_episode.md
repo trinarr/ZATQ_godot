@@ -9,7 +9,9 @@ Godot publishes one bonus episode, ID 101, named «ВЕБ-ЭПИЗОД 1. ДЖО
 It begins with the prologue and continues into the escape without returning to
 selection. Main-story Episode VI remains independent. Legacy part-two saves
 (ID 102) migrate to 101; statistics are combined and scene IDs stay unchanged.
-The single preview reuses scene textures and the common selector components.
+The existing selector slot (frame 5, previously episode 0) now launches 101.
+Its original gas-mask preview and description are retained. No new card is
+appended; temporary exported John selector parts are removed during unify().
 
 ## Original routes and unfinished branches
 
@@ -97,3 +99,17 @@ TornTextButton/TornIconButton, shader text shadows, episode selection and
 EpisodeTimeline. Further useful extraction would be the console report
 frame (three matching screens) and a standard full-screen continue hit
 area with input-after-intro gating; neither needs a separate web UI system.
+
+## Caption masks and input
+
+Part 2 frames 1 and 9 use Symbol 10183 as a mask layer, not white art.
+Its ten original rectangle poses are exported as caption_mask tracks. Native
+text and its shader shadow clip to the same transformed rectangle; label
+pooling clears the materials and resize reapplies current mask geometry.
+
+Frame 3's red door/bag clips blink in an independent 19-frame loop. They
+do not form an exit animation: the original MovieClip click handler opens
+AddItem(2) immediately. The imported 256-frame pulse-based outro is discarded,
+so a single tap reaches the laser popup without the former 13.5 second delay.
+Flash accepts the entire MovieClip as the click target; the broad original
+continue area is retained, covering both red elements.

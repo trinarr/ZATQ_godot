@@ -9,6 +9,7 @@ var eye_closure: Node2D
 const QTE_PROMPT := preload("res://scripts/ui/qte_prompt.gd")
 const LOC := preload("res://scripts/core/localization.gd")
 static var caption_aliases: Dictionary = {}
+const CAPTION_CLIP := preload("res://shaders/caption_clip.gdshader")
 const COLOR_TRANSFORM := preload("res://shaders/flash_color_transform.gdshader")
 static var caption_data: Dictionary = {}
 var art_name := ""
@@ -36,9 +37,9 @@ static func catalog() -> Dictionary:
    var path: String="res://data/"+filename
    var source: Dictionary=JSON.parse_string(FileAccess.get_file_as_string(path))
    for art: String in source.art:
-    var entry: Dictionary=source.art[art].duplicate(true)
-    entry["episode"]=episode
-    data.art[art]=entry
+	var entry: Dictionary=source.art[art].duplicate(true)
+	entry["episode"]=episode
+	data.art[art]=entry
  return data
 static func has_art(art: String) -> bool:return catalog().art.has(art)
 func configure(art: String) -> void:
@@ -55,7 +56,7 @@ func configure(art: String) -> void:
   var visual: Control
   if part.has("eye_lid"):
    if eye_closure==null:
-    eye_closure=EYE_CLOSURE.new();add_child(eye_closure)
+	eye_closure=EYE_CLOSURE.new();add_child(eye_closure)
    pivot=eye_closure.add_lid(part)
    visual=pivot.get_child(0)
   else:pivot=Node2D.new()
@@ -81,6 +82,8 @@ func configure(art: String) -> void:
   if not part.has("eye_lid"):
    pivot.add_child(visual);add_child(pivot)
   sprites[key]=pivot
+ if spec.has("caption_mask"):
+  get_viewport().size_changed.connect(func(): _update_captions.call_deferred(current_frame))
  play("intro")
 func play(next_phase: String) -> void:
  applied_frame=-1
@@ -123,13 +126,13 @@ func seek_frame(index: int, subframe: float = 0.0) -> void:
    var visual: Control=pivot.get_child(0)
    var paint: ShaderMaterial=visual.material
    if paint:
-    paint.set_shader_parameter("multiplier",Color(c[0],c[1],c[2],c[3]))
-    paint.set_shader_parameter("offset",Vector3(c[4],c[5],c[6]))
+	paint.set_shader_parameter("multiplier",Color(c[0],c[1],c[2],c[3]))
+	paint.set_shader_parameter("offset",Vector3(c[4],c[5],c[6]))
    else:visual.modulate=Color(c[0],c[1],c[2],c[3])
    pivot.visible=true
    var layer: Node=eye_closure if pivot.get_parent()==eye_closure else pivot
    if not ordered.has(layer):
-    move_child(layer,order);order+=1;ordered[layer]=true
+	move_child(layer,order);order+=1;ordered[layer]=true
   _update_captions(index)
  _update_blur_strength(float(current_frame)+subframe)
  if current_frame==frames.size()-1 and playing and cycle<=1:
@@ -169,20 +172,26 @@ func bind_caption(label: Label, alias: String = "", decoration: Control = null) 
  if caption_data.is_empty():
   for filename: String in DirAccess.get_files_at("res://data"):
    if filename.begins_with("episode") and filename.ends_with("_text_animations.json"):
-    caption_data.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/"+filename)))
+	caption_data.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/"+filename)))
  if not caption_data.has(art_name):return
  var text: String=normalized_caption(label.text if alias.is_empty() else alias)
  if not caption_data[art_name].anchors.has(text) and alias.is_empty():
   if caption_aliases.is_empty():
    LOC.prepare()
    for table: Dictionary in LOC.tables.values():
-    for values: Dictionary in table.rows.values():
-     var original: String=normalized_caption(values.get("ru",""))
-     if original.is_empty():continue
-     for translation: String in values.values():
-      if not translation.is_empty():caption_aliases[normalized_caption(translation)]=original
+	for values: Dictionary in table.rows.values():
+	 var original: String=normalized_caption(values.get("ru",""))
+	 if original.is_empty():continue
+	 for translation: String in values.values():
+	  if not translation.is_empty():caption_aliases[normalized_caption(translation)]=original
   text=caption_aliases.get(text,text)
  if not caption_data[art_name].anchors.has(text):return
+ if spec.has("caption_mask"):
+  var clip := ShaderMaterial.new();clip.shader=CAPTION_CLIP
+  label.material=clip
+  if label.get("shadow_pass") is Label:
+   label.shadow_pass.material=label.shadow_pass.material.duplicate()
+   label.shadow_pass.material.set_shader_parameter("clip_enabled",true)
  captions.append({"label":label,"text":text,"origin":label.position,"scale":label.scale,"color":label.modulate,"inverse":_caption_inverse(text)})
  if decoration!=null:
   captions.append({"label":decoration,"text":text,"origin":decoration.position,"scale":decoration.scale,"color":decoration.modulate,"inverse":_caption_inverse(text)})
@@ -205,6 +214,13 @@ func _update_captions(index: int) -> void:
    var delta: Transform2D=pose*entry.inverse
    label.position=delta*entry.origin;label.scale=entry.scale*delta.get_scale();label.rotation=delta.get_rotation()
    label.modulate=entry.color*Color(c[0],c[1],c[2],c[3]);label.visible=true
+   if spec.has("caption_mask") and label is Label:
+	var areas: Array=spec.caption_mask[phase]
+	var area: Array=areas[mini(index,areas.size()-1)]
+	var rect := get_global_transform()*Rect2(float(area[0])*2,float(area[1])*2,float(area[2])*2,float(area[3])*2)
+	var uniform := Vector4(rect.position.x,rect.position.y,rect.size.x,rect.size.y)
+	label.material.set_shader_parameter("clip_rect",uniform)
+	if label.get("shadow_pass") is Label:label.shadow_pass.material.set_shader_parameter("clip_rect",uniform)
    break
 
 # Independent MovieClips driven by an activity (ratchet lock, keypad lamps).

@@ -6,12 +6,27 @@ func check(ok: bool, message: String) -> void:
  if not ok: failures += 1;push_error(message)
 func _initialize() -> void:call_deferred("run")
 func run() -> void:
+ root.size=Vector2i(2048,920)
  var quest: Node=root.get_node("Quest")
  quest.save_path="user://john_episode_test.json"
  quest.sound_enabled=false
  var ui: Control=load("res://scenes/Main.tscn").instantiate()
  root.add_child(ui)
  await process_frame
+ var entries: Array=ui._selector_items()
+ check(entries.filter(func(e: Dictionary):return int(e.get("episode",0))==101).size()==1,"exactly one John entry")
+ var john: Dictionary=entries[3]
+ check(john.episode==101 and john.available and int(john.frame)==5,"original John selector slot launches the unified story")
+ check(john.art=="selector_5","original gas-mask preview is reused")
+ check(quest.LOC.text(john.description).begins_with("Монстр? Палач? Психопат?"),"original John description is preserved")
+ check(not ui.episode_components.has("john_selector_101"),"duplicate John selector components are removed")
+ ui.selector_index=3
+ ui._draw_selector()
+ var had_progress: bool=quest.has_progress
+ quest.has_progress=false
+ ui._selector_start()
+ check(quest.episode==101 and quest.current_id=="john1_1","original Start button launches the web story")
+ quest.has_progress=had_progress
  ui._start_episode(101)
  check(quest.episode_starts.get(101)=="john1_1","unified web episode starts with the prologue")
  check(not quest.episode_starts.has(102),"second source part is not a separate menu entry")
@@ -55,6 +70,36 @@ func run() -> void:
  check(scenes==38,"all 38 authored story/modal states are imported")
  check(unfinished==8,"eight original unfinished choice branches remain unchanged")
  check(disabled==3,"three original disabled dialogue answers stay disabled")
+ for id: String in ["john2_1","john2_9"]:
+  quest._enter(id);await process_frame
+  var masked: Node2D=ui.viewport_canvas.episode_timeline
+  check(masked.spec.parts.values().all(func(p: Dictionary):return p.get("source","")!="Mov/Symbol 10183"),"Flash mask is not painted white: "+id)
+  check(masked.spec.caption_mask.intro.size()==10,"all original caption-mask keys are preserved")
+  check(not masked.captions.is_empty(),"masked native caption is bound")
+  var label: Label=masked.captions[0].label
+  for frame: int in [0,4,9]:
+   masked.seek_frame(frame)
+   var area: Array=masked.spec.caption_mask.intro[frame]
+   var bounds: Rect2=masked.get_global_transform()*Rect2(float(area[0])*2,float(area[1])*2,float(area[2])*2,float(area[3])*2)
+   var expected := Vector4(bounds.position.x,bounds.position.y,bounds.size.x,bounds.size.y)
+   check(label.material.get_shader_parameter("clip_rect").is_equal_approx(expected),"foreground follows original moving mask")
+   check(label.shadow_pass.material.get_shader_parameter("clip_rect").is_equal_approx(expected),"shader shadow follows the same mask")
+ quest._enter("john2_2");await process_frame
+ for entry: Dictionary in ui.viewport_canvas.episode_timeline.captions:
+  if entry.label is Label:
+   check(entry.label.material==null,"pooled narrative label clears previous clip")
+   check(not entry.label.shadow_pass.material.get_shader_parameter("clip_enabled"),"pooled shadow clears previous clip")
+ for point: Vector2 in [Vector2(387,366),Vector2(256,227),Vector2(366,348),Vector2(210,190)]:
+  quest._enter("john2_3");await process_frame
+  var interactive: Node2D=ui.viewport_canvas.episode_timeline
+  check(not interactive.has_outro(),"red pulse is not an exit animation")
+  var position: Vector2=ui.world_layer.get_global_transform()*(point*2)
+  for down: bool in [true,false]:
+   var event := InputEventMouseButton.new()
+   event.button_index=MOUSE_BUTTON_LEFT;event.position=position;event.pressed=down
+   Input.parse_input_event(event);await process_frame
+  check(quest.current_id=="john2_pickup_laser","one tap responds immediately at red door/bag: "+str(point))
+  check(not ui.screen.get_meta("episode_animation_block",false),"tap never waits for the red blinking cycle")
  quest._enter("john1_11")
  await process_frame
  var eyes: Node2D=ui.viewport_canvas.episode_timeline
