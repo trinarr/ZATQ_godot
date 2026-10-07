@@ -577,7 +577,8 @@
 					"e3_opening_11_anim_4",
 					"e3_opening_11_anim_5"
 				],
-				"animation_fps": 19.0
+				"animation_fps": 19.0,
+				"failure_animation_choice": 2
 			},
 			"position": [
 				15300.0,
@@ -724,7 +725,8 @@
 					0.0,
 					730.0,
 					480.0
-				]
+				],
+				"pause_allowed": false
 			},
 			"position": [
 				19090.0,
@@ -744,7 +746,8 @@
 				"blocks": [],
 				"text": "",
 				"sound": "BreakTheBone",
-				"auto_seconds": 0.5789473684210527
+				"auto_seconds": 0.5789473684210527,
+				"pause_allowed": false
 			},
 			"position": [
 				20400.0,
@@ -876,7 +879,8 @@
 				"clean_background": true,
 				"blocks": [],
 				"text": "",
-				"auto_seconds": 0.631578947368421
+				"auto_seconds": 0.631578947368421,
+				"pause_allowed": false
 			},
 			"position": [
 				20400.0,
@@ -1461,7 +1465,8 @@
 				"blocks": [],
 				"text": "",
 				"sound": "GlockShot2",
-				"auto_seconds": 0.6842105263157895
+				"auto_seconds": 0.6842105263157895,
+				"pause_allowed": false
 			},
 			"position": [
 				30600.0,
@@ -1671,7 +1676,8 @@
 				"clean_background": true,
 				"blocks": [],
 				"text": "",
-				"auto_seconds": 0.42105263157894735
+				"auto_seconds": 0.42105263157894735,
+				"pause_allowed": false
 			},
 			"position": [
 				37400.0,
@@ -1805,7 +1811,8 @@
 				"blocks": [],
 				"text": "",
 				"sound": "GlockShot2",
-				"auto_seconds": 0.6842105263157895
+				"auto_seconds": 0.6842105263157895,
+				"pause_allowed": false
 			},
 			"position": [
 				39100.0,
@@ -4364,7 +4371,8 @@
 		"e3_opening_15_choice_24__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "@loc:episode3.nodes.e3_opening_15_choice_24__choice_0.data.text"
+				"text": "@loc:episode3.nodes.e3_opening_15_choice_24__choice_0.data.text",
+				"pause_allowed": false
 			},
 			"position": [
 				19090.0,
@@ -5584,7 +5592,8 @@
 		"e3_john_10_choice_30__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "@loc:episode3.nodes.e3_john_10_choice_30__choice_1.data.text"
+				"text": "@loc:episode3.nodes.e3_john_10_choice_30__choice_1.data.text",
+				"pause_allowed": false
 			},
 			"position": [
 				36090.0,

@@ -66,6 +66,20 @@ func build() -> void:
 func finish(index:int)->void:
  if done:return
  done=true
+ var timeline: Node2D=ui.viewport_canvas.episode_timeline
+ if index==int(node.get("failure_animation_choice",-1)) and is_instance_valid(timeline) and timeline.spec.intro.size()>1:
+  # Flash freezes the branch at frame zero, then plays its fatal tail on timeout.
+  # Keep that tail unpausable; the activity clock no longer drives its frames.
+  ui._lock_pause()
+  for button: Button in taps:button.hide();button.disabled=true
+  if is_instance_valid(meter):meter.hide()
+  var origin: String=Quest.current_id
+  timeline.finished.connect(func():
+   if Quest.current_id==origin:Quest.choose(index),CONNECT_ONE_SHOT)
+  timeline.play("intro")
+  timeline.elapsed=1.0/float(timeline.catalog().fps)
+  timeline.seek_frame(1)
+  return
  Quest.choose(index)
 func check_code()->void:
  if done or ui.paused:return

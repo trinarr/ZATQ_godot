@@ -1216,7 +1216,8 @@
 					0.0,
 					730.0,
 					480.0
-				]
+				],
+				"pause_allowed": false
 			},
 			"position": [
 				22490.0,
@@ -1507,7 +1508,8 @@
 					0.0,
 					730.0,
 					480.0
-				]
+				],
+				"pause_allowed": false
 			},
 			"position": [
 				24190.0,
@@ -1527,7 +1529,8 @@
 				"blocks": [],
 				"text": "",
 				"sound": "RagingMan",
-				"auto_seconds": 1.5
+				"auto_seconds": 1.5,
+				"pause_allowed": false
 			},
 			"position": [
 				25500.0,
@@ -1611,7 +1614,12 @@
 				"clean_background": true,
 				"blocks": [],
 				"text": "",
-				"auto_seconds": 1.5
+				"auto_seconds": 1.5,
+				"pause_disabled_when": {
+					"BulletsNumber": {
+						"max": 0
+					}
+				}
 			},
 			"position": [
 				22100.0,
@@ -2891,7 +2899,8 @@
 					0.0,
 					730.0,
 					480.0
-				]
+				],
+				"pause_allowed": false
 			},
 			"position": [
 				22490.0,
@@ -2911,7 +2920,8 @@
 				"blocks": [],
 				"text": "",
 				"sound": "ComeAndKill",
-				"auto_seconds": 1.5
+				"auto_seconds": 1.5,
+				"pause_allowed": false
 			},
 			"position": [
 				23800.0,
@@ -3738,7 +3748,8 @@
 				"blocks": [],
 				"text": "",
 				"sound": "JumpOnZombie",
-				"auto_seconds": 1.5
+				"auto_seconds": 1.5,
+				"pause_allowed": false
 			},
 			"position": [
 				37400.0,
@@ -3852,7 +3863,8 @@
 					0.0,
 					730.0,
 					480.0
-				]
+				],
+				"pause_allowed": false
 			},
 			"position": [
 				19090.0,
@@ -3872,7 +3884,8 @@
 				"blocks": [],
 				"text": "",
 				"sound": "ZombiesGroup",
-				"auto_seconds": 1.5
+				"auto_seconds": 1.5,
+				"pause_allowed": false
 			},
 			"position": [
 				20400.0,
@@ -3937,7 +3950,8 @@
 					0.0,
 					730.0,
 					480.0
-				]
+				],
+				"pause_allowed": false
 			},
 			"position": [
 				37790.0,
@@ -3957,7 +3971,8 @@
 				"blocks": [],
 				"text": "",
 				"sound": "ZombieKilledSWAT",
-				"auto_seconds": 1.5
+				"auto_seconds": 1.5,
+				"pause_allowed": false
 			},
 			"position": [
 				39100.0,
@@ -4708,7 +4723,8 @@
 					0.0,
 					730.0,
 					480.0
-				]
+				],
+				"pause_allowed": false
 			},
 			"position": [
 				25890.0,
@@ -5840,7 +5856,8 @@
 		"e2_main_7_choice_22__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "@loc:episode2.nodes.e2_main_7_choice_22__choice_0.data.text"
+				"text": "@loc:episode2.nodes.e2_main_7_choice_22__choice_0.data.text",
+				"pause_allowed": false
 			},
 			"position": [
 				36090.0,
@@ -5908,7 +5925,8 @@
 				"blocks": [],
 				"text": "",
 				"sound": "ZombiesGroup",
-				"auto_seconds": 1.5
+				"auto_seconds": 1.5,
+				"pause_allowed": false
 			},
 			"position": [
 				27200.0,
@@ -5935,7 +5953,8 @@
 				"kind": "city_cutscene",
 				"art": "city_door_explosion",
 				"auto_seconds": 1.6,
-				"sound": "Explosion"
+				"sound": "Explosion",
+				"pause_allowed": false
 			},
 			"position": [
 				23800.0,
@@ -5946,7 +5965,8 @@
 		"e2_boom_4__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "@loc:episode2.nodes.e2_boom_4__choice_0.data.text"
+				"text": "@loc:episode2.nodes.e2_boom_4__choice_0.data.text",
+				"pause_allowed": false
 			},
 			"position": [
 				24190.0,
@@ -5962,7 +5982,8 @@
 				"kind": "city_cutscene",
 				"art": "city_explosion_flash",
 				"auto_seconds": 1.6,
-				"sound": ""
+				"sound": "",
+				"pause_allowed": false
 			},
 			"position": [
 				25500.0,

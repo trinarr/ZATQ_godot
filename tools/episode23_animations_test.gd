@@ -50,10 +50,15 @@ func run() -> void:
    if not is_instance_valid(player):continue
    var origin: String=quest.current_id
    player._process(0.10)
-   ui._show_pause();var frame: int=player.current_frame;player._process(1.0)
-   check(player.current_frame==frame,"pause freezes automatic cutscene")
-   ui._resume()
-   check(ui.viewport_canvas.episode_timeline==player and not player.suspended,"resume keeps cutscene instance")
+   var pausable: bool=ui._can_pause()
+   ui._show_pause();var frame: int=player.current_frame
+   if pausable:
+    player._process(1.0)
+    check(player.current_frame==frame,"pause freezes ordinary automatic cutscene")
+    ui._resume()
+    check(ui.viewport_canvas.episode_timeline==player and not player.suspended,"resume keeps cutscene instance")
+   else:
+    check(not ui.paused and not player.suspended,"fatal cutscene rejects pause")
    player.seek_frame(player.frames.size()-1)
    check(quest.current_id!=origin,"authored last frame advances cutscene")
  for sample: Array in [[2,"e2_hospital_1"],[2,"e2_roof_1"],[3,"e3_opening_1"]]:

@@ -601,7 +601,8 @@
 		"car_trapped__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "@loc:episode1.nodes.car_trapped__choice_0.data.text"
+				"text": "@loc:episode1.nodes.car_trapped__choice_0.data.text",
+				"pause_allowed": false
 			},
 			"position": [
 				20790.0,
@@ -617,7 +618,8 @@
 				"kind": "city_cutscene",
 				"art": "city_car_trapped",
 				"auto_seconds": 0.3684210526315789,
-				"sound": "BrokenGlassSound"
+				"sound": "BrokenGlassSound",
+				"pause_allowed": false
 			},
 			"position": [
 				22100.0,
@@ -1105,7 +1107,8 @@
 		"office_threat__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "@loc:episode1.nodes.office_threat__choice_0.data.text"
+				"text": "@loc:episode1.nodes.office_threat__choice_0.data.text",
+				"pause_allowed": false
 			},
 			"position": [
 				25890.0,
@@ -1120,7 +1123,8 @@
 				"text": "",
 				"kind": "city_cutscene",
 				"art": "city_office_threat",
-				"auto_seconds": 0.3157894736842105
+				"auto_seconds": 0.3157894736842105,
+				"pause_allowed": false
 			},
 			"position": [
 				27200.0,
@@ -1279,7 +1283,8 @@
 		"office_roof__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "@loc:episode1.nodes.office_roof__choice_0.data.text"
+				"text": "@loc:episode1.nodes.office_roof__choice_0.data.text",
+				"pause_allowed": false
 			},
 			"position": [
 				27590.0,
@@ -1711,7 +1716,8 @@
 		"shop_decision__choice_1": {
 			"type": "choice",
 			"data": {
-				"text": "@loc:episode1.nodes.shop_decision__choice_1.data.text"
+				"text": "@loc:episode1.nodes.shop_decision__choice_1.data.text",
+				"pause_allowed": false
 			},
 			"position": [
 				19090.0,
@@ -1874,7 +1880,8 @@
 				"text": "",
 				"kind": "city_cutscene",
 				"art": "city_roof_explosion",
-				"auto_seconds": 0.8
+				"auto_seconds": 0.8,
+				"pause_allowed": false
 			},
 			"position": [
 				28900.0,
@@ -1885,7 +1892,8 @@
 		"roof_explosion__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "@loc:episode1.nodes.roof_explosion__choice_0.data.text"
+				"text": "@loc:episode1.nodes.roof_explosion__choice_0.data.text",
+				"pause_allowed": false
 			},
 			"position": [
 				29290.0,
@@ -1900,7 +1908,8 @@
 				"text": "",
 				"kind": "city_cutscene",
 				"art": "city_door_explosion",
-				"auto_seconds": 0.8
+				"auto_seconds": 0.8,
+				"pause_allowed": false
 			},
 			"position": [
 				20400.0,
@@ -1911,7 +1920,8 @@
 		"door_explosion__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "@loc:episode1.nodes.door_explosion__choice_0.data.text"
+				"text": "@loc:episode1.nodes.door_explosion__choice_0.data.text",
+				"pause_allowed": false
 			},
 			"position": [
 				20790.0,
@@ -1926,7 +1936,8 @@
 				"text": "",
 				"kind": "city_cutscene",
 				"art": "city_door_blast",
-				"auto_seconds": 0.8
+				"auto_seconds": 0.8,
+				"pause_allowed": false
 			},
 			"position": [
 				22100.0,
@@ -1937,7 +1948,8 @@
 		"door_blast__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "@loc:episode1.nodes.door_blast__choice_0.data.text"
+				"text": "@loc:episode1.nodes.door_blast__choice_0.data.text",
+				"pause_allowed": false
 			},
 			"position": [
 				22490.0,
@@ -1952,7 +1964,8 @@
 				"text": "",
 				"kind": "city_cutscene",
 				"art": "city_door_blast_inner",
-				"auto_seconds": 0.8
+				"auto_seconds": 0.8,
+				"pause_allowed": false
 			},
 			"position": [
 				23800.0,
@@ -1963,7 +1976,8 @@
 		"door_blast_inner__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "@loc:episode1.nodes.door_blast_inner__choice_0.data.text"
+				"text": "@loc:episode1.nodes.door_blast_inner__choice_0.data.text",
+				"pause_allowed": false
 			},
 			"position": [
 				24190.0,
@@ -1979,7 +1993,8 @@
 				"kind": "city_cutscene",
 				"art": "city_explosion_flash",
 				"auto_seconds": 0.65,
-				"sound": "Explosion"
+				"sound": "Explosion",
+				"pause_allowed": false
 			},
 			"position": [
 				25500.0,
@@ -2244,7 +2259,8 @@
 					123.0,
 					349.0,
 					65.0
-				]
+				],
+				"pause_allowed": false
 			},
 			"position": [
 				15690.0,
@@ -2852,7 +2868,8 @@
 		"farm_awake__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "@loc:episode1.nodes.farm_awake__choice_0.data.text"
+				"text": "@loc:episode1.nodes.farm_awake__choice_0.data.text",
+				"pause_allowed": false
 			},
 			"position": [
 				25890.0,
@@ -2870,7 +2887,8 @@
 				"text": "",
 				"blocks": [],
 				"sound": "ZombiesGroup",
-				"auto_seconds": 1.0
+				"auto_seconds": 1.0,
+				"pause_allowed": false
 			},
 			"position": [
 				27200.0,
@@ -4642,7 +4660,8 @@
 					123.0,
 					349.0,
 					65.0
-				]
+				],
+				"pause_allowed": false
 			},
 			"position": [
 				390.0,
@@ -4710,7 +4729,8 @@
 				"clean_background": true,
 				"text": "",
 				"blocks": [],
-				"auto_seconds": 0.7
+				"auto_seconds": 0.7,
+				"pause_allowed": false
 			},
 			"position": [
 				17000.0,
@@ -4721,7 +4741,8 @@
 		"mainstreet_run__choice_0": {
 			"type": "choice",
 			"data": {
-				"text": "@loc:episode1.nodes.mainstreet_run__choice_0.data.text"
+				"text": "@loc:episode1.nodes.mainstreet_run__choice_0.data.text",
+				"pause_allowed": false
 			},
 			"position": [
 				17390.0,
@@ -4739,7 +4760,8 @@
 				"text": "",
 				"blocks": [],
 				"auto_seconds": 0.7,
-				"sound": "ManDeath"
+				"sound": "ManDeath",
+				"pause_allowed": false
 			},
 			"position": [
 				18700.0,

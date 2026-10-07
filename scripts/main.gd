@@ -156,8 +156,8 @@ func _set_backdrop(texture: Texture2D, crop_pause: bool = false) -> void:
 
 func _layout_world_layer() -> void:
 	if not is_instance_valid(world_layer): return
-	# Background art fills the safe rectangle; story interaction shares its
-	# exact transform while captions, pause and modals keep the fitted UI space.
+	# Story artwork retains the full Flash frame; interaction shares its exact
+	# transform while captions, pause and modals keep the fitted UI space.
 	world_layer.scale = viewport_canvas.art_layer.scale / screen.scale
 	world_layer.position = screen.get_global_transform().affine_inverse() * viewport_canvas.art_layer.global_position
 
@@ -179,6 +179,7 @@ func _layout_edge_tab() -> void:
 	edge_hit.size = edge_tab.size
 
 func _edge_tab(label: String, action: Callable, parent: Control = null) -> void:
+	if not _can_pause(): return
 	if is_instance_valid(edge_tab): edge_tab.hide()
 	if is_instance_valid(edge_hit): edge_hit.hide()
 	var source: Texture2D = load("res://assets/flash_ui/pause_button.png")
@@ -374,7 +375,23 @@ func _toggle_sound() -> void:
 	elif paused: _show_pause()
 	else: _show_menu()
 
+func _can_pause() -> bool:
+	if not playing or section != "story": return false
+	if is_instance_valid(screen) and screen.get_meta("pause_locked",false): return false
+	var node: Dictionary = Quest.current()
+	if node.get("kind","") in ["city_death","city_ending"]: return false
+	if not node.get("pause_allowed",true): return false
+	var conditions: Dictionary = node.get("pause_disabled_when",{})
+	return conditions.is_empty() or not Quest.matches(conditions)
+
+func _lock_pause() -> void:
+	screen.set_meta("pause_locked",true)
+	if is_instance_valid(edge_tab): edge_tab.hide()
+	if is_instance_valid(edge_hit): edge_hit.hide()
+
 func _show_pause() -> void:
+	# Guard every entry point: button, Escape/Back and application deactivation.
+	if not _can_pause(): return
 	paused = true
 	if is_instance_valid(viewport_canvas.episode_timeline): viewport_canvas.episode_timeline.suspended = true
 	television.stop()
@@ -418,6 +435,7 @@ func _choose(index: int) -> void:
 	if screen.get_meta("episode_animation_block",false): return
 	var timeline: Node2D = viewport_canvas.episode_timeline
 	var choice: Dictionary = Quest.available_choices()[index]
+	if not choice.get("pause_allowed",true): _lock_pause()
 	var next_art: String = Quest.current(choice.get("next","")).get("art","") if choice.has("next") else ""
 	var sequential: bool = is_instance_valid(timeline) and timeline.same_clip(next_art)
 	if is_instance_valid(timeline) and timeline.has_outro() and not sequential and not (Quest.current().get("kind","") == "tv" and index == 0):

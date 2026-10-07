@@ -1,5 +1,6 @@
 extends Control
-# Background fills the safe rectangle. Authored UI keeps its uniform scale.
+# Decorative background fills the safe rectangle. Authored story art and UI
+# retain the complete Flash frame so edge controls cannot be cropped.
 var safe_layer := Control.new()
 var background := TextureRect.new()
 var art_layer := Control.new()
@@ -47,9 +48,11 @@ func update_layout(viewport_size: Vector2) -> Rect2:
 	safe_layer.position = safe.position
 	safe_layer.size = safe.size
 	background.size = safe.size
-	var cover := maxf(safe.size.x / 1600.0, safe.size.y / 960.0)
-	art_layer.scale = Vector2.ONE * cover
-	art_layer.position = (safe.size - Vector2(1600,960) * cover) * 0.5
+	# Cover scaling crops authored arrows/hotspots on wide and narrow devices.
+	# Fit the complete composed scene; world interaction uses this same transform.
+	var fit := minf(safe.size.x / 1600.0, safe.size.y / 960.0)
+	art_layer.scale = Vector2.ONE * fit
+	art_layer.position = (safe.size - Vector2(1600,960) * fit) * 0.5
 	return safe
 
 func set_background(texture: Texture2D, crop_pause: bool = false) -> void:

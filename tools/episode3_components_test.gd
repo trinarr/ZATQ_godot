@@ -34,11 +34,17 @@ func run() -> void:
    if data.kind not in ["city_ending","city_death","activity_dialogue"]:
     check(ui.viewport_canvas.component_background_active,"component backdrop: "+id)
    if data.kind not in ["city_ending","city_death","city_pickup","city_decision"]:
-    check(ui.edge_hit!=null,"separate pause control: "+id)
+    check(is_instance_valid(ui.edge_hit)==ui._can_pause(),"pause control follows story policy: "+id)
    for child: Node in ui.viewport_canvas.art_layer.get_children():
-    check(child is TextureRect or child is ColorRect or child.get_script()==load("res://scripts/ui/qte_prompt.gd"),"art is a primitive component")
-    check(child.mouse_filter==Control.MOUSE_FILTER_IGNORE,"art leaves clicks to original hotspots")
-    if child is TextureRect:check(child.texture!=null,"texture loaded: "+id)
+    if child.has_method("seek_frame"):
+     for pivot: Node2D in child.sprites.values():
+      var visual: Control=pivot.get_child(0)
+      check(visual.mouse_filter==Control.MOUSE_FILTER_IGNORE,"animated art leaves clicks to hotspots")
+      if visual is TextureRect:check(visual.texture!=null,"animated texture loaded: "+id)
+    else:
+     check(child is Control,"static art is a native component")
+     if child is Control:check(child.mouse_filter==Control.MOUSE_FILTER_IGNORE,"art leaves clicks to original hotspots")
+     if child is TextureRect:check(child.texture!=null,"texture loaded: "+id)
    if data.kind=="activity_qte":
     var controller: Control
     for child: Node in ui.screen.get_children():
@@ -49,7 +55,10 @@ func run() -> void:
      controller.state.remaining=float(data.seconds)-(frame+0.25)/float(data.animation_fps)
      controller.update_visuals()
      check(ui.viewport_canvas.component_background_active,"component animation frame: "+str(frames[frame]))
-     check(controller.animation_index==(0 if data.get("qte_mode","")=="branch" else frame),"authored QTE frame index")
+     var timeline: Node2D=ui.viewport_canvas.episode_timeline
+     if is_instance_valid(timeline) and timeline.spec.get("qte",false):
+      check(timeline.current_frame==(0 if data.get("qte_mode","")=="branch" else mini(frame,timeline.frames.size()-1)),"authored QTE timeline frame")
+     else:check(controller.animation_index==(0 if data.get("qte_mode","")=="branch" else frame),"authored QTE frame index")
    for c: Dictionary in quest.available_choices():
     if c.has("mask"):check(ResourceLoader.exists("res://assets/flash_ui/"+c.mask+".png"),"interactive mask retained")
  check(screens==131,"all 131 episode screens exercised")
