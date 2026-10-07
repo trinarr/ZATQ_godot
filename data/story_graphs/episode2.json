@@ -5951,9 +5951,9 @@
 				"episode": 2.0,
 				"source": "MovBoom(3) frame 4",
 				"kind": "city_cutscene",
-				"art": "city_door_explosion",
+				"art": "e2_boom_4",
 				"auto_seconds": 1.6,
-				"sound": "Explosion",
+				"sound": "",
 				"pause_allowed": false
 			},
 			"position": [
@@ -5982,7 +5982,7 @@
 				"kind": "city_cutscene",
 				"art": "city_explosion_flash",
 				"auto_seconds": 1.6,
-				"sound": "",
+				"sound": "Explosion",
 				"pause_allowed": false
 			},
 			"position": [

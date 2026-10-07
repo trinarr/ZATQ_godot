@@ -6,7 +6,7 @@ import argparse,base64,copy,hashlib,json,tempfile,zipfile
 from pathlib import Path
 from PIL import Image
 from build_episode1_animations import Timelines
-from build_episode1_components import Exporter
+from build_episode1_components import Exporter,shared_texture_references
 from build_episode2_components import plans as plans2
 from build_episode3_components import plans as plans3
 from build_localized_ui import combine
@@ -109,7 +109,7 @@ def render_part(renderer,record,lib,photos):
  else:renderer.emit(body,record['matrix'],1,record['source'],blur_spec(e) if e is not None else None)
  return renderer.parts[0] if renderer.parts else None
 
-def build(archive,episodes=(2,3)):
+def build(archive,episodes=(2,3),only=None):
  with tempfile.TemporaryDirectory() as td:
   temp=Path(td);lib=temp/'LIBRARY';lib.mkdir();photos=temp/'Images';photos.mkdir()
   with zipfile.ZipFile(archive) as z:
@@ -119,8 +119,12 @@ def build(archive,episodes=(2,3)):
   for ep in episodes:
    tl=EpisodeTimelines(lib);out=ROOT/f'assets/flash_ui/episode{ep}_animation_parts';out.mkdir(exist_ok=True)
    renderer=Exporter(lib,out,ROOT/'fonts/flash');renderer.scratch=temp;renderer.raster_cache={};renderer.result_mode=False
-   result={'fps':19,'art':{},'audit':{}};text_result={}
+   result_path=ROOT/f'data/episode{ep}_animations.json'
+   text_path=ROOT/f'data/episode{ep}_text_animations.json'
+   result=json.loads(result_path.read_text()) if only and result_path.exists() else {'fps':19,'art':{},'audit':{}}
+   text_result=json.loads(text_path.read_text()) if only and text_path.exists() else {}
    for art,(items,spec) in selected_plans(ep).items():
+    if only and art not in only:continue
     states,periods=sequences(tl,items,spec)
     pool={}
     for fs in states.values():
@@ -190,10 +194,11 @@ def build(archive,episodes=(2,3)):
      annotate(result['art'][art])
      text_result[art]={'anchors':anchors,**texts}
      print(ep,art,len(primitives),len(tracks['intro']),len(tracks['outro']),flush=True)
-   result['audit']=tl.audit
+   result.setdefault('audit',{}).update(tl.audit)
    (ROOT/f'data/episode{ep}_animations.json').write_text(json.dumps(result,separators=(',',':'))+'\n')
    (ROOT/f'data/episode{ep}_text_animations.json').write_text(json.dumps(text_result,separators=(',',':'),ensure_ascii=False)+'\n')
    used={Path(p['texture']).name for v in result['art'].values() for p in v['parts'].values() if p.get('texture','').startswith(out.name+'/')}
+   used.update(Path(p).name for p in shared_texture_references(ROOT) if p.startswith(out.name+'/'))
    for f in out.glob('*.png'):
     if f.name not in used:f.unlink();Path(str(f)+'.import').unlink(missing_ok=True)
    if ep>=4:deduplicate_episode(ep)
@@ -221,4 +226,4 @@ def deduplicate_episode(ep):
    if directory+'/'+file.name not in referenced:file.unlink();Path(str(file)+'.import').unlink(missing_ok=True)
 
 if __name__=='__main__':
- p=argparse.ArgumentParser(description=__doc__);p.add_argument('archive',type=Path);p.add_argument('--episode',type=int,choices=[2,3,4]);a=p.parse_args();build(a.archive,(a.episode,) if a.episode else (2,3))
+ p=argparse.ArgumentParser(description=__doc__);p.add_argument('archive',type=Path);p.add_argument('--episode',type=int,choices=[2,3,4]);p.add_argument('--only',nargs='+');a=p.parse_args();build(a.archive,(a.episode,) if a.episode else (2,3),a.only)

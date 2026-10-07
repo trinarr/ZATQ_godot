@@ -1103,5 +1103,15 @@
       "But2",
       "NumB"
     ]
+  },
+  "e2_boom_4": {
+    "symbol": 2652,
+    "frame": 3,
+    "overrides": {
+      "Mov": 20
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": []
   }
 }

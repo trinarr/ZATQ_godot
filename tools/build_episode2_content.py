@@ -160,9 +160,10 @@ def build(library,photos,sources,output,render=True,reuse_art=False):
  nodes['e2_roof_8']['variants']=[{'when':{'BulletsNumber':{'min':1}},'sound':'ZombieFallingOnDavidShooting'},{'when':{'BulletsNumber':{'max':0}},'sound':'ZombieFallingOnDavidKill'}]
  # Variant lift routes both enter the same automatic finale, carrying companion state.
  edge('e2_lift_2_v2',['e2_lift_3_v2'])
- # MovBoom(3), same explosion sequence used by Episode I.
+ # MovBoom(3) starts at source frame 4, skipping Episode I's entrance door.
+ visuals['e2_boom_4']={'symbol':2652,'frame':3,'overrides':{'Mov':20},'photo':'','photo_path':'Mov.Mov','hide':[]}
  for fr in [4,5]:
-  id='e2_boom_'+str(fr);nodes[id]={'episode':2,'source':'MovBoom(3) frame '+str(fr),'kind':'city_cutscene','art':'city_door_explosion' if fr==4 else 'city_explosion_flash','auto_seconds':1.6,'sound':'Explosion' if fr==4 else '','choices':[{'text':'Далее','next':'e2_boom_5' if fr==4 else result(35)}]}
+  id='e2_boom_'+str(fr);nodes[id]={'episode':2,'source':'MovBoom(3) frame '+str(fr),'kind':'city_cutscene','art':'e2_boom_4' if fr==4 else 'city_explosion_flash','auto_seconds':1.6,'sound':'Explosion' if fr==5 else '','choices':[{'text':'Далее','next':'e2_boom_5' if fr==4 else result(35)}]}
  # End-state text variants are not separate routes unless explicitly targeted.
  reachable=set();pending=['e2_hospital_1']
  while pending:
