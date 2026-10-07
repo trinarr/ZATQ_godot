@@ -1,0 +1,3941 @@
+{
+  "e5_plane_1_v1": {
+    "symbol": 1031,
+    "frame": 0,
+    "overrides": {
+      "Mov": 14
+    },
+    "photo": "IncomeFrame.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_2_v1": {
+    "symbol": 1031,
+    "frame": 1,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "Tablo.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_3_v1": {
+    "symbol": 1031,
+    "frame": 2,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_4_v1": {
+    "symbol": 1031,
+    "frame": 3,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "VSamolete.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_5_v1": {
+    "symbol": 1031,
+    "frame": 4,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 0
+    },
+    "photo": "SamoletVzlet.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_6_v1": {
+    "symbol": 1031,
+    "frame": 5,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "ONaushnikah.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_8_v1": {
+    "symbol": 1031,
+    "frame": 7,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 0
+    },
+    "photo": "VidIzOkna.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_9_v1": {
+    "symbol": 1031,
+    "frame": 8,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 0
+    },
+    "photo": "NachaloZombie.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_12_v1": {
+    "symbol": 1031,
+    "frame": 11,
+    "overrides": {
+      "Mov": 9,
+      "Mov.Hist": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_13_v1": {
+    "symbol": 1031,
+    "frame": 12,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "PodyemNaVtoroySpokoino.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_14_v1": {
+    "symbol": 1031,
+    "frame": 13,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_15_v1": {
+    "symbol": 1031,
+    "frame": 14,
+    "overrides": {
+      "Mov": 9,
+      "Lock": 14
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "activity_qte": true,
+    "activity_frames": 60,
+    "control_tracks": {
+      "lock": {
+        "path": "Lock",
+        "frames": 15
+      }
+    }
+  },
+  "e5_plane_16_v1": {
+    "symbol": 1031,
+    "frame": 15,
+    "overrides": {
+      "Mov": 9,
+      "Mov.Hist": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_18_v1": {
+    "symbol": 1031,
+    "frame": 17,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "ZakritStorky.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_19_v1": {
+    "symbol": 1031,
+    "frame": 18,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "AtakaStuardessa.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_20_v1": {
+    "symbol": 1031,
+    "frame": 19,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "activity_qte": true,
+    "activity_frames": 39
+  },
+  "e5_plane_21_v1": {
+    "symbol": 1031,
+    "frame": 20,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "NoviyZombi.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_22_v1": {
+    "symbol": 1031,
+    "frame": 21,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_23_v1": {
+    "symbol": 1031,
+    "frame": 22,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "NapadeniyeNaDonata.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_5_v2": {
+    "symbol": 1031,
+    "frame": 4,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 1
+    },
+    "photo": "SamoletVzlet.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_7_v2": {
+    "symbol": 1031,
+    "frame": 6,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_8_v2": {
+    "symbol": 1031,
+    "frame": 7,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 1
+    },
+    "photo": "VidIzOkna.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_9_v2": {
+    "symbol": 1031,
+    "frame": 8,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 1
+    },
+    "photo": "NachaloZombie.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_10_v2": {
+    "symbol": 1031,
+    "frame": 9,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "PodyemNaVtoroy.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_11_v2": {
+    "symbol": 1031,
+    "frame": 10,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "VstrachaStuardessi.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_12_v2": {
+    "symbol": 1031,
+    "frame": 11,
+    "overrides": {
+      "Mov": 9,
+      "Mov.Hist": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_13_v2": {
+    "symbol": 1031,
+    "frame": 12,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "PodyemNaVtoroySpokoino.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_14_v2": {
+    "symbol": 1031,
+    "frame": 13,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_15_v2": {
+    "symbol": 1031,
+    "frame": 14,
+    "overrides": {
+      "Mov": 9,
+      "Lock": 14
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "activity_qte": true,
+    "activity_frames": 60,
+    "control_tracks": {
+      "lock": {
+        "path": "Lock",
+        "frames": 15
+      }
+    }
+  },
+  "e5_plane_16_v2": {
+    "symbol": 1031,
+    "frame": 15,
+    "overrides": {
+      "Mov": 9,
+      "Mov.Hist": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_17_v2": {
+    "symbol": 1031,
+    "frame": 16,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_9_v3": {
+    "symbol": 1031,
+    "frame": 8,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 1
+    },
+    "photo": "NachaloZombie.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_10_v3": {
+    "symbol": 1031,
+    "frame": 9,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "PodyemNaVtoroy.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_11_v3": {
+    "symbol": 1031,
+    "frame": 10,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "VstrachaStuardessi.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_16_v3": {
+    "symbol": 1031,
+    "frame": 15,
+    "overrides": {
+      "Mov": 9,
+      "Mov.Hist": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_plane_16_v4": {
+    "symbol": 1031,
+    "frame": 15,
+    "overrides": {
+      "Mov": 9,
+      "Mov.Hist": 2
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_upper_1_v1": {
+    "symbol": 804,
+    "frame": 0,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_upper_2_v1": {
+    "symbol": 804,
+    "frame": 1,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 0
+    },
+    "photo": "KokpitDver.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_upper_5_v1": {
+    "symbol": 804,
+    "frame": 4,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_upper_12_v1": {
+    "symbol": 804,
+    "frame": 11,
+    "overrides": {},
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379",
+      "Symbol 792"
+    ],
+    "control_tracks": {
+      "light": {
+        "path": "Light",
+        "frames": 33
+      }
+    }
+  },
+  "e5_upper_13_v1": {
+    "symbol": 804,
+    "frame": 12,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_upper_14_v1": {
+    "symbol": 804,
+    "frame": 13,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "KabinaPilota.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_upper_2_v2": {
+    "symbol": 804,
+    "frame": 1,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 1
+    },
+    "photo": "KokpitDver.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_upper_3_v2": {
+    "symbol": 804,
+    "frame": 2,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_upper_4_v2": {
+    "symbol": 804,
+    "frame": 3,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 0
+    },
+    "photo": "SecretniyeDocymenti.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_upper_5_v2": {
+    "symbol": 804,
+    "frame": 4,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_upper_2_v3": {
+    "symbol": 804,
+    "frame": 1,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 2
+    },
+    "photo": "KokpitDver.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_upper_3_v3": {
+    "symbol": 804,
+    "frame": 2,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_upper_4_v3": {
+    "symbol": 804,
+    "frame": 3,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 1
+    },
+    "photo": "SecretniyeDocymenti.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_upper_9_v3": {
+    "symbol": 804,
+    "frame": 8,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 1
+    },
+    "photo": "SpyskKZombi.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_upper_6_v6": {
+    "symbol": 804,
+    "frame": 5,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 1
+    },
+    "photo": "VidIzOkna-2.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_upper_10_v6": {
+    "symbol": 804,
+    "frame": 9,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_upper_11_v6": {
+    "symbol": 804,
+    "frame": 10,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "TualetVhod.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_upper_6_v7": {
+    "symbol": 804,
+    "frame": 5,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 0
+    },
+    "photo": "VidIzOkna-2.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_upper_7_v7": {
+    "symbol": 804,
+    "frame": 6,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_upper_10_v7": {
+    "symbol": 804,
+    "frame": 9,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_upper_11_v7": {
+    "symbol": 804,
+    "frame": 10,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "TualetVhod.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_upper_8_v8": {
+    "symbol": 804,
+    "frame": 7,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "VmesteVerhniyEtazh.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_upper_9_v8": {
+    "symbol": 804,
+    "frame": 8,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 1
+    },
+    "photo": "SpyskKZombi.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_hide_1_v1": {
+    "symbol": 907,
+    "frame": 0,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 0
+    },
+    "photo": "SpratatcaVKonce.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_hide_2_v1": {
+    "symbol": 907,
+    "frame": 1,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "StuardessaZvonok.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_hide_3_v1": {
+    "symbol": 907,
+    "frame": 2,
+    "overrides": {
+      "Mov": 20
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "activity_qte": true,
+    "activity_frames": 21
+  },
+  "e5_hide_4_v1": {
+    "symbol": 907,
+    "frame": 3,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_hide_5_v1": {
+    "symbol": 907,
+    "frame": 4,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "PeredNapadeniemZombi.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_hide_6_v1": {
+    "symbol": 907,
+    "frame": 5,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "activity_qte": true,
+    "activity_frames": 52
+  },
+  "e5_hide_7_v1": {
+    "symbol": 907,
+    "frame": 6,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "PosleNapadeniya.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_hide_8_v1": {
+    "symbol": 907,
+    "frame": 7,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "KrovNaStene.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_hide_9_v1": {
+    "symbol": 907,
+    "frame": 8,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_hide_10_v1": {
+    "symbol": 907,
+    "frame": 9,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "NapadeniyeNaDevushky.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_hide_1_v2": {
+    "symbol": 907,
+    "frame": 0,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 0
+    },
+    "photo": "SpratatcaVKonce.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_hide_2_v2": {
+    "symbol": 907,
+    "frame": 1,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "StuardessaZvonok.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_hide_3_v2": {
+    "symbol": 907,
+    "frame": 2,
+    "overrides": {
+      "Mov": 20
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "activity_qte": true,
+    "activity_frames": 21
+  },
+  "e5_hide_4_v2": {
+    "symbol": 907,
+    "frame": 3,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_hide_5_v2": {
+    "symbol": 907,
+    "frame": 4,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "PeredNapadeniemZombi.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_hide_6_v2": {
+    "symbol": 907,
+    "frame": 5,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "activity_qte": true,
+    "activity_frames": 52
+  },
+  "e5_hide_7_v2": {
+    "symbol": 907,
+    "frame": 6,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "PosleNapadeniya.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_hide_8_v2": {
+    "symbol": 907,
+    "frame": 7,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "KrovNaStene.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_hide_9_v2": {
+    "symbol": 907,
+    "frame": 8,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_hide_10_v2": {
+    "symbol": 907,
+    "frame": 9,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "NapadeniyeNaDevushky.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_hide_1_v3": {
+    "symbol": 907,
+    "frame": 0,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 1
+    },
+    "photo": "SpratatcaVKonce.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_hide_2_v3": {
+    "symbol": 907,
+    "frame": 1,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "StuardessaZvonok.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_hide_3_v3": {
+    "symbol": 907,
+    "frame": 2,
+    "overrides": {
+      "Mov": 20
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "activity_qte": true,
+    "activity_frames": 21
+  },
+  "e5_hide_4_v3": {
+    "symbol": 907,
+    "frame": 3,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_hide_8_v3": {
+    "symbol": 907,
+    "frame": 7,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "KrovNaStene.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_hide_9_v3": {
+    "symbol": 907,
+    "frame": 8,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_rest_1_v1": {
+    "symbol": 834,
+    "frame": 0,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_rest_2_v1": {
+    "symbol": 834,
+    "frame": 1,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "ReturnIzOtdiha.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_rest_3_v1": {
+    "symbol": 834,
+    "frame": 2,
+    "overrides": {
+      "Mov": 14
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_rest_4_v1": {
+    "symbol": 834,
+    "frame": 3,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "DevushkaKrichat.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_rest_5_v1": {
+    "symbol": 834,
+    "frame": 4,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "PodushkiRestZona.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_rest_1_v2": {
+    "symbol": 834,
+    "frame": 0,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_rest_2_v2": {
+    "symbol": 834,
+    "frame": 1,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "ReturnIzOtdiha.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_rest_3_v2": {
+    "symbol": 834,
+    "frame": 2,
+    "overrides": {
+      "Mov": 14
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_rest_3_v3": {
+    "symbol": 834,
+    "frame": 2,
+    "overrides": {
+      "Mov": 14
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_rest_3_v4": {
+    "symbol": 834,
+    "frame": 2,
+    "overrides": {
+      "Mov": 14
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_sector_1_v1": {
+    "symbol": 855,
+    "frame": 0,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "VnizuVluke.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_sector_2_v1": {
+    "symbol": 855,
+    "frame": 1,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "SvetVOtseke.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_sector_3_v1": {
+    "symbol": 855,
+    "frame": 2,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "NaytiDonata.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_sector_4_v2": {
+    "symbol": 855,
+    "frame": 3,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_under_1_v1": {
+    "symbol": 1058,
+    "frame": 0,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "OborachivayushiysaZombi.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_under_2_v1": {
+    "symbol": 1058,
+    "frame": 1,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 0
+    },
+    "photo": "PatronyFive-Seven-1.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_under_3_v1": {
+    "symbol": 1058,
+    "frame": 2,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_under_4_v1": {
+    "symbol": 1058,
+    "frame": 3,
+    "overrides": {
+      "Mov": 29
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_under_2_v2": {
+    "symbol": 1058,
+    "frame": 1,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 1
+    },
+    "photo": "PatronyFive-Seven-1.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_under_5_v2": {
+    "symbol": 1058,
+    "frame": 4,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "DiraVIlluminatore.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "ButL0",
+      "ButL1",
+      "ButL10",
+      "ButL11",
+      "ButL2",
+      "ButL3",
+      "ButL4",
+      "ButL5",
+      "ButL6",
+      "ButL7",
+      "ButL8",
+      "ButL9",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e5_upper_1_v1_controls": {
+    "symbol": 804,
+    "frame": 0,
+    "overrides": {
+      "But1": 4,
+      "But2": 4
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Mov"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "omit_root_shapes": true
+  },
+  "e5_item_documents": {
+    "symbol": 274,
+    "frame": 0,
+    "overrides": {
+      "Weapons": 11,
+      "ButExit": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Txt"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "offset_y": 30
+  },
+  "e5_item_armor": {
+    "symbol": 274,
+    "frame": 0,
+    "overrides": {
+      "Weapons": 12,
+      "ButExit": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Txt"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "offset_y": 30
+  },
+  "e5_item_sig": {
+    "symbol": 274,
+    "frame": 0,
+    "overrides": {
+      "Weapons": 13,
+      "ButExit": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Txt"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "offset_y": 30
+  },
+  "e5_dialogue_lex": {
+    "symbol": 237,
+    "frame": 5,
+    "overrides": {
+      "Ava": 5,
+      "Dlg1": 0,
+      "Dlg2": 0,
+      "Dlg3": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "DlgTxt",
+      "PrsnTxt",
+      "Txt"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  }
+}

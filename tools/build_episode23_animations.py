@@ -54,6 +54,7 @@ def selected_plans(ep):
    final_overrides=plans[prefix+str(last)][0][0][4]
    items=[(s,f,x,y,dict(final_overrides),hide) for s,f,x,y,ov,hide in items]
    spec['qte']=True
+  if spec.get('activity_qte'):spec['qte']=True
   result[art]=(items,spec)
  return result
 
@@ -83,6 +84,7 @@ def sequences(tl,items,spec,text_only=False):
     row+=tl.walk(symbol,index,tick,ov,set(hide),spec,t=(1,0,0,1,x,y),key=str(ri),outro=phase=='outro',origin=index,text_only=text_only)
    states.append(row)
   result[phase]=states;periods[phase]=tl.period
+ if spec.get('activity_qte'):durations['intro']=spec['activity_frames']
  spec['durations']=durations
  return result,periods
 
@@ -126,8 +128,18 @@ def build(archive,episodes=(2,3),only=None):
    for art,(items,spec) in selected_plans(ep).items():
     if only and art not in only:continue
     states,periods=sequences(tl,items,spec)
+    variable_states={}
+    for variable,control in spec.get('control_tracks',{}).items():
+     rows=[]
+     for index in range(control['frames']):
+      row=[]
+      for ri,(symbol,frame,x,y,ov,hide) in enumerate(items):
+       override=dict(ov);override[control['path']]=index
+       row+=tl.walk(symbol,frame,0,override,set(hide),dict(spec,frozen_paths=[control['path']]),t=(1,0,0,1,x,y),key=str(ri),origin=frame)
+      rows.append([r for r in row if r.get('source','').startswith(control['path']+'/') or r.get('source','').startswith(control['path']+'.')])
+     variable_states[variable]=rows
     pool={}
-    for fs in states.values():
+    for fs in [*states.values(),*variable_states.values()]:
      for row in fs:
       for rec in row:pool.setdefault(rec['key'],[]).append(rec)
     primitives={};refs={}
@@ -145,7 +157,7 @@ def build(archive,episodes=(2,3),only=None):
         part['texture']=directory+'/'+filename;break
      primitives[key]=part;refs[key]=ref['matrix']
     tracks={}
-    for phase,fs in states.items():
+    for phase,fs in {**states,**variable_states}.items():
      frames=[]
      for row in fs:
       frame=[]
@@ -157,7 +169,7 @@ def build(archive,episodes=(2,3),only=None):
        inv=(d/det,-b/det,-c/det,a/det,(c*y-d*x)/det,(b*x-a*y)/det)
        frame.append([k,[round(v,6) for v in combine(r['matrix'],inv)],[round(v,6) for v in r['color']]])
       frames.append(frame)
-     minimum=spec.get('durations',{}).get(phase,1)
+     minimum=len(fs) if phase in variable_states else spec.get('durations',{}).get(phase,1)
      while len(frames)>minimum and frames[-1]==frames[-2]:frames.pop()
      tracks[phase]=frames
     if spec.get('qte'):
@@ -178,7 +190,8 @@ def build(archive,episodes=(2,3),only=None):
     if spec.get('qte'):
      texts['intro']=texts['intro'][:spec['durations']['intro']]
      texts['outro']=[copy.deepcopy(texts['intro'][-1])]
-    animated=any(len(v)>1 for v in tracks.values()) or any(len(v)>1 for v in texts.values()) or spec.get('qte')
+    variables={k:tracks.pop(k) for k in variable_states}
+    animated=bool(variables) or any(len(v)>1 for v in tracks.values()) or any(len(v)>1 for v in texts.values()) or spec.get('qte')
     if animated:
      hold_outro=spec.get('qte') or spec.get('durations',{}).get('outro',1)<=1
      if hold_outro:
@@ -186,11 +199,11 @@ def build(archive,episodes=(2,3),only=None):
       texts['outro']=[copy.deepcopy(texts['intro'][-1])]
      for phase in ['intro','outro']:
       while len(tracks[phase])<len(texts[phase]):tracks[phase].append(copy.deepcopy(tracks[phase][-1]))
-     used_keys={r[0] for fs in tracks.values() for row in fs for r in row}
+     used_keys={r[0] for fs in [*tracks.values(),*variables.values()] for row in fs for r in row}
      primitives={k:v for k,v in primitives.items() if k in used_keys}
      used_text={r[0] for fs in texts.values() for row in fs for r in row}
      anchors={k:v for k,v in anchors.items() if k in used_text}
-     result['art'][art]={'parts':primitives,'clip':str(items[0][0])+':'+str(items[0][1]),'intro_loop':periods['intro'] if len(tracks['intro'])==len(states['intro']) else 0,'qte':bool(spec.get('qte')),'outro_hold':bool(hold_outro),**tracks}
+     result['art'][art]={'parts':primitives,'clip':str(items[0][0])+':'+str(items[0][1]),'intro_loop':periods['intro'] if len(tracks['intro'])==len(states['intro']) else 0,'qte':bool(spec.get('qte')),'outro_hold':bool(hold_outro),'variables':variables,**tracks}
      annotate(result['art'][art])
      text_result[art]={'anchors':anchors,**texts}
      print(ep,art,len(primitives),len(tracks['intro']),len(tracks['outro']),flush=True)
@@ -226,4 +239,4 @@ def deduplicate_episode(ep):
    if directory+'/'+file.name not in referenced:file.unlink();Path(str(file)+'.import').unlink(missing_ok=True)
 
 if __name__=='__main__':
- p=argparse.ArgumentParser(description=__doc__);p.add_argument('archive',type=Path);p.add_argument('--episode',type=int,choices=[2,3,4]);p.add_argument('--only',nargs='+');a=p.parse_args();build(a.archive,(a.episode,) if a.episode else (2,3),a.only)
+ p=argparse.ArgumentParser(description=__doc__);p.add_argument('archive',type=Path);p.add_argument('--episode',type=int,choices=[2,3,4,5]);p.add_argument('--only',nargs='+');a=p.parse_args();build(a.archive,(a.episode,) if a.episode else (2,3),a.only)

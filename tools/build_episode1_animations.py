@@ -73,6 +73,7 @@ class Timelines:
      start,end,loop=self.segment(child,ov.get(p) if part else None,outro and bool(part) and (p in ['Mov','Canals'] or p.endswith('.Knop')))
      # Frame overrides for text variants and TV channels are selected states.
      if part and (p.endswith('Hist') or p=='Canals.Mov'):start=end=ov.get(p,int(e.get('firstFrame',0)))
+     if part and p in spec.get('frozen_paths',[]):start=end=ov.get(p,0);loop=False
      # A newly placed child starts its own timeline on its birth frame.
      signature=(e.get('name'),child,ei)
      birth=int(f.get('index',0))

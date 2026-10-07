@@ -72,11 +72,40 @@ func current(id: String = "") -> Dictionary:
 			if matches(variant.when):
 				for field: String in variant:
 					if field != "when": resolved[field] = variant[field]
-	var view: Dictionary = LOC.resolve_tree(resolved)
+	var view: Dictionary = _substitute_flags(LOC.resolve_tree(resolved))
 	current_resolutions += 1
 	if _view_cache.size() >= 16: _view_cache.erase(_view_cache.keys()[0])
 	_view_cache[key] = {"locale":locale,"source_hash":source_hash,"flags":flags.duplicate(true),"view":view}
 	return view
+
+func _substitute_flags(value: Variant) -> Variant:
+	if value is String:
+		if not value.contains("{"): return value
+		for key: String in flags:
+			if flags[key] is String or flags[key] is int or flags[key] is float:
+				value = value.replace("{"+key+"}",str(flags[key]))
+		return value
+	if value is Dictionary:
+		var result: Dictionary = {}
+		for key: Variant in value: result[key] = _substitute_flags(value[key])
+		return result
+	if value is Array:
+		var result: Array = []
+		for item: Variant in value: result.append(_substitute_flags(item))
+		return result
+	return value
+
+func _initialize_random_values() -> void:
+	for key: String in nodes[current_id].get("random_values",{}):
+		if not str(flags.get(key,"")).is_empty(): continue
+		var rule: Dictionary = nodes[current_id].random_values[key]
+		var digits: String = str(roundi(randf()*float(int(rule.maximum)-int(rule.minimum)))+int(rule.minimum))
+		digits = digits.lpad(int(rule.get("digits",0)),"0")
+		flags[key] = str(rule.get("prefix",""))+digits+str(rule.get("suffix",""))
+		if rule.has("spaced_variable"):
+			var parts: PackedStringArray = []
+			for character: String in digits: parts.append(character)
+			flags[rule.spaced_variable] = str(rule.get("prefix",""))+"-".join(parts)+str(rule.get("suffix",""))
 
 func matches(conditions: Dictionary) -> bool:
 	for key: String in conditions:
@@ -137,6 +166,7 @@ func _enter(id: String) -> void:
 		popup_origin = current_id if int(current().get("episode",1)) == int(nodes[id].get("episode",1)) else ""
 	if current_id != id: activity = {}
 	current_id = id
+	_initialize_random_values()
 	episode = int(nodes[id].get("episode",1))
 	channel = 0
 	var pickup: Dictionary = current().get("pickup_if",{})
@@ -231,6 +261,10 @@ func _valid(data: Variant) -> bool:
 	var max_bullets: int = 16 if int(saved_episode)>=3 else 12
 	if not (bullets is int or bullets is float) or bullets != int(bullets) or bullets < -1 or bullets > max_bullets: return false
 	if not data.flags.get("LinkedFr",false) is bool: return false
+	for key: String in ["TakenDocs","TakenArmor","CabinCodeKnown"]:
+		if not data.flags.get(key,false) is bool: return false
+	for key: String in ["PilotCode","PilotCodeSpaced"]:
+		if not data.flags.get(key,"") is String: return false
 	if data.has_progress and int(nodes.get(data.current_id,{}).get("episode",1)) != int(saved_episode): return false
 	for number: int in [1,2]:
 		var stats_key := "episode%d_stats" % number
@@ -261,6 +295,19 @@ func _valid(data: Variant) -> bool:
 		if activity_data.has("last_target"):
 			var last: Variant = activity_data.last_target
 			if not (last is int or last is float) or last != int(last) or int(last) not in [0,1]: return false
+		if activity_data.has("target_windows"):
+			if not activity_data.target_windows is Array: return false
+			for window: Variant in activity_data.target_windows:
+				if not window is Dictionary or not window.get("rect") is Array or window.rect.size()!=4: return false
+				for value: Variant in [window.get("start"),window.get("end"),window.rect[0],window.rect[1],window.rect[2],window.rect[3]]:
+					if not (value is int or value is float) or not is_finite(float(value)): return false
+				if window.end<=window.start or window.rect[2]<=0 or window.rect[3]<=0: return false
+		for key: String in ["lock_frame","lock_fraction","feedback_remaining"]:
+			if activity_data.has(key):
+				var value: Variant = activity_data[key]
+				if not (value is int or value is float) or not is_finite(float(value)) or value<0: return false
+		if activity_data.has("lock_running") and not activity_data.lock_running is bool: return false
+		if activity_data.has("status") and activity_data.status not in ["idle","error","accepted"]: return false
 	var ch: Variant = data.get("channel")
 	return (ch is float or ch is int) and ch == int(ch) and ch >= 0 and ch < TV_IMAGES.size()
 

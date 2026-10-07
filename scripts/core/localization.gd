@@ -6,7 +6,7 @@ const DIRECTORY := "res://locales/"
 static var translations: Array[Translation] = []
 static var ready := false
 static var tables: Dictionary = {}
-const BUILTIN_TABLES := ["ui", "episode1", "episode2", "episode3", "episode4"]
+const BUILTIN_TABLES := ["ui", "episode1", "episode2", "episode3", "episode4", "episode5"]
 static func imported_table(path:String)->Dictionary:
  var base:=path.trim_suffix(".csv")
  var locales:Array[String]=["ru","en"]

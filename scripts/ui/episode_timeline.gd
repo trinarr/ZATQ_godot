@@ -23,6 +23,8 @@ var phase := "intro"
 var applied_frame := -1
 var applied_phase := ""
 var pose_updates := 0
+var variable_poses: Dictionary = {}
+var variable_keys: Dictionary = {}
 static func catalog() -> Dictionary:
  if data.is_empty():
   data={"fps":19,"art":{}}
@@ -40,6 +42,11 @@ static func has_art(art: String) -> bool:return catalog().art.has(art)
 func configure(art: String) -> void:
  art_name=art
  spec=catalog().art[art]
+ for variable: String in spec.get("variables",{}):
+  var keys: Dictionary={}
+  for row: Array in spec.variables[variable]:
+   for record: Array in row:keys[record[0]]=true
+  variable_keys[variable]=keys
  for key: String in spec.parts:
   var part: Dictionary=spec.parts[key]
   var pivot: Node2D
@@ -100,6 +107,7 @@ func seek_frame(index: int, subframe: float = 0.0) -> void:
  current_frame=clampi(index,0,frames.size()-1)
  if applied_frame!=current_frame or applied_phase!=phase:
   applied_frame=current_frame;applied_phase=phase;pose_updates+=1
+  variable_poses.clear()
   for pivot: Node2D in sprites.values():pivot.visible=false
   var order:=0
   var ordered: Dictionary={}
@@ -193,3 +201,23 @@ func _update_captions(index: int) -> void:
    label.position=delta*entry.origin;label.scale=entry.scale*delta.get_scale();label.rotation=delta.get_rotation()
    label.modulate=entry.color*Color(c[0],c[1],c[2],c[3]);label.visible=true
    break
+
+# Independent MovieClips driven by an activity (ratchet lock, keypad lamps).
+func apply_variable_frame(variable: String, index: int) -> void:
+ var poses: Array=spec.get("variables",{}).get(variable,[])
+ if poses.is_empty():return
+ index=clampi(index,0,poses.size()-1)
+ if variable_poses.get(variable,-1)==index:return
+ variable_poses[variable]=index
+ for key: String in variable_keys[variable]:sprites[key].visible=false
+ for record: Array in poses[index]:
+  var pivot: Node2D=sprites[record[0]]
+  var m: Array=record[1];var c: Array=record[2]
+  pivot.transform=Transform2D(Vector2(m[0],m[1]),Vector2(m[2],m[3]),Vector2(m[4],m[5])*2)
+  var visual: Control=pivot.get_child(0)
+  var paint: ShaderMaterial=visual.material
+  if paint:
+   paint.set_shader_parameter("multiplier",Color(c[0],c[1],c[2],c[3]))
+   paint.set_shader_parameter("offset",Vector3(c[4],c[5],c[6]))
+  else:visual.modulate=Color(c[0],c[1],c[2],c[3])
+  pivot.visible=true

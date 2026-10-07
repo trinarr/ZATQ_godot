@@ -9,9 +9,9 @@ from PIL import Image
 from build_episode3_components import build as export
 from build_episode1_highlights import contours
 ROOT=Path(__file__).resolve().parents[1]
-def build(archive,root=ROOT):
- export(archive,root,episode=4)
- path=root/'data/episode4_components.json';catalog=json.loads(path.read_text())
+def build(archive,root=ROOT,episode=4):
+ export(archive,root,episode=episode)
+ path=root/f'data/episode{episode}_components.json';catalog=json.loads(path.read_text())
  regions={};removed=set()
  for name,parts in catalog.items():
   if not name.endswith('_controls'):continue
@@ -30,12 +30,12 @@ def build(archive,root=ROOT):
     removed.add(part['texture'])
    if rings is None:continue
    region={'size':size,'contours':rings,'color':color,'alpha_min':.30078125,'alpha_max':.80078125}
-   key='e4_region_'+hashlib.sha256(json.dumps(region,sort_keys=True).encode()).hexdigest()[:16]
+   key=f'e{episode}_region_'+hashlib.sha256(json.dumps(region,sort_keys=True).encode()).hexdigest()[:16]
    regions[key]=region;part['type']='highlight';part['region']=key;part.pop('texture',None);part.pop('color',None)
- (root/'data/episode4_highlights.json').write_text(json.dumps({'regions':regions,'masks':{}},separators=(',',':'))+'\n')
+ (root/f'data/episode{episode}_highlights.json').write_text(json.dumps({'regions':regions,'masks':{}},separators=(',',':'))+'\n')
  path.write_text(json.dumps(catalog,ensure_ascii=False,indent=2)+'\n')
  # Bind each authored button to the same contour and bounds used by its glow.
- graph_path=root/'data/story_graphs/episode4.json';graph=json.loads(graph_path.read_text())
+ graph_path=root/f'data/story_graphs/episode{episode}.json';graph=json.loads(graph_path.read_text())
  for id,record in graph['nodes'].items():
   if record['type']!='scene' or not record['data'].get('controls_art'):continue
   art=record['data']['controls_art']
@@ -51,6 +51,6 @@ def build(archive,root=ROOT):
   retained.update(p.get('texture') for parts in json.loads(manifest.read_text()).values() for p in parts)
  for filename in removed-retained:
   file=root/'assets/flash_ui'/filename;file.unlink(missing_ok=True);Path(str(file)+'.import').unlink(missing_ok=True)
- print('Episode IV dynamic contours:',len(regions),flush=True)
+ print('Episode',episode,'dynamic contours:',len(regions),flush=True)
 if __name__=='__main__':
  p=argparse.ArgumentParser(description=__doc__);p.add_argument('archive',type=Path);a=p.parse_args();build(a.archive)

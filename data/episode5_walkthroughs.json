@@ -1,0 +1,3061 @@
+{
+  "results": {
+    "e5_result_116": {
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    "e5_result_114": {
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "e5_result_115": {
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "e5_result_126": {
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    "e5_result_131": {
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "e5_result_117": {
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    "e5_result_118": {
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        2,
+        1
+      ]
+    },
+    "e5_result_125": {
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "e5_result_128": {
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "e5_result_127": {
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        1
+      ]
+    },
+    "e5_result_136": {
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "e5_result_119": {
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "e5_result_129": {
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    "e5_result_121": {
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "e5_result_135": {
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "e5_result_130": {
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "e5_result_122": {
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    "e5_result_120": {
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        2,
+        0
+      ]
+    },
+    "e5_result_134": {
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "e5_result_123": {
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "e5_result_132": {
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "e5_result_124": {
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "e5_result_133": {
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "states": {
+    "e5_plane_1_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_2_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_3_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_4_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_4_v1_choice_45": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_5_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_5_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_6_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_7_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_6_v1_choice_47": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_7_v2_choice_46": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_18_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_9_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_8_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_17_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_19_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_9_v1_choice_48": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_9_v3": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_8_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_20_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_12_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_16_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_9_v3_choice_49": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_9_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_21_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_23_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_12_v1_choice_50": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_result_116": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_10_v3": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_16_v3": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_9_v2_choice_49": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_22_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_16_v4": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_14_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_13_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_11_v3": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_1_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_10_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_16_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_12_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_1_v3": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_15_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_upper_1_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_result_114": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_1_v2_choice_52": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_11_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_1_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_12_v2_choice_50": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_1_v3_choice_52": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_sector_1_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_result_115": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_pickup_documents": [
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_upper_2_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_2_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_result_126": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_1_v1_choice_52": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_14_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_13_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_2_v3": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_result_131": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_upper_3_v2": [
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_upper_5_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_3_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_2_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_plane_15_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_3_v3": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_upper_3_v2_choice_51": [
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_0": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_rest_1_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_4_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_3_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_sector_2_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_4_v3": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_upper_2_v2": [
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_upper_4_v2": [
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_3": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_rest_2_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_4_v2_choice_56": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_rest_1_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_4_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_sector_3_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_4_v3_choice_56_1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_upper_5_v2": [
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_result_117": [
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_4": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_5": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_7": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_8": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_10": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_result_118": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_rest_3_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_9_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_8_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_5_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_rest_2_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_4_v1_choice_56": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_pickup_sig": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_9_v3": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_8_v3": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_upper_7_v7": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_upper_6_v6": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": true
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": true
+      }
+    ],
+    "e5_dialogue_lex_15": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_16": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_17": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_18": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_25": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_26": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_31": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_32": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_33": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_result_125": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_result_128": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_rest_3_v4": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_6_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_rest_3_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_9_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_8_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_5_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_sector_4_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_upper_7_v7_choice_53": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_upper_10_v6": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": true
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": true
+      }
+    ],
+    "e5_upper_8_v8": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_49": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_50": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_51": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_53": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_54": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_55": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_56": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_76": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_79": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_80": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_81": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_98": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_99": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_100": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_101": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_7_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_result_127": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_rest_4_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_rest_3_v3": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_6_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_result_136": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_upper_6_v7": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_result_119": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_upper_10_v6_choice_55": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": true
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": true
+      }
+    ],
+    "e5_upper_9_v8": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_242": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_dialogue_lex_243": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_10_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_rest_5_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_result_129": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_7_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_upper_3_v3": [
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_upper_10_v7": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_result_121": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": true
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": true
+      }
+    ],
+    "e5_upper_2_v3": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_upper_11_v6": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": true
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": true
+      }
+    ],
+    "e5_upper_9_v8_choice_54": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_result_135": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_result_130": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_hide_10_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_upper_4_v3": [
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_upper_10_v7_choice_55": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_result_122": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_result_120": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": true
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": true
+      }
+    ],
+    "e5_under_2_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": true,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_under_1_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": true,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_pickup_armor": [
+      {
+        "TakenDocs": true,
+        "TakenArmor": true,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_upper_11_v7": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_under_5_v2": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": true,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_under_2_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": true,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_upper_12_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": true
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": true
+      }
+    ],
+    "e5_upper_9_v3": [
+      {
+        "TakenDocs": true,
+        "TakenArmor": true,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_result_134": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": true,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_under_3_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": true,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_upper_13_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": true
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": true
+      }
+    ],
+    "e5_result_123": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": true
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": true
+      }
+    ],
+    "e5_upper_9_v3_choice_54": [
+      {
+        "TakenDocs": true,
+        "TakenArmor": true,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_under_4_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": true,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_upper_14_v1": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": true
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": true
+      }
+    ],
+    "e5_result_132": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ],
+    "e5_result_124": [
+      {
+        "TakenDocs": false,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": true
+      },
+      {
+        "TakenDocs": true,
+        "TakenArmor": false,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": true
+      }
+    ],
+    "e5_result_133": [
+      {
+        "TakenDocs": true,
+        "TakenArmor": true,
+        "BulletsNumber": -1,
+        "PilotCode": "",
+        "PilotCodeSpaced": "",
+        "CabinCodeKnown": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "e5_dialogue_lex": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_93463c4c703deffab8d6.png",
+      "rect": [
+        63.0,
+        0.0,
+        711.0,
+        471.0
+      ],
+      "source": "/Symbol 237",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode5_components/part_405d29678bcf4d2fef74.png",
+      "rect": [
+        619.0,
+        55.0,
+        116.0,
+        152.0
+      ],
+      "source": "Ava/Symbol 234",
+      "layer": "background"
+    }
+  ],
+  "e5_item_armor": [
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_172085922d7d44dd15b3.png",
+      "rect": [
+        51.0,
+        30.0,
+        707.0,
+        394.0
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_bc68d77e23a7b55342b7.png",
+      "rect": [
+        75.5,
+        56.0,
+        642.5,
+        47.5
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode5_components/part_9f5cbf4d24ea770e5909.png",
+      "rect": [
+        325.0,
+        134.0,
+        163.0,
+        231.0
+      ],
+      "source": "Weapons/Symbol 262",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_22e42f16a9a1f3164f51.png",
+      "rect": [
+        680.0,
+        345.0,
+        27.0,
+        23.0
+      ],
+      "source": "/Symbol 12",
+      "layer": "foreground"
+    }
+  ],
+  "e5_item_documents": [
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_172085922d7d44dd15b3.png",
+      "rect": [
+        51.0,
+        30.0,
+        707.0,
+        394.0
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_bc68d77e23a7b55342b7.png",
+      "rect": [
+        75.5,
+        56.0,
+        642.5,
+        47.5
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode5_components/part_6c475048848f2039b152.png",
+      "rect": [
+        297.0,
+        118.0,
+        197.5,
+        265.0
+      ],
+      "source": "Weapons/Symbol 260",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_22e42f16a9a1f3164f51.png",
+      "rect": [
+        680.0,
+        345.0,
+        27.0,
+        23.0
+      ],
+      "source": "/Symbol 12",
+      "layer": "foreground"
+    }
+  ],
+  "e5_item_sig": [
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_172085922d7d44dd15b3.png",
+      "rect": [
+        51.0,
+        30.0,
+        707.0,
+        394.0
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_bc68d77e23a7b55342b7.png",
+      "rect": [
+        75.5,
+        56.0,
+        642.5,
+        47.5
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode5_components/part_d38bdb9252032a3bc4fb.png",
+      "rect": [
+        235.0,
+        118.0,
+        344.0,
+        270.0
+      ],
+      "source": "Weapons/Symbol 264",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_22e42f16a9a1f3164f51.png",
+      "rect": [
+        680.0,
+        345.0,
+        27.0,
+        23.0
+      ],
+      "source": "/Symbol 12",
+      "layer": "foreground"
+    }
+  ],
+  "e5_sector_4_v2": [
+    {
+      "type": "texture",
+      "texture": "episode5_components/part_72ff0f6aacc6200aa74f.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 850",
+      "layer": "background"
+    }
+  ],
+  "e5_upper_1_v1": [
+    {
+      "type": "texture",
+      "texture": "episode5_components/part_b754936f6a8eaa624285.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 709",
+      "layer": "background"
+    }
+  ],
+  "e5_upper_1_v1_controls": [
+    {
+      "type": "highlight",
+      "rect": [
+        51.0,
+        118.0,
+        284.0,
+        218.0
+      ],
+      "source": "But1/Symbol 712",
+      "layer": "background",
+      "region": "e5_region_4db3919447587837"
+    },
+    {
+      "type": "highlight",
+      "rect": [
+        359.5,
+        20.5,
+        40.5,
+        119.5
+      ],
+      "source": "But2/Symbol 716",
+      "layer": "background",
+      "region": "e5_region_e2c9a0a71344b408"
+    }
+  ]
+}
