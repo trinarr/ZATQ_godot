@@ -34,6 +34,8 @@ var cutscene_tween: Tween
 var playing: bool = false
 var paused: bool = false
 var previous_node: String = ""
+var decision_scene_origin := ""
+var decision_dialog: Control
 var transition_sound: String = ""
 var notification: Label
 var section: String = "menu"
@@ -135,6 +137,8 @@ func _stop_cutscene() -> void:
 	if is_instance_valid(viewport_canvas): viewport_canvas.background.modulate = Color.WHITE
 
 func _reset_screen(preserve_logo: bool = false) -> void:
+	decision_scene_origin = ""
+	decision_dialog = null
 	menu_opening = null
 	if is_instance_valid(menu_logo):
 		if preserve_logo: menu_logo.reparent(self)
@@ -385,10 +389,10 @@ func _start_episode(number: int) -> void:
 	Quest.new_game(number)
 
 func _resume() -> void:
-	if paused and is_instance_valid(viewport_canvas.episode_timeline):
+	if paused and (is_instance_valid(viewport_canvas.episode_timeline) or is_instance_valid(decision_dialog)):
 		paused = false
 		_close_overlay()
-		viewport_canvas.episode_timeline.suspended = false
+		if is_instance_valid(viewport_canvas.episode_timeline): viewport_canvas.episode_timeline.suspended = false
 		if is_instance_valid(edge_tab): edge_tab.show()
 		if is_instance_valid(edge_hit): edge_hit.show()
 		if Quest.current().get("kind","") == "tv": television.start()
@@ -472,7 +476,12 @@ func _choose(index: int) -> void:
 	var timeline: Node2D = viewport_canvas.episode_timeline
 	var choice: Dictionary = Quest.available_choices()[index]
 	if not choice.get("pause_allowed",true): _lock_pause()
-	var next_art: String = Quest.current(choice.get("next","")).get("art","") if choice.has("next") else ""
+	var destination: Dictionary = Quest.current(choice.get("next","")) if choice.has("next") else {}
+	# A decision is an overlay over this scene, not a scene exit.
+	if destination.get("kind","") == "city_decision" and destination.get("back","") == Quest.current_id:
+		_commit_choice(index)
+		return
+	var next_art: String = destination.get("art","")
 	var sequential: bool = is_instance_valid(timeline) and timeline.same_clip(next_art)
 	if is_instance_valid(timeline) and timeline.has_outro() and not sequential and not (Quest.current().get("kind","") == "tv" and index == 0):
 		var origin := Quest.current_id
@@ -504,6 +513,15 @@ func _show_story() -> void:
 	var node: Dictionary = Quest.current()
 	_prefetch_story_resources()
 	var kind: String = node.get("kind", "story")
+	if not decision_scene_origin.is_empty() and decision_scene_origin == Quest.current_id:
+		if is_instance_valid(decision_dialog):
+			decision_dialog.get_parent().remove_child(decision_dialog)
+			decision_dialog.queue_free()
+		decision_dialog = null
+		decision_scene_origin = ""
+		previous_node = Quest.current_id
+		return
+	var retain_decision_scene: bool = kind == "city_decision" and was_story and previous_node == node.get("back","") and is_instance_valid(screen)
 	var pickup := kind in ["item","city_pickup"]
 	var result := kind in ["city_death","city_ending"]
 	if pickup or result:
@@ -517,6 +535,10 @@ func _show_story() -> void:
 		if is_instance_valid(edge_hit): edge_hit.hide()
 		var backdrop: String = node.get("background_art","")
 		if not backdrop.is_empty(): _pickup_backdrop(backdrop)
+	elif retain_decision_scene:
+		decision_scene_origin = previous_node
+		var retained: Node2D = viewport_canvas.episode_timeline
+		if is_instance_valid(retained): retained.playing = false
 	else:
 		_reset_screen()
 	if previous_node != Quest.current_id:
@@ -664,11 +686,22 @@ func _show_player_dialog(data: Dictionary, choices: Array, selected: Callable = 
 	var panel := PLAYER_DIALOG.instantiate()
 	_attach_panel(panel)
 	panel.choice_selected.connect(selected if selected.is_valid() else _choose)
-	if dismissed.is_valid(): panel.dismissed.connect(dismissed)
+	if dismissed.is_valid():
+		decision_dialog = panel
+		panel.dismissed.connect(dismissed)
 	panel.configure(data,choices)
 	if playing:
 		for answer: Button in panel.answer_slots: answer.animate_flash_hover = true
 		panel.play_flash_entrance("dialog")
+
+func _dismiss_story_decision(origin: String) -> void:
+	var retained := decision_scene_origin == origin
+	Quest._enter(origin)
+	if not retained:
+		var timeline: Node2D = viewport_canvas.episode_timeline
+		if is_instance_valid(timeline):
+			timeline.playing = false
+			timeline.seek_frame(timeline.frames.size()-1)
 
 func _bind_episode_caption(label: Label, decoration: Control = null) -> void:
 	if is_instance_valid(viewport_canvas.episode_timeline): viewport_canvas.episode_timeline.bind_caption(label,"",decoration)

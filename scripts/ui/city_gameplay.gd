@@ -15,6 +15,17 @@ static func draw(ui: Control, node: Dictionary) -> void:
 		if not str(node.get("background_art","")).is_empty(): ui._pickup_backdrop(node.background_art)
 		ui._show_item_popup(artwork,node.text)
 		return
+	if node.kind == "city_decision":
+		if ui.decision_scene_origin.is_empty():
+			if not ui._component_backdrop(artwork):
+				ui._set_backdrop(load("res://assets/flash_ui/" + artwork + "."+node.get("art_extension","png")), not node.get("clean_background",false))
+			var timeline: Node2D = ui.viewport_canvas.episode_timeline
+			if is_instance_valid(timeline):
+				timeline.playing = false
+				timeline.seek_frame(timeline.frames.size()-1)
+		ui._show_player_dialog({"text":node.text,"art":node.get("decision_art","city_decision_3" if choices.size()==3 else "decision"),"fit_body":true,"dismissable":true},choices,Callable(),func(): ui._dismiss_story_decision(node.back))
+		if not is_instance_valid(ui.edge_hit): ui._edge_tab(LOC.text("@loc:ui.city_gameplay.3"),ui._show_pause)
+		return
 	if not ui._component_backdrop(artwork):
 		ui._set_backdrop(load("res://assets/flash_ui/" + artwork + "."+node.get("art_extension","png")), not node.get("clean_background",false))
 	if Quest.current_id == "metro_junction":
@@ -30,9 +41,7 @@ static func draw(ui: Control, node: Dictionary) -> void:
 	if node.has("controls_art"):
 		controls = ui._world_art(node.controls_art)
 	var kind: String = node.kind
-	if kind == "city_decision":
-		ui._show_player_dialog({"text":node.text,"art":node.get("decision_art","city_decision_3" if choices.size()==3 else "decision"),"fit_body":true,"dismissable":true},choices,Callable(),func(): Quest._enter(node.back))
-	elif kind == "city_cutscene":
+	if kind == "city_cutscene":
 		var timeline: Node2D = ui.viewport_canvas.episode_timeline
 		if is_instance_valid(timeline):
 			# A Flash End/Next event is emitted at the last authored frame.
