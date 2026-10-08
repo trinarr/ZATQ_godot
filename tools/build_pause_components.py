@@ -78,6 +78,8 @@ def build(archive, root=ROOT):
                     image = root / 'assets/flash_ui' / p['texture']
                     image.unlink(missing_ok=True)
                     Path(str(image)+'.import').unlink(missing_ok=True)
+    from build_ui_decorations import migrate
+    migrate(root)
     print(f'PASS: {len(parts)} independent pause part sets')
 
 

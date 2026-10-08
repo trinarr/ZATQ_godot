@@ -210,6 +210,8 @@ def unify():
   (ROOT/name).unlink(missing_ok=True)
  from build_john_highlights import migrate
  migrate(ROOT)
+ from build_ui_decorations import migrate as migrate_decorations
+ migrate_decorations(ROOT)
 
 if __name__=='__main__':
  p=argparse.ArgumentParser(description=__doc__);p.add_argument('archive',type=Path);p.add_argument('--ffdec',type=Path,required=True);a=p.parse_args()

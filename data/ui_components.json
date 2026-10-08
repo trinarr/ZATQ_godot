@@ -1,7 +1,6 @@
 {
   "adaptive_menu": [
     {
-      "texture": "components/part_6d93d9bc30dd57564bda.png",
       "rect": [
         0.0,
         0.0,
@@ -9,7 +8,9 @@
         303.0
       ],
       "source": "Symbol 118/Layer 14",
-      "layer": "background"
+      "layer": "background",
+      "type": "decoration",
+      "decoration": "menu_backplates"
     },
     {
       "texture": "components/part_a5184b838147ed4a73ae.png",
@@ -80,7 +81,6 @@
   ],
   "adaptive_menu_off": [
     {
-      "texture": "components/part_6d93d9bc30dd57564bda.png",
       "rect": [
         0.0,
         0.0,
@@ -88,7 +88,9 @@
         303.0
       ],
       "source": "Symbol 118/Layer 14",
-      "layer": "background"
+      "layer": "background",
+      "type": "decoration",
+      "decoration": "menu_backplates"
     },
     {
       "texture": "components/part_a5184b838147ed4a73ae.png",

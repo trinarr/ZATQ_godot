@@ -206,6 +206,9 @@ def build(archive,episodes=(2,3),only=None):
      result['art'][art]={'parts':primitives,'clip':str(items[0][0])+':'+str(items[0][1]),'intro_loop':periods['intro'] if len(tracks['intro'])==len(states['intro']) else 0,'qte':bool(spec.get('qte')),'outro_hold':bool(hold_outro),'variables':variables,**tracks}
      annotate(result['art'][art])
      text_result[art]={'anchors':anchors,**texts}
+     if not spec.get('qte'):
+      from normalize_caption_entrances import normalize_intro
+      normalize_intro(text_result[art])
      print(ep,art,len(primitives),len(tracks['intro']),len(tracks['outro']),flush=True)
    result.setdefault('audit',{}).update(tl.audit)
    (ROOT/f'data/episode{ep}_animations.json').write_text(json.dumps(result,separators=(',',':'))+'\n')
@@ -221,6 +224,8 @@ def build(archive,episodes=(2,3),only=None):
    if ep in (2,3):
     from build_episode23_highlights import migrate
     migrate(ROOT,(ep,))
+   from build_ui_decorations import migrate as migrate_decorations
+   migrate_decorations(ROOT)
    print('Episode',ep,'animated scenes',len(result['art']),'new unique textures',len(used),flush=True)
 def deduplicate_episode(ep):
  """Keep one primitive asset across static and animated versions of a scene."""

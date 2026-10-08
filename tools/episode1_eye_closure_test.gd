@@ -1,4 +1,5 @@
 extends SceneTree
+const TEST_CLOCK := preload("res://tools/flash_test_clock.gd")
 const TIMELINE := preload("res://scripts/ui/episode_timeline.gd")
 var checks := 0
 var failures := 0
@@ -38,11 +39,11 @@ func run() -> void:
   var bottom: float=lower[1]+lower[3]+player.sprites[lids.lower].position.y/2.0
   check(top<=0.0 and bottom>=480.0,"moving eyelids keep screen edges covered")
  check(strength(player)==1.0,"closed eye reaches full blur")
- player.play("intro");player._process(25.5/19.0)
+ player.play("intro");TEST_CLOCK.step(player,25.5/19.0)
  var saved: float=strength(player)
- player.suspended=true;player._process(1.0)
+ player.suspended=true;TEST_CLOCK.step(player,1.0)
  check(strength(player)==saved,"pause preserves blur")
- player.suspended=false;player._process(0.01)
+ player.suspended=false;TEST_CLOCK.step(player,0.01)
  check(strength(player)>saved,"resume continues closure")
  player.play("outro");check(strength(player)==1.0,"held closed pose keeps full blur")
  player.free()

@@ -27,28 +27,34 @@ def audit(root=ROOT):
     resources = set()
     components = {}
     for path in (root / 'data').glob('*components.json'):
-        components.update(json.loads(path.read_text()))
-    for parts in components.values():
-        resources.update('assets/flash_ui/' + p['texture'] for p in parts if 'texture' in p)
-    animation_path = root / 'data/episode1_animations.json'
-    if animation_path.exists():
-        for artwork in json.loads(animation_path.read_text()).get('art', {}).values():
+        catalog = json.loads(path.read_text())
+        components.update(catalog)
+        for parts in catalog.values():
+            resources.update('assets/flash_ui/' + p['texture'] for p in parts if 'texture' in p)
+    animated_art = set()
+    for animation_path in (root / 'data').glob('episode*_animations.json'):
+        artworks = json.loads(animation_path.read_text()).get('art', {})
+        animated_art.update(artworks)
+        for artwork in artworks.values():
             resources.update('assets/flash_ui/' + p['texture'] for p in artwork['parts'].values() if 'texture' in p)
     text = json.loads((root / 'data/ui_text_layout.json').read_text())
     resources.update(f"fonts/flash/font_{int(block['font'])}.ttf" for block in dictionaries(text) if 'font' in block)
-    highlight_path = root / "data/episode1_highlights.json"
-    dynamic_masks = json.loads(highlight_path.read_text()).get("masks", {}) if highlight_path.exists() else {}
+    dynamic_masks = {}
+    for highlight_path in (root / 'data').glob('episode*_highlights.json'):
+        definition = json.loads(highlight_path.read_text())
+        dynamic_masks.update(definition.get('masks', {}))
+        dynamic_masks.update(definition.get('regions', {}))
     nodes = load_all(root)
     for record in dictionaries(nodes):
-        for key in ['art', 'art_on_foot', 'controls_art', 'decision_art', 'background_art']:
-            if key in record and record[key] not in components:
+        for key in ['art', 'art_on_foot', 'controls_art', 'decision_art', 'background_art', 'selector_art']:
+            if key in record and record[key] not in components and record[key] not in animated_art:
                 name = record[key]
                 resources.add('assets/flash_ui/' + name + '.png')
                 icons = 'assets/flash_ui/' + name + '_icons.png'
                 if icons in tracked:
                     resources.add(icons)
         for name in record.get('animation_frames', []):
-            if name not in components:
+            if name not in components and name not in animated_art:
                 resources.add('assets/flash_ui/' + name + '.png')
         if 'mask' in record and record['mask'] not in dynamic_masks:
             resources.add('assets/flash_ui/' + record['mask'] + '.png')
@@ -56,8 +62,13 @@ def audit(root=ROOT):
             resources.add('assets/audio/' + record['sound'] + '.mp3')
     # Main's shared primitives use fixed UI names as well as graph art names.
     resources.update('assets/flash_ui/' + name + '.png' for name in ['adaptive_help', 'adaptive_help_icons'])
-    for path in (root / 'scripts').rglob('*.gd'):
+    for path in list((root / 'scripts').rglob('*.gd')) + list((root / 'scenes').rglob('*.tscn')) + list((root / 'shaders').rglob('*.gdshader')):
         resources.update(name for name in re.findall(r'res://((?:assets|fonts)/[^"\n]+\.(?:png|jpg|mp3|ttf))"', path.read_text()) if '%' not in name)
+    # Keypad sounds are emitted by shared controls rather than stored in graphs.
+    for path in (root / 'scripts').rglob('*.gd'):
+        resources.update('assets/audio/' + name + '.mp3' for name in re.findall(r'sound_requested.emit\("([^"\n]+)"', path.read_text()))
+    for graph_path in (root / 'data/story_graphs').rglob('*.json'):
+        resources.update(re.findall(r'res://((?:assets|fonts)/[^"\n]+\.(?:png|jpg|mp3|ttf))"', graph_path.read_text()))
     # Flash's raster exporter also uses Verdana; keep its source font.
     resources.add('fonts/flash/font_2866.ttf')
     candidates = {p for p in tracked if p.startswith(('assets/', 'fonts/')) and not p.endswith('.import') and (root / p).is_file()}

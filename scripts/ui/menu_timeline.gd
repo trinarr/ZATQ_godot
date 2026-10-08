@@ -1,4 +1,6 @@
 extends Node
+const PLAYBACK_CLOCK := preload("res://scripts/ui/flash_playback_clock.gd")
+var playback_clock := PLAYBACK_CLOCK.new()
 # Discrete Flash keys. Offset every panel child, including its real hit targets.
 signal finished
 static var data: Dictionary = {}
@@ -12,6 +14,9 @@ var start_frame := 1
 var frame := 0
 var elapsed := 0.0
 var playing := false
+
+func _init() -> void:
+	add_child(playback_clock)
 
 static func timelines() -> Dictionary:
 	if data.is_empty():
@@ -27,6 +32,8 @@ func configure(host: Control, panel: String, excluded: Control = null) -> void:
 			nodes.append(child)
 			origins.append(child.position)
 			_lock_input(child)
+	elapsed = 0.0
+	playback_clock.restart()
 	playing = true
 	seek_frame(start_frame)
 
@@ -42,7 +49,7 @@ func _lock_input(node: Control) -> void:
 
 func _process(delta: float) -> void:
 	if not playing: return
-	elapsed += delta
+	elapsed += playback_clock.advance(delta)
 	seek_frame(start_frame + int(floor(elapsed * timelines().fps)))
 
 func seek_frame(index: int) -> void:

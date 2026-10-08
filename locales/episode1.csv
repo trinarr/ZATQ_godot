@@ -1031,17 +1031,6 @@ episode1.nodes.lift_button__choice_0.title,Первый этаж,
 episode1.nodes.mainstreet_attack.title,mainstreet_attack,
 episode1.nodes.mainstreet_attack__choice_0.data.text,Продолжить,
 episode1.nodes.mainstreet_attack__choice_0.title,Продолжить,
-episode1.nodes.mainstreet_boundary.data.text,"Медленно отойти назад
-
-Поймать машину и уехать
-
-Поймать машину до офиса
-
-Пробежать сквозь зомби
-
-Идея, кажется, не самая удачная... С этими 
-людьми явно что-то не так. Ох, да это же 
-зомби!",
 episode1.nodes.mainstreet_boundary.title,mainstreet_boundary,
 episode1.nodes.mainstreet_boundary__choice_0.data.text,Пробежать сквозь зомби,
 episode1.nodes.mainstreet_boundary__choice_0.title,Пробежать сквозь зомби,
@@ -1051,17 +1040,6 @@ episode1.nodes.mainstreet_boundary__choice_2.data.text,Поймать машин
 episode1.nodes.mainstreet_boundary__choice_2.title,Поймать машину и уехать,
 episode1.nodes.mainstreet_boundary__choice_3.data.text,Медленно отойти назад,
 episode1.nodes.mainstreet_boundary__choice_3.title,Медленно отойти назад,
-episode1.nodes.mainstreet_choice.data.text,"Медленно отойти назад
-
-Поймать машину и уехать
-
-Поймать машину до офиса
-
-Пробежать сквозь зомби
-
-Идея, кажется, не самая удачная... С этими 
-людьми явно что-то не так. Ох, да это же 
-зомби!",
 episode1.nodes.mainstreet_choice.title,mainstreet_choice,
 episode1.nodes.mainstreet_choice__choice_0.data.text,Пробежать сквозь зомби,
 episode1.nodes.mainstreet_choice__choice_0.title,Пробежать сквозь зомби,

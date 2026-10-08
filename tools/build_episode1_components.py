@@ -180,6 +180,8 @@ def build(archive,root,only=None):
   used.update(Path(p).name for p in shared_texture_references(root) if p.startswith(destination.name+'/'))
   for f in destination.glob('*.png'):
    if f.name not in used:f.unlink();Path(str(f)+'.import').unlink(missing_ok=True)
+ from build_ui_decorations import migrate as migrate_decorations
+ migrate_decorations(root)
  from clean_episode1_art import retired
  for f in retired(root):f.unlink();Path(str(f)+'.import').unlink(missing_ok=True)
 

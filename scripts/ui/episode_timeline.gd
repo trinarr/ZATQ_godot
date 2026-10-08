@@ -1,4 +1,6 @@
 extends Node2D
+const PLAYBACK_CLOCK := preload("res://scripts/ui/flash_playback_clock.gd")
+var playback_clock := PLAYBACK_CLOCK.new()
 # MovieClip keys are discrete at the original document rate, not invented tweens.
 signal finished
 signal input_ready
@@ -6,6 +8,7 @@ static var data: Dictionary = {}
 const BLUR_CACHE := preload("res://scripts/ui/blur_texture_cache.gd")
 const EYE_CLOSURE := preload("res://scripts/ui/eye_closure.gd")
 var eye_closure: Node2D
+const DECORATION := preload("res://scripts/ui/vector_decoration.gd")
 const SOFT_VIGNETTE := preload("res://scripts/ui/soft_vignette.gd")
 const HIGHLIGHT := preload("res://scripts/ui/interactive_highlight.gd")
 const QTE_PROMPT := preload("res://scripts/ui/qte_prompt.gd")
@@ -30,6 +33,9 @@ var applied_phase := ""
 var pose_updates := 0
 var variable_poses: Dictionary = {}
 var variable_keys: Dictionary = {}
+func _init() -> void:
+	add_child(playback_clock)
+
 static func catalog() -> Dictionary:
 	if data.is_empty():
 		data={"fps":19,"art":{}}
@@ -66,6 +72,9 @@ func configure(art: String) -> void:
 		elif part.type=="highlight":
 			visual=HIGHLIGHT.new()
 			visual.configure(part)
+		elif part.type=="decoration":
+			visual=DECORATION.new()
+			visual.configure(part)
 		elif part.type=="soft_vignette":
 			visual=SOFT_VIGNETTE.new()
 			visual.configure(part)
@@ -98,6 +107,7 @@ func play(next_phase: String) -> void:
 	applied_frame=-1
 	input_ready_emitted=false
 	phase=next_phase;frames=_phase_frames(phase);elapsed=0;playing=true
+	playback_clock.restart()
 	seek_frame(0)
 func _phase_frames(next_phase: String) -> Array:
 	var authored: Array=spec[next_phase]
@@ -150,7 +160,7 @@ func seek_frame(index: int, subframe: float = 0.0) -> void:
 		playing=false;finished.emit()
 func _process(delta: float) -> void:
 	if not playing or suspended:return
-	elapsed+=delta
+	elapsed+=playback_clock.advance(delta)
 	var frame_time: float=elapsed*float(catalog().fps)
 	seek_frame(int(floor(frame_time)),fposmod(frame_time,1.0))
 

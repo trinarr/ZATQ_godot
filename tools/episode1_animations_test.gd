@@ -1,4 +1,5 @@
 extends SceneTree
+const TEST_CLOCK := preload("res://tools/flash_test_clock.gd")
 const TIMELINE := preload("res://scripts/ui/episode_timeline.gd")
 var checks := 0
 var failures := 0
@@ -22,9 +23,9 @@ func run() -> void:
      if image is TextureRect:check(image.texture!=null,"component resource loaded")
      check(is_finite(pivot.transform.origin.x),"finite world transform")
    player.play(phase);player.suspended=true
-   var frame: int=player.current_frame;player._process(0.25)
+   var frame: int=player.current_frame;TEST_CLOCK.step(player,0.25)
    check(player.current_frame==frame,"pause freezes timeline")
-   player.suspended=false;player._process(0.25)
+   player.suspended=false;TEST_CLOCK.step(player,0.25)
    check(player.current_frame==mini(4+int(data.fps*0),player.frames.size()-1),"playback resumes")
   player.free()
  var quest: Node=root.get_node("Quest")
@@ -44,7 +45,7 @@ func run() -> void:
  check(quest.current_id=="lift" and lift.phase=="outro","lift waits for authored exit")
  ui._choose(0)
  check(quest.current_id=="lift","duplicate gesture does not bypass exit")
- ui._show_pause();var frame: int=lift.current_frame;lift._process(1)
+ ui._show_pause();var frame: int=lift.current_frame;TEST_CLOCK.step(lift,1)
  check(lift.current_frame==frame,"pause freezes pending exit")
  ui._resume()
  check(ui.viewport_canvas.episode_timeline==lift and not lift.suspended,"resume keeps exact player")

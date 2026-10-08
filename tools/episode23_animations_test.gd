@@ -1,4 +1,5 @@
 extends SceneTree
+const TEST_CLOCK := preload("res://tools/flash_test_clock.gd")
 const TIMELINE := preload("res://scripts/ui/episode_timeline.gd")
 var checks := 0
 var failures := 0
@@ -28,9 +29,9 @@ func run() -> void:
       if visual is TextureRect:check(visual.texture!=null,"sharp/component texture loads: "+art)
     player.play(phase);player.suspended=true
     var frame: int=player.current_frame
-    player._process(0.11)
+    TEST_CLOCK.step(player,0.11)
     check(player.current_frame==frame,"pause preserves exact frame")
-    player.suspended=false;player._process(0.11)
+    player.suspended=false;TEST_CLOCK.step(player,0.11)
     check(player.current_frame==mini(2,player.frames.size()-1),"resume continues existing player")
    player.free()
   check(count>30,"animated scenery coverage episode %d" % episode)
@@ -49,11 +50,11 @@ func run() -> void:
    check(is_instance_valid(player),"cutscene uses authored player: "+id)
    if not is_instance_valid(player):continue
    var origin: String=quest.current_id
-   player._process(0.10)
+   TEST_CLOCK.step(player,0.10)
    var pausable: bool=ui._can_pause()
    ui._show_pause();var frame: int=player.current_frame
    if pausable:
-    player._process(1.0)
+    TEST_CLOCK.step(player,1.0)
     check(player.current_frame==frame,"pause freezes ordinary automatic cutscene")
     ui._resume()
     check(ui.viewport_canvas.episode_timeline==player and not player.suspended,"resume keeps cutscene instance")

@@ -928,8 +928,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode1_components/part_bc68d77e23a7b55342b7.png",
+      "type": "decoration",
       "rect": [
         75.5,
         56.0,
@@ -937,7 +936,8 @@
         47.5
       ],
       "source": "/Symbol 10168",
-      "layer": "background"
+      "layer": "background",
+      "decoration": "item_strip"
     },
     {
       "type": "texture",
@@ -952,8 +952,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode101_components/part_f8612bc050a0a146a7ab.png",
+      "type": "decoration",
       "rect": [
         655.0,
         323.0,
@@ -961,7 +960,8 @@
         74.0
       ],
       "source": "ButExit/Symbol 10031",
-      "layer": "background"
+      "layer": "background",
+      "decoration": "john_square"
     },
     {
       "type": "texture",
@@ -1004,8 +1004,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode1_components/part_bc68d77e23a7b55342b7.png",
+      "type": "decoration",
       "rect": [
         75.5,
         56.0,
@@ -1013,7 +1012,8 @@
         47.5
       ],
       "source": "/Symbol 10168",
-      "layer": "background"
+      "layer": "background",
+      "decoration": "item_strip"
     },
     {
       "type": "texture",
@@ -1028,8 +1028,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode101_components/part_f8612bc050a0a146a7ab.png",
+      "type": "decoration",
       "rect": [
         655.0,
         323.0,
@@ -1037,7 +1036,8 @@
         74.0
       ],
       "source": "ButExit/Symbol 10031",
-      "layer": "background"
+      "layer": "background",
+      "decoration": "john_square"
     },
     {
       "type": "texture",

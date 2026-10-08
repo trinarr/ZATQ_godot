@@ -109,7 +109,10 @@ def native_caption_track(tl,items,spec):
    frames.append(row)
   while len(frames)>1 and frames[-1]==frames[-2]:frames.pop()
   phases[phase]=frames
- return {'anchors':anchors,**phases} if any(len(f)>1 for f in phases.values()) else None
+ track={'anchors':anchors,**phases}
+ from normalize_caption_entrances import normalize_intro
+ normalize_intro(track)
+ return track if any(len(f)>1 for f in phases.values()) else None
 
 def build(archive,only=None):
  with tempfile.TemporaryDirectory() as td:

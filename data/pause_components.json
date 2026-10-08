@@ -57,8 +57,7 @@
   ],
   "pause_row_1_shadow": [
     {
-      "type": "texture",
-      "texture": "pause_components/part_ae41a76d6f9aa5e5c3b6.png",
+      "type": "decoration",
       "rect": [
         -4.0,
         -10.5,
@@ -66,13 +65,13 @@
         69.5
       ],
       "source": "Butns/Symbol 70/Bitmap 60.png rows 0:72",
-      "layer": "background"
+      "layer": "background",
+      "decoration": "pause_shadow_1"
     }
   ],
   "pause_row_2_shadow": [
     {
-      "type": "texture",
-      "texture": "pause_components/part_5420528eaf3d74395afd.png",
+      "type": "decoration",
       "rect": [
         -58.0,
         -7.0,
@@ -80,13 +79,13 @@
         66.0
       ],
       "source": "Butns/Symbol 70/Bitmap 60.png rows 72:138",
-      "layer": "background"
+      "layer": "background",
+      "decoration": "pause_shadow_2"
     }
   ],
   "pause_row_3_shadow": [
     {
-      "type": "texture",
-      "texture": "pause_components/part_78e4100c7aeb0be79791.png",
+      "type": "decoration",
       "rect": [
         -58.0,
         -6.0,
@@ -94,13 +93,13 @@
         65.0
       ],
       "source": "Butns/Symbol 70/Bitmap 60.png rows 138:203",
-      "layer": "background"
+      "layer": "background",
+      "decoration": "pause_shadow_3"
     }
   ],
   "pause_row_4_shadow": [
     {
-      "type": "texture",
-      "texture": "pause_components/part_6daf34daef9d816ca445.png",
+      "type": "decoration",
       "rect": [
         -14.0,
         -7.0,
@@ -108,7 +107,8 @@
         87.5
       ],
       "source": "Butns/Symbol 70/Bitmap 60.png rows 203:293",
-      "layer": "background"
+      "layer": "background",
+      "decoration": "pause_shadow_4"
     }
   ]
 }

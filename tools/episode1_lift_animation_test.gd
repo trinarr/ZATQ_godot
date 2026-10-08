@@ -1,4 +1,5 @@
 extends SceneTree
+const TEST_CLOCK := preload("res://tools/flash_test_clock.gd")
 const TIMELINE := preload("res://scripts/ui/episode_timeline.gd")
 var checks := 0
 var failures := 0
@@ -42,14 +43,14 @@ func run() -> void:
    check(row[j][0]==expected[j][0] and row[j][1]==expected[j][1],"door geometry follows closing sequence")
    check(row[j][2]==authored[i][0][2],"fade to black proceeds forward")
  check(player.spec.outro==authored,"cached authored data stays unchanged")
- player._process(2.0/float(data.fps))
+ TEST_CLOCK.step(player,2.0/float(data.fps))
  var saved_frame: int=player.current_frame
- player.suspended=true;player._process(1.0)
+ player.suspended=true;TEST_CLOCK.step(player,1.0)
  check(player.current_frame==saved_frame,"pause freezes closing")
  player.suspended=false
  var completions: Array=[0]
  player.finished.connect(func():completions[0]+=1)
- player._process(1.0);player._process(1.0)
+ TEST_CLOCK.step(player,1.0);TEST_CLOCK.step(player,1.0)
  check(completions[0]==1 and not player.playing,"closing finishes once")
  check(player.frames[-1][0][1]==opening[0][0][1],"closing ends at closed door pose")
  var other:=TIMELINE.new();root.add_child(other);other.configure("layout_bg_lift_button");other.play("outro")

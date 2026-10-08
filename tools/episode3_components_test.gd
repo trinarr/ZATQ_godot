@@ -68,6 +68,8 @@ func run() -> void:
    if part.type=="texture":check(ResourceLoader.exists("res://assets/flash_ui/"+part.texture),"component resource: "+name)
    elif part.type=="qte_prompt":check(part.transform.size()==6,"native QTE prompt")
    elif part.type=="highlight":check(preload("res://scripts/ui/interactive_highlight.gd").definitions().regions.has(part.region),"dynamic contour exists")
+   elif part.type=="decoration":check(preload("res://scripts/ui/vector_decoration.gd").texture_for(part.decoration)!=null,"cached UI contour")
+   elif part.type=="soft_vignette":check(part.vignette.size.size()==2,"dynamic vignette")
    else:check(part.type=="panel" and part.color.size()==4,"native panel")
  ui.queue_free();await process_frame
  for path: String in [quest.save_path,quest.tmp_path,quest.backup_path]:

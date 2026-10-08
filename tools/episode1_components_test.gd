@@ -22,11 +22,11 @@ func run() -> void:
    await process_frame
    var n: Dictionary=quest.current()
    check(ui.screen!=null,"screen instantiated: "+id)
-   if n.get("kind","") not in ["city_ending","city_death","item","city_decision"] and id!="transport_choice":
+   if n.get("kind","") not in ["city_ending","city_death","item","city_decision"] and id!="transport_choice" and ui._can_pause():
     check(ui.edge_hit!=null,"separate pause control: "+id)
    for child: Node in ui.viewport_canvas.art_layer.get_children():
-    check(child is TextureRect or child is ColorRect,"art is a primitive component")
-    check(child.mouse_filter==Control.MOUSE_FILTER_IGNORE,"art leaves clicks to original hotspots")
+    check(child is TextureRect or child is ColorRect or child.get_script()==preload("res://scripts/ui/episode_timeline.gd"),"art is a primitive component or timeline")
+    if child is Control:check(child.mouse_filter==Control.MOUSE_FILTER_IGNORE,"art leaves clicks to original hotspots")
     if child is TextureRect:check(child.texture!=null,"texture loaded: "+id)
    for c: Dictionary in quest.available_choices():
     if c.has("mask"):check(ui.COMPONENTS.HIGHLIGHT.has_mask(c.mask) or ResourceLoader.exists("res://assets/flash_ui/"+c.mask+".png"),"interactive mask retained")
@@ -35,6 +35,8 @@ func run() -> void:
   for part: Dictionary in ui.episode_components[name]:
    if part.type=="texture":check(ResourceLoader.exists("res://assets/flash_ui/"+part.texture),"component resource: "+name)
    elif part.type=="highlight":check(ui.COMPONENTS.HIGHLIGHT.definitions().regions.has(part.region),"dynamic highlight")
+   elif part.type=="decoration":check(preload("res://scripts/ui/vector_decoration.gd").texture_for(part.decoration)!=null,"cached UI contour")
+   elif part.type=="soft_vignette":check(part.vignette.size.size()==2,"dynamic vignette")
    else:check(part.type=="panel" and part.color.size()==4,"native panel")
  ui.queue_free();await process_frame
  for path: String in [quest.save_path,quest.tmp_path,quest.backup_path]:

@@ -96,6 +96,8 @@ def export_components(renderer, plans, root):
             path.unlink()
             Path(str(path) + '.import').unlink(missing_ok=True)
     (root / 'data/ui_components.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
+    from build_ui_decorations import migrate
+    migrate(root)
     # Retire both legacy opaque screenshots and the adaptive full-screen layers.
     for screen in manifest:
         legacy = screen.removeprefix('adaptive_')

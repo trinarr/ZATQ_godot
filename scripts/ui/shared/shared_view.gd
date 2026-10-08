@@ -247,6 +247,9 @@ func _adopt_button_icons(parent: Control) -> void:
 func _draw_components(filename: String, parent: Control, layer: String) -> void:
 	for part: Dictionary in art_components[filename]:
 		if part.layer != layer: continue
+		if part.get("type","texture") != "texture":
+			COMPONENTS.draw(parent,[part],layer)
+			continue
 		var component: TextureRect = STATISTIC_ICON.new() if part.get("style","")=="statistics_icon" else TextureRect.new()
 		component.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		component.texture = load("res://assets/flash_ui/" + part.texture)

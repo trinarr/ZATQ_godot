@@ -1,4 +1,5 @@
 extends SceneTree
+const TEST_CLOCK := preload("res://tools/flash_test_clock.gd")
 const DIALOG := preload("res://scripts/ui/shared/player_dialog.gd")
 var checks := 0
 var failures := 0
@@ -53,7 +54,7 @@ func run() -> void:
   check(ui.decision_dialog==null and ui.world_layer.get_children()==source_children,"only popup removed; original hotspots survive")
   if is_instance_valid(timeline):
    check(ui.viewport_canvas.episode_timeline==timeline and timeline.current_frame==saved_frame,"same timeline/frame after dismissal")
-   timeline._process(2.0)
+   TEST_CLOCK.step(timeline,2.0)
    check(timeline.current_frame==saved_frame and not timeline.playing,"scene stays static after dismissal")
   # Reopening the decision and pausing must not discard the lower dialog.
   quest._enter(id)

@@ -1341,8 +1341,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode1_components/part_bc68d77e23a7b55342b7.png",
+      "type": "decoration",
       "rect": [
         75.5,
         56.0,
@@ -1350,7 +1349,8 @@
         47.5
       ],
       "source": "/Symbol 239",
-      "layer": "background"
+      "layer": "background",
+      "decoration": "item_strip"
     },
     {
       "type": "texture",
@@ -1391,8 +1391,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode1_components/part_bc68d77e23a7b55342b7.png",
+      "type": "decoration",
       "rect": [
         75.5,
         56.0,
@@ -1400,7 +1399,8 @@
         47.5
       ],
       "source": "/Symbol 239",
-      "layer": "background"
+      "layer": "background",
+      "decoration": "item_strip"
     },
     {
       "type": "texture",

@@ -69,9 +69,14 @@ func run() -> void:
 		ui._fit_stage()
 		check(ui.screen.get_node("Закрыть справку").position==original,"resize does not accumulate motion offsets")
 	ui._show_selector("episodes")
+	# Measure visible playback, excluding cold scene/GPU setup.
+	if DisplayServer.get_name()=="headless":await process_frame
+	else:await RenderingServer.frame_post_draw
 	await create_timer(0.3).timeout
 	check(not ui.menu_opening.playing and ui.menu_opening.frame==4,"selector finishes through real process clock")
 	ui._show_menu()
+	if DisplayServer.get_name()=="headless":await process_frame
+	else:await RenderingServer.frame_post_draw
 	await create_timer(0.6).timeout
 	check(ui.menu_logo.finished and ui.menu_logo.frame==8,"logo stops at last frame through real process clock")
 	ui.queue_free()

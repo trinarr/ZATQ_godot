@@ -1,4 +1,6 @@
 extends Control
+const PLAYBACK_CLOCK := preload("res://scripts/ui/flash_playback_clock.gd")
+var playback_clock := PLAYBACK_CLOCK.new()
 # LogoMov's four existing texture parts, played once at the authored 19 fps.
 const DATA := preload("res://scripts/ui/menu_timeline.gd")
 var parts: Dictionary = {}
@@ -7,6 +9,8 @@ var elapsed := 0.0
 var finished := false
 
 func _init() -> void:
+	add_child(playback_clock)
+	playback_clock.restart()
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	var catalog: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/ui_components.json"))
 	for part: Dictionary in catalog.adaptive_menu:
@@ -23,7 +27,7 @@ func _init() -> void:
 
 func _process(delta: float) -> void:
 	if finished: return
-	elapsed += delta
+	elapsed += playback_clock.advance(delta)
 	seek_frame(int(floor(elapsed * DATA.timelines().fps)))
 
 func seek_frame(index: int) -> void:

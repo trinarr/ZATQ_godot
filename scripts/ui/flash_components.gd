@@ -1,6 +1,8 @@
 extends RefCounted
 const BLUR_CACHE := preload("res://scripts/ui/blur_texture_cache.gd")
 const HIGHLIGHT := preload("res://scripts/ui/interactive_highlight.gd")
+const DECORATION := preload("res://scripts/ui/vector_decoration.gd")
+const SOFT_VIGNETTE := preload("res://scripts/ui/soft_vignette.gd")
 const QTE_PROMPT := preload("res://scripts/ui/qte_prompt.gd")
 # Primitive Flash display-list layers. Coordinates are authored at 800x480.
 static func draw(parent: Control, parts: Array, layer: String = "") -> void:
@@ -33,7 +35,13 @@ static func draw(parent: Control, parts: Array, layer: String = "") -> void:
    prompt.modulate.a = float(part.get("opacity",1.0))
    parent.add_child(prompt)
    continue
-  if part.type == "panel":
+  if part.type == "decoration":
+   control = DECORATION.new()
+   control.configure(part)
+  elif part.type == "soft_vignette":
+   control = SOFT_VIGNETTE.new()
+   control.configure(part)
+  elif part.type == "panel":
    var panel := ColorRect.new()
    var c: Array = part.color
    panel.color = Color(c[0],c[1],c[2],c[3])

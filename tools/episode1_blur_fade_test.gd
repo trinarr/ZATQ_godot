@@ -1,4 +1,5 @@
 extends SceneTree
+const TEST_CLOCK := preload("res://tools/flash_test_clock.gd")
 const TIMELINE := preload("res://scripts/ui/episode_timeline.gd")
 var checks := 0
 var failures := 0
@@ -38,7 +39,7 @@ func run() -> void:
    check(visual.texture!=null,"sharp image loaded")
    check(paint.get_shader_parameter("blur_texture")==visual.texture,"blur sampler bound to sharp image")
  check(is_equal_approx(strength(player),1.0),"wall reveal starts fully blurred")
- player._process(0.5/float(data.fps))
+ TEST_CLOCK.step(player,0.5/float(data.fps))
  check(player.current_frame==0 and strength(player)<1.0,"blur changes between authored frames")
  var last: float=1.0
  for i in range(1,45):
@@ -48,15 +49,15 @@ func run() -> void:
   check(current>=0.0 and current<=last,"reveal blur decreases monotonically")
   last=current
  check(strength(player)==0.0,"last reveal frame has exactly zero blur")
- player.play("intro");player._process(0.25)
+ player.play("intro");TEST_CLOCK.step(player,0.25)
  var saved: float=strength(player);var frame: int=player.current_frame
- player.suspended=true;player._process(1.0)
+ player.suspended=true;TEST_CLOCK.step(player,1.0)
  check(strength(player)==saved and player.current_frame==frame,"pause preserves blur and frame")
- player.suspended=false;player._process(0.01)
+ player.suspended=false;TEST_CLOCK.step(player,0.01)
  check(strength(player)<saved,"resume continues continuous blur fade")
  player.play("outro")
  check(strength(player)==0.0,"retreat starts sharp without blur jump")
- player._process(0.01)
+ TEST_CLOCK.step(player,0.01)
  check(strength(player)>0.0,"retreat increases blur between frames")
  player.seek_frame(player.frames.size()-1)
  check(strength(player)==1.0,"retreat finishes at original blur strength")
