@@ -208,6 +208,8 @@ def unify():
  write('data/ui_text_layout.json',texts)
  for name in ['data/story_graphs/episode102.json','locales/episode102.csv','locales/episode102.csv.import','locales/episode102.ru.translation','locales/episode102.en.translation']:
   (ROOT/name).unlink(missing_ok=True)
+ from build_john_highlights import migrate
+ migrate(ROOT)
 
 if __name__=='__main__':
  p=argparse.ArgumentParser(description=__doc__);p.add_argument('archive',type=Path);p.add_argument('--ffdec',type=Path,required=True);a=p.parse_args()

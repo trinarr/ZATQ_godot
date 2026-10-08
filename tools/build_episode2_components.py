@@ -66,5 +66,8 @@ def build(archive,root,only=None):
    if f.name not in used:f.unlink();Path(str(f)+'.import').unlink(missing_ok=True)
  for f in retired(root):f.unlink();Path(str(f)+'.import').unlink(missing_ok=True)
 
+ from build_episode23_highlights import migrate
+ migrate(root,(2,))
+
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('archive',type=Path);p.add_argument('--output',type=Path,default=ROOT);p.add_argument('--only',nargs='+');a=p.parse_args();build(a.archive,a.output,a.only)

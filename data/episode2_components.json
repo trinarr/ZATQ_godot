@@ -644,8 +644,7 @@
   ],
   "e2_hospital_16_controls": [
     {
-      "type": "texture",
-      "texture": "episode2_components/part_bef87960f20b74b0c788.png",
+      "type": "highlight",
       "rect": [
         269.5,
         338.5,
@@ -653,11 +652,11 @@
         76.0
       ],
       "source": "But1/Symbol 2413",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep2_region_6bc9128732ff4869"
     },
     {
-      "type": "texture",
-      "texture": "episode2_components/part_f7ac1091b82f9b0202e8.png",
+      "type": "highlight",
       "rect": [
         393.0,
         337.0,
@@ -665,7 +664,8 @@
         35.0
       ],
       "source": "But2/Symbol 2417",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep2_region_6c2838bfc85dd54b"
     }
   ],
   "e2_hospital_17": [
@@ -1006,8 +1006,7 @@
   "e2_main_11": [],
   "e2_main_1_controls": [
     {
-      "type": "texture",
-      "texture": "episode2_components/part_fb25de9fc3b35a02645c.png",
+      "type": "highlight",
       "rect": [
         552.0,
         266.0,
@@ -1015,11 +1014,11 @@
         147.5
       ],
       "source": "But2/Symbol 2087",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep2_region_44f5927802bccb60"
     },
     {
-      "type": "texture",
-      "texture": "episode2_components/part_c4f2816d5981ca733ac4.png",
+      "type": "highlight",
       "rect": [
         44.5,
         248.5,
@@ -1027,7 +1026,8 @@
         58.0
       ],
       "source": "But1/Symbol 2091",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep2_region_9fc800230a4cd8b5"
     }
   ],
   "e2_main_2": [

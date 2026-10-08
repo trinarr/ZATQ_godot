@@ -302,8 +302,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8d60833c8b933f62dd7a.png",
+      "type": "highlight",
       "rect": [
         199.5,
         0.0,
@@ -311,7 +310,10 @@
         479.0
       ],
       "source": "Mov/Symbol 1644",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_2d876db0331c238f",
+      "timeline_alpha": true,
+      "opacity": 0.050980392156862744
     }
   ],
   "e3_john_18_anim_1": [
@@ -328,8 +330,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_d58ff12b57ba35f770cc.png",
+      "type": "highlight",
       "rect": [
         196.5,
         0.0,
@@ -337,7 +338,10 @@
         479.0
       ],
       "source": "Mov/Symbol 1644",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_919b9635c9f342b9",
+      "timeline_alpha": true,
+      "opacity": 0.0784313725490196
     }
   ],
   "e3_john_18_anim_10": [
@@ -354,8 +358,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_e0de6db9b5a3629c6ade.png",
+      "type": "highlight",
       "rect": [
         195.5,
         0.0,
@@ -363,7 +366,10 @@
         479.0
       ],
       "source": "Mov/Symbol 1644",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_99cdfaf4da258207",
+      "timeline_alpha": true,
+      "opacity": 0.09019607843137255
     }
   ],
   "e3_john_18_anim_11": [
@@ -380,8 +386,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8d60833c8b933f62dd7a.png",
+      "type": "highlight",
       "rect": [
         199.5,
         0.0,
@@ -389,7 +394,10 @@
         479.0
       ],
       "source": "Mov/Symbol 1644",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_2d876db0331c238f",
+      "timeline_alpha": true,
+      "opacity": 0.050980392156862744
     }
   ],
   "e3_john_18_anim_12": [
@@ -406,8 +414,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_e0de6db9b5a3629c6ade.png",
+      "type": "highlight",
       "rect": [
         195.5,
         0.0,
@@ -415,7 +422,10 @@
         479.0
       ],
       "source": "Mov/Symbol 1644",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_99cdfaf4da258207",
+      "timeline_alpha": true,
+      "opacity": 0.09019607843137255
     }
   ],
   "e3_john_18_anim_13": [
@@ -432,8 +442,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_39ddf20978f1128699f9.png",
+      "type": "highlight",
       "rect": [
         193.5,
         0.0,
@@ -441,7 +450,10 @@
         479.0
       ],
       "source": "Mov/Symbol 1644",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_0e40e2d8b7fa0298",
+      "timeline_alpha": true,
+      "opacity": 0.12941176470588237
     }
   ],
   "e3_john_18_anim_14": [
@@ -458,8 +470,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_d039ffaa1251dae7c25a.png",
+      "type": "highlight",
       "rect": [
         192.5,
         0.0,
@@ -467,7 +478,10 @@
         479.0
       ],
       "source": "Mov/Symbol 1644",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_2027e57d88b55ed7",
+      "timeline_alpha": true,
+      "opacity": 0.17254901960784313
     }
   ],
   "e3_john_18_anim_15": [
@@ -484,8 +498,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_664319048ba2d21bedea.png",
+      "type": "highlight",
       "rect": [
         192.5,
         0.0,
@@ -493,7 +506,10 @@
         479.0
       ],
       "source": "Mov/Symbol 1644",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_2949ae0a5a88cbe1",
+      "timeline_alpha": true,
+      "opacity": 0.21176470588235294
     }
   ],
   "e3_john_18_anim_16": [
@@ -510,8 +526,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_6a3cff75d2226d11d5ea.png",
+      "type": "highlight",
       "rect": [
         190.0,
         0.0,
@@ -519,7 +534,10 @@
         479.0
       ],
       "source": "Mov/Symbol 1644",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_c5123c6b47b64edd",
+      "timeline_alpha": true,
+      "opacity": 0.25098039215686274
     }
   ],
   "e3_john_18_anim_17": [
@@ -536,8 +554,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_711171acde6f01036b6a.png",
+      "type": "highlight",
       "rect": [
         192.5,
         0.0,
@@ -545,7 +562,10 @@
         479.0
       ],
       "source": "Mov/Symbol 1644",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_a9189e3a54223248",
+      "timeline_alpha": true,
+      "opacity": 0.2
     }
   ],
   "e3_john_18_anim_18": [
@@ -562,8 +582,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_d31bf4a1cfeaa0cfbef8.png",
+      "type": "highlight",
       "rect": [
         193.5,
         0.0,
@@ -571,7 +590,10 @@
         479.0
       ],
       "source": "Mov/Symbol 1644",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_a45c4cbdc69088f0",
+      "timeline_alpha": true,
+      "opacity": 0.14901960784313725
     }
   ],
   "e3_john_18_anim_19": [
@@ -588,8 +610,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_5602eaf58440b382e3f2.png",
+      "type": "highlight",
       "rect": [
         194.5,
         0.0,
@@ -597,7 +618,10 @@
         479.0
       ],
       "source": "Mov/Symbol 1644",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_0fbbdfc71e34e1f8",
+      "timeline_alpha": true,
+      "opacity": 0.10196078431372549
     }
   ],
   "e3_john_18_anim_2": [
@@ -614,8 +638,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8ee190cb7ea28f729388.png",
+      "type": "highlight",
       "rect": [
         194.5,
         0.0,
@@ -623,7 +646,10 @@
         479.0
       ],
       "source": "Mov/Symbol 1644",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_b98235c46e1a2b52",
+      "timeline_alpha": true,
+      "opacity": 0.10980392156862745
     }
   ],
   "e3_john_18_anim_20": [
@@ -640,8 +666,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8d60833c8b933f62dd7a.png",
+      "type": "highlight",
       "rect": [
         199.5,
         0.0,
@@ -649,7 +674,10 @@
         479.0
       ],
       "source": "Mov/Symbol 1644",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_2d876db0331c238f",
+      "timeline_alpha": true,
+      "opacity": 0.050980392156862744
     }
   ],
   "e3_john_18_anim_3": [
@@ -666,8 +694,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_d31bf4a1cfeaa0cfbef8.png",
+      "type": "highlight",
       "rect": [
         193.5,
         0.0,
@@ -675,7 +702,10 @@
         479.0
       ],
       "source": "Mov/Symbol 1644",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_a45c4cbdc69088f0",
+      "timeline_alpha": true,
+      "opacity": 0.14901960784313725
     }
   ],
   "e3_john_18_anim_4": [
@@ -692,8 +722,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_0eae04c0ee6881a7ea8d.png",
+      "type": "highlight",
       "rect": [
         192.5,
         0.0,
@@ -701,7 +730,10 @@
         479.0
       ],
       "source": "Mov/Symbol 1644",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_9f1222d213dc53ab",
+      "timeline_alpha": true,
+      "opacity": 0.1803921568627451
     }
   ],
   "e3_john_18_anim_5": [
@@ -718,8 +750,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_664319048ba2d21bedea.png",
+      "type": "highlight",
       "rect": [
         192.5,
         0.0,
@@ -727,7 +758,10 @@
         479.0
       ],
       "source": "Mov/Symbol 1644",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_2949ae0a5a88cbe1",
+      "timeline_alpha": true,
+      "opacity": 0.21176470588235294
     }
   ],
   "e3_john_18_anim_6": [
@@ -744,8 +778,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_6a3cff75d2226d11d5ea.png",
+      "type": "highlight",
       "rect": [
         190.0,
         0.0,
@@ -753,7 +786,10 @@
         479.0
       ],
       "source": "Mov/Symbol 1644",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_c5123c6b47b64edd",
+      "timeline_alpha": true,
+      "opacity": 0.25098039215686274
     }
   ],
   "e3_john_18_anim_7": [
@@ -770,8 +806,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_664319048ba2d21bedea.png",
+      "type": "highlight",
       "rect": [
         192.5,
         0.0,
@@ -779,7 +814,10 @@
         479.0
       ],
       "source": "Mov/Symbol 1644",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_2949ae0a5a88cbe1",
+      "timeline_alpha": true,
+      "opacity": 0.21176470588235294
     }
   ],
   "e3_john_18_anim_8": [
@@ -796,8 +834,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_d039ffaa1251dae7c25a.png",
+      "type": "highlight",
       "rect": [
         192.5,
         0.0,
@@ -805,7 +842,10 @@
         479.0
       ],
       "source": "Mov/Symbol 1644",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_2027e57d88b55ed7",
+      "timeline_alpha": true,
+      "opacity": 0.17254901960784313
     }
   ],
   "e3_john_18_anim_9": [
@@ -822,8 +862,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_39ddf20978f1128699f9.png",
+      "type": "highlight",
       "rect": [
         193.5,
         0.0,
@@ -831,7 +870,10 @@
         479.0
       ],
       "source": "Mov/Symbol 1644",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_0e40e2d8b7fa0298",
+      "timeline_alpha": true,
+      "opacity": 0.12941176470588237
     }
   ],
   "e3_john_19": [
@@ -946,8 +988,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_3598d4fd8b8d1e7bb5a7.png",
+      "type": "highlight",
       "rect": [
         196.0,
         19.5,
@@ -955,7 +996,10 @@
         192.5
       ],
       "source": "Mov.Mov.Mov4/Symbol 1670",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_5d1b43794d0b0777",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -993,8 +1037,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_675078976611eb7c489a.png",
+      "type": "highlight",
       "rect": [
         76.0,
         149.5,
@@ -1002,7 +1045,10 @@
         161.0
       ],
       "source": "Mov.Mov.Mov3/Symbol 1673",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_f85d62c8d57eaa73",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -1040,8 +1086,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_dbf69c87394930b41d60.png",
+      "type": "highlight",
       "rect": [
         76.0,
         148.0,
@@ -1049,7 +1094,10 @@
         161.0
       ],
       "source": "Mov.Mov.Mov3/Symbol 1673",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_4364ca3f09af2602",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -1087,8 +1135,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_3a1241c5902f4b8c8102.png",
+      "type": "highlight",
       "rect": [
         76.0,
         146.0,
@@ -1096,7 +1143,10 @@
         161.0
       ],
       "source": "Mov.Mov.Mov3/Symbol 1673",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_b6f6b6c430cf53ca",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -1134,8 +1184,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_18ba33780099857abe11.png",
+      "type": "highlight",
       "rect": [
         77.0,
         144.5,
@@ -1143,7 +1192,10 @@
         161.0
       ],
       "source": "Mov.Mov.Mov3/Symbol 1673",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_6491d1dc15914be7",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -1181,8 +1233,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_57d3339bfb735884d1ef.png",
+      "type": "highlight",
       "rect": [
         76.5,
         142.5,
@@ -1190,7 +1241,10 @@
         160.5
       ],
       "source": "Mov.Mov.Mov3/Symbol 1673",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_a658f24c17a16fc1",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -1228,8 +1282,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_351f5285968c2a3d3cb9.png",
+      "type": "highlight",
       "rect": [
         77.5,
         141.0,
@@ -1237,7 +1290,10 @@
         160.5
       ],
       "source": "Mov.Mov.Mov3/Symbol 1673",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_18373ac946a178e8",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -1275,8 +1331,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_eb03e62316f91e18d215.png",
+      "type": "highlight",
       "rect": [
         77.0,
         139.0,
@@ -1284,7 +1339,10 @@
         160.5
       ],
       "source": "Mov.Mov.Mov3/Symbol 1673",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_0dcbb0cc8a8f0c28",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -1322,8 +1380,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_ad9759fdb0b979089a64.png",
+      "type": "highlight",
       "rect": [
         76.5,
         137.5,
@@ -1331,7 +1388,10 @@
         160.5
       ],
       "source": "Mov.Mov.Mov3/Symbol 1673",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_3e49210ac9f9f744",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -1369,8 +1429,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_3c2ddc00047791511012.png",
+      "type": "highlight",
       "rect": [
         77.5,
         135.0,
@@ -1378,7 +1437,10 @@
         160.5
       ],
       "source": "Mov.Mov.Mov3/Symbol 1673",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_58911b911606f91f",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -1416,8 +1478,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_987a1b9cdc221eb0fc20.png",
+      "type": "highlight",
       "rect": [
         189.5,
         28.0,
@@ -1425,7 +1486,10 @@
         190.0
       ],
       "source": "Mov.Mov.Mov4/Symbol 1670",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_10eb2c937fc35d9b",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -1463,8 +1527,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_58bbb158097f53c738cd.png",
+      "type": "highlight",
       "rect": [
         443.0,
         0.0,
@@ -1472,7 +1535,10 @@
         142.5
       ],
       "source": "Mov.Mov.Mov2/Symbol 1676",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_4ccdad6e458253d1",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -1510,8 +1576,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_e7cd6696469680c10333.png",
+      "type": "highlight",
       "rect": [
         445.0,
         0.0,
@@ -1519,7 +1584,10 @@
         143.0
       ],
       "source": "Mov.Mov.Mov2/Symbol 1676",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_cc58b6c9ea38151f",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -1557,8 +1625,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_7931d8ec0adb505c181c.png",
+      "type": "highlight",
       "rect": [
         446.0,
         0.0,
@@ -1566,7 +1633,10 @@
         143.0
       ],
       "source": "Mov.Mov.Mov2/Symbol 1676",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_a7645b044caf7fcb",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -1604,8 +1674,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_86f00cfd25330ac0e253.png",
+      "type": "highlight",
       "rect": [
         448.0,
         0.0,
@@ -1613,7 +1682,10 @@
         143.5
       ],
       "source": "Mov.Mov.Mov2/Symbol 1676",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_28ec6229f549a453",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -1651,8 +1723,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_74bd5bc695314485d242.png",
+      "type": "highlight",
       "rect": [
         449.5,
         0.0,
@@ -1660,7 +1731,10 @@
         144.0
       ],
       "source": "Mov.Mov.Mov2/Symbol 1676",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_c74e6934acf7fba6",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -1698,8 +1772,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_6cec753449ca38385cba.png",
+      "type": "highlight",
       "rect": [
         451.5,
         0.0,
@@ -1707,7 +1780,10 @@
         144.0
       ],
       "source": "Mov.Mov.Mov2/Symbol 1676",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_b2f894e2d5d2dbf5",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -1745,8 +1821,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_a371d1f400526b440385.png",
+      "type": "highlight",
       "rect": [
         452.5,
         0.0,
@@ -1754,7 +1829,10 @@
         144.5
       ],
       "source": "Mov.Mov.Mov2/Symbol 1676",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_da43aec0b1e68746",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -1792,8 +1870,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_22f7c0898b032483b3a2.png",
+      "type": "highlight",
       "rect": [
         454.5,
         0.0,
@@ -1801,7 +1878,10 @@
         145.0
       ],
       "source": "Mov.Mov.Mov2/Symbol 1676",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_9164521459ddd03d",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -1839,8 +1919,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_b899ea4f72e8685a101e.png",
+      "type": "highlight",
       "rect": [
         455.5,
         0.0,
@@ -1848,7 +1927,10 @@
         145.0
       ],
       "source": "Mov.Mov.Mov2/Symbol 1676",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_0c3090476f84398b",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -1886,8 +1968,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_0fac5e02c3f3f4f1cc88.png",
+      "type": "highlight",
       "rect": [
         359.0,
         373.5,
@@ -1895,7 +1976,10 @@
         106.5
       ],
       "source": "Mov.Mov.Mov1/Symbol 1679",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_376884de24b5ce65",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -1933,8 +2017,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_2f0daaee21f960f15e0e.png",
+      "type": "highlight",
       "rect": [
         190.5,
         27.0,
@@ -1942,7 +2025,10 @@
         190.0
       ],
       "source": "Mov.Mov.Mov4/Symbol 1670",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_0265b17452a63aac",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -1980,8 +2066,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_e734cb1e40747444ccb0.png",
+      "type": "highlight",
       "rect": [
         358.5,
         374.0,
@@ -1989,7 +2074,10 @@
         106.0
       ],
       "source": "Mov.Mov.Mov1/Symbol 1679",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_ac4217f64ffd5a05",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -2027,8 +2115,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_0b1965dfe2777f464f21.png",
+      "type": "highlight",
       "rect": [
         357.0,
         374.5,
@@ -2036,7 +2123,10 @@
         105.5
       ],
       "source": "Mov.Mov.Mov1/Symbol 1679",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_8d455b45b08e2c7f",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -2074,8 +2164,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_edd287d21ee00e55edda.png",
+      "type": "highlight",
       "rect": [
         356.5,
         375.0,
@@ -2083,7 +2172,10 @@
         105.0
       ],
       "source": "Mov.Mov.Mov1/Symbol 1679",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_4f4ae1b17b87420b",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -2121,8 +2213,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_d4498ec5055ca17ac87f.png",
+      "type": "highlight",
       "rect": [
         355.0,
         375.5,
@@ -2130,7 +2221,10 @@
         104.5
       ],
       "source": "Mov.Mov.Mov1/Symbol 1679",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_374c06d1b91b7bc7",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -2168,8 +2262,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_a8e0fd06b3434618fe45.png",
+      "type": "highlight",
       "rect": [
         354.0,
         376.0,
@@ -2177,7 +2270,10 @@
         104.0
       ],
       "source": "Mov.Mov.Mov1/Symbol 1679",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_59a893e0fee78847",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -2215,8 +2311,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_eec6aaee63039d01a17c.png",
+      "type": "highlight",
       "rect": [
         353.0,
         376.5,
@@ -2224,7 +2319,10 @@
         103.5
       ],
       "source": "Mov.Mov.Mov1/Symbol 1679",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_e6b8eb9f10e0cc36",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -2262,8 +2360,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_182736c6abc935fdf36d.png",
+      "type": "highlight",
       "rect": [
         352.5,
         376.5,
@@ -2271,7 +2368,10 @@
         103.5
       ],
       "source": "Mov.Mov.Mov1/Symbol 1679",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_0b580ed5402452cb",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -2309,8 +2409,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_3faef216692a545f4d04.png",
+      "type": "highlight",
       "rect": [
         351.5,
         377.0,
@@ -2318,7 +2417,10 @@
         103.0
       ],
       "source": "Mov.Mov.Mov1/Symbol 1679",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_f136a3a7b4dddf99",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -2384,8 +2486,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_b92cc6cd0c35aaecd4d8.png",
+      "type": "highlight",
       "rect": [
         191.0,
         26.0,
@@ -2393,7 +2494,10 @@
         190.5
       ],
       "source": "Mov.Mov.Mov4/Symbol 1670",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_e6501d74a8bb96b3",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -2445,8 +2549,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_227cb378eb395f1cf81d.png",
+      "type": "highlight",
       "rect": [
         192.0,
         24.5,
@@ -2454,7 +2557,10 @@
         191.0
       ],
       "source": "Mov.Mov.Mov4/Symbol 1670",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_75a2e10f71e9fa65",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -2492,8 +2598,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_5cf199c2a25644527fc0.png",
+      "type": "highlight",
       "rect": [
         192.5,
         23.5,
@@ -2501,7 +2606,10 @@
         191.5
       ],
       "source": "Mov.Mov.Mov4/Symbol 1670",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_46acd4a12ebdf9d0",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -2539,8 +2647,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_dbc8f8ac94fbafc59e41.png",
+      "type": "highlight",
       "rect": [
         193.5,
         22.5,
@@ -2548,7 +2655,10 @@
         191.5
       ],
       "source": "Mov.Mov.Mov4/Symbol 1670",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_f4fff02de246ad86",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -2586,8 +2696,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_04670ef6ee302bc759fc.png",
+      "type": "highlight",
       "rect": [
         194.0,
         21.5,
@@ -2595,7 +2704,10 @@
         191.5
       ],
       "source": "Mov.Mov.Mov4/Symbol 1670",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_5680654c676e126c",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -2633,8 +2745,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_015042dab5c8e52dd824.png",
+      "type": "highlight",
       "rect": [
         195.5,
         20.5,
@@ -2642,7 +2753,10 @@
         192.0
       ],
       "source": "Mov.Mov.Mov4/Symbol 1670",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_2a79f4e334f932a0",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
       "type": "qte_prompt",
@@ -2741,8 +2855,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_706b4b2c4c4cb46ecc5e.png",
+      "type": "highlight",
       "rect": [
         425.0,
         360.5,
@@ -2750,11 +2863,13 @@
         78.5
       ],
       "source": "Mov.But2/Symbol 1708",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_d80092af8cd9711d",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_a21a4c9ce935daf524cf.png",
+      "type": "highlight",
       "rect": [
         225.0,
         306.0,
@@ -2762,7 +2877,10 @@
         83.5
       ],
       "source": "Mov.But1/Symbol 1712",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_8ab993b7099afe64",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_john_29": [
@@ -2878,8 +2996,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_32747b0ec45b54270944.png",
+      "type": "highlight",
       "rect": [
         68.0,
         108.5,
@@ -2887,7 +3004,10 @@
         109.0
       ],
       "source": "Mov.Mov.Circle/Symbol 1587",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_6fe502e5e770e604",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_john_6_anim_1": [
@@ -2921,8 +3041,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_aa73bf862c1932b8b4fc.png",
+      "type": "highlight",
       "rect": [
         66.0,
         108.5,
@@ -2930,7 +3049,10 @@
         109.0
       ],
       "source": "Mov.Mov.Circle/Symbol 1587",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_dc13257079a31e26",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_john_6_anim_10": [
@@ -2964,8 +3086,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_2dbb46bd4414fb98f06d.png",
+      "type": "highlight",
       "rect": [
         47.0,
         108.5,
@@ -2973,7 +3094,10 @@
         109.0
       ],
       "source": "Mov.Mov.Circle/Symbol 1587",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_b83a599c6e51e2d2",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_john_6_anim_11": [
@@ -3007,8 +3131,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_32747b0ec45b54270944.png",
+      "type": "highlight",
       "rect": [
         45.0,
         108.5,
@@ -3016,7 +3139,10 @@
         109.0
       ],
       "source": "Mov.Mov.Circle/Symbol 1587",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_6fe502e5e770e604",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_john_6_anim_12": [
@@ -3050,8 +3176,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_dc77875be5197f6a547e.png",
+      "type": "highlight",
       "rect": [
         42.5,
         108.5,
@@ -3059,7 +3184,10 @@
         109.0
       ],
       "source": "Mov.Mov.Circle/Symbol 1587",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_85398cb27d7c48a9",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_john_6_anim_13": [
@@ -3093,8 +3221,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_0a7adf33c7b234795f5e.png",
+      "type": "highlight",
       "rect": [
         40.5,
         108.5,
@@ -3102,7 +3229,10 @@
         109.0
       ],
       "source": "Mov.Mov.Circle/Symbol 1587",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_8725f190b3fb5156",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_john_6_anim_14": [
@@ -3136,8 +3266,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_4fc7da740802bc333853.png",
+      "type": "highlight",
       "rect": [
         38.5,
         108.5,
@@ -3145,7 +3274,10 @@
         109.0
       ],
       "source": "Mov.Mov.Circle/Symbol 1587",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_1de72a7e084b85eb",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_john_6_anim_15": [
@@ -3179,8 +3311,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_e8b114fa6543eccf38c7.png",
+      "type": "highlight",
       "rect": [
         36.5,
         108.5,
@@ -3188,7 +3319,10 @@
         109.0
       ],
       "source": "Mov.Mov.Circle/Symbol 1587",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_c9495966d75bbbe8",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_john_6_anim_16": [
@@ -3222,8 +3356,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_32747b0ec45b54270944.png",
+      "type": "highlight",
       "rect": [
         34.5,
         108.5,
@@ -3231,7 +3364,10 @@
         109.0
       ],
       "source": "Mov.Mov.Circle/Symbol 1587",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_6fe502e5e770e604",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_john_6_anim_17": [
@@ -3265,8 +3401,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_dc77875be5197f6a547e.png",
+      "type": "highlight",
       "rect": [
         32.0,
         108.5,
@@ -3274,7 +3409,10 @@
         109.0
       ],
       "source": "Mov.Mov.Circle/Symbol 1587",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_85398cb27d7c48a9",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_john_6_anim_18": [
@@ -3308,8 +3446,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_0a7adf33c7b234795f5e.png",
+      "type": "highlight",
       "rect": [
         30.0,
         108.5,
@@ -3317,7 +3454,10 @@
         109.0
       ],
       "source": "Mov.Mov.Circle/Symbol 1587",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_8725f190b3fb5156",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_john_6_anim_19": [
@@ -3351,8 +3491,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_4fc7da740802bc333853.png",
+      "type": "highlight",
       "rect": [
         28.0,
         108.5,
@@ -3360,7 +3499,10 @@
         109.0
       ],
       "source": "Mov.Mov.Circle/Symbol 1587",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_1de72a7e084b85eb",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_john_6_anim_2": [
@@ -3394,8 +3536,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_637b43d423f949f14c10.png",
+      "type": "highlight",
       "rect": [
         63.5,
         108.5,
@@ -3403,7 +3544,10 @@
         109.0
       ],
       "source": "Mov.Mov.Circle/Symbol 1587",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_014bc20c7ed91032",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_john_6_anim_20": [
@@ -3437,8 +3581,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_e8b114fa6543eccf38c7.png",
+      "type": "highlight",
       "rect": [
         26.0,
         108.5,
@@ -3446,7 +3589,10 @@
         109.0
       ],
       "source": "Mov.Mov.Circle/Symbol 1587",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_c9495966d75bbbe8",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_john_6_anim_21": [
@@ -3480,8 +3626,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_32747b0ec45b54270944.png",
+      "type": "highlight",
       "rect": [
         24.0,
         108.5,
@@ -3489,7 +3634,10 @@
         109.0
       ],
       "source": "Mov.Mov.Circle/Symbol 1587",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_6fe502e5e770e604",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_john_6_anim_3": [
@@ -3523,8 +3671,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_b6b1e152a00352706862.png",
+      "type": "highlight",
       "rect": [
         61.5,
         108.5,
@@ -3532,7 +3679,10 @@
         109.0
       ],
       "source": "Mov.Mov.Circle/Symbol 1587",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_16258a58c9f1d2ad",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_john_6_anim_4": [
@@ -3566,8 +3716,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8d8d3d21950dc1ec791b.png",
+      "type": "highlight",
       "rect": [
         59.5,
         108.5,
@@ -3575,7 +3724,10 @@
         109.0
       ],
       "source": "Mov.Mov.Circle/Symbol 1587",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_d94b7095eb9935db",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_john_6_anim_5": [
@@ -3609,8 +3761,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_2dbb46bd4414fb98f06d.png",
+      "type": "highlight",
       "rect": [
         57.5,
         108.5,
@@ -3618,7 +3769,10 @@
         109.0
       ],
       "source": "Mov.Mov.Circle/Symbol 1587",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_b83a599c6e51e2d2",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_john_6_anim_6": [
@@ -3652,8 +3806,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_aa73bf862c1932b8b4fc.png",
+      "type": "highlight",
       "rect": [
         55.5,
         108.5,
@@ -3661,7 +3814,10 @@
         109.0
       ],
       "source": "Mov.Mov.Circle/Symbol 1587",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_dc13257079a31e26",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_john_6_anim_7": [
@@ -3695,8 +3851,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_637b43d423f949f14c10.png",
+      "type": "highlight",
       "rect": [
         53.0,
         108.5,
@@ -3704,7 +3859,10 @@
         109.0
       ],
       "source": "Mov.Mov.Circle/Symbol 1587",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_014bc20c7ed91032",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_john_6_anim_8": [
@@ -3738,8 +3896,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_b6b1e152a00352706862.png",
+      "type": "highlight",
       "rect": [
         51.0,
         108.5,
@@ -3747,7 +3904,10 @@
         109.0
       ],
       "source": "Mov.Mov.Circle/Symbol 1587",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_16258a58c9f1d2ad",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_john_6_anim_9": [
@@ -3781,8 +3941,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8d8d3d21950dc1ec791b.png",
+      "type": "highlight",
       "rect": [
         49.0,
         108.5,
@@ -3790,7 +3949,10 @@
         109.0
       ],
       "source": "Mov.Mov.Circle/Symbol 1587",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_d94b7095eb9935db",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_john_7": [
@@ -3919,8 +4081,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_b6a3ab7710a1009b4e60.png",
+      "type": "highlight",
       "rect": [
         0.0,
         0.0,
@@ -3928,7 +4089,10 @@
         480.0
       ],
       "source": "Mov/Symbol 1859",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_1b498d6912e89c5c",
+      "timeline_alpha": true,
+      "opacity": 0.1803921568627451
     },
     {
       "type": "texture",
@@ -3957,8 +4121,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_05a2da9aa8f3a00cb5dd.png",
+      "type": "highlight",
       "rect": [
         0.0,
         0.0,
@@ -3966,7 +4129,10 @@
         480.0
       ],
       "source": "Mov/Symbol 1859",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_71f84930ced9bc92",
+      "timeline_alpha": true,
+      "opacity": 0.23137254901960785
     },
     {
       "type": "texture",
@@ -3995,8 +4161,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_c90da43fb84ccfdd8300.png",
+      "type": "highlight",
       "rect": [
         0.0,
         0.0,
@@ -4004,7 +4169,10 @@
         480.0
       ],
       "source": "Mov/Symbol 1859",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_e136ed77d517ff06",
+      "timeline_alpha": true,
+      "opacity": 0.2235294117647059
     },
     {
       "type": "texture",
@@ -4033,8 +4201,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_b6a3ab7710a1009b4e60.png",
+      "type": "highlight",
       "rect": [
         0.0,
         0.0,
@@ -4042,7 +4209,10 @@
         480.0
       ],
       "source": "Mov/Symbol 1859",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_1b498d6912e89c5c",
+      "timeline_alpha": true,
+      "opacity": 0.1803921568627451
     },
     {
       "type": "texture",
@@ -4071,8 +4241,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_697acccb3cbca9b5c74f.png",
+      "type": "highlight",
       "rect": [
         0.0,
         0.0,
@@ -4080,7 +4249,10 @@
         480.0
       ],
       "source": "Mov/Symbol 1859",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_a5a05973d7b03472",
+      "timeline_alpha": true,
+      "opacity": 0.21568627450980393
     },
     {
       "type": "texture",
@@ -4109,8 +4281,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_6d9629206c5621173270.png",
+      "type": "highlight",
       "rect": [
         0.0,
         0.0,
@@ -4118,7 +4289,10 @@
         480.0
       ],
       "source": "Mov/Symbol 1859",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_665f2a897a502162",
+      "timeline_alpha": true,
+      "opacity": 0.2549019607843137
     },
     {
       "type": "texture",
@@ -4147,8 +4321,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_3f2f6011ce52b8ee3781.png",
+      "type": "highlight",
       "rect": [
         0.0,
         0.0,
@@ -4156,7 +4329,10 @@
         480.0
       ],
       "source": "Mov/Symbol 1859",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_a8462bcc0d606eba",
+      "timeline_alpha": true,
+      "opacity": 0.2901960784313726
     },
     {
       "type": "texture",
@@ -4185,8 +4361,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_c9a257b19b6b9f2a0a77.png",
+      "type": "highlight",
       "rect": [
         0.0,
         0.0,
@@ -4194,7 +4369,10 @@
         480.0
       ],
       "source": "Mov/Symbol 1859",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_51300c045eb6d8d9",
+      "timeline_alpha": true,
+      "opacity": 0.32941176470588235
     },
     {
       "type": "texture",
@@ -4223,8 +4401,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_55087c5c1cbc92767159.png",
+      "type": "highlight",
       "rect": [
         0.0,
         0.0,
@@ -4232,7 +4409,10 @@
         480.0
       ],
       "source": "Mov/Symbol 1859",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_6fb1913f69822278",
+      "timeline_alpha": true,
+      "opacity": 0.36470588235294116
     },
     {
       "type": "texture",
@@ -4261,8 +4441,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_de0ff3a0fe72530af3a5.png",
+      "type": "highlight",
       "rect": [
         0.0,
         0.0,
@@ -4270,7 +4449,10 @@
         480.0
       ],
       "source": "Mov/Symbol 1859",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_a84b57cfc8c96f61",
+      "timeline_alpha": true,
+      "opacity": 0.40784313725490196
     },
     {
       "type": "texture",
@@ -4299,8 +4481,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_14a8ffe820836bcc21f1.png",
+      "type": "highlight",
       "rect": [
         0.0,
         0.0,
@@ -4308,7 +4489,10 @@
         480.0
       ],
       "source": "Mov/Symbol 1859",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_ed97bf3eeb2fcd4f",
+      "timeline_alpha": true,
+      "opacity": 0.4470588235294118
     },
     {
       "type": "texture",
@@ -4337,8 +4521,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_b1d8a06aa1a71a0326c3.png",
+      "type": "highlight",
       "rect": [
         0.0,
         0.0,
@@ -4346,7 +4529,10 @@
         480.0
       ],
       "source": "Mov/Symbol 1859",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_1a91f6d24c5c0f1c",
+      "timeline_alpha": true,
+      "opacity": 0.39215686274509803
     },
     {
       "type": "texture",
@@ -4375,8 +4561,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_e27d0a21ffdae8acefe8.png",
+      "type": "highlight",
       "rect": [
         0.0,
         0.0,
@@ -4384,7 +4569,10 @@
         480.0
       ],
       "source": "Mov/Symbol 1859",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_d788abf3ff473c1b",
+      "timeline_alpha": true,
+      "opacity": 0.28627450980392155
     },
     {
       "type": "texture",
@@ -4413,8 +4601,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_a5333757eb2a524e2ed2.png",
+      "type": "highlight",
       "rect": [
         0.0,
         0.0,
@@ -4422,7 +4609,10 @@
         480.0
       ],
       "source": "Mov/Symbol 1859",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_f649c3fd6bebc540",
+      "timeline_alpha": true,
+      "opacity": 0.3411764705882353
     },
     {
       "type": "texture",
@@ -4451,8 +4641,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_e27d0a21ffdae8acefe8.png",
+      "type": "highlight",
       "rect": [
         0.0,
         0.0,
@@ -4460,7 +4649,10 @@
         480.0
       ],
       "source": "Mov/Symbol 1859",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_d788abf3ff473c1b",
+      "timeline_alpha": true,
+      "opacity": 0.28627450980392155
     },
     {
       "type": "texture",
@@ -4489,8 +4681,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_05a2da9aa8f3a00cb5dd.png",
+      "type": "highlight",
       "rect": [
         0.0,
         0.0,
@@ -4498,7 +4689,10 @@
         480.0
       ],
       "source": "Mov/Symbol 1859",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_71f84930ced9bc92",
+      "timeline_alpha": true,
+      "opacity": 0.23137254901960785
     },
     {
       "type": "texture",
@@ -4527,8 +4721,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_b6a3ab7710a1009b4e60.png",
+      "type": "highlight",
       "rect": [
         0.0,
         0.0,
@@ -4536,7 +4729,10 @@
         480.0
       ],
       "source": "Mov/Symbol 1859",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_1b498d6912e89c5c",
+      "timeline_alpha": true,
+      "opacity": 0.1803921568627451
     },
     {
       "type": "texture",
@@ -4565,8 +4761,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_a5333757eb2a524e2ed2.png",
+      "type": "highlight",
       "rect": [
         0.0,
         0.0,
@@ -4574,7 +4769,10 @@
         480.0
       ],
       "source": "Mov/Symbol 1859",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_f649c3fd6bebc540",
+      "timeline_alpha": true,
+      "opacity": 0.3411764705882353
     },
     {
       "type": "texture",
@@ -4603,8 +4801,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_b1d8a06aa1a71a0326c3.png",
+      "type": "highlight",
       "rect": [
         0.0,
         0.0,
@@ -4612,7 +4809,10 @@
         480.0
       ],
       "source": "Mov/Symbol 1859",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_1a91f6d24c5c0f1c",
+      "timeline_alpha": true,
+      "opacity": 0.39215686274509803
     },
     {
       "type": "texture",
@@ -4641,8 +4841,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_14a8ffe820836bcc21f1.png",
+      "type": "highlight",
       "rect": [
         0.0,
         0.0,
@@ -4650,7 +4849,10 @@
         480.0
       ],
       "source": "Mov/Symbol 1859",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_ed97bf3eeb2fcd4f",
+      "timeline_alpha": true,
+      "opacity": 0.4470588235294118
     },
     {
       "type": "texture",
@@ -4679,8 +4881,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_ccd28ad30cad696388a3.png",
+      "type": "highlight",
       "rect": [
         0.0,
         0.0,
@@ -4688,7 +4889,10 @@
         480.0
       ],
       "source": "Mov/Symbol 1859",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_8312569a5b2e2d62",
+      "timeline_alpha": true,
+      "opacity": 0.4
     },
     {
       "type": "texture",
@@ -4717,8 +4921,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_5b0fbe8e5870052db601.png",
+      "type": "highlight",
       "rect": [
         0.0,
         0.0,
@@ -4726,7 +4929,10 @@
         480.0
       ],
       "source": "Mov/Symbol 1859",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_fab8c2bd923e8cff",
+      "timeline_alpha": true,
+      "opacity": 0.3568627450980392
     },
     {
       "type": "texture",
@@ -4755,8 +4961,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_304f84571aedf1d7131e.png",
+      "type": "highlight",
       "rect": [
         0.0,
         0.0,
@@ -4764,7 +4969,10 @@
         480.0
       ],
       "source": "Mov/Symbol 1859",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_b5bb79b404d4f155",
+      "timeline_alpha": true,
+      "opacity": 0.3137254901960784
     },
     {
       "type": "texture",
@@ -4793,8 +5001,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_c3639c8821186ea809a9.png",
+      "type": "highlight",
       "rect": [
         0.0,
         0.0,
@@ -4802,7 +5009,10 @@
         480.0
       ],
       "source": "Mov/Symbol 1859",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_943d819598faef22",
+      "timeline_alpha": true,
+      "opacity": 0.26666666666666666
     },
     {
       "type": "texture",
@@ -5119,8 +5329,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_b088a9151161fd1731e9.png",
+      "type": "highlight",
       "rect": [
         580.5,
         0.0,
@@ -5128,11 +5337,13 @@
         457.0
       ],
       "source": "But2/Symbol 1957",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7b0a84acaa5650d3",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_ae628c47736442193b30.png",
+      "type": "highlight",
       "rect": [
         54.0,
         0.0,
@@ -5140,7 +5351,10 @@
         464.0
       ],
       "source": "But1/Symbol 1961",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_b8f31b82de61188e",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_11_anim_1": [
@@ -5157,8 +5371,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_b088a9151161fd1731e9.png",
+      "type": "highlight",
       "rect": [
         580.5,
         0.0,
@@ -5166,11 +5379,13 @@
         457.0
       ],
       "source": "But2/Symbol 1957",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7b0a84acaa5650d3",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_ae628c47736442193b30.png",
+      "type": "highlight",
       "rect": [
         54.0,
         0.0,
@@ -5178,7 +5393,10 @@
         464.0
       ],
       "source": "But1/Symbol 1961",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_b8f31b82de61188e",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_11_anim_2": [
@@ -5195,8 +5413,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_b088a9151161fd1731e9.png",
+      "type": "highlight",
       "rect": [
         580.5,
         0.0,
@@ -5204,11 +5421,13 @@
         457.0
       ],
       "source": "But2/Symbol 1957",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7b0a84acaa5650d3",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_ae628c47736442193b30.png",
+      "type": "highlight",
       "rect": [
         54.0,
         0.0,
@@ -5216,7 +5435,10 @@
         464.0
       ],
       "source": "But1/Symbol 1961",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_b8f31b82de61188e",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_11_anim_3": [
@@ -5233,8 +5455,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_b088a9151161fd1731e9.png",
+      "type": "highlight",
       "rect": [
         580.5,
         0.0,
@@ -5242,11 +5463,13 @@
         457.0
       ],
       "source": "But2/Symbol 1957",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7b0a84acaa5650d3",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_ae628c47736442193b30.png",
+      "type": "highlight",
       "rect": [
         54.0,
         0.0,
@@ -5254,7 +5477,10 @@
         464.0
       ],
       "source": "But1/Symbol 1961",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_b8f31b82de61188e",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_11_anim_4": [
@@ -5271,8 +5497,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_b088a9151161fd1731e9.png",
+      "type": "highlight",
       "rect": [
         580.5,
         0.0,
@@ -5280,11 +5505,13 @@
         457.0
       ],
       "source": "But2/Symbol 1957",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7b0a84acaa5650d3",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_ae628c47736442193b30.png",
+      "type": "highlight",
       "rect": [
         54.0,
         0.0,
@@ -5292,7 +5519,10 @@
         464.0
       ],
       "source": "But1/Symbol 1961",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_b8f31b82de61188e",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_11_anim_5": [
@@ -5309,8 +5539,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_b088a9151161fd1731e9.png",
+      "type": "highlight",
       "rect": [
         580.5,
         0.0,
@@ -5318,11 +5547,13 @@
         457.0
       ],
       "source": "But2/Symbol 1957",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7b0a84acaa5650d3",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_ae628c47736442193b30.png",
+      "type": "highlight",
       "rect": [
         54.0,
         0.0,
@@ -5330,7 +5561,10 @@
         464.0
       ],
       "source": "But1/Symbol 1961",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_b8f31b82de61188e",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_12": [
@@ -5580,8 +5814,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -5589,7 +5822,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_1": [
@@ -5642,8 +5878,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -5651,7 +5886,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_10": [
@@ -5704,8 +5942,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -5713,7 +5950,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_11": [
@@ -5766,8 +6006,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -5775,7 +6014,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_12": [
@@ -5828,8 +6070,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -5837,7 +6078,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_13": [
@@ -5890,8 +6134,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -5899,7 +6142,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_14": [
@@ -5952,8 +6198,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -5961,7 +6206,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_15": [
@@ -6014,8 +6262,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -6023,7 +6270,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_16": [
@@ -6076,8 +6326,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -6085,7 +6334,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_17": [
@@ -6138,8 +6390,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -6147,7 +6398,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_18": [
@@ -6200,8 +6454,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -6209,7 +6462,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_19": [
@@ -6262,8 +6518,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -6271,7 +6526,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_2": [
@@ -6324,8 +6582,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -6333,7 +6590,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_20": [
@@ -6386,8 +6646,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -6395,7 +6654,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_21": [
@@ -6448,8 +6710,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -6457,7 +6718,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_22": [
@@ -6510,8 +6774,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -6519,7 +6782,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_23": [
@@ -6572,8 +6838,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -6581,7 +6846,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_24": [
@@ -6634,8 +6902,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -6643,7 +6910,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_25": [
@@ -6696,8 +6966,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -6705,7 +6974,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_26": [
@@ -6758,8 +7030,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -6767,7 +7038,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_27": [
@@ -6820,8 +7094,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -6829,7 +7102,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_28": [
@@ -6882,8 +7158,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -6891,7 +7166,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_29": [
@@ -6944,8 +7222,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -6953,7 +7230,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_3": [
@@ -7006,8 +7286,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -7015,7 +7294,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_30": [
@@ -7068,8 +7350,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -7077,7 +7358,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_31": [
@@ -7130,8 +7414,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -7139,7 +7422,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_32": [
@@ -7192,8 +7478,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -7201,7 +7486,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_33": [
@@ -7254,8 +7542,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -7263,7 +7550,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_34": [
@@ -7316,8 +7606,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -7325,7 +7614,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_4": [
@@ -7378,8 +7670,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -7387,7 +7678,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_5": [
@@ -7440,8 +7734,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -7449,7 +7742,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_6": [
@@ -7502,8 +7798,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -7511,7 +7806,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_7": [
@@ -7564,8 +7862,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -7573,7 +7870,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_8": [
@@ -7626,8 +7926,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -7635,7 +7934,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_8_anim_9": [
@@ -7688,8 +7990,7 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode3_components/part_8cad490fe4441e7b4714.png",
+      "type": "highlight",
       "rect": [
         144.5,
         80.0,
@@ -7697,7 +7998,10 @@
         280.5
       ],
       "source": "Hand/Symbol 1937",
-      "layer": "background"
+      "layer": "background",
+      "region": "ep3_region_7c1aad634a451655",
+      "timeline_alpha": true,
+      "opacity": 0.5019607843137255
     }
   ],
   "e3_opening_9": [],

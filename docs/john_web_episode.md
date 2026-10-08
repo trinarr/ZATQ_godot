@@ -113,3 +113,18 @@ AddItem(2) immediately. The imported 256-frame pulse-based outro is discarded,
 so a single tap reaches the laser popup without the former 13.5 second delay.
 Flash accepts the entire MovieClip as the click target; the broad original
 continue area is retained, covering both red elements.
+
+## Dynamic interactive glows
+
+The two interactive red PNGs in john2_3 (bag Symbol 10201 and door Symbol
+10205) are stored as vector contours in episode101_highlights.json. The
+shared InteractiveHighlight rasterizes each contour once in memory and
+softens its edges in the existing shader. EpisodeTimeline preserves each
+original pose and alpha key; the extra shader pulse is disabled for authored
+tracks to avoid multiplying two animations. Padding remains outside the
+original bounds, and the glow ignores input.
+
+The two unused PNGs and their import files are removed after checking
+references across all episode catalogs. Shared red UI plates and buttons
+remain UI resources. Rebuilding John automatically invokes
+build_john_highlights.py after the two timelines are merged.

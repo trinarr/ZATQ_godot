@@ -54,6 +54,13 @@ func configure(part: Dictionary) -> void:
 	var shared: Dictionary = build_region(region_id)
 	texture = shared.texture
 	material = shared.material
+	if part.get("timeline_alpha",false):
+		# The authored MovieClip supplies opacity; avoid a second independent pulse.
+		material=material.duplicate()
+		material.set_shader_parameter("alpha_min",1.0)
+		material.set_shader_parameter("alpha_max",1.0)
+		modulate.a=float(part.get("opacity",1.0))
+		set_meta("highlight_opacity",modulate.a)
 	expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	texture_repeat = CanvasItem.TEXTURE_REPEAT_DISABLED

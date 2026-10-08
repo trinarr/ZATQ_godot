@@ -215,6 +215,8 @@ def build(archive,only=None):
   for file in out.glob('*.png'):
    if file.name not in used:
     file.unlink();Path(str(file)+".import").unlink(missing_ok=True)
+  from build_story_indicators import migrate
+  migrate(ROOT,(1,))
   print('Exported',len(result['art']),'animated art sets,',len(used),'unique new component textures')
 if __name__=='__main__':
  p=argparse.ArgumentParser(description=__doc__);p.add_argument('archive',type=Path);p.add_argument('--only',nargs='+');a=p.parse_args();build(a.archive,set(a.only) if a.only else None)

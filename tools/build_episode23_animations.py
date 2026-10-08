@@ -215,6 +215,12 @@ def build(archive,episodes=(2,3),only=None):
    for f in out.glob('*.png'):
     if f.name not in used:f.unlink();Path(str(f)+'.import').unlink(missing_ok=True)
    if ep>=4:deduplicate_episode(ep)
+   if ep==5:
+    from build_story_indicators import migrate as migrate_indicators
+    migrate_indicators(ROOT,(5,))
+   if ep in (2,3):
+    from build_episode23_highlights import migrate
+    migrate(ROOT,(ep,))
    print('Episode',ep,'animated scenes',len(result['art']),'new unique textures',len(used),flush=True)
 def deduplicate_episode(ep):
  """Keep one primitive asset across static and animated versions of a scene."""

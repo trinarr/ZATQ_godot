@@ -89,6 +89,30 @@ func run() -> void:
   if entry.label is Label:
    check(entry.label.material==null,"pooled narrative label clears previous clip")
    check(not entry.label.shadow_pass.material.get_shader_parameter("clip_enabled"),"pooled shadow clears previous clip")
+ quest._enter("john2_3");await process_frame
+ var glows: Node2D=ui.viewport_canvas.episode_timeline
+ var glow_count := 0
+ var cached_textures: Dictionary={}
+ for key: String in glows.spec.parts:
+  var part: Dictionary=glows.spec.parts[key]
+  if part.type!="highlight":continue
+  glow_count+=1
+  check(not part.has("texture"),"interactive glow has no PNG dependency")
+  var glow: Control=glows.sprites[key].get_child(0)
+  check(glow.get_meta("interactive_highlight",false),"shared dynamic contour component")
+  check(glow.mouse_filter==Control.MOUSE_FILTER_IGNORE,"glow cannot swallow clicks")
+  check(glow.position==Vector2(part.rect[0],part.rect[1])*2-Vector2.ONE*6,"original placement retains soft-edge padding")
+  check(glow.material.get_shader_parameter("alpha_min")==1.0 and glow.material.get_shader_parameter("alpha_max")==1.0,"no second shader pulse over authored opacity")
+  cached_textures[key]=glow.texture
+ check(glow_count==2,"both red PNGs replaced")
+ glows.playing=false
+ for frame: int in [0,9,18,19,38]:
+  glows.seek_frame(frame)
+  for record: Array in glows.frames[frame]:
+   if not cached_textures.has(record[0]):continue
+   var glow: Control=glows.sprites[record[0]].get_child(0)
+   check(is_equal_approx(glow.modulate.a,float(record[2][3])),"original blinking opacity follows the MovieClip")
+   check(glow.texture==cached_textures[record[0]],"contour texture is reused during animation")
  for point: Vector2 in [Vector2(387,366),Vector2(256,227),Vector2(366,348),Vector2(210,190)]:
   quest._enter("john2_3");await process_frame
   var interactive: Node2D=ui.viewport_canvas.episode_timeline

@@ -6,6 +6,8 @@ static var data: Dictionary = {}
 const BLUR_CACHE := preload("res://scripts/ui/blur_texture_cache.gd")
 const EYE_CLOSURE := preload("res://scripts/ui/eye_closure.gd")
 var eye_closure: Node2D
+const SOFT_VIGNETTE := preload("res://scripts/ui/soft_vignette.gd")
+const HIGHLIGHT := preload("res://scripts/ui/interactive_highlight.gd")
 const QTE_PROMPT := preload("res://scripts/ui/qte_prompt.gd")
 const LOC := preload("res://scripts/core/localization.gd")
 static var caption_aliases: Dictionary = {}
@@ -61,6 +63,12 @@ func configure(art: String) -> void:
 			visual=pivot.get_child(0)
 		else:pivot=Node2D.new()
 		if part.has("eye_lid"):pass
+		elif part.type=="highlight":
+			visual=HIGHLIGHT.new()
+			visual.configure(part)
+		elif part.type=="soft_vignette":
+			visual=SOFT_VIGNETTE.new()
+			visual.configure(part)
 		elif part.type=="qte_prompt":
 			visual=QTE_PROMPT.new()
 		elif part.type=="panel":
@@ -72,13 +80,14 @@ func configure(art: String) -> void:
 			image.texture=load("res://assets/flash_ui/"+part.texture)
 			image.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;visual=image
 		var r: Array=part.rect
-		visual.position=Vector2(r[0],r[1])*2;visual.size=Vector2(r[2],r[3])*2
+		if part.type!="highlight":
+			visual.position=Vector2(r[0],r[1])*2;visual.size=Vector2(r[2],r[3])*2
 		visual.mouse_filter=Control.MOUSE_FILTER_IGNORE
 		var paint:=ShaderMaterial.new();paint.shader=COLOR_TRANSFORM
 		if part.has("blur") and visual is TextureRect:
 			visual.texture_filter=CanvasItem.TEXTURE_FILTER_LINEAR
 			BLUR_CACHE.bind(paint,visual.texture,part.blur)
-		if part.type!="qte_prompt":visual.material=paint
+		if part.type not in ["qte_prompt","highlight","soft_vignette"]:visual.material=paint
 		if not part.has("eye_lid"):
 			pivot.add_child(visual);add_child(pivot)
 		sprites[key]=pivot
@@ -125,7 +134,9 @@ func seek_frame(index: int, subframe: float = 0.0) -> void:
 			pivot.transform=Transform2D(Vector2(m[0],m[1]),Vector2(m[2],m[3]),Vector2(m[4],m[5])*2)
 			var visual: Control=pivot.get_child(0)
 			var paint: ShaderMaterial=visual.material
-			if paint:
+			if visual.get_meta("interactive_highlight",false):
+				visual.modulate=Color(c[0],c[1],c[2],c[3]*float(visual.get_meta("highlight_opacity",1.0)))
+			elif paint:
 				paint.set_shader_parameter("multiplier",Color(c[0],c[1],c[2],c[3]))
 				paint.set_shader_parameter("offset",Vector3(c[4],c[5],c[6]))
 			else:visual.modulate=Color(c[0],c[1],c[2],c[3])
@@ -237,7 +248,9 @@ func apply_variable_frame(variable: String, index: int) -> void:
 		pivot.transform=Transform2D(Vector2(m[0],m[1]),Vector2(m[2],m[3]),Vector2(m[4],m[5])*2)
 		var visual: Control=pivot.get_child(0)
 		var paint: ShaderMaterial=visual.material
-		if paint:
+		if visual.get_meta("interactive_highlight",false):
+			visual.modulate=Color(c[0],c[1],c[2],c[3]*float(visual.get_meta("highlight_opacity",1.0)))
+		elif paint:
 			paint.set_shader_parameter("multiplier",Color(c[0],c[1],c[2],c[3]))
 			paint.set_shader_parameter("offset",Vector3(c[4],c[5],c[6]))
 		else:visual.modulate=Color(c[0],c[1],c[2],c[3])

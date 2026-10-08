@@ -44,12 +44,13 @@ func run() -> void:
      if child is Control:check(child.mouse_filter==Control.MOUSE_FILTER_IGNORE,"art leaves clicks to original hotspots")
      if child is TextureRect:check(child.texture!=null,"texture loaded: "+id)
    for c: Dictionary in quest.available_choices():
-    if c.has("mask"):check(ResourceLoader.exists("res://assets/flash_ui/"+c.mask+".png"),"interactive mask retained")
+    if c.has("mask"):check(preload("res://scripts/ui/interactive_highlight.gd").has_mask(c.mask) or ResourceLoader.exists("res://assets/flash_ui/"+c.mask+".png"),"interactive mask retained")
  check(screens==122,"all 122 episode screens exercised")
  var parts: Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://data/episode2_components.json"))
  for name: String in parts:
   for part: Dictionary in parts[name]:
    if part.type=="texture":check(ResourceLoader.exists("res://assets/flash_ui/"+part.texture),"component resource: "+name)
+   elif part.type=="highlight":check(preload("res://scripts/ui/interactive_highlight.gd").definitions().regions.has(part.region),"dynamic contour exists")
    else:check(part.type=="panel" and part.color.size()==4,"native panel")
  ui.queue_free();await process_frame
  for path: String in [quest.save_path,quest.tmp_path,quest.backup_path]:
