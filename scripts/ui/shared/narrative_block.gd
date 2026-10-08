@@ -3,6 +3,7 @@ extends RefCounted
 const TEXT := preload("res://scripts/ui/shared/shader_text.gd")
 const LOC := preload("res://scripts/core/localization.gd")
 const LAYOUT := preload("res://scripts/ui/landscape_stage_layout.gd")
+const BAND_ALPHA := 127.0/255.0
 static var fit_cache: Dictionary = {}
 var label: Label = TEXT.new()
 var band := ColorRect.new()
@@ -37,7 +38,8 @@ func configure(host: Control, value: String, rect: Rect2, font: Font, font_size:
  var band_host: Control=options.get("band_host",host)
  if options.has("band_rect"):
   var area: Rect2=options.band_rect
-  band.position=area.position;band.size=area.size;band.color=Color.BLACK
+  band.position=area.position;band.size=area.size
+  band.color=Color(0,0,0,clampf(float(options.get("band_alpha",BAND_ALPHA)),0.0,1.0))
   band_host.add_child(band);band.show()
  else:
   options.storage.add_child(band)

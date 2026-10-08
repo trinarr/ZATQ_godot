@@ -69,9 +69,6 @@ static func draw(ui: Control, node: Dictionary) -> void:
 			if "Hist" in block.get("path", ""):
 				options.band_host = ui.screen
 				options.band_rect = Rect2(-ui.screen.position.x/ui.screen.scale.x,maxf(0,b[1]-6)*2,ui.viewport_canvas.safe_layer.size.x/ui.screen.scale.x,(b[3]+12)*2)
-			if b[1] < 128 and b[0] < 70 and not block.has("font_file"):
-				b[2] -= 70 - b[0]
-				b[0] = 70
 			var block_font: Font = ui.BODY_FONT
 			if block.font in ["SegoeScript", "Segoe Script"]:
 				block_font = load("res://fonts/flash/font_2508.ttf")
@@ -79,7 +76,7 @@ static func draw(ui: Control, node: Dictionary) -> void:
 				block_font = load("res://fonts/flash/font_2511.ttf")
 			if block.has("font_file"):
 				block_font = load(block.font_file)
-			for key: String in ["minimum","padding","line_spacing","wrap"]:
+			for key: String in ["minimum","padding","line_spacing","wrap","band_alpha"]:
 				if block.has(key): options[key] = block[key]
 			options.font = block_font
 			var label: Label = ui._narrative_text(block.text,Rect2(b[0],b[1],b[2],b[3]),int(block.size),options)
@@ -91,9 +88,6 @@ static func draw(ui: Control, node: Dictionary) -> void:
 			var band_rect := Rect2(-ui.screen.position.x/ui.screen.scale.x,rect.position.y,ui.viewport_canvas.safe_layer.size.x/ui.screen.scale.x,rect.size.y)
 			var box: Array = node.text_rect.duplicate()
 			if Quest.flags.Auto == 0: box = node.get("text_rect_on_foot",box).duplicate()
-			if box[1] < 128 and box[0] < 70:
-				box[2] -= 70 - box[0]
-				box[0] = 70
 			var description: Label = ui._narrative_text(story_text,Rect2(box[0],box[1],box[2],box[3]),24,{"fit":"multiline","minimum":15,"band_rect":band_rect})
 			ui._bind_episode_caption(description,ui.narrative_layer.band_for(description) if Quest.episode>1 else null)
 		var choice_buttons: Array[Control] = []
