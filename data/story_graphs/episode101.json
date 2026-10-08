@@ -803,10 +803,10 @@
           {
             "text": "@loc:episode101.nodes.john2_1.data.blocks.0.text",
             "rect": [
-              -28.8,
-              379.0,
-              793.7,
-              66.4
+              40,
+              379,
+              720,
+              82
             ],
             "font": "GraffitiC1 Medium",
             "size": 30,
@@ -1171,10 +1171,10 @@
           {
             "text": "@loc:episode101.nodes.john2_9.data.blocks.0.text",
             "rect": [
-              -28.8,
-              379.0,
-              793.7,
-              66.4
+              40,
+              379,
+              720,
+              82
             ],
             "font": "GraffitiC1 Medium",
             "size": 30,

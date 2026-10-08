@@ -16,6 +16,11 @@ const LOC := preload("res://scripts/core/localization.gd")
 static var caption_aliases: Dictionary = {}
 const CAPTION_CLIP := preload("res://shaders/caption_clip.gdshader")
 const COLOR_TRANSFORM := preload("res://shaders/flash_color_transform.gdshader")
+const ART_MASK := preload("res://scripts/ui/flash_art_mask.gd")
+var masked_keys: Array[String] = []
+const TYPEWRITER := preload("res://scripts/ui/shared/typewriter_text.gd")
+var reveal_labels: Array[Label] = []
+var reveal_frame_count := 0
 static var caption_data: Dictionary = {}
 var art_name := ""
 var captions: Array[Dictionary] = []
@@ -60,6 +65,7 @@ func configure(art: String) -> void:
 		variable_keys[variable]=keys
 	for key: String in spec.parts:
 		var part: Dictionary=spec.parts[key]
+		if part.has("mask_key"):masked_keys.append(key)
 		var pivot: Node2D
 		var visual: Control
 		if part.has("eye_lid"):
@@ -80,6 +86,7 @@ func configure(art: String) -> void:
 			visual.configure(part)
 		elif part.type=="qte_prompt":
 			visual=QTE_PROMPT.new()
+		elif part.type=="mask":visual=Control.new()
 		elif part.type=="panel":
 			var panel:=ColorRect.new()
 			var c: Array=part.color
@@ -111,7 +118,12 @@ func play(next_phase: String) -> void:
 	seek_frame(0)
 func _phase_frames(next_phase: String) -> Array:
 	var authored: Array=spec[next_phase]
-	if art_name!="layout_bg_lift" or next_phase!="outro":return authored
+	if art_name!="layout_bg_lift" or next_phase!="outro":
+		var result: Array=EYE_CLOSURE.smooth_frames(authored,spec.parts,float(catalog().fps))
+		if spec.has("typewriter") and next_phase=="intro":
+			result=result.duplicate(true)
+			while result.size()<reveal_frame_count:result.append(result[-1].duplicate(true))
+		return result
 	# The exported nested door clip restarts its opening on the parent outro.
 	# Reverse door poses, but retain the parent's forward fade to black.
 	var closing: Array=[]
@@ -154,8 +166,11 @@ func seek_frame(index: int, subframe: float = 0.0) -> void:
 			var layer: Node=eye_closure if pivot.get_parent()==eye_closure else pivot
 			if not ordered.has(layer):
 				move_child(layer,order);order+=1;ordered[layer]=true
+		_update_art_masks()
 		_update_captions(index)
 	_update_blur_strength(float(current_frame)+subframe)
+	for label: Label in reveal_labels:
+		if is_instance_valid(label):TYPEWRITER.apply(label,(float(index)+subframe)/float(catalog().fps),phase!="intro")
 	if current_frame==frames.size()-1 and playing and cycle<=1:
 		playing=false;finished.emit()
 func _process(delta: float) -> void:
@@ -163,6 +178,18 @@ func _process(delta: float) -> void:
 	elapsed+=playback_clock.advance(delta)
 	var frame_time: float=elapsed*float(catalog().fps)
 	seek_frame(int(floor(frame_time)),fposmod(frame_time,1.0))
+
+func _update_art_masks() -> void:
+	for key: String in masked_keys:
+		var visual: Control=sprites[key].get_child(0)
+		var mask_key: String=spec.parts[key].mask_key
+		var mask: Dictionary=spec.parts[mask_key]
+		var m: Array=mask.mask_matrix
+		var r: Array=mask.mask_rect
+		var reference:=Transform2D(Vector2(m[0],m[1]),Vector2(m[2],m[3]),Vector2(m[4],m[5])*2)
+		var bounds:=Rect2(Vector2(r[0],r[1])*2,Vector2(r[2],r[3])*2)
+		if not sprites[mask_key].visible:bounds.size=Vector2.ZERO
+		ART_MASK.bind(visual.material,visual,sprites[mask_key].get_global_transform()*reference,bounds)
 
 func _update_blur_strength(frame_time: float) -> void:
 	var strength: float
@@ -179,7 +206,7 @@ func _update_blur_strength(frame_time: float) -> void:
 		paint.set_shader_parameter("blur_strength",strength)
 
 func has_outro() -> bool:return spec.outro.size()>1
-func duration(next_phase: String) -> float:return float(spec[next_phase].size())/catalog().fps
+func duration(next_phase: String) -> float:return float(_phase_frames(next_phase).size())/catalog().fps
 
 func same_clip(art: String) -> bool:
 	if not has_art(art):return false
@@ -207,6 +234,11 @@ func bind_caption(label: Label, alias: String = "", decoration: Control = null) 
 						if not translation.is_empty():caption_aliases[normalized_caption(translation)]=original
 		text=caption_aliases.get(text,text)
 	if not caption_data[art_name].anchors.has(text):return
+	if spec.has("typewriter"):
+		reveal_labels.append(label)
+		reveal_frame_count=maxi(reveal_frame_count,ceili(TYPEWRITER.duration(label)*float(catalog().fps))+1)
+		if phase=="intro":frames=_phase_frames(phase)
+		TYPEWRITER.apply(label,elapsed,phase!="intro")
 	if spec.has("caption_mask"):
 		var clip := ShaderMaterial.new();clip.shader=CAPTION_CLIP
 		label.material=clip

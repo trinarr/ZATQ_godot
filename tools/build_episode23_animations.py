@@ -14,6 +14,7 @@ from render_flash_ui import NS
 from episode1_blur import blur_spec
 from story_graph_format import load_all
 from eye_closure_parts import eye_part,export_texture,annotate
+from pulse_masks import mask_part,link_masks
 from animation_viewport import animation_viewport,STAGE
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -90,6 +91,8 @@ def sequences(tl,items,spec,text_only=False):
  return result,periods
 
 def render_part(renderer,record,lib,photos,viewport=STAGE):
+ native_mask=mask_part(record,lib,photos)
+ if native_mask:return native_mask
  native_eye=eye_part(record.get('source',''),record['matrix'])
  if native_eye:
   export_texture(lib,ROOT)
@@ -205,6 +208,7 @@ def build(archive,episodes=(2,3),only=None):
      used_text={r[0] for fs in texts.values() for row in fs for r in row}
      anchors={k:v for k,v in anchors.items() if k in used_text}
      result['art'][art]={'parts':primitives,'clip':str(items[0][0])+':'+str(items[0][1]),'intro_loop':periods['intro'] if len(tracks['intro'])==len(states['intro']) else 0,'qte':bool(spec.get('qte')),'outro_hold':bool(hold_outro),'variables':variables,**tracks}
+     link_masks(result['art'][art])
      annotate(result['art'][art])
      text_result[art]={'anchors':anchors,**texts}
      if not spec.get('qte'):

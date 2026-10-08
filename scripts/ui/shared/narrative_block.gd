@@ -43,6 +43,8 @@ func configure(host: Control, value: String, rect: Rect2, font: Font, font_size:
   options.storage.add_child(band)
   band.hide()
  label.material=null
+ label.visible_characters=-1
+ label.visible_characters_behavior=TextServer.VC_CHARS_BEFORE_SHAPING
  label.shadow_pass.material=TEXT.shadow_material
  label.name="NarrativeText"
  label.text=translated

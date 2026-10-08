@@ -47,7 +47,7 @@ func sync_shadow() -> void:
 	var font := get_theme_font("font")
 	var font_size := get_theme_font_size("font_size")
 	var spacing := get_theme_constant("line_spacing")
-	var next: Array = [text,size,font,font_size,spacing,horizontal_alignment,vertical_alignment,autowrap_mode,justification_flags,clip_text,visible_characters,uppercase,language,text_direction,shadow_offset,get_theme_color("font_color").a]
+	var next: Array = [text,size,font,font_size,spacing,horizontal_alignment,vertical_alignment,autowrap_mode,justification_flags,clip_text,visible_characters,visible_characters_behavior,uppercase,language,text_direction,shadow_offset,get_theme_color("font_color").a]
 	if next == signature: return
 	signature = next
 	shadow_updates += 1
@@ -57,6 +57,7 @@ func sync_shadow() -> void:
 	shadow_pass.justification_flags = justification_flags
 	shadow_pass.clip_text = clip_text
 	shadow_pass.visible_characters = visible_characters
+	shadow_pass.visible_characters_behavior = visible_characters_behavior
 	shadow_pass.uppercase = uppercase
 	shadow_pass.language = language
 	shadow_pass.text_direction = text_direction

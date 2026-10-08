@@ -43,6 +43,8 @@ def content(lib,sources,sounds):
    for e in active_elements(r,f'Symbol {sym}',fr-1):
     if e.get('name')=='Mov':ov['Mov']=max_frame(r,e.get('libraryItemName'))
    blocks=text_blocks(r,f'Symbol {sym}',fr-1,ov)
+   if part==2 and fr in [1,9]:
+    for block in blocks:block['rect']=[40,379,720,82]
    if part==1 and fr<=3:
     texts=r.root(f'Symbol {10319+(fr-1)*3}').findall('.//x:characters',NS)
     report=''.join(c.text or '' for c in texts).strip().replace('\r>','\n\n>').replace('\r','\n')
