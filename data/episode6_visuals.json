@@ -1,0 +1,2934 @@
+{
+  "e6_carrier_1_v1": {
+    "symbol": 655,
+    "frame": 0,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "MistralMorning.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_carrier_2_v1": {
+    "symbol": 655,
+    "frame": 1,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "KrovatAvianosec.jpg",
+    "photo_path": "Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_carrier_3_v1": {
+    "symbol": 655,
+    "frame": 2,
+    "overrides": {
+      "Mov": 12
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_carrier_4_v1": {
+    "symbol": 655,
+    "frame": 3,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "PosleSpryatatZub.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_carrier_5_v1": {
+    "symbol": 655,
+    "frame": 4,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "PutKStolovoy.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_carrier_6_v1": {
+    "symbol": 655,
+    "frame": 5,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_carrier_7_v1": {
+    "symbol": 655,
+    "frame": 6,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "activity_qte": true,
+    "activity_frames": 39
+  },
+  "e6_carrier_8_v1": {
+    "symbol": 655,
+    "frame": 7,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_carrier_12_v1": {
+    "symbol": 655,
+    "frame": 11,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_carrier_13_v1": {
+    "symbol": 655,
+    "frame": 12,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_carrier_14_v1": {
+    "symbol": 655,
+    "frame": 13,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "LaboratoryaAvainosec.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_carrier_15_v1": {
+    "symbol": 655,
+    "frame": 14,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "SWATIncoming.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_carrier_16_v1": {
+    "symbol": 655,
+    "frame": 15,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_carrier_9_v2": {
+    "symbol": 655,
+    "frame": 8,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "ZeleznayaStena-2.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_carrier_11_v2": {
+    "symbol": 655,
+    "frame": 10,
+    "overrides": {
+      "Mov": 14
+    },
+    "photo": "LestnicaZhiloy.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_carrier_8_v3": {
+    "symbol": 655,
+    "frame": 7,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_carrier_9_v3": {
+    "symbol": 655,
+    "frame": 8,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "ZeleznayaStena-2.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_boats_1_v1": {
+    "symbol": 575,
+    "frame": 0,
+    "overrides": {
+      "Mov": 7
+    },
+    "photo": "DoingAfterSave.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_boats_2_v1": {
+    "symbol": 575,
+    "frame": 1,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_boats_3_v1": {
+    "symbol": 575,
+    "frame": 2,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "ThrowTheDoor.jpg",
+    "photo_path": "Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_boats_4_v1": {
+    "symbol": 575,
+    "frame": 3,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_boats_5_v1": {
+    "symbol": 575,
+    "frame": 4,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "RukiKrovDzhek.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_boats_6_v1": {
+    "symbol": 575,
+    "frame": 5,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_boats_7_v1": {
+    "symbol": 575,
+    "frame": 6,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "activity_qte": true,
+    "activity_frames": 39
+  },
+  "e6_boats_8_v1": {
+    "symbol": 575,
+    "frame": 7,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "TakingM4.jpg",
+    "photo_path": "Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_boats_9_v1": {
+    "symbol": 575,
+    "frame": 8,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "OceanCarrier.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_wake_1_v1": {
+    "symbol": 412,
+    "frame": 0,
+    "overrides": {
+      "Mov": 15
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_wake_2_v2": {
+    "symbol": 412,
+    "frame": 1,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_wake_3_v2": {
+    "symbol": 412,
+    "frame": 2,
+    "overrides": {
+      "Mov": 10,
+      "Mov.Hist": 1
+    },
+    "photo": "PrisonFood.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_wake_2_v3": {
+    "symbol": 412,
+    "frame": 1,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_wake_3_v3": {
+    "symbol": 412,
+    "frame": 2,
+    "overrides": {
+      "Mov": 10,
+      "Mov.Hist": 0
+    },
+    "photo": "PrisonFood.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_wake_4_v3": {
+    "symbol": 412,
+    "frame": 3,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 1
+    },
+    "photo": "PrisonArgue.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_wake_9_v3": {
+    "symbol": 412,
+    "frame": 8,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "BlueComputers.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_wake_10_v3": {
+    "symbol": 412,
+    "frame": 9,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "ToMapPC.jpg",
+    "photo_path": "Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_wake_11_v3": {
+    "symbol": 412,
+    "frame": 10,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "DarkSilouette.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_wake_12_v3": {
+    "symbol": 412,
+    "frame": 11,
+    "overrides": {
+      "Mov": 12
+    },
+    "photo": "CreepyAliceFace.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_wake_13_v3": {
+    "symbol": 412,
+    "frame": 12,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_wake_14_v3": {
+    "symbol": 412,
+    "frame": 13,
+    "overrides": {
+      "Mov": 10
+    },
+    "photo": "Keflavic.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_wake_2_v5": {
+    "symbol": 412,
+    "frame": 1,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 3
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_wake_3_v5": {
+    "symbol": 412,
+    "frame": 2,
+    "overrides": {
+      "Mov": 10,
+      "Mov.Hist": 0
+    },
+    "photo": "PrisonFood.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_wake_4_v5": {
+    "symbol": 412,
+    "frame": 3,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 0
+    },
+    "photo": "PrisonArgue.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_wake_2_v6": {
+    "symbol": 412,
+    "frame": 1,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 4
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_wake_3_v6": {
+    "symbol": 412,
+    "frame": 2,
+    "overrides": {
+      "Mov": 10,
+      "Mov.Hist": 1
+    },
+    "photo": "PrisonFood.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_wake_5_v6": {
+    "symbol": 412,
+    "frame": 4,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "GlockInJail.jpg",
+    "photo_path": "Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_wake_6_v6": {
+    "symbol": 412,
+    "frame": 5,
+    "overrides": {
+      "Mov": 10
+    },
+    "photo": "OutThePrison_1.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_wake_7_v6": {
+    "symbol": 412,
+    "frame": 6,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "activity_qte": true,
+    "activity_frames": 65
+  },
+  "e6_wake_8_v6": {
+    "symbol": 412,
+    "frame": 7,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_after_1_v1": {
+    "symbol": 703,
+    "frame": 0,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_after_4_v1": {
+    "symbol": 703,
+    "frame": 3,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "BadAnalysis.png",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_after_5_v1": {
+    "symbol": 703,
+    "frame": 4,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_after_6_v1": {
+    "symbol": 703,
+    "frame": 5,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "KillTheArmyMan.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_after_2_v2": {
+    "symbol": 703,
+    "frame": 1,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 0
+    },
+    "photo": "ManWithGun.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_after_8_v2": {
+    "symbol": 703,
+    "frame": 7,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_after_2_v3": {
+    "symbol": 703,
+    "frame": 1,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 1
+    },
+    "photo": "ManWithGun.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_after_8_v3": {
+    "symbol": 703,
+    "frame": 7,
+    "overrides": {
+      "Mov": 4
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_after_2_v4": {
+    "symbol": 703,
+    "frame": 1,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 2
+    },
+    "photo": "ManWithGun.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_after_3_v4": {
+    "symbol": 703,
+    "frame": 2,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 0
+    },
+    "photo": "VihodZaDver.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_after_3_v5": {
+    "symbol": 703,
+    "frame": 2,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 1
+    },
+    "photo": "VihodZaDver.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_after_7_v5": {
+    "symbol": 703,
+    "frame": 6,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "GoingFromLab.jpg",
+    "photo_path": "Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_after_9_v5": {
+    "symbol": 703,
+    "frame": 8,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "OceanCarrier.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_noleg_1_v1": {
+    "symbol": 320,
+    "frame": 0,
+    "overrides": {
+      "Mov": 5
+    },
+    "photo": "FindingLED.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_noleg_2_v1": {
+    "symbol": 320,
+    "frame": 1,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_noleg_5_v1": {
+    "symbol": 320,
+    "frame": 4,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_noleg_6_v1": {
+    "symbol": 320,
+    "frame": 5,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 0
+    },
+    "photo": "JackKillHandMoment.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_noleg_7_v1": {
+    "symbol": 320,
+    "frame": 6,
+    "overrides": {
+      "Mov": 6,
+      "Mov.Hist": 0
+    },
+    "photo": "OpponentComing.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_noleg_8_v1": {
+    "symbol": 320,
+    "frame": 7,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_noleg_3_v2": {
+    "symbol": 320,
+    "frame": 2,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "OutThePrison_1.jpg",
+    "photo_path": "Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_noleg_4_v2": {
+    "symbol": 320,
+    "frame": 3,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_noleg_6_v2": {
+    "symbol": 320,
+    "frame": 5,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 1
+    },
+    "photo": "JackKillHandMoment.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_noleg_7_v2": {
+    "symbol": 320,
+    "frame": 6,
+    "overrides": {
+      "Mov": 6,
+      "Mov.Hist": 1
+    },
+    "photo": "OpponentComing.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_noleg_8_v2": {
+    "symbol": 320,
+    "frame": 7,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_prison_1_v1": {
+    "symbol": 479,
+    "frame": 0,
+    "overrides": {
+      "Mov": 9,
+      "Mov.Hist": 0
+    },
+    "photo": "AfterPrisonCell.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_prison_2_v1": {
+    "symbol": 479,
+    "frame": 1,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_prison_3_v1": {
+    "symbol": 479,
+    "frame": 2,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "activity_qte": true,
+    "activity_frames": 39
+  },
+  "e6_prison_4_v1": {
+    "symbol": 479,
+    "frame": 3,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 0
+    },
+    "photo": "BloodOnTheFloor.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_prison_1_v2": {
+    "symbol": 479,
+    "frame": 0,
+    "overrides": {
+      "Mov": 9,
+      "Mov.Hist": 1
+    },
+    "photo": "AfterPrisonCell.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_prison_2_v2": {
+    "symbol": 479,
+    "frame": 1,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_prison_3_v2": {
+    "symbol": 479,
+    "frame": 2,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "activity_qte": true,
+    "activity_frames": 39
+  },
+  "e6_prison_4_v2": {
+    "symbol": 479,
+    "frame": 3,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 1
+    },
+    "photo": "BloodOnTheFloor.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_prison_4_v3": {
+    "symbol": 479,
+    "frame": 3,
+    "overrides": {
+      "Mov": 5,
+      "Mov.Hist": 2
+    },
+    "photo": "BloodOnTheFloor.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_prison_5_v3": {
+    "symbol": 479,
+    "frame": 4,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "SmokeGlockBarrel.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_prison_6_v5": {
+    "symbol": 479,
+    "frame": 5,
+    "overrides": {
+      "Mov": 0,
+      "Mov.Hist": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_prison_8_v5": {
+    "symbol": 479,
+    "frame": 7,
+    "overrides": {
+      "Mov": 6,
+      "Mov.Hist": 0
+    },
+    "photo": "SWATIncoming.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_prison_9_v5": {
+    "symbol": 479,
+    "frame": 8,
+    "overrides": {
+      "Mov": 9,
+      "Mov.Hist": 0
+    },
+    "photo": "RunningFromPrison.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_prison_10_v5": {
+    "symbol": 479,
+    "frame": 9,
+    "overrides": {
+      "Mov": 6,
+      "Mov.Hist": 0
+    },
+    "photo": "OutOfBoat.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_prison_11_v5": {
+    "symbol": 479,
+    "frame": 10,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_prison_6_v6": {
+    "symbol": 479,
+    "frame": 5,
+    "overrides": {
+      "Mov": 0,
+      "Mov.Hist": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_prison_8_v6": {
+    "symbol": 479,
+    "frame": 7,
+    "overrides": {
+      "Mov": 6,
+      "Mov.Hist": 0
+    },
+    "photo": "SWATIncoming.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_prison_9_v6": {
+    "symbol": 479,
+    "frame": 8,
+    "overrides": {
+      "Mov": 9,
+      "Mov.Hist": 1
+    },
+    "photo": "RunningFromPrison.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_prison_10_v6": {
+    "symbol": 479,
+    "frame": 9,
+    "overrides": {
+      "Mov": 6,
+      "Mov.Hist": 1
+    },
+    "photo": "OutOfBoat.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_prison_11_v6": {
+    "symbol": 479,
+    "frame": 10,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_prison_7_v7": {
+    "symbol": 479,
+    "frame": 6,
+    "overrides": {
+      "Mov": 9
+    },
+    "photo": "OutThePrison_1.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_prison_8_v7": {
+    "symbol": 479,
+    "frame": 7,
+    "overrides": {
+      "Mov": 6,
+      "Mov.Hist": 1
+    },
+    "photo": "SWATIncoming.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_prison_9_v7": {
+    "symbol": 479,
+    "frame": 8,
+    "overrides": {
+      "Mov": 9,
+      "Mov.Hist": 2
+    },
+    "photo": "RunningFromPrison.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_base_1_v1": {
+    "symbol": 524,
+    "frame": 0,
+    "overrides": {
+      "Mov": 6,
+      "Mov.Hist": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_base_2_v1": {
+    "symbol": 524,
+    "frame": 1,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "WakeUpOcean.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_base_3_v1": {
+    "symbol": 524,
+    "frame": 2,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_base_4_v1": {
+    "symbol": 524,
+    "frame": 3,
+    "overrides": {
+      "Mov": 12
+    },
+    "photo": "BurnTruck.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_base_5_v1": {
+    "symbol": 524,
+    "frame": 4,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_base_6_v1": {
+    "symbol": 524,
+    "frame": 5,
+    "overrides": {
+      "Mov": 8
+    },
+    "photo": "MonsterTeeth.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_base_7_v1": {
+    "symbol": 524,
+    "frame": 6,
+    "overrides": {
+      "Mov": 32
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "activity_qte": true,
+    "activity_frames": 33
+  },
+  "e6_base_1_v2": {
+    "symbol": 524,
+    "frame": 0,
+    "overrides": {
+      "Mov": 6,
+      "Mov.Hist": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_base_2_v2": {
+    "symbol": 524,
+    "frame": 1,
+    "overrides": {
+      "Mov": 6
+    },
+    "photo": "WakeUpOcean.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_base_3_v2": {
+    "symbol": 524,
+    "frame": 2,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_base_4_v2": {
+    "symbol": 524,
+    "frame": 3,
+    "overrides": {
+      "Mov": 12
+    },
+    "photo": "BurnTruck.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_base_5_v2": {
+    "symbol": 524,
+    "frame": 4,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_base_6_v2": {
+    "symbol": 524,
+    "frame": 5,
+    "overrides": {
+      "Mov": 8
+    },
+    "photo": "MonsterTeeth.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_base_7_v2": {
+    "symbol": 524,
+    "frame": 6,
+    "overrides": {
+      "Mov": 32
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "activity_qte": true,
+    "activity_frames": 33
+  },
+  "e6_base_3_v3": {
+    "symbol": 524,
+    "frame": 2,
+    "overrides": {
+      "Mov": 4,
+      "Mov.Hist": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_base_4_v3": {
+    "symbol": 524,
+    "frame": 3,
+    "overrides": {
+      "Mov": 12
+    },
+    "photo": "BurnTruck.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_base_5_v3": {
+    "symbol": 524,
+    "frame": 4,
+    "overrides": {
+      "Mov": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_base_6_v3": {
+    "symbol": 524,
+    "frame": 5,
+    "overrides": {
+      "Mov": 8
+    },
+    "photo": "MonsterTeeth.jpg",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "But",
+      "But1",
+      "But2",
+      "But3",
+      "But4",
+      "Fing",
+      "Hist",
+      "MvMg",
+      "Tap"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_item_tooth": {
+    "symbol": 274,
+    "frame": 0,
+    "overrides": {
+      "Weapons": 14,
+      "ButExit": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Txt"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "offset_y": 30
+  },
+  "e6_boats_2_v1_controls": {
+    "symbol": 575,
+    "frame": 1,
+    "overrides": {
+      "But1": 4,
+      "But2": 4
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Mov"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "omit_root_shapes": true
+  },
+  "e6_item_knife": {
+    "symbol": 274,
+    "frame": 0,
+    "overrides": {
+      "Weapons": 15,
+      "ButExit": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Txt"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "offset_y": 30
+  },
+  "e6_item_m4_boats": {
+    "symbol": 274,
+    "frame": 0,
+    "overrides": {
+      "Weapons": 16,
+      "ButExit": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Txt"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "offset_y": 30
+  },
+  "e6_item_glock": {
+    "symbol": 274,
+    "frame": 0,
+    "overrides": {
+      "Weapons": 17,
+      "ButExit": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Txt"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "offset_y": 30
+  },
+  "e6_item_m4_lab": {
+    "symbol": 274,
+    "frame": 0,
+    "overrides": {
+      "Weapons": 16,
+      "ButExit": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Txt"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "offset_y": 30
+  },
+  "e6_item_torch": {
+    "symbol": 274,
+    "frame": 0,
+    "overrides": {
+      "Weapons": 18,
+      "ButExit": 1
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "Txt"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ],
+    "offset_y": 30
+  },
+  "e6_dialogue_hernandez": {
+    "symbol": 237,
+    "frame": 6,
+    "overrides": {
+      "Ava": 6,
+      "Dlg1": 0,
+      "Dlg2": 0,
+      "Dlg3": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "DlgTxt",
+      "PrsnTxt",
+      "Txt"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_dialogue_pete": {
+    "symbol": 237,
+    "frame": 7,
+    "overrides": {
+      "Ava": 7,
+      "Dlg1": 0,
+      "Dlg2": 0,
+      "Dlg3": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "DlgTxt",
+      "PrsnTxt",
+      "Txt"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  },
+  "e6_dialogue_dave": {
+    "symbol": 237,
+    "frame": 8,
+    "overrides": {
+      "Ava": 8,
+      "Dlg1": 0,
+      "Dlg2": 0,
+      "Dlg3": 0
+    },
+    "photo": "",
+    "photo_path": "Mov.Mov",
+    "hide": [
+      "DlgTxt",
+      "PrsnTxt",
+      "Txt"
+    ],
+    "omit_symbols": [
+      "Symbol 539",
+      "Symbol 379"
+    ]
+  }
+}

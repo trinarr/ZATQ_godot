@@ -1,0 +1,727 @@
+{
+  "e6_after_5_v1": [
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_29aab668c6edda75308c.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 684",
+      "layer": "background"
+    }
+  ],
+  "e6_after_7_v5": [
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_983c3887fe9b4474d4e2.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/external:GoingFromLab.jpg",
+      "layer": "background"
+    }
+  ],
+  "e6_base_5_v1": [
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_6a406688293223b734d1.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 509",
+      "layer": "background"
+    }
+  ],
+  "e6_base_5_v2": [
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_6a406688293223b734d1.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 509",
+      "layer": "background"
+    }
+  ],
+  "e6_base_5_v3": [
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_6a406688293223b734d1.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 509",
+      "layer": "background"
+    }
+  ],
+  "e6_boats_2_v1": [
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_619b1db414af203d869e.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 535",
+      "layer": "background"
+    }
+  ],
+  "e6_boats_2_v1_controls": [],
+  "e6_boats_3_v1": [
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_159d59be45811c92fe6c.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/external:ThrowTheDoor.jpg",
+      "layer": "background"
+    }
+  ],
+  "e6_boats_6_v1": [
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_ef9eb98b96b9cb67eda3.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 563",
+      "layer": "background"
+    }
+  ],
+  "e6_boats_8_v1": [
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_009842beb82e15d87cd4.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/external:TakingM4.jpg",
+      "layer": "background"
+    }
+  ],
+  "e6_carrier_12_v1": [
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_ea17ecf24dda6e853507.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 636",
+      "layer": "background"
+    }
+  ],
+  "e6_carrier_16_v1": [
+    {
+      "type": "panel",
+      "rect": [
+        0.0,
+        0.0,
+        799.9898334145546,
+        479.99657944589853
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov/Symbol 133",
+      "layer": "background"
+    }
+  ],
+  "e6_carrier_2_v1": [
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_a1f687cda37aa7814dd1.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/external:KrovatAvianosec.jpg",
+      "layer": "background"
+    }
+  ],
+  "e6_dialogue_dave": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_93463c4c703deffab8d6.png",
+      "rect": [
+        63.0,
+        0.0,
+        711.0,
+        471.0
+      ],
+      "source": "/Symbol 237",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_0487046b7a1122d3c23f.png",
+      "rect": [
+        619.0,
+        55.0,
+        116.0,
+        152.0
+      ],
+      "source": "Ava/Symbol 234",
+      "layer": "background"
+    }
+  ],
+  "e6_dialogue_hernandez": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_93463c4c703deffab8d6.png",
+      "rect": [
+        63.0,
+        0.0,
+        711.0,
+        471.0
+      ],
+      "source": "/Symbol 237",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_82b59f88aedd6e110b4a.png",
+      "rect": [
+        619.5,
+        55.5,
+        113.0,
+        149.0
+      ],
+      "source": "Ava/Symbol 234",
+      "layer": "background"
+    }
+  ],
+  "e6_dialogue_pete": [
+    {
+      "type": "texture",
+      "texture": "episode3_components/part_93463c4c703deffab8d6.png",
+      "rect": [
+        63.0,
+        0.0,
+        711.0,
+        471.0
+      ],
+      "source": "/Symbol 237",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_f7750c2a8f4b525c754d.png",
+      "rect": [
+        619.0,
+        55.0,
+        116.0,
+        152.0
+      ],
+      "source": "Ava/Symbol 234",
+      "layer": "background"
+    }
+  ],
+  "e6_item_glock": [
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_172085922d7d44dd15b3.png",
+      "rect": [
+        51.0,
+        30.0,
+        707.0,
+        394.0
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_bc68d77e23a7b55342b7.png",
+      "rect": [
+        75.5,
+        56.0,
+        642.5,
+        47.5
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_f31ec1ef0e9590940090.png",
+      "rect": [
+        211.0,
+        119.5,
+        383.5,
+        261.5
+      ],
+      "source": "Weapons/Symbol 250",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_22e42f16a9a1f3164f51.png",
+      "rect": [
+        680.0,
+        345.0,
+        27.0,
+        23.0
+      ],
+      "source": "/Symbol 12",
+      "layer": "foreground"
+    }
+  ],
+  "e6_item_knife": [
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_172085922d7d44dd15b3.png",
+      "rect": [
+        51.0,
+        30.0,
+        707.0,
+        394.0
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_bc68d77e23a7b55342b7.png",
+      "rect": [
+        75.5,
+        56.0,
+        642.5,
+        47.5
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_a54323e3bad281573bf4.png",
+      "rect": [
+        202.0,
+        149.0,
+        418.0,
+        166.0
+      ],
+      "source": "Weapons/Symbol 268",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_22e42f16a9a1f3164f51.png",
+      "rect": [
+        680.0,
+        345.0,
+        27.0,
+        23.0
+      ],
+      "source": "/Symbol 12",
+      "layer": "foreground"
+    }
+  ],
+  "e6_item_m4_boats": [
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_172085922d7d44dd15b3.png",
+      "rect": [
+        51.0,
+        30.0,
+        707.0,
+        394.0
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_bc68d77e23a7b55342b7.png",
+      "rect": [
+        75.5,
+        56.0,
+        642.5,
+        47.5
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_7da26dabc67902b39ce2.png",
+      "rect": [
+        92.5,
+        144.0,
+        557.5,
+        208.0
+      ],
+      "source": "Weapons/Symbol 270",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_22e42f16a9a1f3164f51.png",
+      "rect": [
+        680.0,
+        345.0,
+        27.0,
+        23.0
+      ],
+      "source": "/Symbol 12",
+      "layer": "foreground"
+    }
+  ],
+  "e6_item_m4_lab": [
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_172085922d7d44dd15b3.png",
+      "rect": [
+        51.0,
+        30.0,
+        707.0,
+        394.0
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_bc68d77e23a7b55342b7.png",
+      "rect": [
+        75.5,
+        56.0,
+        642.5,
+        47.5
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_7da26dabc67902b39ce2.png",
+      "rect": [
+        92.5,
+        144.0,
+        557.5,
+        208.0
+      ],
+      "source": "Weapons/Symbol 270",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_22e42f16a9a1f3164f51.png",
+      "rect": [
+        680.0,
+        345.0,
+        27.0,
+        23.0
+      ],
+      "source": "/Symbol 12",
+      "layer": "foreground"
+    }
+  ],
+  "e6_item_tooth": [
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_172085922d7d44dd15b3.png",
+      "rect": [
+        51.0,
+        30.0,
+        707.0,
+        394.0
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_bc68d77e23a7b55342b7.png",
+      "rect": [
+        75.5,
+        56.0,
+        642.5,
+        47.5
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_7f9e5acbb1197a242eb2.png",
+      "rect": [
+        345.5,
+        154.0,
+        127.0,
+        173.0
+      ],
+      "source": "Weapons/Symbol 266",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_22e42f16a9a1f3164f51.png",
+      "rect": [
+        680.0,
+        345.0,
+        27.0,
+        23.0
+      ],
+      "source": "/Symbol 12",
+      "layer": "foreground"
+    }
+  ],
+  "e6_item_torch": [
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_172085922d7d44dd15b3.png",
+      "rect": [
+        51.0,
+        30.0,
+        707.0,
+        394.0
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_bc68d77e23a7b55342b7.png",
+      "rect": [
+        75.5,
+        56.0,
+        642.5,
+        47.5
+      ],
+      "source": "/Symbol 239",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_fcf3df5fe5db83b4e653.png",
+      "rect": [
+        229.5,
+        149.5,
+        351.5,
+        175.5
+      ],
+      "source": "Weapons/Symbol 272",
+      "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_22e42f16a9a1f3164f51.png",
+      "rect": [
+        680.0,
+        345.0,
+        27.0,
+        23.0
+      ],
+      "source": "/Symbol 12",
+      "layer": "foreground"
+    }
+  ],
+  "e6_noleg_2_v1": [
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_d2ce60c5b85e1af51576.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 288",
+      "layer": "background"
+    }
+  ],
+  "e6_noleg_3_v2": [
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_adc647ca746a69dbf524.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/external:OutThePrison_1.jpg",
+      "layer": "background"
+    }
+  ],
+  "e6_noleg_4_v2": [
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_04cdefc98e4a3a8f5aaa.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 298",
+      "layer": "background"
+    }
+  ],
+  "e6_noleg_5_v1": [
+    {
+      "type": "panel",
+      "rect": [
+        0.0,
+        0.0,
+        799.9898334145546,
+        479.99657944589853
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Mov.Mov/Symbol 133",
+      "layer": "background"
+    }
+  ],
+  "e6_noleg_8_v1": [
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_6e3e460733484615f3cf.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 319",
+      "layer": "background"
+    }
+  ],
+  "e6_noleg_8_v2": [
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_6e3e460733484615f3cf.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 319",
+      "layer": "background"
+    }
+  ],
+  "e6_prison_11_v5": [
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_77e8eaf001d2206866a2.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 478",
+      "layer": "background"
+    }
+  ],
+  "e6_prison_11_v6": [
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_77e8eaf001d2206866a2.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 478",
+      "layer": "background"
+    }
+  ],
+  "e6_prison_6_v5": [
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_730effb222b1723d6ef7.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 448",
+      "layer": "background"
+    }
+  ],
+  "e6_prison_6_v6": [
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_730effb222b1723d6ef7.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/Symbol 448",
+      "layer": "background"
+    }
+  ],
+  "e6_wake_10_v3": [
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_acfb125bc02087131aac.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/external:ToMapPC.jpg",
+      "layer": "background"
+    }
+  ],
+  "e6_wake_5_v6": [
+    {
+      "type": "texture",
+      "texture": "episode6_components/part_fb1e1f7b6dc5d95fa1ec.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "Mov/external:GlockInJail.jpg",
+      "layer": "background"
+    }
+  ]
+}

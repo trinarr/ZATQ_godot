@@ -13,7 +13,7 @@ for path in (root/'data').glob('episode*_animations.json'):
 for path in (root/'data').glob('episode*_highlights.json'):
     highlights=json.loads(path.read_text());regions.update(highlights['regions']);regions.update(highlights.get('masks',{}))
 assert all(n.get('kind','story') != 'boundary' for n in nodes.values())
-assert sum(n.get('kind','story') == 'city_ending' for n in nodes.values()) == 17
+assert sum(n.get('kind','story') == 'city_ending' for n in nodes.values()) == 20
 for key,node in nodes.items():
     assert node.get('source'),key
     if 'image' in node: assert (root/'assets/images'/node['image']).is_file(),key
@@ -48,4 +48,6 @@ assert {int(n['result_id']) for n in nodes.values() if n.get('episode')==4 and n
 assert len([n for n in nodes.values() if n.get('episode')==4 and n.get('kind')=='city_death'])==31
 assert {int(n['result_id']) for n in nodes.values() if n.get('episode')==5 and n.get('result_id')} == set(range(114,137))
 assert len({int(n.get('ending_id',n['result_id'])) for n in nodes.values() if n.get('episode')==5 and n.get('alive')})==3
-print('PASS: assets, sounds, complete Episodes I–V routes, original XFL/AS provenance.')
+assert {int(n['result_id']) for n in nodes.values() if n.get('episode')==6 and n.get('result_id')} == set(range(137,162))-{150}
+assert {int(n['result_id']) for n in nodes.values() if n.get('episode')==6 and n.get('alive')} == {151,160}
+print('PASS: assets, sounds, complete Episodes I–VI routes, original XFL/AS provenance.')

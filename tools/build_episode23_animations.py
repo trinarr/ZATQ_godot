@@ -239,4 +239,4 @@ def deduplicate_episode(ep):
    if directory+'/'+file.name not in referenced:file.unlink();Path(str(file)+'.import').unlink(missing_ok=True)
 
 if __name__=='__main__':
- p=argparse.ArgumentParser(description=__doc__);p.add_argument('archive',type=Path);p.add_argument('--episode',type=int,choices=[2,3,4,5]);p.add_argument('--only',nargs='+');a=p.parse_args();build(a.archive,(a.episode,) if a.episode else (2,3),a.only)
+ p=argparse.ArgumentParser(description=__doc__);p.add_argument('archive',type=Path);p.add_argument('--episode',type=int,choices=[2,3,4,5,6]);p.add_argument('--only',nargs='+');a=p.parse_args();build(a.archive,(a.episode,) if a.episode else (2,3),a.only)

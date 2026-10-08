@@ -2,6 +2,8 @@
 import copy
 from render_flash_ui import NS
 BLUR_BITMAPS = {
+ # Episode VI: waking up in the infirmary, sharp photograph behind shared lids.
+ 'Bitmap 321.png': ('Bitmap 328.png',2.5,2.5,0.),
  # John web story uses the same soft eyelids with a separately painted blur.
  'Bitmap 10367.png': ('Bitmap 10374.png',2.5,2.5,0.),
  'Bitmap 1776.png': ('Bitmap 1781.png',2.5,2.5,0.),
