@@ -14,6 +14,7 @@ from render_flash_ui import NS
 from episode1_blur import blur_spec
 from story_graph_format import load_all
 from eye_closure_parts import eye_part,export_texture,annotate
+from animation_viewport import animation_viewport,STAGE
 ROOT=Path(__file__).resolve().parents[1]
 
 class EpisodeTimelines(Timelines):
@@ -88,7 +89,7 @@ def sequences(tl,items,spec,text_only=False):
  spec['durations']=durations
  return result,periods
 
-def render_part(renderer,record,lib,photos):
+def render_part(renderer,record,lib,photos,viewport=STAGE):
  native_eye=eye_part(record.get('source',''),record['matrix'])
  if native_eye:
   export_texture(lib,ROOT)
@@ -108,7 +109,7 @@ def render_part(renderer,record,lib,photos):
   with Image.open(file) as im:w,h=im.size
   body=f'<image width="{w}" height="{h}" xlink:href="data:image/png;base64,{base64.b64encode(file.read_bytes()).decode()}"/>'
  if e is not None and e.tag.endswith('DOMShape') and renderer.panel(e,record['matrix'],1,record['source']):pass
- else:renderer.emit(body,record['matrix'],1,record['source'],blur_spec(e) if e is not None else None)
+ else:renderer.emit(body,record['matrix'],1,record['source'],blur_spec(e) if e is not None else None,viewport=viewport)
  return renderer.parts[0] if renderer.parts else None
 
 def build(archive,episodes=(2,3),only=None):
@@ -146,7 +147,7 @@ def build(archive,episodes=(2,3),only=None):
     for key,records in pool.items():
      ref=max(records,key=lambda r:-abs(r['matrix'][4])-abs(r['matrix'][5])-800*abs(r['matrix'][0]-1)-480*abs(r['matrix'][3]-1))
      if ref.get('prompt'):ref=dict(ref,matrix=(1,0,0,1,0,0))
-     part=render_part(renderer,ref,lib,photos)
+     part=render_part(renderer,ref,lib,photos,animation_viewport(ref,records,lib,photos))
      if not part:continue
      if part.get('texture') and 'eye_lid' not in part:
       filename=Path(part['texture']).name

@@ -1,0 +1,1231 @@
+{
+  "stats": {
+    "1": {
+      "scenes": 68,
+      "parts": 104,
+      "repaired": 3
+    },
+    "2": {
+      "scenes": 33,
+      "parts": 61,
+      "repaired": 5
+    },
+    "3": {
+      "scenes": 72,
+      "parts": 87,
+      "repaired": 8
+    },
+    "4": {
+      "scenes": 93,
+      "parts": 96,
+      "repaired": 5
+    },
+    "5": {
+      "scenes": 103,
+      "parts": 110,
+      "repaired": 4
+    },
+    "6": {
+      "scenes": 88,
+      "parts": 100,
+      "repaired": 5
+    },
+    "101": {
+      "scenes": 22,
+      "parts": 35,
+      "repaired": 5
+    }
+  },
+  "changes": [
+    {
+      "episode": 1,
+      "art": "city_car_trapped",
+      "key": "0/0:0:Symbol 2620/0:0:Symbol 2617/photo",
+      "source": "Mov.Mov/external:LowBat.jpg",
+      "viewport": [
+        0,
+        0,
+        801,
+        480
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode1_components/part_b54203c51df0ff3dcf4c.png",
+        "rect": [
+          1.0,
+          0.0,
+          799.0,
+          480.0
+        ],
+        "source": "Mov.Mov/external:LowBat.jpg"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode1_animation_parts/part_33d47ab491a3f5460b10.png",
+        "rect": [
+          1.0,
+          0.0,
+          800.0,
+          480.0
+        ],
+        "source": "Mov.Mov/external:LowBat.jpg"
+      }
+    },
+    {
+      "episode": 1,
+      "art": "city_metro_platform",
+      "key": "0/0:0:Symbol 2919/0:0:Symbol 2916/photo",
+      "source": "Mov.Mov/external:SubwayZombiePathDown2.jpg",
+      "viewport": [
+        0,
+        -2,
+        800,
+        482
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode1_components/part_4c316c24ab626babe370.png",
+        "rect": [
+          0.0,
+          0.0,
+          800.0,
+          479.0
+        ],
+        "source": "Mov.Mov/external:SubwayZombiePathDown2.jpg"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode1_animation_parts/part_e4f6ec783849b8543f53.png",
+        "rect": [
+          0.0,
+          -1.5,
+          800.0,
+          480.5
+        ],
+        "source": "Mov.Mov/external:SubwayZombiePathDown2.jpg"
+      }
+    },
+    {
+      "episode": 1,
+      "art": "ep1_dorvud_street",
+      "key": "0/0:0:Symbol 2936/0:0:Symbol 2932/photo",
+      "source": "Mov.Mov/external:ZombieDorvudOverlook.jpg",
+      "viewport": [
+        0,
+        0,
+        1415,
+        480
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode1_animation_parts/part_3b6ea325d404da890a5b.png",
+        "rect": [
+          0.0,
+          0.0,
+          800.0,
+          480.0
+        ],
+        "source": "Mov.Mov/external:ZombieDorvudOverlook.jpg"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode1_animation_parts/part_5b8f2f3ba68734dde93c.png",
+        "rect": [
+          0.0,
+          0.0,
+          1415.0,
+          480.0
+        ],
+        "source": "Mov.Mov/external:ZombieDorvudOverlook.jpg"
+      }
+    },
+    {
+      "episode": 2,
+      "art": "e2_hall_5",
+      "key": "0/0:0:Symbol 2054/1:0:Symbol 2051/0:0:Symbol 2050/0:0:DOMShape:1c26d4b410ae",
+      "source": "Mov/Symbol 2050",
+      "viewport": [
+        0,
+        0,
+        800,
+        524
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode2_animation_parts/part_8a5f80ebb06ab884bd41.png",
+        "rect": [
+          32.5,
+          248.5,
+          425.0,
+          231.5
+        ],
+        "source": "Mov/Symbol 2050"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode2_animation_parts/part_42c29bd3810b2a0c218d.png",
+        "rect": [
+          32.5,
+          248.5,
+          425.0,
+          275.5
+        ],
+        "source": "Mov/Symbol 2050"
+      }
+    },
+    {
+      "episode": 2,
+      "art": "e2_hall_5",
+      "key": "0/0:0:Symbol 2054/1:0:Symbol 2051/0:0:Symbol 2050/1:0:DOMShape:1c26d4b410ae",
+      "source": "Mov/Symbol 2050",
+      "viewport": [
+        0,
+        0,
+        800,
+        524
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode2_animation_parts/part_8a5f80ebb06ab884bd41.png",
+        "rect": [
+          32.5,
+          248.5,
+          425.0,
+          231.5
+        ],
+        "source": "Mov/Symbol 2050"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode2_animation_parts/part_42c29bd3810b2a0c218d.png",
+        "rect": [
+          32.5,
+          248.5,
+          425.0,
+          275.5
+        ],
+        "source": "Mov/Symbol 2050"
+      }
+    },
+    {
+      "episode": 2,
+      "art": "e2_roof_1",
+      "key": "0/0:0:Symbol 2220/0:0:Symbol 2217/photo",
+      "source": "Mov.Mov/external:StairsUp.jpg",
+      "viewport": [
+        0,
+        -1,
+        800,
+        481
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode2_components/part_ef805d3d8d065f9fc547.png",
+        "rect": [
+          0.0,
+          0.0,
+          800.0,
+          480.0
+        ],
+        "source": "Mov.Mov/external:StairsUp.jpg"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode2_animation_parts/part_3d154a57e307fe4ccde3.png",
+        "rect": [
+          0.0,
+          -0.5,
+          800.0,
+          480.5
+        ],
+        "source": "Mov.Mov/external:StairsUp.jpg"
+      }
+    },
+    {
+      "episode": 2,
+      "art": "e2_roof_6",
+      "key": "0/0:0:Symbol 2256/1:0:Symbol 2235/0:0:DOMShape:1c26d4b410ae",
+      "source": "Mov/Symbol 2235",
+      "viewport": [
+        0,
+        0,
+        800,
+        482
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode2_animation_parts/part_4c58b598ed35fc52b927.png",
+        "rect": [
+          148.0,
+          193.0,
+          425.5,
+          287.0
+        ],
+        "source": "Mov/Symbol 2235"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode2_animation_parts/part_d3045b9c6ccad370f4f7.png",
+        "rect": [
+          148.0,
+          193.0,
+          425.5,
+          289.0
+        ],
+        "source": "Mov/Symbol 2235"
+      }
+    },
+    {
+      "episode": 2,
+      "art": "e2_roof_8",
+      "key": "0/0:0:Symbol 2261/0:0:Symbol 2260/photo",
+      "source": "Mov.Mov/external:FallingZombie.jpg",
+      "viewport": [
+        0,
+        0,
+        801,
+        480
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode2_animation_parts/part_46c9e0550d4a40fc43e8.png",
+        "rect": [
+          21.5,
+          0.0,
+          778.5,
+          447.0
+        ],
+        "source": "Mov.Mov/external:FallingZombie.jpg"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode2_animation_parts/part_96cc855198b25cf61e38.png",
+        "rect": [
+          21.5,
+          0.0,
+          779.5,
+          447.0
+        ],
+        "source": "Mov.Mov/external:FallingZombie.jpg"
+      }
+    },
+    {
+      "episode": 3,
+      "art": "e3_john_22",
+      "key": "0/0:0:Symbol 1663/0:0:Symbol 1660/photo",
+      "source": "Mov.Mov/external:FindTheCreature1.jpg",
+      "viewport": [
+        0,
+        0,
+        819,
+        622
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode3_animation_parts/part_ac2df96abaf9f70b46e0.png",
+        "rect": [
+          18.5,
+          21.5,
+          781.5,
+          458.5
+        ],
+        "source": "Mov.Mov/external:FindTheCreature1.jpg"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode3_animation_parts/part_aa028d4658935e260015.png",
+        "rect": [
+          18.5,
+          21.5,
+          800.0,
+          600.0
+        ],
+        "source": "Mov.Mov/external:FindTheCreature1.jpg"
+      }
+    },
+    {
+      "episode": 3,
+      "art": "e3_john_23_anim_0",
+      "key": "0/0:0:Symbol 1681/0:0:Symbol 1680/0:0:Symbol 1667/0:0:Symbol 1665/0:0:DOMShape:1b93fb7be1c5",
+      "source": "Mov.Mov.Creat/Symbol 1665",
+      "viewport": [
+        -23,
+        -15,
+        847,
+        518
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode3_components/part_60dea4852802c614a2e4.png",
+        "rect": [
+          0.0,
+          0.0,
+          800.0,
+          480.0
+        ],
+        "source": "Mov.Mov.Creat/Symbol 1665"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode3_animation_parts/part_dfb9aec7872b1e2791d3.png",
+        "rect": [
+          -23.0,
+          -14.5,
+          846.5,
+          517.5
+        ],
+        "source": "Mov.Mov.Creat/Symbol 1665"
+      }
+    },
+    {
+      "episode": 3,
+      "art": "e3_john_7",
+      "key": "0/0:0:Symbol 1595/0:0:Symbol 1591/photo",
+      "source": "Mov.Mov/external:FirstStepTunnel.jpg",
+      "viewport": [
+        -1,
+        -1,
+        801,
+        481
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode3_components/part_bb77003b9ee542152970.png",
+        "rect": [
+          0.0,
+          0.0,
+          800.0,
+          480.0
+        ],
+        "source": "Mov.Mov/external:FirstStepTunnel.jpg"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode3_animation_parts/part_18d7da071c746c7e5fb1.png",
+        "rect": [
+          -0.5,
+          -0.5,
+          800.5,
+          480.5
+        ],
+        "source": "Mov.Mov/external:FirstStepTunnel.jpg"
+      }
+    },
+    {
+      "episode": 3,
+      "art": "e3_north_4",
+      "key": "0/0:0:Symbol 1748/0:0:Symbol 1744/photo",
+      "source": "Mov.Mov/external:HandOnGrass.jpg",
+      "viewport": [
+        0,
+        0,
+        801,
+        482
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode3_components/part_e4c1841df8a87c086878.png",
+        "rect": [
+          0.0,
+          1.5,
+          800.0,
+          478.5
+        ],
+        "source": "Mov.Mov/external:HandOnGrass.jpg"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode3_animation_parts/part_65a8b0777eaf5f9550dc.png",
+        "rect": [
+          0.0,
+          1.5,
+          800.5,
+          480.5
+        ],
+        "source": "Mov.Mov/external:HandOnGrass.jpg"
+      }
+    },
+    {
+      "episode": 3,
+      "art": "e3_opening_10",
+      "key": "0/0:0:Symbol 1950/0:0:Symbol 1946/photo",
+      "source": "Mov.Mov/external:ZombieHand.jpg",
+      "viewport": [
+        0,
+        -19,
+        804,
+        499
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode3_components/part_4ff5c2c7d86bf7c7340e.png",
+        "rect": [
+          0.0,
+          0.0,
+          800.0,
+          480.0
+        ],
+        "source": "Mov.Mov/external:ZombieHand.jpg"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode3_animation_parts/part_763f49770a4123395121.png",
+        "rect": [
+          0.0,
+          -18.5,
+          803.5,
+          498.5
+        ],
+        "source": "Mov.Mov/external:ZombieHand.jpg"
+      }
+    },
+    {
+      "episode": 3,
+      "art": "e3_opening_14",
+      "key": "0/0:0:Symbol 1987/0:0:Symbol 1986/0:0:DOMShape:c94c9296ca73",
+      "source": "Mov/Symbol 1986",
+      "viewport": [
+        0,
+        -7,
+        803,
+        487
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode3_animation_parts/part_7f01da2572fa2d90f0ff.png",
+        "rect": [
+          3.0,
+          0.0,
+          797.0,
+          473.5
+        ],
+        "source": "Mov/Symbol 1986"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode3_animation_parts/part_3fddda63aef5d091d9d0.png",
+        "rect": [
+          3.0,
+          -6.5,
+          800.0,
+          480.0
+        ],
+        "source": "Mov/Symbol 1986"
+      }
+    },
+    {
+      "episode": 3,
+      "art": "e3_opening_14",
+      "key": "0/0:0:Symbol 1987/0:0:Symbol 1986/2:0:Symbol 1985/0:0:DOMShape:113e4a9644f5",
+      "source": "Mov/Symbol 1985",
+      "viewport": [
+        0,
+        -4,
+        800,
+        484
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode3_animation_parts/part_923bbd725a88c007d248.png",
+        "rect": [
+          387.5,
+          0.0,
+          129.0,
+          267.5
+        ],
+        "source": "Mov/Symbol 1985"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode3_animation_parts/part_db06fbe45c0d71eba7fc.png",
+        "rect": [
+          387.5,
+          -3.5,
+          129.0,
+          271.0
+        ],
+        "source": "Mov/Symbol 1985"
+      }
+    },
+    {
+      "episode": 3,
+      "art": "e3_opening_9",
+      "key": "0/0:0:Symbol 1945/0:0:Symbol 1944/0:0:DOMShape:18a5c94a601e",
+      "source": "Mov/Symbol 1944",
+      "viewport": [
+        -1,
+        -1,
+        801,
+        481
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode3_animation_parts/part_d01d7df3d043c6c56541.png",
+        "rect": [
+          0.0,
+          0.0,
+          800.0,
+          480.0
+        ],
+        "source": "Mov/Symbol 1944"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode3_animation_parts/part_6c33b6a80b1f2f6f0158.png",
+        "rect": [
+          -0.5,
+          -0.5,
+          800.5,
+          480.5
+        ],
+        "source": "Mov/Symbol 1944"
+      }
+    },
+    {
+      "episode": 4,
+      "art": "e4_exp_3_v1",
+      "key": "0/0:0:Symbol 1121/0:0:Symbol 1118/photo",
+      "source": "Mov.Mov/external:BrainTest.jpg",
+      "viewport": [
+        0,
+        0,
+        800,
+        486
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode4_animation_parts/part_0ecf9fbe7ea8ba1d8970.png",
+        "rect": [
+          0.0,
+          8.0,
+          800.0,
+          472.0
+        ],
+        "source": "Mov.Mov/external:BrainTest.jpg"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode4_animation_parts/part_2680908a7489c576ef69.png",
+        "rect": [
+          0.0,
+          8.0,
+          800.0,
+          478.0
+        ],
+        "source": "Mov.Mov/external:BrainTest.jpg"
+      }
+    },
+    {
+      "episode": 4,
+      "art": "e4_exp_4_v1",
+      "key": "0/0:0:Symbol 1125/0:0:Symbol 1122/photo",
+      "source": "Mov.Mov/external:DeadEye.jpg",
+      "viewport": [
+        -7,
+        0,
+        807,
+        485
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode4_animation_parts/part_735a14f44a7590c71b39.png",
+        "rect": [
+          0.0,
+          21.0,
+          779.0,
+          459.0
+        ],
+        "source": "Mov.Mov/external:DeadEye.jpg"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode4_animation_parts/part_fd2f9f04197d2e711a09.png",
+        "rect": [
+          -7.0,
+          21.0,
+          786.0,
+          464.0
+        ],
+        "source": "Mov.Mov/external:DeadEye.jpg"
+      }
+    },
+    {
+      "episode": 4,
+      "art": "e4_harlem_2_v1",
+      "key": "0/0:0:Symbol 1068/0:0:Symbol 1064/photo",
+      "source": "Mov.Mov/external:NearHarlem.jpg",
+      "viewport": [
+        0,
+        0,
+        800,
+        482
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode4_animation_parts/part_ebc68fc63c9624dc28ce.png",
+        "rect": [
+          0.0,
+          9.0,
+          800.0,
+          471.0
+        ],
+        "source": "Mov.Mov/external:NearHarlem.jpg"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode4_animation_parts/part_db84102e24e4f627c172.png",
+        "rect": [
+          0.0,
+          9.0,
+          800.0,
+          473.0
+        ],
+        "source": "Mov.Mov/external:NearHarlem.jpg"
+      }
+    },
+    {
+      "episode": 4,
+      "art": "e4_harlem_2_v2",
+      "key": "0/0:0:Symbol 1068/0:0:Symbol 1064/photo",
+      "source": "Mov.Mov/external:NearHarlem.jpg",
+      "viewport": [
+        0,
+        0,
+        800,
+        482
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode4_animation_parts/part_ebc68fc63c9624dc28ce.png",
+        "rect": [
+          0.0,
+          9.0,
+          800.0,
+          471.0
+        ],
+        "source": "Mov.Mov/external:NearHarlem.jpg"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode4_animation_parts/part_db84102e24e4f627c172.png",
+        "rect": [
+          0.0,
+          9.0,
+          800.0,
+          473.0
+        ],
+        "source": "Mov.Mov/external:NearHarlem.jpg"
+      }
+    },
+    {
+      "episode": 4,
+      "art": "e4_harlem_2_v3",
+      "key": "0/0:0:Symbol 1068/0:0:Symbol 1064/photo",
+      "source": "Mov.Mov/external:NearHarlem.jpg",
+      "viewport": [
+        0,
+        0,
+        800,
+        482
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode4_animation_parts/part_ebc68fc63c9624dc28ce.png",
+        "rect": [
+          0.0,
+          9.0,
+          800.0,
+          471.0
+        ],
+        "source": "Mov.Mov/external:NearHarlem.jpg"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode4_animation_parts/part_db84102e24e4f627c172.png",
+        "rect": [
+          0.0,
+          9.0,
+          800.0,
+          473.0
+        ],
+        "source": "Mov.Mov/external:NearHarlem.jpg"
+      }
+    },
+    {
+      "episode": 5,
+      "art": "e5_plane_16_v1",
+      "key": "0/0:0:Symbol 995/0:0:Symbol 990/0:0:DOMShape:d9fdb5aba100",
+      "source": "Mov/Symbol 990",
+      "viewport": [
+        0,
+        0,
+        1000,
+        480
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode5_components/part_6c019c855a735bec8c3e.png",
+        "rect": [
+          0.0,
+          0.0,
+          800.0,
+          480.0
+        ],
+        "source": "Mov/Symbol 990"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode5_animation_parts/part_bfb8e7131a5154e704ea.png",
+        "rect": [
+          0.0,
+          0.0,
+          1000.0,
+          480.0
+        ],
+        "source": "Mov/Symbol 990"
+      }
+    },
+    {
+      "episode": 5,
+      "art": "e5_plane_16_v2",
+      "key": "0/0:0:Symbol 995/0:0:Symbol 990/0:0:DOMShape:d9fdb5aba100",
+      "source": "Mov/Symbol 990",
+      "viewport": [
+        0,
+        0,
+        1000,
+        480
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode5_components/part_6c019c855a735bec8c3e.png",
+        "rect": [
+          0.0,
+          0.0,
+          800.0,
+          480.0
+        ],
+        "source": "Mov/Symbol 990"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode5_animation_parts/part_bfb8e7131a5154e704ea.png",
+        "rect": [
+          0.0,
+          0.0,
+          1000.0,
+          480.0
+        ],
+        "source": "Mov/Symbol 990"
+      }
+    },
+    {
+      "episode": 5,
+      "art": "e5_plane_16_v3",
+      "key": "0/0:0:Symbol 995/0:0:Symbol 990/0:0:DOMShape:d9fdb5aba100",
+      "source": "Mov/Symbol 990",
+      "viewport": [
+        0,
+        0,
+        1000,
+        480
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode5_components/part_6c019c855a735bec8c3e.png",
+        "rect": [
+          0.0,
+          0.0,
+          800.0,
+          480.0
+        ],
+        "source": "Mov/Symbol 990"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode5_animation_parts/part_bfb8e7131a5154e704ea.png",
+        "rect": [
+          0.0,
+          0.0,
+          1000.0,
+          480.0
+        ],
+        "source": "Mov/Symbol 990"
+      }
+    },
+    {
+      "episode": 5,
+      "art": "e5_plane_16_v4",
+      "key": "0/0:0:Symbol 995/0:0:Symbol 990/0:0:DOMShape:d9fdb5aba100",
+      "source": "Mov/Symbol 990",
+      "viewport": [
+        0,
+        0,
+        1000,
+        480
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode5_components/part_6c019c855a735bec8c3e.png",
+        "rect": [
+          0.0,
+          0.0,
+          800.0,
+          480.0
+        ],
+        "source": "Mov/Symbol 990"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode5_animation_parts/part_bfb8e7131a5154e704ea.png",
+        "rect": [
+          0.0,
+          0.0,
+          1000.0,
+          480.0
+        ],
+        "source": "Mov/Symbol 990"
+      }
+    },
+    {
+      "episode": 6,
+      "art": "e6_base_4_v1",
+      "key": "0/0:0:Symbol 503/0:0:Symbol 499/photo",
+      "source": "Mov.Mov/external:BurnTruck.jpg",
+      "viewport": [
+        -1,
+        0,
+        801,
+        480
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode6_animation_parts/part_3370db0311ee61a22cdc.png",
+        "rect": [
+          0.0,
+          2.0,
+          792.0,
+          478.0
+        ],
+        "source": "Mov.Mov/external:BurnTruck.jpg"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode6_animation_parts/part_e6bf9fadb4fd37ff61cb.png",
+        "rect": [
+          -1.0,
+          2.0,
+          793.0,
+          478.0
+        ],
+        "source": "Mov.Mov/external:BurnTruck.jpg"
+      }
+    },
+    {
+      "episode": 6,
+      "art": "e6_base_4_v2",
+      "key": "0/0:0:Symbol 503/0:0:Symbol 499/photo",
+      "source": "Mov.Mov/external:BurnTruck.jpg",
+      "viewport": [
+        -1,
+        0,
+        801,
+        480
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode6_animation_parts/part_3370db0311ee61a22cdc.png",
+        "rect": [
+          0.0,
+          2.0,
+          792.0,
+          478.0
+        ],
+        "source": "Mov.Mov/external:BurnTruck.jpg"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode6_animation_parts/part_e6bf9fadb4fd37ff61cb.png",
+        "rect": [
+          -1.0,
+          2.0,
+          793.0,
+          478.0
+        ],
+        "source": "Mov.Mov/external:BurnTruck.jpg"
+      }
+    },
+    {
+      "episode": 6,
+      "art": "e6_base_4_v3",
+      "key": "0/0:0:Symbol 503/0:0:Symbol 499/photo",
+      "source": "Mov.Mov/external:BurnTruck.jpg",
+      "viewport": [
+        -1,
+        0,
+        801,
+        480
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode6_animation_parts/part_3370db0311ee61a22cdc.png",
+        "rect": [
+          0.0,
+          2.0,
+          792.0,
+          478.0
+        ],
+        "source": "Mov.Mov/external:BurnTruck.jpg"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode6_animation_parts/part_e6bf9fadb4fd37ff61cb.png",
+        "rect": [
+          -1.0,
+          2.0,
+          793.0,
+          478.0
+        ],
+        "source": "Mov.Mov/external:BurnTruck.jpg"
+      }
+    },
+    {
+      "episode": 6,
+      "art": "e6_wake_12_v3",
+      "key": "0/0:0:Symbol 401/0:0:Symbol 400/photo",
+      "source": "Mov.Mov/external:CreepyAliceFace.jpg",
+      "viewport": [
+        0,
+        -28,
+        800,
+        508
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode6_animation_parts/part_2d21712bab4508eb595a.png",
+        "rect": [
+          197.0,
+          0.0,
+          402.5,
+          453.0
+        ],
+        "source": "Mov.Mov/external:CreepyAliceFace.jpg"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode6_animation_parts/part_668f117b37c3b82b12da.png",
+        "rect": [
+          197.0,
+          -27.5,
+          402.5,
+          480.5
+        ],
+        "source": "Mov.Mov/external:CreepyAliceFace.jpg"
+      }
+    },
+    {
+      "episode": 6,
+      "art": "e6_wake_14_v3",
+      "key": "0/0:0:Symbol 411/0:0:Symbol 408/photo",
+      "source": "Mov.Mov/external:Keflavic.jpg",
+      "viewport": [
+        0,
+        0,
+        800,
+        484
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode6_animation_parts/part_33116447ca3a5904d992.png",
+        "rect": [
+          2.0,
+          8.0,
+          798.0,
+          472.0
+        ],
+        "source": "Mov.Mov/external:Keflavic.jpg"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode6_animation_parts/part_19a6c6db8e02dac303ef.png",
+        "rect": [
+          2.0,
+          8.0,
+          798.0,
+          476.0
+        ],
+        "source": "Mov.Mov/external:Keflavic.jpg"
+      }
+    },
+    {
+      "episode": 101,
+      "art": "john2_13",
+      "key": "0/0:0:Symbol 10292/0:0:Symbol 10286/0:0:DOMShape:a69dd18e2335",
+      "source": "Mov/Symbol 10286",
+      "viewport": [
+        0,
+        0,
+        808,
+        480
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode102_animation_parts/part_af2a43083e81be00cc4a.png",
+        "rect": [
+          0.0,
+          0.0,
+          800.0,
+          480.0
+        ],
+        "source": "Mov/Symbol 10286"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode101_animation_parts/part_efc2c39ad037993e7435.png",
+        "rect": [
+          0.0,
+          0.0,
+          808.0,
+          480.0
+        ],
+        "source": "Mov/Symbol 10286"
+      }
+    },
+    {
+      "episode": 101,
+      "art": "john2_13",
+      "key": "0/0:0:Symbol 10292/1:0:Symbol 10289/0:0:DOMShape:39b8cb9482da",
+      "source": "Mov/Symbol 10289",
+      "viewport": [
+        0,
+        0,
+        800,
+        485
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode102_animation_parts/part_44c1d71f4e8735f70124.png",
+        "rect": [
+          62.0,
+          137.0,
+          615.0,
+          343.0
+        ],
+        "source": "Mov/Symbol 10289"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode101_animation_parts/part_f83d5be990e5187eb306.png",
+        "rect": [
+          62.0,
+          137.0,
+          616.0,
+          348.0
+        ],
+        "source": "Mov/Symbol 10289"
+      }
+    },
+    {
+      "episode": 101,
+      "art": "john2_15",
+      "key": "0/0:0:Symbol 10305/0:0:Symbol 10302/0:0:DOMShape:72c53b12ed68",
+      "source": "Mov/Symbol 10302",
+      "viewport": [
+        0,
+        -9,
+        965,
+        489
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode102_animation_parts/part_cadcf018bed19ce4bd6a.png",
+        "rect": [
+          0.0,
+          0.0,
+          800.0,
+          471.0
+        ],
+        "source": "Mov/Symbol 10302"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode101_animation_parts/part_051b8e0b37345708ed9b.png",
+        "rect": [
+          0.0,
+          -9.0,
+          965.0,
+          480.0
+        ],
+        "source": "Mov/Symbol 10302"
+      }
+    },
+    {
+      "episode": 101,
+      "art": "john2_6",
+      "key": "0/0:0:Symbol 10234/1:0:Symbol 10224/0:0:Symbol 10223/0:0:DOMShape:581259db4b79",
+      "source": "Mov/Symbol 10223",
+      "viewport": [
+        0,
+        0,
+        871,
+        480
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode102_components/part_9783f16188231d1ad581.png",
+        "rect": [
+          421.0,
+          0.0,
+          379.0,
+          480.0
+        ],
+        "source": "Mov/Symbol 10223"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode101_animation_parts/part_858b5bbe1cf515ee032c.png",
+        "rect": [
+          421.0,
+          0.0,
+          450.0,
+          480.0
+        ],
+        "source": "Mov/Symbol 10223"
+      }
+    },
+    {
+      "episode": 101,
+      "art": "john2_7",
+      "key": "0/0:0:Symbol 10240/1:0:Symbol 10237/0:0:DOMShape:1f5fbc42949f",
+      "source": "Mov/Symbol 10237",
+      "viewport": [
+        -60,
+        0,
+        981,
+        480
+      ],
+      "before": {
+        "type": "texture",
+        "texture": "episode102_animation_parts/part_f3c76e978a14f308b0e6.png",
+        "rect": [
+          0.0,
+          0.0,
+          800.0,
+          480.0
+        ],
+        "source": "Mov/Symbol 10237"
+      },
+      "after": {
+        "type": "texture",
+        "texture": "episode101_animation_parts/part_6262dde1468be47e47a4.png",
+        "rect": [
+          -60.0,
+          0.0,
+          980.5,
+          480.0
+        ],
+        "source": "Mov/Symbol 10237"
+      }
+    }
+  ]
+}

@@ -24,6 +24,7 @@ func _init() -> void:
 	background.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	safe_layer.add_child(background)
 	art_layer.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	art_layer.size = Vector2(1600,960)
 	background.add_child(art_layer)
 
 static func map_safe_rect(viewport_size: Vector2, window_rect: Rect2, display_safe: Rect2) -> Rect2:
@@ -70,6 +71,7 @@ func set_background(texture: Texture2D, crop_pause: bool = false) -> void:
 
 func _clear_art() -> void:
 	component_background_active = false
+	art_layer.clip_contents = false
 	episode_timeline = null
 	for child: Node in art_layer.get_children():
 		art_layer.remove_child(child)
@@ -92,6 +94,9 @@ func set_episode_background(artwork: String) -> bool:
 	_clear_art()
 	background.texture = null
 	component_background_active = true
+	# Panoramas retain off-stage pixels for later camera poses. Clip the visual
+	# Flash frame here; world controls live separately and keep their hit areas.
+	art_layer.clip_contents = true
 	episode_timeline = EPISODE_TIMELINE.new()
 	art_layer.add_child(episode_timeline)
 	episode_timeline.configure(artwork)

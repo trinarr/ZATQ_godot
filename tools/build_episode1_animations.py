@@ -12,6 +12,7 @@ from episode1_blur import blur_spec
 from build_localized_ui import matrix,combine
 from render_flash_ui import NS
 from eye_closure_parts import eye_part,export_texture,annotate
+from animation_viewport import animation_viewport
 ROOT=Path(__file__).resolve().parents[1]
 IDENTITY=(1,0,0,1,0,0)
 
@@ -171,7 +172,7 @@ def build(archive,only=None):
       with Image.open(file) as im:w,h=im.size
       body=f'<image width="{w}" height="{h}" xlink:href="data:image/png;base64,{base64.b64encode(file.read_bytes()).decode()}"/>'
      if e is not None and e.tag.endswith('DOMShape') and renderer.panel(e,ref['matrix'],1,ref['source']):pass
-     else:renderer.emit(body,ref['matrix'],1,ref['source'],blur_spec(e) if e is not None else None)
+     else:renderer.emit(body,ref['matrix'],1,ref['source'],blur_spec(e) if e is not None else None,viewport=animation_viewport(ref,records,lib,photos))
      if not renderer.parts:continue
      part=renderer.parts[0]
     # Existing art is reused when the unmodified pixels already exist.
