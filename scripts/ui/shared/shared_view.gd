@@ -71,7 +71,7 @@ func _art(filename: String, parent: Control = null, rect: Rect2 = Rect2(0,0,800,
 		var r: Array = block.rect
 		var original_rect := Rect2(r[0],r[1],r[2],r[3])
 		var translated := LOC.text(block.text).replace("{version}",str(ProjectSettings.get_setting("application/config/version","")))
-		var font: Font = BODY_FONT if int(block.font)==2 else preload("res://fonts/dseg/DSEG7Classic-Regular.ttf") if int(block.font)==2836 else load("res://fonts/flash/font_%d.ttf" % int(block.font))
+		var font: Font = preload("res://fonts/caveat/Caveat-Medium.ttf") if int(block.font) in [2508,2511] else BODY_FONT if int(block.font)==2 else preload("res://fonts/dseg/DSEG7Classic-Regular.ttf") if int(block.font)==2836 else load("res://fonts/flash/font_%d.ttf" % int(block.font))
 		var brush_rect := Rect2()
 		for brush:Dictionary in art_brushes.get(filename,[]):
 			var b:Array=brush.rect

@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://esd73f2pbg03"
-path="res://.godot/imported/font_2866.ttf-2a27e5e90808235ca4fd4216b83bf840.fontdata"
+uid="uid://dv42lhx4mbbxx"
+path="res://.godot/imported/Caveat-Medium.ttf-2416720ca5fe621015f19b146cb732a2.fontdata"
 
 [deps]
 
-source_file="res://fonts/flash/font_2866.ttf"
-dest_files=["res://.godot/imported/font_2866.ttf-2a27e5e90808235ca4fd4216b83bf840.fontdata"]
+source_file="res://fonts/caveat/Caveat-Medium.ttf"
+dest_files=["res://.godot/imported/Caveat-Medium.ttf-2416720ca5fe621015f19b146cb732a2.fontdata"]
 
 [params]
 

@@ -1,4 +1,5 @@
 extends RefCounted
+const HANDWRITING_FONT: Font = preload("res://fonts/caveat/Caveat-Medium.ttf")
 const LOC := preload("res://scripts/core/localization.gd")
 const RESULT := preload("res://scripts/ui/result_screen.gd")
 # Coordinates use the original Flash frame; Main applies the uniform 2x scale.
@@ -70,10 +71,8 @@ static func draw(ui: Control, node: Dictionary) -> void:
 				options.band_host = ui.screen
 				options.band_rect = Rect2(-ui.screen.position.x/ui.screen.scale.x,maxf(0,b[1]-6)*2,ui.viewport_canvas.safe_layer.size.x/ui.screen.scale.x,(b[3]+12)*2)
 			var block_font: Font = ui.BODY_FONT
-			if block.font in ["SegoeScript", "Segoe Script"]:
-				block_font = load("res://fonts/flash/font_2508.ttf")
-			elif block.font == "B52 Regular":
-				block_font = load("res://fonts/flash/font_2511.ttf")
+			if block.font in ["Caveat Medium", "SegoeScript", "Segoe Script", "B52 Regular"]:
+				block_font = HANDWRITING_FONT
 			if block.has("font_file"):
 				block_font = load(block.font_file)
 			for key: String in ["minimum","padding","line_spacing","wrap","band_alpha","bottom_padding"]:

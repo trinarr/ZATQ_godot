@@ -31,7 +31,7 @@ def text_blocks(r,symbol,frame,overrides,path='',position=(0,0),depth=0):
    if text and 'NumB' not in childpath:
     rect=[*xy,float(e.get('width','0')),float(e.get('height','0'))]
     rect[2]=min(rect[2],780-rect[0]);rect[3]=min(rect[3],480-rect[1])
-    result.append({'text':re.sub(r'\s+',' ',text),'rect':rect,'font':attrs.get('face','Oswald Medium').replace('GraffitiC1 Medium','Oswald Medium'),'size':int(float(attrs.get('size','24'))),'path':childpath})
+    result.append({'text':re.sub(r'\s+',' ',text),'rect':rect,'font':attrs.get('face','Oswald Medium').replace('GraffitiC1 Medium','Oswald Medium').replace('SegoeScript','Caveat Medium').replace('Segoe Script','Caveat Medium').replace('B52 Regular','Caveat Medium').replace('Lucida Console','JetBrains Mono NL Regular'),'size':int(float(attrs.get('size','24'))),'path':childpath})
  return result
 
 def build(library,photos,sources,output,render=True,reuse_art=False):

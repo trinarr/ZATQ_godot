@@ -38,7 +38,7 @@ def audit(root=ROOT):
         for artwork in artworks.values():
             resources.update('assets/flash_ui/' + p['texture'] for p in artwork['parts'].values() if 'texture' in p)
     text = json.loads((root / 'data/ui_text_layout.json').read_text())
-    resources.update(("fonts/oswald/Oswald-Medium.ttf" if int(block['font'])==2 else "fonts/dseg/DSEG7Classic-Regular.ttf" if int(block['font'])==2836 else f"fonts/flash/font_{int(block['font'])}.ttf") for block in dictionaries(text) if 'font' in block)
+    resources.update(("fonts/caveat/Caveat-Medium.ttf" if int(block['font']) in [2508,2511] else "fonts/oswald/Oswald-Medium.ttf" if int(block['font'])==2 else "fonts/dseg/DSEG7Classic-Regular.ttf" if int(block['font'])==2836 else f"fonts/flash/font_{int(block['font'])}.ttf") for block in dictionaries(text) if 'font' in block)
     dynamic_masks = {}
     for highlight_path in (root / 'data').glob('episode*_highlights.json'):
         definition = json.loads(highlight_path.read_text())
@@ -69,8 +69,6 @@ def audit(root=ROOT):
         resources.update('assets/audio/' + name + '.mp3' for name in re.findall(r'sound_requested.emit\("([^"\n]+)"', path.read_text()))
     for graph_path in (root / 'data/story_graphs').rglob('*.json'):
         resources.update(re.findall(r'res://((?:assets|fonts)/[^"\n]+\.(?:png|jpg|mp3|ttf))"', graph_path.read_text()))
-    # Flash's raster exporter also uses Verdana; keep its source font.
-    resources.add('fonts/flash/font_2866.ttf')
     candidates = {p for p in tracked if p.startswith(('assets/', 'fonts/')) and not p.endswith('.import') and (root / p).is_file()}
     # Font licensing files follow the font's lifetime; preserve all remaining licenses.
     if 'fonts/RobotoFlex-Variable.ttf' in resources:

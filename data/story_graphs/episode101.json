@@ -17,16 +17,16 @@
             "rect": [
               22,
               54,
-              715,
+              720,
               385
             ],
             "size": 19,
-            "font": "Lucida Console",
+            "font": "JetBrains Mono NL Regular",
             "path": "ConsoleReport",
-            "line_spacing": -4,
+            "line_spacing": -7,
             "padding": 0,
             "minimum": 19,
-            "font_file": "res://fonts/flash/john_console.ttf",
+            "font_file": "res://fonts/jetbrains_mono/JetBrainsMonoNL-Regular.ttf",
             "wrap": false
           },
           {
@@ -38,11 +38,11 @@
               30
             ],
             "size": 22,
-            "font": "Lucida Console",
+            "font": "JetBrains Mono NL Regular",
             "path": "ConsoleHeading",
             "padding": 0,
             "minimum": 22,
-            "font_file": "res://fonts/flash/john_console.ttf",
+            "font_file": "res://fonts/jetbrains_mono/JetBrainsMonoNL-Regular.ttf",
             "wrap": false
           },
           {
@@ -54,11 +54,11 @@
               22
             ],
             "size": 15,
-            "font": "Lucida Console",
+            "font": "JetBrains Mono NL Regular",
             "path": "ConsoleFooter",
             "padding": 0,
             "minimum": 15,
-            "font_file": "res://fonts/flash/john_console.ttf",
+            "font_file": "res://fonts/jetbrains_mono/JetBrainsMonoNL-Regular.ttf",
             "wrap": false
           }
         ],
@@ -102,16 +102,16 @@
             "rect": [
               22,
               54,
-              715,
+              720,
               385
             ],
             "size": 19,
-            "font": "Lucida Console",
+            "font": "JetBrains Mono NL Regular",
             "path": "ConsoleReport",
-            "line_spacing": -4,
+            "line_spacing": -7,
             "padding": 0,
             "minimum": 19,
-            "font_file": "res://fonts/flash/john_console.ttf",
+            "font_file": "res://fonts/jetbrains_mono/JetBrainsMonoNL-Regular.ttf",
             "wrap": false
           },
           {
@@ -123,11 +123,11 @@
               30
             ],
             "size": 22,
-            "font": "Lucida Console",
+            "font": "JetBrains Mono NL Regular",
             "path": "ConsoleHeading",
             "padding": 0,
             "minimum": 22,
-            "font_file": "res://fonts/flash/john_console.ttf",
+            "font_file": "res://fonts/jetbrains_mono/JetBrainsMonoNL-Regular.ttf",
             "wrap": false
           },
           {
@@ -139,11 +139,11 @@
               22
             ],
             "size": 15,
-            "font": "Lucida Console",
+            "font": "JetBrains Mono NL Regular",
             "path": "ConsoleFooter",
             "padding": 0,
             "minimum": 15,
-            "font_file": "res://fonts/flash/john_console.ttf",
+            "font_file": "res://fonts/jetbrains_mono/JetBrainsMonoNL-Regular.ttf",
             "wrap": false
           }
         ],
@@ -187,16 +187,16 @@
             "rect": [
               22,
               54,
-              715,
+              720,
               385
             ],
             "size": 19,
-            "font": "Lucida Console",
+            "font": "JetBrains Mono NL Regular",
             "path": "ConsoleReport",
-            "line_spacing": -4,
+            "line_spacing": -7,
             "padding": 0,
             "minimum": 19,
-            "font_file": "res://fonts/flash/john_console.ttf",
+            "font_file": "res://fonts/jetbrains_mono/JetBrainsMonoNL-Regular.ttf",
             "wrap": false
           },
           {
@@ -208,11 +208,11 @@
               30
             ],
             "size": 22,
-            "font": "Lucida Console",
+            "font": "JetBrains Mono NL Regular",
             "path": "ConsoleHeading",
             "padding": 0,
             "minimum": 22,
-            "font_file": "res://fonts/flash/john_console.ttf",
+            "font_file": "res://fonts/jetbrains_mono/JetBrainsMonoNL-Regular.ttf",
             "wrap": false
           },
           {
@@ -224,11 +224,11 @@
               22
             ],
             "size": 15,
-            "font": "Lucida Console",
+            "font": "JetBrains Mono NL Regular",
             "path": "ConsoleFooter",
             "padding": 0,
             "minimum": 15,
-            "font_file": "res://fonts/flash/john_console.ttf",
+            "font_file": "res://fonts/jetbrains_mono/JetBrainsMonoNL-Regular.ttf",
             "wrap": false
           }
         ],

@@ -19,8 +19,6 @@ def prepare(archive,ffdec,temp):
   sounds={Path(n).name:z.read(n) for n in z.namelist() if n.startswith('assets/Sound/') and n.endswith('.mp3')}
  for kind in ['script','xfl']:
   subprocess.run(['java','-jar',str(ffdec),'-export',kind,str(temp/kind),str(swf)],check=True)
- from extract_flash_fonts import extract
- extract(swf,temp/'fonts');(ROOT/'fonts/flash/john_console.ttf').write_bytes((temp/'fonts/font_314.ttf').read_bytes())
  lib=next((temp/'xfl').rglob('LIBRARY'));sources={p.stem:p.read_text(encoding='utf-8-sig') for p in (temp/'script').rglob('*.as')}
  normalized=temp/'john_normalized.zip'
  def remap(s):return re.sub(r'\b(Symbol|Bitmap) (\d+)',lambda m:f'{m[1]} {int(m[2])+OFFSET}',s)
@@ -48,11 +46,11 @@ def content(lib,sources,sounds):
    if part==1 and fr<=3:
     texts=r.root(f'Symbol {10319+(fr-1)*3}').findall('.//x:characters',NS)
     report=''.join(c.text or '' for c in texts).strip().replace('\r>','\n\n>').replace('\r','\n')
-    blocks=[{'text':report,'rect':[22,54,715,385],'size':19,'font':'Lucida Console','path':'ConsoleReport','line_spacing':-4,'padding':0,'minimum':19},
-            {'text':'CONSOLE','rect':[13.75,9.3,220,30],'size':22,'font':'Lucida Console','path':'ConsoleHeading','padding':0,'minimum':22},
-            {'text':'shiftOS ver. 1.567.89 Copyright STB Corporation. All rights reserved','rect':[171.55,454,623,22],'size':15,'font':'Lucida Console','path':'ConsoleFooter','padding':0,'minimum':15}]
+    blocks=[{'text':report,'rect':[22,54,720,385],'size':19,'font':'JetBrains Mono NL Regular','path':'ConsoleReport','line_spacing':-7,'padding':0,'minimum':19},
+            {'text':'CONSOLE','rect':[13.75,9.3,220,30],'size':22,'font':'JetBrains Mono NL Regular','path':'ConsoleHeading','padding':0,'minimum':22},
+            {'text':'shiftOS ver. 1.567.89 Copyright STB Corporation. All rights reserved','rect':[171.55,454,623,22],'size':15,'font':'JetBrains Mono NL Regular','path':'ConsoleFooter','padding':0,'minimum':15}]
    for b in blocks:
-    if b['font']=='Lucida Console':b['font_file']='res://fonts/flash/john_console.ttf';b['wrap']=False
+    if b['font']=='JetBrains Mono NL Regular':b['font_file']='res://fonts/jetbrains_mono/JetBrainsMonoNL-Regular.ttf';b['wrap']=False
    nodes[id]={'episode':ep,'source':f'Web Episode{part} frame {fr}','kind':'city_story','art':id,'clean_background':True,'blocks':blocks,'text':' '.join(b['text'] for b in blocks),'choices':[branch(nid(fr+1),rect=[70,0,730,480])] if fr<last else []}
    script='\n'.join(f.findtext('x:Actionscript/x:script','',NS) for f in r.root(f'Symbol {sym}').findall('.//x:DOMFrame',NS) if int(f.get('index',0))==fr-1)
    sound=re.search(r'SndPlayer\("([^"]+)"',script)

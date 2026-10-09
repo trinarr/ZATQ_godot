@@ -45,8 +45,8 @@ text and single ending statistic belong only to the bonus story.
 The 38 scene/modal states use the common narrative layer, item popup, player
 dialog, result screen, pause menu and 19 fps timeline player. Text remains in
 `locales/episode101.csv`; English falls back to the source
-Russian. The console's original Lucida Console glyphs are extracted from the
-SWF, with authored line breaks. Console borders and arrows are native geometry.
+Russian. The console uses JetBrains Mono NL Regular (SIL OFL 1.1), replacing
+the extracted Lucida Console. Authored line breaks are preserved. Console borders and arrows are native geometry.
 All scene textures are PNG primitives, deduplicated with preceding episodes.
 
 The source symbol/bitmap IDs are offset by 10000 during export to prevent

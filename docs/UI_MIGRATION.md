@@ -13,6 +13,7 @@
 | Episode1 / 2882 | Оригинальная геометрия сюжетных экранов начала эпизода |
 | NewItem / 100, вложенный 99 | Металлическая панель выбора транспорта и подтверждения |
 | AddItem / 276, вложенный 274 | Окно получения ключей Subaru |
+| Font 2508 / Font 2511 | Caveat Medium (OFL; replaces Segoe Script and B52 Regular) |
 | Font 1 / Font 2 / Font 2836 | 28 Days Later Cyr / Oswald Medium (OFL; replaces GraffitiC1) / DSEG7 Classic Regular (OFL; replaces DS Crystal) |
 
 Ресурсы графики хранятся как PNG 2× в assets/flash_ui. Управление, динамические надписи и состояние остаются нативными Godot Control/Button/Label. Скрипты tools/build_flash_ui.py, render_flash_ui.py и extract_flash_fonts.py позволяют повторить извлечение. Они не исполняют ActionScript и не загружаются игрой.
