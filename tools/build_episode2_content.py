@@ -31,7 +31,7 @@ def text_blocks(r,symbol,frame,overrides,path='',position=(0,0),depth=0):
    if text and 'NumB' not in childpath:
     rect=[*xy,float(e.get('width','0')),float(e.get('height','0'))]
     rect[2]=min(rect[2],780-rect[0]);rect[3]=min(rect[3],480-rect[1])
-    result.append({'text':re.sub(r'\s+',' ',text),'rect':rect,'font':attrs.get('face','GraffitiC1 Medium'),'size':int(float(attrs.get('size','24'))),'path':childpath})
+    result.append({'text':re.sub(r'\s+',' ',text),'rect':rect,'font':attrs.get('face','Oswald Medium').replace('GraffitiC1 Medium','Oswald Medium'),'size':int(float(attrs.get('size','24'))),'path':childpath})
  return result
 
 def build(library,photos,sources,output,render=True,reuse_art=False):
@@ -132,7 +132,7 @@ def build(library,photos,sources,output,render=True,reuse_art=False):
  q15=decision('first',3,15,[{'next':'e2_first_4','next_cases':[{'when':{'BulletsNumber':3},'next':'e2_first_11'},{'when':{'BulletsNumber':2},'next':'e2_first_12'}]},'e2_first_9'])
  q19=decision('first',3,19,['e2_first_locked','e2_first_9'])
  goto('first',3,[branch(q15,{'BulletsNumber':{'min':1}}),branch(q19,{'BulletsNumber':{'max':0}})])
- nodes['e2_first_locked']={**nodes['e2_first_3'],'source':'NewItem(19), closed door','blocks':[{'path':'Hist','text':'Цепи и замок не поддаются. Двери закрыты снаружи.','rect':[11,7,769,86],'font':'GraffitiC1 Medium','size':24}]};edge('e2_first_locked',[result(49)])
+ nodes['e2_first_locked']={**nodes['e2_first_3'],'source':'NewItem(19), closed door','blocks':[{'path':'Hist','text':'Цепи и замок не поддаются. Двери закрыты снаружи.','rect':[11,7,769,86],'font':'Oswald Medium','size':24}]};edge('e2_first_locked',[result(49)])
  cut('first',4,[branch('e2_first_6',{'LinkedFr':True}),branch('e2_first_5',{'LinkedFr':False})]);cut('first',11,['e2_first_5']);cut('first',12,['e2_first_5'])
  goto('first',5,[result(46)]);goto('first',8,[result(47)])
  q23=decision('first',9,23,['e2_first_10',result(49)]);goto('first',9,[q23]);goto('first',10,[result(48)])

@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://clrlpihl558jl"
-path="res://.godot/imported/font_2836.ttf-c01a266e5d4231376d965eab40ca19b5.fontdata"
+uid="uid://bi06sbnbj8rou"
+path="res://.godot/imported/DSEG7Classic-Regular.ttf-ff41e1027831310529c882c9e73c4a6a.fontdata"
 
 [deps]
 
-source_file="res://fonts/flash/font_2836.ttf"
-dest_files=["res://.godot/imported/font_2836.ttf-c01a266e5d4231376d965eab40ca19b5.fontdata"]
+source_file="res://fonts/dseg/DSEG7Classic-Regular.ttf"
+dest_files=["res://.godot/imported/DSEG7Classic-Regular.ttf-ff41e1027831310529c882c9e73c4a6a.fontdata"]
 
 [params]
 
@@ -22,7 +22,7 @@ msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
 modulate_color_glyphs=false
-hinting=3
+hinting=1
 subpixel_positioning=4
 keep_rounding_remainders=true
 oversampling=0.0

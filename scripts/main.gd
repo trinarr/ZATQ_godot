@@ -9,7 +9,7 @@ const ENDING_CHECKS := preload("res://scripts/ui/ending_checks.gd")
 const SAFE_CANVAS := preload("res://scripts/ui/adaptive_landscape_canvas.gd")
 const ACTIVITY := preload("res://scripts/ui/story_activity.gd")
 const CITY := preload("res://scripts/ui/city_gameplay.gd")
-const TV_FONT: Font = preload("res://fonts/flash/font_2836.ttf")
+const TV_FONT: Font = preload("res://fonts/dseg/DSEG7Classic-Regular.ttf")
 var viewport_canvas: Control
 var edge_tab: TextureRect
 var edge_hit: Button
@@ -555,7 +555,7 @@ func _show_story() -> void:
 		CITY.draw(self, node)
 	elif kind == "tv":
 		var controls := _opening_art("tv_%d" % Quest.channel)
-		var channel_label := _text(LOC.text("@loc:ui.main.channel_format") % (Quest.channel+1),Rect2(218,66,110,30),20,false,false,_world_host())
+		var channel_label := _text(LOC.text("@loc:ui.main.channel_format") % (Quest.channel+1),Rect2(218,69.5,110,30),16,false,false,_world_host())
 		channel_label.name = "TVChannel"
 		channel_label.add_theme_font_override("font",TV_FONT)
 		channel_label.add_theme_color_override("font_color",Color.GREEN)

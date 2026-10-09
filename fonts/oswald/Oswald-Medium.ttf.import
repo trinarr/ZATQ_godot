@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://usryaxdy5rkm"
-path="res://.godot/imported/font_2.ttf-fab33b34470924cb48498c103efaa006.fontdata"
+uid="uid://cf23sic1cm7kf"
+path="res://.godot/imported/Oswald-Medium.ttf-5c0793bdf218b8c2568faf660714229b.fontdata"
 
 [deps]
 
-source_file="res://fonts/flash/font_2.ttf"
-dest_files=["res://.godot/imported/font_2.ttf-fab33b34470924cb48498c103efaa006.fontdata"]
+source_file="res://fonts/oswald/Oswald-Medium.ttf"
+dest_files=["res://.godot/imported/Oswald-Medium.ttf-5c0793bdf218b8c2568faf660714229b.fontdata"]
 
 [params]
 
@@ -22,7 +22,7 @@ msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
 modulate_color_glyphs=false
-hinting=3
+hinting=1
 subpixel_positioning=4
 keep_rounding_remainders=true
 oversampling=0.0

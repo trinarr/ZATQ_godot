@@ -9,7 +9,7 @@ from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.transformPen import TransformPen
 from PIL import Image
 NS={'x':'http://ns.adobe.com/xfl/2008/'}
-FONT_IDS={'28 Days Later Cyr Regular':1,'GraffitiC1 Medium':2,'SegoeScript':2508,'Segoe Script':2508,'B52 Regular':2511,'DS Crystal Regular':2836,'Verdana':2866}
+FONT_IDS={'28 Days Later Cyr Regular':1,'GraffitiC1 Medium':2,'Oswald Medium':2,'SegoeScript':2508,'Segoe Script':2508,'B52 Regular':2511,'DS Crystal Regular':2836,'DSEG7 Classic':2836,'Verdana':2866}
 
 def number(v):
  if v.startswith('#'):
@@ -29,7 +29,7 @@ def path_data(edges):
 
 class Renderer:
  def __init__(self,library,out,fonts):
-  self.library=Path(library);self.out=Path(out);self.fonts={i:TTFont(Path(fonts)/f'font_{i}.ttf') for i in set(FONT_IDS.values())};self.defs=[];self.uid=0;self.cache={}
+  self.library=Path(library);self.out=Path(out);self.fonts={i:TTFont(Path(fonts).parent/'oswald/Oswald-Medium.ttf' if i==2 else Path(fonts).parent/'dseg/DSEG7Classic-Regular.ttf' if i==2836 else Path(fonts)/f'font_{i}.ttf') for i in set(FONT_IDS.values())};self.defs=[];self.uid=0;self.cache={}
  def root(self,name):
   if name not in self.cache:
    root=E.parse(self.library/(name+'.xml')).getroot()

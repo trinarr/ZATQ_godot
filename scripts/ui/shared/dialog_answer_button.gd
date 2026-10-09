@@ -1,7 +1,7 @@
 extends Button
 const LOC := preload("res://scripts/core/localization.gd")
 const COMPONENTS := preload("res://scripts/ui/flash_components.gd")
-const FONT: Font = preload("res://fonts/flash/font_2.ttf")
+const FONT: Font = preload("res://fonts/oswald/Oswald-Medium.ttf")
 static var parts: Dictionary = {}
 var caption: Label
 var background: TextureRect

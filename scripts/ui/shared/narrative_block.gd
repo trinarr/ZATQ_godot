@@ -21,18 +21,24 @@ func configure(host: Control, value: String, rect: Rect2, font: Font, font_size:
  var mode: String=options.get("fit","none")
  var minimum: int=int(options.get("minimum",font_size))
  var padding: float=float(options.get("padding",0))
+ var band_area: Rect2=options.get("band_rect",Rect2())
  if options.has("band_rect"):
-  var area: Rect2=options.band_rect
+  var area: Rect2=band_area
   var inset: float=maxf(0.0,float(options.get("bottom_padding",BOTTOM_PADDING)))*LAYOUT.AUTHORING_SCALE
   var bottom: float=minf(area.end.y,LAYOUT.BASE_SIZE.y)-inset
   geometry.size.y=maxf(1.0,minf(geometry.size.y,bottom-geometry.position.y))
   if mode=="none":mode="multiline" if options.get("wrap",true) else "single"
-  # A shallow single-line box may need a few pixels of headroom to keep
-  # its minimum readable font size while still honoring the bottom inset.
-  if mode=="single":
-   var min_height: float=font.get_string_size(translated,HORIZONTAL_ALIGNMENT_LEFT,-1,minimum*2).y+padding
-   var lift: float=minf(maxf(0.0,min_height-geometry.size.y),maxf(0.0,geometry.position.y-area.position.y))
-   geometry.position.y-=lift;geometry.size.y+=lift
+  # Flash text boxes are often shallower than Godot's font line metrics.
+  # Reserve height at the requested size before resorting to smaller text.
+  # Keep the lower inset; grow upwards only when the caption needs it.
+  var preferred: Vector2=font.get_string_size(translated,HORIZONTAL_ALIGNMENT_LEFT,-1,font_size*2) if mode=="single" else font.get_multiline_string_size(translated,HORIZONTAL_ALIGNMENT_LEFT,geometry.size.x,font_size*2)
+  var required: float=preferred.y+padding
+  var top: float=maxf(0.0,minf(geometry.position.y,bottom-required))
+  geometry.position.y=top
+  geometry.size.y=maxf(1.0,minf(maxf(geometry.size.y,required),bottom-top))
+  var band_top: float=minf(area.position.y,maxf(0.0,top-6.0*LAYOUT.AUTHORING_SCALE))
+  band_area.position.y=band_top
+  band_area.size.y=area.end.y-band_top
  var key: Array=[translated,font.get_instance_id(),font_size,minimum,geometry.size,mode,padding]
  var cache_key: String=var_to_str(key)
  var fitted: int=fit_cache.get(cache_key,-1)
@@ -50,7 +56,7 @@ func configure(host: Control, value: String, rect: Rect2, font: Font, font_size:
   item.mouse_filter=Control.MOUSE_FILTER_IGNORE
  var band_host: Control=options.get("band_host",host)
  if options.has("band_rect"):
-  var area: Rect2=options.band_rect
+  var area: Rect2=band_area
   band.position=area.position;band.size=area.size
   band.color=Color(0,0,0,clampf(float(options.get("band_alpha",BAND_ALPHA)),0.0,1.0))
   band_host.add_child(band);band.show()

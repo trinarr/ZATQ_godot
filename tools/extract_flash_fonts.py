@@ -52,7 +52,7 @@ def extract(swf,out):
   data=d[pos:pos+length];pos+=length
   if code not in [48,75]:continue
   fid,flags,lang,nlen=struct.unpack_from('<HBBB',data,0);name=data[5:5+nlen].decode('utf-8',errors='replace').rstrip('\x00');q=5+nlen;count=struct.unpack_from('<H',data,q)[0];q+=2
-  if not count:continue
+  if not count or name.startswith(('GraffitiC1','DS Crystal')):continue # Replaced by licensed fonts; do not recreate them.
   base=q;fmt='<I' if flags&8 else '<H';sz=4 if flags&8 else 2
   offsets=[struct.unpack_from(fmt,data,q+i*sz)[0] for i in range(count+1)];q+=sz*(count+1)
   codes_pos=base+offsets[-1];codesz=2 if flags&4 else 1

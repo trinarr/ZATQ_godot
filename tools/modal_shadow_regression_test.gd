@@ -75,7 +75,7 @@ func run() -> void:
 	# Reproduce the right-hand justified paragraph from the screenshot.
 	var label := SHADER_TEXT.new()
 	root.add_child(label)
-	label.add_theme_font_override("font",load("res://fonts/flash/font_2.ttf"))
+	label.add_theme_font_override("font",load("res://fonts/oswald/Oswald-Medium.ttf"))
 	label.add_theme_font_size_override("font_size",48)
 	label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	label.horizontal_alignment = HORIZONTAL_ALIGNMENT_FILL

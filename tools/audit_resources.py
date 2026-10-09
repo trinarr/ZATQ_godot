@@ -38,7 +38,7 @@ def audit(root=ROOT):
         for artwork in artworks.values():
             resources.update('assets/flash_ui/' + p['texture'] for p in artwork['parts'].values() if 'texture' in p)
     text = json.loads((root / 'data/ui_text_layout.json').read_text())
-    resources.update(f"fonts/flash/font_{int(block['font'])}.ttf" for block in dictionaries(text) if 'font' in block)
+    resources.update(("fonts/oswald/Oswald-Medium.ttf" if int(block['font'])==2 else "fonts/dseg/DSEG7Classic-Regular.ttf" if int(block['font'])==2836 else f"fonts/flash/font_{int(block['font'])}.ttf") for block in dictionaries(text) if 'font' in block)
     dynamic_masks = {}
     for highlight_path in (root / 'data').glob('episode*_highlights.json'):
         definition = json.loads(highlight_path.read_text())

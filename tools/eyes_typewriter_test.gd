@@ -4,7 +4,7 @@ const TIMELINE := preload("res://scripts/ui/episode_timeline.gd")
 const TEXT := preload("res://scripts/ui/shared/shader_text.gd")
 const TYPEWRITER := preload("res://scripts/ui/shared/typewriter_text.gd")
 const BLOCK := preload("res://scripts/ui/shared/narrative_block.gd")
-const FONT := preload("res://fonts/flash/font_2.ttf")
+const FONT := preload("res://fonts/oswald/Oswald-Medium.ttf")
 var checks:=0
 var failures:=0
 func check(ok: bool, message: String) -> void:

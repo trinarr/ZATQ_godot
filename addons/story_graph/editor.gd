@@ -414,7 +414,7 @@ func add_block(type: String, parent: String = "", port: String = "") -> String:
  var id:=unique_id("e%d_%s_" % [int(document.episode),type])
  var data: Dictionary={}
  match type:
-  "scene":data={"source":"Story Graph","kind":"city_story","text":"Новая сцена","blocks":[{"text":"Новая сцена","rect":[70,20,660,120],"font":"GraffitiC1 Medium","size":24}],"art":"result_background","clean_background":true}
+  "scene":data={"source":"Story Graph","kind":"city_story","text":"Новая сцена","blocks":[{"text":"Новая сцена","rect":[70,20,660,120],"font":"Oswald Medium","size":24}],"art":"result_background","clean_background":true}
   "choice":data={"text":"Далее"}
   "condition":data={"when":{"BulletsNumber":{"min":1}}}
   "action":data={"set":{},"add":{}}
