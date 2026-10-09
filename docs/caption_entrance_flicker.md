@@ -1,27 +1,25 @@
-# Caption entrance flicker
+# Caption visibility and entrance alpha
 
-The exported text tracks sometimes started fully opaque before resetting to zero
-and beginning their real entrance fade. For example, `e2_hall_4` had alpha
-`1, 1, 0, 0.328125, 0.66015625, 1`. Its prefix is now
-`0, 0, 0, 0.328125, 0.66015625, 1`.
+Visibility and opacity are independent. Before its entrance, a Flash caption
+is hidden, even if its current color transform has alpha 1. At the visibility
+switch, alpha becomes zero; then the authored fade raises it to full opacity.
 
-78 caption tracks were corrected: Episode II 1, III 2, IV 15, V 33, VI 26,
-and John 1. Episode I has no matching tracks and its catalog is unchanged.
-Only the opaque prefix alpha is changed: frame counts, matrices, colors other
-than alpha, anchors, fade keys and outro tracks remain identical.
+The previous patch incorrectly described this as an opaque prefix and replaced
+its alpha with zero. All 78 affected tracks now retain prefix alpha 1 and
+explicit `false` visibility. Caption records accept an optional fourth value:
+`[text, matrix, color, visible]`. Three-value records remain visible by default.
+The shared player applies visibility to the label and its narrative band;
+the shadow inherits the label's visibility.
 
-`tools/normalize_caption_entrances.py` handles the narrow pattern of an opaque
-intro prefix followed by zero and a complete monotonic fade through intermediate
-opacity back to one. Ordinary entrances, fading exits and opaque/hidden flashes
-are left alone. QTE tracks are excluded. Both animation exporters invoke the
-normalizer so a rebuild preserves the fix. The command accepts `--check` for
-read-only verification and can be run repeatedly without additional changes.
+`normalize_caption_entrances.py` now marks only the hidden prefix, without
+changing alpha. Both existing exporter hooks remain in place, so regeneration
+preserves independent visibility. The helper is idempotent and leaves ordinary
+fades, intentional flashes and QTE tracks unchanged.
 
-Validation: five Python regressions cover unchanged intentional effects, missing
-records, independent text, idempotence and runtime catalogs; 156 Godot checks
-verify captions and their bands across six representative scenes. Comparison
-against the baseline catalogs confirmed that only prefix alpha changed in the
-78 matching tracks. `verify_locales.py` passes.
+The restoration covers Episode II 1, III 2, IV 15, V 33, VI 26 and John 1.
+Episode I has no affected prefix. Authored fade frames, positions, colors,
+anchors, outros, eye animations and John's character reveal stay unchanged.
 
-This patch follows `zombie_flash_animation_start_clock.patch`; it only changes
-caption data and exporter/test files and does not duplicate the clock fix.
+Validation: five Python regressions and a catalog comparison across all 78
+restored prefixes. 3153 isolated Godot runtime checks cover separate visibility and alpha,
+showing at alpha zero, subsequent monotonic fading, and matching band visibility.

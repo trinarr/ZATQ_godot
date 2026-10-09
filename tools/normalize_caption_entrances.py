@@ -1,6 +1,6 @@
-"""Remove the premature opaque prefix before a caption's authored entrance fade.
-Only an intro starting fully opaque, resetting to zero and then monotonically
-fading back to full opacity qualifies. Frame times, poses and outros are kept.
+"""Preserve hidden caption prefixes separately from their authored alpha.
+A hidden prefix may retain alpha=1 until visibility is enabled at alpha=0.
+The following entrance fade, frame times, poses and outros are kept.
 """
 import argparse
 import json
@@ -34,10 +34,15 @@ def normalize_intro(track):
             previous = value
         if not complete:
             continue
-        for row in rows[:start]:
-            for record in row:
-                if record[0] == text:
-                    record[2][3] = 0
+        pending = [record for row in rows[:start] for record in row
+                   if record[0] == text and (len(record) < 4 or record[3])]
+        if not pending:
+            continue
+        for record in pending:
+            if len(record) < 4:
+                record.append(False)
+            else:
+                record[3] = False
         changed.append(text)
     return changed
 
@@ -55,7 +60,7 @@ def migrate(root=ROOT, check=False):
         if count:
             if not check:
                 path.write_text(json.dumps(document, separators=(',', ':'), ensure_ascii=False) + '\n')
-            print(f'{path.name}: {count} premature caption entrances'+(' found' if check else ' fixed'))
+            print(f'{path.name}: {count} caption visibility prefixes'+(' found' if check else ' fixed'))
         total += count
     return total
 
@@ -65,5 +70,5 @@ if __name__ == '__main__':
     parser.add_argument('--check', action='store_true')
     args = parser.parse_args()
     total = migrate(check=args.check)
-    print(f'{total} premature caption entrances'+(' found' if args.check else ' fixed'))
+    print(f'{total} caption visibility prefixes'+(' found' if args.check else ' fixed'))
     raise SystemExit(bool(total) if args.check else 0)

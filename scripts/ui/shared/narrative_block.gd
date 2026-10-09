@@ -4,6 +4,7 @@ const TEXT := preload("res://scripts/ui/shared/shader_text.gd")
 const LOC := preload("res://scripts/core/localization.gd")
 const LAYOUT := preload("res://scripts/ui/landscape_stage_layout.gd")
 const BAND_ALPHA := 127.0/255.0
+const BOTTOM_PADDING := 12.0 # Flash coordinates; 24 px in the 1600x960 stage.
 static var fit_cache: Dictionary = {}
 var label: Label = TEXT.new()
 var band := ColorRect.new()
@@ -20,6 +21,18 @@ func configure(host: Control, value: String, rect: Rect2, font: Font, font_size:
  var mode: String=options.get("fit","none")
  var minimum: int=int(options.get("minimum",font_size))
  var padding: float=float(options.get("padding",0))
+ if options.has("band_rect"):
+  var area: Rect2=options.band_rect
+  var inset: float=maxf(0.0,float(options.get("bottom_padding",BOTTOM_PADDING)))*LAYOUT.AUTHORING_SCALE
+  var bottom: float=minf(area.end.y,LAYOUT.BASE_SIZE.y)-inset
+  geometry.size.y=maxf(1.0,minf(geometry.size.y,bottom-geometry.position.y))
+  if mode=="none":mode="multiline" if options.get("wrap",true) else "single"
+  # A shallow single-line box may need a few pixels of headroom to keep
+  # its minimum readable font size while still honoring the bottom inset.
+  if mode=="single":
+   var min_height: float=font.get_string_size(translated,HORIZONTAL_ALIGNMENT_LEFT,-1,minimum*2).y+padding
+   var lift: float=minf(maxf(0.0,min_height-geometry.size.y),maxf(0.0,geometry.position.y-area.position.y))
+   geometry.position.y-=lift;geometry.size.y+=lift
  var key: Array=[translated,font.get_instance_id(),font_size,minimum,geometry.size,mode,padding]
  var cache_key: String=var_to_str(key)
  var fitted: int=fit_cache.get(cache_key,-1)
@@ -27,7 +40,7 @@ func configure(host: Control, value: String, rect: Rect2, font: Font, font_size:
   fitted=font_size
   while fitted>minimum:
    var measured: Vector2=font.get_string_size(translated,HORIZONTAL_ALIGNMENT_LEFT,-1,fitted*2) if mode=="single" else font.get_multiline_string_size(translated,HORIZONTAL_ALIGNMENT_LEFT,geometry.size.x,fitted*2)
-   if mode=="none" or (measured.x<=geometry.size.x if mode=="single" else measured.y<=geometry.size.y-padding):break
+   if mode=="none" or (measured.y<=geometry.size.y-padding and (mode!="single" or measured.x<=geometry.size.x)):break
    fitted-=1
   if fit_cache.size()>=256:fit_cache.erase(fit_cache.keys()[0])
   fit_cache[cache_key]=fitted

@@ -76,7 +76,7 @@ static func draw(ui: Control, node: Dictionary) -> void:
 				block_font = load("res://fonts/flash/font_2511.ttf")
 			if block.has("font_file"):
 				block_font = load(block.font_file)
-			for key: String in ["minimum","padding","line_spacing","wrap","band_alpha"]:
+			for key: String in ["minimum","padding","line_spacing","wrap","band_alpha","bottom_padding"]:
 				if block.has(key): options[key] = block[key]
 			options.font = block_font
 			var label: Label = ui._narrative_text(block.text,Rect2(b[0],b[1],b[2],b[3]),int(block.size),options)

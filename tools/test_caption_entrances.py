@@ -1,4 +1,4 @@
-"""Regression coverage for premature caption display and preserved timing."""
+"""Regression coverage for caption visibility and alpha independence and preserved timing."""
 import copy
 import unittest
 from normalize_caption_entrances import normalize_intro, migrate
@@ -14,7 +14,7 @@ class CaptionEntranceTests(unittest.TestCase):
     def test_correct_prefix_and_preserve_fade_and_geometry(self):
         source = track([1, 1, 0, .328125, .66015625, 1])
         expected = copy.deepcopy(source)
-        for row in expected['intro'][:2]: row[0][2][3] = 0
+        for row in expected['intro'][:2]: row[0].append(False)
         self.assertEqual(normalize_intro(source), ['caption'])
         self.assertEqual(source, expected)
         self.assertEqual(normalize_intro(source), [])

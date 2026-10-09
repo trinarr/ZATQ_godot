@@ -266,7 +266,8 @@ func _update_captions(index: int) -> void:
 			var pose:=Transform2D(Vector2(m[0],m[1]),Vector2(m[2],m[3]),Vector2(m[4],m[5])*2)
 			var delta: Transform2D=pose*entry.inverse
 			label.position=delta*entry.origin;label.scale=entry.scale*delta.get_scale();label.rotation=delta.get_rotation()
-			label.modulate=entry.color*Color(c[0],c[1],c[2],c[3]);label.visible=true
+			label.modulate=entry.color*Color(c[0],c[1],c[2],c[3])
+			label.visible=record.size()<4 or bool(record[3])
 			if spec.has("caption_mask") and label is Label:
 				var areas: Array=spec.caption_mask[phase]
 				var area: Array=areas[mini(index,areas.size()-1)]
