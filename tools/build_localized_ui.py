@@ -88,7 +88,7 @@ def build(library):
  r.omit_brushes=True;rr.omit_brushes=True
  icons=IconRenderer(library,r.out,ROOT/"fonts/flash");icons.omit_brushes=True
  def s(n,f=0,x=0,y=0,o=None,h=None):return(f'Symbol {n}',f,x,y,o or {},h or set())
- plans={'adaptive_menu':[s(118,h={'But4'}),s(132,8,415,70)],'adaptive_menu_off':[s(118,o={'SndCheck':1},h={'But4'}),s(132,8,415,70)],'adaptive_help':[s(147,6)]}
+ plans={'adaptive_menu':[s(118,h={'But4'}),s(132,8,415,70)],'adaptive_menu_off':[s(118,o={'SndCheck':1},h={'But4'}),s(132,8,415,70)],'adaptive_help':[s(147,6,h={'Mov.But4'})]}
  # PauseMov has its own component exporter and native button captions.
  for name,fr in [('wake',0),('screams',1),('morning_choice',2),('transport',4),('lift',5),('lift_button',6)]:
   plans['layout_controls_'+name]=[s(2882,fr,o={'Mov':14 if name=='wake' else 4 if name=='lift_button' else 0},h={'Mov'})]
@@ -126,11 +126,12 @@ def build(library):
   for name,frame,x,y,ov,hide in items:blocks+=labels(renderer,name,frame,ov,hide,transform=(1,0,0,1,x,y))
   # Exit's original caption is a separate unnamed text field, not a child of But4.
   if filename in ('adaptive_menu','adaptive_menu_off'):blocks=blocks[1:]
+  if filename=='adaptive_help':blocks=[b for b in blocks if b['text']!='Версия без рекламы']
   namespace='episode1' if filename.startswith('layout_controls_') or filename=='adaptive_metro_controls' else 'ui'
   headers,existing=tables[namespace]
   for i,block in enumerate(blocks):
    # Keep existing locale IDs after removing the first (Exit) caption.
-   label_index=i+1 if filename in ('adaptive_menu','adaptive_menu_off') else i
+   label_index=i+1 if filename in ('adaptive_menu','adaptive_menu_off','adaptive_help') else i
    key=f'{namespace}.art.{filename}.{label_index}'
    row={h:'' for h in headers};row.update({'key':key,'ru':block['text']})
    existing.setdefault(key,row)

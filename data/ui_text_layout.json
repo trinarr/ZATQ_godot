@@ -89,20 +89,6 @@
   ],
   "adaptive_help": [
     {
-      "text": "@loc:ui.art.adaptive_help.0",
-      "rect": [
-        81.3,
-        403.0,
-        260.35,
-        23.0
-      ],
-      "size": 22.75,
-      "rotation": 0.0,
-      "font": 1,
-      "alignment": "center",
-      "color": "#e1e1e1"
-    },
-    {
       "text": "@loc:ui.art.adaptive_help.1",
       "rect": [
         101.05,

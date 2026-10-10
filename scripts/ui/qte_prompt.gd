@@ -1,13 +1,14 @@
 extends Control
 # Decorative QTE badge. StoryActivity retains the original interactive hotspot.
 const LOC := preload("res://scripts/core/localization.gd")
-const FONT: Font = preload("res://fonts/flash/font_1.ttf")
+const FONT: Font = preload("res://fonts/oswald/Oswald-Medium.ttf")
 var text_key := "@loc:ui.qte.press"
 var caption := preload("res://scripts/ui/shared/shader_text.gd").new()
 
 func _init() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	size = Vector2(224,224)
+	caption.distressed = true
 	caption.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	caption.position = Vector2(30,66)
 	caption.size = Vector2(164,92)
@@ -19,7 +20,7 @@ func _init() -> void:
 	refresh_text()
 
 func refresh_text() -> void:
-	caption.text = LOC.text(text_key)
+	caption.text = LOC.text(text_key).to_upper()
 	var font_size := 62
 	while font_size > 16 and FONT.get_string_size(caption.text,HORIZONTAL_ALIGNMENT_LEFT,-1,font_size).x > caption.size.x:
 		font_size -= 1

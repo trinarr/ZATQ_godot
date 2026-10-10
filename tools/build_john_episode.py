@@ -50,7 +50,7 @@ def content(lib,sources,sounds):
             {'text':'CONSOLE','rect':[13.75,9.3,220,30],'size':22,'font':'JetBrains Mono NL Regular','path':'ConsoleHeading','padding':0,'minimum':22},
             {'text':'shiftOS ver. 1.567.89 Copyright STB Corporation. All rights reserved','rect':[171.55,454,623,22],'size':15,'font':'JetBrains Mono NL Regular','path':'ConsoleFooter','padding':0,'minimum':15}]
    for b in blocks:
-    if b['font']=='JetBrains Mono NL Regular':b['font_file']='res://fonts/jetbrains_mono/JetBrainsMonoNL-Regular.ttf';b['wrap']=False
+    if b['font']=='JetBrains Mono NL Regular':b['font_file']='res://fonts/jetbrains_mono/JetBrainsMonoNL-Regular.ttf';b['wrap']=b.get('path')=='ConsoleReport'
    nodes[id]={'episode':ep,'source':f'Web Episode{part} frame {fr}','kind':'city_story','art':id,'clean_background':True,'blocks':blocks,'text':' '.join(b['text'] for b in blocks),'choices':[branch(nid(fr+1),rect=[70,0,730,480])] if fr<last else []}
    script='\n'.join(f.findtext('x:Actionscript/x:script','',NS) for f in r.root(f'Symbol {sym}').findall('.//x:DOMFrame',NS) if int(f.get('index',0))==fr-1)
    sound=re.search(r'SndPlayer\("([^"]+)"',script)

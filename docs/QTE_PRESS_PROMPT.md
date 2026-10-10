@@ -8,7 +8,7 @@ git apply --3way zombie_qte_press_localized.patch
 
 36 PNG кнопки из `e3_john_23_anim_2`…`37` заменены общим компонентом
 `scripts/ui/qte_prompt.gd`. Круг, ободок и метки рисуются средствами Godot;
-надпись — отдельным Label со шрифтом Flash `font_1.ttf`. Размер текста
+надпись — отдельным Label со шрифтом `Oswald-Medium.ttf` и редкими шейдерными сколами по краям букв. Размер текста
 подбирается под подпись. Ключ `ui.qte.press` в `locales/ui.csv` содержит
 `Жми!` для ru и `Press!` для en.
 

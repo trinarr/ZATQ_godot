@@ -366,7 +366,6 @@ func _show_help() -> void:
 	_reset_screen(true)
 	_art("help")
 	_hit(LOC.text("@loc:ui.main.20"),Rect2(652,374,57,60),_show_menu)
-	_hit(LOC.text("@loc:ui.main.21"),Rect2(63,373,322,66),_show_menu)
 	_mount_menu_logo(null,140)
 	_animate_menu_panel("help")
 

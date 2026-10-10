@@ -29,7 +29,7 @@ def path_data(edges):
 
 class Renderer:
  def __init__(self,library,out,fonts):
-  self.library=Path(library);self.out=Path(out);self.fonts={i:TTFont(Path(fonts).parent/'jetbrains_mono/JetBrainsMonoNL-Regular.ttf' if i==314 else Path(fonts).parent/'caveat/Caveat-Medium.ttf' if i in [2508,2511] else Path(fonts).parent/'oswald/Oswald-Medium.ttf' if i==2 else Path(fonts).parent/'dseg/DSEG7Classic-Regular.ttf' if i==2836 else Path(fonts)/f'font_{i}.ttf') for i in set(FONT_IDS.values())};self.defs=[];self.uid=0;self.cache={}
+  self.library=Path(library);self.out=Path(out);self.fonts={i:TTFont(Path(fonts).parent/'jetbrains_mono/JetBrainsMonoNL-Regular.ttf' if i==314 else Path(fonts).parent/'caveat/Caveat-Medium.ttf' if i in [2508,2511] else Path(fonts).parent/'oswald/Oswald-Medium.ttf' if i in [1,2] else Path(fonts).parent/'dseg/DSEG7Classic-Regular.ttf' if i==2836 else Path(fonts)/f'font_{i}.ttf') for i in set(FONT_IDS.values())};self.defs=[];self.uid=0;self.cache={}
  def root(self,name):
   if name not in self.cache:
    root=E.parse(self.library/(name+'.xml')).getroot()

@@ -8,7 +8,7 @@ const LAYOUT := preload("res://scripts/ui/landscape_stage_layout.gd")
 const STATISTIC_ICON := preload("res://scripts/ui/statistic_icon.gd")
 const COMPONENTS := preload("res://scripts/ui/flash_components.gd")
 
-const TITLE_FONT: Font = preload("res://fonts/flash/font_1.ttf")
+const TITLE_FONT: Font = preload("res://fonts/oswald/Oswald-Medium.ttf")
 
 const BODY_FONT: Font = preload("res://fonts/oswald/Oswald-Medium.ttf")
 
@@ -71,7 +71,8 @@ func _art(filename: String, parent: Control = null, rect: Rect2 = Rect2(0,0,800,
 		var r: Array = block.rect
 		var original_rect := Rect2(r[0],r[1],r[2],r[3])
 		var translated := LOC.text(block.text).replace("{version}",str(ProjectSettings.get_setting("application/config/version","")))
-		var font: Font = preload("res://fonts/caveat/Caveat-Medium.ttf") if int(block.font) in [2508,2511] else BODY_FONT if int(block.font)==2 else preload("res://fonts/dseg/DSEG7Classic-Regular.ttf") if int(block.font)==2836 else load("res://fonts/flash/font_%d.ttf" % int(block.font))
+		if int(block.font)==1: translated=translated.to_upper()
+		var font: Font = preload("res://fonts/caveat/Caveat-Medium.ttf") if int(block.font) in [2508,2511] else TITLE_FONT if int(block.font)==1 else BODY_FONT if int(block.font)==2 else preload("res://fonts/dseg/DSEG7Classic-Regular.ttf") if int(block.font)==2836 else load("res://fonts/flash/font_%d.ttf" % int(block.font))
 		var brush_rect := Rect2()
 		for brush:Dictionary in art_brushes.get(filename,[]):
 			var b:Array=brush.rect
@@ -84,6 +85,7 @@ func _art(filename: String, parent: Control = null, rect: Rect2 = Rect2(0,0,800,
 			var font_size:=roundi(block.size)
 			while font_size>12 and font.get_multiline_string_size(translated,HORIZONTAL_ALIGNMENT_LEFT,original_rect.size.x*2,font_size*2).y>original_rect.size.y*2+4:font_size-=1
 			label=_text(translated,original_rect,font_size,false,false,image)
+		label.distressed = int(block.font)==1
 		label.rotation = float(block.get("rotation",0))
 		label.add_theme_font_override("font",font)
 		label.add_theme_color_override("font_color",Color(block.color))
@@ -95,7 +97,8 @@ func _text(text: String, rect: Rect2, font_size: int = 24, title: bool = false, 
 	rect = LAYOUT.scaled_rect(rect)
 	font_size = LAYOUT.scaled_font_size(font_size)
 	var label := preload("res://scripts/ui/shared/shader_text.gd").new()
-	label.text = LOC.text(text)
+	label.distressed = title
+	label.text = LOC.text(text).to_upper() if title else LOC.text(text)
 	label.position = rect.position
 	label.add_theme_font_override("font", TITLE_FONT if title else BODY_FONT)
 	label.add_theme_font_size_override("font_size", font_size)
@@ -179,6 +182,7 @@ func _button_text(value:String,rect:Rect2,font_size:int=22,parent:Control=null,f
 	var host: Control = parent if parent != null else _default_parent()
 	var painted: Button = _find_painted_button(host,LAYOUT.scaled_rect(rect))
 	if painted != null and painted.get_script()==TORN_TEXT:
+		painted.caption.uppercase=false
 		painted.set_caption(value,font if font!=null else BODY_FONT,font_size*2)
 		return painted.caption
 	var text:=" ".join(LOC.text(value).replace("\r"," ").replace("\n"," ").split(" ",false))
@@ -186,6 +190,7 @@ func _button_text(value:String,rect:Rect2,font_size:int=22,parent:Control=null,f
 	while font_size>1 and (font.get_string_size(text,HORIZONTAL_ALIGNMENT_LEFT,-1,font_size*2).x>rect.size.x*2 or font.get_height(font_size*2)>rect.size.y*2):font_size-=1
 	var label:=_text(text,rect,font_size,false,true,parent)
 	label.add_theme_font_override("font",font)
+	label.add_theme_font_size_override("font_size",maxi(1,roundi(font_size*2*0.85)))
 	label.autowrap_mode=TextServer.AUTOWRAP_OFF
 	label.vertical_alignment=VERTICAL_ALIGNMENT_CENTER
 	label.clip_text=true

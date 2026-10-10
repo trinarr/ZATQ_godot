@@ -56,7 +56,7 @@ func _layout_caption() -> void:
  caption.size = (size-Vector2(64,63.8) if speaker_layout else size-Vector2(60,24)).max(Vector2.ONE)
  var fitted := caption_size
  while fitted>16 and FONT.get_multiline_string_size(caption.text,caption.horizontal_alignment,caption.size.x,fitted).y>caption.size.y: fitted-=1
- caption.add_theme_font_size_override("font_size",fitted)
+ caption.add_theme_font_size_override("font_size",maxi(1,roundi(fitted*0.85)))
 func _update_state() -> void:
  # Symbol 97's endpoint tint is 0.69921875; the caption does not move.
  var tint := 0.69921875 if disabled or is_pressed() else 0.80078125 if is_hovered() else 1.0

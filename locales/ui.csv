@@ -1,14 +1,13 @@
 key,ru,en
-ui.art.adaptive_help.0,Версия без рекламы,
 ui.art.adaptive_help.1,"Автор: Луканин Никита
 Версия: {version}
 
 Материалы тестов:
 Kotbayun, UsVsTh3m и др.",
-ui.art.adaptive_menu.1,справка,
+ui.art.adaptive_menu.1,Об игре,About the game
 ui.art.adaptive_menu.2,Тесты,
 ui.art.adaptive_menu.3,Эпизоды,
-ui.art.adaptive_menu_off.1,справка,
+ui.art.adaptive_menu_off.1,Об игре,About the game
 ui.art.adaptive_menu_off.2,Тесты,
 ui.art.adaptive_menu_off.3,Эпизоды,
 ui.art.adaptive_selector_0.0,Начать,
@@ -44,7 +43,6 @@ ui.main.18,Закрыть,
 ui.main.19,Интерфейс восстановлен. Игровая часть этого раздела ещё не перенесена.,
 ui.main.2,Новый сюжет,
 ui.main.20,Закрыть справку,
-ui.main.21,Назад,
 ui.main.22,Начать заново?,
 ui.main.23,Текущее прохождение будет заменено.,
 ui.main.24,Звук: ,
@@ -69,7 +67,7 @@ ui.main.43,Взять ключи,
 ui.main.44,Первый этаж,
 ui.main.45,Далее,
 ui.main.46,Пауза,
-ui.main.5,Справка,
+ui.main.5,Об игре,About the game
 ui.main.7,Звук,
 ui.main.8,Достижения,
 ui.main.9,Достижения,

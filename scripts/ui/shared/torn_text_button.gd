@@ -1,6 +1,6 @@
 extends "res://scripts/ui/shared/torn_button.gd"
 const LOC := preload("res://scripts/core/localization.gd")
-const FONT: Font = preload("res://fonts/flash/font_1.ttf")
+const FONT: Font = preload("res://fonts/oswald/Oswald-Medium.ttf")
 var caption: Label
 @export var caption_font: Font = FONT
 @export var caption_size := 44
@@ -12,6 +12,7 @@ var padding := Vector2(20,8)
 func _init() -> void:
  super()
  caption = preload("res://scripts/ui/shared/shader_text.gd").new()
+ caption.distressed = true
  caption.name = "Caption"
  caption.mouse_filter = Control.MOUSE_FILTER_IGNORE
  caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
@@ -36,10 +37,11 @@ func _layout_content() -> void:
  if not is_instance_valid(caption): return
  caption.position = padding
  caption.size = (size-padding*2).max(Vector2.ONE)
+ var measured_text := caption.text.to_upper() if caption.uppercase else caption.text
  var fitted := caption_size
- while fitted>1 and (caption_font.get_string_size(caption.text,HORIZONTAL_ALIGNMENT_LEFT,-1,fitted).x>caption.size.x or caption_font.get_height(fitted)>caption.size.y):
+ while fitted>1 and (caption_font.get_string_size(measured_text,HORIZONTAL_ALIGNMENT_LEFT,-1,fitted).x>caption.size.x or caption_font.get_height(fitted)>caption.size.y):
   fitted -= 1
  caption.add_theme_font_override("font",caption_font)
- caption.add_theme_font_size_override("font_size",fitted)
+ caption.add_theme_font_size_override("font_size",maxi(1,roundi(fitted*0.85)))
 func _notification(what: int) -> void:
  if what == NOTIFICATION_TRANSLATION_CHANGED and is_instance_valid(caption): set_caption(caption_key)

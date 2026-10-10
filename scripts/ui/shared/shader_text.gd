@@ -1,5 +1,18 @@
 extends Label
 # The second glyph pass uses a shader, never a baked bitmap or theme shadow.
+const DISTRESS := preload("res://shaders/text_edge_chips.gdshader")
+var distressed := false:
+	set(value):
+		distressed = value
+		uppercase = value
+		if value:
+			var paint := ShaderMaterial.new()
+			paint.shader = DISTRESS
+			material = paint
+		else:
+			material = null
+		request_shadow_sync()
+
 const SHADOW := preload("res://shaders/text_shadow.gdshader")
 static var shadow_material: ShaderMaterial
 var shadow_pass: Label
@@ -48,6 +61,7 @@ func sync_shadow() -> void:
 	var font_size := get_theme_font_size("font_size")
 	var spacing := get_theme_constant("line_spacing")
 	var next: Array = [text,size,font,font_size,spacing,horizontal_alignment,vertical_alignment,autowrap_mode,justification_flags,clip_text,visible_characters,visible_characters_behavior,uppercase,language,text_direction,shadow_offset,get_theme_color("font_color").a]
+	_sync_edge_chips(font_size)
 	if next == signature: return
 	signature = next
 	shadow_updates += 1
@@ -71,3 +85,14 @@ func sync_shadow() -> void:
 	shadow_pass.text = text
 	shadow_pass.size = size
 	shadow_pass.position = shadow_offset
+
+func _sync_edge_chips(font_size: int) -> void:
+	if not distressed and material == null and shadow_pass.material == shadow_material: return
+	# A separate shadow material prevents one caption changing another's wear.
+	if distressed and shadow_pass.material == shadow_material:
+		shadow_pass.material = shadow_material.duplicate()
+	var strength := smoothstep(26.0,72.0,float(font_size)) * 0.6 + 0.3 if distressed else 0.0
+	for paint in [material,shadow_pass.material]:
+		if paint is ShaderMaterial:
+			paint.set_shader_parameter("chip_strength",strength)
+			paint.set_shader_parameter("chip_scale",clampf(float(font_size)/56.0,0.65,1.5))

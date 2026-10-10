@@ -34,7 +34,7 @@ func run() -> void:
    for language: String in ["ru","en"]:
     TranslationServer.set_locale(language)
     child.refresh_text()
-    check(child.caption.text==("Жми!" if language=="ru" else "Press!"),"translated caption: "+language)
+    check(child.caption.text==("ЖМИ!" if language=="ru" else "PRESS!"),"translated caption: "+language)
     var font_size: int = child.caption.get_theme_font_size("font_size")
     check(PROMPT.FONT.get_string_size(child.caption.text,HORIZONTAL_ALIGNMENT_LEFT,-1,font_size).x<=child.caption.size.x,"caption fits: "+language)
   check(prompts==(1 if frame>=2 and frame<=37 else 0),"original visibility: "+key)

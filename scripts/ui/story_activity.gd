@@ -26,7 +26,7 @@ func build() -> void:
  elif not ui._component_backdrop(node.get("art","result_background")) and ResourceLoader.exists(path):ui._set_backdrop(DEFAULT_BACKGROUND if not node.has("art") else load(path))
  if not node.get("original_ui",false) and node.kind!="activity_dialogue":
   ui._shade(ui.screen,0.65)
-  ui._narrative_text(node.get("speaker",""),Rect2(90,40,620,45),26,{"font":ui.TITLE_FONT})
+  ui._narrative_text(node.get("speaker",""),Rect2(90,40,620,45),26,{"font":ui.TITLE_FONT,"distressed":true})
   ui._narrative_text(node.get("text",""),Rect2(90,90,620,145),23)
  if Quest.activity.is_empty():
   Quest.activity={"id":Quest.current_id,"input":"","attempts":int(node.get("attempts",3)),"taps":0,"remaining":float(node.get("seconds",5))}

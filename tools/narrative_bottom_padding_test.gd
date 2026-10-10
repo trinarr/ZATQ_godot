@@ -14,7 +14,7 @@ func run() -> void:
  var b: Dictionary=graph.nodes.e4_camp_3_v1.data.blocks[0]
  var label: Label=block.configure(host,b.text,Rect2(b.rect[0],b.rect[1],b.rect[2],b.rect[3]),FONT,b.size,{"storage":host,"fit":"multiline","minimum":14,"padding":4,"band_rect":Rect2(0,(b.rect[1]-6)*2,1600,(b.rect[3]+12)*2)})
  await process_frame
- check(label.get_theme_font_size("font_size")==int(b.size)*2,"forest caption keeps its authored font size")
+ check(label.get_theme_font_size("font_size")==48,"forest caption uses the shared narrative size")
  check(label.position.y+label.size.y<=936.01,"text box leaves 12 authored pixels below it")
  check(label.get_minimum_size().y<=label.size.y+0.01,"complete text fits without clipping")
  print("FOREST: font=",label.get_theme_font_size("font_size")," lines=",label.get_line_count()," content_height=",label.get_minimum_size().y," box_height=",label.size.y," bottom_gap=",960-label.position.y-label.size.y)
@@ -43,5 +43,17 @@ func run() -> void:
  label=block.configure(host,"Обычный текст",Rect2(11,6,769,80),FONT,24,{"storage":host})
  await process_frame
  check(label.position==Vector2(22,12) and label.size==Vector2(1538,160),"unbanded text geometry is unchanged")
+ # Long upper and lower captions grow in opposite directions at identical size.
+ var long_text: String="Реплика для проверки размера и направления роста плашки. ".repeat(14)
+ for upper:bool in [true,false]:
+  var y:float=6.0 if upper else 440.0
+  var area:Rect2=Rect2(0,0,1600,90) if upper else Rect2(0,868,1600,92)
+  label=block.configure(host,long_text,Rect2(11,y,775,25),FONT,18 if upper else 30,{"storage":host,"fit":"single","minimum":14,"band_rect":area})
+  await process_frame
+  check(label.get_theme_font_size("font_size")==48,"long caption never shrinks")
+  check(label.get_line_count()>1,"single-line legacy setting now allows wrapping")
+  check(label.get_minimum_size().y<=label.size.y+0.01,"grown box contains all lines")
+  check(label.position.y==12.0 if upper else label.position.y<880.0,"text grows down from top or up from bottom")
+  check(block.band.size.y>area.size.y,"band grows with the caption")
  print("PASS: %d bottom padding checks; failures %d" %[checks,failures])
  quit(1 if failures else 0)

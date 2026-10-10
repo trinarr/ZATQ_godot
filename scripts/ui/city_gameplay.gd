@@ -78,6 +78,7 @@ static func draw(ui: Control, node: Dictionary) -> void:
 			for key: String in ["minimum","padding","line_spacing","wrap","band_alpha","bottom_padding"]:
 				if block.has(key): options[key] = block[key]
 			options.font = block_font
+			if str(block.get("path","")).begins_with("Console"): options.fixed_size=false
 			var label: Label = ui._narrative_text(block.text,Rect2(b[0],b[1],b[2],b[3]),int(block.size),options)
 			ui._bind_episode_caption(label,ui.narrative_layer.band_for(label) if Quest.episode>1 else null)
 		if node.has("text_rect"):
