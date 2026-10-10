@@ -188,6 +188,8 @@ func _narrative_text(value: String, rect: Rect2, font_size: int = 24, options: D
 	var host: Control = options.get("host",screen)
 	var font: Font = options.get("font",BODY_FONT)
 	if font == BODY_FONT: font = NARRATIVE_FONT
+	options = options.duplicate()
+	options.story_panel = options.get("story_panel",font == NARRATIVE_FONT)
 	return narrative_layer.show_block(host,value,rect,font,font_size,options)
 
 func _set_backdrop(texture: Texture2D, crop_pause: bool = false) -> void:

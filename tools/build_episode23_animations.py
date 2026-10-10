@@ -4,6 +4,7 @@ The frame budget follows the source timelines (including the 126-frame roof).
 """
 import argparse,base64,copy,hashlib,json,tempfile,zipfile
 from pathlib import Path
+from legacy_narrative_bands import is_legacy_narrative_band
 from PIL import Image
 from build_episode1_animations import Timelines
 from build_episode1_components import Exporter,shared_texture_references
@@ -159,6 +160,7 @@ def build(archive,episodes=(2,3),only=None):
        if old.exists() and old!=ROOT/'assets/flash_ui'/part['texture']:
         (ROOT/'assets/flash_ui'/part['texture']).unlink(missing_ok=True)
         part['texture']=directory+'/'+filename;break
+     if is_legacy_narrative_band(part):continue
      primitives[key]=part;refs[key]=ref['matrix']
     tracks={}
     for phase,fs in {**states,**variable_states}.items():

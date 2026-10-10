@@ -10,6 +10,8 @@ from story_graph_format import load_all
 from episode1_blur import sharp_element,blur_spec
 from build_result_ui import ResultRenderer
 
+from legacy_narrative_bands import is_legacy_narrative_band
+
 ROOT=Path(__file__).resolve().parents[1]
 class Exporter(ResultRenderer):
  def shape(self,e):
@@ -32,7 +34,7 @@ class Exporter(ResultRenderer):
    record=dict(part,source=path)
    record['rect']=[part['rect'][0]+x,part['rect'][1]+y,*part['rect'][2:]]
    if blur:record["blur"]=blur
-   self.parts.append(record)
+   if not is_legacy_narrative_band(record):self.parts.append(record)
  def store(self,im):
   bounds=im.getchannel('A').getbbox()
   if bounds is None:return None
@@ -63,7 +65,8 @@ class Exporter(ResultRenderer):
   if len(xs)!=2 or len(ys)!=2 or set(points)!={(x,y) for x in xs for y in ys}:return False
   # Convert exact axis-aligned rectangle shapes to native ColorRect.
   x=sorted([t[0]*v+t[4] for v in xs]);y=sorted([t[3]*v+t[5] for v in ys]);color=c.get('color','#000000').lstrip('#')
-  self.parts.append({'type':'panel','rect':[x[0],y[0],x[1]-x[0],y[1]-y[0]],'color':[int(color[i:i+2],16)/255 for i in [0,2,4]]+[alpha*float(c.get('alpha','1'))],'source':path})
+  record={'type':'panel','rect':[x[0],y[0],x[1]-x[0],y[1]-y[0]],'color':[int(color[i:i+2],16)/255 for i in [0,2,4]]+[alpha*float(c.get('alpha','1'))],'source':path}
+  if not is_legacy_narrative_band(record):self.parts.append(record)
   return True
  def walk(self,name,frame,ov,hide,path='',t=(1,0,0,1,0,0),alpha=1,depth=0):
   if depth>35 or name in self.omit_symbols or name in ['Symbol 88']:return

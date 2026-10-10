@@ -263,18 +263,6 @@
       ],
       "source": "Mov/Symbol 2179",
       "layer": "background"
-    },
-    {
-      "type": "texture",
-      "texture": "episode2_components/part_c785fd2d7d6e84d8cf3a.png",
-      "rect": [
-        0.0,
-        414.0,
-        800.0,
-        66.0
-      ],
-      "source": "Mov.Mov/Symbol 506",
-      "layer": "background"
     }
   ],
   "e2_first_5": [

@@ -5,6 +5,7 @@ variants select playback segments. Text, controls and red masks stay native.
 """
 import argparse,base64,copy,json,math,subprocess,tempfile,zipfile
 from pathlib import Path
+from legacy_narrative_bands import is_legacy_narrative_band
 import xml.etree.ElementTree as ET
 from PIL import Image
 from build_episode1_components import Exporter,plans,shared_texture_references
@@ -183,6 +184,7 @@ def build(archive,only=None):
       generated=ROOT/'assets/flash_ui'/part['texture']
       if generated!=old:generated.unlink(missing_ok=True)
       part['texture']='episode1_components/'+filename
+    if is_legacy_narrative_band(part):continue
     primitives[key]=part;refs[key]=ref['matrix']
    phase_records={}
    for phase,states in zip(['intro','outro'],sequences):

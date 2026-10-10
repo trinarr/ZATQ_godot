@@ -788,18 +788,6 @@
     },
     {
       "type": "texture",
-      "texture": "episode1_components/part_18e9eba363369fbf9443.png",
-      "rect": [
-        0.0,
-        0.0,
-        800.0,
-        36.0
-      ],
-      "source": "Mov/Symbol 2584",
-      "layer": "background"
-    },
-    {
-      "type": "texture",
       "texture": "episode1_components/part_224eb994d498b8f6e5ec.png",
       "rect": [
         0.0,
@@ -812,36 +800,12 @@
     },
     {
       "type": "texture",
-      "texture": "episode1_components/part_7b84943f32bd63b0cb07.png",
-      "rect": [
-        0.0,
-        160.0,
-        800.0,
-        35.0
-      ],
-      "source": "Mov/Symbol 2588",
-      "layer": "background"
-    },
-    {
-      "type": "texture",
       "texture": "episode1_components/part_d198d13c267bef101fd8.png",
       "rect": [
         0.0,
         320.0,
         800.0,
         160.0
-      ],
-      "source": "Mov/Symbol 2592",
-      "layer": "background"
-    },
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_d87fd76cef9d2076cd65.png",
-      "rect": [
-        0.0,
-        320.0,
-        800.0,
-        60.0
       ],
       "source": "Mov/Symbol 2592",
       "layer": "background"
@@ -999,18 +963,6 @@
       "layer": "background"
     },
     {
-      "type": "texture",
-      "texture": "episode1_components/part_18e9eba363369fbf9443.png",
-      "rect": [
-        0.0,
-        0.0,
-        800.0,
-        36.0
-      ],
-      "source": "Mov/Symbol 2584",
-      "layer": "background"
-    },
-    {
       "type": "panel",
       "rect": [
         0.0,
@@ -1057,36 +1009,12 @@
     },
     {
       "type": "texture",
-      "texture": "episode1_components/part_18e9eba363369fbf9443.png",
-      "rect": [
-        0.0,
-        0.0,
-        800.0,
-        36.0
-      ],
-      "source": "Mov/Symbol 2584",
-      "layer": "background"
-    },
-    {
-      "type": "texture",
       "texture": "episode1_components/part_224eb994d498b8f6e5ec.png",
       "rect": [
         0.0,
         160.0,
         800.0,
         160.0
-      ],
-      "source": "Mov/Symbol 2588",
-      "layer": "background"
-    },
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_7b84943f32bd63b0cb07.png",
-      "rect": [
-        0.0,
-        160.0,
-        800.0,
-        35.0
       ],
       "source": "Mov/Symbol 2588",
       "layer": "background"
@@ -1764,18 +1692,6 @@
         480.0
       ],
       "source": "Mov/Symbol 2800",
-      "layer": "background"
-    },
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_18e9eba363369fbf9443.png",
-      "rect": [
-        0.0,
-        444.0,
-        800.0,
-        36.0
-      ],
-      "source": "Mov/Symbol 483",
       "layer": "background"
     }
   ],
