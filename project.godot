@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Zombie Apocalypse: The Quest"
-config/version="0.2.0"
+config/version="2.0.0"
 run/main_scene="res://scenes/Main.tscn"
 config/features=PackedStringArray("4.7", "Mobile")
 run/max_fps=60

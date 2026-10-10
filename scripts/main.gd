@@ -187,6 +187,7 @@ func _reset_screen(preserve_logo: bool = false) -> void:
 func _narrative_text(value: String, rect: Rect2, font_size: int = 24, options: Dictionary = {}) -> Label:
 	var host: Control = options.get("host",screen)
 	var font: Font = options.get("font",BODY_FONT)
+	if font == BODY_FONT: font = NARRATIVE_FONT
 	return narrative_layer.show_block(host,value,rect,font,font_size,options)
 
 func _set_backdrop(texture: Texture2D, crop_pause: bool = false) -> void:
