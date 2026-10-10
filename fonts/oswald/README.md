@@ -13,7 +13,7 @@ Cyrillic glyphs and original copyright/license metadata are preserved.
 The font is shared by the UI components; the original font size, tint and
 shader shadows are retained.
 
-Oswald-Light.ttf is a static weight-300 instance from the same upstream font,
+Oswald-Regular.ttf is a static weight-400 instance from the same upstream font,
 produced with fontTools.varLib.instancer and updateFontNames. It is used for
 ordinary story narration. UI captions continue to use Medium (500); handwriting
 and terminal blocks keep their explicitly assigned fonts.

@@ -11,7 +11,7 @@ const COMPONENTS := preload("res://scripts/ui/flash_components.gd")
 const TITLE_FONT: Font = preload("res://fonts/oswald/Oswald-Medium.ttf")
 
 const BODY_FONT: Font = preload("res://fonts/oswald/Oswald-Medium.ttf")
-const NARRATIVE_FONT: Font = preload("res://fonts/oswald/Oswald-Light.ttf")
+const NARRATIVE_FONT: Font = preload("res://fonts/oswald/Oswald-Regular.ttf")
 
 static var catalog: Dictionary = {}
 static var raster_masks: Dictionary = {}
