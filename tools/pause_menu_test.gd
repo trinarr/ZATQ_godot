@@ -23,9 +23,11 @@ func run() -> void:
 	await pause.opening_tween.finished
 	check(pause.opening_frame==5,"opening reaches final authored frame")
 	check(pause.buttons.size()==4,"four independent action buttons")
+	check(pause.drum.z_index==2 and pause.resume_hit.z_index==3,"Flash drum and central arrow render above the action group")
 	check(pause.buttons.map(func(button: Button): return String(button.name))==["Продолжить","Звук","Начать заново","Выйти в меню"],"requested pause order")
 	check(not pause.has_signal("quit_requested"),"pause cannot request application exit")
 	for button: Button in pause.buttons:
+		check(button.z_index==1 and button.get_child(0).z_index==-1,"all shadows render below all buttons and the drum")
 		check(button.get_child_count()==3,"each button owns shadow, background and caption")
 		check(button.background.material is ShaderMaterial,"each background has independent shader state")
 		check(button.caption is Label and button.caption.mouse_filter==Control.MOUSE_FILTER_IGNORE,"native localized caption does not intercept clicks")
@@ -49,6 +51,10 @@ func run() -> void:
 	event.button_index = MOUSE_BUTTON_LEFT
 	event.pressed = true
 	pause.dimmer.gui_input.emit(event)
+	check(not resumed,"background press waits for gesture completion")
+	event.pressed = false
+	pause.dimmer.gui_input.emit(event)
+	await process_frame
 	check(resumed,"background click resumes like original Flash")
 	pause.free()
 	var quest: Node = root.get_node("Quest")

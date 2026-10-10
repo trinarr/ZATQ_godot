@@ -25,12 +25,15 @@ func configure(sound_enabled: bool) -> void:
 	drum = Control.new()
 	drum.name = "Drum"
 	drum.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	# PauseMov's Grey layer is above Butns in the original Flash display list.
+	drum.z_index = 2
 	add_child(drum)
 	COMPONENTS.draw(drum,parts.pause_drum,"background")
 	# Flash's central button has its own larger, alpha-shaped hit state.
 	var hit: Dictionary = parts.pause_resume_hit[0]
 	resume_hit = ALPHA_HOTSPOT.new()
 	resume_hit.name = "ResumeCenter"
+	resume_hit.z_index = 3
 	resume_hit.tooltip_text = LOC.text("@loc:ui.main.27")
 	resume_hit.hit_image = load("res://assets/flash_ui/" + hit.texture).get_image()
 	if resume_hit.hit_image.is_compressed(): resume_hit.hit_image.decompress()
@@ -68,6 +71,7 @@ func _play_opening() -> void:
 
 func _action(id: String, title: String, caption: String, offset: Vector2, action: Callable) -> Button:
 	var button := ACTION_BUTTON.new()
+	button.z_index = 1
 	button.set_meta("flash_offset",offset)
 	add_child(button)
 	button.configure(title,caption,parts["pause_"+id+"_shadow"])
