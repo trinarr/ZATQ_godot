@@ -336,13 +336,31 @@ func _draw_selector(animate: bool = false) -> void:
 	var entry: Dictionary = LOC.resolve_tree(_selector_items()[selector_index])
 	_art(entry.art if not str(entry.get("art","")).is_empty() else "selector_%d" % int(entry.frame))
 	_centered_text(entry.title,Rect2(56,69,703,43),24,true,true)
-	var body_size: int = 21
-	while body_size > 13 and BODY_FONT.get_multiline_string_size(entry.description,HORIZONTAL_ALIGNMENT_LEFT,233,body_size).y > 99:
-		body_size -= 1
-	_text(entry.description,Rect2(435,204,233,100),body_size)
+	# One readable size for episode and test cards. Use the space between
+	# the statistics divider and the card edge before shrinking an outlier.
+	var description_rect := Rect2(435,204,233,106)
+	var description_area := LAYOUT.scaled_rect(description_rect)
+	var description := _text(entry.description,description_rect,16)
+	description.name = "SelectorDescription"
+	while true:
+		var pixels := description.get_theme_font_size("font_size")
+		var paragraph := TextParagraph.new()
+		paragraph.width = description_area.size.x
+		paragraph.break_flags = TextServer.BREAK_MANDATORY | TextServer.BREAK_WORD_BOUND | TextServer.BREAK_ADAPTIVE
+		paragraph.add_string(description.text,BODY_FONT,pixels)
+		var last := paragraph.get_line_range(paragraph.get_line_count()-1)
+		var first := paragraph.get_line_range(0)
+		var visible_height := paragraph.get_size().y + description.get_theme_constant("line_spacing")*(paragraph.get_line_count()-1)
+		visible_height -= paragraph.get_line_ascent(0)+OPTICAL.ink(BODY_FONT,pixels,description.text.substr(first.x,first.y-first.x)).x
+		visible_height -= paragraph.get_line_descent(paragraph.get_line_count()-1)-OPTICAL.ink(BODY_FONT,pixels,description.text.substr(last.x,last.y-last.x)).y
+		if visible_height <= description_area.size.y or pixels <= 24: break
+		description.add_theme_font_size_override("font_size",pixels-1)
+	OPTICAL.top(description,description_area)
 	if selector_kind == "tests":
-		_centered_text(LOC.text("@loc:ui.main.12"),Rect2(435,162,239,34),16)
-		_centered_text(LOC.text("@loc:ui.main.13") + entry.questions,Rect2(132,280,282,31),19,false,true)
+		var last_result := _centered_text(LOC.text("@loc:ui.main.12"),Rect2(435,150,239,40),16)
+		last_result.name = "SelectorLastResult"
+		var questions := _centered_text(LOC.text("@loc:ui.main.13") + entry.questions,Rect2(132,277,282,31),19,false,true)
+		questions.name = "SelectorQuestionCount"
 	else:
 		var stats: Dictionary = Quest.stats_for(entry.get("episode",1))
 		_centered_text(": %d" % (stats.wins if entry.available else 0),Rect2(500,156.5,57,28),21)

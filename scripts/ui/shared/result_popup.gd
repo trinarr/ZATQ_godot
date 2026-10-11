@@ -44,10 +44,19 @@ func configure(data: Dictionary, stats: Dictionary, ending_count: int, has_next_
 	statistics.get_child(0).name = "ResultIcon"
 	var count := _centered_text(value,Rect2(0,icon_height+8,81,count_height),33,false,true,statistics)
 	count.name = "ResultCount"
-	var font_size := 22
-	while font_size > 12 and BODY_FONT.get_multiline_string_size(data.text,HORIZONTAL_ALIGNMENT_LEFT,534.45*2,font_size*2).y > 166*2:
-		font_size -= 1
-	var body := _text(data.text,Rect2(166.05,144,534.45,166),font_size)
+	var text_rect := Rect2(166.05,SUBTITLE_RECT.end.y+8,534.45,0)
+	text_rect.size.y = 322-text_rect.position.y
+	var text := LOC.text(data.text)
+	var font_pixels := roundi(preload("res://scripts/ui/shared/narrative_block.gd").NARRATIVE_FONT_SIZE*2)
+	while font_pixels > 24:
+		var measured := NARRATIVE_FONT.get_multiline_string_size(text,HORIZONTAL_ALIGNMENT_LEFT,text_rect.size.x*2,font_pixels)
+		var lines := maxi(1,roundi(measured.y/NARRATIVE_FONT.get_height(font_pixels)))
+		var required := measured.y+get_theme_constant("line_spacing","Label")*(lines-1)
+		if required <= text_rect.size.y*2: break
+		font_pixels -= 1
+	var body := _text(text,text_rect)
+	body.add_theme_font_override("font",NARRATIVE_FONT)
+	body.add_theme_font_size_override("font_size",font_pixels)
 	body.name = "ResultStory"
 	body.horizontal_alignment = HORIZONTAL_ALIGNMENT_FILL
 	body.justification_flags = TextServer.JUSTIFICATION_WORD_BOUND | TextServer.JUSTIFICATION_SKIP_LAST_LINE

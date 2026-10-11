@@ -55,12 +55,28 @@ func run() -> void:
    check(icon.get_parent()==stats and count.get_parent()==stats,"icon and counter move as one block")
    check(absf((icon.get_rect().get_center().x)-(count.get_meta("optical_area") as Rect2).get_center().x)<0.01,"icon and counter share horizontal center")
    var story: Label=result.find_child("ResultStory",true,false)
+   check(story.get_theme_font("font")==result.NARRATIVE_FONT,"result description uses narrative Regular font")
+   check(story.get_theme_font_size("font_size")==roundi(preload("res://scripts/ui/shared/narrative_block.gd").NARRATIVE_FONT_SIZE*2),"short result matches narrative font size")
    var underlay: TextureRect
    for child: Node in result.get_children():
     if child is TextureRect and child.texture==load("res://assets/flash_ui/episode1_components/part_62082e0e9b33edbe7d78.png"):underlay=child
    check(underlay==null,"light result underlay removed")
-   check(story.position.y>=275,"story starts below subtitle strip")
-   check(story.get_rect().end.y<=640,"story leaves space before result buttons")
+   check(story.position.y>=231,"story starts below subtitle strip")
+   check(story.get_rect().end.y<=644,"story leaves space before result buttons")
    item.free();result.free()
+ TranslationServer.set_locale("ru")
+ var long_result:=RESULT.instantiate();root.add_child(long_result)
+ var data: Dictionary=root.get_node("Quest").current("e5_result_114")
+ long_result.configure(data,{"endings":[],"losses":1},3,false)
+ await process_frame;await process_frame
+ var narrative: Label=long_result.find_child("ResultStory",true,false)
+ var font: Font=narrative.get_theme_font("font")
+ var previous_size:=22
+ while previous_size>12 and font.get_multiline_string_size(narrative.text,HORIZONTAL_ALIGNMENT_LEFT,1068.9,previous_size*2).y>332:previous_size-=1
+ check(narrative.get_theme_font_size("font_size")>previous_size*2,"reported long result uses a larger font")
+ check(narrative.get_minimum_size().y<=413.01,"long result fits its expanded area")
+ check(narrative.get_rect().end.y<=644.01,"long result stays above action buttons")
+ print("Long result font: ",previous_size*2," -> ",narrative.get_theme_font_size("font_size"),"; text area: ",narrative.size)
+ long_result.free()
  print("Metal popup layout: %d checks, %d failures" % [checks,failures])
  quit(1 if failures else 0)

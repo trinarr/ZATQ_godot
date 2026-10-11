@@ -18,6 +18,10 @@ static func ink(font: Font, pixels: int, text: String) -> Vector2:
   top=minf(top,bounds.x);bottom=maxf(bottom,bounds.y)
  return Vector2(top,bottom) if is_finite(top) else Vector2(-font.get_ascent(pixels),font.get_descent(pixels))
 static func center(label: Label, area: Rect2) -> void:
+ _align(label,area,false)
+static func top(label: Label, area: Rect2) -> void:
+ _align(label,area,true)
+static func _align(label: Label, area: Rect2, align_top: bool) -> void:
  var font:=label.get_theme_font("font")
  var pixels:=label.get_theme_font_size("font_size")
  var text:=label.text.to_upper() if label.uppercase else label.text
@@ -35,7 +39,7 @@ static func center(label: Label, area: Rect2) -> void:
  for i: int in count-1:baseline+=paragraph.get_line_size(i).y+spacing
  var bottom:=baseline+ink(font,pixels,text.substr(last.x,last.y-last.x)).y
  label.vertical_alignment=VERTICAL_ALIGNMENT_TOP
- label.position=Vector2(area.position.x,area.get_center().y-(top+bottom)*0.5)
+ label.position=Vector2(area.position.x,area.position.y-top if align_top else area.get_center().y-(top+bottom)*0.5)
  label.size=Vector2(area.size.x,paragraph.get_size().y+spacing*maxi(0,count-1))
  label.set_deferred("size",label.size)
  label.set_meta("optical_area",area)
