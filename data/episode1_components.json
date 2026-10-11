@@ -1684,15 +1684,47 @@
   "layout_bg_screams": [
     {
       "type": "texture",
-      "texture": "episode1_components/part_a575509da7b0c9eb764d.png",
+      "texture": "episode1_components/part_b8d17e737293206d9d10.png",
       "rect": [
         0.0,
         0.0,
         800.0,
         480.0
       ],
-      "source": "Mov/Symbol 2800",
-      "layer": "background"
+      "source": "painted:city_dawn_v1",
+      "layer": "background",
+      "shader": "res://shaders/city_dawn_grade.gdshader"
+    },
+    {
+      "type": "panel",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source": "painted:city_overcast_v1",
+      "layer": "background",
+      "shader": "res://shaders/city_overcast.gdshader"
+    },
+    {
+      "type": "texture",
+      "texture": "episode1_components/part_683fbdad938ef1f73321.png",
+      "rect": [
+        0.0,
+        0.0,
+        800.0,
+        480.0
+      ],
+      "source": "painted:city_outbreak_v1",
+      "layer": "background",
+      "shader": "res://shaders/city_outbreak_overlay.gdshader"
     }
   ],
   "layout_bg_transport": [
@@ -1978,14 +2010,14 @@
   "layout_bg_wake": [
     {
       "type": "texture",
-      "texture": "episode1_components/part_732ed1e348a55ed12d81.png",
+      "texture": "episode1_components/part_b8d17e737293206d9d10.png",
       "rect": [
         0.0,
         0.0,
         800.0,
         480.0
       ],
-      "source": "external:Fon1_1.png",
+      "source": "painted:city_dawn_v1",
       "layer": "background"
     }
   ],

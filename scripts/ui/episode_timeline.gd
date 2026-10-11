@@ -99,7 +99,7 @@ func configure(art: String) -> void:
 		if part.type!="highlight":
 			visual.position=Vector2(r[0],r[1])*2;visual.size=Vector2(r[2],r[3])*2
 		visual.mouse_filter=Control.MOUSE_FILTER_IGNORE
-		var paint:=ShaderMaterial.new();paint.shader=COLOR_TRANSFORM
+		var paint:=ShaderMaterial.new();paint.shader=load(part.shader) if part.has("shader") else COLOR_TRANSFORM
 		if part.has("blur") and visual is TextureRect:
 			visual.texture_filter=CanvasItem.TEXTURE_FILTER_LINEAR
 			BLUR_CACHE.bind(paint,visual.texture,part.blur)
@@ -169,6 +169,7 @@ func seek_frame(index: int, subframe: float = 0.0) -> void:
 		_update_art_masks()
 		_update_captions(index)
 	_update_blur_strength(float(current_frame)+subframe)
+	_update_fades(float(current_frame)+subframe)
 	for label: Label in reveal_labels:
 		if is_instance_valid(label):TYPEWRITER.apply(label,(float(index)+subframe)/float(catalog().fps),phase!="intro")
 	if current_frame==frames.size()-1 and playing and cycle<=1:
@@ -178,6 +179,19 @@ func _process(delta: float) -> void:
 	elapsed+=playback_clock.advance(delta)
 	var frame_time: float=elapsed*float(catalog().fps)
 	seek_frame(int(floor(frame_time)),fposmod(frame_time,1.0))
+
+# New painted layers use continuous alpha between the original 19 fps keys.
+func _update_fades(frame_time: float) -> void:
+	for key: String in spec.get("fade_in",{}):
+		var fade: Dictionary=spec.fade_in[key]
+		var progress: float=clampf((frame_time-float(fade.start))/maxf(0.001,float(fade.end)-float(fade.start)),0.0,1.0)
+		sprites[key].modulate.a=smoothstep(0.0,1.0,progress) if phase=="intro" else 1.0
+
+	for key: String in spec.get("shader_fade_in",{}):
+		var fade: Dictionary=spec.shader_fade_in[key]
+		var progress: float=clampf((frame_time-float(fade.start))/maxf(0.001,float(fade.end)-float(fade.start)),0.0,1.0)
+		var paint: ShaderMaterial=sprites[key].get_child(0).material
+		paint.set_shader_parameter(fade.uniform,smoothstep(0.0,1.0,progress) if phase=="intro" else 1.0)
 
 func _update_art_masks() -> void:
 	for key: String in masked_keys:

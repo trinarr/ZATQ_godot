@@ -55,6 +55,10 @@ static func draw(parent: Control, parts: Array, layer: String = "") -> void:
   control.position = Vector2(r[0],r[1]) * 2
   control.size = Vector2(r[2],r[3]) * 2
   control.mouse_filter = Control.MOUSE_FILTER_IGNORE
+  if part.has("shader"):
+   var paint := ShaderMaterial.new()
+   paint.shader = load(part.shader)
+   control.material = paint
   if part.has("blur"):
    control.texture_filter=CanvasItem.TEXTURE_FILTER_LINEAR
    var paint:=ShaderMaterial.new()
