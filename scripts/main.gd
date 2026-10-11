@@ -42,6 +42,7 @@ var section: String = "menu"
 var selector_kind: String = "episodes"
 var selector_index: int = 0
 var selectors: Array = []
+var quiz: RefCounted = preload("res://scripts/core/quiz_state.gd").new()
 
 func _ready() -> void:
 	get_window().content_scale_aspect = Window.CONTENT_SCALE_ASPECT_EXPAND
@@ -357,7 +358,9 @@ func _draw_selector(animate: bool = false) -> void:
 		description.add_theme_font_size_override("font_size",pixels-1)
 	OPTICAL.top(description,description_area)
 	if selector_kind == "tests":
-		var last_result := _centered_text(LOC.text("@loc:ui.main.12"),Rect2(435,150,239,40),16)
+		var previous: Dictionary = Quest.test_results.get(str(int(entry.test_id)),{})
+		var previous_label := LOC.text(previous.label) if not previous.is_empty() else LOC.text("@loc:tests.ui.absent")
+		var last_result := _centered_text(LOC.text("@loc:tests.ui.last_result").format({"value":previous_label}),Rect2(435,150,239,40),16)
 		last_result.name = "SelectorLastResult"
 		var questions := _centered_text(LOC.text("@loc:ui.main.13") + entry.questions,Rect2(132,277,282,31),19,false,true)
 		questions.name = "SelectorQuestionCount"
@@ -377,10 +380,48 @@ func _draw_selector(animate: bool = false) -> void:
 
 func _selector_start() -> void:
 	var entry: Dictionary = LOC.resolve_tree(_selector_items()[selector_index])
+	if selector_kind == "tests":
+		_start_test(int(entry.test_id))
+		return
 	if entry.available:
 		_request_new(entry.get("episode",1))
 	else:
 		_message(entry.title,LOC.text("@loc:ui.main.19"))
+
+func _start_test(number: int) -> void:
+	quiz.start(number)
+	playing = false
+	paused = false
+	music.stop()
+	_show_test()
+
+func _show_test() -> void:
+	_reset_screen()
+	section = "test"
+	var view := preload("res://scripts/ui/shared/quiz_view.gd").new()
+	screen.add_child(view)
+	view.configure(quiz)
+	view.choice_selected.connect(quiz.select)
+	view.confirmed.connect(func():
+		if not quiz.confirm(): return
+		if quiz.result.is_empty(): _show_test()
+		else:
+			Quest.test_results[str(quiz.test_id)] = quiz.result.duplicate(true)
+			Quest.save_game()
+			_show_test_result())
+	view.restart_requested.connect(func(): _start_test(quiz.test_id))
+	view.menu_requested.connect(_show_menu)
+
+func _show_test_result() -> void:
+	_reset_screen()
+	section = "test_result"
+	var view := preload("res://scripts/ui/shared/quiz_result.gd").new()
+	_attach_panel(view)
+	view.configure(quiz.result)
+	view.play_flash_entrance("result")
+	view.restart_requested.connect(func(): _start_test(quiz.test_id))
+	view.menu_requested.connect(_show_menu)
+	_play_sound("Ending")
 
 func _show_help() -> void:
 	section = "help"
@@ -651,6 +692,8 @@ func _refresh_locale() -> void:
 		if was_paused: _show_pause()
 	elif section == "selector": _draw_selector()
 	elif section == "help": _show_help()
+	elif section == "test": _show_test()
+	elif section == "test_result": _show_test_result()
 	else: _show_menu()
 
 func _component_backdrop(filename: String) -> bool:

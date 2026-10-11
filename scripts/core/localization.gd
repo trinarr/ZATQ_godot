@@ -6,7 +6,7 @@ const DIRECTORY := "res://locales/"
 static var translations: Array[Translation] = []
 static var ready := false
 static var tables: Dictionary = {}
-const BUILTIN_TABLES := ["ui", "episode1", "episode2", "episode3", "episode4", "episode5", "episode6"]
+const BUILTIN_TABLES := ["ui", "episode1", "episode2", "episode3", "episode4", "episode5", "episode6", "tests"]
 static func imported_table(path:String)->Dictionary:
  var base:=path.trim_suffix(".csv")
  var locales:Array[String]=["ru","en"]
@@ -20,7 +20,17 @@ static func imported_table(path:String)->Dictionary:
   if not ResourceLoader.exists(resource_path):continue
   var translation:=ResourceLoader.load(resource_path,"Translation") as Translation
   if translation==null:continue
-  for key:String in translation.get_message_list():
+  var keys:PackedStringArray=[]
+  if translation is OptimizedTranslation:
+   # Optimized resources cannot enumerate keys; CSV is included in exports.
+   var source_csv:=FileAccess.open(path,FileAccess.READ)
+   if source_csv==null:continue
+   source_csv.get_csv_line()
+   while not source_csv.eof_reached():
+    var row:=source_csv.get_csv_line()
+    if row.size()>1 and not row[0].is_empty():keys.append(row[0])
+  else:keys=translation.get_message_list()
+  for key:String in keys:
    if not rows.has(key):rows[key]={}
    rows[key][locale]=str(translation.get_message(key))
  return {"headers":["key"]+locales,"rows":rows}

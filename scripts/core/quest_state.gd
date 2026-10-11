@@ -22,6 +22,7 @@ var episode_starts: Dictionary = {}
 var episode_defaults: Dictionary = {}
 var episode_metadata: Dictionary = {}
 var extra_stats: Dictionary = {}
+var test_results: Dictionary = {}
 var episode: int = 1
 var episode2_stats: Dictionary = {"wins":0,"losses":0,"endings":[]}
 var channel: int = 0
@@ -238,11 +239,19 @@ func set_sound(enabled: bool) -> void:
 	save_game()
 
 func _snapshot() -> Dictionary:
-	return {"version":VERSION,"extra_stats":extra_stats,"activity":activity,"current_id":current_id,"popup_origin":popup_origin,"flags":flags,"channel":channel,"sound_enabled":sound_enabled,"has_progress":has_progress,"episode":episode,"episode1_stats":episode1_stats,"episode2_stats":episode2_stats,"result_recorded":result_recorded}
+	return {"version":VERSION,"test_results":test_results,"extra_stats":extra_stats,"activity":activity,"current_id":current_id,"popup_origin":popup_origin,"flags":flags,"channel":channel,"sound_enabled":sound_enabled,"has_progress":has_progress,"episode":episode,"episode1_stats":episode1_stats,"episode2_stats":episode2_stats,"result_recorded":result_recorded}
 
 func _valid(data: Variant) -> bool:
 	if not data is Dictionary or data.get("version") != VERSION:
 		return false
+	if not data.get("test_results",{}) is Dictionary: return false
+	for key: Variant in data.get("test_results",{}):
+		if not key is String or key not in ["1","2","3","4","5"]: return false
+		var test_result: Variant = data.test_results[key]
+		if not test_result is Dictionary or not test_result.get("label") is String: return false
+		for field: String in ["text","advice"]:
+			if not test_result.get(field) is String: return false
+		if not test_result.get("result_id") is float and not test_result.get("result_id") is int: return false
 	if not data.get("popup_origin","") is String or (not str(data.get("popup_origin","")).is_empty() and not nodes.has(data.popup_origin)): return false
 	if not data.get("current_id") is String or not data.get("flags") is Dictionary:
 		return false
@@ -372,6 +381,7 @@ func _load_save() -> void:
 	flags.LinkedFr = flags.get("LinkedFr",false)
 	activity = data.get("activity",{}).duplicate(true)
 	extra_stats = data.get("extra_stats",{}).duplicate(true)
+	test_results = data.get("test_results",{}).duplicate(true)
 	for stats: Dictionary in extra_stats.values():
 		stats.wins = int(stats.wins)
 		stats.losses = int(stats.losses)

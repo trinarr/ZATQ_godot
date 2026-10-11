@@ -1,0 +1,1769 @@
+{
+  "tests": [
+    {
+      "id": 1,
+      "source": "TestStartMov.as / TextSwitcher1",
+      "initial_score": 0,
+      "questions": {
+        "1": {
+          "text": "@loc:tests.test1.question1",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test1.answer1",
+              "result_id": 12
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test1.answer5",
+              "next": 2
+            }
+          ]
+        },
+        "2": {
+          "text": "@loc:tests.test1.question2",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test1.answer1",
+              "next": 3
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test1.answer5",
+              "next": 4
+            }
+          ]
+        },
+        "3": {
+          "text": "@loc:tests.test1.question3",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test1.answer1",
+              "next": 10
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test1.answer5",
+              "result_id": 13
+            }
+          ]
+        },
+        "4": {
+          "text": "@loc:tests.test1.question4",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test1.answer1",
+              "next": 5
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test1.answer5",
+              "next": 6
+            }
+          ]
+        },
+        "5": {
+          "text": "@loc:tests.test1.question5",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test1.answer1",
+              "result_id": 14
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test1.answer5",
+              "next": 7
+            }
+          ]
+        },
+        "6": {
+          "text": "@loc:tests.test1.question6",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test1.answer1",
+              "result_id": 15
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test1.answer5",
+              "next": 8
+            }
+          ]
+        },
+        "7": {
+          "text": "@loc:tests.test1.question7",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test1.answer1",
+              "result_id": 16
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test1.answer5",
+              "next": 9
+            }
+          ]
+        },
+        "8": {
+          "text": "@loc:tests.test1.question8",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test1.answer1",
+              "result_id": 17
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test1.answer5",
+              "next": 11
+            }
+          ]
+        },
+        "9": {
+          "text": "@loc:tests.test1.question9",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test1.answer1",
+              "result_id": 18
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test1.answer5",
+              "next": 13
+            }
+          ]
+        },
+        "10": {
+          "text": "@loc:tests.test1.question10",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test1.answer1",
+              "result_id": 19
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test1.answer5",
+              "next": 12
+            }
+          ]
+        },
+        "11": {
+          "text": "@loc:tests.test1.question11",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test1.answer1",
+              "result_id": 20
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test1.answer5",
+              "next": 15
+            }
+          ]
+        },
+        "12": {
+          "text": "@loc:tests.test1.question12",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test1.answer1",
+              "result_id": 21
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test1.answer5",
+              "next": 14
+            }
+          ]
+        },
+        "13": {
+          "text": "@loc:tests.test1.question13",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test1.answer1",
+              "result_id": 22
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test1.answer5",
+              "result_id": 23
+            }
+          ]
+        },
+        "14": {
+          "text": "@loc:tests.test1.question14",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test1.answer1",
+              "result_id": 24
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test1.answer5",
+              "next": 16
+            }
+          ]
+        },
+        "15": {
+          "text": "@loc:tests.test1.question15",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test1.answer1",
+              "result_id": 25
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test1.answer5",
+              "result_id": 26
+            }
+          ]
+        },
+        "16": {
+          "text": "@loc:tests.test1.question16",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test1.answer1",
+              "result_id": 27
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test1.answer5",
+              "result_id": 28
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "source": "TestStartMov.as / TextSwitcher2",
+      "initial_score": 0,
+      "questions": {
+        "1": {
+          "text": "@loc:tests.test2.question1",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test2.question1.answer1",
+              "points": 2
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test2.question1.answer2",
+              "points": 1
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test2.question1.answer3",
+              "points": 2
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test2.question1.answer4",
+              "points": 3
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test2.question1.answer5",
+              "points": 2
+            },
+            {
+              "id": 6,
+              "text": "@loc:tests.test2.question1.answer6",
+              "points": 0
+            },
+            {
+              "id": 7,
+              "text": "@loc:tests.test2.question1.answer7",
+              "points": 2
+            },
+            {
+              "id": 8,
+              "text": "@loc:tests.test2.question1.answer8",
+              "points": 3
+            }
+          ],
+          "scored": true
+        },
+        "2": {
+          "text": "@loc:tests.test2.question2",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test2.question2.answer1",
+              "points": 2
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test2.question2.answer2",
+              "points": 3
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test2.question2.answer3",
+              "points": 2
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test2.question2.answer4",
+              "points": 0
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test2.question2.answer5",
+              "points": 1
+            },
+            {
+              "id": 6,
+              "text": "@loc:tests.test2.question2.answer6",
+              "points": 2
+            },
+            {
+              "id": 7,
+              "text": "@loc:tests.test2.question2.answer7",
+              "points": 2
+            },
+            {
+              "id": 8,
+              "text": "@loc:tests.test2.question2.answer8",
+              "points": 1
+            }
+          ],
+          "scored": true
+        },
+        "3": {
+          "text": "@loc:tests.test2.question3",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test2.question3.answer1",
+              "points": 2
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test2.question3.answer2",
+              "points": 1
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test2.question3.answer3",
+              "points": 0
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test2.question3.answer4",
+              "points": 1
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test2.question3.answer5",
+              "points": 2
+            },
+            {
+              "id": 6,
+              "text": "@loc:tests.test2.question3.answer6",
+              "points": 2
+            },
+            {
+              "id": 7,
+              "text": "@loc:tests.test2.question3.answer7",
+              "points": 3
+            },
+            {
+              "id": 8,
+              "text": "@loc:tests.test2.question3.answer8",
+              "points": 1
+            }
+          ],
+          "scored": true
+        },
+        "4": {
+          "text": "@loc:tests.test2.question4",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test2.question4.answer1",
+              "points": 2
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test2.question4.answer2",
+              "points": 3
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test2.question4.answer3",
+              "points": 3
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test2.question4.answer4",
+              "points": 2
+            }
+          ],
+          "scored": true
+        },
+        "5": {
+          "text": "@loc:tests.test2.question5",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test2.question5.answer1",
+              "points": 1
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test2.question5.answer2",
+              "points": 1
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test2.question5.answer3",
+              "points": 2
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test2.question5.answer4",
+              "points": 1
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test2.question5.answer5",
+              "points": 1
+            },
+            {
+              "id": 6,
+              "text": "@loc:tests.test2.question5.answer6",
+              "points": 3
+            },
+            {
+              "id": 7,
+              "text": "@loc:tests.test2.question5.answer7",
+              "points": 2
+            },
+            {
+              "id": 8,
+              "text": "@loc:tests.test2.question5.answer8",
+              "points": 1
+            }
+          ],
+          "scored": true
+        },
+        "6": {
+          "text": "@loc:tests.test2.question6",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test2.question6.answer1",
+              "points": 1
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test2.question6.answer2",
+              "points": 1
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test2.question6.answer3",
+              "points": 3
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test2.question6.answer4",
+              "points": 2
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test2.question6.answer5",
+              "points": 2
+            },
+            {
+              "id": 6,
+              "text": "@loc:tests.test2.question6.answer6",
+              "points": 1
+            },
+            {
+              "id": 7,
+              "text": "@loc:tests.test2.question6.answer7",
+              "points": 2
+            },
+            {
+              "id": 8,
+              "text": "@loc:tests.test2.question6.answer8",
+              "points": 0
+            }
+          ],
+          "scored": true
+        },
+        "7": {
+          "text": "@loc:tests.test2.question7",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test2.question7.answer1",
+              "points": 2
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test2.question7.answer2",
+              "points": 2
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test2.question7.answer3",
+              "points": 1
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test2.question7.answer4",
+              "points": 1
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test2.question7.answer5",
+              "points": 3
+            },
+            {
+              "id": 6,
+              "text": "@loc:tests.test2.question7.answer6",
+              "points": 1
+            },
+            {
+              "id": 8,
+              "text": "@loc:tests.test2.question7.answer8",
+              "points": 0
+            }
+          ],
+          "scored": true
+        },
+        "8": {
+          "text": "@loc:tests.test2.question8",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test2.question8.answer1",
+              "points": 2
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test2.question8.answer2",
+              "points": 0
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test2.question8.answer3",
+              "points": 2
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test2.question8.answer4",
+              "points": 0
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test2.question8.answer5",
+              "points": 1
+            },
+            {
+              "id": 6,
+              "text": "@loc:tests.test2.question8.answer6",
+              "points": 1
+            },
+            {
+              "id": 7,
+              "text": "@loc:tests.test2.question8.answer7",
+              "points": 3
+            },
+            {
+              "id": 8,
+              "text": "@loc:tests.test2.question8.answer8",
+              "points": 2
+            }
+          ],
+          "scored": true
+        },
+        "9": {
+          "text": "@loc:tests.test2.question9",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test2.question9.answer1",
+              "points": 0
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test2.question9.answer2",
+              "points": 1
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test2.question9.answer3",
+              "points": 1
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test2.question9.answer4",
+              "points": 0
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test2.question9.answer5",
+              "points": 2
+            },
+            {
+              "id": 6,
+              "text": "@loc:tests.test2.question9.answer6",
+              "points": 2
+            },
+            {
+              "id": 7,
+              "text": "@loc:tests.test2.question9.answer7",
+              "points": 1
+            },
+            {
+              "id": 8,
+              "text": "@loc:tests.test2.question9.answer8",
+              "points": 3
+            }
+          ],
+          "scored": true
+        },
+        "10": {
+          "text": "@loc:tests.test2.question10",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test2.question10.answer1",
+              "points": 0
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test2.question10.answer2",
+              "points": 0
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test2.question10.answer3",
+              "points": 0
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test2.question10.answer4",
+              "points": 0
+            }
+          ],
+          "scored": false
+        }
+      }
+    },
+    {
+      "id": 3,
+      "source": "TestStartMov.as / TextSwitcher3",
+      "initial_score": 0,
+      "questions": {
+        "1": {
+          "text": "@loc:tests.test3.question1",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test3.question1.answer1",
+              "points": 6
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test3.question1.answer2",
+              "points": 4
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test3.question1.answer3",
+              "points": 3
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test3.question1.answer4",
+              "points": 1
+            }
+          ],
+          "hint": "@loc:tests.test3.question1.hint"
+        },
+        "2": {
+          "text": "@loc:tests.test3.question2",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test3.question2.answer1",
+              "points": 6
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test3.question2.answer2",
+              "points": 4
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test3.question2.answer3",
+              "points": 2
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test3.question2.answer4",
+              "points": 1
+            }
+          ],
+          "hint": "@loc:tests.test3.question2.hint"
+        },
+        "3": {
+          "text": "@loc:tests.test3.question3",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test3.question3.answer1",
+              "points": 0
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test3.question3.answer2",
+              "points": 2
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test3.question3.answer3",
+              "points": 3
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test3.question3.answer4",
+              "points": 6
+            }
+          ],
+          "hint": "@loc:tests.test3.question3.hint"
+        },
+        "4": {
+          "text": "@loc:tests.test3.question4",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test3.question4.answer1",
+              "points": 0
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test3.question4.answer2",
+              "points": 2
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test3.question4.answer3",
+              "points": 4
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test3.question4.answer4",
+              "points": 6
+            }
+          ],
+          "hint": "@loc:tests.test3.question4.hint"
+        },
+        "5": {
+          "text": "@loc:tests.test3.question5",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test3.question5.answer1",
+              "points": 0
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test3.question5.answer2",
+              "points": 1
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test3.question5.answer3",
+              "points": 4
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test3.question5.answer4",
+              "points": 6
+            }
+          ],
+          "hint": "@loc:tests.test3.question5.hint"
+        },
+        "6": {
+          "text": "@loc:tests.test3.question6",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test3.question6.answer1",
+              "points": 1
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test3.question6.answer2",
+              "points": 4
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test3.question6.answer3",
+              "points": 6
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test3.question6.answer4",
+              "points": 3
+            }
+          ],
+          "hint": "@loc:tests.test3.question6.hint"
+        },
+        "7": {
+          "text": "@loc:tests.test3.question7",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test3.question7.answer1",
+              "points": 6
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test3.question7.answer2",
+              "points": 4
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test3.question7.answer3",
+              "points": 2
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test3.question7.answer4",
+              "points": 0
+            }
+          ],
+          "hint": "@loc:tests.test3.question7.hint"
+        },
+        "8": {
+          "text": "@loc:tests.test3.question8",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test3.question8.answer1",
+              "points": 6
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test3.question8.answer2",
+              "points": 4
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test3.question8.answer3",
+              "points": 3
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test3.question8.answer4",
+              "points": 0
+            }
+          ],
+          "hint": "@loc:tests.test3.question8.hint"
+        },
+        "9": {
+          "text": "@loc:tests.test3.question9",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test3.question9.answer1",
+              "points": 6
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test3.question9.answer2",
+              "points": 4
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test3.question9.answer3",
+              "points": 2
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test3.question9.answer4",
+              "points": 0
+            }
+          ],
+          "hint": "@loc:tests.test3.question9.hint"
+        },
+        "10": {
+          "text": "@loc:tests.test3.question10",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test3.question10.answer1",
+              "points": 0
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test3.question10.answer2",
+              "points": 1
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test3.question10.answer3",
+              "points": 2
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test3.question10.answer4",
+              "points": 4
+            }
+          ],
+          "hint": "@loc:tests.test3.question10.hint"
+        },
+        "11": {
+          "text": "@loc:tests.test3.question11",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test3.question11.answer1",
+              "points": 0
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test3.question11.answer2",
+              "points": 6
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test3.question11.answer3",
+              "points": 2
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test3.question11.answer4",
+              "points": 4
+            }
+          ],
+          "hint": "@loc:tests.test3.question11.hint"
+        },
+        "12": {
+          "text": "@loc:tests.test3.question12",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test3.question12.answer1",
+              "points": 0
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test3.question12.answer2",
+              "points": 2
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test3.question12.answer3",
+              "points": 4
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test3.question12.answer4",
+              "points": 6
+            }
+          ],
+          "hint": "@loc:tests.test3.question12.hint"
+        },
+        "13": {
+          "text": "@loc:tests.test3.question13",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test3.question13.answer1",
+              "points": 6
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test3.question13.answer2",
+              "points": 3
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test3.question13.answer3",
+              "points": 1
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test3.question13.answer4",
+              "points": 4
+            }
+          ],
+          "hint": "@loc:tests.test3.question13.hint"
+        },
+        "14": {
+          "text": "@loc:tests.test3.question14",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test3.question14.answer1",
+              "points": 0
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test3.question14.answer2",
+              "points": 1
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test3.question14.answer3",
+              "points": 3
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test3.question14.answer4",
+              "points": 1
+            },
+            {
+              "id": 5,
+              "text": "@loc:tests.test3.question14.answer5",
+              "points": 2
+            },
+            {
+              "id": 6,
+              "text": "@loc:tests.test3.question14.answer6",
+              "points": 4
+            },
+            {
+              "id": 7,
+              "text": "@loc:tests.test3.question14.answer7",
+              "points": 2
+            },
+            {
+              "id": 8,
+              "text": "@loc:tests.test3.question14.answer8",
+              "points": 6
+            }
+          ],
+          "hint": "@loc:tests.test3.question14.hint"
+        },
+        "15": {
+          "text": "@loc:tests.test3.question15",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test3.question15.answer1",
+              "points": 1
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test3.question15.answer2",
+              "points": 3
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test3.question15.answer3",
+              "points": 6
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test3.question15.answer4",
+              "points": 4
+            }
+          ],
+          "hint": "@loc:tests.test3.question15.hint"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "source": "TestStartMov.as / TextSwitcher4",
+      "initial_score": 35,
+      "questions": {
+        "1": {
+          "text": "@loc:tests.test4.question1",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test4.question1.answer1",
+              "points": -4
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test4.question1.answer2",
+              "points": 5
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test4.question1.answer3",
+              "points": 10
+            }
+          ]
+        },
+        "2": {
+          "text": "@loc:tests.test4.question2",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test4.question2.answer1",
+              "points": -7
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test4.question2.answer2",
+              "points": -3
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test4.question2.answer3",
+              "points": 9
+            }
+          ]
+        },
+        "3": {
+          "text": "@loc:tests.test4.question3",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test4.question3.answer1",
+              "points": -9
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test4.question3.answer2",
+              "points": 4
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test4.question3.answer3",
+              "points": 10
+            }
+          ]
+        },
+        "4": {
+          "text": "@loc:tests.test4.question4",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test4.question4.answer1",
+              "points": -10
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test4.question4.answer2",
+              "points": 0
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test4.question4.answer3",
+              "points": 10
+            }
+          ]
+        },
+        "5": {
+          "text": "@loc:tests.test4.question5",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test4.question5.answer1",
+              "points": -8
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test4.question5.answer2",
+              "points": 2
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test4.question5.answer3",
+              "points": 8
+            }
+          ]
+        },
+        "6": {
+          "text": "@loc:tests.test4.question6",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test4.question6.answer1",
+              "points": 9
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test4.question6.answer2",
+              "points": -5
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test4.question6.answer3",
+              "points": -9
+            }
+          ]
+        },
+        "7": {
+          "text": "@loc:tests.test4.question7",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test4.question7.answer1",
+              "points": 3
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test4.question7.answer2",
+              "points": -7
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test4.question7.answer3",
+              "points": 7
+            }
+          ]
+        },
+        "8": {
+          "text": "@loc:tests.test4.question8",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test4.question8.answer1",
+              "points": -2
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test4.question8.answer2",
+              "points": -6
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test4.question8.answer3",
+              "points": 3
+            }
+          ]
+        },
+        "9": {
+          "text": "@loc:tests.test4.question9",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test4.question9.answer1",
+              "points": 4
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test4.question9.answer2",
+              "points": -4
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test4.question9.answer3",
+              "points": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 5,
+      "source": "TestStartMov.as / TextSwitcher5",
+      "initial_score": 0,
+      "questions": {
+        "1": {
+          "text": "@loc:tests.test5.question1",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test5.question1.answer1",
+              "points": 1
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test5.question1.answer2",
+              "points": 2
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test5.question1.answer3",
+              "points": 3
+            }
+          ],
+          "hint": "@loc:tests.test5.question1.hint"
+        },
+        "2": {
+          "text": "@loc:tests.test5.question2",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test5.question2.answer1",
+              "points": 1
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test5.question2.answer2",
+              "points": 2
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test5.question2.answer3",
+              "points": 3
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test5.question2.answer4",
+              "points": 4
+            }
+          ],
+          "hint": "@loc:tests.test5.question2.hint"
+        },
+        "3": {
+          "text": "@loc:tests.test5.question3",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test5.question3.answer1",
+              "points": 4
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test5.question3.answer2",
+              "points": 1
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test5.question3.answer3",
+              "points": 2
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test5.question3.answer4",
+              "points": 3
+            }
+          ],
+          "hint": "@loc:tests.test5.question3.hint"
+        },
+        "4": {
+          "text": "@loc:tests.test5.question4",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test5.question4.answer1",
+              "points": 0
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test5.question4.answer2",
+              "points": 1
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test5.question4.answer3",
+              "points": 3
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test5.question4.answer4",
+              "points": 1
+            }
+          ],
+          "hint": "@loc:tests.test5.question4.hint"
+        },
+        "5": {
+          "text": "@loc:tests.test5.question5",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test5.question5.answer1",
+              "points": 0
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test5.question5.answer2",
+              "points": 1
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test5.question5.answer3",
+              "points": 3
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test5.question5.answer4",
+              "points": 2
+            }
+          ],
+          "hint": "@loc:tests.test5.question5.hint"
+        },
+        "6": {
+          "text": "@loc:tests.test5.question6",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test5.question6.answer1",
+              "points": 0
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test5.question6.answer2",
+              "points": 2
+            }
+          ],
+          "hint": "@loc:tests.test5.question6.hint"
+        },
+        "7": {
+          "text": "@loc:tests.test5.question7",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test5.question7.answer1",
+              "points": 1
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test5.question7.answer2",
+              "points": 3
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test5.question7.answer3",
+              "points": 1
+            }
+          ],
+          "hint": "@loc:tests.test5.question7.hint"
+        },
+        "8": {
+          "text": "@loc:tests.test5.question8",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test5.question8.answer1",
+              "points": 0
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test5.question8.answer2",
+              "points": 1
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test5.question8.answer3",
+              "points": 3
+            }
+          ],
+          "hint": "@loc:tests.test5.question8.hint"
+        },
+        "9": {
+          "text": "@loc:tests.test5.question9",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test5.question9.answer1",
+              "points": 0
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test5.question9.answer2",
+              "points": 3
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test5.question9.answer3",
+              "points": 2
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test5.question9.answer4",
+              "points": 1
+            }
+          ],
+          "hint": "@loc:tests.test5.question9.hint"
+        },
+        "10": {
+          "text": "@loc:tests.test5.question10",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test5.question10.answer1",
+              "points": 0
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test5.question10.answer2",
+              "points": 1
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test5.question10.answer3",
+              "points": 2
+            },
+            {
+              "id": 4,
+              "text": "@loc:tests.test5.question10.answer4",
+              "points": 3
+            }
+          ],
+          "hint": "@loc:tests.test5.question10.hint"
+        },
+        "11": {
+          "text": "@loc:tests.test5.question11",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test5.question11.answer1",
+              "points": 1
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test5.question11.answer2",
+              "points": 1
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test5.question11.answer3",
+              "points": 3
+            }
+          ],
+          "hint": "@loc:tests.test5.question11.hint"
+        },
+        "12": {
+          "text": "@loc:tests.test5.question12",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test5.question12.answer1",
+              "points": 0
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test5.question12.answer2",
+              "points": 2
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test5.question12.answer3",
+              "points": 0
+            }
+          ],
+          "hint": "@loc:tests.test5.question12.hint"
+        },
+        "13": {
+          "text": "@loc:tests.test5.question13",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test5.question13.answer1",
+              "points": 3
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test5.question13.answer2",
+              "points": 1
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test5.question13.answer3",
+              "points": 0
+            }
+          ],
+          "hint": "@loc:tests.test5.question13.hint"
+        },
+        "14": {
+          "text": "@loc:tests.test5.question14",
+          "options": [
+            {
+              "id": 1,
+              "text": "@loc:tests.test5.question14.answer1",
+              "points": 1
+            },
+            {
+              "id": 2,
+              "text": "@loc:tests.test5.question14.answer2",
+              "points": 0
+            },
+            {
+              "id": 3,
+              "text": "@loc:tests.test5.question14.answer3",
+              "points": 2
+            }
+          ],
+          "hint": "@loc:tests.test5.question14.hint"
+        }
+      }
+    }
+  ],
+  "outcomes": {
+    "12": {
+      "label": "@loc:tests.result12.label",
+      "text": "@loc:tests.result12.text"
+    },
+    "13": {
+      "label": "@loc:tests.result13.label",
+      "text": "@loc:tests.result13.text"
+    },
+    "14": {
+      "label": "@loc:tests.result14.label",
+      "text": "@loc:tests.result14.text"
+    },
+    "15": {
+      "label": "@loc:tests.result15.label",
+      "text": "@loc:tests.result15.text"
+    },
+    "16": {
+      "label": "@loc:tests.result16.label",
+      "text": "@loc:tests.result16.text"
+    },
+    "17": {
+      "label": "@loc:tests.result17.label",
+      "text": "@loc:tests.result17.text"
+    },
+    "18": {
+      "label": "@loc:tests.result18.label",
+      "text": "@loc:tests.result18.text"
+    },
+    "19": {
+      "label": "@loc:tests.result19.label",
+      "text": "@loc:tests.result19.text"
+    },
+    "20": {
+      "label": "@loc:tests.result20.label",
+      "text": "@loc:tests.result20.text"
+    },
+    "21": {
+      "label": "@loc:tests.result21.label",
+      "text": "@loc:tests.result21.text"
+    },
+    "22": {
+      "label": "@loc:tests.result22.label",
+      "text": "@loc:tests.result22.text"
+    },
+    "23": {
+      "label": "@loc:tests.result23.label",
+      "text": "@loc:tests.result23.text"
+    },
+    "24": {
+      "label": "@loc:tests.result24.label",
+      "text": "@loc:tests.result24.text"
+    },
+    "25": {
+      "label": "@loc:tests.result25.label",
+      "text": "@loc:tests.result25.text"
+    },
+    "26": {
+      "label": "@loc:tests.result26.label",
+      "text": "@loc:tests.result26.text"
+    },
+    "27": {
+      "label": "@loc:tests.result27.label",
+      "text": "@loc:tests.result27.text"
+    },
+    "28": {
+      "label": "@loc:tests.result28.label",
+      "text": "@loc:tests.result28.text"
+    },
+    "29": {
+      "label": "@loc:tests.result29.label",
+      "text": "@loc:tests.result29.text"
+    },
+    "30": {
+      "label": "@loc:tests.result30.label",
+      "text": "@loc:tests.result30.text"
+    },
+    "31": {
+      "label": "@loc:tests.result31.label",
+      "text": "@loc:tests.result31.text"
+    },
+    "32": {
+      "label": "@loc:tests.result32.label",
+      "text": "@loc:tests.result32.text"
+    },
+    "50": [
+      "@loc:tests.result50.text0",
+      "@loc:tests.result50.text1",
+      "@loc:tests.result50.text2",
+      "@loc:tests.result50.text3",
+      "@loc:tests.result50.text4",
+      "@loc:tests.result50.text5",
+      "@loc:tests.result50.text6",
+      "@loc:tests.result50.text7"
+    ],
+    "150": [
+      "@loc:tests.result150.text0",
+      "@loc:tests.result150.text1",
+      "@loc:tests.result150.text2",
+      "@loc:tests.result150.text3",
+      "@loc:tests.result150.text4",
+      "@loc:tests.result150.text5"
+    ],
+    "100": [
+      {
+        "duration": "@loc:tests.result100.duration0",
+        "text": "@loc:tests.result100.text0",
+        "analog": "@loc:tests.result100.analog0"
+      },
+      {
+        "duration": "@loc:tests.result100.duration1",
+        "text": "@loc:tests.result100.text1",
+        "analog": "@loc:tests.result100.analog1"
+      },
+      {
+        "duration": "@loc:tests.result100.duration2",
+        "text": "@loc:tests.result100.text2",
+        "analog": "@loc:tests.result100.analog2"
+      },
+      {
+        "duration": "@loc:tests.result100.duration3",
+        "text": "@loc:tests.result100.text3",
+        "analog": "@loc:tests.result100.analog3"
+      },
+      {
+        "duration": "@loc:tests.result100.duration4",
+        "text": "@loc:tests.result100.text4",
+        "analog": "@loc:tests.result100.analog4"
+      },
+      {
+        "duration": "@loc:tests.result100.duration5",
+        "text": "@loc:tests.result100.text5",
+        "analog": "@loc:tests.result100.analog5"
+      },
+      {
+        "duration": "@loc:tests.result100.duration6",
+        "text": "@loc:tests.result100.text6",
+        "analog": "@loc:tests.result100.analog6"
+      },
+      {
+        "duration": "@loc:tests.result100.duration7",
+        "text": "@loc:tests.result100.text7",
+        "analog": "@loc:tests.result100.analog7"
+      },
+      {
+        "duration": "@loc:tests.result100.duration8",
+        "text": "@loc:tests.result100.text8",
+        "analog": "@loc:tests.result100.analog8"
+      },
+      {
+        "duration": "@loc:tests.result100.duration9",
+        "text": "@loc:tests.result100.text9",
+        "analog": "@loc:tests.result100.analog9"
+      },
+      {
+        "duration": "@loc:tests.result100.duration10",
+        "text": "@loc:tests.result100.text10",
+        "analog": "@loc:tests.result100.analog10"
+      },
+      {
+        "duration": "@loc:tests.result100.duration11",
+        "text": "@loc:tests.result100.text11",
+        "analog": "@loc:tests.result100.analog11"
+      }
+    ]
+  }
+}

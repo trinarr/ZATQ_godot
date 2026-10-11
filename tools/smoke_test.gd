@@ -64,12 +64,14 @@ func run() -> void:
 	quest.current_id = "wake"
 	quest._load_save()
 	check(quest.current_id == "city_car" and quest.flags.TakenKey, "restore state")
+	# A deduplicated save keeps the prior valid snapshot in the backup.
+	var backup_id: String = quest._read(quest.backup_path).current_id
 	var bad := FileAccess.open(quest.save_path, FileAccess.WRITE)
 	bad.store_string("{broken")
 	bad.close()
 	quest.current_id = "wake"
 	quest._load_save()
-	check(quest.current_id == "city_car", "backup recovery")
+	check(quest.current_id == backup_id, "backup recovery")
 	check(not quest.recovery_message.is_empty(), "recovery notice")
 	check(quest.save_game(), "replace corrupt primary without destroying backup")
 	# Walking even with keys, restart clears inventory.

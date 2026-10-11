@@ -68,7 +68,8 @@
     "description": "@loc:ui.selectors.7.description",
     "frame": 1,
     "questions": "1—7",
-    "available": false
+    "available": true,
+    "test_id": 1
   },
   {
     "kind": "tests",
@@ -76,7 +77,8 @@
     "description": "@loc:ui.selectors.8.description",
     "frame": 3,
     "questions": "10",
-    "available": false
+    "available": true,
+    "test_id": 2
   },
   {
     "kind": "tests",
@@ -84,7 +86,8 @@
     "description": "@loc:ui.selectors.9.description",
     "frame": 6,
     "questions": "15",
-    "available": false
+    "available": true,
+    "test_id": 3
   },
   {
     "kind": "tests",
@@ -92,7 +95,8 @@
     "description": "@loc:ui.selectors.10.description",
     "frame": 8,
     "questions": "9",
-    "available": false
+    "available": true,
+    "test_id": 4
   },
   {
     "kind": "tests",
@@ -100,6 +104,7 @@
     "description": "@loc:ui.selectors.11.description",
     "frame": 10,
     "questions": "14",
-    "available": false
+    "available": true,
+    "test_id": 5
   }
 ]
