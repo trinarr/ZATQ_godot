@@ -21,7 +21,6 @@ func run() -> void:
 	quest.backup_path="user://shared_menus_test.bak"
 	quest.sound_enabled=false
 	var initial_id: String = quest.current_id
-	var textures: Dictionary = {}
 	for artwork: String in ["item_keys","ep2_item_glock","ep2_item_mark23","e3_item_knife","e3_item_glock16","e3_item_glock7"]:
 		var panel: Control = ITEM.instantiate()
 		root.add_child(panel)
@@ -33,11 +32,13 @@ func run() -> void:
 			if child is TextureRect:
 				count += 1
 				check(child.texture!=null,"item texture: "+artwork)
-				if count in [1,2,4]:
-					if textures.has(count):check(textures[count]==child.texture,"shared item chrome")
-					textures[count]=child.texture
+				if child.get_meta("movie_clip_fixed",false):
+					check(child.texture in [load("res://assets/flash_ui/episode1_components/part_4c241560532984aa6b29.png"),load("res://assets/flash_ui/components/panel_header_shadow_tail.png")],"shared item header")
 		check(count==6,"frame, caption band, item, arrow and title header: "+artwork)
-		check(panel.find_children("*","TextureRect",true,false)[3].get_parent().has_meta("torn_button"),"pickup arrow belongs to its button")
+		var attached_arrow := false
+		for child: Node in panel.find_children("*","TextureRect",true,false):
+			if child.get_parent().has_meta("torn_button"): attached_arrow=true
+		check(attached_arrow,"pickup arrow belongs to its button")
 		accepted=false
 		for child: Node in panel.get_children():
 			if child is Button:child.pressed.emit()

@@ -1,4 +1,5 @@
 extends "res://scripts/ui/shared/torn_button.gd"
+const OPTICAL := preload("res://scripts/ui/shared/optical_text_layout.gd")
 const LOC := preload("res://scripts/core/localization.gd")
 const FONT: Font = preload("res://fonts/oswald/Oswald-Medium.ttf")
 var caption: Label
@@ -43,5 +44,6 @@ func _layout_content() -> void:
   fitted -= 1
  caption.add_theme_font_override("font",caption_font)
  caption.add_theme_font_size_override("font_size",maxi(1,roundi(fitted*0.85)))
+ OPTICAL.center(caption,Rect2(padding,(size-padding*2).max(Vector2.ONE)))
 func _notification(what: int) -> void:
  if what == NOTIFICATION_TRANSLATION_CHANGED and is_instance_valid(caption): set_caption(caption_key)

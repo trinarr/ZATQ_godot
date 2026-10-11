@@ -89,7 +89,8 @@ func run() -> void:
  var ui: Control=load("res://scenes/Main.tscn").instantiate();root.add_child(ui)
  await process_frame
  check(ui.find_child("Выход",true,false)==null,"main menu has no Exit button")
- for name: String in ["Эпизоды","Тесты","Справка"]:
+ for key: String in ["@loc:ui.main.3","@loc:ui.main.4","@loc:ui.main.5"]:
+  var name: String=ui.LOC.text(key)
   check(ui.screen.get_node(name).get_script()==TEXT,"main menu uses text component: "+name)
  check(ui.screen.get_node("Звук").get_script()==ICON,"sound uses icon component")
  check(ui.screen.get_node("Звук").icons.size()==1,"sound icon belongs to its button")
@@ -118,7 +119,7 @@ func run() -> void:
  var speaker: Control=DIALOG.instantiate();root.add_child(speaker)
  speaker.configure({"style":"speaker","art":"e3_dialogue_john","original_ui":true,"shade":false,"text":"Body","speaker":"John"},[{"text":"Answer"}])
  var reply: Button=speaker.choice_buttons[0]
- check(reply.get_script()==TEXT and is_equal_approx(reply.brush_color.r,reply.brush_color.g),"speaker preserves original gray torn answer background")
+ check(reply.get_script()==load("res://scripts/ui/shared/dialog_answer_button.gd") and reply.background.texture==load("res://assets/flash_ui/dialog_components/part_8478f8ddd692f8fefc94.png"),"speaker preserves original gray torn answer background")
  var reply_position: Vector2=reply.caption.global_position-reply.global_position
  speaker.set_cover_rect(Rect2(-400,-100,2400,1160))
  check((reply.caption.global_position-reply.global_position).is_equal_approx(reply_position),"speaker caption stays inside its own button on resize")

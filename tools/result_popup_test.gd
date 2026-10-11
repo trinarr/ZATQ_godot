@@ -43,7 +43,7 @@ func run() -> void:
 	check(body.position.y<120,"result body uses original entrance")
 	for child: Node in ui.overlay.get_children():
 		if child.has_method("configure_targets"): child.seek_frame(100)
-	check(body.position==Vector2(72,120) and body.size==Vector2(1458,788),"bounded authored metal body")
+	check(body.position==Vector2(102,60) and body.size==Vector2(1414,788),"result matches item metal body")
 	var count_before: int=quest.episode1_stats.losses
 	ui._show_menu();ui.playing=true;ui._show_story()
 	await process_frame

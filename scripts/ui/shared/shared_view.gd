@@ -1,5 +1,6 @@
 extends Control
 # Reusable Flash view primitives; no dependency on Main or Quest.
+const OPTICAL := preload("res://scripts/ui/shared/optical_text_layout.gd")
 const LOC := preload("res://scripts/core/localization.gd")
 const TORN_TEXT := preload("res://scripts/ui/shared/torn_text_button.gd")
 const TORN_ICON := preload("res://scripts/ui/shared/torn_icon_button.gd")
@@ -91,6 +92,12 @@ func _art(filename: String, parent: Control = null, rect: Rect2 = Rect2(0,0,800,
 		label.add_theme_font_override("font",font)
 		label.add_theme_color_override("font_color",Color(block.color))
 		if not label.has_meta("button_caption"):label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER if block.alignment=="center" else HORIZONTAL_ALIGNMENT_RIGHT if block.alignment=="right" else HORIZONTAL_ALIGNMENT_LEFT
+		if label.has_meta("optical_area"):
+			OPTICAL.center(label,label.get_meta("optical_area"))
+		elif original_rect.size.y <= 40:
+			var area := original_rect
+			if filename.begins_with("adaptive_selector_") and is_equal_approx(area.position.y,281): area.position.y = 279
+			OPTICAL.center(label,LAYOUT.scaled_rect(area))
 	_adopt_button_icons(image)
 	return image
 
@@ -110,6 +117,11 @@ func _text(text: String, rect: Rect2, font_size: int = 24, title: bool = false, 
 	label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	(parent if parent != null else _default_parent()).add_child(label)
 	label.set_deferred("size",rect.size)
+	return label
+
+func _centered_text(text: String, rect: Rect2, font_size: int = 24, title: bool = false, center: bool = false, parent: Control = null) -> Label:
+	var label := _text(text,rect,font_size,title,center,parent)
+	OPTICAL.center(label,LAYOUT.scaled_rect(rect))
 	return label
 
 func _hit(name: String, rect: Rect2, action: Callable, parent: Control = null, mask: String = "") -> Button:
@@ -196,6 +208,7 @@ func _button_text(value:String,rect:Rect2,font_size:int=22,parent:Control=null,f
 	label.vertical_alignment=VERTICAL_ALIGNMENT_CENTER
 	label.clip_text=true
 	label.set_meta("button_caption",true)
+	OPTICAL.center(label,LAYOUT.scaled_rect(rect))
 	return label
 
 func _torn_text_button(value: String, rect: Rect2, action: Callable, parent: Control = null, font: Font = TITLE_FONT, font_size: int = 20) -> Button:

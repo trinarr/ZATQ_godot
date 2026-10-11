@@ -35,8 +35,8 @@ func run() -> void:
 	quest.popup_origin = ""
 	quest._load_save()
 	check(quest.popup_origin == "transport","origin survives save reload")
-	check(ui.overlay.find_child("ItemTitle",true,false).text == "Получен новый предмет:","localized Flash title")
-	check(ui.overlay.find_child("ItemDescription",true,false).position == Vector2(204,142),"authored description coordinates")
+	check(ui.overlay.find_child("ItemTitle",true,false).text == "ПОЛУЧЕН НОВЫЙ ПРЕДМЕТ:","localized Flash title")
+	check(ui.overlay.find_child("ItemDescription",true,false).horizontal_alignment == HORIZONTAL_ALIGNMENT_CENTER,"description centered in shared stripe")
 	check(ui.overlay.dimmer.mouse_filter == Control.MOUSE_FILTER_STOP,"shade blocks underlying controls")
 	var title: Label = ui.overlay.find_child("ItemTitle",true,false)
 	check(title.shadow_pass.material.shader == load("res://shaders/text_shadow.gdshader"),"title uses shader glyph pass")

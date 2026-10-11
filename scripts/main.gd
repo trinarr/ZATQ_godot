@@ -335,18 +335,18 @@ func _draw_selector(animate: bool = false) -> void:
 	_reset_screen()
 	var entry: Dictionary = LOC.resolve_tree(_selector_items()[selector_index])
 	_art(entry.art if not str(entry.get("art","")).is_empty() else "selector_%d" % int(entry.frame))
-	_text(entry.title,Rect2(56,77,703,35),24,true,true)
+	_centered_text(entry.title,Rect2(56,69,703,43),24,true,true)
 	var body_size: int = 21
 	while body_size > 13 and BODY_FONT.get_multiline_string_size(entry.description,HORIZONTAL_ALIGNMENT_LEFT,233,body_size).y > 99:
 		body_size -= 1
 	_text(entry.description,Rect2(435,204,233,100),body_size)
 	if selector_kind == "tests":
-		_text(LOC.text("@loc:ui.main.12"),Rect2(435,162,239,34),16)
-		_text(LOC.text("@loc:ui.main.13") + entry.questions,Rect2(132,280,282,31),19,false,true)
+		_centered_text(LOC.text("@loc:ui.main.12"),Rect2(435,162,239,34),16)
+		_centered_text(LOC.text("@loc:ui.main.13") + entry.questions,Rect2(132,280,282,31),19,false,true)
 	else:
 		var stats: Dictionary = Quest.stats_for(entry.get("episode",1))
-		_text(": %d" % (stats.wins if entry.available else 0),Rect2(500,160,57,28),21)
-		_text(": %d" % (stats.losses if entry.available else 0),Rect2(585,160,57,28),21)
+		_centered_text(": %d" % (stats.wins if entry.available else 0),Rect2(500,156.5,57,28),21)
+		_centered_text(": %d" % (stats.losses if entry.available else 0),Rect2(585,157,57,28),21)
 	if selector_kind == "episodes" and entry.available:
 		var checks := ENDING_CHECKS.new()
 		screen.add_child(checks)

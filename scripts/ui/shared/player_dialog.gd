@@ -58,7 +58,7 @@ func build_speaker(data: Dictionary, choices: Array) -> void:
 		move_child(backdrop,0)
 		set_cover_rect(cover_rect)
 	if data.get("original_ui",false):
-		_text(data.get("speaker",""),Rect2(597,209,155,23),20,false,true)
+		_centered_text(data.get("speaker",""),Rect2(597,209,155,23),20,false,true)
 		var body_size := 23
 		var text: String = data.get("text","")
 		while body_size > 14 and BODY_FONT.get_multiline_string_size(LOC.text(text),HORIZONTAL_ALIGNMENT_LEFT,465*2,body_size*2).y > 137*2: body_size -= 1
@@ -81,7 +81,7 @@ func build_speaker(data: Dictionary, choices: Array) -> void:
 			button.pressed.connect(func(): choice_selected.emit(index))
 			choice_buttons.append(button)
 	else:
-		_text(data.get("speaker",""),Rect2(90,40,620,45),26,true)
+		_centered_text(data.get("speaker",""),Rect2(90,40,620,45),26,true)
 		_text(data.get("text",""),Rect2(90,90,620,145),23)
 		for i: int in choices.size():
 			var index := i
