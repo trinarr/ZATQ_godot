@@ -4,6 +4,7 @@ uniform vec4 glow_color : source_color = vec4(0.63137, 0.09412, 0.09412, 1.0);
 uniform float alpha_min = 0.5;
 uniform float alpha_max = 0.80078125;
 uniform float period_seconds = 1.0;
+uniform float pause_seconds = 0.0;
 uniform float softness_px = 2.0;
 varying vec4 canvas_tint;
 void vertex() {
@@ -17,5 +18,10 @@ void fragment() {
 	a += (texture(TEXTURE, UV + d).a + texture(TEXTURE, UV - d).a
 		+ texture(TEXTURE, UV + vec2(d.x, -d.y)).a + texture(TEXTURE, UV + vec2(-d.x, d.y)).a) * 0.0625;
 	float pulse = 0.5 - 0.5 * cos(TIME * 6.28318530718 / max(period_seconds, 0.01));
+	if (pause_seconds > 0.0) {
+		float duration = max(period_seconds, 0.01);
+		float cycle_time = mod(TIME, duration + pause_seconds);
+		pulse = 0.5 - 0.5 * cos(min(cycle_time, duration) * 6.28318530718 / duration);
+	}
 	COLOR = vec4(glow_color.rgb * canvas_tint.rgb, a * mix(alpha_min, alpha_max, pulse) * canvas_tint.a);
 }
