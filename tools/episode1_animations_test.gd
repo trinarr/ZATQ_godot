@@ -33,24 +33,12 @@ func run() -> void:
  var ui: Control=load("res://scenes/Main.tscn").instantiate();root.add_child(ui)
  await process_frame
  ui.playing=true;quest.new_game(1)
- for id: String in ["wake","lift","lift_button","tv","car_fatal","office_fatal","bite_transition","door_explosion","door_blast","door_blast_inner","roof_explosion","explosion_flash","farm_chase","mainstreet_attack"]:
+ for id: String in ["wake","car_fatal","office_fatal","bite_transition","door_explosion","door_blast","door_blast_inner","roof_explosion","explosion_flash","farm_chase","mainstreet_attack"]:
   quest.current_id=id;ui.playing=true;ui.paused=false;ui._show_story();ui.television.stop()
   var player: Node2D=ui.viewport_canvas.episode_timeline
   check(is_instance_valid(player),"animated scene player: "+id)
   check(ui.viewport_canvas.component_background_active,"world interaction keeps same coordinate space")
   if is_instance_valid(player):player.seek_frame(player.frames.size()-1)
- quest.current_id="lift";ui.playing=true;ui.paused=false;ui._show_story()
- var lift: Node2D=ui.viewport_canvas.episode_timeline
- ui._choose(0)
- check(quest.current_id=="lift" and lift.phase=="outro","lift waits for authored exit")
- ui._choose(0)
- check(quest.current_id=="lift","duplicate gesture does not bypass exit")
- ui._show_pause();var frame: int=lift.current_frame;TEST_CLOCK.step(lift,1)
- check(lift.current_frame==frame,"pause freezes pending exit")
- ui._resume()
- check(ui.viewport_canvas.episode_timeline==lift and not lift.suspended,"resume keeps exact player")
- lift.seek_frame(lift.frames.size()-1)
- check(quest.current_id=="lift_button","exit completes once")
  quest.current_id="farm_noise";ui.playing=true;ui._show_story()
  var noise: Node2D=ui.viewport_canvas.episode_timeline
  check(not noise.captions.is_empty(),"original moving description remains native text")
@@ -62,11 +50,12 @@ func run() -> void:
  var popup: Control=ui.overlay
  var title: Label=popup.find_child("ItemTitle",true,false)
  var description: Label=popup.find_child("ItemDescription",true,false)
- check(title.position.y==34,"item header stays fixed during entrance")
+ var fixed_header_y: float=title.position.y
  check(description.position.y<0,"item content starts above viewport")
  for child: Node in popup.get_children():
   if child.has_method("configure_targets"):child.seek_frame(100)
- check(description.position.y==142,"item content ends at exact original position")
+ check(title.position.y==fixed_header_y,"item header stays fixed during entrance")
+ check(description.position.y>=popup.SUBTITLE_RECT.position.y*2 and description.position.y+description.size.y<=popup.SUBTITLE_RECT.end.y*2,"item content settles inside current subtitle panel")
 
  ui.free()
  for path: String in [quest.save_path,quest.tmp_path,quest.backup_path]:

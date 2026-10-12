@@ -1618,52 +1618,26 @@
   "layout_bg_lift": [
     {
       "type": "texture",
-      "texture": "episode1_components/part_a9509e1123f483d3d250.png",
+      "texture": "apartment/elevator_open.png",
       "rect": [
-        413.5,
-        35.5,
-        98.5,
-        398.5
+        0,
+        0,
+        800,
+        480
       ],
-      "source": "Mov.Dver/Symbol 2861",
-      "layer": "background"
-    },
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_dae16585b599e9f92cde.png",
-      "rect": [
-        318.0,
-        35.5,
-        96.5,
-        398.5
-      ],
-      "source": "Mov.Dver/Symbol 2864",
-      "layer": "background"
-    },
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_df74c77556475143abce.png",
-      "rect": [
-        0.0,
-        0.0,
-        800.0,
-        480.0
-      ],
-      "source": "Mov/Symbol 2870",
       "layer": "background"
     }
   ],
   "layout_bg_lift_button": [
     {
       "type": "texture",
-      "texture": "episode1_components/part_6b861dacb229af93108b.png",
+      "texture": "apartment/elevator_open.png",
       "rect": [
-        0.0,
-        0.0,
-        800.0,
-        480.0
+        0,
+        0,
+        800,
+        480
       ],
-      "source": "external:LiftKnop.jpg",
       "layer": "background"
     }
   ],
@@ -1744,266 +1718,98 @@
   "layout_bg_tv_0": [
     {
       "type": "texture",
-      "texture": "episode1_components/part_881288934425bf1580f1.png",
+      "texture": "episode1_components/part_4a17c8b80157ba275815.png",
       "rect": [
         0.0,
         0.0,
         800.0,
         480.0
       ],
-      "source": "/Symbol 2882",
-      "layer": "background"
-    },
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_1d23e9c54381c589727d.png",
-      "rect": [
-        204.0,
-        45.0,
-        438.0,
-        251.0
-      ],
-      "source": "Canals.Mov/Symbol 2835",
-      "layer": "background"
-    },
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_c29aaba81b1b3fb49eb7.png",
-      "rect": [
-        608.5,
-        260.5,
-        26.0,
-        25.0
-      ],
-      "source": "Canals/Symbol 2840",
+      "source": "Mov/Symbol 2806",
       "layer": "background"
     }
   ],
   "layout_bg_tv_1": [
     {
       "type": "texture",
-      "texture": "episode1_components/part_881288934425bf1580f1.png",
+      "texture": "episode1_components/part_4a17c8b80157ba275815.png",
       "rect": [
         0.0,
         0.0,
         800.0,
         480.0
       ],
-      "source": "/Symbol 2882",
-      "layer": "background"
-    },
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_df5c7b43984e6abe9635.png",
-      "rect": [
-        204.0,
-        45.0,
-        438.0,
-        251.0
-      ],
-      "source": "Canals.Mov/Symbol 2835",
-      "layer": "background"
-    },
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_c29aaba81b1b3fb49eb7.png",
-      "rect": [
-        608.5,
-        260.5,
-        26.0,
-        25.0
-      ],
-      "source": "Canals/Symbol 2840",
+      "source": "Mov/Symbol 2806",
       "layer": "background"
     }
   ],
   "layout_bg_tv_2": [
     {
       "type": "texture",
-      "texture": "episode1_components/part_881288934425bf1580f1.png",
+      "texture": "episode1_components/part_4a17c8b80157ba275815.png",
       "rect": [
         0.0,
         0.0,
         800.0,
         480.0
       ],
-      "source": "/Symbol 2882",
-      "layer": "background"
-    },
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_e91c348cadaa917fe79b.png",
-      "rect": [
-        204.0,
-        45.0,
-        438.0,
-        251.0
-      ],
-      "source": "Canals.Mov/Symbol 2835",
-      "layer": "background"
-    },
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_c29aaba81b1b3fb49eb7.png",
-      "rect": [
-        608.5,
-        260.5,
-        26.0,
-        25.0
-      ],
-      "source": "Canals/Symbol 2840",
+      "source": "Mov/Symbol 2806",
       "layer": "background"
     }
   ],
   "layout_bg_tv_3": [
     {
       "type": "texture",
-      "texture": "episode1_components/part_881288934425bf1580f1.png",
+      "texture": "episode1_components/part_4a17c8b80157ba275815.png",
       "rect": [
         0.0,
         0.0,
         800.0,
         480.0
       ],
-      "source": "/Symbol 2882",
-      "layer": "background"
-    },
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_45bf8db70208fa9a0c64.png",
-      "rect": [
-        204.0,
-        45.0,
-        438.0,
-        251.0
-      ],
-      "source": "Canals.Mov/Symbol 2835",
-      "layer": "background"
-    },
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_c29aaba81b1b3fb49eb7.png",
-      "rect": [
-        608.5,
-        260.5,
-        26.0,
-        25.0
-      ],
-      "source": "Canals/Symbol 2840",
+      "source": "Mov/Symbol 2806",
       "layer": "background"
     }
   ],
   "layout_bg_tv_4": [
     {
       "type": "texture",
-      "texture": "episode1_components/part_881288934425bf1580f1.png",
+      "texture": "episode1_components/part_4a17c8b80157ba275815.png",
       "rect": [
         0.0,
         0.0,
         800.0,
         480.0
       ],
-      "source": "/Symbol 2882",
-      "layer": "background"
-    },
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_176adab835e5d863e4c7.png",
-      "rect": [
-        204.0,
-        45.0,
-        438.0,
-        251.0
-      ],
-      "source": "Canals.Mov/Symbol 2835",
-      "layer": "background"
-    },
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_c29aaba81b1b3fb49eb7.png",
-      "rect": [
-        608.5,
-        260.5,
-        26.0,
-        25.0
-      ],
-      "source": "Canals/Symbol 2840",
+      "source": "Mov/Symbol 2806",
       "layer": "background"
     }
   ],
   "layout_bg_tv_5": [
     {
       "type": "texture",
-      "texture": "episode1_components/part_881288934425bf1580f1.png",
+      "texture": "episode1_components/part_4a17c8b80157ba275815.png",
       "rect": [
         0.0,
         0.0,
         800.0,
         480.0
       ],
-      "source": "/Symbol 2882",
-      "layer": "background"
-    },
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_71601d86a8549a8a6544.png",
-      "rect": [
-        204.0,
-        45.0,
-        438.0,
-        251.0
-      ],
-      "source": "Canals.Mov/Symbol 2835",
-      "layer": "background"
-    },
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_c29aaba81b1b3fb49eb7.png",
-      "rect": [
-        608.5,
-        260.5,
-        26.0,
-        25.0
-      ],
-      "source": "Canals/Symbol 2840",
+      "source": "Mov/Symbol 2806",
       "layer": "background"
     }
   ],
   "layout_bg_tv_6": [
     {
       "type": "texture",
-      "texture": "episode1_components/part_881288934425bf1580f1.png",
+      "texture": "episode1_components/part_4a17c8b80157ba275815.png",
       "rect": [
         0.0,
         0.0,
         800.0,
         480.0
       ],
-      "source": "/Symbol 2882",
-      "layer": "background"
-    },
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_77c6a87cab840157973b.png",
-      "rect": [
-        204.0,
-        45.0,
-        438.0,
-        251.0
-      ],
-      "source": "Canals.Mov/Symbol 2835",
-      "layer": "background"
-    },
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_c29aaba81b1b3fb49eb7.png",
-      "rect": [
-        608.5,
-        260.5,
-        26.0,
-        25.0
-      ],
-      "source": "Canals/Symbol 2840",
+      "source": "Mov/Symbol 2806",
       "layer": "background"
     }
   ],
@@ -2023,99 +1829,11 @@
   ],
   "layout_controls_lift": [],
   "layout_controls_lift_button": [],
-  "layout_controls_morning_choice": [
-    {
-      "type": "highlight",
-      "rect": [
-        471.5,
-        29.0,
-        211.5,
-        121.0
-      ],
-      "source": "But2/Symbol 2809",
-      "layer": "background",
-      "region": "region_b18e689e74b27334"
-    },
-    {
-      "type": "highlight",
-      "rect": [
-        273.0,
-        200.5,
-        118.0,
-        85.0
-      ],
-      "source": "But1/Symbol 2813",
-      "layer": "background",
-      "region": "region_357195bd981dcaa8"
-    }
-  ],
+  "layout_controls_morning_choice": [],
   "layout_controls_screams": [],
-  "layout_controls_transport": [
-    {
-      "type": "highlight",
-      "rect": [
-        22.0,
-        20.0,
-        182.0,
-        349.0
-      ],
-      "source": "But1/Symbol 2853",
-      "layer": "background",
-      "region": "region_035734dadd078627"
-    },
-    {
-      "type": "highlight",
-      "rect": [
-        330.5,
-        223.5,
-        33.5,
-        13.5
-      ],
-      "source": "But2/Symbol 2857",
-      "layer": "background",
-      "region": "region_cb2917e87e6caab8"
-    }
-  ],
-  "layout_controls_transport_no_keys": [
-    {
-      "type": "highlight",
-      "rect": [
-        22.0,
-        20.0,
-        182.0,
-        349.0
-      ],
-      "source": "But1/Symbol 2853",
-      "layer": "background",
-      "region": "region_035734dadd078627"
-    }
-  ],
-  "layout_controls_tv": [
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_7e63284960a5a20611bd.png",
-      "rect": [
-        0.0,
-        272.5,
-        270.5,
-        207.5
-      ],
-      "source": "/Symbol 2843",
-      "layer": "background"
-    },
-    {
-      "type": "highlight",
-      "rect": [
-        380.0,
-        382.0,
-        50.0,
-        52.5
-      ],
-      "source": "/Symbol 2819",
-      "layer": "background",
-      "region": "region_046fdc8aa8a67cb2"
-    }
-  ],
+  "layout_controls_transport": [],
+  "layout_controls_transport_no_keys": [],
+  "layout_controls_tv": [],
   "layout_controls_wake": [],
   "result_alive": [
     {

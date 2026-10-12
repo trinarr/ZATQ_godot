@@ -56,8 +56,8 @@ def configure(root, check=False):
     art_root = root / "assets" / "flash_ui"
     protected = protected_textures(root)
     eligible = changed = missing = 0
-    for path in sorted(art_root.glob("episode*/*.png")):
-        if not re.fullmatch(r"episode\d+_(components|animation_parts)", path.parent.name):
+    for path in sorted(list(art_root.glob("episode*/*.png")) + list(art_root.glob("apartment/elevator_open.png"))):
+        if path.parent.name != "apartment" and not re.fullmatch(r"episode\d+_(components|animation_parts)", path.parent.name):
             continue
         if path.relative_to(art_root).as_posix() in protected:
             continue

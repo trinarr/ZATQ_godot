@@ -26,13 +26,13 @@ func run() -> void:
 		for child: Node in ui.world_layer.get_children():
 			if child.get_meta("interactive_highlight",false): glows.append(child)
 			if child is Button: hits.append(child)
-		check(glows.size() == (4 if room == "morning_choice" else 3), "all reviewed highlights visible")
-		check(hits.size() == 1, "only passage clickable")
+		check(glows.size() == 4, "all reviewed highlights visible")
+		check(hits.size() == (1 if room == "morning_choice" else 2), "only reviewed room passages clickable")
 		check(ui.viewport_canvas.episode_timeline == null, "no old opening animation")
 		var flags: Dictionary = quest.flags.duplicate(true)
 		for index: int in range(quest.available_choices().size()): quest.choose(index)
 		check(quest.current_id == room and quest.flags == flags, "legacy choices remain inert")
-		quest.navigate_apartment("lift")
+		quest.navigate_apartment("city_foot")
 		check(quest.current_id == room, "unreviewed exit blocked")
 		var hit: Button = hits[0]
 		check(hit._has_point(hit.size/2), "passage center clickable")

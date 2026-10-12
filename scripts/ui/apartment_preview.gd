@@ -10,8 +10,8 @@ static func draw(view: Control) -> void:
 		var glow := HIGHLIGHT.new()
 		glow.configure(part)
 		view._world_host().add_child(glow)
-		if part.region not in ["living_passage", "hall_passage"]: continue
-		var target: String = "transport" if room == "morning_choice" else "morning_choice"
-		var label: String = "@loc:ui.apartment.to_hall" if room == "morning_choice" else "@loc:ui.apartment.to_living"
+		if part.region not in ["living_passage", "hall_passage", "hall_exit_door"]: continue
+		var target: String = "lift" if part.region == "hall_exit_door" else "transport" if room == "morning_choice" else "morning_choice"
+		var label: String = "@loc:ui.apartment.to_elevator" if part.region == "hall_exit_door" else "@loc:ui.apartment.to_hall" if room == "morning_choice" else "@loc:ui.apartment.to_living"
 		var r: Array = part.rect
 		view._world_hit(label, Rect2(r[0],r[1],r[2],r[3]), func(): Quest.navigate_apartment(target), part.region)

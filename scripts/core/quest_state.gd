@@ -200,8 +200,8 @@ func _record_result() -> void:
 		stats.losses += 1
 
 func navigate_apartment(target: String) -> void:
-	# Only the two reviewed backgrounds are navigable during the art migration.
-	if (current_id == "morning_choice" and target == "transport") or (current_id == "transport" and target == "morning_choice"):
+	# Reviewed apartment passages and the entry to the elevator landing.
+	if (current_id == "morning_choice" and target == "transport") or (current_id == "transport" and target in ["morning_choice", "lift"]):
 		_enter(target)
 
 func choose(index: int) -> void:

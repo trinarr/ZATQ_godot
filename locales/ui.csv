@@ -113,3 +113,5 @@ ui.qte.press,Жми!,Press!
 ui.item_popup.title,Получен новый предмет:,New item received:
 ui.apartment.to_hall,В прихожую,To the hallway
 ui.apartment.to_living,В гостиную,To the living room
+ui.apartment.to_elevator,Выйти к лифту,Go to the elevator
+ui.elevator.call_down,Вызвать лифт вниз,Call elevator down

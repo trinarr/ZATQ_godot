@@ -1,61 +1,82 @@
 extends SceneTree
-const TEST_CLOCK := preload("res://tools/flash_test_clock.gd")
-const TIMELINE := preload("res://scripts/ui/episode_timeline.gd")
 var checks := 0
 var failures := 0
 func check(ok: bool, message: String) -> void:
- checks+=1
- if not ok:
-  failures+=1
-  push_error(message)
-func _initialize() -> void:call_deferred("run")
+	checks += 1
+	if not ok:
+		failures += 1
+		push_error(message)
+func _initialize() -> void: call_deferred("run")
 func run() -> void:
- var original: Dictionary=TIMELINE.catalog().duplicate(true)
- var image:=Image.create(4,4,false,Image.FORMAT_RGBA8)
- image.fill(Color.WHITE)
- var texture:=ImageTexture.create_from_image(image)
- DirAccess.make_dir_recursive_absolute("res://assets/flash_ui")
- var sample_name: String="_lift_test_%s.tres" % get_instance_id()
- var sample_path: String="res://assets/flash_ui/"+sample_name
- check(ResourceSaver.save(texture,sample_path)==OK,"test texture saved")
- var data: Dictionary=original.duplicate(true)
- data.art={"layout_bg_lift":data.art.layout_bg_lift,"layout_bg_lift_button":data.art.layout_bg_lift_button}
- for art: Dictionary in data.art.values():
-  for part: Dictionary in art.parts.values():part.texture=sample_name
- TIMELINE.data=data
- var player:=TIMELINE.new();root.add_child(player);player.configure("layout_bg_lift")
- var opening: Array=player.spec.intro
- var authored: Array=player.spec.outro.duplicate(true)
- check(player.frames==opening,"opening retains authored frames")
- player.seek_frame(opening.size()-1)
- var visible_before: Array=[]
- for key: String in player.sprites:
-  if player.sprites[key].visible:visible_before.append(key)
- player.play("outro")
- check(player.frames.size()==authored.size(),"closing retains duration")
- for key: String in player.sprites:
-  check(player.sprites[key].visible==visible_before.has(key),"closing begins at open pose without a jump")
- for i in player.frames.size():
-  var row: Array=player.frames[i]
-  var expected: Array=opening[opening.size()-1-i]
-  check(row.size()==expected.size(),"closing retains reversed door visibility")
-  for j in row.size():
-   check(row[j][0]==expected[j][0] and row[j][1]==expected[j][1],"door geometry follows closing sequence")
-   check(row[j][2]==authored[i][0][2],"fade to black proceeds forward")
- check(player.spec.outro==authored,"cached authored data stays unchanged")
- TEST_CLOCK.step(player,2.0/float(data.fps))
- var saved_frame: int=player.current_frame
- player.suspended=true;TEST_CLOCK.step(player,1.0)
- check(player.current_frame==saved_frame,"pause freezes closing")
- player.suspended=false
- var completions: Array=[0]
- player.finished.connect(func():completions[0]+=1)
- TEST_CLOCK.step(player,1.0);TEST_CLOCK.step(player,1.0)
- check(completions[0]==1 and not player.playing,"closing finishes once")
- check(player.frames[-1][0][1]==opening[0][0][1],"closing ends at closed door pose")
- var other:=TIMELINE.new();root.add_child(other);other.configure("layout_bg_lift_button");other.play("outro")
- check(other.frames==other.spec.outro,"lift button animation stays unchanged")
- player.free();other.free()
- DirAccess.remove_absolute(sample_path)
- print("Lift animation: ",checks," checks, ",failures," failures")
- quit(1 if failures else 0)
+	TranslationServer.set_locale("ru")
+	var quest: Node = root.get_node("Quest")
+	quest.save_path = "user://new_lift_test.json"
+	quest.tmp_path = "user://new_lift_test.tmp"
+	quest.backup_path = "user://new_lift_test.bak"
+	quest.sound_enabled = false
+	var ui: Control = load("res://scenes/Main.tscn").instantiate()
+	root.add_child(ui)
+	ui.playing = true
+	quest.new_game(1)
+	quest._enter("transport")
+	var entry: Button = ui.world_layer.find_child("Выйти к лифту",true,false)
+	if entry == null: entry = ui.world_layer.find_child("Go to the elevator",true,false)
+	check(entry != null,"entry door has a hotspot")
+	var old_flags: Dictionary = quest.flags.duplicate(true)
+	entry.pressed.emit()
+	check(quest.current_id == "lift", "hall door enters elevator landing")
+	check(quest.flags == old_flags,"entry does not collect keys or select car")
+	var landing: Control = ui.elevator_view
+	check(landing != null and ui.viewport_canvas.episode_timeline == null,"new landing replaces original animation")
+	check(landing.progress == 0.0 and landing.door_clip.visible,"doors initially closed")
+	check(not landing.down_light.visible,"call button initially unlit")
+	check(landing.light_material.get_shader_parameter("light_loss") == 0.0,"landing light mask disabled by default")
+	check(landing.left_door.texture != landing.right_door.texture,"independent door textures")
+	check(landing.door_clip.clip_contents,"doors retract behind jambs")
+	check(landing.call_hit.get_rect() == Rect2(0,0,1600,960),"calling hit covers whole scene")
+	check(landing.call_hit.get_rect().has_point(Vector2(400,200)),"tap away from call panel works")
+	landing.call_hit.pressed.emit()
+	landing = ui.elevator_view
+	check(quest.current_id == "lift_button","same scene changes to open state")
+	check(landing.down_light.visible and landing.opening,"pressed light accompanies opening")
+	check(landing.progress == 0.0,"opening starts at closed pose")
+	landing.call_hit.pressed.emit()
+	check(quest.current_id == "lift_button","tap during opening cannot skip ahead")
+	landing._process(0.65)
+	check(landing.progress > 0.0 and landing.progress < 1.0,"doors move gradually")
+	check(landing.left_door.position.x < 0.0 and landing.right_door.position.x > landing.door_clip.size.x/2.0,"leaves move in opposite directions")
+	ui._show_pause()
+	var progress: float = landing.progress
+	landing._process(1.0)
+	check(landing.progress == progress,"pause freezes opening")
+	ui._resume()
+	check(ui.elevator_view == landing,"resume preserves exact opening pose")
+	landing._process(2.0)
+	check(landing.progress == 1.0 and not landing.door_clip.visible,"fully open cabin revealed")
+	check(not ui.screen.get_meta("episode_animation_block",false),"opening releases interaction lock")
+	var saved: Dictionary = quest._read(quest.save_path)
+	check(saved.current_id == "lift_button","open state saved")
+	ui.previous_node = ""
+	ui._show_story()
+	check(ui.elevator_view.progress == 1.0 and not ui.elevator_view.opening,"saved open state restores without replay")
+	check(ui.elevator_view.light_material.get_shader_parameter("light_loss") == 0.0,"no flicker after restore")
+	var mask: Image = ui.elevator_view.MASK.get_image()
+	if mask.is_compressed(): mask.decompress()
+	check(mask.get_pixel(800,450).r < .02,"mask protects cabin")
+	check(mask.get_pixel(1085,440).r < .02,"mask protects independent call light")
+	check(mask.get_pixel(530,300).r > .5,"mask can affect landing wall")
+	var expected: String = "Джек нажал на кнопку первого этажа, и лифт понес его в неизвестность..."
+	if TranslationServer.get_locale().begins_with("ru"):
+		check(quest.current().text == expected,"exact original story text restored")
+	ui.elevator_view.call_hit.pressed.emit()
+	check(quest.current_id == "city_foot","open-state tap advances to original walking route")
+	quest.flags.Auto = 1
+	quest._enter("lift_button")
+	ui.elevator_view.call_hit.pressed.emit()
+	check(quest.current_id == "city_car","original car route remains intact")
+	ui.free()
+	await process_frame
+	for path: String in [quest.save_path,quest.tmp_path,quest.backup_path]:
+		if FileAccess.file_exists(path): DirAccess.remove_absolute(path)
+	print("New elevator: ",checks," checks, ",failures," failures")
+	quit(1 if failures else 0)

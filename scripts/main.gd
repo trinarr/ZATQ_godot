@@ -8,9 +8,10 @@ const PLAYER_DIALOG := preload("res://scenes/shared/PlayerDialog.tscn")
 const ENDING_CHECKS := preload("res://scripts/ui/ending_checks.gd")
 const SAFE_CANVAS := preload("res://scripts/ui/adaptive_landscape_canvas.gd")
 const ACTIVITY := preload("res://scripts/ui/story_activity.gd")
+const ELEVATOR := preload("res://scripts/ui/elevator_landing.gd")
+var elevator_view: Control
 const APARTMENT := preload("res://scripts/ui/apartment_preview.gd")
 const CITY := preload("res://scripts/ui/city_gameplay.gd")
-const TV_FONT: Font = preload("res://fonts/dseg/DSEG7Classic-Regular.ttf")
 var viewport_canvas: Control
 var edge_tab: TextureRect
 var edge_hit: Button
@@ -139,6 +140,7 @@ func _stop_cutscene() -> void:
 	if is_instance_valid(viewport_canvas): viewport_canvas.background.modulate = Color.WHITE
 
 func _reset_screen(preserve_logo: bool = false) -> void:
+	elevator_view = null
 	decision_scene_origin = ""
 	decision_dialog = null
 	menu_opening = null
@@ -263,9 +265,10 @@ func _world_highlight_hit(label: String, artwork: String, source: String, action
 	push_error("Missing interactive highlight: "+artwork+" / "+source)
 	return null
 
-func _opening_caption(node: Dictionary) -> void:
+func _opening_caption(node: Dictionary, y_override: float = -1.0) -> void:
 	var y: float = 416 if Quest.current_id in ["wake","screams","transport"] else 445
 	if Quest.current_id == "lift_button": y = 5.75
+	if y_override >= 0.0: y = y_override
 	var band_rect := Rect2(-screen.position.x/screen.scale.x,(y-6)*2,viewport_canvas.safe_layer.size.x/screen.scale.x,(480-y+6)*2 if y>400 else 80)
 	var caption := _narrative_text(node.text,Rect2(11,y,775,34),24,{"fit":"single","minimum":16,"band_rect":band_rect})
 	_bind_episode_caption(caption)
@@ -451,7 +454,7 @@ func _start_episode(number: int) -> void:
 	Quest.new_game(number)
 
 func _resume() -> void:
-	if paused and (is_instance_valid(viewport_canvas.episode_timeline) or is_instance_valid(decision_dialog)):
+	if paused and (is_instance_valid(viewport_canvas.episode_timeline) or is_instance_valid(decision_dialog) or is_instance_valid(elevator_view)):
 		paused = false
 		_close_overlay()
 		if is_instance_valid(viewport_canvas.episode_timeline): viewport_canvas.episode_timeline.suspended = false
@@ -569,8 +572,12 @@ func _commit_choice(index: int) -> void:
 
 func _show_story() -> void:
 	if not playing or paused: return
+	# Old TV saves resume in the reviewed living room while its interaction is disabled.
+	if Quest.current_id == "tv":
+		Quest._enter("morning_choice")
+		return
+	var opening_elevator: bool = Quest.current_id == "lift_button" and previous_node == "lift"
 	var was_story := section == "story"
-	var changing_channel := Quest.current_id == "tv" and previous_node == "tv"
 	section = "story"
 	var node: Dictionary = Quest.current()
 	_prefetch_story_resources()
@@ -613,25 +620,16 @@ func _show_story() -> void:
 		return
 	if Quest.current_id in ["morning_choice", "transport"]:
 		APARTMENT.draw(self)
+	elif Quest.current_id in ["lift", "lift_button"]:
+		_component_backdrop("layout_bg_" + Quest.current_id)
+		elevator_view = ELEVATOR.new()
+		_world_host().add_child(elevator_view)
+		elevator_view.configure(self, Quest.current_id == "lift_button", opening_elevator)
+		_opening_caption(node, 445.0)
 	elif kind.begins_with("activity_"):
 		ACTIVITY.draw(self, node)
 	elif kind.begins_with("city_"):
 		CITY.draw(self, node)
-	elif kind == "tv":
-		var controls := _opening_art("tv_%d" % Quest.channel)
-		var channel_label := _text(LOC.text("@loc:ui.main.channel_format") % (Quest.channel+1),Rect2(218,69.5,110,30),16,false,false,_world_host())
-		channel_label.name = "TVChannel"
-		channel_label.add_theme_font_override("font",TV_FONT)
-		channel_label.add_theme_color_override("font_color",Color.GREEN)
-		if is_instance_valid(viewport_canvas.episode_timeline): viewport_canvas.episode_timeline.bind_caption(channel_label,"@tv_channel")
-		_world_hit(LOC.text("@loc:ui.main.35"),Rect2(200,44,447,262),func(): _choose(0))
-		_world_highlight_hit("@loc:ui.main.36","layout_controls_tv","/Symbol 2819",func(): _choose(1))
-		if changing_channel and is_instance_valid(viewport_canvas.episode_timeline):
-			viewport_canvas.episode_timeline.seek_frame(viewport_canvas.episode_timeline.frames.size()-1)
-			var remote_motion := preload("res://scripts/ui/flash_ui_entrance.gd").new()
-			controls.add_child(remote_motion)
-			remote_motion.configure_targets([controls.get_child(0)],"remote")
-		television.start()
 	elif Quest.current_id == "transport_choice":
 		_opening_art("transport")
 		_show_player_dialog({"text":node.text,"answer_size":24},Quest.available_choices())
@@ -639,7 +637,6 @@ func _show_story() -> void:
 		_opening_art(Quest.current_id)
 		_opening_caption(node)
 		match Quest.current_id:
-			"lift_button": _world_hit(LOC.text("@loc:ui.main.44"),Rect2(200,140,450,280),func(): _choose(0))
 			_: _world_hit(LOC.text("@loc:ui.main.45"),Rect2(70,0,730,480),func(): _choose(0))
 	# Flash pause control lives at the left edge, not in a new top bar.
 	if not kind.begins_with("city_") and not kind.begins_with("activity_") and kind != "item" and Quest.current_id != "transport_choice":
