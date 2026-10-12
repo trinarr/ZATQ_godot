@@ -199,7 +199,13 @@ func _record_result() -> void:
 	else:
 		stats.losses += 1
 
+func navigate_apartment(target: String) -> void:
+	# Only the two reviewed backgrounds are navigable during the art migration.
+	if (current_id == "morning_choice" and target == "transport") or (current_id == "transport" and target == "morning_choice"):
+		_enter(target)
+
 func choose(index: int) -> void:
+	if current_id in ["morning_choice", "transport"]: return
 	var choices: Array = available_choices()
 	if index < 0 or index >= choices.size():
 		return

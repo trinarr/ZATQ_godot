@@ -8,6 +8,7 @@ const PLAYER_DIALOG := preload("res://scenes/shared/PlayerDialog.tscn")
 const ENDING_CHECKS := preload("res://scripts/ui/ending_checks.gd")
 const SAFE_CANVAS := preload("res://scripts/ui/adaptive_landscape_canvas.gd")
 const ACTIVITY := preload("res://scripts/ui/story_activity.gd")
+const APARTMENT := preload("res://scripts/ui/apartment_preview.gd")
 const CITY := preload("res://scripts/ui/city_gameplay.gd")
 const TV_FONT: Font = preload("res://fonts/dseg/DSEG7Classic-Regular.ttf")
 var viewport_canvas: Control
@@ -610,7 +611,9 @@ func _show_story() -> void:
 	if pickup:
 		_show_item_popup(node.get("art","item_keys"),node.text)
 		return
-	if kind.begins_with("activity_"):
+	if Quest.current_id in ["morning_choice", "transport"]:
+		APARTMENT.draw(self)
+	elif kind.begins_with("activity_"):
 		ACTIVITY.draw(self, node)
 	elif kind.begins_with("city_"):
 		CITY.draw(self, node)
@@ -636,13 +639,6 @@ func _show_story() -> void:
 		_opening_art(Quest.current_id)
 		_opening_caption(node)
 		match Quest.current_id:
-			"morning_choice":
-				_world_hit(LOC.text("@loc:ui.main.40"),Rect2(273,200,118,85),func(): _choose(0))
-				_world_hit(LOC.text("@loc:ui.main.41"),Rect2(470,24,220,134),func(): _choose(1))
-			"transport":
-				_world_highlight_hit("@loc:ui.main.42","layout_controls_transport","But1/Symbol 2853",func(): _choose(0))
-				if not Quest.flags.TakenKey:
-					_world_hit(LOC.text("@loc:ui.main.43"),Rect2(325,217,77,80),func(): _choose(1))
 			"lift_button": _world_hit(LOC.text("@loc:ui.main.44"),Rect2(200,140,450,280),func(): _choose(0))
 			_: _world_hit(LOC.text("@loc:ui.main.45"),Rect2(70,0,730,480),func(): _choose(0))
 	# Flash pause control lives at the left edge, not in a new top bar.
