@@ -33,7 +33,14 @@ func run() -> void:
 	check(not animations.art.has("layout_bg_screams"), "old animated traffic overlay cannot appear in story")
 	check(components.layout_bg_apartment_window[0].rect == [60.0,36.0,680.0,408.0], "window city is centered at 85 percent")
 	check(components.layout_bg_apartment_window[0].shader == "res://shaders/city_window_grade.gdshader", "window city has a separate cool grade")
-	check(components.layout_bg_apartment_window.slice(1).all(func(part): return part.texture == "episode1_components/part_683fbdad938ef1f73321.png" and part.has("region")), "all window details reuse one transparent atlas")
+	var window_parts: Array = components.layout_bg_apartment_window
+	var collision: Array = window_parts.filter(func(part): return part.get("source", "") == "window_overlay:side_impact_collision")
+	check(collision.size() == 1 and collision[0].texture == "apartment/window_collision.png", "side impact replaces the old collision and both road bodies")
+	var glass: Array = window_parts.filter(func(part): return part.get("source", "") == "window_overlay:glass_reflections")
+	check(glass.size() == 1 and glass[0].shader == "res://shaders/window_glass.gdshader", "glass reflections have a separate world layer")
+	check(window_parts[-2].source == "window_overlay:glass_reflections", "glass covers street activity below the frame")
+	check(window_parts[-1].texture == "apartment/window_frame.png" and window_parts[-1].rect == [0,0,800,480], "intact frame has one geometry at all four corners")
+	check(window_parts[-1].shader == "res://shaders/window_frame_fit.gdshader", "frame fit preserves existing pane height and corner alignment")
 	check(components.layout_bg_apartment_window[-1].source == "window_overlay:jack_living_window_frame", "frame is rendered above city and traffic")
 	quest.new_game(1)
 	var wake_text: String = quest.current().text

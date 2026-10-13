@@ -2176,6 +2176,19 @@
     },
     {
       "type": "texture",
+      "texture": "apartment/window_collision.png",
+      "rect": [
+        484.21247683755405,
+        346.9371781668383,
+        197.40580605311922,
+        97.06282183316168
+      ],
+      "layer": "background",
+      "source": "window_overlay:side_impact_collision",
+      "shader": "res://shaders/city_window_grade.gdshader"
+    },
+    {
+      "type": "texture",
       "texture": "episode1_components/part_683fbdad938ef1f73321.png",
       "region": [
         0,
@@ -2232,94 +2245,35 @@
       "shader": "res://shaders/window_smoke_alpha.gdshader"
     },
     {
-      "type": "texture",
-      "texture": "episode1_components/part_683fbdad938ef1f73321.png",
-      "region": [
-        0,
-        971,
-        215,
-        971
-      ],
+      "type": "panel",
       "rect": [
         0,
         0,
-        105,
+        800,
+        480
+      ],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "layer": "background",
+      "source": "window_overlay:glass_reflections",
+      "shader": "res://shaders/window_glass.gdshader"
+    },
+    {
+      "type": "texture",
+      "texture": "apartment/window_frame.png",
+      "rect": [
+        0,
+        0,
+        800,
         480
       ],
       "layer": "background",
-      "source": "window_overlay:frame_left"
-    },
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_683fbdad938ef1f73321.png",
-      "region": [
-        1415,
-        971,
-        204,
-        971
-      ],
-      "rect": [
-        698,
-        0,
-        102,
-        480
-      ],
-      "layer": "background",
-      "source": "window_overlay:frame_right"
-    },
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_683fbdad938ef1f73321.png",
-      "region": [
-        215,
-        971,
-        1200,
-        80
-      ],
-      "rect": [
-        105,
-        0,
-        593,
-        36
-      ],
-      "layer": "background",
-      "source": "window_overlay:frame_top"
-    },
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_683fbdad938ef1f73321.png",
-      "region": [
-        215,
-        1796,
-        1200,
-        146
-      ],
-      "rect": [
-        105,
-        444,
-        593,
-        36
-      ],
-      "layer": "background",
-      "source": "window_overlay:frame_sill"
-    },
-    {
-      "type": "texture",
-      "texture": "episode1_components/part_683fbdad938ef1f73321.png",
-      "region": [
-        780,
-        1051,
-        55,
-        748
-      ],
-      "rect": [
-        385,
-        36,
-        28,
-        408
-      ],
-      "layer": "background",
-      "source": "window_overlay:jack_living_window_frame"
+      "source": "window_overlay:jack_living_window_frame",
+      "shader": "res://shaders/window_frame_fit.gdshader"
     }
   ],
   "layout_controls_apartment_window": []
