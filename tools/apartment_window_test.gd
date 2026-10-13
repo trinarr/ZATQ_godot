@@ -38,10 +38,20 @@ func run() -> void:
 	check(collision.size() == 1 and collision[0].texture == "apartment/window_collision.png", "side impact replaces the old collision and both road bodies")
 	var glass: Array = window_parts.filter(func(part): return part.get("source", "") == "window_overlay:glass_reflections")
 	check(glass.size() == 1 and glass[0].shader == "res://shaders/window_glass.gdshader", "glass reflections have a separate world layer")
-	check(window_parts[-2].source == "window_overlay:glass_reflections", "glass covers street activity below the frame")
-	check(window_parts[-1].texture == "apartment/window_frame.png" and window_parts[-1].rect == [0,0,800,480], "intact frame has one geometry at all four corners")
+	var dust: Array = window_parts.filter(func(part): return part.get("source", "").begins_with("window_overlay:plain_glass_dust_"))
+	check(dust.size() == 2 and dust.all(func(part): return part.type == "texture" and not part.has("shader") and part.opacity > 0.0), "both panes have visible PNG dirt independent of shader")
+	check(window_parts[-3].source == "window_overlay:plain_glass_dust_left" and window_parts[-2].source == "window_overlay:plain_glass_dust_right", "plain dirt overlays sit above city below frame")
+	check(window_parts[-1].texture == "apartment/window_frame.png" and window_parts[-1].rect == [0.0,0.0,800.0,480.0], "intact frame has one geometry at all four corners")
 	check(window_parts[-1].shader == "res://shaders/window_frame_fit.gdshader", "frame fit preserves existing pane height and corner alignment")
 	check(components.layout_bg_apartment_window[-1].source == "window_overlay:jack_living_window_frame", "frame is rendered above city and traffic")
+	var backdrop := Control.new()
+	root.add_child(backdrop)
+	load("res://scripts/ui/flash_components.gd").draw(backdrop, window_parts)
+	for index: int in [window_parts.size() - 3, window_parts.size() - 2]:
+		var overlay := backdrop.get_child(index) as TextureRect
+		check(overlay != null and overlay.material == null and overlay.texture != null, "dirt is drawn as an ordinary textured layer")
+		check(is_equal_approx(overlay.modulate.a, 0.42), "component renderer applies dirt opacity")
+	backdrop.free()
 	quest.new_game(1)
 	var wake_text: String = quest.current().text
 	quest.choose(0)

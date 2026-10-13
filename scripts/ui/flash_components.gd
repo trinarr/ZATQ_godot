@@ -57,11 +57,14 @@ static func draw(parent: Control, parts: Array, layer: String = "") -> void:
     atlas.filter_clip = true
     image.texture = atlas
    image.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+   image.flip_h = bool(part.get("flip_h", false))
+   image.flip_v = bool(part.get("flip_v", false))
    control = image
   var r: Array = part.rect
   control.position = Vector2(r[0],r[1]) * 2
   control.size = Vector2(r[2],r[3]) * 2
   control.mouse_filter = Control.MOUSE_FILTER_IGNORE
+  control.modulate.a = clampf(float(part.get("opacity", 1.0)), 0.0, 1.0)
   if part.has("shader"):
    var paint := ShaderMaterial.new()
    paint.shader = load(part.shader)

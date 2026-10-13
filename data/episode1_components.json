@@ -2245,22 +2245,47 @@
       "shader": "res://shaders/window_smoke_alpha.gdshader"
     },
     {
-      "type": "panel",
+      "type": "texture",
       "rect": [
         0,
         0,
         800,
         480
       ],
-      "color": [
-        1,
-        1,
-        1,
-        1
-      ],
       "layer": "background",
       "source": "window_overlay:glass_reflections",
-      "shader": "res://shaders/window_glass.gdshader"
+      "shader": "res://shaders/window_glass.gdshader",
+      "texture": "apartment/window_glass_dust.png"
+    },
+    {
+      "type": "texture",
+      "texture": "apartment/window_glass_dust.png",
+      "rect": [
+        105.6,
+        36,
+        280,
+        408
+      ],
+      "layer": "background",
+      "source": "window_overlay:plain_glass_dust_left",
+      "opacity": 0.42,
+      "flip_h": false,
+      "flip_v": false
+    },
+    {
+      "type": "texture",
+      "texture": "apartment/window_glass_dust.png",
+      "rect": [
+        412.8,
+        36,
+        286.4,
+        408
+      ],
+      "layer": "background",
+      "source": "window_overlay:plain_glass_dust_right",
+      "opacity": 0.42,
+      "flip_h": true,
+      "flip_v": true
     },
     {
       "type": "texture",
