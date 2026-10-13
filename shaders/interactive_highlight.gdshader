@@ -5,6 +5,7 @@ uniform float alpha_min = 0.5;
 uniform float alpha_max = 0.80078125;
 uniform float period_seconds = 1.0;
 uniform float pause_seconds = 0.0;
+uniform float fill_alpha = -1.0;
 uniform float softness_px = 2.0;
 varying vec4 canvas_tint;
 void vertex() {
@@ -23,5 +24,6 @@ void fragment() {
 		float cycle_time = mod(TIME, duration + pause_seconds);
 		pulse = 0.5 - 0.5 * cos(min(cycle_time, duration) * 6.28318530718 / duration);
 	}
-	COLOR = vec4(glow_color.rgb * canvas_tint.rgb, a * mix(alpha_min, alpha_max, pulse) * canvas_tint.a);
+	float opacity = fill_alpha >= 0.0 ? fill_alpha : mix(alpha_min, alpha_max, pulse);
+	COLOR = vec4(glow_color.rgb * canvas_tint.rgb, a * opacity * canvas_tint.a);
 }

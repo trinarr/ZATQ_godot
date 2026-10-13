@@ -5,6 +5,29 @@ const WIDTH := 2.0
 const LINE_ALPHA := 0.92 * 0.8 * 0.8
 const SAMPLE_SPACING := 6.0
 var region_id := ""
+var fill_material: ShaderMaterial
+var pulse_time := 0.0
+var held := false
+
+func bind_feedback(button: Button) -> void:
+	button.button_down.connect(set_held.bind(true))
+	button.button_up.connect(set_held.bind(false))
+	button.mouse_exited.connect(set_held.bind(false))
+	button.focus_exited.connect(set_held.bind(false))
+
+func set_held(value: bool) -> void:
+	if held == value: return
+	held = value
+	# Resume on the descending side of the peak: release begins at exactly 25%.
+	pulse_time = 0.75
+	fill_material.set_shader_parameter("fill_alpha", 0.25)
+
+func _process(delta: float) -> void:
+	if held: return
+	pulse_time = fposmod(pulse_time + delta, 4.5)
+	var phase := minf(pulse_time, 1.5) / 1.5
+	var alpha := lerpf(0.08, 0.25, 0.5 - 0.5 * cos(phase * TAU))
+	fill_material.set_shader_parameter("fill_alpha", alpha)
 
 func configure(part: Dictionary) -> void:
 	region_id = part.region
@@ -22,7 +45,8 @@ func configure(part: Dictionary) -> void:
 	fill.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	fill.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	fill.texture_repeat = CanvasItem.TEXTURE_REPEAT_DISABLED
-	var fill_material := shared.material.duplicate() as ShaderMaterial
+	fill_material = shared.material.duplicate() as ShaderMaterial
+	fill_material.set_shader_parameter("fill_alpha", 0.08)
 	fill_material.set_shader_parameter("glow_color", Color.WHITE)
 	fill_material.set_shader_parameter("alpha_min", 0.08)
 	fill_material.set_shader_parameter("alpha_max", 0.25)
