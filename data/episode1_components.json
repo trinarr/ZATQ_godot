@@ -2259,6 +2259,30 @@
     },
     {
       "type": "texture",
+      "texture": "apartment/window_glass_gray_filter.png",
+      "rect": [
+        105.6,
+        36,
+        280,
+        408
+      ],
+      "layer": "background",
+      "source": "window_overlay:gray_glass_filter_left"
+    },
+    {
+      "type": "texture",
+      "texture": "apartment/window_glass_gray_filter.png",
+      "rect": [
+        412.8,
+        36,
+        286.4,
+        408
+      ],
+      "layer": "background",
+      "source": "window_overlay:gray_glass_filter_right"
+    },
+    {
+      "type": "texture",
       "texture": "apartment/window_glass_dust.png",
       "rect": [
         105.6,

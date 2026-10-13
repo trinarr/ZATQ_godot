@@ -266,6 +266,7 @@ func _world_highlight_hit(label: String, artwork: String, source: String, action
 	return null
 
 func _opening_caption(node: Dictionary, y_override: float = -1.0) -> void:
+	if str(node.get("text", "")).strip_edges().is_empty(): return
 	var y: float = 416 if Quest.current_id in ["wake","screams","transport"] else 445
 	if Quest.current_id == "lift_button": y = 5.75
 	if y_override >= 0.0: y = y_override
@@ -618,7 +619,14 @@ func _show_story() -> void:
 	if pickup:
 		_show_item_popup(node.get("art","item_keys"),node.text)
 		return
-	if Quest.current_id in ["morning_choice", "transport"]:
+	if Quest.scene_narrative_pending():
+		var narrative_art: String = str(node.get("art", ""))
+		if Quest.flags.Auto == 0: narrative_art = str(node.get("art_on_foot", narrative_art))
+		if narrative_art.is_empty(): narrative_art = "layout_bg_" + Quest.current_id
+		_pickup_backdrop(narrative_art)
+		_opening_caption(node, 416.0)
+		_world_hit("@loc:ui.main.45", Rect2(0,0,800,480), func(): Quest.dismiss_scene_narrative())
+	elif Quest.current_id in ["morning_choice", "transport"]:
 		APARTMENT.draw(self)
 	elif Quest.current_id == "apartment_window":
 		_component_backdrop("layout_bg_apartment_window")

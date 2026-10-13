@@ -478,6 +478,12 @@ func _inspect_id(id: String) -> void:
  if node.type=="scene" and d.get("blocks",[]).size()>1:
   for index:int in d.blocks.size():
    text_field(inspector,"Текстовый блок "+str(index+1),d.blocks[index].text,func(v):begin_edit();d.blocks[index].text=v,true)
+ if node.type=="scene":
+  text_field(inspector,"Переменная: описание прочитано",d.get("narrative_flag",""),func(v):
+   begin_edit()
+   if v.strip_edges().is_empty():d.erase("narrative_flag")
+   else:d.narrative_flag=v.strip_edges())
+  label(inspector,"Для описания перед интерактивностью укажите булеву сюжетную переменную из «Параметров» эпизода. false — показывать текст сцены и блокировать взаимодействие; тап записывает true в сейв. Пустое поле отключает это правило.")
  if node.type=="dialogue":text_field(inspector,"Персонаж",d.get("speaker",""),func(v):begin_edit();d.speaker=v)
  if node.type in MODEL.SCENE_TYPES:
   text_field(inspector,"Фон (имя в assets/flash_ui)",d.get("art",""),func(v):begin_edit();d.art=v)
@@ -596,7 +602,9 @@ func _draw_preview() -> void:
  focus_block(preview_active)
  label(preview_box,preview_active+"\n"+str(d.get("speaker",""))+"\n"+str(d.get("text","")))
  var kind:String=d.get("kind","story")
- if kind=="activity_code":
+ if simulator.scene_narrative_pending():
+  button(preview_box,"Закрыть описание и включить взаимодействие",func():simulator.dismiss_scene_narrative())
+ elif kind=="activity_code":
   var entry:=LineEdit.new();entry.placeholder_text="Введите код";preview_box.add_child(entry)
   var attempts: Array=[int(d.get("attempts",3))]
   button(preview_box,"Проверить код",func():

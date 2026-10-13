@@ -74,6 +74,13 @@ func current(id: String = "") -> Dictionary:
 				for field: String in variant:
 					if field != "when": resolved[field] = variant[field]
 	var view: Dictionary = _substitute_flags(LOC.resolve_tree(resolved))
+	var narrative_flag: String = str(view.get("narrative_flag", ""))
+	var narrative_default: bool = bool(episode_defaults.get(int(view.get("episode", 1)), {}).get(narrative_flag, false))
+	if not narrative_flag.is_empty() and bool(flags.get(narrative_flag, narrative_default)):
+		view.text = ""
+		if view.has("text_on_foot"): view.text_on_foot = ""
+		view.erase("text_rect")
+		if view.has("blocks"): view.blocks = []
 	current_resolutions += 1
 	if _view_cache.size() >= 16: _view_cache.erase(_view_cache.keys()[0])
 	_view_cache[key] = {"locale":locale,"source_hash":source_hash,"flags":flags.duplicate(true),"view":view}
@@ -199,12 +206,31 @@ func _record_result() -> void:
 	else:
 		stats.losses += 1
 
+func scene_narrative_seen(id: String = "") -> bool:
+	var node: Dictionary = current(id)
+	var key: String = str(node.get("narrative_flag", ""))
+	var default_value: bool = bool(episode_defaults.get(int(node.get("episode", 1)), {}).get(key, false))
+	return not key.is_empty() and bool(flags.get(key, default_value))
+
+func scene_narrative_pending() -> bool:
+	var node: Dictionary = current()
+	return not str(node.get("narrative_flag", "")).is_empty() and not str(node.get("text", "")).strip_edges().is_empty() and not scene_narrative_seen()
+
+func dismiss_scene_narrative() -> void:
+	if not scene_narrative_pending(): return
+	var key: String = str(current().narrative_flag)
+	flags[key] = true
+	save_game()
+	changed.emit()
+
 func navigate_apartment(target: String) -> void:
 	# Reviewed apartment passages and the entry to the elevator landing.
+	if scene_narrative_pending(): return
 	if (current_id == "morning_choice" and target in ["transport", "apartment_window"]) or (current_id == "transport" and target in ["morning_choice", "lift"]):
 		_enter(target)
 
 func choose(index: int) -> void:
+	if scene_narrative_pending(): return
 	if current_id in ["morning_choice", "transport"]: return
 	var choices: Array = available_choices()
 	if index < 0 or index >= choices.size():
@@ -277,6 +303,9 @@ func _valid(data: Variant) -> bool:
 	var max_bullets: int = 16 if int(saved_episode)>=3 else 12
 	if not (bullets is int or bullets is float) or bullets != int(bullets) or bullets < -1 or bullets > max_bullets: return false
 	if not data.flags.get("LinkedFr",false) is bool: return false
+	for node: Dictionary in nodes.values():
+		var narrative_flag: String = str(node.get("narrative_flag", ""))
+		if not narrative_flag.is_empty() and not data.flags.get(narrative_flag, false) is bool: return false
 	for key: String in ["TakenDocs","TakenArmor","CabinCodeKnown"]:
 		if not data.flags.get(key,false) is bool: return false
 	for key: String in ["PilotCode","PilotCodeSpaced"]:

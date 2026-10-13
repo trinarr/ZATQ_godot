@@ -53,7 +53,8 @@
 			"type": "scene",
 			"data": {
 				"source": "Episode1 frame 3 / Symbol 2805, 2809, 2817",
-				"text": "@loc:episode1.nodes.morning_choice.data.text"
+				"text": "ТЕСТ",
+				"narrative_flag": "ApartmentLivingIntroSeen"
 			},
 			"position": [
 				3400.0,
@@ -125,8 +126,9 @@
 			"type": "scene",
 			"data": {
 				"source": "Episode1 frame 5 / Symbol 2848",
-				"text": "@loc:episode1.nodes.transport.data.text",
-				"sound": "FootSteps"
+				"text": "Тест",
+				"sound": "FootSteps",
+				"narrative_flag": "ApartmentHallIntroSeen"
 			},
 			"position": [
 				5100.0,
@@ -6560,5 +6562,9 @@
 			"port": "next",
 			"to": "morning_choice"
 		}
-	]
+	],
+	"variables": {
+		"ApartmentLivingIntroSeen": false,
+		"ApartmentHallIntroSeen": false
+	}
 }

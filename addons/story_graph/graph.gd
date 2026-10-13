@@ -119,6 +119,16 @@ static func validate(graph: Dictionary) -> PackedStringArray:
   var record: Dictionary = ids[id]
   if record.type not in SCENE_TYPES: continue
   var data: Dictionary = record.data
+  if data.has("narrative_flag"):
+   if record.type != "scene" or data.get("kind", "story") in ["city_pickup", "city_death", "city_ending", "city_cutscene"]:
+    errors.append("Описание перед взаимодействием задаётся обычной сцене или сцене выбора: " + id)
+   var narrative_flag: Variant = data.narrative_flag
+   if not narrative_flag is String or not str(narrative_flag).is_valid_identifier():
+    errors.append("Укажите имя сюжетной переменной описания: " + id)
+   elif not graph.get("variables", {}).get(narrative_flag) is bool:
+    errors.append("Переменная описания должна быть объявлена как true/false в параметрах эпизода: " + id)
+   if not data.get("text", "") is String or str(data.get("text", "")).strip_edges().is_empty():
+    errors.append("Укажите нарративный текст сцены: " + id)
   if record.type in ["code","qte"]:
    var outcomes := ports(graph,id,"choice:")
    var expected_outcomes: int = 3 if record.type=="qte" and data.get("qte_mode","")=="branch" else 2
