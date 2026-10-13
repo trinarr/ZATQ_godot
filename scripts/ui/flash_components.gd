@@ -49,6 +49,13 @@ static func draw(parent: Control, parts: Array, layer: String = "") -> void:
   else:
    var image := TextureRect.new()
    image.texture = load("res://assets/flash_ui/" + part.texture)
+   if part.has("region"):
+    var atlas := AtlasTexture.new()
+    atlas.atlas = image.texture
+    var region: Array = part.region
+    atlas.region = Rect2(region[0], region[1], region[2], region[3])
+    atlas.filter_clip = true
+    image.texture = atlas
    image.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
    control = image
   var r: Array = part.rect

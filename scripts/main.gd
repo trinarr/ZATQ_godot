@@ -620,6 +620,10 @@ func _show_story() -> void:
 		return
 	if Quest.current_id in ["morning_choice", "transport"]:
 		APARTMENT.draw(self)
+	elif Quest.current_id == "apartment_window":
+		_component_backdrop("layout_bg_apartment_window")
+		_opening_caption(node, 416.0)
+		_world_hit(LOC.text("@loc:ui.main.45"), Rect2(0,0,800,480), func(): _choose(0))
 	elif Quest.current_id in ["lift", "lift_button"]:
 		_component_backdrop("layout_bg_" + Quest.current_id)
 		elevator_view = ELEVATOR.new()

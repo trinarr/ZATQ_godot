@@ -4985,6 +4985,28 @@
 				11700.0
 			],
 			"title": "@loc:episode1.nodes.hired_office_gate__choice_0.title"
+		},
+		"apartment_window": {
+			"type": "scene",
+			"data": {
+				"text": "ТЕСТ"
+			},
+			"position": [
+				3400,
+				-1300
+			],
+			"title": "Осмотр окна"
+		},
+		"apartment_window__choice_0": {
+			"type": "choice",
+			"data": {
+				"text": "@loc:ui.apartment.to_living"
+			},
+			"position": [
+				3790,
+				-1300
+			],
+			"title": "Возврат в гостиную"
 		}
 	},
 	"edges": [
@@ -6527,6 +6549,16 @@
 			"from": "hired_office_gate__choice_0",
 			"port": "next",
 			"to": "office_enter"
+		},
+		{
+			"from": "apartment_window",
+			"port": "choice:0",
+			"to": "apartment_window__choice_0"
+		},
+		{
+			"from": "apartment_window__choice_0",
+			"port": "next",
+			"to": "morning_choice"
 		}
 	]
 }

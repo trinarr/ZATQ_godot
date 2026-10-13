@@ -201,7 +201,7 @@ func _record_result() -> void:
 
 func navigate_apartment(target: String) -> void:
 	# Reviewed apartment passages and the entry to the elevator landing.
-	if (current_id == "morning_choice" and target == "transport") or (current_id == "transport" and target in ["morning_choice", "lift"]):
+	if (current_id == "morning_choice" and target in ["transport", "apartment_window"]) or (current_id == "transport" and target in ["morning_choice", "lift"]):
 		_enter(target)
 
 func choose(index: int) -> void:
