@@ -770,7 +770,7 @@ episode1.nodes.hired_office_gate.data.text,"Офис, где работал Дж
 episode1.nodes.hired_office_gate.title,hired_office_gate,
 episode1.nodes.hired_office_gate__choice_0.data.text,Далее,
 episode1.nodes.hired_office_gate__choice_0.title,Далее,
-episode1.nodes.keys.data.text,Ключи от машины и квартиры,Car and apartment keys
+episode1.nodes.keys.data.text,Ключи от Subaru R1e,
 episode1.nodes.keys.title,keys,
 episode1.nodes.keys__choice_0.data.text,Забрать,
 episode1.nodes.keys__choice_0.title,Забрать,
