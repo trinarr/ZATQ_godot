@@ -119,6 +119,13 @@ static func validate(graph: Dictionary) -> PackedStringArray:
   var record: Dictionary = ids[id]
   if record.type not in SCENE_TYPES: continue
   var data: Dictionary = record.data
+  if data.get("kind", "") == "object_inspection":
+   var origin: String = str(data.get("inspection_origin", ""))
+   if not ids.has(origin) or ids[origin].type != "scene": errors.append("Укажите исходную сцену осмотра: " + id)
+   if not str(data.get("inspection_region", "")).is_valid_identifier(): errors.append("Укажите обводку предмета осмотра: " + id)
+   if str(data.get("text", "")).strip_edges().is_empty(): errors.append("Укажите текст осмотра: " + id)
+   if data.has("narrative_flag"): errors.append("Осмотр предмета закрывается ответом, без переменной первого описания: " + id)
+   if ports(graph,id,"choice:").size() != 1: errors.append("Осмотру нужен один ответ для закрытия: " + id)
   if data.has("narrative_flag"):
    if record.type != "scene" or data.get("kind", "story") in ["city_pickup", "city_death", "city_ending", "city_cutscene"]:
     errors.append("Описание перед взаимодействием задаётся обычной сцене или сцене выбора: " + id)

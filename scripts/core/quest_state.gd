@@ -230,6 +230,12 @@ func navigate_apartment(target: String) -> void:
 	if (current_id == "morning_choice" and target in ["transport", "apartment_window", "tv"]) or (current_id == "transport" and target in ["morning_choice", "lift"]):
 		_enter(target)
 
+func inspect_apartment_object(target: String) -> void:
+	if scene_narrative_pending() or current_id not in ["morning_choice", "transport"]: return
+	var inspection: Dictionary = current(target)
+	if inspection.get("kind", "") != "object_inspection" or inspection.get("inspection_origin", "") != current_id: return
+	_enter(target)
+
 func take_apartment_keys() -> void:
 	if current_id != "transport" or scene_narrative_pending() or bool(flags.get("TakenKey", false)): return
 	# The existing graph item applies TakenKey, plays the pickup sound and

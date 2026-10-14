@@ -618,6 +618,10 @@ func _show_story() -> void:
 		_pickup_backdrop(narrative_art)
 		_opening_caption(node, 416.0)
 		_world_hit("@loc:ui.main.45", Rect2(0,0,800,480), func(): Quest.dismiss_scene_narrative())
+	elif kind == "object_inspection":
+		APARTMENT.draw_inspection(self, node)
+		_opening_caption(node, 416.0)
+		_world_hit("@loc:ui.main.45", Rect2(0,0,800,480), func(): Quest.choose(0))
 	elif Quest.current_id in ["morning_choice", "transport"]:
 		APARTMENT.draw(self)
 	elif Quest.current_id == "tv":

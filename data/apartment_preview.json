@@ -18,7 +18,11 @@
         49.927909371781666,
         25.694873378628785,
         87.99176107106076
-      ]
+      ],
+      "interaction": {
+        "type": "object_inspection",
+        "target": "apartment_phone"
+      }
     },
     {
       "type": "highlight",

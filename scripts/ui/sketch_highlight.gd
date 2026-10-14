@@ -2,18 +2,29 @@ extends Node2D
 # A quiet hand-drawn outline. The filled hit mask remains owned by HIGHLIGHT.
 const HIGHLIGHT := preload("res://scripts/ui/interactive_highlight.gd")
 const WIDTH := 2.0
+const ACTIVE_COLOR := Color(1.0, 0.65, 0.12, 1.0)
 const LINE_ALPHA := 0.92 * 0.8 * 0.8
 const SAMPLE_SPACING := 6.0
 var region_id := ""
 var fill_material: ShaderMaterial
 var pulse_time := 0.0
 var held := false
+var active := false
 
 func bind_feedback(button: Button) -> void:
 	button.button_down.connect(set_held.bind(true))
 	button.button_up.connect(set_held.bind(false))
 	button.mouse_exited.connect(set_held.bind(false))
 	button.focus_exited.connect(set_held.bind(false))
+
+func set_active(value: bool) -> void:
+	active = value
+	var color: Color = ACTIVE_COLOR if active else Color.WHITE
+	fill_material.set_shader_parameter("glow_color", color)
+	for child: Node in get_children():
+		if child is Line2D:
+			var stroke := child as Line2D
+			stroke.default_color = Color(color.r, color.g, color.b, stroke.default_color.a)
 
 func set_held(value: bool) -> void:
 	if held == value: return

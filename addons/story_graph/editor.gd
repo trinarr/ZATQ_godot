@@ -465,12 +465,16 @@ func _inspect_id(id: String) -> void:
    add_block("choice",id,"choice:"+str(count)))
   if MODEL.target(document,id,"entry").is_empty():button(inspector,"Действие при входе",func():add_block("action",id,"entry"))
   if node.type=="scene":
-   var kinds: Array=["city_story","city_decision","city_cutscene","city_pickup","city_death","city_ending"]
+   var kinds: Array=["city_story","city_decision","city_cutscene","city_pickup","city_death","city_ending","object_inspection"]
    var kinds_ui:=OptionButton.new()
-   for kind:String in ["Обычная сцена","Выбор действия","Автоматический переход","Получение предмета","Смерть","Спасение"]:kinds_ui.add_item(kind)
+   for kind:String in ["Обычная сцена","Выбор действия","Автоматический переход","Получение предмета","Смерть","Спасение","Осмотр предмета"]:kinds_ui.add_item(kind)
    kinds_ui.select(maxi(0,kinds.find(d.get("kind","city_story"))))
    inspector.add_child(kinds_ui)
    kinds_ui.item_selected.connect(func(i):begin_edit();d.kind=kinds[i])
+ if node.type=="scene" and d.get("kind", "")=="object_inspection":
+  text_field(inspector,"Исходная сцена",d.get("inspection_origin",""),func(v):begin_edit();d.inspection_origin=v.strip_edges())
+  text_field(inspector,"Обводка предмета",d.get("inspection_region",""),func(v):begin_edit();d.inspection_region=v.strip_edges())
+  label(inspector,"Осмотр скрывает другие интерактивные элементы. Выбранная обводка активна, без отдельного хотспота. Тап по сцене выполняет первый выход ответа.")
  if node.type in ["scene","choice","dialogue","code","qte"]:
   text_field(inspector,"Текст",d.get("text",""),func(v):
    begin_edit();d.text=v

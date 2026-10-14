@@ -5009,6 +5009,31 @@
 				-1300
 			],
 			"title": "Возврат в гостиную"
+		},
+		"apartment_phone": {
+			"type": "scene",
+			"data": {
+				"kind": "object_inspection",
+				"inspection_origin": "morning_choice",
+				"inspection_region": "living_phone",
+				"text": "ТЕСТ"
+			},
+			"position": [
+				3400,
+				-1800
+			],
+			"title": "Осмотр телефона"
+		},
+		"apartment_phone__close": {
+			"type": "choice",
+			"data": {
+				"text": "@loc:ui.main.45"
+			},
+			"position": [
+				3790,
+				-1800
+			],
+			"title": "Закрыть осмотр"
 		}
 	},
 	"edges": [
@@ -6559,6 +6584,16 @@
 		},
 		{
 			"from": "apartment_window__choice_0",
+			"port": "next",
+			"to": "morning_choice"
+		},
+		{
+			"from": "apartment_phone",
+			"port": "choice:0",
+			"to": "apartment_phone__close"
+		},
+		{
+			"from": "apartment_phone__close",
 			"port": "next",
 			"to": "morning_choice"
 		}
