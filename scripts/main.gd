@@ -707,7 +707,8 @@ func _component_backdrop(filename: String) -> bool:
 			viewport_canvas.episode_timeline.seek_frame(viewport_canvas.episode_timeline.frames.size()-1)
 		return true
 	if not episode_components.has(filename): return false
-	viewport_canvas.set_component_background(episode_components[filename])
+	var parts: Array = episode_components[filename].filter(func(part: Dictionary): return Quest.matches(part.get("requires", {})))
+	viewport_canvas.set_component_background(parts)
 	return true
 
 func _default_parent() -> Control:

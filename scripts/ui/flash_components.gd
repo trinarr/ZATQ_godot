@@ -68,6 +68,11 @@ static func draw(parent: Control, parts: Array, layer: String = "") -> void:
   if part.has("shader"):
    var paint := ShaderMaterial.new()
    paint.shader = load(part.shader)
+   for parameter: String in part.get("shader_parameters", {}):
+    var value: Variant = part.shader_parameters[parameter]
+    if value is Array and value.size() == 2: value = Vector2(value[0], value[1])
+    elif value is Array and value.size() == 4: value = Color(value[0], value[1], value[2], value[3])
+    paint.set_shader_parameter(parameter, value)
    control.material = paint
   if part.has("blur"):
    control.texture_filter=CanvasItem.TEXTURE_FILTER_LINEAR

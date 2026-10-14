@@ -6565,6 +6565,7 @@
 	],
 	"variables": {
 		"ApartmentLivingIntroSeen": false,
-		"ApartmentHallIntroSeen": false
+		"ApartmentHallIntroSeen": false,
+		"TakenKey": false
 	}
 }

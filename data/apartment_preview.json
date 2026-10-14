@@ -60,7 +60,10 @@
         300,
         53,
         27
-      ]
+      ],
+      "requires": {
+        "TakenKey": false
+      }
     },
     {
       "type": "highlight",

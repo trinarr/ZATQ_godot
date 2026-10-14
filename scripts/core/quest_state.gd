@@ -229,6 +229,12 @@ func navigate_apartment(target: String) -> void:
 	if (current_id == "morning_choice" and target in ["transport", "apartment_window"]) or (current_id == "transport" and target in ["morning_choice", "lift"]):
 		_enter(target)
 
+func take_apartment_keys() -> void:
+	if current_id != "transport" or scene_narrative_pending() or bool(flags.get("TakenKey", false)): return
+	# The existing graph item applies TakenKey, plays the pickup sound and
+	# returns to the hallway through the standard item panel's close choice.
+	_enter("keys")
+
 func choose(index: int) -> void:
 	if scene_narrative_pending(): return
 	if current_id in ["morning_choice", "transport"]: return

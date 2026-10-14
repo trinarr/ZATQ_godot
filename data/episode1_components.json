@@ -1592,12 +1592,39 @@
     },
     {
       "type": "texture",
-      "texture": "episode1_components/part_e84115fb14c35c054def.png",
+      "texture": "apartment/keys_front.png",
       "rect": [
-        252.0,
-        153.0,
-        320.5,
-        181.5
+        290.1,
+        181.5,
+        227.79999999999998,
+        178.5
+      ],
+      "source": "Weapons/keys_shadow",
+      "layer": "background",
+      "shader": "res://shaders/sprite_soft_shadow.gdshader",
+      "shader_parameters": {
+        "sprite_size": [
+          455.59999999999997,
+          357.0
+        ],
+        "softness_px": 3.5,
+        "padding_px": 12.0,
+        "shadow_color": [
+          0.055,
+          0.032,
+          0.015,
+          0.68
+        ]
+      }
+    },
+    {
+      "type": "texture",
+      "texture": "apartment/keys_front.png",
+      "rect": [
+        286.1,
+        176.5,
+        227.79999999999998,
+        178.5
       ],
       "source": "Weapons/Symbol 273",
       "layer": "background"
@@ -1681,6 +1708,81 @@
       ],
       "source": "Mov/Symbol 2849",
       "layer": "background"
+    },
+    {
+      "type": "texture",
+      "texture": "apartment/hall_keys.png",
+      "rect": [
+        428.1604938271605,
+        306.5994850669413,
+        29.62962962962963,
+        11.864057672502575
+      ],
+      "source": "apartment:hall_keys_cast_shadow",
+      "layer": "background",
+      "requires": {
+        "TakenKey": false
+      },
+      "shader": "res://shaders/sprite_soft_shadow.gdshader",
+      "shader_parameters": {
+        "sprite_size": [
+          59.25925925925926,
+          23.72811534500515
+        ],
+        "softness_px": 1.25,
+        "padding_px": 5.0,
+        "shadow_color": [
+          0.055,
+          0.032,
+          0.015,
+          0.42
+        ]
+      }
+    },
+    {
+      "type": "texture",
+      "texture": "apartment/hall_keys.png",
+      "rect": [
+        427.4104938271605,
+        306.0494850669413,
+        29.62962962962963,
+        11.864057672502575
+      ],
+      "source": "apartment:hall_keys_contact_shadow",
+      "layer": "background",
+      "requires": {
+        "TakenKey": false
+      },
+      "shader": "res://shaders/sprite_soft_shadow.gdshader",
+      "shader_parameters": {
+        "sprite_size": [
+          59.25925925925926,
+          23.72811534500515
+        ],
+        "softness_px": 0.5,
+        "padding_px": 3.0,
+        "shadow_color": [
+          0.055,
+          0.032,
+          0.015,
+          0.8
+        ]
+      }
+    },
+    {
+      "type": "texture",
+      "texture": "apartment/hall_keys.png",
+      "rect": [
+        427.1604938271605,
+        305.4994850669413,
+        29.62962962962963,
+        11.864057672502575
+      ],
+      "source": "apartment:hall_keys",
+      "layer": "background",
+      "requires": {
+        "TakenKey": false
+      }
     }
   ],
   "layout_bg_tv_0": [
