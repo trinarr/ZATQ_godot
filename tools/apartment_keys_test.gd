@@ -34,7 +34,7 @@ func run() -> void:
 	quest.save_path = "user://apartment_keys_test.json"
 	quest.tmp_path = "user://apartment_keys_test.tmp"
 	quest.backup_path = "user://apartment_keys_test.bak"
-	quest.sound_enabled = false
+	quest.sound_enabled = true
 	ui = load("res://scenes/Main.tscn").instantiate()
 	root.add_child(ui)
 	ui.playing = true
@@ -55,6 +55,7 @@ func run() -> void:
 	key_button.pressed.emit()
 	check(quest.current_id == "keys" and quest.popup_origin == "transport", "real key hotspot opens graph item node")
 	check(quest.flags.TakenKey, "existing story pickup marks keys collected")
+	check(ui.effects.playing and ui.effects.stream.resource_path.ends_with("/KeysTake.mp3"), "pickup plays its own sound")
 	check(is_instance_valid(ui.overlay) and ui.overlay.find_child("ItemTitle", true, false) != null, "standard new item panel shown")
 	check(ui.overlay.dimmer.mouse_filter == Control.MOUSE_FILTER_STOP, "item panel blocks underlying scene")
 	var writes: int = quest.save_writes
@@ -73,9 +74,11 @@ func run() -> void:
 	check(key_layers().is_empty(), "resumed panel reconstructs empty hallway backdrop")
 	ui.overlay.accepted.emit()
 	check_empty_hall()
+	check(not ui.effects.playing and ui.effects.stream.resource_path.ends_with("/KeysTake.mp3"), "return from resumed item panel does not replay room entry sound")
 	quest.navigate_apartment("morning_choice")
 	quest.dismiss_scene_narrative()
 	quest.navigate_apartment("transport")
+	check(ui.effects.playing and ui.effects.stream.resource_path.ends_with("/FootSteps.mp3"), "real hallway transition still plays footsteps")
 	check_empty_hall()
 	quest.take_apartment_keys()
 	check(quest.current_id == "transport" and ui.overlay == null, "pickup cannot repeat after returning")
@@ -88,6 +91,17 @@ func run() -> void:
 	quest._enter("transport")
 	quest.dismiss_scene_narrative()
 	check(not quest.flags.TakenKey and key_layers().size() == 1 and key_outlines().size() == 1, "new game restores keys and hotspot")
+	quest.take_apartment_keys()
+	ui.overlay.accepted.emit()
+	check(not ui.effects.playing and ui.effects.stream.resource_path.ends_with("/KeysTake.mp3"), "direct item closure suppresses implicit entrance sound")
+	quest.flags.TakenKey = false
+	quest.take_apartment_keys()
+	quest.nodes.keys.choices[0].sound = "KeysTake"
+	ui.overlay.accepted.emit()
+	check(ui.effects.playing and ui.effects.stream.resource_path.ends_with("/KeysTake.mp3"), "explicit choice sound remains allowed on return")
+	ui.effects.stop()
+	ui.effects.stream = null
+	await process_frame
 	ui.free()
 	await process_frame
 	for path: String in [quest.save_path, quest.tmp_path, quest.backup_path]:

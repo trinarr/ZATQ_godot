@@ -605,7 +605,11 @@ func _show_story() -> void:
 		_reset_screen()
 	if previous_node != Quest.current_id:
 		effects.stop()
-		_play_sound(transition_sound if not transition_sound.is_empty() else node.get("sound", ""))
+		var returning_from_item: bool = not previous_node.is_empty() and Quest.current(previous_node).get("kind", "") in ["item", "city_pickup"] and Quest.popup_origin == Quest.current_id
+		if not transition_sound.is_empty():
+			_play_sound(transition_sound)
+		elif not returning_from_item:
+			_play_sound(node.get("sound", ""))
 		transition_sound = ""
 	previous_node = Quest.current_id
 	if pickup:
