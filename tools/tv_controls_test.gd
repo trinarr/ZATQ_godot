@@ -1,53 +1,143 @@
 extends SceneTree
-var checks := 0
 var failures := 0
+var checks := 0
 func check(value: bool, message: String) -> void:
-	checks+=1
-	if not value: failures+=1;push_error(message)
-func _initialize() -> void:call_deferred("run")
+	checks += 1
+	if not value:
+		failures += 1
+		push_error(message)
+func _initialize() -> void: run.call_deferred()
 func click(point: Vector2) -> void:
-	for down: bool in [true,false]:
-		var event:=InputEventMouseButton.new()
-		event.button_index=MOUSE_BUTTON_LEFT;event.pressed=down;event.position=point;event.global_position=point
-		root.push_input(event,true)
+	for down: bool in [true, false]:
+		var event := InputEventMouseButton.new()
+		event.button_index = MOUSE_BUTTON_LEFT
+		event.pressed = down
+		event.position = point
+		event.global_position = point
+		root.push_input(event, true)
 		await process_frame
+func screenshot(name: String) -> void:
+	if "--screenshots" not in OS.get_cmdline_user_args(): return
+	await RenderingServer.frame_post_draw
+	root.get_texture().get_image().save_png("res://" + name + ".png")
 func run() -> void:
 	TranslationServer.set_locale("ru")
-	var quest: Node=root.get_node("Quest")
-	quest.save_path="user://tv_controls_test.json";quest.tmp_path="user://tv_controls_test.tmp";quest.backup_path="user://tv_controls_test.bak";quest.sound_enabled=false
-	var ui: Control=load("res://scenes/Main.tscn").instantiate();root.add_child(ui)
-	await process_frame
-	ui.playing=true;quest.new_game(1)
-	for extent: Vector2i in [Vector2i(1600,960),Vector2i(2048,920),Vector2i(2400,1080)]:
-		root.size=extent
-		ui.viewport_canvas.safe_override=Rect2(108,0,extent.x-108,extent.y)
+	var quest: Node = root.get_node("Quest")
+	quest.save_path = "user://tv_controls_test.json"
+	quest.tmp_path = "user://tv_controls_test.tmp"
+	quest.backup_path = "user://tv_controls_test.bak"
+	quest.sound_enabled = false
+	var ui: Control = load("res://scenes/Main.tscn").instantiate()
+	root.add_child(ui)
+	ui.playing = true
+	quest.new_game(1)
+	quest._enter("morning_choice")
+	quest.navigate_apartment("tv")
+	check(quest.current_id == "morning_choice", "TV blocked while room narrative is visible")
+	quest.dismiss_scene_narrative()
+	var buttons: Array = ui.world_layer.get_children().filter(func(child): return child is Button)
+	buttons[0].pressed.emit()
+	check(quest.current_id == "tv" and quest.channel == 0, "living TV contour opens first channel")
+	await create_timer(0.65).timeout
+	var view: Control = ui.television_view
+	check(view.accepting_input and view.room.scale == Vector2(2, 2), "room zoom finishes before taps are enabled")
+	check((view.room.transform * view.TV_CENTER).is_equal_approx(Vector2(800, 480)), "TV centered in authored frame")
+	check(not view.has_node("Hand"), "no hand or remote overlay")
+	check(view.channel_label.text == "CH 1", "original channel indicator starts at CH 1")
+	check(view.channel_label.get_theme_font("font").resource_path.ends_with("JetBrainsMonoNL-Regular.ttf"), "CH uses a font with real uppercase letter shapes")
+	check(ui.narrative_layer.active == 1 and ui.narrative_layer.blocks[0].label.text == view.narrative_text(), "first channel has its own standard narrative")
+	var seen_narratives: Array[String] = [view.narrative_text()]
+	var mute: TextureRect = view.broadcast_viewport.get_node("Mute")
+	check(mute.texture.get_size() == Vector2(28, 28) and mute.visible, "original mute bitmap remains visible")
+	check(mute.mouse_filter == Control.MOUSE_FILTER_IGNORE and view.channel_label.mouse_filter == Control.MOUSE_FILTER_IGNORE, "TV indicators cannot intercept taps")
+	for indicator: Control in [mute, view.channel_label]:
+		check(Rect2(0, 0, 1536, 864).encloses(indicator.get_rect()), "indicator lies inside broadcast screen")
+	check(quest.TV_IMAGES == ["tv/news_anchor.png", "tv/sport_news.png", "tv/commercial.png", "tv/dorwood_nqc.png", "tv/hazmat_vestnik.png", "tv/maintenance_aera.png"], "only five approved images and maintenance are channels")
+	await screenshot("tv_first_channel")
+	await create_timer(3.2).timeout
+	check(quest.channel == 0, "no automatic channel timer")
+	await click(view.get_global_transform() * Vector2(800, 900))
+	check(quest.channel == 1 and ui.television_view == view, "tap on narrative panel changes channel without resetting zoom")
+	check(view.channel_label.text == "CH 2", "tap updates channel indicator")
+	check(ui.narrative_layer.active == 1 and ui.narrative_layer.blocks[0].label.text == view.narrative_text(), "channel change replaces narrative instead of stacking")
+	seen_narratives.append(view.narrative_text())
+	ui._show_pause()
+	check(view.suspended, "pause suspends TV input and animation")
+	var paused_tap := InputEventMouseButton.new()
+	paused_tap.button_index = MOUSE_BUTTON_LEFT
+	paused_tap.pressed = true
+	view._gui_input(paused_tap)
+	check(quest.channel == 1, "pause cannot change channel")
+	ui._resume()
+	check(not view.suspended and ui.television_view == view, "resume retains TV view")
+	var restored: Node = load("res://scripts/core/quest_state.gd").new()
+	restored.save_path = quest.save_path
+	restored.tmp_path = quest.tmp_path
+	restored.backup_path = quest.backup_path
+	root.add_child(restored)
+	check(restored.current_id == "tv" and restored.channel == 1, "save restores TV and channel")
+	var legacy: Dictionary = quest._snapshot()
+	legacy.erase("tv_channel_set")
+	for index: int in range(8):
+		legacy.channel = index
+		check(restored._valid(legacy) and restored._saved_tv_channel(legacy) == [0, 1, 2, 3, 4, 4, 4, 5][index], "old eight-channel saves migrate correctly")
+	restored.save_path = "user://tv_legacy_test.json"
+	var legacy_file := FileAccess.open(restored.save_path, FileAccess.WRITE)
+	legacy_file.store_string(JSON.stringify(legacy))
+	legacy_file.close()
+	restored._load_save()
+	check(restored.current_id == "tv" and restored.channel == 5, "old maintenance save resumes on maintenance")
+	DirAccess.remove_absolute(restored.save_path)
+	var invalid: Dictionary = quest._snapshot()
+	invalid.channel = 6
+	check(not quest._valid(invalid), "new save rejects out-of-range channel")
+	restored.free()
+	ui._show_menu()
+	ui._resume()
+	view = ui.television_view
+	check(view.channel_index == 1 and view.camera_progress == 1.0, "continue rebuilds saved close-up")
+	check(view.channel_label.text == "CH 2", "continue restores channel indicator")
+	check(ui.narrative_layer.active == 1 and ui.narrative_layer.blocks[0].label.text == view.narrative_text(), "continue restores saved channel narrative")
+	for extent: Vector2i in [Vector2i(1600, 960), Vector2i(2400, 1080), Vector2i(1280, 960)]:
+		root.size = extent
+		ui.viewport_canvas.safe_override = Rect2(108, 0, extent.x - 108, extent.y)
 		await process_frame
 		ui._fit_stage()
-		for channel: int in range(7):
-			quest.current_id="tv";quest.channel=channel;ui.playing=true;ui._show_story();ui.television.stop()
-			await process_frame
-			if is_instance_valid(ui.viewport_canvas.episode_timeline):ui.viewport_canvas.episode_timeline.seek_frame(ui.viewport_canvas.episode_timeline.frames.size()-1)
-			var label: Label=ui.world_layer.find_child("TVChannel",true,false)
-			check(label.text=="CH %d" % (channel+1),"channel caption updates")
-			check(Rect2(408,90,876,502).encloses(label.get_rect()),"caption is inside television screen")
-			check(ui.viewport_canvas.safe_layer.get_global_rect().encloses(label.get_global_rect()),"caption stays visible at wide aspect ratios")
-			var remote: Button=ui.world_layer.find_child(ui.LOC.text("@loc:ui.main.36"),true,false)
-			check(remote.size==Vector2(100,105) and remote.hit_image!=null,"remote shares full highlight contour")
-			# This point was below the old 80px-tall input rectangle.
-			var point:=Vector2(50,92)
-			check(remote._has_point(point),"remote lower portion is clickable")
-			await click(remote.get_global_transform()*point)
-			var timeline: Node2D=ui.viewport_canvas.episode_timeline
-			check(quest.current_id=="tv" and timeline.phase=="outro","remote starts original TV-off frames")
-			timeline.seek_frame(timeline.frames.size()-1)
-			check(quest.current_id=="morning_choice","remote click switches television off")
-	quest.current_id="tv";quest.channel=0;ui.playing=true;ui._show_story();ui.television.stop()
+		check(ui.viewport_canvas.safe_layer.get_global_rect().encloses(view.get_global_rect()), "complete TV frame stays inside safe area")
+		await process_frame
+		var caption: Label = ui.narrative_layer.blocks[0].label
+		check(ui.viewport_canvas.safe_layer.get_global_rect().encloses(caption.get_global_rect()), "narrative stays inside safe area")
+	root.size = Vector2i(1600, 960)
+	ui.viewport_canvas.safe_override = Rect2()
+	ui._fit_stage()
+	for index: int in range(2, quest.TV_IMAGES.size()):
+		await click(view.get_global_transform() * Vector2(800, 480))
+		check(quest.channel == index and view.channel_index == index, "tap advances through ordered channel list")
+		check(view.channel_label.text == "CH %d" % (index + 1), "indicator updates on every channel")
+		check(ui.narrative_layer.active == 1 and ui.narrative_layer.blocks[0].label.text == view.narrative_text(), "each channel updates the standard narrative")
+		check(not view.narrative_text().is_empty() and view.narrative_text() not in seen_narratives, "every channel has a distinct nonempty description")
+		seen_narratives.append(view.narrative_text())
+	check(view.maintenance.visible and not view.picture.visible, "last channel uses localized maintenance scene")
+	await screenshot("tv_maintenance_channel")
+	TranslationServer.set_locale("en")
 	await process_frame
-	await click(ui.world_layer.get_global_transform()*Vector2(850,400))
-	check(quest.current_id=="tv" and quest.channel==1,"screen click still advances channel")
-	check(ui.world_layer.find_child("TVChannel",true,false).text=="CH 2","channel change updates caption")
+	check(view.maintenance.title_label.text == "TECHNICAL MAINTENANCE", "maintenance locale changes in TV")
+	check(view.channel_label.text == "CH 6", "channel indicator uses source format when locale translation is empty")
+	await click(view.get_global_transform() * Vector2(800, 480))
+	check(view.closing and quest.current_id == "tv", "final tap switches off before return")
+	check(ui.narrative_layer.active == 0, "power off hides TV narrative")
+	ui._show_pause()
+	await create_timer(0.3).timeout
+	check(quest.current_id == "tv", "power-off transition waits during pause")
+	ui._resume()
+	await create_timer(0.3).timeout
+	check(quest.current_id == "morning_choice" and ui.television_view == null, "power-off returns to living room")
+	check(not quest.scene_narrative_pending() and ui.world_layer.get_child_count() == 8, "return immediately restores four contours and hotspots")
+	quest.navigate_apartment("tv")
+	check(quest.channel == 0, "reopening starts from first channel")
 	ui.free()
-	for path: String in [quest.save_path,quest.tmp_path,quest.backup_path]:
-		if FileAccess.file_exists(path):DirAccess.remove_absolute(path)
-	print("TV controls: %d checks, %d failures" % [checks,failures])
+	await process_frame
+	for path: String in [quest.save_path, quest.tmp_path, quest.backup_path]:
+		if FileAccess.file_exists(path): DirAccess.remove_absolute(path)
+	print("TV controls: %d checks, %d failures" % [checks, failures])
 	quit(1 if failures else 0)

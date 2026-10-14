@@ -34,7 +34,7 @@ func run() -> void:
  await process_frame
  ui.playing=true;quest.new_game(1)
  for id: String in ["wake","car_fatal","office_fatal","bite_transition","door_explosion","door_blast","door_blast_inner","roof_explosion","explosion_flash","farm_chase","mainstreet_attack"]:
-  quest.current_id=id;ui.playing=true;ui.paused=false;ui._show_story();ui.television.stop()
+  quest.current_id=id;ui.playing=true;ui.paused=false;ui._show_story()
   var player: Node2D=ui.viewport_canvas.episode_timeline
   check(is_instance_valid(player),"animated scene player: "+id)
   check(ui.viewport_canvas.component_background_active,"world interaction keeps same coordinate space")

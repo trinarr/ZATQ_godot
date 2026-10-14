@@ -12,7 +12,8 @@ var save_path: String = SAVE_PATH
 var tmp_path: String = TMP_PATH
 var backup_path: String = BACKUP_PATH
 const VERSION := 1
-const TV_IMAGES := ["flash_2821.png", "flash_2823.png", "flash_2825.png", "flash_2827.png", "flash_2829.png", "flash_2831.png", "flash_2833.png"]
+const TV_IMAGES := ["tv/news_anchor.png", "tv/sport_news.png", "tv/commercial.png", "tv/dorwood_nqc.png", "tv/hazmat_vestnik.png", "tv/maintenance_aera.png"]
+const TV_CHANNEL_SET := "approved_six"
 var nodes: Dictionary = {}
 var current_id: String = ""
 var popup_origin: String = ""
@@ -226,7 +227,7 @@ func dismiss_scene_narrative() -> void:
 func navigate_apartment(target: String) -> void:
 	# Reviewed apartment passages and the entry to the elevator landing.
 	if scene_narrative_pending(): return
-	if (current_id == "morning_choice" and target in ["transport", "apartment_window"]) or (current_id == "transport" and target in ["morning_choice", "lift"]):
+	if (current_id == "morning_choice" and target in ["transport", "apartment_window", "tv"]) or (current_id == "transport" and target in ["morning_choice", "lift"]):
 		_enter(target)
 
 func take_apartment_keys() -> void:
@@ -277,7 +278,7 @@ func set_sound(enabled: bool) -> void:
 	save_game()
 
 func _snapshot() -> Dictionary:
-	return {"version":VERSION,"test_results":test_results,"extra_stats":extra_stats,"activity":activity,"current_id":current_id,"popup_origin":popup_origin,"flags":flags,"channel":channel,"sound_enabled":sound_enabled,"has_progress":has_progress,"episode":episode,"episode1_stats":episode1_stats,"episode2_stats":episode2_stats,"result_recorded":result_recorded}
+	return {"version":VERSION,"test_results":test_results,"extra_stats":extra_stats,"activity":activity,"current_id":current_id,"popup_origin":popup_origin,"flags":flags,"channel":channel,"tv_channel_set":TV_CHANNEL_SET,"sound_enabled":sound_enabled,"has_progress":has_progress,"episode":episode,"episode1_stats":episode1_stats,"episode2_stats":episode2_stats,"result_recorded":result_recorded}
 
 func _valid(data: Variant) -> bool:
 	if not data is Dictionary or data.get("version") != VERSION:
@@ -360,7 +361,17 @@ func _valid(data: Variant) -> bool:
 		if activity_data.has("lock_running") and not activity_data.lock_running is bool: return false
 		if activity_data.has("status") and activity_data.status not in ["idle","error","accepted"]: return false
 	var ch: Variant = data.get("channel")
-	return (ch is float or ch is int) and ch == int(ch) and ch >= 0 and ch < TV_IMAGES.size()
+	var channel_set: Variant = data.get("tv_channel_set", "")
+	if channel_set not in ["", TV_CHANNEL_SET]: return false
+	var count: int = 8 if channel_set == "" else TV_IMAGES.size()
+	return (ch is float or ch is int) and ch == int(ch) and ch >= 0 and ch < count
+
+func _saved_tv_channel(data: Dictionary) -> int:
+	var index := int(data.channel)
+	if data.get("tv_channel_set", "") == TV_CHANNEL_SET: return index
+	# Previous saves included test bars/static before the last two approved frames.
+	# Removed frames resume on the next approved broadcast, never invalidate a save.
+	return [0, 1, 2, 3, 4, 4, 4, 5][index]
 
 func _valid_stats(stats: Variant, endings: Array) -> bool:
 	if not stats is Dictionary or not stats.get("endings") is Array: return false
@@ -429,7 +440,7 @@ func _load_save() -> void:
 		if stats.has("last_ending"): stats.last_ending = int(stats.last_ending)
 		for i: int in stats.endings.size(): stats.endings[i] = int(stats.endings[i])
 	episode = int(data.get("episode",1))
-	channel = int(data.channel)
+	channel = _saved_tv_channel(data)
 	sound_enabled = data.sound_enabled
 	has_progress = data.has_progress
 	episode1_stats = {"wins":0,"losses":0,"endings":[]}

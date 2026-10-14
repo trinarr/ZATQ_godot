@@ -30,7 +30,8 @@ var menu_opening: Node
 var overlay: Control
 var music := AudioStreamPlayer.new()
 var effects := AudioStreamPlayer.new()
-var television := Timer.new()
+const TELEVISION := preload("res://scenes/ui/Television.tscn")
+var television_view: Control
 var cutscene := Timer.new()
 var cutscene_tween: Tween
 var playing: bool = false
@@ -71,11 +72,6 @@ func _ready() -> void:
 	music.stream = load("res://assets/audio/MainTheme.mp3")
 	music.finished.connect(func():
 		if is_inside_tree() and not playing and Quest.sound_enabled: music.play())
-	television.wait_time = 3.0
-	television.one_shot = true
-	television.timeout.connect(func():
-		if playing and not paused: Quest.next_channel())
-	add_child(television)
 	cutscene.one_shot = true
 	cutscene.timeout.connect(func():
 		if playing and not paused and Quest.current().get("kind", "") == "city_cutscene": Quest.choose(0))
@@ -88,7 +84,6 @@ func _ready() -> void:
 
 func _exit_tree() -> void:
 	_stop_cutscene()
-	television.stop()
 	music.stop()
 	effects.stop()
 	music.stream = null
@@ -140,6 +135,7 @@ func _stop_cutscene() -> void:
 	if is_instance_valid(viewport_canvas): viewport_canvas.background.modulate = Color.WHITE
 
 func _reset_screen(preserve_logo: bool = false) -> void:
+	television_view = null
 	elevator_view = null
 	decision_scene_origin = ""
 	decision_dialog = null
@@ -149,7 +145,6 @@ func _reset_screen(preserve_logo: bool = false) -> void:
 		else:
 			menu_logo.free()
 			menu_logo = null
-	television.stop()
 	_stop_cutscene()
 	if narrative_layer == null:
 		texture_prefetch = preload("res://scripts/ui/texture_prefetch.gd").new()
@@ -455,13 +450,13 @@ func _start_episode(number: int) -> void:
 	Quest.new_game(number)
 
 func _resume() -> void:
-	if paused and (is_instance_valid(viewport_canvas.episode_timeline) or is_instance_valid(decision_dialog) or is_instance_valid(elevator_view)):
+	if paused and (is_instance_valid(viewport_canvas.episode_timeline) or is_instance_valid(decision_dialog) or is_instance_valid(elevator_view) or is_instance_valid(television_view)):
 		paused = false
+		if is_instance_valid(television_view): television_view.suspended = false
 		_close_overlay()
 		if is_instance_valid(viewport_canvas.episode_timeline): viewport_canvas.episode_timeline.suspended = false
 		if is_instance_valid(edge_tab): edge_tab.show()
 		if is_instance_valid(edge_hit): edge_hit.show()
-		if Quest.current().get("kind","") == "tv": television.start()
 		return
 	if not Quest.has_progress: return
 	playing = true
@@ -499,8 +494,8 @@ func _show_pause() -> void:
 	# Guard every entry point: button, Escape/Back and application deactivation.
 	if not _can_pause(): return
 	paused = true
+	if is_instance_valid(television_view): television_view.suspended = true
 	if is_instance_valid(viewport_canvas.episode_timeline): viewport_canvas.episode_timeline.suspended = true
-	television.stop()
 	_stop_cutscene()
 	effects.stop()
 	_close_overlay()
@@ -522,7 +517,6 @@ func _close_overlay() -> void:
 	overlay = null
 
 func _message(title: String, text: String, confirm: Callable = Callable(), confirm_label: String = "@loc:ui.main.32", show_cancel: bool = true) -> void:
-	television.stop()
 	_stop_cutscene()
 	_close_overlay()
 	var panel := PLAYER_DIALOG.instantiate()
@@ -552,7 +546,6 @@ func _choose(index: int) -> void:
 	if is_instance_valid(timeline) and timeline.has_outro() and not sequential and not (Quest.current().get("kind","") == "tv" and index == 0):
 		var origin := Quest.current_id
 		screen.set_meta("episode_animation_block",true)
-		television.stop()
 		if Quest.current().get("controls_art","") == "ep1_mainstreet_choice_controls":
 			for child: Node in world_layer.get_children():
 				if child is Control: child.hide()
@@ -573,10 +566,11 @@ func _commit_choice(index: int) -> void:
 
 func _show_story() -> void:
 	if not playing or paused: return
-	# Old TV saves resume in the reviewed living room while its interaction is disabled.
-	if Quest.current_id == "tv":
-		Quest._enter("morning_choice")
+	if Quest.current_id == "tv" and previous_node == "tv" and is_instance_valid(television_view):
+		television_view.show_channel(Quest.channel)
+		_tv_caption()
 		return
+	var opening_tv := Quest.current_id == "tv" and previous_node == "morning_choice"
 	var opening_elevator: bool = Quest.current_id == "lift_button" and previous_node == "lift"
 	var was_story := section == "story"
 	section = "story"
@@ -595,7 +589,6 @@ func _show_story() -> void:
 	var pickup := kind in ["item","city_pickup"]
 	var result := kind in ["city_death","city_ending"]
 	if pickup or result:
-		television.stop()
 		_stop_cutscene()
 		if not was_story or previous_node.is_empty():
 			_reset_screen()
@@ -628,6 +621,17 @@ func _show_story() -> void:
 		_world_hit("@loc:ui.main.45", Rect2(0,0,800,480), func(): Quest.dismiss_scene_narrative())
 	elif Quest.current_id in ["morning_choice", "transport"]:
 		APARTMENT.draw(self)
+	elif Quest.current_id == "tv":
+		_set_backdrop(null)
+		television_view = TELEVISION.instantiate()
+		screen.add_child(television_view)
+		television_view.configure(Quest.channel, Quest.TV_IMAGES, opening_tv)
+		_tv_caption()
+		television_view.next_requested.connect(_next_tv_channel)
+		television_view.switched_off.connect(func():
+			if playing and not paused and Quest.current_id == "tv":
+				transition_sound = "TVSwitchOff"
+				Quest.next_channel())
 	elif Quest.current_id == "apartment_window":
 		_component_backdrop("layout_bg_apartment_window")
 		_opening_caption(node, 416.0)
@@ -653,6 +657,21 @@ func _show_story() -> void:
 	# Flash pause control lives at the left edge, not in a new top bar.
 	if not kind.begins_with("city_") and not kind.begins_with("activity_") and kind != "item" and Quest.current_id != "transport_choice":
 		_edge_tab(LOC.text("@loc:ui.main.46"),_show_pause)
+
+func _tv_caption() -> void:
+	narrative_layer.reset()
+	if not is_instance_valid(television_view): return
+	var value: String = television_view.narrative_text()
+	if not value.is_empty():
+		_narrative_text(value, Rect2(11, 416, 775, 58), 24)
+
+func _next_tv_channel() -> void:
+	if not playing or paused or Quest.current_id != "tv" or not is_instance_valid(television_view): return
+	if Quest.channel == Quest.TV_IMAGES.size() - 1:
+		narrative_layer.reset()
+		television_view.switch_off()
+	else:
+		Quest.next_channel()
 
 func _prefetch_story_resources() -> void:
 	if texture_prefetch == null: return

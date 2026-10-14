@@ -22,7 +22,6 @@ func run() -> void:
 			for id: String in ["morning_choice","transport","tv","farm_boundary","metro_junction"]:
 				quest.flags={"Auto":0,"TakenKey":false,"BulletsNumber":-1,"LinkedFr":false}
 				quest.current_id=id;ui.playing=true;ui.paused=false;ui._show_story()
-				ui.television.stop()
 				await process_frame
 				var art_transform: Transform2D=ui.viewport_canvas.art_layer.get_global_transform()
 				check(ui.world_layer.get_global_transform().is_equal_approx(art_transform),"world overlay exactly follows backdrop: "+id)
