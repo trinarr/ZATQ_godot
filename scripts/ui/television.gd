@@ -2,12 +2,15 @@ extends Control
 
 signal next_requested
 signal switched_off
+signal channel_shown
 
 const LOC := preload("res://scripts/core/localization.gd")
 
 const BASE_SIZE := Vector2(1600, 960)
 const TV_CENTER := Vector2(1184, 248)
 const CLOSEUP_ZOOM := 2.0
+const CHANNEL_FADE_OUT := 0.08
+const CHANNEL_FADE_IN := 0.10
 # Inner glass corners measured on the 1619x971 room image, mapped to 1600x960.
 const SCREEN_CORNERS := [
 	Vector2(948.73, 117.65), Vector2(1418.16, 108.75), Vector2(1418.16, 378.66), Vector2(948.73, 381.63)
@@ -23,6 +26,7 @@ const NARRATIVE_KEYS := {
 var suspended := false
 var accepting_input := false
 var closing := false
+var changing_channel := false
 var camera_progress := 0.0
 var channel_paths: Array = []
 var channel_index := -1
@@ -33,6 +37,9 @@ var animation: Tween
 @onready var broadcast_viewport: SubViewport = $BroadcastViewport
 @onready var picture: TextureRect = $BroadcastViewport/Picture
 @onready var maintenance: Control = $BroadcastViewport/Maintenance
+@onready var vestnik: Control = $BroadcastViewport/Vestnik
+@onready var news: Control = $BroadcastViewport/News
+@onready var dorwood: Control = $BroadcastViewport/Dorwood
 @onready var channel_label: Label = $BroadcastViewport/TVChannel
 
 func _ready() -> void:
@@ -74,16 +81,42 @@ func _apply_camera(progress: float) -> void:
 	room.position = (BASE_SIZE * 0.5 - TV_CENTER * CLOSEUP_ZOOM) * progress
 
 func show_channel(index: int) -> void:
-	if index < 0 or index >= channel_paths.size() or closing: return
+	if index < 0 or index >= channel_paths.size() or closing or changing_channel: return
 	if channel_index == index: return
+	if channel_index < 0:
+		_apply_channel(index)
+		return
+	changing_channel = true
+	accepting_input = false
+	animation = create_tween()
+	animation.finished.connect(func(): animation = null)
+	# Fade only the television signal; the room and camera remain fixed.
+	animation.tween_property(broadcast, "modulate", Color.BLACK, CHANNEL_FADE_OUT)
+	animation.tween_callback(func(): _apply_channel(index))
+	animation.tween_property(broadcast, "modulate", Color.WHITE, CHANNEL_FADE_IN)
+	animation.tween_callback(func():
+		changing_channel = false
+		accepting_input = true)
+
+func _apply_channel(index: int) -> void:
 	channel_index = index
 	_update_channel_label()
 	var path: String = "res://assets/flash_ui/" + str(channel_paths[index])
 	var is_maintenance := path.ends_with("maintenance_aera.png")
+	var is_vestnik := path.ends_with("hazmat_vestnik.png")
+	var is_news := path.ends_with("news_anchor.png")
+	var is_dorwood := path.ends_with("dorwood_nqc.png")
 	maintenance.visible = is_maintenance
-	picture.visible = not is_maintenance
-	picture.texture = null if is_maintenance else load(path)
+	vestnik.visible = is_vestnik
+	news.visible = is_news
+	dorwood.visible = is_dorwood
+	picture.visible = not is_maintenance and not is_vestnik and not is_news and not is_dorwood
+	picture.texture = null if is_maintenance or is_vestnik or is_news or is_dorwood else load(path)
 	if is_maintenance: maintenance.refresh_text()
+	if is_vestnik: vestnik.refresh_text()
+	if is_news: news.refresh_text()
+	if is_dorwood: dorwood.refresh_text()
+	channel_shown.emit()
 
 func _gui_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
@@ -101,7 +134,7 @@ func switch_off() -> void:
 	animation.tween_callback(func(): switched_off.emit())
 
 func _process(_delta: float) -> void:
-	# Pausing freezes both the entry and the power-off transition.
+	# Pausing freezes entry, channel fades and power-off.
 	if animation != null and animation.is_valid():
 		if suspended: animation.pause()
 		elif not animation.is_running(): animation.play()

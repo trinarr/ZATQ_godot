@@ -43,7 +43,7 @@ func run() -> void:
 	check(view.accepting_input and view.room.scale == Vector2(2, 2), "room zoom finishes before taps are enabled")
 	check((view.room.transform * view.TV_CENTER).is_equal_approx(Vector2(800, 480)), "TV centered in authored frame")
 	check(not view.has_node("Hand"), "no hand or remote overlay")
-	check(view.channel_label.text == "CH 1", "original channel indicator starts at CH 1")
+	check(view.channel_label.text == "CH1", "original channel indicator starts at CH1")
 	check(view.channel_label.get_theme_font("font").resource_path.ends_with("JetBrainsMonoNL-Regular.ttf"), "CH uses a font with real uppercase letter shapes")
 	check(ui.narrative_layer.active == 1 and ui.narrative_layer.blocks[0].label.text == view.narrative_text(), "first channel has its own standard narrative")
 	var seen_narratives: Array[String] = [view.narrative_text()]
@@ -52,13 +52,25 @@ func run() -> void:
 	check(mute.mouse_filter == Control.MOUSE_FILTER_IGNORE and view.channel_label.mouse_filter == Control.MOUSE_FILTER_IGNORE, "TV indicators cannot intercept taps")
 	for indicator: Control in [mute, view.channel_label]:
 		check(Rect2(0, 0, 1536, 864).encloses(indicator.get_rect()), "indicator lies inside broadcast screen")
-	check(quest.TV_IMAGES == ["tv/news_anchor.png", "tv/sport_news.png", "tv/commercial.png", "tv/dorwood_nqc.png", "tv/hazmat_vestnik.png", "tv/maintenance_aera.png"], "only five approved images and maintenance are channels")
+	check(quest.TV_IMAGES == ["tv/commercial.png", "tv/sport_news.png", "tv/hazmat_vestnik.png", "tv/news_anchor.png", "tv/dorwood_nqc.png", "tv/maintenance_aera.png"], "only five approved images and maintenance are channels")
 	await screenshot("tv_first_channel")
 	await create_timer(3.2).timeout
 	check(quest.channel == 0, "no automatic channel timer")
 	await click(view.get_global_transform() * Vector2(800, 900))
 	check(quest.channel == 1 and ui.television_view == view, "tap on narrative panel changes channel without resetting zoom")
-	check(view.channel_label.text == "CH 2", "tap updates channel indicator")
+	check(view.changing_channel and not view.accepting_input, "channel change disables repeated taps during fade")
+	check(view.broadcast.modulate.r < 1.0 and view.channel_index == 0, "old broadcast fades before replacement")
+	ui._next_tv_channel()
+	check(quest.channel == 1, "rapid repeated tap cannot skip a channel")
+	ui._show_pause()
+	await process_frame
+	var faded: Color = view.broadcast.modulate
+	await create_timer(0.25).timeout
+	check(view.broadcast.modulate.is_equal_approx(faded) and view.channel_index == 0, "pause freezes channel fade")
+	ui._resume()
+	await create_timer(0.25).timeout
+	check(view.accepting_input and view.broadcast.modulate.is_equal_approx(Color.WHITE), "channel fade finishes and restores input")
+	check(view.channel_label.text == "CH2", "tap updates channel indicator")
 	check(ui.narrative_layer.active == 1 and ui.narrative_layer.blocks[0].label.text == view.narrative_text(), "channel change replaces narrative instead of stacking")
 	seen_narratives.append(view.narrative_text())
 	ui._show_pause()
@@ -80,7 +92,12 @@ func run() -> void:
 	legacy.erase("tv_channel_set")
 	for index: int in range(8):
 		legacy.channel = index
-		check(restored._valid(legacy) and restored._saved_tv_channel(legacy) == [0, 1, 2, 3, 4, 4, 4, 5][index], "old eight-channel saves migrate correctly")
+		check(restored._valid(legacy) and restored._saved_tv_channel(legacy) == [3, 1, 0, 4, 2, 2, 2, 5][index], "old eight-channel saves migrate correctly")
+	var previous: Dictionary = quest._snapshot()
+	previous.tv_channel_set = "approved_six"
+	for index: int in range(6):
+		previous.channel = index
+		check(restored._valid(previous) and restored._saved_tv_channel(previous) == [3, 1, 0, 4, 2, 5][index], "six-channel saves preserve the broadcast after reordering")
 	restored.save_path = "user://tv_legacy_test.json"
 	var legacy_file := FileAccess.open(restored.save_path, FileAccess.WRITE)
 	legacy_file.store_string(JSON.stringify(legacy))
@@ -96,7 +113,7 @@ func run() -> void:
 	ui._resume()
 	view = ui.television_view
 	check(view.channel_index == 1 and view.camera_progress == 1.0, "continue rebuilds saved close-up")
-	check(view.channel_label.text == "CH 2", "continue restores channel indicator")
+	check(view.channel_label.text == "CH2", "continue restores channel indicator")
 	check(ui.narrative_layer.active == 1 and ui.narrative_layer.blocks[0].label.text == view.narrative_text(), "continue restores saved channel narrative")
 	for extent: Vector2i in [Vector2i(1600, 960), Vector2i(2400, 1080), Vector2i(1280, 960)]:
 		root.size = extent
@@ -112,17 +129,48 @@ func run() -> void:
 	ui._fit_stage()
 	for index: int in range(2, quest.TV_IMAGES.size()):
 		await click(view.get_global_transform() * Vector2(800, 480))
+		await create_timer(0.25).timeout
 		check(quest.channel == index and view.channel_index == index, "tap advances through ordered channel list")
-		check(view.channel_label.text == "CH %d" % (index + 1), "indicator updates on every channel")
+		check(view.channel_label.text == "CH%d" % (index + 1), "indicator updates on every channel")
 		check(ui.narrative_layer.active == 1 and ui.narrative_layer.blocks[0].label.text == view.narrative_text(), "each channel updates the standard narrative")
 		check(not view.narrative_text().is_empty() and view.narrative_text() not in seen_narratives, "every channel has a distinct nonempty description")
 		seen_narratives.append(view.narrative_text())
+		if index == 2:
+			check(view.vestnik.visible and not view.picture.visible and not view.maintenance.visible, "Vestnik uses translated broadcast scene")
+			await screenshot("tv_vestnik_ru")
+			TranslationServer.set_locale("en")
+			await process_frame
+			check(view.vestnik.get_node("QuoteName").text == "MICEX", "Vestnik changes locale inside television")
+			await screenshot("tv_vestnik_en")
+			TranslationServer.set_locale("ru")
+			await process_frame
+		if index == 3:
+			check(view.news.visible and not view.picture.visible, "news channel uses localized overlay")
+			check(view.news.get_node("Headline").text == "ЗАПРЕТ ЖЕСТОКИХ ВИДЕОИГР НЕ ПРИНЯТ", "news headline uses requested Russian wording")
+			await screenshot("tv_news_ru")
+			TranslationServer.set_locale("en")
+			await process_frame
+			check(view.news.get_node("Headline").text == "VIOLENT VIDEO GAME LAW STRUCK DOWN", "news headline changes locale")
+			check("#" not in view.news.get_node("Discussion").text, "no real Twitter hashtag")
+			await screenshot("tv_news_en")
+			TranslationServer.set_locale("ru")
+			await process_frame
+		if index == 4:
+			check(view.dorwood.visible and not view.picture.visible and not view.news.visible, "Dorwood uses localized broadcast scene")
+			check(view.dorwood.get_node("Breaking").text == "ЭКСТРЕННЫЙ ВЫПУСК", "Dorwood Russian breaking banner")
+			await screenshot("tv_dorwood_ru")
+			TranslationServer.set_locale("en")
+			await process_frame
+			check(view.dorwood.get_node("Location").text == "DORWOOD", "Dorwood language changes while visible")
+			await screenshot("tv_dorwood_en")
+			TranslationServer.set_locale("ru")
+			await process_frame
 	check(view.maintenance.visible and not view.picture.visible, "last channel uses localized maintenance scene")
 	await screenshot("tv_maintenance_channel")
 	TranslationServer.set_locale("en")
 	await process_frame
 	check(view.maintenance.title_label.text == "TECHNICAL MAINTENANCE", "maintenance locale changes in TV")
-	check(view.channel_label.text == "CH 6", "channel indicator uses source format when locale translation is empty")
+	check(view.channel_label.text == "CH6", "channel indicator uses source format when locale translation is empty")
 	await click(view.get_global_transform() * Vector2(800, 480))
 	check(view.closing and quest.current_id == "tv", "final tap switches off before return")
 	check(ui.narrative_layer.active == 0, "power off hides TV narrative")

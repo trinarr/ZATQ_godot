@@ -1,10 +1,16 @@
-[gd_scene load_steps=6 format=3]
+[gd_scene load_steps=9 format=3]
 
 [ext_resource type="Script" path="res://scripts/ui/television.gd" id="1"]
 [ext_resource type="Texture2D" path="res://assets/flash_ui/episode1_components/part_4a17c8b80157ba275815.png" id="2"]
 [ext_resource type="PackedScene" path="res://scenes/ui/TVMaintenance.tscn" id="4"]
 [ext_resource type="Texture2D" path="res://assets/flash_ui/tv/mute.png" id="5"]
 [ext_resource type="FontFile" path="res://fonts/jetbrains_mono/JetBrainsMonoNL-Regular.ttf" id="6"]
+
+[ext_resource type="PackedScene" path="res://scenes/ui/TVVestnik.tscn" id="7"]
+
+[ext_resource type="PackedScene" path="res://scenes/ui/TVNews.tscn" id="8"]
+
+[ext_resource type="PackedScene" path="res://scenes/ui/TVDorwood.tscn" id="9"]
 
 [node name="Television" type="Control"]
 layout_mode = 0
@@ -38,6 +44,12 @@ mouse_filter = 2
 expand_mode = 1
 
 [node name="Maintenance" parent="BroadcastViewport" instance=ExtResource("4")]
+
+[node name="Vestnik" parent="BroadcastViewport" instance=ExtResource("7")]
+
+[node name="News" parent="BroadcastViewport" instance=ExtResource("8")]
+
+[node name="Dorwood" parent="BroadcastViewport" instance=ExtResource("9")]
 
 [node name="TVChannel" type="Label" parent="BroadcastViewport"]
 offset_left = 28.05

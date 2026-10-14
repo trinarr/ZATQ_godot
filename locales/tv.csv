@@ -1,9 +1,23 @@
 key,ru,en
 tv.maintenance.title,ТЕХНИЧЕСКИЕ РАБОТЫ,TECHNICAL MAINTENANCE
 tv.maintenance.subtitle,ВЕЩАНИЕ ВРЕМЕННО ПРИОСТАНОВЛЕНО,BROADCAST TEMPORARILY SUSPENDED
+tv.vestnik.brand,MAX,MAX
+tv.vestnik.suffix,24,24
+tv.vestnik.headline,Губернатор Тамбовской области призвал жителей не поднимать излишней паники,The governor of the Tambov region urged residents to avoid unnecessary panic
+tv.vestnik.time,8:03,8:03
+tv.vestnik.quote_name,ММВБ,MICEX
+tv.vestnik.quote_value,"1333,49",1333.49
+tv.vestnik.quote_change,"-1,26%",-1.26%
 tv.channels.news_anchor,Ведущий что-то объяснял с напряжённым видом. Из выключенных динамиков не доносилось ни слова.,
 tv.channels.sport_news,"Спортивные новости. Всё выглядело так, будто утро шло своим обычным чередом.",
 tv.channels.commercial,"Реклама. Четверо мужчин радовались запасам пива, словно за окнами ничего не происходило.",
 tv.channels.dorwood,В Дорвуде случилась стрельба. На экране — машины полиции и толпа людей. В заголовке говорилось о двадцати жертвах.,
 tv.channels.hazmat,На следующем канале показывали людей в защитных костюмах. Бегущая строка призывала не поддаваться панике.,
 tv.channels.maintenance,Вместо передачи — экран технических работ. Вещание временно приостановлено.,
+tv.news.developing,Развитие событий,Developing Story
+tv.news.headline,Запрет жестоких видеоигр не принят,Violent video game law struck down
+tv.news.subtitle,Защита детей против свободы слова,Protecting kids vs. free speech rights
+tv.news.discussion,Примите участие в обсуждении в Twitter,Join the conversation on Twitter
+tv.dorwood.breaking,ЭКСТРЕННЫЙ ВЫПУСК,BREAKING NEWS
+tv.dorwood.headline,Десятки жертв массовой стрельбы,Report of 20 Victims in Mass Shooting
+tv.dorwood.location,ДОРВУД,DORWOOD

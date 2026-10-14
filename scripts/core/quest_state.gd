@@ -12,8 +12,8 @@ var save_path: String = SAVE_PATH
 var tmp_path: String = TMP_PATH
 var backup_path: String = BACKUP_PATH
 const VERSION := 1
-const TV_IMAGES := ["tv/news_anchor.png", "tv/sport_news.png", "tv/commercial.png", "tv/dorwood_nqc.png", "tv/hazmat_vestnik.png", "tv/maintenance_aera.png"]
-const TV_CHANNEL_SET := "approved_six"
+const TV_IMAGES := ["tv/commercial.png", "tv/sport_news.png", "tv/hazmat_vestnik.png", "tv/news_anchor.png", "tv/dorwood_nqc.png", "tv/maintenance_aera.png"]
+const TV_CHANNEL_SET := "ordered_six"
 var nodes: Dictionary = {}
 var current_id: String = ""
 var popup_origin: String = ""
@@ -362,16 +362,18 @@ func _valid(data: Variant) -> bool:
 		if activity_data.has("status") and activity_data.status not in ["idle","error","accepted"]: return false
 	var ch: Variant = data.get("channel")
 	var channel_set: Variant = data.get("tv_channel_set", "")
-	if channel_set not in ["", TV_CHANNEL_SET]: return false
+	if channel_set not in ["", "approved_six", TV_CHANNEL_SET]: return false
 	var count: int = 8 if channel_set == "" else TV_IMAGES.size()
 	return (ch is float or ch is int) and ch == int(ch) and ch >= 0 and ch < count
 
 func _saved_tv_channel(data: Dictionary) -> int:
 	var index := int(data.channel)
 	if data.get("tv_channel_set", "") == TV_CHANNEL_SET: return index
+	if data.get("tv_channel_set", "") == "approved_six":
+		return [3, 1, 0, 4, 2, 5][index]
 	# Previous saves included test bars/static before the last two approved frames.
 	# Removed frames resume on the next approved broadcast, never invalidate a save.
-	return [0, 1, 2, 3, 4, 4, 4, 5][index]
+	return [3, 1, 0, 4, 2, 2, 2, 5][index]
 
 func _valid_stats(stats: Variant, endings: Array) -> bool:
 	if not stats is Dictionary or not stats.get("endings") is Array: return false

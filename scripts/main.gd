@@ -568,7 +568,6 @@ func _show_story() -> void:
 	if not playing or paused: return
 	if Quest.current_id == "tv" and previous_node == "tv" and is_instance_valid(television_view):
 		television_view.show_channel(Quest.channel)
-		_tv_caption()
 		return
 	var opening_tv := Quest.current_id == "tv" and previous_node == "morning_choice"
 	var opening_elevator: bool = Quest.current_id == "lift_button" and previous_node == "lift"
@@ -627,6 +626,7 @@ func _show_story() -> void:
 		screen.add_child(television_view)
 		television_view.configure(Quest.channel, Quest.TV_IMAGES, opening_tv)
 		_tv_caption()
+		television_view.channel_shown.connect(_tv_caption)
 		television_view.next_requested.connect(_next_tv_channel)
 		television_view.switched_off.connect(func():
 			if playing and not paused and Quest.current_id == "tv":
@@ -667,6 +667,7 @@ func _tv_caption() -> void:
 
 func _next_tv_channel() -> void:
 	if not playing or paused or Quest.current_id != "tv" or not is_instance_valid(television_view): return
+	if not television_view.accepting_input: return
 	if Quest.channel == Quest.TV_IMAGES.size() - 1:
 		narrative_layer.reset()
 		television_view.switch_off()

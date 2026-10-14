@@ -71,7 +71,7 @@ ui.main.5,Об игре,About the game
 ui.main.7,Звук,
 ui.main.8,Достижения,
 ui.main.9,Достижения,
-ui.main.channel_format,CH %d,
+ui.main.channel_format,CH%d,
 ui.quest_state.1,Сохранение восстановлено из резервной копии.,
 ui.quest_state.2,Не удалось записать сохранение.,
 ui.quest_state.3,Ошибка записи сохранения.,
