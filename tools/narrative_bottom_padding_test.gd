@@ -72,7 +72,7 @@ func run() -> void:
  label=block.configure(host,"Поехать ли на работу на машине или пойти пешком?",Rect2(11,416,775,34),FONT,24,{"storage":host,"band_rect":Rect2(0,820,1600,140)})
  await process_frame
  check(label.get_theme_font_size("font_size")==41,"reported caption uses the reduced font size")
- check(block.band.get_rect().end.y-label.get_rect().end.y>24,"reported caption receives a larger lower inset")
+ check(block.band.get_rect().end.y-label.get_rect().end.y>=23.03,"reported caption receives the fixed lower inset")
  # Identical text must produce identical height and padding despite legacy boxes.
  for upper: bool in [true,false]:
   var expected_height: float=-1
@@ -85,9 +85,29 @@ func run() -> void:
    check(is_equal_approx(label.size.y,label.get_minimum_size().y),"text box matches its actual content height")
    check((label.position-block.band.position).is_equal_approx(Vector2(48,28.8)),"left and top padding are exact")
    check(is_equal_approx(block.band.get_rect().end.x-label.get_rect().end.x,48),"right padding is exact")
-   var ink:=BLOCK._ink_bounds(FONT,41,label.text)
-   var top_gap: float=label.position.y-block.band.position.y+FONT.get_ascent(41)+ink.x
-   var bottom_gap: float=block.band.get_rect().end.y-label.get_rect().end.y+FONT.get_descent(41)-ink.y
-   check(is_equal_approx(bottom_gap,top_gap*0.8),"visible bottom gap is 80 percent of visible top gap")
+   var bottom_gap: float=block.band.get_rect().end.y-label.get_rect().end.y
+   check(is_equal_approx(bottom_gap,23.04),"lower padding is constant and independent of glyphs")
+ # Different glyph heights and descenders cannot move panels with equal line counts.
+ for upper: bool in [true,false]:
+  var expected_rect := Rect2()
+  var expected_label_rect := Rect2()
+  for text: String in ["ААА", "руду", "___", "Текст_с_подчёркиванием", "Текст без подчёркивания"]:
+   var area:=Rect2(0,0 if upper else 888,1600,72)
+   label=block.configure(host,text,Rect2(11,6 if upper else 450,775,34),FONT,24,{"storage":host,"band_rect":area})
+   await process_frame
+   if expected_rect==Rect2():
+    expected_rect=block.band.get_rect()
+    expected_label_rect=label.get_rect()
+   check(block.band.get_rect().is_equal_approx(expected_rect),"one-line panel bounds do not depend on letter contours")
+   check(label.get_rect().is_equal_approx(expected_label_rect),"one-line text position and height do not depend on letter contours")
+  var single_height := block.band.size.y
+  var fixed_edge := block.band.position.y if upper else block.band.get_rect().end.y
+  for text: String in ["ААА\nБББ", "руду\n___"]:
+   var area:=Rect2(0,0 if upper else 888,1600,72)
+   label=block.configure(host,text,Rect2(11,6 if upper else 450,775,34),FONT,24,{"storage":host,"band_rect":area,"line_spacing":3})
+   await process_frame
+   check(label.get_line_count()==2,"explicit line break counts as a second line")
+   check(is_equal_approx(block.band.size.y-single_height,FONT.get_height(41)+3),"extra line adds exactly one line height and spacing")
+   check(is_equal_approx(block.band.position.y if upper else block.band.get_rect().end.y,fixed_edge),"panel grows without moving its anchored edge")
  print("PASS: %d bottom padding checks; failures %d" %[checks,failures])
  quit(1 if failures else 0)
