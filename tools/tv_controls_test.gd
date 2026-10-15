@@ -26,7 +26,7 @@ func run() -> void:
 	quest.save_path = "user://tv_controls_test.json"
 	quest.tmp_path = "user://tv_controls_test.tmp"
 	quest.backup_path = "user://tv_controls_test.bak"
-	quest.sound_enabled = false
+	quest.sound_enabled = true
 	var ui: Control = load("res://scenes/Main.tscn").instantiate()
 	root.add_child(ui)
 	ui.playing = true
@@ -38,8 +38,15 @@ func run() -> void:
 	var buttons: Array = ui.world_layer.get_children().filter(func(child): return child is Button)
 	buttons[0].pressed.emit()
 	check(quest.current_id == "tv" and quest.channel == 0, "living TV contour opens first channel")
-	await create_timer(0.65).timeout
 	var view: Control = ui.television_view
+	check(not view.broadcast.visible and ui.narrative_layer.active == 0 and not ui.effects.playing, "TV and narrative stay off before zoom finishes")
+	await create_timer(0.65).timeout
+	check(view.camera_progress > 0.0 and view.camera_progress < 1.0 and not view.broadcast.visible and ui.narrative_layer.active == 0, "slower entry stays dark at the previous zoom duration")
+	ui._show_story()
+	check(not view.broadcast.visible and ui.narrative_layer.active == 0, "refresh during entry cannot turn TV on early")
+	await screenshot("tv_zoom_midpoint")
+	await create_timer(0.7).timeout
+	check(view.broadcast.visible and ui.effects.stream.resource_path.ends_with("/TVSwitchOn.mp3"), "TV power-on sound follows zoom")
 	check(view.accepting_input and view.room.scale == Vector2(2, 2), "room zoom finishes before taps are enabled")
 	check((view.room.transform * view.TV_CENTER).is_equal_approx(Vector2(800, 480)), "TV centered in authored frame")
 	check(not view.has_node("Hand"), "no hand or remote overlay")
@@ -179,10 +186,16 @@ func run() -> void:
 	check(quest.current_id == "tv", "power-off transition waits during pause")
 	ui._resume()
 	await create_timer(0.3).timeout
+	check(quest.current_id == "tv" and view.broadcast.modulate.a == 0.0 and view.camera_progress > 0.0 and view.camera_progress < 1.0, "screen switches off before zooming back out")
+	await screenshot("tv_zoom_out_midpoint")
+	await create_timer(0.9).timeout
 	check(quest.current_id == "morning_choice" and ui.television_view == null, "power-off returns to living room")
 	check(not quest.scene_narrative_pending() and ui.world_layer.get_child_count() == 8, "return immediately restores four contours and hotspots")
 	quest.navigate_apartment("tv")
 	check(quest.channel == 0, "reopening starts from first channel")
+	ui.effects.stop()
+	ui.effects.stream = null
+	await process_frame
 	ui.free()
 	await process_frame
 	for path: String in [quest.save_path, quest.tmp_path, quest.backup_path]:

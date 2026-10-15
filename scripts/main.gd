@@ -25,6 +25,7 @@ var texture_prefetch: Node
 static var pause_atlas: AtlasTexture
 var screen: Control
 var world_layer: Control
+var world_fade_layer: Node2D
 var menu_logo: Control
 var menu_opening: Node
 var overlay: Control
@@ -134,7 +135,7 @@ func _stop_cutscene() -> void:
 	if is_instance_valid(screen): screen.modulate = Color.WHITE
 	if is_instance_valid(viewport_canvas): viewport_canvas.background.modulate = Color.WHITE
 
-func _reset_screen(preserve_logo: bool = false) -> void:
+func _reset_screen(preserve_logo: bool = false, fade_highlights: bool = false) -> void:
 	television_view = null
 	elevator_view = null
 	decision_scene_origin = ""
@@ -173,9 +174,19 @@ func _reset_screen(preserve_logo: bool = false) -> void:
 		world_layer.size = LAYOUT.BASE_SIZE
 		world_layer.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		screen.add_child(world_layer)
+		world_fade_layer = Node2D.new()
+		world_fade_layer.name = "RetiringHighlights"
+		screen.add_child(world_fade_layer)
+		screen.move_child(world_fade_layer, world_layer.get_index())
+	if not fade_highlights:
+		for child: Node in world_fade_layer.get_children(): child.free()
 	for host: Control in [world_layer,screen]:
 		for child: Node in host.get_children():
-			if child == world_layer: continue
+			if child == world_layer or child == world_fade_layer: continue
+			if fade_highlights and child.get_meta("interactive_highlight", false) and child.has_method("fade_out"):
+				child.reparent(world_fade_layer, false)
+				child.fade_out()
+				continue
 			host.remove_child(child)
 			child.queue_free()
 		if host.has_meta("episode_animation_block"): host.remove_meta("episode_animation_block")
@@ -200,6 +211,7 @@ func _layout_world_layer() -> void:
 	# transform while captions, pause and modals keep the fitted UI space.
 	world_layer.scale = viewport_canvas.art_layer.scale / screen.scale
 	world_layer.position = screen.get_global_transform().affine_inverse() * viewport_canvas.art_layer.global_position
+	if is_instance_valid(world_fade_layer): world_fade_layer.transform = world_layer.get_transform()
 
 func _world_host() -> Control:
 	return world_layer if viewport_canvas.component_background_active else screen
@@ -576,6 +588,9 @@ func _show_story() -> void:
 	var node: Dictionary = Quest.current()
 	_prefetch_story_resources()
 	var kind: String = node.get("kind", "story")
+	var previous: Dictionary = Quest.current(previous_node) if not previous_node.is_empty() else {}
+	var same_room: bool = Quest.current_id == previous_node or node.get("inspection_origin", "") == previous_node or previous.get("inspection_origin", "") == Quest.current_id
+	var tv_entry_sound: String = transition_sound if not transition_sound.is_empty() else node.get("sound", "")
 	if not decision_scene_origin.is_empty() and decision_scene_origin == Quest.current_id:
 		if is_instance_valid(decision_dialog):
 			decision_dialog.get_parent().remove_child(decision_dialog)
@@ -602,13 +617,13 @@ func _show_story() -> void:
 		var retained: Node2D = viewport_canvas.episode_timeline
 		if is_instance_valid(retained): retained.playing = false
 	else:
-		_reset_screen()
+		_reset_screen(false, same_room)
 	if previous_node != Quest.current_id:
 		effects.stop()
 		var returning_from_item: bool = not previous_node.is_empty() and Quest.current(previous_node).get("kind", "") in ["item", "city_pickup"] and Quest.popup_origin == Quest.current_id
-		if not transition_sound.is_empty():
+		if not transition_sound.is_empty() and not opening_tv:
 			_play_sound(transition_sound)
-		elif not returning_from_item:
+		elif not returning_from_item and not opening_tv:
 			_play_sound(node.get("sound", ""))
 		transition_sound = ""
 	previous_node = Quest.current_id
@@ -632,14 +647,14 @@ func _show_story() -> void:
 		_set_backdrop(null)
 		television_view = TELEVISION.instantiate()
 		screen.add_child(television_view)
-		television_view.configure(Quest.channel, Quest.TV_IMAGES, opening_tv)
-		_tv_caption()
 		television_view.channel_shown.connect(_tv_caption)
+		television_view.powered_on.connect(func():
+			if opening_tv: _play_sound(tv_entry_sound))
+		television_view.powered_off.connect(func(): _play_sound("TVSwitchOff"))
 		television_view.next_requested.connect(_next_tv_channel)
 		television_view.switched_off.connect(func():
-			if playing and not paused and Quest.current_id == "tv":
-				transition_sound = "TVSwitchOff"
-				Quest.next_channel())
+			if playing and not paused and Quest.current_id == "tv": Quest.next_channel())
+		television_view.configure(Quest.channel, Quest.TV_IMAGES, opening_tv)
 	elif Quest.current_id == "apartment_window":
 		_component_backdrop("layout_bg_apartment_window")
 		_opening_caption(node, 416.0)

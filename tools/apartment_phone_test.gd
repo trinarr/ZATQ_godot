@@ -28,7 +28,14 @@ func run() -> void:
 	quest.dismiss_scene_narrative()
 	check(outlines(ui).size() == 4 and buttons(ui).size() == 4, "room starts with four neutral interactive objects")
 	var flags: Dictionary = quest.flags.duplicate(true)
+	await create_timer(0.25).timeout
 	buttons(ui)[1].pressed.emit()
+	check(ui.world_fade_layer.get_child_count() == 4, "previous outlines survive to fade out with narrative opening")
+	await create_timer(0.10).timeout
+	check(outlines(ui)[0].modulate.a > 0.0 and outlines(ui)[0].modulate.a < 1.0, "selected outline appears progressively")
+	check(ui.world_fade_layer.get_child(0).modulate.a > 0.0 and ui.world_fade_layer.get_child(0).modulate.a < 1.0, "other outlines fade instead of disappearing instantly")
+	await create_timer(0.20).timeout
+	check(ui.world_fade_layer.get_child_count() == 0, "outgoing outlines are freed after fade")
 	check(quest.current_id == "apartment_phone" and quest.current().kind == "object_inspection", "phone opens reusable inspection type")
 	check(quest.flags == flags, "inspection preserves existing story variables")
 	check(ui.narrative_layer.active == 1 and ui.narrative_layer.blocks[0].label.text == "ТЕСТ", "inspection uses existing narrative placeholder")
@@ -58,6 +65,8 @@ func run() -> void:
 		await RenderingServer.frame_post_draw
 		root.get_texture().get_image().save_png("res://apartment_phone_active.png")
 	buttons(ui)[0].pressed.emit()
+	check(ui.world_fade_layer.get_child_count() == 1 and outlines(ui)[0].modulate.a == 0.0, "closing narrative fades selected outline out and others in")
+	await create_timer(0.25).timeout
 	check(quest.current_id == "morning_choice" and not quest.scene_narrative_pending(), "narrative tap returns to room without replaying introduction")
 	check(ui.narrative_layer.active == 0 and outlines(ui).size() == 4 and buttons(ui).size() == 4, "narrative disappears and all interactive objects return")
 	for outline: Node in outlines(ui):

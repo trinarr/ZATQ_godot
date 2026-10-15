@@ -1,6 +1,7 @@
 extends Node2D
 # A quiet hand-drawn outline. The filled hit mask remains owned by HIGHLIGHT.
 const HIGHLIGHT := preload("res://scripts/ui/interactive_highlight.gd")
+const FADE_SECONDS := 0.22
 const WIDTH := 2.0
 const ACTIVE_COLOR := Color(1.0, 0.65, 0.12, 1.0)
 const LINE_ALPHA := 0.92 * 0.8 * 0.8
@@ -10,6 +11,18 @@ var fill_material: ShaderMaterial
 var pulse_time := 0.0
 var held := false
 var active := false
+var visibility_tween: Tween
+
+func _ready() -> void:
+	modulate.a = 0.0
+	visibility_tween = create_tween()
+	visibility_tween.tween_property(self, "modulate:a", 1.0, FADE_SECONDS)
+
+func fade_out() -> void:
+	if visibility_tween != null and visibility_tween.is_valid(): visibility_tween.kill()
+	visibility_tween = create_tween()
+	visibility_tween.tween_property(self, "modulate:a", 0.0, FADE_SECONDS)
+	visibility_tween.tween_callback(queue_free)
 
 func bind_feedback(button: Button) -> void:
 	button.button_down.connect(set_held.bind(true))

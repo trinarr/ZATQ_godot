@@ -101,7 +101,7 @@ func run() -> void:
 	check(ui.effects.playing and ui.effects.stream.resource_path.ends_with("/KeysTake.mp3"), "explicit choice sound remains allowed on return")
 	ui.effects.stop()
 	ui.effects.stream = null
-	await process_frame
+	await create_timer(0.10).timeout
 	ui.free()
 	await process_frame
 	for path: String in [quest.save_path, quest.tmp_path, quest.backup_path]:

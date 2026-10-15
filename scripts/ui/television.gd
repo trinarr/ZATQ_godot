@@ -3,12 +3,16 @@ extends Control
 signal next_requested
 signal switched_off
 signal channel_shown
+signal powered_on
+signal powered_off
 
 const LOC := preload("res://scripts/core/localization.gd")
 
 const BASE_SIZE := Vector2(1600, 960)
 const TV_CENTER := Vector2(1184, 248)
 const CLOSEUP_ZOOM := 2.0
+const ZOOM_IN_SECONDS := 1.2
+const ZOOM_OUT_SECONDS := ZOOM_IN_SECONDS / 1.4
 const CHANNEL_FADE_OUT := 0.08
 const CHANNEL_FADE_IN := 0.10
 # Inner glass corners measured on the 1619x971 room image, mapped to 1600x960.
@@ -26,6 +30,7 @@ const NARRATIVE_KEYS := {
 var suspended := false
 var accepting_input := false
 var closing := false
+var opening := false
 var changing_channel := false
 var camera_progress := 0.0
 var channel_paths: Array = []
@@ -62,18 +67,27 @@ func narrative_text() -> String:
 
 func configure(index: int, paths: Array, animate: bool = false) -> void:
 	channel_paths = paths
-	show_channel(index)
 	accepting_input = false
+	broadcast.hide()
 	if animate:
+		opening = true
 		camera_progress = 0.0
 		_apply_camera(0.0)
 		animation = create_tween().set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 		animation.finished.connect(func(): animation = null)
-		animation.tween_method(_apply_camera, 0.0, 1.0, 0.4)
-		animation.tween_callback(func(): accepting_input = true)
+		animation.tween_method(_apply_camera, 0.0, 1.0, ZOOM_IN_SECONDS)
+		animation.tween_callback(func(): _power_on(index))
 	else:
 		_apply_camera(1.0)
-		accepting_input = true
+		_power_on(index)
+
+func _power_on(index: int) -> void:
+	opening = false
+	broadcast.modulate = Color.WHITE
+	broadcast.show()
+	_apply_channel(index)
+	accepting_input = true
+	powered_on.emit()
 
 func _apply_camera(progress: float) -> void:
 	camera_progress = progress
@@ -81,7 +95,7 @@ func _apply_camera(progress: float) -> void:
 	room.position = (BASE_SIZE * 0.5 - TV_CENTER * CLOSEUP_ZOOM) * progress
 
 func show_channel(index: int) -> void:
-	if index < 0 or index >= channel_paths.size() or closing or changing_channel: return
+	if index < 0 or index >= channel_paths.size() or opening or closing or changing_channel: return
 	if channel_index == index: return
 	if channel_index < 0:
 		_apply_channel(index)
@@ -128,9 +142,11 @@ func switch_off() -> void:
 	closing = true
 	accepting_input = false
 	if animation != null and animation.is_valid(): animation.kill()
-	animation = create_tween()
+	powered_off.emit()
+	animation = create_tween().set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 	animation.finished.connect(func(): animation = null)
 	animation.tween_property(broadcast, "modulate:a", 0.0, 0.18)
+	animation.tween_method(_apply_camera, camera_progress, 0.0, ZOOM_OUT_SECONDS)
 	animation.tween_callback(func(): switched_off.emit())
 
 func _process(_delta: float) -> void:
