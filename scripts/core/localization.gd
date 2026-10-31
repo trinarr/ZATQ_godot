@@ -6,7 +6,9 @@ const DIRECTORY := "res://locales/"
 static var translations: Array[Translation] = []
 static var ready := false
 static var tables: Dictionary = {}
-const BUILTIN_TABLES := ["ui", "episode1", "episode2", "episode3", "episode4", "episode5", "episode6", "tests"]
+# Exported packs may not expose source CSV names during directory discovery.
+# Keep every shipped table here; localization_export_test.py checks coverage.
+const BUILTIN_TABLES := ["ui", "episode1", "episode2", "episode3", "episode4", "episode5", "episode6", "episode101", "tests", "tv"]
 static func imported_table(path:String)->Dictionary:
  var base:=path.trim_suffix(".csv")
  var locales:Array[String]=["ru","en"]
@@ -22,7 +24,8 @@ static func imported_table(path:String)->Dictionary:
   if translation==null:continue
   var keys:PackedStringArray=[]
   if translation is OptimizedTranslation:
-   # Optimized resources cannot enumerate keys; CSV is included in exports.
+   # Legacy compressed imports need CSV to enumerate keys. Shipped tables use
+   # compress=0 so their imported translations also work in CSV-free packs.
    var source_csv:=FileAccess.open(path,FileAccess.READ)
    if source_csv==null:continue
    source_csv.get_csv_line()

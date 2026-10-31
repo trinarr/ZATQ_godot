@@ -1,5 +1,7 @@
 # Original Flash tests
 
+This document describes the five playable quizzes. For project validation and regression checks, see [TECHNICAL_TESTS.md](TECHNICAL_TESTS.md).
+
 All five tests are playable from the Tests selector. Episodes and tests have
 independent results; launching a test does not replace the saved episode.
 The last completed result is stored in `Quest.test_results` using the existing

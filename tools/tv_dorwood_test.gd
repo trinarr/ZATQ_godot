@@ -17,7 +17,7 @@ func run() -> void:
 	await process_frame
 	await process_frame
 	check(view.get_node("Breaking").text == "ЭКСТРЕННЫЙ ВЫПУСК", "Russian breaking news")
-	check(view.get_node("Headline").text == "20 жертв массовой стрельбы", "Russian headline")
+	check(view.get_node("Headline").text == "Десятки жертв массовой стрельбы", "Russian headline matches authored locale")
 	check(view.get_node("Location").text == "ДОРВУД", "Russian location")
 	TranslationServer.set_locale("en")
 	await process_frame
