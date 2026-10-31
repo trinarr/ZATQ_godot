@@ -265,7 +265,7 @@
       },
       "after": {
         "type": "texture",
-        "texture": "episode2_animation_parts/part_d3045b9c6ccad370f4f7.png",
+        "texture": "episode2_components/part_d3045b9c6ccad370f4f7.png",
         "rect": [
           148.0,
           193.0,

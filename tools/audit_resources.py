@@ -38,7 +38,7 @@ def audit(root=ROOT):
         for artwork in artworks.values():
             resources.update('assets/flash_ui/' + p['texture'] for p in artwork['parts'].values() if 'texture' in p)
     text = json.loads((root / 'data/ui_text_layout.json').read_text())
-    resources.update(("fonts/caveat/Caveat-Medium.ttf" if int(block['font']) in [2508,2511] else "fonts/oswald/Oswald-Medium.ttf" if int(block['font'])==2 else f"fonts/flash/font_{int(block['font'])}.ttf") for block in dictionaries(text) if 'font' in block)
+    resources.update(("fonts/caveat/Caveat-Medium.ttf" if int(block['font']) in [2508,2511] else "fonts/oswald/Oswald-Medium.ttf" if int(block['font']) in [1,2] else f"fonts/flash/font_{int(block['font'])}.ttf") for block in dictionaries(text) if 'font' in block)
     dynamic_masks = {}
     for highlight_path in (root / 'data').glob('episode*_highlights.json'):
         definition = json.loads(highlight_path.read_text())
@@ -61,19 +61,23 @@ def audit(root=ROOT):
         if 'sound' in record and record['sound']:
             resources.add('assets/audio/' + record['sound'] + '.mp3')
     # Main's shared primitives use fixed UI names as well as graph art names.
-    resources.update('assets/flash_ui/' + name + '.png' for name in ['adaptive_help', 'adaptive_help_icons'])
+    resources.update('assets/flash_ui/' + name + '.png' for name in ['adaptive_help', 'adaptive_help_icons', 'tests_question'])
+    # Quiz navigation composes these paths in _navigation().
+    resources.update('assets/flash_ui/tests_' + name + '_icon.png' for name in ['menu', 'restart', 'continue'])
     for path in list((root / 'scripts').rglob('*.gd')) + list((root / 'scenes').rglob('*.tscn')) + list((root / 'shaders').rglob('*.gdshader')):
         resources.update(name for name in re.findall(r'res://((?:assets|fonts)/[^"\n]+\.(?:png|jpg|mp3|ttf))"', path.read_text()) if '%' not in name)
     # Keypad sounds are emitted by shared controls rather than stored in graphs.
     for path in (root / 'scripts').rglob('*.gd'):
         resources.update('assets/audio/' + name + '.mp3' for name in re.findall(r'sound_requested.emit\("([^"\n]+)"', path.read_text()))
+        # Quest/Television store channel paths relative to assets/flash_ui/.
+        resources.update('assets/flash_ui/' + name for name in re.findall(r'"(tv/[^"\n]+\.png)"', path.read_text()))
     for graph_path in (root / 'data/story_graphs').rglob('*.json'):
         resources.update(re.findall(r'res://((?:assets|fonts)/[^"\n]+\.(?:png|jpg|mp3|ttf))"', graph_path.read_text()))
     candidates = {p for p in tracked if p.startswith(('assets/', 'fonts/')) and not p.endswith('.import') and (root / p).is_file()}
     # Font licensing files follow the font's lifetime; preserve all remaining licenses.
     if 'fonts/RobotoFlex-Variable.ttf' in resources:
         resources.add('fonts/RobotoFlex-OFL.txt')
-    resources.update(p for p in candidates if p.endswith('.txt') and p != 'fonts/RobotoFlex-OFL.txt')
+    resources.update(p for p in candidates if (p.endswith('.txt') and p != 'fonts/RobotoFlex-OFL.txt') or p.endswith('/README.md'))
     unused = sorted(candidates - resources)
     missing = sorted(p for p in resources if not (root / p).is_file())
     orphan_imports = sorted(p for p in tracked if p.endswith('.import') and (root / p).is_file() and not (root / p[:-7]).is_file())

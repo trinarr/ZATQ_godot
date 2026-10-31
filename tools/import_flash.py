@@ -41,7 +41,7 @@ def main():
         (out/'data').mkdir(parents=True,exist_ok=True)
         (out/'data/flash_catalog.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
         images = ['Fon1_1.png']
-        sounds = ['MainTheme','TVSwitchOn','TVSwitchOff','FootSteps','KeysTake','LiftOpenSound','LiftClosing','LiftButton']
+        sounds = ['MainTheme','TVSwitchOn','TVSwitchOff','FootSteps','KeysTake','LiftOpenSound','LiftButton']
         for kind, items in [('Images',images),('Sound',[s+'.mp3' for s in sounds])]:
             folder=out/'assets'/('images' if kind=='Images' else 'audio');folder.mkdir(parents=True,exist_ok=True)
             for item in items: (folder/item).write_bytes(z.read('assets/'+kind+'/'+item))
